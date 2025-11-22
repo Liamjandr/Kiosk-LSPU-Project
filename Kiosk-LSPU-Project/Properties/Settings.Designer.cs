@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kiosk_LSPU_Project.Properties
+namespace kiosk.Properties
 {
 
 

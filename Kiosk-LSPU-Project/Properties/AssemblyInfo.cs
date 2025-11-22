@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Kiosk-LSPU-Project")]
+[assembly: AssemblyTitle("kiosk")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Kiosk-LSPU-Project")]
+[assembly: AssemblyProduct("kiosk")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,11 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-<<<<<<< HEAD
-[assembly: Guid("16083f2f-7a46-47bb-9d1c-e85c65baedb2")]
-=======
-[assembly: Guid("8308fd3d-08dc-47a9-b6ad-52f8a22fa1c5")]
->>>>>>> 2ad7e5ada1aeb73f38d5ebf3c2bcf1b920c3212d
+[assembly: Guid("c6cb5b96-9e6e-48f0-a8e3-9ea5f648d275")]
 
 // Version information for an assembly consists of the following four values:
 //

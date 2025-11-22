@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kiosk_LSPU_Project
+namespace kiosk
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace Kiosk_LSPU_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Main());
         }
     }
 }
