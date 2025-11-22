@@ -1,0 +1,12 @@
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\obj\Debug\kiosk.csproj.AssemblyReference.cache
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\obj\Debug\kiosk.Main.resources
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\obj\Debug\kiosk.Properties.Resources.resources
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\obj\Debug\kiosk.csproj.GenerateResource.cache
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\obj\Debug\kiosk.csproj.CoreCompileInputs.cache
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\bin\Debug\kiosk.exe.config
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\bin\Debug\kiosk.exe
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\bin\Debug\kiosk.pdb
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\bin\Debug\Guna.UI2.dll
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\obj\Debug\kiosk.csproj.Up2Date
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\obj\Debug\kiosk.exe
+C:\Users\liamj\Desktop\Kiosk-LSPU-Project\kiosk\obj\Debug\kiosk.pdb
