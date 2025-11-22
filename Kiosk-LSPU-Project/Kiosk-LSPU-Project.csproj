@@ -4,7 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{16083F2F-7A46-47BB-9D1C-E85C65BAEDB2}</ProjectGuid>
+=======
+    <ProjectGuid>{8308FD3D-08DC-47A9-B6AD-52F8A22FA1C5}</ProjectGuid>
+>>>>>>> 2ad7e5ada1aeb73f38d5ebf3c2bcf1b920c3212d
     <OutputType>WinExe</OutputType>
     <RootNamespace>Kiosk_LSPU_Project</RootNamespace>
     <AssemblyName>Kiosk-LSPU-Project</AssemblyName>
