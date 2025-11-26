@@ -76,17 +76,17 @@
             this.guna2ShadowPanel18 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2PictureBox39 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox30 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.peShorts = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox29 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pePants = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox28 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.peShirt = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox27 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.univ = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox26 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.typeB = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox25 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.typeA = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -155,7 +155,7 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.ttext = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -190,6 +190,42 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.subName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.secondItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.secondPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.thirdItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.thirdPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fourthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fourthPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fifthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fifthPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.sixthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.sixthPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.seventhItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.seventhPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.eighthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.eighthPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ninthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.ninthPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.firstItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.firstPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.tenthIten = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.tenthPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.firstCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.secondCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.thirdCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.fourthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.fifthcancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.sixthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.seventhCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.eighthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ninthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.tenthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.footer.SuspendLayout();
@@ -229,17 +265,17 @@
             this.guna2ShadowPanel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox39)).BeginInit();
             this.guna2ShadowPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peShorts)).BeginInit();
             this.guna2ShadowPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pePants)).BeginInit();
             this.guna2ShadowPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peShirt)).BeginInit();
             this.guna2ShadowPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.univ)).BeginInit();
             this.guna2ShadowPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeB)).BeginInit();
             this.guna2ShadowPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeA)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.guna2ShadowPanel20.SuspendLayout();
@@ -331,6 +367,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
+            this.secondItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.secondPic)).BeginInit();
+            this.thirdItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thirdPic)).BeginInit();
+            this.fourthItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fourthPic)).BeginInit();
+            this.fifthItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fifthPic)).BeginInit();
+            this.sixthItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sixthPic)).BeginInit();
+            this.seventhItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.seventhPic)).BeginInit();
+            this.eighthItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eighthPic)).BeginInit();
+            this.ninthItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ninthPic)).BeginInit();
+            this.firstItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.firstPic)).BeginInit();
+            this.tenthIten.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tenthPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.firstCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fifthcancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sixthCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seventhCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eighthCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ninthCancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tenthCancel)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -657,6 +723,12 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label5);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.label2);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Controls.Add(this.subName);
             this.tabPage4.Controls.Add(this.panel2);
             this.tabPage4.Controls.Add(this.panel1);
             this.tabPage4.Controls.Add(this.guna2Button4);
@@ -941,7 +1013,7 @@
             // guna2ShadowPanel9
             // 
             this.guna2ShadowPanel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel9.Controls.Add(this.guna2PictureBox30);
+            this.guna2ShadowPanel9.Controls.Add(this.peShorts);
             this.guna2ShadowPanel9.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel9.Location = new System.Drawing.Point(1076, 15);
             this.guna2ShadowPanel9.Name = "guna2ShadowPanel9";
@@ -950,22 +1022,23 @@
             this.guna2ShadowPanel9.Size = new System.Drawing.Size(171, 154);
             this.guna2ShadowPanel9.TabIndex = 7;
             // 
-            // guna2PictureBox30
+            // peShorts
             // 
-            this.guna2PictureBox30.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox30.Image")));
-            this.guna2PictureBox30.ImageRotate = 0F;
-            this.guna2PictureBox30.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox30.Name = "guna2PictureBox30";
-            this.guna2PictureBox30.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox30.TabIndex = 5;
-            this.guna2PictureBox30.TabStop = false;
+            this.peShorts.FillColor = System.Drawing.Color.Transparent;
+            this.peShorts.Image = ((System.Drawing.Image)(resources.GetObject("peShorts.Image")));
+            this.peShorts.ImageRotate = 0F;
+            this.peShorts.Location = new System.Drawing.Point(42, 14);
+            this.peShorts.Name = "peShorts";
+            this.peShorts.Size = new System.Drawing.Size(95, 124);
+            this.peShorts.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.peShorts.TabIndex = 5;
+            this.peShorts.TabStop = false;
+            this.peShorts.Click += new System.EventHandler(this.peShorts_Click);
             // 
             // guna2ShadowPanel8
             // 
             this.guna2ShadowPanel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel8.Controls.Add(this.guna2PictureBox29);
+            this.guna2ShadowPanel8.Controls.Add(this.pePants);
             this.guna2ShadowPanel8.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel8.Location = new System.Drawing.Point(867, 15);
             this.guna2ShadowPanel8.Name = "guna2ShadowPanel8";
@@ -974,22 +1047,23 @@
             this.guna2ShadowPanel8.Size = new System.Drawing.Size(170, 154);
             this.guna2ShadowPanel8.TabIndex = 6;
             // 
-            // guna2PictureBox29
+            // pePants
             // 
-            this.guna2PictureBox29.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox29.Image")));
-            this.guna2PictureBox29.ImageRotate = 0F;
-            this.guna2PictureBox29.Location = new System.Drawing.Point(44, 14);
-            this.guna2PictureBox29.Name = "guna2PictureBox29";
-            this.guna2PictureBox29.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox29.TabIndex = 4;
-            this.guna2PictureBox29.TabStop = false;
+            this.pePants.FillColor = System.Drawing.Color.Transparent;
+            this.pePants.Image = ((System.Drawing.Image)(resources.GetObject("pePants.Image")));
+            this.pePants.ImageRotate = 0F;
+            this.pePants.Location = new System.Drawing.Point(44, 14);
+            this.pePants.Name = "pePants";
+            this.pePants.Size = new System.Drawing.Size(95, 124);
+            this.pePants.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pePants.TabIndex = 4;
+            this.pePants.TabStop = false;
+            this.pePants.Click += new System.EventHandler(this.pePants_Click);
             // 
             // guna2ShadowPanel7
             // 
             this.guna2ShadowPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel7.Controls.Add(this.guna2PictureBox28);
+            this.guna2ShadowPanel7.Controls.Add(this.peShirt);
             this.guna2ShadowPanel7.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel7.Location = new System.Drawing.Point(665, 15);
             this.guna2ShadowPanel7.Name = "guna2ShadowPanel7";
@@ -998,22 +1072,23 @@
             this.guna2ShadowPanel7.Size = new System.Drawing.Size(170, 154);
             this.guna2ShadowPanel7.TabIndex = 6;
             // 
-            // guna2PictureBox28
+            // peShirt
             // 
-            this.guna2PictureBox28.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox28.Image")));
-            this.guna2PictureBox28.ImageRotate = 0F;
-            this.guna2PictureBox28.Location = new System.Drawing.Point(37, 14);
-            this.guna2PictureBox28.Name = "guna2PictureBox28";
-            this.guna2PictureBox28.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox28.TabIndex = 3;
-            this.guna2PictureBox28.TabStop = false;
+            this.peShirt.FillColor = System.Drawing.Color.Transparent;
+            this.peShirt.Image = ((System.Drawing.Image)(resources.GetObject("peShirt.Image")));
+            this.peShirt.ImageRotate = 0F;
+            this.peShirt.Location = new System.Drawing.Point(37, 14);
+            this.peShirt.Name = "peShirt";
+            this.peShirt.Size = new System.Drawing.Size(95, 124);
+            this.peShirt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.peShirt.TabIndex = 3;
+            this.peShirt.TabStop = false;
+            this.peShirt.Click += new System.EventHandler(this.peShirt_Click);
             // 
             // guna2ShadowPanel6
             // 
             this.guna2ShadowPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel6.Controls.Add(this.guna2PictureBox27);
+            this.guna2ShadowPanel6.Controls.Add(this.univ);
             this.guna2ShadowPanel6.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel6.Location = new System.Drawing.Point(458, 15);
             this.guna2ShadowPanel6.Name = "guna2ShadowPanel6";
@@ -1022,22 +1097,23 @@
             this.guna2ShadowPanel6.Size = new System.Drawing.Size(170, 154);
             this.guna2ShadowPanel6.TabIndex = 6;
             // 
-            // guna2PictureBox27
+            // univ
             // 
-            this.guna2PictureBox27.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox27.Image")));
-            this.guna2PictureBox27.ImageRotate = 0F;
-            this.guna2PictureBox27.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox27.Name = "guna2PictureBox27";
-            this.guna2PictureBox27.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox27.TabIndex = 2;
-            this.guna2PictureBox27.TabStop = false;
+            this.univ.FillColor = System.Drawing.Color.Transparent;
+            this.univ.Image = ((System.Drawing.Image)(resources.GetObject("univ.Image")));
+            this.univ.ImageRotate = 0F;
+            this.univ.Location = new System.Drawing.Point(35, 14);
+            this.univ.Name = "univ";
+            this.univ.Size = new System.Drawing.Size(95, 124);
+            this.univ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.univ.TabIndex = 2;
+            this.univ.TabStop = false;
+            this.univ.Click += new System.EventHandler(this.univ_Click);
             // 
             // guna2ShadowPanel5
             // 
             this.guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel5.Controls.Add(this.guna2PictureBox26);
+            this.guna2ShadowPanel5.Controls.Add(this.typeB);
             this.guna2ShadowPanel5.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel5.Location = new System.Drawing.Point(247, 15);
             this.guna2ShadowPanel5.Name = "guna2ShadowPanel5";
@@ -1046,22 +1122,23 @@
             this.guna2ShadowPanel5.Size = new System.Drawing.Size(170, 154);
             this.guna2ShadowPanel5.TabIndex = 6;
             // 
-            // guna2PictureBox26
+            // typeB
             // 
-            this.guna2PictureBox26.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox26.Image")));
-            this.guna2PictureBox26.ImageRotate = 0F;
-            this.guna2PictureBox26.Location = new System.Drawing.Point(39, 14);
-            this.guna2PictureBox26.Name = "guna2PictureBox26";
-            this.guna2PictureBox26.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox26.TabIndex = 1;
-            this.guna2PictureBox26.TabStop = false;
+            this.typeB.FillColor = System.Drawing.Color.Transparent;
+            this.typeB.Image = ((System.Drawing.Image)(resources.GetObject("typeB.Image")));
+            this.typeB.ImageRotate = 0F;
+            this.typeB.Location = new System.Drawing.Point(39, 14);
+            this.typeB.Name = "typeB";
+            this.typeB.Size = new System.Drawing.Size(95, 124);
+            this.typeB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.typeB.TabIndex = 1;
+            this.typeB.TabStop = false;
+            this.typeB.Click += new System.EventHandler(this.typeB_Click);
             // 
             // guna2ShadowPanel4
             // 
             this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel4.Controls.Add(this.guna2PictureBox25);
+            this.guna2ShadowPanel4.Controls.Add(this.typeA);
             this.guna2ShadowPanel4.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel4.Location = new System.Drawing.Point(39, 15);
             this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
@@ -1070,17 +1147,18 @@
             this.guna2ShadowPanel4.Size = new System.Drawing.Size(170, 154);
             this.guna2ShadowPanel4.TabIndex = 5;
             // 
-            // guna2PictureBox25
+            // typeA
             // 
-            this.guna2PictureBox25.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox25.Image")));
-            this.guna2PictureBox25.ImageRotate = 0F;
-            this.guna2PictureBox25.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox25.Name = "guna2PictureBox25";
-            this.guna2PictureBox25.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox25.TabIndex = 0;
-            this.guna2PictureBox25.TabStop = false;
+            this.typeA.FillColor = System.Drawing.Color.Transparent;
+            this.typeA.Image = ((System.Drawing.Image)(resources.GetObject("typeA.Image")));
+            this.typeA.ImageRotate = 0F;
+            this.typeA.Location = new System.Drawing.Point(35, 14);
+            this.typeA.Name = "typeA";
+            this.typeA.Size = new System.Drawing.Size(95, 124);
+            this.typeA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.typeA.TabIndex = 0;
+            this.typeA.TabStop = false;
+            this.typeA.Click += new System.EventHandler(this.typeA_Click);
             // 
             // guna2Button4
             // 
@@ -1944,12 +2022,23 @@
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(256, 49);
             this.guna2Button2.TabIndex = 2;
-            this.guna2Button2.Text = "Cancel Order";
+            this.guna2Button2.Text = "Cancel Order (All)";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2ShadowPanel3
             // 
             this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel3.Controls.Add(this.guna2HtmlLabel8);
+            this.guna2ShadowPanel3.Controls.Add(this.tenthIten);
+            this.guna2ShadowPanel3.Controls.Add(this.firstItem);
+            this.guna2ShadowPanel3.Controls.Add(this.ninthItem);
+            this.guna2ShadowPanel3.Controls.Add(this.eighthItem);
+            this.guna2ShadowPanel3.Controls.Add(this.seventhItem);
+            this.guna2ShadowPanel3.Controls.Add(this.ttext);
+            this.guna2ShadowPanel3.Controls.Add(this.sixthItem);
+            this.guna2ShadowPanel3.Controls.Add(this.fifthItem);
+            this.guna2ShadowPanel3.Controls.Add(this.fourthItem);
+            this.guna2ShadowPanel3.Controls.Add(this.thirdItem);
+            this.guna2ShadowPanel3.Controls.Add(this.secondItem);
             this.guna2ShadowPanel3.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel3.Location = new System.Drawing.Point(-4, 569);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
@@ -1958,16 +2047,16 @@
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(1930, 159);
             this.guna2ShadowPanel3.TabIndex = 0;
             // 
-            // guna2HtmlLabel8
+            // ttext
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(899, 56);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(205, 25);
-            this.guna2HtmlLabel8.TabIndex = 1;
-            this.guna2HtmlLabel8.Text = "Your order is empty..";
+            this.ttext.BackColor = System.Drawing.Color.Transparent;
+            this.ttext.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ttext.ForeColor = System.Drawing.Color.Black;
+            this.ttext.Location = new System.Drawing.Point(899, 56);
+            this.ttext.Name = "ttext";
+            this.ttext.Size = new System.Drawing.Size(205, 25);
+            this.ttext.TabIndex = 1;
+            this.ttext.Text = "Your order is empty..";
             // 
             // guna2CustomGradientPanel7
             // 
@@ -2398,6 +2487,476 @@
             this.guna2PictureBox8.TabIndex = 6;
             this.guna2PictureBox8.TabStop = false;
             // 
+            // subName
+            // 
+            this.subName.AutoSize = true;
+            this.subName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subName.Location = new System.Drawing.Point(281, 196);
+            this.subName.Name = "subName";
+            this.subName.Size = new System.Drawing.Size(139, 16);
+            this.subName.TabIndex = 17;
+            this.subName.Text = "FEMALE UNIFORM";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(78, 196);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 16);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "MALE UNIFORM";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(483, 196);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 16);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "UNIVERSITY SHIRT";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(724, 196);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 16);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "P.E SHIRT";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(926, 196);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 16);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "P.E PANTS";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1136, 196);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 16);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "P.E SHORT";
+            // 
+            // secondItem
+            // 
+            this.secondItem.BackColor = System.Drawing.Color.Transparent;
+            this.secondItem.Controls.Add(this.secondCancel);
+            this.secondItem.Controls.Add(this.secondPic);
+            this.secondItem.FillColor = System.Drawing.Color.White;
+            this.secondItem.Location = new System.Drawing.Point(285, 18);
+            this.secondItem.Name = "secondItem";
+            this.secondItem.ShadowColor = System.Drawing.Color.Black;
+            this.secondItem.ShadowDepth = 200;
+            this.secondItem.Size = new System.Drawing.Size(144, 125);
+            this.secondItem.TabIndex = 7;
+            this.secondItem.Visible = false;
+            // 
+            // secondPic
+            // 
+            this.secondPic.FillColor = System.Drawing.Color.Transparent;
+            this.secondPic.Image = ((System.Drawing.Image)(resources.GetObject("secondPic.Image")));
+            this.secondPic.ImageRotate = 0F;
+            this.secondPic.Location = new System.Drawing.Point(39, 14);
+            this.secondPic.Name = "secondPic";
+            this.secondPic.Size = new System.Drawing.Size(69, 95);
+            this.secondPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.secondPic.TabIndex = 1;
+            this.secondPic.TabStop = false;
+            // 
+            // thirdItem
+            // 
+            this.thirdItem.BackColor = System.Drawing.Color.Transparent;
+            this.thirdItem.Controls.Add(this.thirdCancel);
+            this.thirdItem.Controls.Add(this.thirdPic);
+            this.thirdItem.FillColor = System.Drawing.Color.White;
+            this.thirdItem.Location = new System.Drawing.Point(462, 18);
+            this.thirdItem.Name = "thirdItem";
+            this.thirdItem.ShadowColor = System.Drawing.Color.Black;
+            this.thirdItem.ShadowDepth = 200;
+            this.thirdItem.Size = new System.Drawing.Size(144, 125);
+            this.thirdItem.TabIndex = 8;
+            this.thirdItem.Visible = false;
+            // 
+            // thirdPic
+            // 
+            this.thirdPic.FillColor = System.Drawing.Color.Transparent;
+            this.thirdPic.Image = ((System.Drawing.Image)(resources.GetObject("thirdPic.Image")));
+            this.thirdPic.ImageRotate = 0F;
+            this.thirdPic.Location = new System.Drawing.Point(39, 14);
+            this.thirdPic.Name = "thirdPic";
+            this.thirdPic.Size = new System.Drawing.Size(69, 95);
+            this.thirdPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.thirdPic.TabIndex = 1;
+            this.thirdPic.TabStop = false;
+            // 
+            // fourthItem
+            // 
+            this.fourthItem.BackColor = System.Drawing.Color.Transparent;
+            this.fourthItem.Controls.Add(this.fourthCancel);
+            this.fourthItem.Controls.Add(this.fourthPic);
+            this.fourthItem.FillColor = System.Drawing.Color.White;
+            this.fourthItem.Location = new System.Drawing.Point(637, 18);
+            this.fourthItem.Name = "fourthItem";
+            this.fourthItem.ShadowColor = System.Drawing.Color.Black;
+            this.fourthItem.ShadowDepth = 200;
+            this.fourthItem.Size = new System.Drawing.Size(144, 125);
+            this.fourthItem.TabIndex = 8;
+            this.fourthItem.Visible = false;
+            // 
+            // fourthPic
+            // 
+            this.fourthPic.FillColor = System.Drawing.Color.Transparent;
+            this.fourthPic.Image = ((System.Drawing.Image)(resources.GetObject("fourthPic.Image")));
+            this.fourthPic.ImageRotate = 0F;
+            this.fourthPic.Location = new System.Drawing.Point(39, 14);
+            this.fourthPic.Name = "fourthPic";
+            this.fourthPic.Size = new System.Drawing.Size(69, 95);
+            this.fourthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourthPic.TabIndex = 1;
+            this.fourthPic.TabStop = false;
+            // 
+            // fifthItem
+            // 
+            this.fifthItem.BackColor = System.Drawing.Color.Transparent;
+            this.fifthItem.Controls.Add(this.fifthcancel);
+            this.fifthItem.Controls.Add(this.fifthPic);
+            this.fifthItem.FillColor = System.Drawing.Color.White;
+            this.fifthItem.Location = new System.Drawing.Point(811, 18);
+            this.fifthItem.Name = "fifthItem";
+            this.fifthItem.ShadowColor = System.Drawing.Color.Black;
+            this.fifthItem.ShadowDepth = 200;
+            this.fifthItem.Size = new System.Drawing.Size(144, 125);
+            this.fifthItem.TabIndex = 8;
+            this.fifthItem.Visible = false;
+            // 
+            // fifthPic
+            // 
+            this.fifthPic.FillColor = System.Drawing.Color.Transparent;
+            this.fifthPic.Image = ((System.Drawing.Image)(resources.GetObject("fifthPic.Image")));
+            this.fifthPic.ImageRotate = 0F;
+            this.fifthPic.Location = new System.Drawing.Point(39, 14);
+            this.fifthPic.Name = "fifthPic";
+            this.fifthPic.Size = new System.Drawing.Size(69, 95);
+            this.fifthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fifthPic.TabIndex = 1;
+            this.fifthPic.TabStop = false;
+            // 
+            // sixthItem
+            // 
+            this.sixthItem.BackColor = System.Drawing.Color.Transparent;
+            this.sixthItem.Controls.Add(this.sixthCancel);
+            this.sixthItem.Controls.Add(this.sixthPic);
+            this.sixthItem.FillColor = System.Drawing.Color.White;
+            this.sixthItem.Location = new System.Drawing.Point(987, 18);
+            this.sixthItem.Name = "sixthItem";
+            this.sixthItem.ShadowColor = System.Drawing.Color.Black;
+            this.sixthItem.ShadowDepth = 200;
+            this.sixthItem.Size = new System.Drawing.Size(144, 125);
+            this.sixthItem.TabIndex = 9;
+            this.sixthItem.Visible = false;
+            // 
+            // sixthPic
+            // 
+            this.sixthPic.FillColor = System.Drawing.Color.Transparent;
+            this.sixthPic.Image = ((System.Drawing.Image)(resources.GetObject("sixthPic.Image")));
+            this.sixthPic.ImageRotate = 0F;
+            this.sixthPic.Location = new System.Drawing.Point(39, 14);
+            this.sixthPic.Name = "sixthPic";
+            this.sixthPic.Size = new System.Drawing.Size(69, 95);
+            this.sixthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sixthPic.TabIndex = 1;
+            this.sixthPic.TabStop = false;
+            // 
+            // seventhItem
+            // 
+            this.seventhItem.BackColor = System.Drawing.Color.Transparent;
+            this.seventhItem.Controls.Add(this.seventhCancel);
+            this.seventhItem.Controls.Add(this.seventhPic);
+            this.seventhItem.FillColor = System.Drawing.Color.White;
+            this.seventhItem.Location = new System.Drawing.Point(1163, 18);
+            this.seventhItem.Name = "seventhItem";
+            this.seventhItem.ShadowColor = System.Drawing.Color.Black;
+            this.seventhItem.ShadowDepth = 200;
+            this.seventhItem.Size = new System.Drawing.Size(144, 125);
+            this.seventhItem.TabIndex = 10;
+            this.seventhItem.Visible = false;
+            // 
+            // seventhPic
+            // 
+            this.seventhPic.FillColor = System.Drawing.Color.Transparent;
+            this.seventhPic.Image = ((System.Drawing.Image)(resources.GetObject("seventhPic.Image")));
+            this.seventhPic.ImageRotate = 0F;
+            this.seventhPic.Location = new System.Drawing.Point(39, 14);
+            this.seventhPic.Name = "seventhPic";
+            this.seventhPic.Size = new System.Drawing.Size(69, 95);
+            this.seventhPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.seventhPic.TabIndex = 1;
+            this.seventhPic.TabStop = false;
+            // 
+            // eighthItem
+            // 
+            this.eighthItem.BackColor = System.Drawing.Color.Transparent;
+            this.eighthItem.Controls.Add(this.eighthCancel);
+            this.eighthItem.Controls.Add(this.eighthPic);
+            this.eighthItem.FillColor = System.Drawing.Color.White;
+            this.eighthItem.Location = new System.Drawing.Point(1334, 18);
+            this.eighthItem.Name = "eighthItem";
+            this.eighthItem.ShadowColor = System.Drawing.Color.Black;
+            this.eighthItem.ShadowDepth = 200;
+            this.eighthItem.Size = new System.Drawing.Size(144, 125);
+            this.eighthItem.TabIndex = 11;
+            this.eighthItem.Visible = false;
+            // 
+            // eighthPic
+            // 
+            this.eighthPic.FillColor = System.Drawing.Color.Transparent;
+            this.eighthPic.Image = ((System.Drawing.Image)(resources.GetObject("eighthPic.Image")));
+            this.eighthPic.ImageRotate = 0F;
+            this.eighthPic.Location = new System.Drawing.Point(39, 14);
+            this.eighthPic.Name = "eighthPic";
+            this.eighthPic.Size = new System.Drawing.Size(69, 95);
+            this.eighthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.eighthPic.TabIndex = 1;
+            this.eighthPic.TabStop = false;
+            // 
+            // ninthItem
+            // 
+            this.ninthItem.BackColor = System.Drawing.Color.Transparent;
+            this.ninthItem.Controls.Add(this.ninthCancel);
+            this.ninthItem.Controls.Add(this.ninthPic);
+            this.ninthItem.FillColor = System.Drawing.Color.White;
+            this.ninthItem.Location = new System.Drawing.Point(1510, 18);
+            this.ninthItem.Name = "ninthItem";
+            this.ninthItem.ShadowColor = System.Drawing.Color.Black;
+            this.ninthItem.ShadowDepth = 200;
+            this.ninthItem.Size = new System.Drawing.Size(144, 125);
+            this.ninthItem.TabIndex = 10;
+            this.ninthItem.Visible = false;
+            // 
+            // ninthPic
+            // 
+            this.ninthPic.FillColor = System.Drawing.Color.Transparent;
+            this.ninthPic.Image = ((System.Drawing.Image)(resources.GetObject("ninthPic.Image")));
+            this.ninthPic.ImageRotate = 0F;
+            this.ninthPic.Location = new System.Drawing.Point(39, 14);
+            this.ninthPic.Name = "ninthPic";
+            this.ninthPic.Size = new System.Drawing.Size(69, 95);
+            this.ninthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ninthPic.TabIndex = 1;
+            this.ninthPic.TabStop = false;
+            // 
+            // firstItem
+            // 
+            this.firstItem.BackColor = System.Drawing.Color.Transparent;
+            this.firstItem.Controls.Add(this.firstCancel);
+            this.firstItem.Controls.Add(this.firstPic);
+            this.firstItem.FillColor = System.Drawing.Color.White;
+            this.firstItem.Location = new System.Drawing.Point(105, 18);
+            this.firstItem.Name = "firstItem";
+            this.firstItem.ShadowColor = System.Drawing.Color.Black;
+            this.firstItem.ShadowDepth = 200;
+            this.firstItem.Size = new System.Drawing.Size(144, 125);
+            this.firstItem.TabIndex = 8;
+            this.firstItem.Visible = false;
+            // 
+            // firstPic
+            // 
+            this.firstPic.FillColor = System.Drawing.Color.Transparent;
+            this.firstPic.Image = ((System.Drawing.Image)(resources.GetObject("firstPic.Image")));
+            this.firstPic.ImageRotate = 0F;
+            this.firstPic.Location = new System.Drawing.Point(39, 14);
+            this.firstPic.Name = "firstPic";
+            this.firstPic.Size = new System.Drawing.Size(69, 95);
+            this.firstPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.firstPic.TabIndex = 1;
+            this.firstPic.TabStop = false;
+            // 
+            // tenthIten
+            // 
+            this.tenthIten.BackColor = System.Drawing.Color.Transparent;
+            this.tenthIten.Controls.Add(this.tenthCancel);
+            this.tenthIten.Controls.Add(this.tenthPic);
+            this.tenthIten.FillColor = System.Drawing.Color.White;
+            this.tenthIten.Location = new System.Drawing.Point(1688, 18);
+            this.tenthIten.Name = "tenthIten";
+            this.tenthIten.ShadowColor = System.Drawing.Color.Black;
+            this.tenthIten.ShadowDepth = 200;
+            this.tenthIten.Size = new System.Drawing.Size(144, 125);
+            this.tenthIten.TabIndex = 11;
+            this.tenthIten.Visible = false;
+            // 
+            // tenthPic
+            // 
+            this.tenthPic.FillColor = System.Drawing.Color.Transparent;
+            this.tenthPic.Image = ((System.Drawing.Image)(resources.GetObject("tenthPic.Image")));
+            this.tenthPic.ImageRotate = 0F;
+            this.tenthPic.Location = new System.Drawing.Point(39, 14);
+            this.tenthPic.Name = "tenthPic";
+            this.tenthPic.Size = new System.Drawing.Size(69, 95);
+            this.tenthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.tenthPic.TabIndex = 1;
+            this.tenthPic.TabStop = false;
+            // 
+            // firstCancel
+            // 
+            this.firstCancel.BackColor = System.Drawing.Color.Transparent;
+            this.firstCancel.FillColor = System.Drawing.Color.Transparent;
+            this.firstCancel.Image = ((System.Drawing.Image)(resources.GetObject("firstCancel.Image")));
+            this.firstCancel.ImageRotate = 0F;
+            this.firstCancel.Location = new System.Drawing.Point(109, 3);
+            this.firstCancel.Name = "firstCancel";
+            this.firstCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.firstCancel.Size = new System.Drawing.Size(32, 28);
+            this.firstCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.firstCancel.TabIndex = 12;
+            this.firstCancel.TabStop = false;
+            this.firstCancel.Click += new System.EventHandler(this.firstCancel_Click);
+            // 
+            // secondCancel
+            // 
+            this.secondCancel.BackColor = System.Drawing.Color.Transparent;
+            this.secondCancel.FillColor = System.Drawing.Color.Transparent;
+            this.secondCancel.Image = ((System.Drawing.Image)(resources.GetObject("secondCancel.Image")));
+            this.secondCancel.ImageRotate = 0F;
+            this.secondCancel.Location = new System.Drawing.Point(109, 3);
+            this.secondCancel.Name = "secondCancel";
+            this.secondCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.secondCancel.Size = new System.Drawing.Size(32, 28);
+            this.secondCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.secondCancel.TabIndex = 13;
+            this.secondCancel.TabStop = false;
+            this.secondCancel.Click += new System.EventHandler(this.secondCancel_Click);
+            // 
+            // thirdCancel
+            // 
+            this.thirdCancel.BackColor = System.Drawing.Color.Transparent;
+            this.thirdCancel.FillColor = System.Drawing.Color.Transparent;
+            this.thirdCancel.Image = ((System.Drawing.Image)(resources.GetObject("thirdCancel.Image")));
+            this.thirdCancel.ImageRotate = 0F;
+            this.thirdCancel.Location = new System.Drawing.Point(109, 3);
+            this.thirdCancel.Name = "thirdCancel";
+            this.thirdCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.thirdCancel.Size = new System.Drawing.Size(32, 28);
+            this.thirdCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.thirdCancel.TabIndex = 14;
+            this.thirdCancel.TabStop = false;
+            this.thirdCancel.Click += new System.EventHandler(this.thirdCancel_Click);
+            // 
+            // fourthCancel
+            // 
+            this.fourthCancel.BackColor = System.Drawing.Color.Transparent;
+            this.fourthCancel.FillColor = System.Drawing.Color.Transparent;
+            this.fourthCancel.Image = ((System.Drawing.Image)(resources.GetObject("fourthCancel.Image")));
+            this.fourthCancel.ImageRotate = 0F;
+            this.fourthCancel.Location = new System.Drawing.Point(109, 3);
+            this.fourthCancel.Name = "fourthCancel";
+            this.fourthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.fourthCancel.Size = new System.Drawing.Size(32, 28);
+            this.fourthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourthCancel.TabIndex = 14;
+            this.fourthCancel.TabStop = false;
+            this.fourthCancel.Click += new System.EventHandler(this.fourthCancel_Click);
+            // 
+            // fifthcancel
+            // 
+            this.fifthcancel.BackColor = System.Drawing.Color.Transparent;
+            this.fifthcancel.FillColor = System.Drawing.Color.Transparent;
+            this.fifthcancel.Image = ((System.Drawing.Image)(resources.GetObject("fifthcancel.Image")));
+            this.fifthcancel.ImageRotate = 0F;
+            this.fifthcancel.Location = new System.Drawing.Point(109, 3);
+            this.fifthcancel.Name = "fifthcancel";
+            this.fifthcancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.fifthcancel.Size = new System.Drawing.Size(32, 28);
+            this.fifthcancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fifthcancel.TabIndex = 15;
+            this.fifthcancel.TabStop = false;
+            this.fifthcancel.Click += new System.EventHandler(this.fifthcancel_Click);
+            // 
+            // sixthCancel
+            // 
+            this.sixthCancel.BackColor = System.Drawing.Color.Transparent;
+            this.sixthCancel.FillColor = System.Drawing.Color.Transparent;
+            this.sixthCancel.Image = ((System.Drawing.Image)(resources.GetObject("sixthCancel.Image")));
+            this.sixthCancel.ImageRotate = 0F;
+            this.sixthCancel.Location = new System.Drawing.Point(109, 3);
+            this.sixthCancel.Name = "sixthCancel";
+            this.sixthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.sixthCancel.Size = new System.Drawing.Size(32, 28);
+            this.sixthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sixthCancel.TabIndex = 16;
+            this.sixthCancel.TabStop = false;
+            this.sixthCancel.Click += new System.EventHandler(this.sixthCancel_Click);
+            // 
+            // seventhCancel
+            // 
+            this.seventhCancel.BackColor = System.Drawing.Color.Transparent;
+            this.seventhCancel.FillColor = System.Drawing.Color.Transparent;
+            this.seventhCancel.Image = ((System.Drawing.Image)(resources.GetObject("seventhCancel.Image")));
+            this.seventhCancel.ImageRotate = 0F;
+            this.seventhCancel.Location = new System.Drawing.Point(109, 3);
+            this.seventhCancel.Name = "seventhCancel";
+            this.seventhCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.seventhCancel.Size = new System.Drawing.Size(32, 28);
+            this.seventhCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.seventhCancel.TabIndex = 15;
+            this.seventhCancel.TabStop = false;
+            this.seventhCancel.Click += new System.EventHandler(this.seventhCancel_Click);
+            // 
+            // eighthCancel
+            // 
+            this.eighthCancel.BackColor = System.Drawing.Color.Transparent;
+            this.eighthCancel.FillColor = System.Drawing.Color.Transparent;
+            this.eighthCancel.Image = ((System.Drawing.Image)(resources.GetObject("eighthCancel.Image")));
+            this.eighthCancel.ImageRotate = 0F;
+            this.eighthCancel.Location = new System.Drawing.Point(109, 3);
+            this.eighthCancel.Name = "eighthCancel";
+            this.eighthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.eighthCancel.Size = new System.Drawing.Size(32, 28);
+            this.eighthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.eighthCancel.TabIndex = 16;
+            this.eighthCancel.TabStop = false;
+            this.eighthCancel.Click += new System.EventHandler(this.eighthCancel_Click);
+            // 
+            // ninthCancel
+            // 
+            this.ninthCancel.BackColor = System.Drawing.Color.Transparent;
+            this.ninthCancel.FillColor = System.Drawing.Color.Transparent;
+            this.ninthCancel.Image = ((System.Drawing.Image)(resources.GetObject("ninthCancel.Image")));
+            this.ninthCancel.ImageRotate = 0F;
+            this.ninthCancel.Location = new System.Drawing.Point(109, 3);
+            this.ninthCancel.Name = "ninthCancel";
+            this.ninthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.ninthCancel.Size = new System.Drawing.Size(32, 28);
+            this.ninthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ninthCancel.TabIndex = 17;
+            this.ninthCancel.TabStop = false;
+            this.ninthCancel.Click += new System.EventHandler(this.ninthCancel_Click);
+            // 
+            // tenthCancel
+            // 
+            this.tenthCancel.BackColor = System.Drawing.Color.Transparent;
+            this.tenthCancel.FillColor = System.Drawing.Color.Transparent;
+            this.tenthCancel.Image = ((System.Drawing.Image)(resources.GetObject("tenthCancel.Image")));
+            this.tenthCancel.ImageRotate = 0F;
+            this.tenthCancel.Location = new System.Drawing.Point(109, 3);
+            this.tenthCancel.Name = "tenthCancel";
+            this.tenthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.tenthCancel.Size = new System.Drawing.Size(32, 28);
+            this.tenthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.tenthCancel.TabIndex = 18;
+            this.tenthCancel.TabStop = false;
+            this.tenthCancel.Click += new System.EventHandler(this.tenthCancel_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2426,6 +2985,7 @@
             this.guna2CustomGradientPanel6.ResumeLayout(false);
             this.guna2TabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.guna2ShadowPanel17.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox38)).EndInit();
@@ -2449,17 +3009,17 @@
             this.guna2ShadowPanel18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox39)).EndInit();
             this.guna2ShadowPanel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peShorts)).EndInit();
             this.guna2ShadowPanel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pePants)).EndInit();
             this.guna2ShadowPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peShirt)).EndInit();
             this.guna2ShadowPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.univ)).EndInit();
             this.guna2ShadowPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeB)).EndInit();
             this.guna2ShadowPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.typeA)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.guna2ShadowPanel20.ResumeLayout(false);
@@ -2556,6 +3116,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
+            this.secondItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.secondPic)).EndInit();
+            this.thirdItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.thirdPic)).EndInit();
+            this.fourthItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fourthPic)).EndInit();
+            this.fifthItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fifthPic)).EndInit();
+            this.sixthItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.sixthPic)).EndInit();
+            this.seventhItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.seventhPic)).EndInit();
+            this.eighthItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.eighthPic)).EndInit();
+            this.ninthItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ninthPic)).EndInit();
+            this.firstItem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.firstPic)).EndInit();
+            this.tenthIten.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tenthPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.firstCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fifthcancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sixthCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seventhCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eighthCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ninthCancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tenthCancel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2639,8 +3229,8 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel7;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel6;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel5;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox26;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox25;
+        private Guna.UI2.WinForms.Guna2PictureBox typeB;
+        private Guna.UI2.WinForms.Guna2PictureBox typeA;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel17;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox38;
@@ -2662,10 +3252,10 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox40;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel18;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox39;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox30;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox29;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox28;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox27;
+        private Guna.UI2.WinForms.Guna2PictureBox peShorts;
+        private Guna.UI2.WinForms.Guna2PictureBox pePants;
+        private Guna.UI2.WinForms.Guna2PictureBox peShirt;
+        private Guna.UI2.WinForms.Guna2PictureBox univ;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel20;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox41;
@@ -2722,7 +3312,43 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox71;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel51;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox72;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label subName;
+        public Guna.UI2.WinForms.Guna2ShadowPanel sixthItem;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fifthItem;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fourthItem;
+        public Guna.UI2.WinForms.Guna2ShadowPanel thirdItem;
+        public Guna.UI2.WinForms.Guna2ShadowPanel secondItem;
+        public Guna.UI2.WinForms.Guna2ShadowPanel ninthItem;
+        public Guna.UI2.WinForms.Guna2ShadowPanel eighthItem;
+        public Guna.UI2.WinForms.Guna2ShadowPanel seventhItem;
+        public Guna.UI2.WinForms.Guna2ShadowPanel tenthIten;
+        public Guna.UI2.WinForms.Guna2ShadowPanel firstItem;
+        public Guna.UI2.WinForms.Guna2PictureBox sixthPic;
+        public Guna.UI2.WinForms.Guna2PictureBox fifthPic;
+        public Guna.UI2.WinForms.Guna2PictureBox fourthPic;
+        public Guna.UI2.WinForms.Guna2PictureBox thirdPic;
+        public Guna.UI2.WinForms.Guna2PictureBox secondPic;
+        public Guna.UI2.WinForms.Guna2PictureBox ninthPic;
+        public Guna.UI2.WinForms.Guna2PictureBox eighthPic;
+        public Guna.UI2.WinForms.Guna2PictureBox seventhPic;
+        public Guna.UI2.WinForms.Guna2PictureBox tenthPic;
+        public Guna.UI2.WinForms.Guna2PictureBox firstPic;
+        public Guna.UI2.WinForms.Guna2HtmlLabel ttext;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox firstCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox fourthCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox thirdCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox secondCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox tenthCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox ninthCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox eighthCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox seventhCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox sixthCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox fifthcancel;
     }
 }
 
