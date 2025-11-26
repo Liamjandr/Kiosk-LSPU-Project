@@ -26,6 +26,7 @@ namespace kiosk
         private void Main_Load(object sender, EventArgs e)
         {
 
+            ac = new AddCart(this);
         }
 
         
@@ -56,11 +57,13 @@ namespace kiosk
         private void guna2Button4_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
+            ResetCart();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
+            ResetCart();
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
