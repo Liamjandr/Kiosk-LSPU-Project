@@ -13,6 +13,7 @@ namespace kiosk
     public partial class Main : Form
     {
         AddCart ac;
+        //List<HistoryItem> historyItems = new List<HistoryItem>();
         public int cartCounter = 0;
         public Main()
         {
@@ -260,7 +261,7 @@ namespace kiosk
 
         private void adminIntialize()
         {
-            
+            receiptTable.HorizontalScroll.Visible = false;
         }
 
         private void dashboardButton_Click(object sender, EventArgs e)
@@ -271,6 +272,12 @@ namespace kiosk
         private void inventoryButton_Click(object sender, EventArgs e)
         {
             admin_tabControl.SelectedTab = admin_inventory;
+        }
+
+        private void receipt_Click(object sender, EventArgs e)
+        {
+            AddReceipt receipt = new AddReceipt();
+            receiptTable.Controls.Add(receipt);
         }
     }
     }

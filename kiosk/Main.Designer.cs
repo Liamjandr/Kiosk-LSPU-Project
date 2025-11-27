@@ -231,13 +231,19 @@
             this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
             this.admin_tabControl = new Guna.UI2.WinForms.Guna2TabControl();
             this.admin_dashboard = new System.Windows.Forms.TabPage();
+            this.dashSTAT1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.admin_inventory = new System.Windows.Forms.TabPage();
+            this.InventoryTable = new System.Windows.Forms.TableLayoutPanel();
+            this.admin_purchaseHistory = new System.Windows.Forms.TabPage();
+            this.receiptTable = new System.Windows.Forms.FlowLayoutPanel();
+            this.receipt = new System.Windows.Forms.Button();
+            this.purchaseHeader = new Guna.UI2.WinForms.Guna2TextBox();
+            this.historyTableHeader = new Guna.UI2.WinForms.Guna2Shapes();
             this.lspulogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.adminTitle = new Guna.UI2.WinForms.Guna2TextBox();
             this.admin_sidePanel = new Guna.UI2.WinForms.Guna2Shapes();
             this.adminBack = new Guna.UI2.WinForms.Guna2Button();
             this.adminHeader = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.footer.SuspendLayout();
@@ -412,6 +418,8 @@
             this.Admin.SuspendLayout();
             this.admin_tabControl.SuspendLayout();
             this.admin_dashboard.SuspendLayout();
+            this.admin_inventory.SuspendLayout();
+            this.admin_purchaseHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lspulogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -3003,7 +3011,7 @@
             this.inventoryButton.FillColor = System.Drawing.Color.Transparent;
             this.inventoryButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.inventoryButton.ForeColor = System.Drawing.Color.Black;
-            this.inventoryButton.Location = new System.Drawing.Point(3, 277);
+            this.inventoryButton.Location = new System.Drawing.Point(1219, 91);
             this.inventoryButton.Name = "inventoryButton";
             this.inventoryButton.Size = new System.Drawing.Size(310, 91);
             this.inventoryButton.TabIndex = 7;
@@ -3022,7 +3030,7 @@
             this.dashboardButton.FillColor = System.Drawing.Color.Transparent;
             this.dashboardButton.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dashboardButton.ForeColor = System.Drawing.Color.Black;
-            this.dashboardButton.Location = new System.Drawing.Point(3, 189);
+            this.dashboardButton.Location = new System.Drawing.Point(1219, 3);
             this.dashboardButton.Name = "dashboardButton";
             this.dashboardButton.Size = new System.Drawing.Size(310, 91);
             this.dashboardButton.TabIndex = 6;
@@ -3036,15 +3044,18 @@
             this.admin_tabControl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.admin_tabControl.Controls.Add(this.admin_dashboard);
             this.admin_tabControl.Controls.Add(this.admin_inventory);
+            this.admin_tabControl.Controls.Add(this.admin_purchaseHistory);
             this.admin_tabControl.ItemSize = new System.Drawing.Size(180, 40);
-            this.admin_tabControl.Location = new System.Drawing.Point(331, 211);
+            this.admin_tabControl.Location = new System.Drawing.Point(128, 195);
+            this.admin_tabControl.Margin = new System.Windows.Forms.Padding(0);
             this.admin_tabControl.Name = "admin_tabControl";
+            this.admin_tabControl.Padding = new System.Drawing.Point(0, 0);
             this.admin_tabControl.SelectedIndex = 0;
-            this.admin_tabControl.Size = new System.Drawing.Size(1562, 823);
+            this.admin_tabControl.Size = new System.Drawing.Size(1798, 816);
             this.admin_tabControl.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.admin_tabControl.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.admin_tabControl.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.admin_tabControl.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.admin_tabControl.TabButtonHoverState.ForeColor = System.Drawing.Color.Empty;
             this.admin_tabControl.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.admin_tabControl.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
             this.admin_tabControl.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -3057,30 +3068,146 @@
             this.admin_tabControl.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
             this.admin_tabControl.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
             this.admin_tabControl.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.admin_tabControl.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             this.admin_tabControl.TabIndex = 5;
             this.admin_tabControl.TabMenuBackColor = System.Drawing.Color.Transparent;
             // 
             // admin_dashboard
             // 
-            this.admin_dashboard.Controls.Add(this.guna2Shapes1);
-            this.admin_dashboard.ForeColor = System.Drawing.Color.Transparent;
+            this.admin_dashboard.BackColor = System.Drawing.Color.White;
+            this.admin_dashboard.Controls.Add(this.dashSTAT1);
+            this.admin_dashboard.ForeColor = System.Drawing.Color.Black;
             this.admin_dashboard.Location = new System.Drawing.Point(184, 4);
+            this.admin_dashboard.Margin = new System.Windows.Forms.Padding(0);
             this.admin_dashboard.Name = "admin_dashboard";
-            this.admin_dashboard.Padding = new System.Windows.Forms.Padding(3);
-            this.admin_dashboard.Size = new System.Drawing.Size(1374, 815);
+            this.admin_dashboard.Size = new System.Drawing.Size(1586, 808);
             this.admin_dashboard.TabIndex = 0;
             this.admin_dashboard.Text = "Dashbooard";
-            this.admin_dashboard.UseVisualStyleBackColor = true;
+            // 
+            // dashSTAT1
+            // 
+            this.dashSTAT1.BackColor = System.Drawing.Color.Transparent;
+            this.dashSTAT1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.dashSTAT1.BorderThickness = 5;
+            this.dashSTAT1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(67)))));
+            this.dashSTAT1.Location = new System.Drawing.Point(42, 15);
+            this.dashSTAT1.Name = "dashSTAT1";
+            this.dashSTAT1.PolygonSkip = 1;
+            this.dashSTAT1.Rotate = 0F;
+            this.dashSTAT1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
+            this.dashSTAT1.Size = new System.Drawing.Size(266, 150);
+            this.dashSTAT1.TabIndex = 0;
+            this.dashSTAT1.Text = "guna2Shapes1";
+            this.dashSTAT1.Zoom = 100;
             // 
             // admin_inventory
             // 
+            this.admin_inventory.BackColor = System.Drawing.Color.White;
+            this.admin_inventory.Controls.Add(this.InventoryTable);
             this.admin_inventory.Location = new System.Drawing.Point(184, 4);
+            this.admin_inventory.Margin = new System.Windows.Forms.Padding(0);
             this.admin_inventory.Name = "admin_inventory";
-            this.admin_inventory.Padding = new System.Windows.Forms.Padding(3);
-            this.admin_inventory.Size = new System.Drawing.Size(1374, 815);
+            this.admin_inventory.Size = new System.Drawing.Size(1586, 808);
             this.admin_inventory.TabIndex = 1;
             this.admin_inventory.Text = "Inventory";
-            this.admin_inventory.UseVisualStyleBackColor = true;
+            // 
+            // InventoryTable
+            // 
+            this.InventoryTable.ColumnCount = 2;
+            this.InventoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.InventoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.InventoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.InventoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.InventoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.InventoryTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.InventoryTable.Location = new System.Drawing.Point(327, 33);
+            this.InventoryTable.Name = "InventoryTable";
+            this.InventoryTable.RowCount = 2;
+            this.InventoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.2109F));
+            this.InventoryTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.7891F));
+            this.InventoryTable.Size = new System.Drawing.Size(1192, 755);
+            this.InventoryTable.TabIndex = 0;
+            // 
+            // admin_purchaseHistory
+            // 
+            this.admin_purchaseHistory.BackColor = System.Drawing.Color.White;
+            this.admin_purchaseHistory.Controls.Add(this.receiptTable);
+            this.admin_purchaseHistory.Controls.Add(this.receipt);
+            this.admin_purchaseHistory.Controls.Add(this.purchaseHeader);
+            this.admin_purchaseHistory.Controls.Add(this.historyTableHeader);
+            this.admin_purchaseHistory.Location = new System.Drawing.Point(184, 4);
+            this.admin_purchaseHistory.Name = "admin_purchaseHistory";
+            this.admin_purchaseHistory.Padding = new System.Windows.Forms.Padding(3);
+            this.admin_purchaseHistory.Size = new System.Drawing.Size(1610, 808);
+            this.admin_purchaseHistory.TabIndex = 2;
+            this.admin_purchaseHistory.Text = "Purchase History";
+            // 
+            // receiptTable
+            // 
+            this.receiptTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.receiptTable.AutoScroll = true;
+            this.receiptTable.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.receiptTable.Location = new System.Drawing.Point(21, 116);
+            this.receiptTable.Name = "receiptTable";
+            this.receiptTable.Size = new System.Drawing.Size(1578, 665);
+            this.receiptTable.TabIndex = 10;
+            this.receiptTable.WrapContents = false;
+            // 
+            // receipt
+            // 
+            this.receipt.Location = new System.Drawing.Point(134, 20);
+            this.receipt.Name = "receipt";
+            this.receipt.Size = new System.Drawing.Size(75, 23);
+            this.receipt.TabIndex = 9;
+            this.receipt.Text = "Receipt\r\n";
+            this.receipt.UseVisualStyleBackColor = true;
+            this.receipt.Click += new System.EventHandler(this.receipt_Click);
+            // 
+            // purchaseHeader
+            // 
+            this.purchaseHeader.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.purchaseHeader.BorderColor = System.Drawing.Color.Empty;
+            this.purchaseHeader.BorderThickness = 0;
+            this.purchaseHeader.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.purchaseHeader.DefaultText = "      Receipt ID            TYPE                         Description             " +
+    "               Date        QTY     Cost      Payment   Claim";
+            this.purchaseHeader.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.purchaseHeader.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.purchaseHeader.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.purchaseHeader.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.purchaseHeader.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(125)))), ((int)(((byte)(226)))));
+            this.purchaseHeader.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.purchaseHeader.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purchaseHeader.ForeColor = System.Drawing.Color.Transparent;
+            this.purchaseHeader.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.purchaseHeader.Location = new System.Drawing.Point(30, 62);
+            this.purchaseHeader.Margin = new System.Windows.Forms.Padding(6);
+            this.purchaseHeader.Name = "purchaseHeader";
+            this.purchaseHeader.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.purchaseHeader.PlaceholderText = "";
+            this.purchaseHeader.SelectedText = "";
+            this.purchaseHeader.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.purchaseHeader.Size = new System.Drawing.Size(1516, 34);
+            this.purchaseHeader.TabIndex = 8;
+            // 
+            // historyTableHeader
+            // 
+            this.historyTableHeader.BackColor = System.Drawing.Color.Transparent;
+            this.historyTableHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.historyTableHeader.BorderThickness = 3;
+            this.historyTableHeader.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(125)))), ((int)(((byte)(226)))));
+            this.historyTableHeader.Location = new System.Drawing.Point(21, 49);
+            this.historyTableHeader.Name = "historyTableHeader";
+            this.historyTableHeader.PolygonSkip = 1;
+            this.historyTableHeader.Rotate = 0F;
+            this.historyTableHeader.RoundedEdges.BottomLeft = false;
+            this.historyTableHeader.RoundedEdges.BottomRight = false;
+            this.historyTableHeader.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
+            this.historyTableHeader.Size = new System.Drawing.Size(1545, 60);
+            this.historyTableHeader.TabIndex = 1;
+            this.historyTableHeader.Text = "guna2Shapes1";
+            this.historyTableHeader.UseTransparentBackground = true;
+            this.historyTableHeader.Zoom = 100;
             // 
             // lspulogo
             // 
@@ -3122,6 +3249,7 @@
             // admin_sidePanel
             // 
             this.admin_sidePanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.admin_sidePanel.BorderThickness = 3;
             this.admin_sidePanel.FillColor = System.Drawing.Color.White;
             this.admin_sidePanel.Location = new System.Drawing.Point(-38, 91);
             this.admin_sidePanel.Name = "admin_sidePanel";
@@ -3153,6 +3281,7 @@
             // adminHeader
             // 
             this.adminHeader.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.adminHeader.BorderThickness = 3;
             this.adminHeader.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(87)))), ((int)(((byte)(200)))));
             this.adminHeader.Location = new System.Drawing.Point(0, 0);
             this.adminHeader.Name = "adminHeader";
@@ -3163,17 +3292,6 @@
             this.adminHeader.TabIndex = 1;
             this.adminHeader.Text = "c";
             this.adminHeader.Zoom = 100;
-            // 
-            // guna2Shapes1
-            // 
-            this.guna2Shapes1.Location = new System.Drawing.Point(228, 173);
-            this.guna2Shapes1.Name = "guna2Shapes1";
-            this.guna2Shapes1.PolygonSkip = 1;
-            this.guna2Shapes1.Rotate = 0F;
-            this.guna2Shapes1.Size = new System.Drawing.Size(200, 200);
-            this.guna2Shapes1.TabIndex = 0;
-            this.guna2Shapes1.Text = "guna2Shapes1";
-            this.guna2Shapes1.Zoom = 80;
             // 
             // Main
             // 
@@ -3367,6 +3485,8 @@
             this.Admin.ResumeLayout(false);
             this.admin_tabControl.ResumeLayout(false);
             this.admin_dashboard.ResumeLayout(false);
+            this.admin_inventory.ResumeLayout(false);
+            this.admin_purchaseHistory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lspulogo)).EndInit();
             this.ResumeLayout(false);
 
@@ -3582,7 +3702,13 @@
         private System.Windows.Forms.TabPage admin_inventory;
         private Guna.UI2.WinForms.Guna2Button dashboardButton;
         private Guna.UI2.WinForms.Guna2Button inventoryButton;
-        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
+        private Guna.UI2.WinForms.Guna2Shapes dashSTAT1;
+        private System.Windows.Forms.TabPage admin_purchaseHistory;
+        private System.Windows.Forms.TableLayoutPanel InventoryTable;
+        private Guna.UI2.WinForms.Guna2Shapes historyTableHeader;
+        private Guna.UI2.WinForms.Guna2TextBox purchaseHeader;
+        private System.Windows.Forms.Button receipt;
+        private System.Windows.Forms.FlowLayoutPanel receiptTable;
     }
 }
 
