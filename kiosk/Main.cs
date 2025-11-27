@@ -263,14 +263,14 @@ namespace kiosk
             
         }
 
-        private void adminTitle_TextChanged(object sender, EventArgs e)
+        private void dashboardButton_Click(object sender, EventArgs e)
         {
-
+            admin_tabControl.SelectedTab = admin_dashboard;
         }
 
-        private void adminHeader_Click(object sender, EventArgs e)
+        private void inventoryButton_Click(object sender, EventArgs e)
         {
-
+            admin_tabControl.SelectedTab = admin_inventory;
         }
     }
     }

@@ -227,10 +227,17 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Admin = new System.Windows.Forms.TabPage();
+            this.inventoryButton = new Guna.UI2.WinForms.Guna2Button();
+            this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
+            this.admin_tabControl = new Guna.UI2.WinForms.Guna2TabControl();
+            this.admin_dashboard = new System.Windows.Forms.TabPage();
+            this.admin_inventory = new System.Windows.Forms.TabPage();
+            this.lspulogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.adminTitle = new Guna.UI2.WinForms.Guna2TextBox();
             this.admin_sidePanel = new Guna.UI2.WinForms.Guna2Shapes();
             this.adminBack = new Guna.UI2.WinForms.Guna2Button();
             this.adminHeader = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.footer.SuspendLayout();
@@ -403,6 +410,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             this.Admin.SuspendLayout();
+            this.admin_tabControl.SuspendLayout();
+            this.admin_dashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lspulogo)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -2966,6 +2976,10 @@
             // 
             // Admin
             // 
+            this.Admin.Controls.Add(this.inventoryButton);
+            this.Admin.Controls.Add(this.dashboardButton);
+            this.Admin.Controls.Add(this.admin_tabControl);
+            this.Admin.Controls.Add(this.lspulogo);
             this.Admin.Controls.Add(this.adminTitle);
             this.Admin.Controls.Add(this.admin_sidePanel);
             this.Admin.Controls.Add(this.adminBack);
@@ -2977,6 +2991,109 @@
             this.Admin.TabIndex = 3;
             this.Admin.Text = "tabAdmin";
             this.Admin.UseVisualStyleBackColor = true;
+            // 
+            // inventoryButton
+            // 
+            this.inventoryButton.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.inventoryButton.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.inventoryButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.inventoryButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.inventoryButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.inventoryButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.inventoryButton.FillColor = System.Drawing.Color.Transparent;
+            this.inventoryButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.inventoryButton.ForeColor = System.Drawing.Color.Black;
+            this.inventoryButton.Location = new System.Drawing.Point(3, 277);
+            this.inventoryButton.Name = "inventoryButton";
+            this.inventoryButton.Size = new System.Drawing.Size(310, 91);
+            this.inventoryButton.TabIndex = 7;
+            this.inventoryButton.Text = "Inventory";
+            this.inventoryButton.UseTransparentBackground = true;
+            this.inventoryButton.Click += new System.EventHandler(this.inventoryButton_Click);
+            // 
+            // dashboardButton
+            // 
+            this.dashboardButton.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.dashboardButton.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.dashboardButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.dashboardButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.dashboardButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.dashboardButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.dashboardButton.FillColor = System.Drawing.Color.Transparent;
+            this.dashboardButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dashboardButton.ForeColor = System.Drawing.Color.Black;
+            this.dashboardButton.Location = new System.Drawing.Point(3, 189);
+            this.dashboardButton.Name = "dashboardButton";
+            this.dashboardButton.Size = new System.Drawing.Size(310, 91);
+            this.dashboardButton.TabIndex = 6;
+            this.dashboardButton.Text = "Dashboard";
+            this.dashboardButton.UseTransparentBackground = true;
+            this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
+            // 
+            // admin_tabControl
+            // 
+            this.admin_tabControl.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.admin_tabControl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.admin_tabControl.Controls.Add(this.admin_dashboard);
+            this.admin_tabControl.Controls.Add(this.admin_inventory);
+            this.admin_tabControl.ItemSize = new System.Drawing.Size(180, 40);
+            this.admin_tabControl.Location = new System.Drawing.Point(331, 211);
+            this.admin_tabControl.Name = "admin_tabControl";
+            this.admin_tabControl.SelectedIndex = 0;
+            this.admin_tabControl.Size = new System.Drawing.Size(1562, 823);
+            this.admin_tabControl.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.admin_tabControl.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.admin_tabControl.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.admin_tabControl.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.admin_tabControl.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.admin_tabControl.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.admin_tabControl.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.admin_tabControl.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.admin_tabControl.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.admin_tabControl.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.admin_tabControl.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.admin_tabControl.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.admin_tabControl.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.admin_tabControl.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.admin_tabControl.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.admin_tabControl.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.admin_tabControl.TabIndex = 5;
+            this.admin_tabControl.TabMenuBackColor = System.Drawing.Color.Transparent;
+            // 
+            // admin_dashboard
+            // 
+            this.admin_dashboard.Controls.Add(this.guna2Shapes1);
+            this.admin_dashboard.ForeColor = System.Drawing.Color.Transparent;
+            this.admin_dashboard.Location = new System.Drawing.Point(184, 4);
+            this.admin_dashboard.Name = "admin_dashboard";
+            this.admin_dashboard.Padding = new System.Windows.Forms.Padding(3);
+            this.admin_dashboard.Size = new System.Drawing.Size(1374, 815);
+            this.admin_dashboard.TabIndex = 0;
+            this.admin_dashboard.Text = "Dashbooard";
+            this.admin_dashboard.UseVisualStyleBackColor = true;
+            // 
+            // admin_inventory
+            // 
+            this.admin_inventory.Location = new System.Drawing.Point(184, 4);
+            this.admin_inventory.Name = "admin_inventory";
+            this.admin_inventory.Padding = new System.Windows.Forms.Padding(3);
+            this.admin_inventory.Size = new System.Drawing.Size(1374, 815);
+            this.admin_inventory.TabIndex = 1;
+            this.admin_inventory.Text = "Inventory";
+            this.admin_inventory.UseVisualStyleBackColor = true;
+            // 
+            // lspulogo
+            // 
+            this.lspulogo.FillColor = System.Drawing.Color.Transparent;
+            this.lspulogo.Image = ((System.Drawing.Image)(resources.GetObject("lspulogo.Image")));
+            this.lspulogo.ImageRotate = 0F;
+            this.lspulogo.Location = new System.Drawing.Point(68, 6);
+            this.lspulogo.Name = "lspulogo";
+            this.lspulogo.Padding = new System.Windows.Forms.Padding(2);
+            this.lspulogo.Size = new System.Drawing.Size(148, 158);
+            this.lspulogo.TabIndex = 4;
+            this.lspulogo.TabStop = false;
+            this.lspulogo.UseTransparentBackground = true;
             // 
             // adminTitle
             // 
@@ -2993,14 +3110,14 @@
             this.adminTitle.Font = new System.Drawing.Font("Segoe UI", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminTitle.ForeColor = System.Drawing.Color.White;
             this.adminTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.adminTitle.Location = new System.Drawing.Point(290, 34);
+            this.adminTitle.Location = new System.Drawing.Point(284, 25);
+            this.adminTitle.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.adminTitle.Name = "adminTitle";
             this.adminTitle.PlaceholderText = "";
             this.adminTitle.SelectedText = "";
             this.adminTitle.Size = new System.Drawing.Size(852, 51);
             this.adminTitle.TabIndex = 3;
             this.adminTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.adminTitle.TextChanged += new System.EventHandler(this.adminTitle_TextChanged);
             // 
             // admin_sidePanel
             // 
@@ -3012,7 +3129,7 @@
             this.admin_sidePanel.Rotate = 0F;
             this.admin_sidePanel.RoundedRadius = 40;
             this.admin_sidePanel.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
-            this.admin_sidePanel.Size = new System.Drawing.Size(343, 1061);
+            this.admin_sidePanel.Size = new System.Drawing.Size(351, 1061);
             this.admin_sidePanel.TabIndex = 2;
             this.admin_sidePanel.Text = "guna2Shapes2A";
             this.admin_sidePanel.UseTransparentBackground = true;
@@ -3026,7 +3143,7 @@
             this.adminBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.adminBack.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.adminBack.ForeColor = System.Drawing.Color.White;
-            this.adminBack.Location = new System.Drawing.Point(1819, 130);
+            this.adminBack.Location = new System.Drawing.Point(1819, 91);
             this.adminBack.Name = "adminBack";
             this.adminBack.Size = new System.Drawing.Size(92, 62);
             this.adminBack.TabIndex = 2;
@@ -3042,11 +3159,21 @@
             this.adminHeader.PolygonSkip = 1;
             this.adminHeader.Rotate = 0F;
             this.adminHeader.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rectangle;
-            this.adminHeader.Size = new System.Drawing.Size(1926, 209);
+            this.adminHeader.Size = new System.Drawing.Size(1926, 192);
             this.adminHeader.TabIndex = 1;
             this.adminHeader.Text = "c";
             this.adminHeader.Zoom = 100;
-            this.adminHeader.Click += new System.EventHandler(this.adminHeader_Click);
+            // 
+            // guna2Shapes1
+            // 
+            this.guna2Shapes1.Location = new System.Drawing.Point(228, 173);
+            this.guna2Shapes1.Name = "guna2Shapes1";
+            this.guna2Shapes1.PolygonSkip = 1;
+            this.guna2Shapes1.Rotate = 0F;
+            this.guna2Shapes1.Size = new System.Drawing.Size(200, 200);
+            this.guna2Shapes1.TabIndex = 0;
+            this.guna2Shapes1.Text = "guna2Shapes1";
+            this.guna2Shapes1.Zoom = 80;
             // 
             // Main
             // 
@@ -3238,6 +3365,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             this.Admin.ResumeLayout(false);
+            this.admin_tabControl.ResumeLayout(false);
+            this.admin_dashboard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lspulogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3446,6 +3576,13 @@
         private Guna.UI2.WinForms.Guna2Shapes adminHeader;
         private Guna.UI2.WinForms.Guna2Button adminBack;
         private Guna.UI2.WinForms.Guna2TextBox adminTitle;
+        private Guna.UI2.WinForms.Guna2PictureBox lspulogo;
+        private Guna.UI2.WinForms.Guna2TabControl admin_tabControl;
+        private System.Windows.Forms.TabPage admin_dashboard;
+        private System.Windows.Forms.TabPage admin_inventory;
+        private Guna.UI2.WinForms.Guna2Button dashboardButton;
+        private Guna.UI2.WinForms.Guna2Button inventoryButton;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
     }
 }
 
