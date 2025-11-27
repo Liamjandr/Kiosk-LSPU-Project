@@ -17,8 +17,7 @@ namespace kiosk
         public Main()
         {
             InitializeComponent();
-                
-
+            adminIntialize();
         }
 
 
@@ -29,7 +28,8 @@ namespace kiosk
             ac = new AddCart(this);
         }
 
-        
+
+        //tab control buttons
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
@@ -49,6 +49,12 @@ namespace kiosk
             guna2TabControl1.SelectedTab = tabPage4;
         }
 
+        private void guna2adminback_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage2;
+        }
+
+        //buttons
         private void guna2CirclePictureBox3_Click(object sender, EventArgs e)
         {
 
@@ -250,6 +256,21 @@ namespace kiosk
         private void tenthCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(9);
+        }
+
+        private void adminIntialize()
+        {
+            
+        }
+
+        private void adminTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminHeader_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }
