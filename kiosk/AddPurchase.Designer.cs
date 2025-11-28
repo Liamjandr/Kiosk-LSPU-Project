@@ -1,6 +1,6 @@
 ﻿namespace kiosk
 {
-    partial class AddReceipt
+    partial class addPurchase
     {
         /// <summary> 
         /// Required designer variable.
@@ -156,7 +156,7 @@
             this.Claim.UseTransparentBackground = true;
             this.Claim.Click += new System.EventHandler(this.Claim_Click);
             // 
-            // AddReceipt
+            // addPurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -170,7 +170,7 @@
             this.Controls.Add(this.Type);
             this.Controls.Add(this.ReceiptID);
             this.Controls.Add(this.historyTableHeader);
-            this.Name = "AddReceipt";
+            this.Name = "addPurchase";
             this.Size = new System.Drawing.Size(1545, 60);
             this.ResumeLayout(false);
             this.PerformLayout();

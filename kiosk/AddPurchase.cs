@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace kiosk
 {
-    public partial class AddReceipt : UserControl
+    public partial class addPurchase : UserControl
     {
         HistoryItem historyItem;
-        public AddReceipt()
+        public addPurchase(HistoryItem item)
         {
             InitializeComponent();
-            historyItem = randomHistory.generateHistory();
+            historyItem = item;
             ReceiptID.Text = historyItem.ID;
             Type.Text = historyItem.Type;
             Description.Text = historyItem.Description;

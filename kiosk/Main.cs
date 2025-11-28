@@ -13,7 +13,8 @@ namespace kiosk
     public partial class Main : Form
     {
         AddCart ac;
-        //List<HistoryItem> historyItems = new List<HistoryItem>();
+        List<InventoryItem> InventoryData = new List<InventoryItem>();
+        List<AddInventory> Inventory  = new List<AddInventory>();
         public int cartCounter = 0;
         public Main()
         {
@@ -259,9 +260,20 @@ namespace kiosk
             RemoveCartItem(9);
         }
 
+            //Admin forms
         private void adminIntialize()
         {
-            receiptTable.HorizontalScroll.Visible = false;
+            //AddInventory sample = new AddInventory(randomData.GetInventoryItem("1"));
+            //inventoryTable.Controls.Add(sample);
+            for (int i = 1; i <= 12; i++)
+            {
+                InventoryData.Add(randomData.GetInventoryItem(i.ToString()));
+                Inventory.Add(new AddInventory(InventoryData[i-1]));
+            }
+            foreach (AddInventory item in Inventory)
+            {
+                inventoryTable.Controls.Add(item);
+            }
         }
 
         private void dashboardButton_Click(object sender, EventArgs e)
@@ -276,7 +288,7 @@ namespace kiosk
 
         private void receipt_Click(object sender, EventArgs e)
         {
-            AddReceipt receipt = new AddReceipt();
+            addPurchase receipt = new addPurchase(randomData.generateHistory());
             receiptTable.Controls.Add(receipt);
         }
     }
