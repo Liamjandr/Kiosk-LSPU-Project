@@ -186,6 +186,7 @@ namespace kiosk
                 Price = 0.00m,
                 isEnable = false
             };
+//a
         }
     }
 
