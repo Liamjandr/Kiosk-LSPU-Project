@@ -51,110 +51,425 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
+            this.fab_overlay = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.all_itemLblSixteenth = new System.Windows.Forms.Label();
+            this.all_itemLblFifteenth = new System.Windows.Forms.Label();
+            this.all_itemLblFourteenth = new System.Windows.Forms.Label();
+            this.all_itemLblThirteenth = new System.Windows.Forms.Label();
+            this.all_itemLblTwelfth = new System.Windows.Forms.Label();
+            this.all_itemLblEleventh = new System.Windows.Forms.Label();
+            this.all_itemLblTenth = new System.Windows.Forms.Label();
+            this.all_itemLblNinth = new System.Windows.Forms.Label();
+            this.all_itemLblEighth = new System.Windows.Forms.Label();
+            this.all_itemLblSeventh = new System.Windows.Forms.Label();
+            this.all_itemLblSixth = new System.Windows.Forms.Label();
+            this.all_itemLblFifth = new System.Windows.Forms.Label();
+            this.all_itemLblFourth = new System.Windows.Forms.Label();
+            this.all_itemLblThird = new System.Windows.Forms.Label();
+            this.all_itemLblFirst = new System.Windows.Forms.Label();
+            this.all_itemLblSecond = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2ShadowPanel17 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox38 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox37 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel10 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox31 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel11 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox32 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel12 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox33 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel13 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox34 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel14 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox35 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel15 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox36 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelSixteenth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allSixteenth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicSixteenth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelFifteenth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allFifteenth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicFifteenth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelFourteenth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allFourteenth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicFourteenth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelThirteenth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allThirteenth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicThirteenth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwelfth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwelfth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwelfth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelEleventh = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allEleventh_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicEleventh = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTenth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTenth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTenth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelNinth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allNinth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicNinth = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2ShadowPanel19 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox40 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel18 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox39 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.peShorts = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.pePants = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.peShirt = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.univ = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.typeB = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.typeA = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelEighth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allEighth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicEighth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelSeventh = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allSeventh_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicSeventh = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelSixth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allSixth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicSixth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelFifth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allFifth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicFifth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelFourth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allFourth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicFourth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelThird = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allThird_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicThird = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelSecond = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allSecond_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicSecond = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelFirst = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allFirst_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicFirst = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.top_lbl16 = new System.Windows.Forms.Label();
+            this.top_lbl15 = new System.Windows.Forms.Label();
+            this.top_lbl14 = new System.Windows.Forms.Label();
+            this.top_lbl13 = new System.Windows.Forms.Label();
+            this.top_lbl12 = new System.Windows.Forms.Label();
+            this.top_lbl11 = new System.Windows.Forms.Label();
+            this.top_lbl10 = new System.Windows.Forms.Label();
+            this.top_lbl9 = new System.Windows.Forms.Label();
+            this.top_lbl8 = new System.Windows.Forms.Label();
+            this.top_lbl7 = new System.Windows.Forms.Label();
+            this.top_lbl6 = new System.Windows.Forms.Label();
+            this.top_lbl5 = new System.Windows.Forms.Label();
+            this.top_lbl4 = new System.Windows.Forms.Label();
+            this.top_lbl3 = new System.Windows.Forms.Label();
+            this.top_lbl1 = new System.Windows.Forms.Label();
+            this.top_lbl2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2ShadowPanel20 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox41 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel21 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox42 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel22 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox43 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel23 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox44 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel24 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox45 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel25 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox46 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel26 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox47 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel27 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox48 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay16 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic16 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel15 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay15 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic15 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel14 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay14 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic14 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel13 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel12 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel11 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel10 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.top_Panel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_Panel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Top_Overlay1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.top_itemPic1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.guna2ShadowPanel28 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox49 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel29 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox50 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel30 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox51 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel31 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox52 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel32 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox53 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel33 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox54 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel34 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox55 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel35 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox56 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_lbl16 = new System.Windows.Forms.Label();
+            this.bot_lbl15 = new System.Windows.Forms.Label();
+            this.bot_lbl14 = new System.Windows.Forms.Label();
+            this.bot_lbl13 = new System.Windows.Forms.Label();
+            this.bot_lbl12 = new System.Windows.Forms.Label();
+            this.bot_lbl11 = new System.Windows.Forms.Label();
+            this.bot_lbl10 = new System.Windows.Forms.Label();
+            this.bot_lbl9 = new System.Windows.Forms.Label();
+            this.bot_lbl8 = new System.Windows.Forms.Label();
+            this.bot_lbl7 = new System.Windows.Forms.Label();
+            this.bot_lbl6 = new System.Windows.Forms.Label();
+            this.bot_lbl5 = new System.Windows.Forms.Label();
+            this.bot_lbl4 = new System.Windows.Forms.Label();
+            this.bot_lbl3 = new System.Windows.Forms.Label();
+            this.bot_lbl1 = new System.Windows.Forms.Label();
+            this.bot_lbl2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.bot_Panel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay16 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic16 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel15 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay15 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic15 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel14 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay14 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic14 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel13 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel12 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel11 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel10 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.bot_Panel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_Panel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.bot_overlay1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bot_itemPic1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.guna2ShadowPanel42 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox63 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel43 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox64 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_lbl16 = new System.Windows.Forms.Label();
+            this.fab_lbl15 = new System.Windows.Forms.Label();
+            this.fab_lbl14 = new System.Windows.Forms.Label();
+            this.fab_lbl13 = new System.Windows.Forms.Label();
+            this.fab_lbl12 = new System.Windows.Forms.Label();
+            this.fab_lbl11 = new System.Windows.Forms.Label();
+            this.fab_lbl10 = new System.Windows.Forms.Label();
+            this.fab_lbl9 = new System.Windows.Forms.Label();
+            this.fab_lbl8 = new System.Windows.Forms.Label();
+            this.fab_lbl7 = new System.Windows.Forms.Label();
+            this.fab_lbl6 = new System.Windows.Forms.Label();
+            this.fab_lbl5 = new System.Windows.Forms.Label();
+            this.fab_lbl4 = new System.Windows.Forms.Label();
+            this.fab_lbl3 = new System.Windows.Forms.Label();
+            this.fab_lbl1 = new System.Windows.Forms.Label();
+            this.fab_lbl2 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.fab_Panel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic16 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay16 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel15 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic15 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay15 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel14 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic14 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay14 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel13 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel12 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel11 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel10 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.fab_Panel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_Panel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fab_itemPic1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.fab_overlay1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.other_lbl16 = new System.Windows.Forms.Label();
+            this.other_lbl15 = new System.Windows.Forms.Label();
+            this.other_lbl14 = new System.Windows.Forms.Label();
+            this.other_lbl13 = new System.Windows.Forms.Label();
+            this.other_lbl12 = new System.Windows.Forms.Label();
+            this.other_lbl11 = new System.Windows.Forms.Label();
+            this.other_lbl10 = new System.Windows.Forms.Label();
+            this.other_lbl9 = new System.Windows.Forms.Label();
+            this.other_lbl8 = new System.Windows.Forms.Label();
+            this.other_lbl7 = new System.Windows.Forms.Label();
+            this.other_lbl6 = new System.Windows.Forms.Label();
+            this.other_lbl5 = new System.Windows.Forms.Label();
+            this.other_lbl4 = new System.Windows.Forms.Label();
+            this.other_lbl3 = new System.Windows.Forms.Label();
+            this.other_lbl1 = new System.Windows.Forms.Label();
+            this.other_lbl2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.guna2ShadowPanel44 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox65 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel45 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox66 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel46 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox67 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel47 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox68 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel48 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox69 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel49 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox70 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel50 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox71 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ShadowPanel51 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2PictureBox72 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel16 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay16 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic16 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel15 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay15 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic15 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel14 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay14 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic14 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel13 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel12 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic12 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel11 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel10 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.other_Panel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_Panel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.other_overlay1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.confirmBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fifthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fifthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.fifthItemSize = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.fifthItemType = new System.Windows.Forms.Label();
+            this.fifthItemName = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel13 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label50 = new System.Windows.Forms.Label();
+            this.fifthItemPrice = new System.Windows.Forms.Label();
+            this.fifthPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.fifthItemQty = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.fourthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.fourthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.fourthItemSize = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.fourthItemType = new System.Windows.Forms.Label();
+            this.fourthItemName = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel12 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.fourthItemPrice = new System.Windows.Forms.Label();
+            this.fourthPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.fourthItemQty = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.thirdItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.thirdCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.thirdItemSize = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.thirdItemType = new System.Windows.Forms.Label();
+            this.thirdItemName = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel11 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.thirdItemPrice = new System.Windows.Forms.Label();
+            this.thirdPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.thirdItemQty = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.secondItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.secondCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.secondItemSize = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.secondItemType = new System.Windows.Forms.Label();
+            this.secondItemName = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel10 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.secondItemPrice = new System.Windows.Forms.Label();
+            this.secondPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.secondItemQty = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.firstItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.firstCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.firstItemSize = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.firstItemType = new System.Windows.Forms.Label();
+            this.firstItemName = new System.Windows.Forms.Label();
+            this.guna2CustomGradientPanel9 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.firstItemPrice = new System.Windows.Forms.Label();
+            this.firstPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.firstItemQty = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.ttext = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel7 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -190,42 +505,6 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.subName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.secondItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.secondPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.thirdItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.thirdPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.fourthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.fourthPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.fifthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.fifthPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.sixthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.sixthPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.seventhItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.seventhPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.eighthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.eighthPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ninthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.ninthPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.firstItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.firstPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.tenthIten = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.tenthPic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.firstCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.secondCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.thirdCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.fourthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.fifthcancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.sixthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.seventhCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.eighthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ninthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.tenthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.footer.SuspendLayout();
@@ -240,103 +519,283 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.guna2CustomGradientPanel6.SuspendLayout();
-            this.guna2TabControl1.SuspendLayout();
+            this.fab_overlay.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.guna2ShadowPanel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox38)).BeginInit();
-            this.guna2ShadowPanel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox37)).BeginInit();
-            this.guna2ShadowPanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox31)).BeginInit();
-            this.guna2ShadowPanel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox32)).BeginInit();
-            this.guna2ShadowPanel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox33)).BeginInit();
-            this.guna2ShadowPanel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox34)).BeginInit();
-            this.guna2ShadowPanel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox35)).BeginInit();
-            this.guna2ShadowPanel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox36)).BeginInit();
+            this.all_itemPanelSixteenth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allSixteenth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSixteenth)).BeginInit();
+            this.all_itemPanelFifteenth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allFifteenth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFifteenth)).BeginInit();
+            this.all_itemPanelFourteenth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allFourteenth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFourteenth)).BeginInit();
+            this.all_itemPanelThirteenth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allThirteenth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThirteenth)).BeginInit();
+            this.all_itemPanelTwelfth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwelfth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwelfth)).BeginInit();
+            this.all_itemPanelEleventh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allEleventh_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicEleventh)).BeginInit();
+            this.all_itemPanelTenth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTenth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTenth)).BeginInit();
+            this.all_itemPanelNinth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allNinth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicNinth)).BeginInit();
             this.panel1.SuspendLayout();
-            this.guna2ShadowPanel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox40)).BeginInit();
-            this.guna2ShadowPanel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox39)).BeginInit();
-            this.guna2ShadowPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.peShorts)).BeginInit();
-            this.guna2ShadowPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pePants)).BeginInit();
-            this.guna2ShadowPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.peShirt)).BeginInit();
-            this.guna2ShadowPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.univ)).BeginInit();
-            this.guna2ShadowPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typeB)).BeginInit();
-            this.guna2ShadowPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typeA)).BeginInit();
+            this.all_itemPanelEighth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allEighth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicEighth)).BeginInit();
+            this.all_itemPanelSeventh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allSeventh_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSeventh)).BeginInit();
+            this.all_itemPanelSixth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allSixth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSixth)).BeginInit();
+            this.all_itemPanelFifth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allFifth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFifth)).BeginInit();
+            this.all_itemPanelFourth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allFourth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFourth)).BeginInit();
+            this.all_itemPanelThird.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allThird_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThird)).BeginInit();
+            this.all_itemPanelSecond.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allSecond_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSecond)).BeginInit();
+            this.all_itemPanelFirst.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allFirst_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFirst)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.guna2ShadowPanel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox41)).BeginInit();
-            this.guna2ShadowPanel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox42)).BeginInit();
-            this.guna2ShadowPanel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox43)).BeginInit();
-            this.guna2ShadowPanel23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox44)).BeginInit();
-            this.guna2ShadowPanel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox45)).BeginInit();
-            this.guna2ShadowPanel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox46)).BeginInit();
-            this.guna2ShadowPanel26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox47)).BeginInit();
-            this.guna2ShadowPanel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox48)).BeginInit();
-            this.tabPage6.SuspendLayout();
+            this.top_Panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic16)).BeginInit();
+            this.top_Panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic15)).BeginInit();
+            this.top_Panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic14)).BeginInit();
+            this.top_Panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic13)).BeginInit();
+            this.top_Panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic12)).BeginInit();
+            this.top_Panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic11)).BeginInit();
+            this.top_Panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic10)).BeginInit();
+            this.top_Panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic9)).BeginInit();
             this.panel4.SuspendLayout();
-            this.guna2ShadowPanel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox49)).BeginInit();
-            this.guna2ShadowPanel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox50)).BeginInit();
-            this.guna2ShadowPanel30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox51)).BeginInit();
-            this.guna2ShadowPanel31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox52)).BeginInit();
-            this.guna2ShadowPanel32.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox53)).BeginInit();
-            this.guna2ShadowPanel33.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox54)).BeginInit();
-            this.guna2ShadowPanel34.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox55)).BeginInit();
-            this.guna2ShadowPanel35.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox56)).BeginInit();
-            this.tabPage7.SuspendLayout();
+            this.top_Panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic8)).BeginInit();
+            this.top_Panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic7)).BeginInit();
+            this.top_Panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic6)).BeginInit();
+            this.top_Panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic5)).BeginInit();
+            this.top_Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic4)).BeginInit();
+            this.top_Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic3)).BeginInit();
+            this.top_Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic2)).BeginInit();
+            this.top_Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic1)).BeginInit();
+            this.tabPage6.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.guna2ShadowPanel42.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox63)).BeginInit();
-            this.guna2ShadowPanel43.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox64)).BeginInit();
+            this.bot_Panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic16)).BeginInit();
+            this.bot_Panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic15)).BeginInit();
+            this.bot_Panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic14)).BeginInit();
+            this.bot_Panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic13)).BeginInit();
+            this.bot_Panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic12)).BeginInit();
+            this.bot_Panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic11)).BeginInit();
+            this.bot_Panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic10)).BeginInit();
+            this.bot_Panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic9)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.bot_Panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic8)).BeginInit();
+            this.bot_Panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic7)).BeginInit();
+            this.bot_Panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic6)).BeginInit();
+            this.bot_Panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic5)).BeginInit();
+            this.bot_Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic4)).BeginInit();
+            this.bot_Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic3)).BeginInit();
+            this.bot_Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic2)).BeginInit();
+            this.bot_Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic1)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.fab_Panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay16)).BeginInit();
+            this.fab_Panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay15)).BeginInit();
+            this.fab_Panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay14)).BeginInit();
+            this.fab_Panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay13)).BeginInit();
+            this.fab_Panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay12)).BeginInit();
+            this.fab_Panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay11)).BeginInit();
+            this.fab_Panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay10)).BeginInit();
+            this.fab_Panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay9)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.fab_Panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay8)).BeginInit();
+            this.fab_Panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay7)).BeginInit();
+            this.fab_Panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay6)).BeginInit();
+            this.fab_Panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay5)).BeginInit();
+            this.fab_Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay4)).BeginInit();
+            this.fab_Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay3)).BeginInit();
+            this.fab_Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay2)).BeginInit();
+            this.fab_Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay1)).BeginInit();
             this.tabPage8.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.guna2ShadowPanel44.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox65)).BeginInit();
-            this.guna2ShadowPanel45.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox66)).BeginInit();
-            this.guna2ShadowPanel46.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox67)).BeginInit();
-            this.guna2ShadowPanel47.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox68)).BeginInit();
-            this.guna2ShadowPanel48.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox69)).BeginInit();
-            this.guna2ShadowPanel49.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox70)).BeginInit();
-            this.guna2ShadowPanel50.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox71)).BeginInit();
-            this.guna2ShadowPanel51.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox72)).BeginInit();
+            this.other_Panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic16)).BeginInit();
+            this.other_Panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic15)).BeginInit();
+            this.other_Panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic14)).BeginInit();
+            this.other_Panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic13)).BeginInit();
+            this.other_Panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic12)).BeginInit();
+            this.other_Panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic11)).BeginInit();
+            this.other_Panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic10)).BeginInit();
+            this.other_Panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic9)).BeginInit();
+            this.panel10.SuspendLayout();
+            this.other_Panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic8)).BeginInit();
+            this.other_Panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic7)).BeginInit();
+            this.other_Panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic6)).BeginInit();
+            this.other_Panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic5)).BeginInit();
+            this.other_Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic4)).BeginInit();
+            this.other_Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic3)).BeginInit();
+            this.other_Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic2)).BeginInit();
+            this.other_Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic1)).BeginInit();
             this.guna2ShadowPanel3.SuspendLayout();
+            this.fifthItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fifthCancel)).BeginInit();
+            this.guna2CustomGradientPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fifthPic)).BeginInit();
+            this.fourthItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).BeginInit();
+            this.guna2CustomGradientPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fourthPic)).BeginInit();
+            this.thirdItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).BeginInit();
+            this.guna2CustomGradientPanel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thirdPic)).BeginInit();
+            this.secondItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).BeginInit();
+            this.guna2CustomGradientPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.secondPic)).BeginInit();
+            this.firstItem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.firstCancel)).BeginInit();
+            this.guna2CustomGradientPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.firstPic)).BeginInit();
             this.guna2CustomGradientPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
@@ -367,36 +826,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
-            this.secondItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.secondPic)).BeginInit();
-            this.thirdItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdPic)).BeginInit();
-            this.fourthItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fourthPic)).BeginInit();
-            this.fifthItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fifthPic)).BeginInit();
-            this.sixthItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sixthPic)).BeginInit();
-            this.seventhItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.seventhPic)).BeginInit();
-            this.eighthItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eighthPic)).BeginInit();
-            this.ninthItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ninthPic)).BeginInit();
-            this.firstItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.firstPic)).BeginInit();
-            this.tenthIten.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tenthPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstCancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fifthcancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sixthCancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seventhCancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eighthCancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ninthCancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tenthCancel)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -674,8 +1103,8 @@
             // 
             // guna2CustomGradientPanel6
             // 
-            this.guna2CustomGradientPanel6.Controls.Add(this.guna2TabControl1);
-            this.guna2CustomGradientPanel6.Controls.Add(this.guna2Button3);
+            this.guna2CustomGradientPanel6.Controls.Add(this.fab_overlay);
+            this.guna2CustomGradientPanel6.Controls.Add(this.confirmBtn);
             this.guna2CustomGradientPanel6.Controls.Add(this.guna2Button2);
             this.guna2CustomGradientPanel6.Controls.Add(this.guna2ShadowPanel3);
             this.guna2CustomGradientPanel6.Controls.Add(this.guna2CustomGradientPanel7);
@@ -687,48 +1116,58 @@
             this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(1932, 792);
             this.guna2CustomGradientPanel6.TabIndex = 6;
             // 
-            // guna2TabControl1
+            // fab_overlay
             // 
-            this.guna2TabControl1.Controls.Add(this.tabPage4);
-            this.guna2TabControl1.Controls.Add(this.tabPage5);
-            this.guna2TabControl1.Controls.Add(this.tabPage6);
-            this.guna2TabControl1.Controls.Add(this.tabPage7);
-            this.guna2TabControl1.Controls.Add(this.tabPage8);
-            this.guna2TabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TabControl1.ItemSize = new System.Drawing.Size(250, 40);
-            this.guna2TabControl1.Location = new System.Drawing.Point(0, 0);
-            this.guna2TabControl1.Name = "guna2TabControl1";
-            this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(1926, 518);
-            this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(250, 40);
-            this.guna2TabControl1.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
-            this.guna2TabControl1.TabIndex = 5;
-            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            this.fab_overlay.Controls.Add(this.tabPage4);
+            this.fab_overlay.Controls.Add(this.tabPage5);
+            this.fab_overlay.Controls.Add(this.tabPage6);
+            this.fab_overlay.Controls.Add(this.tabPage7);
+            this.fab_overlay.Controls.Add(this.tabPage8);
+            this.fab_overlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_overlay.ItemSize = new System.Drawing.Size(250, 40);
+            this.fab_overlay.Location = new System.Drawing.Point(0, 0);
+            this.fab_overlay.Name = "fab_overlay";
+            this.fab_overlay.SelectedIndex = 0;
+            this.fab_overlay.Size = new System.Drawing.Size(1926, 518);
+            this.fab_overlay.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.fab_overlay.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.fab_overlay.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.fab_overlay.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.fab_overlay.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.fab_overlay.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.fab_overlay.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.fab_overlay.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.fab_overlay.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.fab_overlay.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.fab_overlay.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.fab_overlay.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.fab_overlay.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.fab_overlay.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.fab_overlay.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.fab_overlay.TabButtonSize = new System.Drawing.Size(250, 40);
+            this.fab_overlay.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.fab_overlay.TabIndex = 5;
+            this.fab_overlay.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.fab_overlay.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Controls.Add(this.label3);
-            this.tabPage4.Controls.Add(this.label2);
-            this.tabPage4.Controls.Add(this.label1);
-            this.tabPage4.Controls.Add(this.subName);
+            this.tabPage4.Controls.Add(this.all_itemLblSixteenth);
+            this.tabPage4.Controls.Add(this.all_itemLblFifteenth);
+            this.tabPage4.Controls.Add(this.all_itemLblFourteenth);
+            this.tabPage4.Controls.Add(this.all_itemLblThirteenth);
+            this.tabPage4.Controls.Add(this.all_itemLblTwelfth);
+            this.tabPage4.Controls.Add(this.all_itemLblEleventh);
+            this.tabPage4.Controls.Add(this.all_itemLblTenth);
+            this.tabPage4.Controls.Add(this.all_itemLblNinth);
+            this.tabPage4.Controls.Add(this.all_itemLblEighth);
+            this.tabPage4.Controls.Add(this.all_itemLblSeventh);
+            this.tabPage4.Controls.Add(this.all_itemLblSixth);
+            this.tabPage4.Controls.Add(this.all_itemLblFifth);
+            this.tabPage4.Controls.Add(this.all_itemLblFourth);
+            this.tabPage4.Controls.Add(this.all_itemLblThird);
+            this.tabPage4.Controls.Add(this.all_itemLblFirst);
+            this.tabPage4.Controls.Add(this.all_itemLblSecond);
             this.tabPage4.Controls.Add(this.panel2);
             this.tabPage4.Controls.Add(this.panel1);
             this.tabPage4.Controls.Add(this.guna2Button4);
@@ -740,425 +1179,868 @@
             this.tabPage4.Text = "All Items";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // all_itemLblSixteenth
+            // 
+            this.all_itemLblSixteenth.AutoEllipsis = true;
+            this.all_itemLblSixteenth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblSixteenth.Location = new System.Drawing.Point(1560, 424);
+            this.all_itemLblSixteenth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblSixteenth.Name = "all_itemLblSixteenth";
+            this.all_itemLblSixteenth.Size = new System.Drawing.Size(67, 16);
+            this.all_itemLblSixteenth.TabIndex = 26;
+            this.all_itemLblSixteenth.Text = "TEXT 16";
+            this.all_itemLblSixteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblFifteenth
+            // 
+            this.all_itemLblFifteenth.AutoEllipsis = true;
+            this.all_itemLblFifteenth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblFifteenth.Location = new System.Drawing.Point(1332, 423);
+            this.all_itemLblFifteenth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblFifteenth.Name = "all_itemLblFifteenth";
+            this.all_itemLblFifteenth.Size = new System.Drawing.Size(96, 16);
+            this.all_itemLblFifteenth.TabIndex = 26;
+            this.all_itemLblFifteenth.Text = "TEXT 15";
+            this.all_itemLblFifteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblFourteenth
+            // 
+            this.all_itemLblFourteenth.AutoEllipsis = true;
+            this.all_itemLblFourteenth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblFourteenth.Location = new System.Drawing.Point(1129, 424);
+            this.all_itemLblFourteenth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblFourteenth.Name = "all_itemLblFourteenth";
+            this.all_itemLblFourteenth.Size = new System.Drawing.Size(94, 16);
+            this.all_itemLblFourteenth.TabIndex = 26;
+            this.all_itemLblFourteenth.Text = "TEXT 14";
+            this.all_itemLblFourteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblThirteenth
+            // 
+            this.all_itemLblThirteenth.AutoEllipsis = true;
+            this.all_itemLblThirteenth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblThirteenth.Location = new System.Drawing.Point(874, 423);
+            this.all_itemLblThirteenth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblThirteenth.Name = "all_itemLblThirteenth";
+            this.all_itemLblThirteenth.Size = new System.Drawing.Size(177, 16);
+            this.all_itemLblThirteenth.TabIndex = 26;
+            this.all_itemLblThirteenth.Text = "TEXT 13";
+            this.all_itemLblThirteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblTwelfth
+            // 
+            this.all_itemLblTwelfth.AutoEllipsis = true;
+            this.all_itemLblTwelfth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwelfth.Location = new System.Drawing.Point(688, 423);
+            this.all_itemLblTwelfth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwelfth.Name = "all_itemLblTwelfth";
+            this.all_itemLblTwelfth.Size = new System.Drawing.Size(147, 16);
+            this.all_itemLblTwelfth.TabIndex = 25;
+            this.all_itemLblTwelfth.Text = "TEXT 12";
+            this.all_itemLblTwelfth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblEleventh
+            // 
+            this.all_itemLblEleventh.AutoEllipsis = true;
+            this.all_itemLblEleventh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblEleventh.Location = new System.Drawing.Point(514, 423);
+            this.all_itemLblEleventh.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblEleventh.Name = "all_itemLblEleventh";
+            this.all_itemLblEleventh.Size = new System.Drawing.Size(80, 16);
+            this.all_itemLblEleventh.TabIndex = 24;
+            this.all_itemLblEleventh.Text = "TEXT 11";
+            this.all_itemLblEleventh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblTenth
+            // 
+            this.all_itemLblTenth.AutoEllipsis = true;
+            this.all_itemLblTenth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTenth.Location = new System.Drawing.Point(304, 424);
+            this.all_itemLblTenth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTenth.Name = "all_itemLblTenth";
+            this.all_itemLblTenth.Size = new System.Drawing.Size(87, 16);
+            this.all_itemLblTenth.TabIndex = 23;
+            this.all_itemLblTenth.Text = "TEXT 10";
+            this.all_itemLblTenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblNinth
+            // 
+            this.all_itemLblNinth.AutoEllipsis = true;
+            this.all_itemLblNinth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblNinth.Location = new System.Drawing.Point(96, 424);
+            this.all_itemLblNinth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblNinth.Name = "all_itemLblNinth";
+            this.all_itemLblNinth.Size = new System.Drawing.Size(86, 16);
+            this.all_itemLblNinth.TabIndex = 22;
+            this.all_itemLblNinth.Text = "TEXT 9";
+            this.all_itemLblNinth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblEighth
+            // 
+            this.all_itemLblEighth.AutoEllipsis = true;
+            this.all_itemLblEighth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblEighth.Location = new System.Drawing.Point(1546, 196);
+            this.all_itemLblEighth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblEighth.Name = "all_itemLblEighth";
+            this.all_itemLblEighth.Size = new System.Drawing.Size(98, 16);
+            this.all_itemLblEighth.TabIndex = 24;
+            this.all_itemLblEighth.Text = "TEXT 8";
+            this.all_itemLblEighth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblSeventh
+            // 
+            this.all_itemLblSeventh.AutoEllipsis = true;
+            this.all_itemLblSeventh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblSeventh.Location = new System.Drawing.Point(1338, 195);
+            this.all_itemLblSeventh.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblSeventh.Name = "all_itemLblSeventh";
+            this.all_itemLblSeventh.Size = new System.Drawing.Size(86, 16);
+            this.all_itemLblSeventh.TabIndex = 23;
+            this.all_itemLblSeventh.Text = "TEXT 7";
+            this.all_itemLblSeventh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblSixth
+            // 
+            this.all_itemLblSixth.AutoEllipsis = true;
+            this.all_itemLblSixth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblSixth.Location = new System.Drawing.Point(1136, 196);
+            this.all_itemLblSixth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblSixth.Name = "all_itemLblSixth";
+            this.all_itemLblSixth.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.all_itemLblSixth.Size = new System.Drawing.Size(88, 16);
+            this.all_itemLblSixth.TabIndex = 22;
+            this.all_itemLblSixth.Text = "TEXT 6";
+            this.all_itemLblSixth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblFifth
+            // 
+            this.all_itemLblFifth.AutoEllipsis = true;
+            this.all_itemLblFifth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblFifth.Location = new System.Drawing.Point(926, 196);
+            this.all_itemLblFifth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblFifth.Name = "all_itemLblFifth";
+            this.all_itemLblFifth.Size = new System.Drawing.Size(86, 16);
+            this.all_itemLblFifth.TabIndex = 21;
+            this.all_itemLblFifth.Text = "TEXT 5";
+            this.all_itemLblFifth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblFourth
+            // 
+            this.all_itemLblFourth.AutoEllipsis = true;
+            this.all_itemLblFourth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblFourth.Location = new System.Drawing.Point(724, 196);
+            this.all_itemLblFourth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblFourth.Name = "all_itemLblFourth";
+            this.all_itemLblFourth.Size = new System.Drawing.Size(81, 16);
+            this.all_itemLblFourth.TabIndex = 20;
+            this.all_itemLblFourth.Text = "TEXT 4";
+            this.all_itemLblFourth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblThird
+            // 
+            this.all_itemLblThird.AutoEllipsis = true;
+            this.all_itemLblThird.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblThird.Location = new System.Drawing.Point(483, 196);
+            this.all_itemLblThird.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblThird.Name = "all_itemLblThird";
+            this.all_itemLblThird.Size = new System.Drawing.Size(148, 16);
+            this.all_itemLblThird.TabIndex = 19;
+            this.all_itemLblThird.Text = "TEXT 3";
+            this.all_itemLblThird.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblFirst
+            // 
+            this.all_itemLblFirst.AutoEllipsis = true;
+            this.all_itemLblFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblFirst.Location = new System.Drawing.Point(75, 196);
+            this.all_itemLblFirst.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblFirst.Name = "all_itemLblFirst";
+            this.all_itemLblFirst.Size = new System.Drawing.Size(120, 16);
+            this.all_itemLblFirst.TabIndex = 18;
+            this.all_itemLblFirst.Text = "TEXT 1";
+            this.all_itemLblFirst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // all_itemLblSecond
+            // 
+            this.all_itemLblSecond.AutoEllipsis = true;
+            this.all_itemLblSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblSecond.Location = new System.Drawing.Point(276, 196);
+            this.all_itemLblSecond.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblSecond.Name = "all_itemLblSecond";
+            this.all_itemLblSecond.Size = new System.Drawing.Size(139, 16);
+            this.all_itemLblSecond.TabIndex = 17;
+            this.all_itemLblSecond.Text = "TEXT 2";
+            this.all_itemLblSecond.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.guna2ShadowPanel17);
-            this.panel2.Controls.Add(this.guna2ShadowPanel16);
-            this.panel2.Controls.Add(this.guna2ShadowPanel10);
-            this.panel2.Controls.Add(this.guna2ShadowPanel11);
-            this.panel2.Controls.Add(this.guna2ShadowPanel12);
-            this.panel2.Controls.Add(this.guna2ShadowPanel13);
-            this.panel2.Controls.Add(this.guna2ShadowPanel14);
-            this.panel2.Controls.Add(this.guna2ShadowPanel15);
+            this.panel2.Controls.Add(this.all_itemPanelSixteenth);
+            this.panel2.Controls.Add(this.all_itemPanelFifteenth);
+            this.panel2.Controls.Add(this.all_itemPanelFourteenth);
+            this.panel2.Controls.Add(this.all_itemPanelThirteenth);
+            this.panel2.Controls.Add(this.all_itemPanelTwelfth);
+            this.panel2.Controls.Add(this.all_itemPanelEleventh);
+            this.panel2.Controls.Add(this.all_itemPanelTenth);
+            this.panel2.Controls.Add(this.all_itemPanelNinth);
             this.panel2.Location = new System.Drawing.Point(11, 247);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1691, 173);
             this.panel2.TabIndex = 8;
             // 
-            // guna2ShadowPanel17
+            // all_itemPanelSixteenth
             // 
-            this.guna2ShadowPanel17.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel17.Controls.Add(this.guna2PictureBox38);
-            this.guna2ShadowPanel17.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel17.Location = new System.Drawing.Point(1493, 15);
-            this.guna2ShadowPanel17.Name = "guna2ShadowPanel17";
-            this.guna2ShadowPanel17.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel17.ShadowDepth = 200;
-            this.guna2ShadowPanel17.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel17.TabIndex = 9;
+            this.all_itemPanelSixteenth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelSixteenth.Controls.Add(this.allSixteenth_Overlay);
+            this.all_itemPanelSixteenth.Controls.Add(this.all_itemPicSixteenth);
+            this.all_itemPanelSixteenth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelSixteenth.Location = new System.Drawing.Point(1493, 15);
+            this.all_itemPanelSixteenth.Name = "all_itemPanelSixteenth";
+            this.all_itemPanelSixteenth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelSixteenth.ShadowDepth = 200;
+            this.all_itemPanelSixteenth.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelSixteenth.TabIndex = 9;
             // 
-            // guna2PictureBox38
+            // allSixteenth_Overlay
             // 
-            this.guna2PictureBox38.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox38.Image")));
-            this.guna2PictureBox38.ImageRotate = 0F;
-            this.guna2PictureBox38.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox38.Name = "guna2PictureBox38";
-            this.guna2PictureBox38.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox38.TabIndex = 5;
-            this.guna2PictureBox38.TabStop = false;
+            this.allSixteenth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allSixteenth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allSixteenth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allSixteenth_Overlay.Image")));
+            this.allSixteenth_Overlay.ImageRotate = 0F;
+            this.allSixteenth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allSixteenth_Overlay.Name = "allSixteenth_Overlay";
+            this.allSixteenth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allSixteenth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allSixteenth_Overlay.TabIndex = 7;
+            this.allSixteenth_Overlay.TabStop = false;
+            this.allSixteenth_Overlay.Visible = false;
             // 
-            // guna2ShadowPanel16
+            // all_itemPicSixteenth
             // 
-            this.guna2ShadowPanel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel16.Controls.Add(this.guna2PictureBox37);
-            this.guna2ShadowPanel16.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel16.Location = new System.Drawing.Point(1283, 15);
-            this.guna2ShadowPanel16.Name = "guna2ShadowPanel16";
-            this.guna2ShadowPanel16.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel16.ShadowDepth = 200;
-            this.guna2ShadowPanel16.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel16.TabIndex = 8;
+            this.all_itemPicSixteenth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicSixteenth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicSixteenth.Image")));
+            this.all_itemPicSixteenth.ImageRotate = 0F;
+            this.all_itemPicSixteenth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicSixteenth.Name = "all_itemPicSixteenth";
+            this.all_itemPicSixteenth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicSixteenth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicSixteenth.TabIndex = 5;
+            this.all_itemPicSixteenth.TabStop = false;
+            this.all_itemPicSixteenth.Click += new System.EventHandler(this.all_itemPicSixteenth_Click);
             // 
-            // guna2PictureBox37
+            // all_itemPanelFifteenth
             // 
-            this.guna2PictureBox37.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox37.Image")));
-            this.guna2PictureBox37.ImageRotate = 0F;
-            this.guna2PictureBox37.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox37.Name = "guna2PictureBox37";
-            this.guna2PictureBox37.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox37.TabIndex = 5;
-            this.guna2PictureBox37.TabStop = false;
+            this.all_itemPanelFifteenth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelFifteenth.Controls.Add(this.allFifteenth_Overlay);
+            this.all_itemPanelFifteenth.Controls.Add(this.all_itemPicFifteenth);
+            this.all_itemPanelFifteenth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelFifteenth.Location = new System.Drawing.Point(1283, 15);
+            this.all_itemPanelFifteenth.Name = "all_itemPanelFifteenth";
+            this.all_itemPanelFifteenth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelFifteenth.ShadowDepth = 200;
+            this.all_itemPanelFifteenth.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelFifteenth.TabIndex = 8;
             // 
-            // guna2ShadowPanel10
+            // allFifteenth_Overlay
             // 
-            this.guna2ShadowPanel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel10.Controls.Add(this.guna2PictureBox31);
-            this.guna2ShadowPanel10.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel10.Location = new System.Drawing.Point(1076, 15);
-            this.guna2ShadowPanel10.Name = "guna2ShadowPanel10";
-            this.guna2ShadowPanel10.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel10.ShadowDepth = 200;
-            this.guna2ShadowPanel10.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel10.TabIndex = 7;
+            this.allFifteenth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allFifteenth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allFifteenth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allFifteenth_Overlay.Image")));
+            this.allFifteenth_Overlay.ImageRotate = 0F;
+            this.allFifteenth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allFifteenth_Overlay.Name = "allFifteenth_Overlay";
+            this.allFifteenth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allFifteenth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allFifteenth_Overlay.TabIndex = 7;
+            this.allFifteenth_Overlay.TabStop = false;
+            this.allFifteenth_Overlay.Visible = false;
             // 
-            // guna2PictureBox31
+            // all_itemPicFifteenth
             // 
-            this.guna2PictureBox31.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox31.Image")));
-            this.guna2PictureBox31.ImageRotate = 0F;
-            this.guna2PictureBox31.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox31.Name = "guna2PictureBox31";
-            this.guna2PictureBox31.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox31.TabIndex = 5;
-            this.guna2PictureBox31.TabStop = false;
+            this.all_itemPicFifteenth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicFifteenth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicFifteenth.Image")));
+            this.all_itemPicFifteenth.ImageRotate = 0F;
+            this.all_itemPicFifteenth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicFifteenth.Name = "all_itemPicFifteenth";
+            this.all_itemPicFifteenth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicFifteenth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicFifteenth.TabIndex = 5;
+            this.all_itemPicFifteenth.TabStop = false;
+            this.all_itemPicFifteenth.Click += new System.EventHandler(this.all_itemPicFifteenth_Click);
             // 
-            // guna2ShadowPanel11
+            // all_itemPanelFourteenth
             // 
-            this.guna2ShadowPanel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel11.Controls.Add(this.guna2PictureBox32);
-            this.guna2ShadowPanel11.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel11.Location = new System.Drawing.Point(867, 15);
-            this.guna2ShadowPanel11.Name = "guna2ShadowPanel11";
-            this.guna2ShadowPanel11.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel11.ShadowDepth = 200;
-            this.guna2ShadowPanel11.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel11.TabIndex = 6;
+            this.all_itemPanelFourteenth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelFourteenth.Controls.Add(this.allFourteenth_Overlay);
+            this.all_itemPanelFourteenth.Controls.Add(this.all_itemPicFourteenth);
+            this.all_itemPanelFourteenth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelFourteenth.Location = new System.Drawing.Point(1076, 15);
+            this.all_itemPanelFourteenth.Name = "all_itemPanelFourteenth";
+            this.all_itemPanelFourteenth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelFourteenth.ShadowDepth = 200;
+            this.all_itemPanelFourteenth.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelFourteenth.TabIndex = 7;
             // 
-            // guna2PictureBox32
+            // allFourteenth_Overlay
             // 
-            this.guna2PictureBox32.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox32.Image")));
-            this.guna2PictureBox32.ImageRotate = 0F;
-            this.guna2PictureBox32.Location = new System.Drawing.Point(44, 14);
-            this.guna2PictureBox32.Name = "guna2PictureBox32";
-            this.guna2PictureBox32.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox32.TabIndex = 4;
-            this.guna2PictureBox32.TabStop = false;
+            this.allFourteenth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allFourteenth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allFourteenth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allFourteenth_Overlay.Image")));
+            this.allFourteenth_Overlay.ImageRotate = 0F;
+            this.allFourteenth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allFourteenth_Overlay.Name = "allFourteenth_Overlay";
+            this.allFourteenth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allFourteenth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allFourteenth_Overlay.TabIndex = 7;
+            this.allFourteenth_Overlay.TabStop = false;
+            this.allFourteenth_Overlay.Visible = false;
             // 
-            // guna2ShadowPanel12
+            // all_itemPicFourteenth
             // 
-            this.guna2ShadowPanel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel12.Controls.Add(this.guna2PictureBox33);
-            this.guna2ShadowPanel12.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel12.Location = new System.Drawing.Point(665, 15);
-            this.guna2ShadowPanel12.Name = "guna2ShadowPanel12";
-            this.guna2ShadowPanel12.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel12.ShadowDepth = 200;
-            this.guna2ShadowPanel12.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel12.TabIndex = 6;
+            this.all_itemPicFourteenth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicFourteenth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicFourteenth.Image")));
+            this.all_itemPicFourteenth.ImageRotate = 0F;
+            this.all_itemPicFourteenth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicFourteenth.Name = "all_itemPicFourteenth";
+            this.all_itemPicFourteenth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicFourteenth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicFourteenth.TabIndex = 5;
+            this.all_itemPicFourteenth.TabStop = false;
+            this.all_itemPicFourteenth.Click += new System.EventHandler(this.all_itemPicFourteenth_Click);
             // 
-            // guna2PictureBox33
+            // all_itemPanelThirteenth
             // 
-            this.guna2PictureBox33.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox33.Image")));
-            this.guna2PictureBox33.ImageRotate = 0F;
-            this.guna2PictureBox33.Location = new System.Drawing.Point(37, 14);
-            this.guna2PictureBox33.Name = "guna2PictureBox33";
-            this.guna2PictureBox33.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox33.TabIndex = 3;
-            this.guna2PictureBox33.TabStop = false;
+            this.all_itemPanelThirteenth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelThirteenth.Controls.Add(this.allThirteenth_Overlay);
+            this.all_itemPanelThirteenth.Controls.Add(this.all_itemPicThirteenth);
+            this.all_itemPanelThirteenth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelThirteenth.Location = new System.Drawing.Point(867, 15);
+            this.all_itemPanelThirteenth.Name = "all_itemPanelThirteenth";
+            this.all_itemPanelThirteenth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelThirteenth.ShadowDepth = 200;
+            this.all_itemPanelThirteenth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelThirteenth.TabIndex = 6;
             // 
-            // guna2ShadowPanel13
+            // allThirteenth_Overlay
             // 
-            this.guna2ShadowPanel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel13.Controls.Add(this.guna2PictureBox34);
-            this.guna2ShadowPanel13.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel13.Location = new System.Drawing.Point(458, 15);
-            this.guna2ShadowPanel13.Name = "guna2ShadowPanel13";
-            this.guna2ShadowPanel13.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel13.ShadowDepth = 200;
-            this.guna2ShadowPanel13.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel13.TabIndex = 6;
+            this.allThirteenth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allThirteenth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allThirteenth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allThirteenth_Overlay.Image")));
+            this.allThirteenth_Overlay.ImageRotate = 0F;
+            this.allThirteenth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allThirteenth_Overlay.Name = "allThirteenth_Overlay";
+            this.allThirteenth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allThirteenth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allThirteenth_Overlay.TabIndex = 7;
+            this.allThirteenth_Overlay.TabStop = false;
+            this.allThirteenth_Overlay.Visible = false;
             // 
-            // guna2PictureBox34
+            // all_itemPicThirteenth
             // 
-            this.guna2PictureBox34.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox34.Image")));
-            this.guna2PictureBox34.ImageRotate = 0F;
-            this.guna2PictureBox34.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox34.Name = "guna2PictureBox34";
-            this.guna2PictureBox34.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox34.TabIndex = 2;
-            this.guna2PictureBox34.TabStop = false;
+            this.all_itemPicThirteenth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicThirteenth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicThirteenth.Image")));
+            this.all_itemPicThirteenth.ImageRotate = 0F;
+            this.all_itemPicThirteenth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicThirteenth.Name = "all_itemPicThirteenth";
+            this.all_itemPicThirteenth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicThirteenth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicThirteenth.TabIndex = 4;
+            this.all_itemPicThirteenth.TabStop = false;
+            this.all_itemPicThirteenth.Click += new System.EventHandler(this.all_itemPicThirteenth_Click);
             // 
-            // guna2ShadowPanel14
+            // all_itemPanelTwelfth
             // 
-            this.guna2ShadowPanel14.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel14.Controls.Add(this.guna2PictureBox35);
-            this.guna2ShadowPanel14.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel14.Location = new System.Drawing.Point(247, 15);
-            this.guna2ShadowPanel14.Name = "guna2ShadowPanel14";
-            this.guna2ShadowPanel14.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel14.ShadowDepth = 200;
-            this.guna2ShadowPanel14.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel14.TabIndex = 6;
+            this.all_itemPanelTwelfth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwelfth.Controls.Add(this.allTwelfth_Overlay);
+            this.all_itemPanelTwelfth.Controls.Add(this.all_itemPicTwelfth);
+            this.all_itemPanelTwelfth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwelfth.Location = new System.Drawing.Point(665, 15);
+            this.all_itemPanelTwelfth.Name = "all_itemPanelTwelfth";
+            this.all_itemPanelTwelfth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwelfth.ShadowDepth = 200;
+            this.all_itemPanelTwelfth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelTwelfth.TabIndex = 6;
             // 
-            // guna2PictureBox35
+            // allTwelfth_Overlay
             // 
-            this.guna2PictureBox35.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox35.Image")));
-            this.guna2PictureBox35.ImageRotate = 0F;
-            this.guna2PictureBox35.Location = new System.Drawing.Point(39, 14);
-            this.guna2PictureBox35.Name = "guna2PictureBox35";
-            this.guna2PictureBox35.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox35.TabIndex = 1;
-            this.guna2PictureBox35.TabStop = false;
+            this.allTwelfth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwelfth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwelfth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwelfth_Overlay.Image")));
+            this.allTwelfth_Overlay.ImageRotate = 0F;
+            this.allTwelfth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwelfth_Overlay.Name = "allTwelfth_Overlay";
+            this.allTwelfth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwelfth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwelfth_Overlay.TabIndex = 7;
+            this.allTwelfth_Overlay.TabStop = false;
+            this.allTwelfth_Overlay.Visible = false;
             // 
-            // guna2ShadowPanel15
+            // all_itemPicTwelfth
             // 
-            this.guna2ShadowPanel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel15.Controls.Add(this.guna2PictureBox36);
-            this.guna2ShadowPanel15.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel15.Location = new System.Drawing.Point(39, 15);
-            this.guna2ShadowPanel15.Name = "guna2ShadowPanel15";
-            this.guna2ShadowPanel15.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel15.ShadowDepth = 200;
-            this.guna2ShadowPanel15.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel15.TabIndex = 5;
+            this.all_itemPicTwelfth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwelfth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwelfth.Image")));
+            this.all_itemPicTwelfth.ImageRotate = 0F;
+            this.all_itemPicTwelfth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwelfth.Name = "all_itemPicTwelfth";
+            this.all_itemPicTwelfth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwelfth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwelfth.TabIndex = 3;
+            this.all_itemPicTwelfth.TabStop = false;
+            this.all_itemPicTwelfth.Click += new System.EventHandler(this.all_itemPicTwelfth_Click);
             // 
-            // guna2PictureBox36
+            // all_itemPanelEleventh
             // 
-            this.guna2PictureBox36.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox36.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox36.Image")));
-            this.guna2PictureBox36.ImageRotate = 0F;
-            this.guna2PictureBox36.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox36.Name = "guna2PictureBox36";
-            this.guna2PictureBox36.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox36.TabIndex = 0;
-            this.guna2PictureBox36.TabStop = false;
+            this.all_itemPanelEleventh.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelEleventh.Controls.Add(this.allEleventh_Overlay);
+            this.all_itemPanelEleventh.Controls.Add(this.all_itemPicEleventh);
+            this.all_itemPanelEleventh.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelEleventh.Location = new System.Drawing.Point(458, 15);
+            this.all_itemPanelEleventh.Name = "all_itemPanelEleventh";
+            this.all_itemPanelEleventh.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelEleventh.ShadowDepth = 200;
+            this.all_itemPanelEleventh.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelEleventh.TabIndex = 6;
+            // 
+            // allEleventh_Overlay
+            // 
+            this.allEleventh_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allEleventh_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allEleventh_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allEleventh_Overlay.Image")));
+            this.allEleventh_Overlay.ImageRotate = 0F;
+            this.allEleventh_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allEleventh_Overlay.Name = "allEleventh_Overlay";
+            this.allEleventh_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allEleventh_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allEleventh_Overlay.TabIndex = 7;
+            this.allEleventh_Overlay.TabStop = false;
+            this.allEleventh_Overlay.Visible = false;
+            // 
+            // all_itemPicEleventh
+            // 
+            this.all_itemPicEleventh.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicEleventh.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicEleventh.Image")));
+            this.all_itemPicEleventh.ImageRotate = 0F;
+            this.all_itemPicEleventh.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicEleventh.Name = "all_itemPicEleventh";
+            this.all_itemPicEleventh.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicEleventh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicEleventh.TabIndex = 2;
+            this.all_itemPicEleventh.TabStop = false;
+            this.all_itemPicEleventh.Click += new System.EventHandler(this.all_itemPicEleventh_Click);
+            // 
+            // all_itemPanelTenth
+            // 
+            this.all_itemPanelTenth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTenth.Controls.Add(this.allTenth_Overlay);
+            this.all_itemPanelTenth.Controls.Add(this.all_itemPicTenth);
+            this.all_itemPanelTenth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTenth.Location = new System.Drawing.Point(247, 15);
+            this.all_itemPanelTenth.Name = "all_itemPanelTenth";
+            this.all_itemPanelTenth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTenth.ShadowDepth = 200;
+            this.all_itemPanelTenth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelTenth.TabIndex = 6;
+            // 
+            // allTenth_Overlay
+            // 
+            this.allTenth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTenth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTenth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTenth_Overlay.Image")));
+            this.allTenth_Overlay.ImageRotate = 0F;
+            this.allTenth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTenth_Overlay.Name = "allTenth_Overlay";
+            this.allTenth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTenth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTenth_Overlay.TabIndex = 7;
+            this.allTenth_Overlay.TabStop = false;
+            this.allTenth_Overlay.Visible = false;
+            // 
+            // all_itemPicTenth
+            // 
+            this.all_itemPicTenth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTenth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTenth.Image")));
+            this.all_itemPicTenth.ImageRotate = 0F;
+            this.all_itemPicTenth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTenth.Name = "all_itemPicTenth";
+            this.all_itemPicTenth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTenth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTenth.TabIndex = 1;
+            this.all_itemPicTenth.TabStop = false;
+            this.all_itemPicTenth.Click += new System.EventHandler(this.all_itemPicTenth_Click);
+            // 
+            // all_itemPanelNinth
+            // 
+            this.all_itemPanelNinth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelNinth.Controls.Add(this.allNinth_Overlay);
+            this.all_itemPanelNinth.Controls.Add(this.all_itemPicNinth);
+            this.all_itemPanelNinth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelNinth.Location = new System.Drawing.Point(39, 15);
+            this.all_itemPanelNinth.Name = "all_itemPanelNinth";
+            this.all_itemPanelNinth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelNinth.ShadowDepth = 200;
+            this.all_itemPanelNinth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelNinth.TabIndex = 5;
+            // 
+            // allNinth_Overlay
+            // 
+            this.allNinth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allNinth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allNinth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allNinth_Overlay.Image")));
+            this.allNinth_Overlay.ImageRotate = 0F;
+            this.allNinth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allNinth_Overlay.Name = "allNinth_Overlay";
+            this.allNinth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allNinth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allNinth_Overlay.TabIndex = 7;
+            this.allNinth_Overlay.TabStop = false;
+            this.allNinth_Overlay.Visible = false;
+            // 
+            // all_itemPicNinth
+            // 
+            this.all_itemPicNinth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicNinth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicNinth.Image")));
+            this.all_itemPicNinth.ImageRotate = 0F;
+            this.all_itemPicNinth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicNinth.Name = "all_itemPicNinth";
+            this.all_itemPicNinth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicNinth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicNinth.TabIndex = 0;
+            this.all_itemPicNinth.TabStop = false;
+            this.all_itemPicNinth.Click += new System.EventHandler(this.all_itemPicNinth_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.guna2ShadowPanel19);
-            this.panel1.Controls.Add(this.guna2ShadowPanel18);
-            this.panel1.Controls.Add(this.guna2ShadowPanel9);
-            this.panel1.Controls.Add(this.guna2ShadowPanel8);
-            this.panel1.Controls.Add(this.guna2ShadowPanel7);
-            this.panel1.Controls.Add(this.guna2ShadowPanel6);
-            this.panel1.Controls.Add(this.guna2ShadowPanel5);
-            this.panel1.Controls.Add(this.guna2ShadowPanel4);
+            this.panel1.Controls.Add(this.all_itemPanelEighth);
+            this.panel1.Controls.Add(this.all_itemPanelSeventh);
+            this.panel1.Controls.Add(this.all_itemPanelSixth);
+            this.panel1.Controls.Add(this.all_itemPanelFifth);
+            this.panel1.Controls.Add(this.all_itemPanelFourth);
+            this.panel1.Controls.Add(this.all_itemPanelThird);
+            this.panel1.Controls.Add(this.all_itemPanelSecond);
+            this.panel1.Controls.Add(this.all_itemPanelFirst);
             this.panel1.Location = new System.Drawing.Point(11, 20);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1691, 173);
             this.panel1.TabIndex = 6;
             // 
-            // guna2ShadowPanel19
+            // all_itemPanelEighth
             // 
-            this.guna2ShadowPanel19.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel19.Controls.Add(this.guna2PictureBox40);
-            this.guna2ShadowPanel19.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel19.Location = new System.Drawing.Point(1493, 15);
-            this.guna2ShadowPanel19.Name = "guna2ShadowPanel19";
-            this.guna2ShadowPanel19.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel19.ShadowDepth = 200;
-            this.guna2ShadowPanel19.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel19.TabIndex = 9;
+            this.all_itemPanelEighth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelEighth.Controls.Add(this.allEighth_Overlay);
+            this.all_itemPanelEighth.Controls.Add(this.all_itemPicEighth);
+            this.all_itemPanelEighth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelEighth.Location = new System.Drawing.Point(1493, 15);
+            this.all_itemPanelEighth.Name = "all_itemPanelEighth";
+            this.all_itemPanelEighth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelEighth.ShadowDepth = 200;
+            this.all_itemPanelEighth.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelEighth.TabIndex = 9;
             // 
-            // guna2PictureBox40
+            // allEighth_Overlay
             // 
-            this.guna2PictureBox40.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox40.Image")));
-            this.guna2PictureBox40.ImageRotate = 0F;
-            this.guna2PictureBox40.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox40.Name = "guna2PictureBox40";
-            this.guna2PictureBox40.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox40.TabIndex = 5;
-            this.guna2PictureBox40.TabStop = false;
+            this.allEighth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allEighth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allEighth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allEighth_Overlay.Image")));
+            this.allEighth_Overlay.ImageRotate = 0F;
+            this.allEighth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allEighth_Overlay.Name = "allEighth_Overlay";
+            this.allEighth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allEighth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allEighth_Overlay.TabIndex = 7;
+            this.allEighth_Overlay.TabStop = false;
+            this.allEighth_Overlay.Visible = false;
             // 
-            // guna2ShadowPanel18
+            // all_itemPicEighth
             // 
-            this.guna2ShadowPanel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel18.Controls.Add(this.guna2PictureBox39);
-            this.guna2ShadowPanel18.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel18.Location = new System.Drawing.Point(1283, 15);
-            this.guna2ShadowPanel18.Name = "guna2ShadowPanel18";
-            this.guna2ShadowPanel18.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel18.ShadowDepth = 200;
-            this.guna2ShadowPanel18.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel18.TabIndex = 8;
+            this.all_itemPicEighth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicEighth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicEighth.Image")));
+            this.all_itemPicEighth.ImageRotate = 0F;
+            this.all_itemPicEighth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicEighth.Name = "all_itemPicEighth";
+            this.all_itemPicEighth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicEighth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicEighth.TabIndex = 5;
+            this.all_itemPicEighth.TabStop = false;
+            this.all_itemPicEighth.Click += new System.EventHandler(this.all_itemPicEighth_Click);
             // 
-            // guna2PictureBox39
+            // all_itemPanelSeventh
             // 
-            this.guna2PictureBox39.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox39.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox39.Image")));
-            this.guna2PictureBox39.ImageRotate = 0F;
-            this.guna2PictureBox39.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox39.Name = "guna2PictureBox39";
-            this.guna2PictureBox39.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox39.TabIndex = 5;
-            this.guna2PictureBox39.TabStop = false;
+            this.all_itemPanelSeventh.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelSeventh.Controls.Add(this.allSeventh_Overlay);
+            this.all_itemPanelSeventh.Controls.Add(this.all_itemPicSeventh);
+            this.all_itemPanelSeventh.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelSeventh.Location = new System.Drawing.Point(1283, 15);
+            this.all_itemPanelSeventh.Name = "all_itemPanelSeventh";
+            this.all_itemPanelSeventh.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelSeventh.ShadowDepth = 200;
+            this.all_itemPanelSeventh.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelSeventh.TabIndex = 8;
             // 
-            // guna2ShadowPanel9
+            // allSeventh_Overlay
             // 
-            this.guna2ShadowPanel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel9.Controls.Add(this.peShorts);
-            this.guna2ShadowPanel9.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel9.Location = new System.Drawing.Point(1076, 15);
-            this.guna2ShadowPanel9.Name = "guna2ShadowPanel9";
-            this.guna2ShadowPanel9.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel9.ShadowDepth = 200;
-            this.guna2ShadowPanel9.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel9.TabIndex = 7;
+            this.allSeventh_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allSeventh_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allSeventh_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allSeventh_Overlay.Image")));
+            this.allSeventh_Overlay.ImageRotate = 0F;
+            this.allSeventh_Overlay.Location = new System.Drawing.Point(-1, 7);
+            this.allSeventh_Overlay.Name = "allSeventh_Overlay";
+            this.allSeventh_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allSeventh_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allSeventh_Overlay.TabIndex = 6;
+            this.allSeventh_Overlay.TabStop = false;
+            this.allSeventh_Overlay.Visible = false;
             // 
-            // peShorts
+            // all_itemPicSeventh
             // 
-            this.peShorts.FillColor = System.Drawing.Color.Transparent;
-            this.peShorts.Image = ((System.Drawing.Image)(resources.GetObject("peShorts.Image")));
-            this.peShorts.ImageRotate = 0F;
-            this.peShorts.Location = new System.Drawing.Point(42, 14);
-            this.peShorts.Name = "peShorts";
-            this.peShorts.Size = new System.Drawing.Size(95, 124);
-            this.peShorts.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.peShorts.TabIndex = 5;
-            this.peShorts.TabStop = false;
-            this.peShorts.Click += new System.EventHandler(this.peShorts_Click);
+            this.all_itemPicSeventh.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicSeventh.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicSeventh.Image")));
+            this.all_itemPicSeventh.ImageRotate = 0F;
+            this.all_itemPicSeventh.Location = new System.Drawing.Point(5, 7);
+            this.all_itemPicSeventh.Name = "all_itemPicSeventh";
+            this.all_itemPicSeventh.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicSeventh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicSeventh.TabIndex = 5;
+            this.all_itemPicSeventh.TabStop = false;
+            this.all_itemPicSeventh.Click += new System.EventHandler(this.all_itemPicSeventh_Click);
             // 
-            // guna2ShadowPanel8
+            // all_itemPanelSixth
             // 
-            this.guna2ShadowPanel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel8.Controls.Add(this.pePants);
-            this.guna2ShadowPanel8.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel8.Location = new System.Drawing.Point(867, 15);
-            this.guna2ShadowPanel8.Name = "guna2ShadowPanel8";
-            this.guna2ShadowPanel8.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel8.ShadowDepth = 200;
-            this.guna2ShadowPanel8.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel8.TabIndex = 6;
+            this.all_itemPanelSixth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelSixth.Controls.Add(this.allSixth_Overlay);
+            this.all_itemPanelSixth.Controls.Add(this.all_itemPicSixth);
+            this.all_itemPanelSixth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelSixth.Location = new System.Drawing.Point(1076, 15);
+            this.all_itemPanelSixth.Name = "all_itemPanelSixth";
+            this.all_itemPanelSixth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelSixth.ShadowDepth = 200;
+            this.all_itemPanelSixth.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelSixth.TabIndex = 7;
             // 
-            // pePants
+            // allSixth_Overlay
             // 
-            this.pePants.FillColor = System.Drawing.Color.Transparent;
-            this.pePants.Image = ((System.Drawing.Image)(resources.GetObject("pePants.Image")));
-            this.pePants.ImageRotate = 0F;
-            this.pePants.Location = new System.Drawing.Point(44, 14);
-            this.pePants.Name = "pePants";
-            this.pePants.Size = new System.Drawing.Size(95, 124);
-            this.pePants.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pePants.TabIndex = 4;
-            this.pePants.TabStop = false;
-            this.pePants.Click += new System.EventHandler(this.pePants_Click);
+            this.allSixth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allSixth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allSixth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allSixth_Overlay.Image")));
+            this.allSixth_Overlay.ImageRotate = 0F;
+            this.allSixth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allSixth_Overlay.Name = "allSixth_Overlay";
+            this.allSixth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allSixth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allSixth_Overlay.TabIndex = 7;
+            this.allSixth_Overlay.TabStop = false;
+            this.allSixth_Overlay.Visible = false;
             // 
-            // guna2ShadowPanel7
+            // all_itemPicSixth
             // 
-            this.guna2ShadowPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel7.Controls.Add(this.peShirt);
-            this.guna2ShadowPanel7.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel7.Location = new System.Drawing.Point(665, 15);
-            this.guna2ShadowPanel7.Name = "guna2ShadowPanel7";
-            this.guna2ShadowPanel7.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel7.ShadowDepth = 200;
-            this.guna2ShadowPanel7.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel7.TabIndex = 6;
+            this.all_itemPicSixth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicSixth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicSixth.Image")));
+            this.all_itemPicSixth.ImageRotate = 0F;
+            this.all_itemPicSixth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicSixth.Name = "all_itemPicSixth";
+            this.all_itemPicSixth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicSixth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicSixth.TabIndex = 5;
+            this.all_itemPicSixth.TabStop = false;
+            this.all_itemPicSixth.Click += new System.EventHandler(this.all_itemPicSixth_Click);
             // 
-            // peShirt
+            // all_itemPanelFifth
             // 
-            this.peShirt.FillColor = System.Drawing.Color.Transparent;
-            this.peShirt.Image = ((System.Drawing.Image)(resources.GetObject("peShirt.Image")));
-            this.peShirt.ImageRotate = 0F;
-            this.peShirt.Location = new System.Drawing.Point(37, 14);
-            this.peShirt.Name = "peShirt";
-            this.peShirt.Size = new System.Drawing.Size(95, 124);
-            this.peShirt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.peShirt.TabIndex = 3;
-            this.peShirt.TabStop = false;
-            this.peShirt.Click += new System.EventHandler(this.peShirt_Click);
+            this.all_itemPanelFifth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelFifth.Controls.Add(this.allFifth_Overlay);
+            this.all_itemPanelFifth.Controls.Add(this.all_itemPicFifth);
+            this.all_itemPanelFifth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelFifth.Location = new System.Drawing.Point(867, 15);
+            this.all_itemPanelFifth.Name = "all_itemPanelFifth";
+            this.all_itemPanelFifth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelFifth.ShadowDepth = 200;
+            this.all_itemPanelFifth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelFifth.TabIndex = 6;
             // 
-            // guna2ShadowPanel6
+            // allFifth_Overlay
             // 
-            this.guna2ShadowPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel6.Controls.Add(this.univ);
-            this.guna2ShadowPanel6.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel6.Location = new System.Drawing.Point(458, 15);
-            this.guna2ShadowPanel6.Name = "guna2ShadowPanel6";
-            this.guna2ShadowPanel6.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel6.ShadowDepth = 200;
-            this.guna2ShadowPanel6.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel6.TabIndex = 6;
+            this.allFifth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allFifth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allFifth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allFifth_Overlay.Image")));
+            this.allFifth_Overlay.ImageRotate = 0F;
+            this.allFifth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allFifth_Overlay.Name = "allFifth_Overlay";
+            this.allFifth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allFifth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allFifth_Overlay.TabIndex = 7;
+            this.allFifth_Overlay.TabStop = false;
+            this.allFifth_Overlay.Visible = false;
             // 
-            // univ
+            // all_itemPicFifth
             // 
-            this.univ.FillColor = System.Drawing.Color.Transparent;
-            this.univ.Image = ((System.Drawing.Image)(resources.GetObject("univ.Image")));
-            this.univ.ImageRotate = 0F;
-            this.univ.Location = new System.Drawing.Point(35, 14);
-            this.univ.Name = "univ";
-            this.univ.Size = new System.Drawing.Size(95, 124);
-            this.univ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.univ.TabIndex = 2;
-            this.univ.TabStop = false;
-            this.univ.Click += new System.EventHandler(this.univ_Click);
+            this.all_itemPicFifth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicFifth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicFifth.Image")));
+            this.all_itemPicFifth.ImageRotate = 0F;
+            this.all_itemPicFifth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicFifth.Name = "all_itemPicFifth";
+            this.all_itemPicFifth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicFifth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicFifth.TabIndex = 4;
+            this.all_itemPicFifth.TabStop = false;
+            this.all_itemPicFifth.Click += new System.EventHandler(this.all_itemPicFifth_Click);
             // 
-            // guna2ShadowPanel5
+            // all_itemPanelFourth
             // 
-            this.guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel5.Controls.Add(this.typeB);
-            this.guna2ShadowPanel5.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel5.Location = new System.Drawing.Point(247, 15);
-            this.guna2ShadowPanel5.Name = "guna2ShadowPanel5";
-            this.guna2ShadowPanel5.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel5.ShadowDepth = 200;
-            this.guna2ShadowPanel5.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel5.TabIndex = 6;
+            this.all_itemPanelFourth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelFourth.Controls.Add(this.allFourth_Overlay);
+            this.all_itemPanelFourth.Controls.Add(this.all_itemPicFourth);
+            this.all_itemPanelFourth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelFourth.Location = new System.Drawing.Point(665, 15);
+            this.all_itemPanelFourth.Name = "all_itemPanelFourth";
+            this.all_itemPanelFourth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelFourth.ShadowDepth = 200;
+            this.all_itemPanelFourth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelFourth.TabIndex = 6;
             // 
-            // typeB
+            // allFourth_Overlay
             // 
-            this.typeB.FillColor = System.Drawing.Color.Transparent;
-            this.typeB.Image = ((System.Drawing.Image)(resources.GetObject("typeB.Image")));
-            this.typeB.ImageRotate = 0F;
-            this.typeB.Location = new System.Drawing.Point(39, 14);
-            this.typeB.Name = "typeB";
-            this.typeB.Size = new System.Drawing.Size(95, 124);
-            this.typeB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.typeB.TabIndex = 1;
-            this.typeB.TabStop = false;
-            this.typeB.Click += new System.EventHandler(this.typeB_Click);
+            this.allFourth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allFourth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allFourth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allFourth_Overlay.Image")));
+            this.allFourth_Overlay.ImageRotate = 0F;
+            this.allFourth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allFourth_Overlay.Name = "allFourth_Overlay";
+            this.allFourth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allFourth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allFourth_Overlay.TabIndex = 7;
+            this.allFourth_Overlay.TabStop = false;
+            this.allFourth_Overlay.Visible = false;
             // 
-            // guna2ShadowPanel4
+            // all_itemPicFourth
             // 
-            this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel4.Controls.Add(this.typeA);
-            this.guna2ShadowPanel4.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel4.Location = new System.Drawing.Point(39, 15);
-            this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
-            this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel4.ShadowDepth = 200;
-            this.guna2ShadowPanel4.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel4.TabIndex = 5;
+            this.all_itemPicFourth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicFourth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicFourth.Image")));
+            this.all_itemPicFourth.ImageRotate = 0F;
+            this.all_itemPicFourth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicFourth.Name = "all_itemPicFourth";
+            this.all_itemPicFourth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicFourth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicFourth.TabIndex = 3;
+            this.all_itemPicFourth.TabStop = false;
+            this.all_itemPicFourth.Click += new System.EventHandler(this.all_itemPicFourth_Click);
             // 
-            // typeA
+            // all_itemPanelThird
             // 
-            this.typeA.FillColor = System.Drawing.Color.Transparent;
-            this.typeA.Image = ((System.Drawing.Image)(resources.GetObject("typeA.Image")));
-            this.typeA.ImageRotate = 0F;
-            this.typeA.Location = new System.Drawing.Point(35, 14);
-            this.typeA.Name = "typeA";
-            this.typeA.Size = new System.Drawing.Size(95, 124);
-            this.typeA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.typeA.TabIndex = 0;
-            this.typeA.TabStop = false;
-            this.typeA.Click += new System.EventHandler(this.typeA_Click);
+            this.all_itemPanelThird.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelThird.Controls.Add(this.allThird_Overlay);
+            this.all_itemPanelThird.Controls.Add(this.all_itemPicThird);
+            this.all_itemPanelThird.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelThird.Location = new System.Drawing.Point(458, 15);
+            this.all_itemPanelThird.Name = "all_itemPanelThird";
+            this.all_itemPanelThird.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelThird.ShadowDepth = 200;
+            this.all_itemPanelThird.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelThird.TabIndex = 6;
+            // 
+            // allThird_Overlay
+            // 
+            this.allThird_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allThird_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allThird_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allThird_Overlay.Image")));
+            this.allThird_Overlay.ImageRotate = 0F;
+            this.allThird_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allThird_Overlay.Name = "allThird_Overlay";
+            this.allThird_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allThird_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allThird_Overlay.TabIndex = 7;
+            this.allThird_Overlay.TabStop = false;
+            this.allThird_Overlay.Visible = false;
+            // 
+            // all_itemPicThird
+            // 
+            this.all_itemPicThird.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicThird.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicThird.Image")));
+            this.all_itemPicThird.ImageRotate = 0F;
+            this.all_itemPicThird.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicThird.Name = "all_itemPicThird";
+            this.all_itemPicThird.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicThird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicThird.TabIndex = 2;
+            this.all_itemPicThird.TabStop = false;
+            this.all_itemPicThird.Click += new System.EventHandler(this.all_itemPicThird_Click);
+            // 
+            // all_itemPanelSecond
+            // 
+            this.all_itemPanelSecond.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelSecond.Controls.Add(this.allSecond_Overlay);
+            this.all_itemPanelSecond.Controls.Add(this.all_itemPicSecond);
+            this.all_itemPanelSecond.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelSecond.Location = new System.Drawing.Point(247, 15);
+            this.all_itemPanelSecond.Name = "all_itemPanelSecond";
+            this.all_itemPanelSecond.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelSecond.ShadowDepth = 200;
+            this.all_itemPanelSecond.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelSecond.TabIndex = 6;
+            // 
+            // allSecond_Overlay
+            // 
+            this.allSecond_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allSecond_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allSecond_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allSecond_Overlay.Image")));
+            this.allSecond_Overlay.ImageRotate = 0F;
+            this.allSecond_Overlay.Location = new System.Drawing.Point(4, 9);
+            this.allSecond_Overlay.Name = "allSecond_Overlay";
+            this.allSecond_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allSecond_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allSecond_Overlay.TabIndex = 7;
+            this.allSecond_Overlay.TabStop = false;
+            this.allSecond_Overlay.Visible = false;
+            // 
+            // all_itemPicSecond
+            // 
+            this.all_itemPicSecond.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicSecond.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicSecond.Image")));
+            this.all_itemPicSecond.ImageRotate = 0F;
+            this.all_itemPicSecond.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicSecond.Name = "all_itemPicSecond";
+            this.all_itemPicSecond.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicSecond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicSecond.TabIndex = 1;
+            this.all_itemPicSecond.TabStop = false;
+            this.all_itemPicSecond.Click += new System.EventHandler(this.all_itemPicSecond_Click);
+            // 
+            // all_itemPanelFirst
+            // 
+            this.all_itemPanelFirst.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelFirst.Controls.Add(this.allFirst_Overlay);
+            this.all_itemPanelFirst.Controls.Add(this.all_itemPicFirst);
+            this.all_itemPanelFirst.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelFirst.Location = new System.Drawing.Point(39, 15);
+            this.all_itemPanelFirst.Name = "all_itemPanelFirst";
+            this.all_itemPanelFirst.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelFirst.ShadowDepth = 200;
+            this.all_itemPanelFirst.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelFirst.TabIndex = 5;
+            // 
+            // allFirst_Overlay
+            // 
+            this.allFirst_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allFirst_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allFirst_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allFirst_Overlay.Image")));
+            this.allFirst_Overlay.ImageRotate = 0F;
+            this.allFirst_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allFirst_Overlay.Name = "allFirst_Overlay";
+            this.allFirst_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allFirst_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allFirst_Overlay.TabIndex = 8;
+            this.allFirst_Overlay.TabStop = false;
+            this.allFirst_Overlay.Visible = false;
+            // 
+            // all_itemPicFirst
+            // 
+            this.all_itemPicFirst.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicFirst.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicFirst.Image")));
+            this.all_itemPicFirst.ImageRotate = 0F;
+            this.all_itemPicFirst.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicFirst.Name = "all_itemPicFirst";
+            this.all_itemPicFirst.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicFirst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicFirst.TabIndex = 0;
+            this.all_itemPicFirst.TabStop = false;
+            this.all_itemPicFirst.Click += new System.EventHandler(this.all_itemPicFirst_Click);
             // 
             // guna2Button4
             // 
@@ -1182,7 +2064,24 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.top_lbl16);
+            this.tabPage5.Controls.Add(this.top_lbl15);
+            this.tabPage5.Controls.Add(this.top_lbl14);
+            this.tabPage5.Controls.Add(this.top_lbl13);
+            this.tabPage5.Controls.Add(this.top_lbl12);
+            this.tabPage5.Controls.Add(this.top_lbl11);
+            this.tabPage5.Controls.Add(this.top_lbl10);
+            this.tabPage5.Controls.Add(this.top_lbl9);
+            this.tabPage5.Controls.Add(this.top_lbl8);
+            this.tabPage5.Controls.Add(this.top_lbl7);
+            this.tabPage5.Controls.Add(this.top_lbl6);
+            this.tabPage5.Controls.Add(this.top_lbl5);
+            this.tabPage5.Controls.Add(this.top_lbl4);
+            this.tabPage5.Controls.Add(this.top_lbl3);
+            this.tabPage5.Controls.Add(this.top_lbl1);
+            this.tabPage5.Controls.Add(this.top_lbl2);
             this.tabPage5.Controls.Add(this.panel3);
+            this.tabPage5.Controls.Add(this.panel4);
             this.tabPage5.Controls.Add(this.guna2Button5);
             this.tabPage5.Location = new System.Drawing.Point(4, 44);
             this.tabPage5.Name = "tabPage5";
@@ -1192,212 +2091,852 @@
             this.tabPage5.Text = "Top/Shirt";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // top_lbl16
+            // 
+            this.top_lbl16.AutoEllipsis = true;
+            this.top_lbl16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl16.Location = new System.Drawing.Point(1560, 424);
+            this.top_lbl16.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl16.Name = "top_lbl16";
+            this.top_lbl16.Size = new System.Drawing.Size(67, 16);
+            this.top_lbl16.TabIndex = 44;
+            this.top_lbl16.Text = "TEXT 16";
+            this.top_lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl15
+            // 
+            this.top_lbl15.AutoEllipsis = true;
+            this.top_lbl15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl15.Location = new System.Drawing.Point(1332, 423);
+            this.top_lbl15.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl15.Name = "top_lbl15";
+            this.top_lbl15.Size = new System.Drawing.Size(96, 16);
+            this.top_lbl15.TabIndex = 43;
+            this.top_lbl15.Text = "TEXT 15";
+            this.top_lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl14
+            // 
+            this.top_lbl14.AutoEllipsis = true;
+            this.top_lbl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl14.Location = new System.Drawing.Point(1129, 424);
+            this.top_lbl14.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl14.Name = "top_lbl14";
+            this.top_lbl14.Size = new System.Drawing.Size(94, 16);
+            this.top_lbl14.TabIndex = 42;
+            this.top_lbl14.Text = "TEXT 14";
+            this.top_lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl13
+            // 
+            this.top_lbl13.AutoEllipsis = true;
+            this.top_lbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl13.Location = new System.Drawing.Point(874, 423);
+            this.top_lbl13.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl13.Name = "top_lbl13";
+            this.top_lbl13.Size = new System.Drawing.Size(177, 16);
+            this.top_lbl13.TabIndex = 41;
+            this.top_lbl13.Text = "TEXT 13";
+            this.top_lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl12
+            // 
+            this.top_lbl12.AutoEllipsis = true;
+            this.top_lbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl12.Location = new System.Drawing.Point(688, 423);
+            this.top_lbl12.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl12.Name = "top_lbl12";
+            this.top_lbl12.Size = new System.Drawing.Size(147, 16);
+            this.top_lbl12.TabIndex = 40;
+            this.top_lbl12.Text = "TEXT 12";
+            this.top_lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl11
+            // 
+            this.top_lbl11.AutoEllipsis = true;
+            this.top_lbl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl11.Location = new System.Drawing.Point(514, 423);
+            this.top_lbl11.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl11.Name = "top_lbl11";
+            this.top_lbl11.Size = new System.Drawing.Size(80, 16);
+            this.top_lbl11.TabIndex = 39;
+            this.top_lbl11.Text = "TEXT 11";
+            this.top_lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl10
+            // 
+            this.top_lbl10.AutoEllipsis = true;
+            this.top_lbl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl10.Location = new System.Drawing.Point(304, 424);
+            this.top_lbl10.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl10.Name = "top_lbl10";
+            this.top_lbl10.Size = new System.Drawing.Size(87, 16);
+            this.top_lbl10.TabIndex = 36;
+            this.top_lbl10.Text = "TEXT 10";
+            this.top_lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl9
+            // 
+            this.top_lbl9.AutoEllipsis = true;
+            this.top_lbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl9.Location = new System.Drawing.Point(96, 424);
+            this.top_lbl9.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl9.Name = "top_lbl9";
+            this.top_lbl9.Size = new System.Drawing.Size(86, 16);
+            this.top_lbl9.TabIndex = 34;
+            this.top_lbl9.Text = "TEXT 9";
+            this.top_lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl8
+            // 
+            this.top_lbl8.AutoEllipsis = true;
+            this.top_lbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl8.Location = new System.Drawing.Point(1546, 196);
+            this.top_lbl8.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl8.Name = "top_lbl8";
+            this.top_lbl8.Size = new System.Drawing.Size(98, 16);
+            this.top_lbl8.TabIndex = 38;
+            this.top_lbl8.Text = "TEXT 8";
+            this.top_lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl7
+            // 
+            this.top_lbl7.AutoEllipsis = true;
+            this.top_lbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl7.Location = new System.Drawing.Point(1338, 195);
+            this.top_lbl7.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl7.Name = "top_lbl7";
+            this.top_lbl7.Size = new System.Drawing.Size(86, 16);
+            this.top_lbl7.TabIndex = 37;
+            this.top_lbl7.Text = "TEXT 7";
+            this.top_lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl6
+            // 
+            this.top_lbl6.AutoEllipsis = true;
+            this.top_lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl6.Location = new System.Drawing.Point(1136, 196);
+            this.top_lbl6.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl6.Name = "top_lbl6";
+            this.top_lbl6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.top_lbl6.Size = new System.Drawing.Size(88, 16);
+            this.top_lbl6.TabIndex = 35;
+            this.top_lbl6.Text = "TEXT 6";
+            this.top_lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl5
+            // 
+            this.top_lbl5.AutoEllipsis = true;
+            this.top_lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl5.Location = new System.Drawing.Point(926, 196);
+            this.top_lbl5.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl5.Name = "top_lbl5";
+            this.top_lbl5.Size = new System.Drawing.Size(86, 16);
+            this.top_lbl5.TabIndex = 33;
+            this.top_lbl5.Text = "TEXT 5";
+            this.top_lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl4
+            // 
+            this.top_lbl4.AutoEllipsis = true;
+            this.top_lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl4.Location = new System.Drawing.Point(724, 196);
+            this.top_lbl4.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl4.Name = "top_lbl4";
+            this.top_lbl4.Size = new System.Drawing.Size(81, 16);
+            this.top_lbl4.TabIndex = 32;
+            this.top_lbl4.Text = "TEXT 4";
+            this.top_lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl3
+            // 
+            this.top_lbl3.AutoEllipsis = true;
+            this.top_lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl3.Location = new System.Drawing.Point(483, 196);
+            this.top_lbl3.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl3.Name = "top_lbl3";
+            this.top_lbl3.Size = new System.Drawing.Size(148, 16);
+            this.top_lbl3.TabIndex = 31;
+            this.top_lbl3.Text = "TEXT 3";
+            this.top_lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl1
+            // 
+            this.top_lbl1.AutoEllipsis = true;
+            this.top_lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl1.Location = new System.Drawing.Point(75, 196);
+            this.top_lbl1.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl1.Name = "top_lbl1";
+            this.top_lbl1.Size = new System.Drawing.Size(120, 16);
+            this.top_lbl1.TabIndex = 30;
+            this.top_lbl1.Text = "TEXT 1";
+            this.top_lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // top_lbl2
+            // 
+            this.top_lbl2.AutoEllipsis = true;
+            this.top_lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_lbl2.Location = new System.Drawing.Point(276, 196);
+            this.top_lbl2.MaximumSize = new System.Drawing.Size(200, 30);
+            this.top_lbl2.Name = "top_lbl2";
+            this.top_lbl2.Size = new System.Drawing.Size(139, 16);
+            this.top_lbl2.TabIndex = 29;
+            this.top_lbl2.Text = "TEXT 2";
+            this.top_lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.guna2ShadowPanel20);
-            this.panel3.Controls.Add(this.guna2ShadowPanel21);
-            this.panel3.Controls.Add(this.guna2ShadowPanel22);
-            this.panel3.Controls.Add(this.guna2ShadowPanel23);
-            this.panel3.Controls.Add(this.guna2ShadowPanel24);
-            this.panel3.Controls.Add(this.guna2ShadowPanel25);
-            this.panel3.Controls.Add(this.guna2ShadowPanel26);
-            this.panel3.Controls.Add(this.guna2ShadowPanel27);
-            this.panel3.Location = new System.Drawing.Point(11, 20);
+            this.panel3.Controls.Add(this.top_Panel16);
+            this.panel3.Controls.Add(this.top_Panel15);
+            this.panel3.Controls.Add(this.top_Panel14);
+            this.panel3.Controls.Add(this.top_Panel13);
+            this.panel3.Controls.Add(this.top_Panel12);
+            this.panel3.Controls.Add(this.top_Panel11);
+            this.panel3.Controls.Add(this.top_Panel10);
+            this.panel3.Controls.Add(this.top_Panel9);
+            this.panel3.Location = new System.Drawing.Point(11, 247);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1691, 173);
-            this.panel3.TabIndex = 7;
+            this.panel3.TabIndex = 28;
             // 
-            // guna2ShadowPanel20
+            // top_Panel16
             // 
-            this.guna2ShadowPanel20.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel20.Controls.Add(this.guna2PictureBox41);
-            this.guna2ShadowPanel20.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel20.Location = new System.Drawing.Point(1493, 15);
-            this.guna2ShadowPanel20.Name = "guna2ShadowPanel20";
-            this.guna2ShadowPanel20.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel20.ShadowDepth = 200;
-            this.guna2ShadowPanel20.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel20.TabIndex = 9;
+            this.top_Panel16.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel16.Controls.Add(this.Top_Overlay16);
+            this.top_Panel16.Controls.Add(this.top_itemPic16);
+            this.top_Panel16.FillColor = System.Drawing.Color.White;
+            this.top_Panel16.Location = new System.Drawing.Point(1493, 15);
+            this.top_Panel16.Name = "top_Panel16";
+            this.top_Panel16.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel16.ShadowDepth = 200;
+            this.top_Panel16.Size = new System.Drawing.Size(171, 154);
+            this.top_Panel16.TabIndex = 9;
             // 
-            // guna2PictureBox41
+            // Top_Overlay16
             // 
-            this.guna2PictureBox41.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox41.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox41.Image")));
-            this.guna2PictureBox41.ImageRotate = 0F;
-            this.guna2PictureBox41.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox41.Name = "guna2PictureBox41";
-            this.guna2PictureBox41.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox41.TabIndex = 5;
-            this.guna2PictureBox41.TabStop = false;
+            this.Top_Overlay16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay16.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay16.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay16.Image")));
+            this.Top_Overlay16.ImageRotate = 0F;
+            this.Top_Overlay16.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay16.Name = "Top_Overlay16";
+            this.Top_Overlay16.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay16.TabIndex = 7;
+            this.Top_Overlay16.TabStop = false;
+            this.Top_Overlay16.Visible = false;
             // 
-            // guna2ShadowPanel21
+            // top_itemPic16
             // 
-            this.guna2ShadowPanel21.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel21.Controls.Add(this.guna2PictureBox42);
-            this.guna2ShadowPanel21.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel21.Location = new System.Drawing.Point(1283, 15);
-            this.guna2ShadowPanel21.Name = "guna2ShadowPanel21";
-            this.guna2ShadowPanel21.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel21.ShadowDepth = 200;
-            this.guna2ShadowPanel21.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel21.TabIndex = 8;
+            this.top_itemPic16.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic16.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic16.Image")));
+            this.top_itemPic16.ImageRotate = 0F;
+            this.top_itemPic16.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic16.Name = "top_itemPic16";
+            this.top_itemPic16.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic16.TabIndex = 5;
+            this.top_itemPic16.TabStop = false;
             // 
-            // guna2PictureBox42
+            // top_Panel15
             // 
-            this.guna2PictureBox42.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox42.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox42.Image")));
-            this.guna2PictureBox42.ImageRotate = 0F;
-            this.guna2PictureBox42.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox42.Name = "guna2PictureBox42";
-            this.guna2PictureBox42.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox42.TabIndex = 5;
-            this.guna2PictureBox42.TabStop = false;
+            this.top_Panel15.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel15.Controls.Add(this.Top_Overlay15);
+            this.top_Panel15.Controls.Add(this.top_itemPic15);
+            this.top_Panel15.FillColor = System.Drawing.Color.White;
+            this.top_Panel15.Location = new System.Drawing.Point(1283, 15);
+            this.top_Panel15.Name = "top_Panel15";
+            this.top_Panel15.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel15.ShadowDepth = 200;
+            this.top_Panel15.Size = new System.Drawing.Size(171, 154);
+            this.top_Panel15.TabIndex = 8;
             // 
-            // guna2ShadowPanel22
+            // Top_Overlay15
             // 
-            this.guna2ShadowPanel22.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel22.Controls.Add(this.guna2PictureBox43);
-            this.guna2ShadowPanel22.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel22.Location = new System.Drawing.Point(1076, 15);
-            this.guna2ShadowPanel22.Name = "guna2ShadowPanel22";
-            this.guna2ShadowPanel22.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel22.ShadowDepth = 200;
-            this.guna2ShadowPanel22.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel22.TabIndex = 7;
+            this.Top_Overlay15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay15.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay15.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay15.Image")));
+            this.Top_Overlay15.ImageRotate = 0F;
+            this.Top_Overlay15.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay15.Name = "Top_Overlay15";
+            this.Top_Overlay15.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay15.TabIndex = 7;
+            this.Top_Overlay15.TabStop = false;
+            this.Top_Overlay15.Visible = false;
             // 
-            // guna2PictureBox43
+            // top_itemPic15
             // 
-            this.guna2PictureBox43.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox43.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox43.Image")));
-            this.guna2PictureBox43.ImageRotate = 0F;
-            this.guna2PictureBox43.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox43.Name = "guna2PictureBox43";
-            this.guna2PictureBox43.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox43.TabIndex = 5;
-            this.guna2PictureBox43.TabStop = false;
+            this.top_itemPic15.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic15.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic15.Image")));
+            this.top_itemPic15.ImageRotate = 0F;
+            this.top_itemPic15.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic15.Name = "top_itemPic15";
+            this.top_itemPic15.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic15.TabIndex = 5;
+            this.top_itemPic15.TabStop = false;
             // 
-            // guna2ShadowPanel23
+            // top_Panel14
             // 
-            this.guna2ShadowPanel23.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel23.Controls.Add(this.guna2PictureBox44);
-            this.guna2ShadowPanel23.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel23.Location = new System.Drawing.Point(867, 15);
-            this.guna2ShadowPanel23.Name = "guna2ShadowPanel23";
-            this.guna2ShadowPanel23.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel23.ShadowDepth = 200;
-            this.guna2ShadowPanel23.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel23.TabIndex = 6;
+            this.top_Panel14.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel14.Controls.Add(this.Top_Overlay14);
+            this.top_Panel14.Controls.Add(this.top_itemPic14);
+            this.top_Panel14.FillColor = System.Drawing.Color.White;
+            this.top_Panel14.Location = new System.Drawing.Point(1076, 15);
+            this.top_Panel14.Name = "top_Panel14";
+            this.top_Panel14.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel14.ShadowDepth = 200;
+            this.top_Panel14.Size = new System.Drawing.Size(171, 154);
+            this.top_Panel14.TabIndex = 7;
             // 
-            // guna2PictureBox44
+            // Top_Overlay14
             // 
-            this.guna2PictureBox44.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox44.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox44.Image")));
-            this.guna2PictureBox44.ImageRotate = 0F;
-            this.guna2PictureBox44.Location = new System.Drawing.Point(44, 14);
-            this.guna2PictureBox44.Name = "guna2PictureBox44";
-            this.guna2PictureBox44.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox44.TabIndex = 4;
-            this.guna2PictureBox44.TabStop = false;
+            this.Top_Overlay14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay14.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay14.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay14.Image")));
+            this.Top_Overlay14.ImageRotate = 0F;
+            this.Top_Overlay14.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay14.Name = "Top_Overlay14";
+            this.Top_Overlay14.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay14.TabIndex = 7;
+            this.Top_Overlay14.TabStop = false;
+            this.Top_Overlay14.Visible = false;
             // 
-            // guna2ShadowPanel24
+            // top_itemPic14
             // 
-            this.guna2ShadowPanel24.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel24.Controls.Add(this.guna2PictureBox45);
-            this.guna2ShadowPanel24.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel24.Location = new System.Drawing.Point(665, 15);
-            this.guna2ShadowPanel24.Name = "guna2ShadowPanel24";
-            this.guna2ShadowPanel24.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel24.ShadowDepth = 200;
-            this.guna2ShadowPanel24.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel24.TabIndex = 6;
+            this.top_itemPic14.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic14.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic14.Image")));
+            this.top_itemPic14.ImageRotate = 0F;
+            this.top_itemPic14.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic14.Name = "top_itemPic14";
+            this.top_itemPic14.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic14.TabIndex = 5;
+            this.top_itemPic14.TabStop = false;
             // 
-            // guna2PictureBox45
+            // top_Panel13
             // 
-            this.guna2PictureBox45.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox45.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox45.Image")));
-            this.guna2PictureBox45.ImageRotate = 0F;
-            this.guna2PictureBox45.Location = new System.Drawing.Point(37, 14);
-            this.guna2PictureBox45.Name = "guna2PictureBox45";
-            this.guna2PictureBox45.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox45.TabIndex = 3;
-            this.guna2PictureBox45.TabStop = false;
+            this.top_Panel13.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel13.Controls.Add(this.Top_Overlay13);
+            this.top_Panel13.Controls.Add(this.top_itemPic13);
+            this.top_Panel13.FillColor = System.Drawing.Color.White;
+            this.top_Panel13.Location = new System.Drawing.Point(867, 15);
+            this.top_Panel13.Name = "top_Panel13";
+            this.top_Panel13.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel13.ShadowDepth = 200;
+            this.top_Panel13.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel13.TabIndex = 6;
             // 
-            // guna2ShadowPanel25
+            // Top_Overlay13
             // 
-            this.guna2ShadowPanel25.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel25.Controls.Add(this.guna2PictureBox46);
-            this.guna2ShadowPanel25.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel25.Location = new System.Drawing.Point(458, 15);
-            this.guna2ShadowPanel25.Name = "guna2ShadowPanel25";
-            this.guna2ShadowPanel25.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel25.ShadowDepth = 200;
-            this.guna2ShadowPanel25.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel25.TabIndex = 6;
+            this.Top_Overlay13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay13.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay13.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay13.Image")));
+            this.Top_Overlay13.ImageRotate = 0F;
+            this.Top_Overlay13.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay13.Name = "Top_Overlay13";
+            this.Top_Overlay13.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay13.TabIndex = 7;
+            this.Top_Overlay13.TabStop = false;
+            this.Top_Overlay13.Visible = false;
             // 
-            // guna2PictureBox46
+            // top_itemPic13
             // 
-            this.guna2PictureBox46.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox46.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox46.Image")));
-            this.guna2PictureBox46.ImageRotate = 0F;
-            this.guna2PictureBox46.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox46.Name = "guna2PictureBox46";
-            this.guna2PictureBox46.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox46.TabIndex = 2;
-            this.guna2PictureBox46.TabStop = false;
+            this.top_itemPic13.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic13.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic13.Image")));
+            this.top_itemPic13.ImageRotate = 0F;
+            this.top_itemPic13.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic13.Name = "top_itemPic13";
+            this.top_itemPic13.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic13.TabIndex = 4;
+            this.top_itemPic13.TabStop = false;
             // 
-            // guna2ShadowPanel26
+            // top_Panel12
             // 
-            this.guna2ShadowPanel26.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel26.Controls.Add(this.guna2PictureBox47);
-            this.guna2ShadowPanel26.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel26.Location = new System.Drawing.Point(247, 15);
-            this.guna2ShadowPanel26.Name = "guna2ShadowPanel26";
-            this.guna2ShadowPanel26.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel26.ShadowDepth = 200;
-            this.guna2ShadowPanel26.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel26.TabIndex = 6;
+            this.top_Panel12.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel12.Controls.Add(this.Top_Overlay12);
+            this.top_Panel12.Controls.Add(this.top_itemPic12);
+            this.top_Panel12.FillColor = System.Drawing.Color.White;
+            this.top_Panel12.Location = new System.Drawing.Point(665, 15);
+            this.top_Panel12.Name = "top_Panel12";
+            this.top_Panel12.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel12.ShadowDepth = 200;
+            this.top_Panel12.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel12.TabIndex = 6;
             // 
-            // guna2PictureBox47
+            // Top_Overlay12
             // 
-            this.guna2PictureBox47.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox47.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox47.Image")));
-            this.guna2PictureBox47.ImageRotate = 0F;
-            this.guna2PictureBox47.Location = new System.Drawing.Point(39, 14);
-            this.guna2PictureBox47.Name = "guna2PictureBox47";
-            this.guna2PictureBox47.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox47.TabIndex = 1;
-            this.guna2PictureBox47.TabStop = false;
+            this.Top_Overlay12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay12.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay12.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay12.Image")));
+            this.Top_Overlay12.ImageRotate = 0F;
+            this.Top_Overlay12.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay12.Name = "Top_Overlay12";
+            this.Top_Overlay12.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay12.TabIndex = 7;
+            this.Top_Overlay12.TabStop = false;
+            this.Top_Overlay12.Visible = false;
             // 
-            // guna2ShadowPanel27
+            // top_itemPic12
             // 
-            this.guna2ShadowPanel27.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel27.Controls.Add(this.guna2PictureBox48);
-            this.guna2ShadowPanel27.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel27.Location = new System.Drawing.Point(39, 15);
-            this.guna2ShadowPanel27.Name = "guna2ShadowPanel27";
-            this.guna2ShadowPanel27.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel27.ShadowDepth = 200;
-            this.guna2ShadowPanel27.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel27.TabIndex = 5;
+            this.top_itemPic12.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic12.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic12.Image")));
+            this.top_itemPic12.ImageRotate = 0F;
+            this.top_itemPic12.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic12.Name = "top_itemPic12";
+            this.top_itemPic12.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic12.TabIndex = 3;
+            this.top_itemPic12.TabStop = false;
             // 
-            // guna2PictureBox48
+            // top_Panel11
             // 
-            this.guna2PictureBox48.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox48.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox48.Image")));
-            this.guna2PictureBox48.ImageRotate = 0F;
-            this.guna2PictureBox48.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox48.Name = "guna2PictureBox48";
-            this.guna2PictureBox48.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox48.TabIndex = 0;
-            this.guna2PictureBox48.TabStop = false;
+            this.top_Panel11.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel11.Controls.Add(this.Top_Overlay11);
+            this.top_Panel11.Controls.Add(this.top_itemPic11);
+            this.top_Panel11.FillColor = System.Drawing.Color.White;
+            this.top_Panel11.Location = new System.Drawing.Point(458, 15);
+            this.top_Panel11.Name = "top_Panel11";
+            this.top_Panel11.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel11.ShadowDepth = 200;
+            this.top_Panel11.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel11.TabIndex = 6;
+            // 
+            // Top_Overlay11
+            // 
+            this.Top_Overlay11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay11.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay11.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay11.Image")));
+            this.Top_Overlay11.ImageRotate = 0F;
+            this.Top_Overlay11.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay11.Name = "Top_Overlay11";
+            this.Top_Overlay11.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay11.TabIndex = 7;
+            this.Top_Overlay11.TabStop = false;
+            this.Top_Overlay11.Visible = false;
+            // 
+            // top_itemPic11
+            // 
+            this.top_itemPic11.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic11.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic11.Image")));
+            this.top_itemPic11.ImageRotate = 0F;
+            this.top_itemPic11.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic11.Name = "top_itemPic11";
+            this.top_itemPic11.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic11.TabIndex = 2;
+            this.top_itemPic11.TabStop = false;
+            // 
+            // top_Panel10
+            // 
+            this.top_Panel10.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel10.Controls.Add(this.Top_Overlay10);
+            this.top_Panel10.Controls.Add(this.top_itemPic10);
+            this.top_Panel10.FillColor = System.Drawing.Color.White;
+            this.top_Panel10.Location = new System.Drawing.Point(247, 15);
+            this.top_Panel10.Name = "top_Panel10";
+            this.top_Panel10.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel10.ShadowDepth = 200;
+            this.top_Panel10.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel10.TabIndex = 6;
+            // 
+            // Top_Overlay10
+            // 
+            this.Top_Overlay10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay10.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay10.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay10.Image")));
+            this.Top_Overlay10.ImageRotate = 0F;
+            this.Top_Overlay10.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay10.Name = "Top_Overlay10";
+            this.Top_Overlay10.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay10.TabIndex = 7;
+            this.Top_Overlay10.TabStop = false;
+            this.Top_Overlay10.Visible = false;
+            // 
+            // top_itemPic10
+            // 
+            this.top_itemPic10.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic10.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic10.Image")));
+            this.top_itemPic10.ImageRotate = 0F;
+            this.top_itemPic10.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic10.Name = "top_itemPic10";
+            this.top_itemPic10.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic10.TabIndex = 1;
+            this.top_itemPic10.TabStop = false;
+            // 
+            // top_Panel9
+            // 
+            this.top_Panel9.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel9.Controls.Add(this.Top_Overlay9);
+            this.top_Panel9.Controls.Add(this.top_itemPic9);
+            this.top_Panel9.FillColor = System.Drawing.Color.White;
+            this.top_Panel9.Location = new System.Drawing.Point(39, 15);
+            this.top_Panel9.Name = "top_Panel9";
+            this.top_Panel9.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel9.ShadowDepth = 200;
+            this.top_Panel9.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel9.TabIndex = 5;
+            // 
+            // Top_Overlay9
+            // 
+            this.Top_Overlay9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay9.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay9.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay9.Image")));
+            this.Top_Overlay9.ImageRotate = 0F;
+            this.Top_Overlay9.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay9.Name = "Top_Overlay9";
+            this.Top_Overlay9.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay9.TabIndex = 7;
+            this.Top_Overlay9.TabStop = false;
+            this.Top_Overlay9.Visible = false;
+            // 
+            // top_itemPic9
+            // 
+            this.top_itemPic9.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic9.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic9.Image")));
+            this.top_itemPic9.ImageRotate = 0F;
+            this.top_itemPic9.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic9.Name = "top_itemPic9";
+            this.top_itemPic9.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic9.TabIndex = 0;
+            this.top_itemPic9.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.top_Panel8);
+            this.panel4.Controls.Add(this.top_Panel7);
+            this.panel4.Controls.Add(this.top_Panel6);
+            this.panel4.Controls.Add(this.top_Panel5);
+            this.panel4.Controls.Add(this.top_Panel4);
+            this.panel4.Controls.Add(this.top_Panel3);
+            this.panel4.Controls.Add(this.top_Panel2);
+            this.panel4.Controls.Add(this.top_Panel1);
+            this.panel4.Location = new System.Drawing.Point(11, 20);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1691, 173);
+            this.panel4.TabIndex = 27;
+            // 
+            // top_Panel8
+            // 
+            this.top_Panel8.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel8.Controls.Add(this.Top_Overlay8);
+            this.top_Panel8.Controls.Add(this.top_itemPic8);
+            this.top_Panel8.FillColor = System.Drawing.Color.White;
+            this.top_Panel8.Location = new System.Drawing.Point(1493, 15);
+            this.top_Panel8.Name = "top_Panel8";
+            this.top_Panel8.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel8.ShadowDepth = 200;
+            this.top_Panel8.Size = new System.Drawing.Size(171, 154);
+            this.top_Panel8.TabIndex = 9;
+            // 
+            // Top_Overlay8
+            // 
+            this.Top_Overlay8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay8.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay8.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay8.Image")));
+            this.Top_Overlay8.ImageRotate = 0F;
+            this.Top_Overlay8.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay8.Name = "Top_Overlay8";
+            this.Top_Overlay8.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay8.TabIndex = 7;
+            this.Top_Overlay8.TabStop = false;
+            this.Top_Overlay8.Visible = false;
+            // 
+            // top_itemPic8
+            // 
+            this.top_itemPic8.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic8.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic8.Image")));
+            this.top_itemPic8.ImageRotate = 0F;
+            this.top_itemPic8.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic8.Name = "top_itemPic8";
+            this.top_itemPic8.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic8.TabIndex = 5;
+            this.top_itemPic8.TabStop = false;
+            // 
+            // top_Panel7
+            // 
+            this.top_Panel7.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel7.Controls.Add(this.Top_Overlay7);
+            this.top_Panel7.Controls.Add(this.top_itemPic7);
+            this.top_Panel7.FillColor = System.Drawing.Color.White;
+            this.top_Panel7.Location = new System.Drawing.Point(1283, 15);
+            this.top_Panel7.Name = "top_Panel7";
+            this.top_Panel7.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel7.ShadowDepth = 200;
+            this.top_Panel7.Size = new System.Drawing.Size(171, 154);
+            this.top_Panel7.TabIndex = 8;
+            // 
+            // Top_Overlay7
+            // 
+            this.Top_Overlay7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay7.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay7.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay7.Image")));
+            this.Top_Overlay7.ImageRotate = 0F;
+            this.Top_Overlay7.Location = new System.Drawing.Point(-1, 7);
+            this.Top_Overlay7.Name = "Top_Overlay7";
+            this.Top_Overlay7.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay7.TabIndex = 6;
+            this.Top_Overlay7.TabStop = false;
+            this.Top_Overlay7.Visible = false;
+            // 
+            // top_itemPic7
+            // 
+            this.top_itemPic7.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic7.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic7.Image")));
+            this.top_itemPic7.ImageRotate = 0F;
+            this.top_itemPic7.Location = new System.Drawing.Point(5, 7);
+            this.top_itemPic7.Name = "top_itemPic7";
+            this.top_itemPic7.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic7.TabIndex = 5;
+            this.top_itemPic7.TabStop = false;
+            // 
+            // top_Panel6
+            // 
+            this.top_Panel6.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel6.Controls.Add(this.Top_Overlay6);
+            this.top_Panel6.Controls.Add(this.top_itemPic6);
+            this.top_Panel6.FillColor = System.Drawing.Color.White;
+            this.top_Panel6.Location = new System.Drawing.Point(1076, 15);
+            this.top_Panel6.Name = "top_Panel6";
+            this.top_Panel6.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel6.ShadowDepth = 200;
+            this.top_Panel6.Size = new System.Drawing.Size(171, 154);
+            this.top_Panel6.TabIndex = 7;
+            // 
+            // Top_Overlay6
+            // 
+            this.Top_Overlay6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay6.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay6.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay6.Image")));
+            this.Top_Overlay6.ImageRotate = 0F;
+            this.Top_Overlay6.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay6.Name = "Top_Overlay6";
+            this.Top_Overlay6.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay6.TabIndex = 7;
+            this.Top_Overlay6.TabStop = false;
+            this.Top_Overlay6.Visible = false;
+            // 
+            // top_itemPic6
+            // 
+            this.top_itemPic6.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic6.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic6.Image")));
+            this.top_itemPic6.ImageRotate = 0F;
+            this.top_itemPic6.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic6.Name = "top_itemPic6";
+            this.top_itemPic6.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic6.TabIndex = 5;
+            this.top_itemPic6.TabStop = false;
+            // 
+            // top_Panel5
+            // 
+            this.top_Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel5.Controls.Add(this.Top_Overlay5);
+            this.top_Panel5.Controls.Add(this.top_itemPic5);
+            this.top_Panel5.FillColor = System.Drawing.Color.White;
+            this.top_Panel5.Location = new System.Drawing.Point(867, 15);
+            this.top_Panel5.Name = "top_Panel5";
+            this.top_Panel5.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel5.ShadowDepth = 200;
+            this.top_Panel5.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel5.TabIndex = 6;
+            // 
+            // Top_Overlay5
+            // 
+            this.Top_Overlay5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay5.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay5.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay5.Image")));
+            this.Top_Overlay5.ImageRotate = 0F;
+            this.Top_Overlay5.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay5.Name = "Top_Overlay5";
+            this.Top_Overlay5.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay5.TabIndex = 7;
+            this.Top_Overlay5.TabStop = false;
+            this.Top_Overlay5.Visible = false;
+            // 
+            // top_itemPic5
+            // 
+            this.top_itemPic5.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic5.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic5.Image")));
+            this.top_itemPic5.ImageRotate = 0F;
+            this.top_itemPic5.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic5.Name = "top_itemPic5";
+            this.top_itemPic5.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic5.TabIndex = 4;
+            this.top_itemPic5.TabStop = false;
+            // 
+            // top_Panel4
+            // 
+            this.top_Panel4.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel4.Controls.Add(this.Top_Overlay4);
+            this.top_Panel4.Controls.Add(this.top_itemPic4);
+            this.top_Panel4.FillColor = System.Drawing.Color.White;
+            this.top_Panel4.Location = new System.Drawing.Point(665, 15);
+            this.top_Panel4.Name = "top_Panel4";
+            this.top_Panel4.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel4.ShadowDepth = 200;
+            this.top_Panel4.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel4.TabIndex = 6;
+            // 
+            // Top_Overlay4
+            // 
+            this.Top_Overlay4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay4.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay4.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay4.Image")));
+            this.Top_Overlay4.ImageRotate = 0F;
+            this.Top_Overlay4.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay4.Name = "Top_Overlay4";
+            this.Top_Overlay4.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay4.TabIndex = 7;
+            this.Top_Overlay4.TabStop = false;
+            this.Top_Overlay4.Visible = false;
+            // 
+            // top_itemPic4
+            // 
+            this.top_itemPic4.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic4.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic4.Image")));
+            this.top_itemPic4.ImageRotate = 0F;
+            this.top_itemPic4.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic4.Name = "top_itemPic4";
+            this.top_itemPic4.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic4.TabIndex = 3;
+            this.top_itemPic4.TabStop = false;
+            // 
+            // top_Panel3
+            // 
+            this.top_Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel3.Controls.Add(this.Top_Overlay3);
+            this.top_Panel3.Controls.Add(this.top_itemPic3);
+            this.top_Panel3.FillColor = System.Drawing.Color.White;
+            this.top_Panel3.Location = new System.Drawing.Point(458, 15);
+            this.top_Panel3.Name = "top_Panel3";
+            this.top_Panel3.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel3.ShadowDepth = 200;
+            this.top_Panel3.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel3.TabIndex = 6;
+            // 
+            // Top_Overlay3
+            // 
+            this.Top_Overlay3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay3.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay3.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay3.Image")));
+            this.Top_Overlay3.ImageRotate = 0F;
+            this.Top_Overlay3.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay3.Name = "Top_Overlay3";
+            this.Top_Overlay3.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay3.TabIndex = 7;
+            this.Top_Overlay3.TabStop = false;
+            this.Top_Overlay3.Visible = false;
+            // 
+            // top_itemPic3
+            // 
+            this.top_itemPic3.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic3.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic3.Image")));
+            this.top_itemPic3.ImageRotate = 0F;
+            this.top_itemPic3.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic3.Name = "top_itemPic3";
+            this.top_itemPic3.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic3.TabIndex = 2;
+            this.top_itemPic3.TabStop = false;
+            // 
+            // top_Panel2
+            // 
+            this.top_Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel2.Controls.Add(this.Top_Overlay2);
+            this.top_Panel2.Controls.Add(this.top_itemPic2);
+            this.top_Panel2.FillColor = System.Drawing.Color.White;
+            this.top_Panel2.Location = new System.Drawing.Point(247, 15);
+            this.top_Panel2.Name = "top_Panel2";
+            this.top_Panel2.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel2.ShadowDepth = 200;
+            this.top_Panel2.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel2.TabIndex = 6;
+            // 
+            // Top_Overlay2
+            // 
+            this.Top_Overlay2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay2.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay2.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay2.Image")));
+            this.Top_Overlay2.ImageRotate = 0F;
+            this.Top_Overlay2.Location = new System.Drawing.Point(4, 9);
+            this.Top_Overlay2.Name = "Top_Overlay2";
+            this.Top_Overlay2.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay2.TabIndex = 7;
+            this.Top_Overlay2.TabStop = false;
+            this.Top_Overlay2.Visible = false;
+            // 
+            // top_itemPic2
+            // 
+            this.top_itemPic2.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic2.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic2.Image")));
+            this.top_itemPic2.ImageRotate = 0F;
+            this.top_itemPic2.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic2.Name = "top_itemPic2";
+            this.top_itemPic2.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic2.TabIndex = 1;
+            this.top_itemPic2.TabStop = false;
+            // 
+            // top_Panel1
+            // 
+            this.top_Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.top_Panel1.Controls.Add(this.Top_Overlay1);
+            this.top_Panel1.Controls.Add(this.top_itemPic1);
+            this.top_Panel1.FillColor = System.Drawing.Color.White;
+            this.top_Panel1.Location = new System.Drawing.Point(39, 15);
+            this.top_Panel1.Name = "top_Panel1";
+            this.top_Panel1.ShadowColor = System.Drawing.Color.Black;
+            this.top_Panel1.ShadowDepth = 200;
+            this.top_Panel1.Size = new System.Drawing.Size(170, 154);
+            this.top_Panel1.TabIndex = 5;
+            // 
+            // Top_Overlay1
+            // 
+            this.Top_Overlay1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Top_Overlay1.FillColor = System.Drawing.Color.Transparent;
+            this.Top_Overlay1.Image = ((System.Drawing.Image)(resources.GetObject("Top_Overlay1.Image")));
+            this.Top_Overlay1.ImageRotate = 0F;
+            this.Top_Overlay1.Location = new System.Drawing.Point(3, 9);
+            this.Top_Overlay1.Name = "Top_Overlay1";
+            this.Top_Overlay1.Size = new System.Drawing.Size(160, 137);
+            this.Top_Overlay1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Top_Overlay1.TabIndex = 8;
+            this.Top_Overlay1.TabStop = false;
+            this.Top_Overlay1.Visible = false;
+            // 
+            // top_itemPic1
+            // 
+            this.top_itemPic1.FillColor = System.Drawing.Color.Transparent;
+            this.top_itemPic1.Image = ((System.Drawing.Image)(resources.GetObject("top_itemPic1.Image")));
+            this.top_itemPic1.ImageRotate = 0F;
+            this.top_itemPic1.Location = new System.Drawing.Point(6, 7);
+            this.top_itemPic1.Name = "top_itemPic1";
+            this.top_itemPic1.Size = new System.Drawing.Size(160, 137);
+            this.top_itemPic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.top_itemPic1.TabIndex = 0;
+            this.top_itemPic1.TabStop = false;
             // 
             // guna2Button5
             // 
@@ -1421,222 +2960,879 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.panel4);
+            this.tabPage6.Controls.Add(this.bot_lbl16);
+            this.tabPage6.Controls.Add(this.bot_lbl15);
+            this.tabPage6.Controls.Add(this.bot_lbl14);
+            this.tabPage6.Controls.Add(this.bot_lbl13);
+            this.tabPage6.Controls.Add(this.bot_lbl12);
+            this.tabPage6.Controls.Add(this.bot_lbl11);
+            this.tabPage6.Controls.Add(this.bot_lbl10);
+            this.tabPage6.Controls.Add(this.bot_lbl9);
+            this.tabPage6.Controls.Add(this.bot_lbl8);
+            this.tabPage6.Controls.Add(this.bot_lbl7);
+            this.tabPage6.Controls.Add(this.bot_lbl6);
+            this.tabPage6.Controls.Add(this.bot_lbl5);
+            this.tabPage6.Controls.Add(this.bot_lbl4);
+            this.tabPage6.Controls.Add(this.bot_lbl3);
+            this.tabPage6.Controls.Add(this.bot_lbl1);
+            this.tabPage6.Controls.Add(this.bot_lbl2);
+            this.tabPage6.Controls.Add(this.panel5);
+            this.tabPage6.Controls.Add(this.panel7);
             this.tabPage6.Controls.Add(this.guna2Button6);
             this.tabPage6.Location = new System.Drawing.Point(4, 44);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(1918, 470);
             this.tabPage6.TabIndex = 2;
-            this.tabPage6.Text = "Bottom/Pants";
+            this.tabPage6.Text = "Bottom/Pants/Shorts";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // bot_lbl16
             // 
-            this.panel4.Controls.Add(this.guna2ShadowPanel28);
-            this.panel4.Controls.Add(this.guna2ShadowPanel29);
-            this.panel4.Controls.Add(this.guna2ShadowPanel30);
-            this.panel4.Controls.Add(this.guna2ShadowPanel31);
-            this.panel4.Controls.Add(this.guna2ShadowPanel32);
-            this.panel4.Controls.Add(this.guna2ShadowPanel33);
-            this.panel4.Controls.Add(this.guna2ShadowPanel34);
-            this.panel4.Controls.Add(this.guna2ShadowPanel35);
-            this.panel4.Location = new System.Drawing.Point(11, 20);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1691, 173);
-            this.panel4.TabIndex = 7;
+            this.bot_lbl16.AutoEllipsis = true;
+            this.bot_lbl16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl16.Location = new System.Drawing.Point(1560, 424);
+            this.bot_lbl16.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl16.Name = "bot_lbl16";
+            this.bot_lbl16.Size = new System.Drawing.Size(67, 16);
+            this.bot_lbl16.TabIndex = 44;
+            this.bot_lbl16.Text = "TEXT 16";
+            this.bot_lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel28
+            // bot_lbl15
             // 
-            this.guna2ShadowPanel28.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel28.Controls.Add(this.guna2PictureBox49);
-            this.guna2ShadowPanel28.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel28.Location = new System.Drawing.Point(1493, 15);
-            this.guna2ShadowPanel28.Name = "guna2ShadowPanel28";
-            this.guna2ShadowPanel28.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel28.ShadowDepth = 200;
-            this.guna2ShadowPanel28.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel28.TabIndex = 9;
+            this.bot_lbl15.AutoEllipsis = true;
+            this.bot_lbl15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl15.Location = new System.Drawing.Point(1332, 423);
+            this.bot_lbl15.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl15.Name = "bot_lbl15";
+            this.bot_lbl15.Size = new System.Drawing.Size(96, 16);
+            this.bot_lbl15.TabIndex = 43;
+            this.bot_lbl15.Text = "TEXT 15";
+            this.bot_lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox49
+            // bot_lbl14
             // 
-            this.guna2PictureBox49.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox49.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox49.Image")));
-            this.guna2PictureBox49.ImageRotate = 0F;
-            this.guna2PictureBox49.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox49.Name = "guna2PictureBox49";
-            this.guna2PictureBox49.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox49.TabIndex = 5;
-            this.guna2PictureBox49.TabStop = false;
+            this.bot_lbl14.AutoEllipsis = true;
+            this.bot_lbl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl14.Location = new System.Drawing.Point(1129, 424);
+            this.bot_lbl14.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl14.Name = "bot_lbl14";
+            this.bot_lbl14.Size = new System.Drawing.Size(94, 16);
+            this.bot_lbl14.TabIndex = 42;
+            this.bot_lbl14.Text = "TEXT 14";
+            this.bot_lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel29
+            // bot_lbl13
             // 
-            this.guna2ShadowPanel29.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel29.Controls.Add(this.guna2PictureBox50);
-            this.guna2ShadowPanel29.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel29.Location = new System.Drawing.Point(1283, 15);
-            this.guna2ShadowPanel29.Name = "guna2ShadowPanel29";
-            this.guna2ShadowPanel29.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel29.ShadowDepth = 200;
-            this.guna2ShadowPanel29.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel29.TabIndex = 8;
+            this.bot_lbl13.AutoEllipsis = true;
+            this.bot_lbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl13.Location = new System.Drawing.Point(874, 423);
+            this.bot_lbl13.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl13.Name = "bot_lbl13";
+            this.bot_lbl13.Size = new System.Drawing.Size(177, 16);
+            this.bot_lbl13.TabIndex = 41;
+            this.bot_lbl13.Text = "TEXT 13";
+            this.bot_lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox50
+            // bot_lbl12
             // 
-            this.guna2PictureBox50.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox50.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox50.Image")));
-            this.guna2PictureBox50.ImageRotate = 0F;
-            this.guna2PictureBox50.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox50.Name = "guna2PictureBox50";
-            this.guna2PictureBox50.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox50.TabIndex = 5;
-            this.guna2PictureBox50.TabStop = false;
+            this.bot_lbl12.AutoEllipsis = true;
+            this.bot_lbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl12.Location = new System.Drawing.Point(688, 423);
+            this.bot_lbl12.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl12.Name = "bot_lbl12";
+            this.bot_lbl12.Size = new System.Drawing.Size(147, 16);
+            this.bot_lbl12.TabIndex = 40;
+            this.bot_lbl12.Text = "TEXT 12";
+            this.bot_lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel30
+            // bot_lbl11
             // 
-            this.guna2ShadowPanel30.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel30.Controls.Add(this.guna2PictureBox51);
-            this.guna2ShadowPanel30.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel30.Location = new System.Drawing.Point(1076, 15);
-            this.guna2ShadowPanel30.Name = "guna2ShadowPanel30";
-            this.guna2ShadowPanel30.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel30.ShadowDepth = 200;
-            this.guna2ShadowPanel30.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel30.TabIndex = 7;
+            this.bot_lbl11.AutoEllipsis = true;
+            this.bot_lbl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl11.Location = new System.Drawing.Point(514, 423);
+            this.bot_lbl11.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl11.Name = "bot_lbl11";
+            this.bot_lbl11.Size = new System.Drawing.Size(80, 16);
+            this.bot_lbl11.TabIndex = 39;
+            this.bot_lbl11.Text = "TEXT 11";
+            this.bot_lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox51
+            // bot_lbl10
             // 
-            this.guna2PictureBox51.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox51.Image")));
-            this.guna2PictureBox51.ImageRotate = 0F;
-            this.guna2PictureBox51.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox51.Name = "guna2PictureBox51";
-            this.guna2PictureBox51.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox51.TabIndex = 5;
-            this.guna2PictureBox51.TabStop = false;
+            this.bot_lbl10.AutoEllipsis = true;
+            this.bot_lbl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl10.Location = new System.Drawing.Point(304, 424);
+            this.bot_lbl10.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl10.Name = "bot_lbl10";
+            this.bot_lbl10.Size = new System.Drawing.Size(87, 16);
+            this.bot_lbl10.TabIndex = 36;
+            this.bot_lbl10.Text = "TEXT 10";
+            this.bot_lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel31
+            // bot_lbl9
             // 
-            this.guna2ShadowPanel31.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel31.Controls.Add(this.guna2PictureBox52);
-            this.guna2ShadowPanel31.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel31.Location = new System.Drawing.Point(867, 15);
-            this.guna2ShadowPanel31.Name = "guna2ShadowPanel31";
-            this.guna2ShadowPanel31.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel31.ShadowDepth = 200;
-            this.guna2ShadowPanel31.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel31.TabIndex = 6;
+            this.bot_lbl9.AutoEllipsis = true;
+            this.bot_lbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl9.Location = new System.Drawing.Point(96, 424);
+            this.bot_lbl9.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl9.Name = "bot_lbl9";
+            this.bot_lbl9.Size = new System.Drawing.Size(86, 16);
+            this.bot_lbl9.TabIndex = 34;
+            this.bot_lbl9.Text = "TEXT 9";
+            this.bot_lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox52
+            // bot_lbl8
             // 
-            this.guna2PictureBox52.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox52.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox52.Image")));
-            this.guna2PictureBox52.ImageRotate = 0F;
-            this.guna2PictureBox52.Location = new System.Drawing.Point(44, 14);
-            this.guna2PictureBox52.Name = "guna2PictureBox52";
-            this.guna2PictureBox52.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox52.TabIndex = 4;
-            this.guna2PictureBox52.TabStop = false;
+            this.bot_lbl8.AutoEllipsis = true;
+            this.bot_lbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl8.Location = new System.Drawing.Point(1546, 196);
+            this.bot_lbl8.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl8.Name = "bot_lbl8";
+            this.bot_lbl8.Size = new System.Drawing.Size(98, 16);
+            this.bot_lbl8.TabIndex = 38;
+            this.bot_lbl8.Text = "TEXT 8";
+            this.bot_lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel32
+            // bot_lbl7
             // 
-            this.guna2ShadowPanel32.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel32.Controls.Add(this.guna2PictureBox53);
-            this.guna2ShadowPanel32.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel32.Location = new System.Drawing.Point(665, 15);
-            this.guna2ShadowPanel32.Name = "guna2ShadowPanel32";
-            this.guna2ShadowPanel32.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel32.ShadowDepth = 200;
-            this.guna2ShadowPanel32.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel32.TabIndex = 6;
+            this.bot_lbl7.AutoEllipsis = true;
+            this.bot_lbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl7.Location = new System.Drawing.Point(1338, 195);
+            this.bot_lbl7.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl7.Name = "bot_lbl7";
+            this.bot_lbl7.Size = new System.Drawing.Size(86, 16);
+            this.bot_lbl7.TabIndex = 37;
+            this.bot_lbl7.Text = "TEXT 7";
+            this.bot_lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox53
+            // bot_lbl6
             // 
-            this.guna2PictureBox53.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox53.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox53.Image")));
-            this.guna2PictureBox53.ImageRotate = 0F;
-            this.guna2PictureBox53.Location = new System.Drawing.Point(37, 14);
-            this.guna2PictureBox53.Name = "guna2PictureBox53";
-            this.guna2PictureBox53.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox53.TabIndex = 3;
-            this.guna2PictureBox53.TabStop = false;
+            this.bot_lbl6.AutoEllipsis = true;
+            this.bot_lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl6.Location = new System.Drawing.Point(1136, 196);
+            this.bot_lbl6.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl6.Name = "bot_lbl6";
+            this.bot_lbl6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bot_lbl6.Size = new System.Drawing.Size(88, 16);
+            this.bot_lbl6.TabIndex = 35;
+            this.bot_lbl6.Text = "TEXT 6";
+            this.bot_lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel33
+            // bot_lbl5
             // 
-            this.guna2ShadowPanel33.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel33.Controls.Add(this.guna2PictureBox54);
-            this.guna2ShadowPanel33.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel33.Location = new System.Drawing.Point(458, 15);
-            this.guna2ShadowPanel33.Name = "guna2ShadowPanel33";
-            this.guna2ShadowPanel33.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel33.ShadowDepth = 200;
-            this.guna2ShadowPanel33.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel33.TabIndex = 6;
+            this.bot_lbl5.AutoEllipsis = true;
+            this.bot_lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl5.Location = new System.Drawing.Point(926, 196);
+            this.bot_lbl5.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl5.Name = "bot_lbl5";
+            this.bot_lbl5.Size = new System.Drawing.Size(86, 16);
+            this.bot_lbl5.TabIndex = 33;
+            this.bot_lbl5.Text = "TEXT 5";
+            this.bot_lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox54
+            // bot_lbl4
             // 
-            this.guna2PictureBox54.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox54.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox54.Image")));
-            this.guna2PictureBox54.ImageRotate = 0F;
-            this.guna2PictureBox54.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox54.Name = "guna2PictureBox54";
-            this.guna2PictureBox54.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox54.TabIndex = 2;
-            this.guna2PictureBox54.TabStop = false;
+            this.bot_lbl4.AutoEllipsis = true;
+            this.bot_lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl4.Location = new System.Drawing.Point(724, 196);
+            this.bot_lbl4.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl4.Name = "bot_lbl4";
+            this.bot_lbl4.Size = new System.Drawing.Size(81, 16);
+            this.bot_lbl4.TabIndex = 32;
+            this.bot_lbl4.Text = "TEXT 4";
+            this.bot_lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel34
+            // bot_lbl3
             // 
-            this.guna2ShadowPanel34.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel34.Controls.Add(this.guna2PictureBox55);
-            this.guna2ShadowPanel34.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel34.Location = new System.Drawing.Point(247, 15);
-            this.guna2ShadowPanel34.Name = "guna2ShadowPanel34";
-            this.guna2ShadowPanel34.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel34.ShadowDepth = 200;
-            this.guna2ShadowPanel34.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel34.TabIndex = 6;
+            this.bot_lbl3.AutoEllipsis = true;
+            this.bot_lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl3.Location = new System.Drawing.Point(483, 196);
+            this.bot_lbl3.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl3.Name = "bot_lbl3";
+            this.bot_lbl3.Size = new System.Drawing.Size(148, 16);
+            this.bot_lbl3.TabIndex = 31;
+            this.bot_lbl3.Text = "TEXT 3";
+            this.bot_lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox55
+            // bot_lbl1
             // 
-            this.guna2PictureBox55.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox55.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox55.Image")));
-            this.guna2PictureBox55.ImageRotate = 0F;
-            this.guna2PictureBox55.Location = new System.Drawing.Point(39, 14);
-            this.guna2PictureBox55.Name = "guna2PictureBox55";
-            this.guna2PictureBox55.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox55.TabIndex = 1;
-            this.guna2PictureBox55.TabStop = false;
+            this.bot_lbl1.AutoEllipsis = true;
+            this.bot_lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl1.Location = new System.Drawing.Point(75, 196);
+            this.bot_lbl1.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl1.Name = "bot_lbl1";
+            this.bot_lbl1.Size = new System.Drawing.Size(120, 16);
+            this.bot_lbl1.TabIndex = 30;
+            this.bot_lbl1.Text = "TEXT 1";
+            this.bot_lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel35
+            // bot_lbl2
             // 
-            this.guna2ShadowPanel35.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel35.Controls.Add(this.guna2PictureBox56);
-            this.guna2ShadowPanel35.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel35.Location = new System.Drawing.Point(39, 15);
-            this.guna2ShadowPanel35.Name = "guna2ShadowPanel35";
-            this.guna2ShadowPanel35.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel35.ShadowDepth = 200;
-            this.guna2ShadowPanel35.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel35.TabIndex = 5;
+            this.bot_lbl2.AutoEllipsis = true;
+            this.bot_lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bot_lbl2.Location = new System.Drawing.Point(276, 196);
+            this.bot_lbl2.MaximumSize = new System.Drawing.Size(200, 30);
+            this.bot_lbl2.Name = "bot_lbl2";
+            this.bot_lbl2.Size = new System.Drawing.Size(139, 16);
+            this.bot_lbl2.TabIndex = 29;
+            this.bot_lbl2.Text = "TEXT 2";
+            this.bot_lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox56
+            // panel5
             // 
-            this.guna2PictureBox56.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox56.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox56.Image")));
-            this.guna2PictureBox56.ImageRotate = 0F;
-            this.guna2PictureBox56.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox56.Name = "guna2PictureBox56";
-            this.guna2PictureBox56.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox56.TabIndex = 0;
-            this.guna2PictureBox56.TabStop = false;
+            this.panel5.Controls.Add(this.bot_Panel16);
+            this.panel5.Controls.Add(this.bot_Panel15);
+            this.panel5.Controls.Add(this.bot_Panel14);
+            this.panel5.Controls.Add(this.bot_Panel13);
+            this.panel5.Controls.Add(this.bot_Panel12);
+            this.panel5.Controls.Add(this.bot_Panel11);
+            this.panel5.Controls.Add(this.bot_Panel10);
+            this.panel5.Controls.Add(this.bot_Panel9);
+            this.panel5.Location = new System.Drawing.Point(11, 247);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1691, 173);
+            this.panel5.TabIndex = 28;
+            // 
+            // bot_Panel16
+            // 
+            this.bot_Panel16.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel16.Controls.Add(this.bot_overlay16);
+            this.bot_Panel16.Controls.Add(this.bot_itemPic16);
+            this.bot_Panel16.FillColor = System.Drawing.Color.White;
+            this.bot_Panel16.Location = new System.Drawing.Point(1493, 15);
+            this.bot_Panel16.Name = "bot_Panel16";
+            this.bot_Panel16.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel16.ShadowDepth = 200;
+            this.bot_Panel16.Size = new System.Drawing.Size(171, 154);
+            this.bot_Panel16.TabIndex = 9;
+            // 
+            // bot_overlay16
+            // 
+            this.bot_overlay16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay16.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay16.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay16.Image")));
+            this.bot_overlay16.ImageRotate = 0F;
+            this.bot_overlay16.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay16.Name = "bot_overlay16";
+            this.bot_overlay16.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay16.TabIndex = 7;
+            this.bot_overlay16.TabStop = false;
+            this.bot_overlay16.Visible = false;
+            // 
+            // bot_itemPic16
+            // 
+            this.bot_itemPic16.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic16.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic16.Image")));
+            this.bot_itemPic16.ImageRotate = 0F;
+            this.bot_itemPic16.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic16.Name = "bot_itemPic16";
+            this.bot_itemPic16.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic16.TabIndex = 5;
+            this.bot_itemPic16.TabStop = false;
+            // 
+            // bot_Panel15
+            // 
+            this.bot_Panel15.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel15.Controls.Add(this.bot_overlay15);
+            this.bot_Panel15.Controls.Add(this.bot_itemPic15);
+            this.bot_Panel15.FillColor = System.Drawing.Color.White;
+            this.bot_Panel15.Location = new System.Drawing.Point(1283, 15);
+            this.bot_Panel15.Name = "bot_Panel15";
+            this.bot_Panel15.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel15.ShadowDepth = 200;
+            this.bot_Panel15.Size = new System.Drawing.Size(171, 154);
+            this.bot_Panel15.TabIndex = 8;
+            // 
+            // bot_overlay15
+            // 
+            this.bot_overlay15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay15.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay15.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay15.Image")));
+            this.bot_overlay15.ImageRotate = 0F;
+            this.bot_overlay15.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay15.Name = "bot_overlay15";
+            this.bot_overlay15.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay15.TabIndex = 7;
+            this.bot_overlay15.TabStop = false;
+            this.bot_overlay15.Visible = false;
+            // 
+            // bot_itemPic15
+            // 
+            this.bot_itemPic15.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic15.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic15.Image")));
+            this.bot_itemPic15.ImageRotate = 0F;
+            this.bot_itemPic15.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic15.Name = "bot_itemPic15";
+            this.bot_itemPic15.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic15.TabIndex = 5;
+            this.bot_itemPic15.TabStop = false;
+            // 
+            // bot_Panel14
+            // 
+            this.bot_Panel14.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel14.Controls.Add(this.bot_overlay14);
+            this.bot_Panel14.Controls.Add(this.bot_itemPic14);
+            this.bot_Panel14.FillColor = System.Drawing.Color.White;
+            this.bot_Panel14.Location = new System.Drawing.Point(1076, 15);
+            this.bot_Panel14.Name = "bot_Panel14";
+            this.bot_Panel14.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel14.ShadowDepth = 200;
+            this.bot_Panel14.Size = new System.Drawing.Size(171, 154);
+            this.bot_Panel14.TabIndex = 7;
+            // 
+            // bot_overlay14
+            // 
+            this.bot_overlay14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay14.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay14.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay14.Image")));
+            this.bot_overlay14.ImageRotate = 0F;
+            this.bot_overlay14.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay14.Name = "bot_overlay14";
+            this.bot_overlay14.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay14.TabIndex = 7;
+            this.bot_overlay14.TabStop = false;
+            this.bot_overlay14.Visible = false;
+            // 
+            // bot_itemPic14
+            // 
+            this.bot_itemPic14.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic14.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic14.Image")));
+            this.bot_itemPic14.ImageRotate = 0F;
+            this.bot_itemPic14.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic14.Name = "bot_itemPic14";
+            this.bot_itemPic14.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic14.TabIndex = 5;
+            this.bot_itemPic14.TabStop = false;
+            // 
+            // bot_Panel13
+            // 
+            this.bot_Panel13.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel13.Controls.Add(this.bot_overlay13);
+            this.bot_Panel13.Controls.Add(this.bot_itemPic13);
+            this.bot_Panel13.FillColor = System.Drawing.Color.White;
+            this.bot_Panel13.Location = new System.Drawing.Point(867, 15);
+            this.bot_Panel13.Name = "bot_Panel13";
+            this.bot_Panel13.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel13.ShadowDepth = 200;
+            this.bot_Panel13.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel13.TabIndex = 6;
+            // 
+            // bot_overlay13
+            // 
+            this.bot_overlay13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay13.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay13.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay13.Image")));
+            this.bot_overlay13.ImageRotate = 0F;
+            this.bot_overlay13.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay13.Name = "bot_overlay13";
+            this.bot_overlay13.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay13.TabIndex = 7;
+            this.bot_overlay13.TabStop = false;
+            this.bot_overlay13.Visible = false;
+            // 
+            // bot_itemPic13
+            // 
+            this.bot_itemPic13.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic13.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic13.Image")));
+            this.bot_itemPic13.ImageRotate = 0F;
+            this.bot_itemPic13.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic13.Name = "bot_itemPic13";
+            this.bot_itemPic13.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic13.TabIndex = 4;
+            this.bot_itemPic13.TabStop = false;
+            // 
+            // bot_Panel12
+            // 
+            this.bot_Panel12.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel12.Controls.Add(this.bot_overlay12);
+            this.bot_Panel12.Controls.Add(this.bot_itemPic12);
+            this.bot_Panel12.FillColor = System.Drawing.Color.White;
+            this.bot_Panel12.Location = new System.Drawing.Point(665, 15);
+            this.bot_Panel12.Name = "bot_Panel12";
+            this.bot_Panel12.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel12.ShadowDepth = 200;
+            this.bot_Panel12.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel12.TabIndex = 6;
+            // 
+            // bot_overlay12
+            // 
+            this.bot_overlay12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay12.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay12.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay12.Image")));
+            this.bot_overlay12.ImageRotate = 0F;
+            this.bot_overlay12.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay12.Name = "bot_overlay12";
+            this.bot_overlay12.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay12.TabIndex = 7;
+            this.bot_overlay12.TabStop = false;
+            this.bot_overlay12.Visible = false;
+            // 
+            // bot_itemPic12
+            // 
+            this.bot_itemPic12.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic12.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic12.Image")));
+            this.bot_itemPic12.ImageRotate = 0F;
+            this.bot_itemPic12.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic12.Name = "bot_itemPic12";
+            this.bot_itemPic12.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic12.TabIndex = 3;
+            this.bot_itemPic12.TabStop = false;
+            // 
+            // bot_Panel11
+            // 
+            this.bot_Panel11.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel11.Controls.Add(this.bot_overlay11);
+            this.bot_Panel11.Controls.Add(this.bot_itemPic11);
+            this.bot_Panel11.FillColor = System.Drawing.Color.White;
+            this.bot_Panel11.Location = new System.Drawing.Point(458, 15);
+            this.bot_Panel11.Name = "bot_Panel11";
+            this.bot_Panel11.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel11.ShadowDepth = 200;
+            this.bot_Panel11.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel11.TabIndex = 6;
+            // 
+            // bot_overlay11
+            // 
+            this.bot_overlay11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay11.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay11.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay11.Image")));
+            this.bot_overlay11.ImageRotate = 0F;
+            this.bot_overlay11.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay11.Name = "bot_overlay11";
+            this.bot_overlay11.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay11.TabIndex = 7;
+            this.bot_overlay11.TabStop = false;
+            this.bot_overlay11.Visible = false;
+            // 
+            // bot_itemPic11
+            // 
+            this.bot_itemPic11.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic11.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic11.Image")));
+            this.bot_itemPic11.ImageRotate = 0F;
+            this.bot_itemPic11.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic11.Name = "bot_itemPic11";
+            this.bot_itemPic11.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic11.TabIndex = 2;
+            this.bot_itemPic11.TabStop = false;
+            // 
+            // bot_Panel10
+            // 
+            this.bot_Panel10.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel10.Controls.Add(this.bot_overlay10);
+            this.bot_Panel10.Controls.Add(this.bot_itemPic10);
+            this.bot_Panel10.FillColor = System.Drawing.Color.White;
+            this.bot_Panel10.Location = new System.Drawing.Point(247, 15);
+            this.bot_Panel10.Name = "bot_Panel10";
+            this.bot_Panel10.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel10.ShadowDepth = 200;
+            this.bot_Panel10.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel10.TabIndex = 6;
+            // 
+            // bot_overlay10
+            // 
+            this.bot_overlay10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay10.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay10.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay10.Image")));
+            this.bot_overlay10.ImageRotate = 0F;
+            this.bot_overlay10.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay10.Name = "bot_overlay10";
+            this.bot_overlay10.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay10.TabIndex = 7;
+            this.bot_overlay10.TabStop = false;
+            this.bot_overlay10.Visible = false;
+            // 
+            // bot_itemPic10
+            // 
+            this.bot_itemPic10.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic10.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic10.Image")));
+            this.bot_itemPic10.ImageRotate = 0F;
+            this.bot_itemPic10.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic10.Name = "bot_itemPic10";
+            this.bot_itemPic10.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic10.TabIndex = 1;
+            this.bot_itemPic10.TabStop = false;
+            // 
+            // bot_Panel9
+            // 
+            this.bot_Panel9.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel9.Controls.Add(this.bot_overlay9);
+            this.bot_Panel9.Controls.Add(this.bot_itemPic9);
+            this.bot_Panel9.FillColor = System.Drawing.Color.White;
+            this.bot_Panel9.Location = new System.Drawing.Point(39, 15);
+            this.bot_Panel9.Name = "bot_Panel9";
+            this.bot_Panel9.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel9.ShadowDepth = 200;
+            this.bot_Panel9.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel9.TabIndex = 5;
+            // 
+            // bot_overlay9
+            // 
+            this.bot_overlay9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay9.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay9.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay9.Image")));
+            this.bot_overlay9.ImageRotate = 0F;
+            this.bot_overlay9.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay9.Name = "bot_overlay9";
+            this.bot_overlay9.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay9.TabIndex = 7;
+            this.bot_overlay9.TabStop = false;
+            this.bot_overlay9.Visible = false;
+            // 
+            // bot_itemPic9
+            // 
+            this.bot_itemPic9.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic9.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic9.Image")));
+            this.bot_itemPic9.ImageRotate = 0F;
+            this.bot_itemPic9.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic9.Name = "bot_itemPic9";
+            this.bot_itemPic9.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic9.TabIndex = 0;
+            this.bot_itemPic9.TabStop = false;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.bot_Panel8);
+            this.panel7.Controls.Add(this.bot_Panel7);
+            this.panel7.Controls.Add(this.bot_Panel6);
+            this.panel7.Controls.Add(this.bot_Panel5);
+            this.panel7.Controls.Add(this.bot_Panel4);
+            this.panel7.Controls.Add(this.bot_Panel3);
+            this.panel7.Controls.Add(this.bot_Panel2);
+            this.panel7.Controls.Add(this.bot_Panel1);
+            this.panel7.Location = new System.Drawing.Point(11, 20);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1691, 173);
+            this.panel7.TabIndex = 27;
+            // 
+            // bot_Panel8
+            // 
+            this.bot_Panel8.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel8.Controls.Add(this.bot_overlay8);
+            this.bot_Panel8.Controls.Add(this.bot_itemPic8);
+            this.bot_Panel8.FillColor = System.Drawing.Color.White;
+            this.bot_Panel8.Location = new System.Drawing.Point(1493, 15);
+            this.bot_Panel8.Name = "bot_Panel8";
+            this.bot_Panel8.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel8.ShadowDepth = 200;
+            this.bot_Panel8.Size = new System.Drawing.Size(171, 154);
+            this.bot_Panel8.TabIndex = 9;
+            // 
+            // bot_overlay8
+            // 
+            this.bot_overlay8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay8.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay8.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay8.Image")));
+            this.bot_overlay8.ImageRotate = 0F;
+            this.bot_overlay8.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay8.Name = "bot_overlay8";
+            this.bot_overlay8.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay8.TabIndex = 7;
+            this.bot_overlay8.TabStop = false;
+            this.bot_overlay8.Visible = false;
+            // 
+            // bot_itemPic8
+            // 
+            this.bot_itemPic8.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic8.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic8.Image")));
+            this.bot_itemPic8.ImageRotate = 0F;
+            this.bot_itemPic8.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic8.Name = "bot_itemPic8";
+            this.bot_itemPic8.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic8.TabIndex = 5;
+            this.bot_itemPic8.TabStop = false;
+            // 
+            // bot_Panel7
+            // 
+            this.bot_Panel7.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel7.Controls.Add(this.bot_overlay7);
+            this.bot_Panel7.Controls.Add(this.bot_itemPic7);
+            this.bot_Panel7.FillColor = System.Drawing.Color.White;
+            this.bot_Panel7.Location = new System.Drawing.Point(1283, 15);
+            this.bot_Panel7.Name = "bot_Panel7";
+            this.bot_Panel7.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel7.ShadowDepth = 200;
+            this.bot_Panel7.Size = new System.Drawing.Size(171, 154);
+            this.bot_Panel7.TabIndex = 8;
+            // 
+            // bot_overlay7
+            // 
+            this.bot_overlay7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay7.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay7.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay7.Image")));
+            this.bot_overlay7.ImageRotate = 0F;
+            this.bot_overlay7.Location = new System.Drawing.Point(-1, 7);
+            this.bot_overlay7.Name = "bot_overlay7";
+            this.bot_overlay7.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay7.TabIndex = 6;
+            this.bot_overlay7.TabStop = false;
+            this.bot_overlay7.Visible = false;
+            // 
+            // bot_itemPic7
+            // 
+            this.bot_itemPic7.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic7.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic7.Image")));
+            this.bot_itemPic7.ImageRotate = 0F;
+            this.bot_itemPic7.Location = new System.Drawing.Point(5, 7);
+            this.bot_itemPic7.Name = "bot_itemPic7";
+            this.bot_itemPic7.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic7.TabIndex = 5;
+            this.bot_itemPic7.TabStop = false;
+            // 
+            // bot_Panel6
+            // 
+            this.bot_Panel6.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel6.Controls.Add(this.bot_overlay6);
+            this.bot_Panel6.Controls.Add(this.bot_itemPic6);
+            this.bot_Panel6.FillColor = System.Drawing.Color.White;
+            this.bot_Panel6.Location = new System.Drawing.Point(1076, 15);
+            this.bot_Panel6.Name = "bot_Panel6";
+            this.bot_Panel6.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel6.ShadowDepth = 200;
+            this.bot_Panel6.Size = new System.Drawing.Size(171, 154);
+            this.bot_Panel6.TabIndex = 7;
+            // 
+            // bot_overlay6
+            // 
+            this.bot_overlay6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay6.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay6.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay6.Image")));
+            this.bot_overlay6.ImageRotate = 0F;
+            this.bot_overlay6.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay6.Name = "bot_overlay6";
+            this.bot_overlay6.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay6.TabIndex = 7;
+            this.bot_overlay6.TabStop = false;
+            this.bot_overlay6.Visible = false;
+            // 
+            // bot_itemPic6
+            // 
+            this.bot_itemPic6.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic6.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic6.Image")));
+            this.bot_itemPic6.ImageRotate = 0F;
+            this.bot_itemPic6.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic6.Name = "bot_itemPic6";
+            this.bot_itemPic6.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic6.TabIndex = 5;
+            this.bot_itemPic6.TabStop = false;
+            // 
+            // bot_Panel5
+            // 
+            this.bot_Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel5.Controls.Add(this.bot_overlay5);
+            this.bot_Panel5.Controls.Add(this.bot_itemPic5);
+            this.bot_Panel5.FillColor = System.Drawing.Color.White;
+            this.bot_Panel5.Location = new System.Drawing.Point(867, 15);
+            this.bot_Panel5.Name = "bot_Panel5";
+            this.bot_Panel5.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel5.ShadowDepth = 200;
+            this.bot_Panel5.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel5.TabIndex = 6;
+            // 
+            // bot_overlay5
+            // 
+            this.bot_overlay5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay5.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay5.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay5.Image")));
+            this.bot_overlay5.ImageRotate = 0F;
+            this.bot_overlay5.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay5.Name = "bot_overlay5";
+            this.bot_overlay5.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay5.TabIndex = 7;
+            this.bot_overlay5.TabStop = false;
+            this.bot_overlay5.Visible = false;
+            // 
+            // bot_itemPic5
+            // 
+            this.bot_itemPic5.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic5.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic5.Image")));
+            this.bot_itemPic5.ImageRotate = 0F;
+            this.bot_itemPic5.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic5.Name = "bot_itemPic5";
+            this.bot_itemPic5.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic5.TabIndex = 4;
+            this.bot_itemPic5.TabStop = false;
+            // 
+            // bot_Panel4
+            // 
+            this.bot_Panel4.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel4.Controls.Add(this.bot_overlay4);
+            this.bot_Panel4.Controls.Add(this.bot_itemPic4);
+            this.bot_Panel4.FillColor = System.Drawing.Color.White;
+            this.bot_Panel4.Location = new System.Drawing.Point(665, 15);
+            this.bot_Panel4.Name = "bot_Panel4";
+            this.bot_Panel4.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel4.ShadowDepth = 200;
+            this.bot_Panel4.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel4.TabIndex = 6;
+            // 
+            // bot_overlay4
+            // 
+            this.bot_overlay4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay4.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay4.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay4.Image")));
+            this.bot_overlay4.ImageRotate = 0F;
+            this.bot_overlay4.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay4.Name = "bot_overlay4";
+            this.bot_overlay4.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay4.TabIndex = 7;
+            this.bot_overlay4.TabStop = false;
+            this.bot_overlay4.Visible = false;
+            // 
+            // bot_itemPic4
+            // 
+            this.bot_itemPic4.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic4.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic4.Image")));
+            this.bot_itemPic4.ImageRotate = 0F;
+            this.bot_itemPic4.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic4.Name = "bot_itemPic4";
+            this.bot_itemPic4.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic4.TabIndex = 3;
+            this.bot_itemPic4.TabStop = false;
+            // 
+            // bot_Panel3
+            // 
+            this.bot_Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel3.Controls.Add(this.bot_overlay3);
+            this.bot_Panel3.Controls.Add(this.bot_itemPic3);
+            this.bot_Panel3.FillColor = System.Drawing.Color.White;
+            this.bot_Panel3.Location = new System.Drawing.Point(458, 15);
+            this.bot_Panel3.Name = "bot_Panel3";
+            this.bot_Panel3.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel3.ShadowDepth = 200;
+            this.bot_Panel3.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel3.TabIndex = 6;
+            // 
+            // bot_overlay3
+            // 
+            this.bot_overlay3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay3.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay3.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay3.Image")));
+            this.bot_overlay3.ImageRotate = 0F;
+            this.bot_overlay3.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay3.Name = "bot_overlay3";
+            this.bot_overlay3.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay3.TabIndex = 7;
+            this.bot_overlay3.TabStop = false;
+            this.bot_overlay3.Visible = false;
+            // 
+            // bot_itemPic3
+            // 
+            this.bot_itemPic3.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic3.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic3.Image")));
+            this.bot_itemPic3.ImageRotate = 0F;
+            this.bot_itemPic3.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic3.Name = "bot_itemPic3";
+            this.bot_itemPic3.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic3.TabIndex = 2;
+            this.bot_itemPic3.TabStop = false;
+            // 
+            // bot_Panel2
+            // 
+            this.bot_Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel2.Controls.Add(this.bot_overlay2);
+            this.bot_Panel2.Controls.Add(this.bot_itemPic2);
+            this.bot_Panel2.FillColor = System.Drawing.Color.White;
+            this.bot_Panel2.Location = new System.Drawing.Point(247, 15);
+            this.bot_Panel2.Name = "bot_Panel2";
+            this.bot_Panel2.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel2.ShadowDepth = 200;
+            this.bot_Panel2.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel2.TabIndex = 6;
+            // 
+            // bot_overlay2
+            // 
+            this.bot_overlay2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay2.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay2.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay2.Image")));
+            this.bot_overlay2.ImageRotate = 0F;
+            this.bot_overlay2.Location = new System.Drawing.Point(4, 9);
+            this.bot_overlay2.Name = "bot_overlay2";
+            this.bot_overlay2.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay2.TabIndex = 7;
+            this.bot_overlay2.TabStop = false;
+            this.bot_overlay2.Visible = false;
+            // 
+            // bot_itemPic2
+            // 
+            this.bot_itemPic2.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic2.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic2.Image")));
+            this.bot_itemPic2.ImageRotate = 0F;
+            this.bot_itemPic2.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic2.Name = "bot_itemPic2";
+            this.bot_itemPic2.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic2.TabIndex = 1;
+            this.bot_itemPic2.TabStop = false;
+            // 
+            // bot_Panel1
+            // 
+            this.bot_Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.bot_Panel1.Controls.Add(this.bot_overlay1);
+            this.bot_Panel1.Controls.Add(this.bot_itemPic1);
+            this.bot_Panel1.FillColor = System.Drawing.Color.White;
+            this.bot_Panel1.Location = new System.Drawing.Point(39, 15);
+            this.bot_Panel1.Name = "bot_Panel1";
+            this.bot_Panel1.ShadowColor = System.Drawing.Color.Black;
+            this.bot_Panel1.ShadowDepth = 200;
+            this.bot_Panel1.Size = new System.Drawing.Size(170, 154);
+            this.bot_Panel1.TabIndex = 5;
+            // 
+            // bot_overlay1
+            // 
+            this.bot_overlay1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bot_overlay1.FillColor = System.Drawing.Color.Transparent;
+            this.bot_overlay1.Image = ((System.Drawing.Image)(resources.GetObject("bot_overlay1.Image")));
+            this.bot_overlay1.ImageRotate = 0F;
+            this.bot_overlay1.Location = new System.Drawing.Point(3, 9);
+            this.bot_overlay1.Name = "bot_overlay1";
+            this.bot_overlay1.Size = new System.Drawing.Size(160, 137);
+            this.bot_overlay1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bot_overlay1.TabIndex = 8;
+            this.bot_overlay1.TabStop = false;
+            this.bot_overlay1.Visible = false;
+            // 
+            // bot_itemPic1
+            // 
+            this.bot_itemPic1.FillColor = System.Drawing.Color.Transparent;
+            this.bot_itemPic1.Image = ((System.Drawing.Image)(resources.GetObject("bot_itemPic1.Image")));
+            this.bot_itemPic1.ImageRotate = 0F;
+            this.bot_itemPic1.Location = new System.Drawing.Point(6, 7);
+            this.bot_itemPic1.Name = "bot_itemPic1";
+            this.bot_itemPic1.Size = new System.Drawing.Size(160, 137);
+            this.bot_itemPic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bot_itemPic1.TabIndex = 0;
+            this.bot_itemPic1.TabStop = false;
             // 
             // guna2Button6
             // 
@@ -1660,7 +3856,24 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.panel5);
+            this.tabPage7.Controls.Add(this.fab_lbl16);
+            this.tabPage7.Controls.Add(this.fab_lbl15);
+            this.tabPage7.Controls.Add(this.fab_lbl14);
+            this.tabPage7.Controls.Add(this.fab_lbl13);
+            this.tabPage7.Controls.Add(this.fab_lbl12);
+            this.tabPage7.Controls.Add(this.fab_lbl11);
+            this.tabPage7.Controls.Add(this.fab_lbl10);
+            this.tabPage7.Controls.Add(this.fab_lbl9);
+            this.tabPage7.Controls.Add(this.fab_lbl8);
+            this.tabPage7.Controls.Add(this.fab_lbl7);
+            this.tabPage7.Controls.Add(this.fab_lbl6);
+            this.tabPage7.Controls.Add(this.fab_lbl5);
+            this.tabPage7.Controls.Add(this.fab_lbl4);
+            this.tabPage7.Controls.Add(this.fab_lbl3);
+            this.tabPage7.Controls.Add(this.fab_lbl1);
+            this.tabPage7.Controls.Add(this.fab_lbl2);
+            this.tabPage7.Controls.Add(this.panel8);
+            this.tabPage7.Controls.Add(this.panel9);
             this.tabPage7.Controls.Add(this.guna2Button7);
             this.tabPage7.Location = new System.Drawing.Point(4, 44);
             this.tabPage7.Name = "tabPage7";
@@ -1670,62 +3883,852 @@
             this.tabPage7.Text = "Cloth/Fabric";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // panel5
+            // fab_lbl16
             // 
-            this.panel5.Controls.Add(this.guna2ShadowPanel42);
-            this.panel5.Controls.Add(this.guna2ShadowPanel43);
-            this.panel5.Location = new System.Drawing.Point(11, 20);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1691, 173);
-            this.panel5.TabIndex = 7;
+            this.fab_lbl16.AutoEllipsis = true;
+            this.fab_lbl16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl16.Location = new System.Drawing.Point(1560, 424);
+            this.fab_lbl16.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl16.Name = "fab_lbl16";
+            this.fab_lbl16.Size = new System.Drawing.Size(67, 16);
+            this.fab_lbl16.TabIndex = 44;
+            this.fab_lbl16.Text = "TEXT 16";
+            this.fab_lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel42
+            // fab_lbl15
             // 
-            this.guna2ShadowPanel42.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel42.Controls.Add(this.guna2PictureBox63);
-            this.guna2ShadowPanel42.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel42.Location = new System.Drawing.Point(247, 15);
-            this.guna2ShadowPanel42.Name = "guna2ShadowPanel42";
-            this.guna2ShadowPanel42.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel42.ShadowDepth = 200;
-            this.guna2ShadowPanel42.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel42.TabIndex = 6;
+            this.fab_lbl15.AutoEllipsis = true;
+            this.fab_lbl15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl15.Location = new System.Drawing.Point(1332, 423);
+            this.fab_lbl15.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl15.Name = "fab_lbl15";
+            this.fab_lbl15.Size = new System.Drawing.Size(96, 16);
+            this.fab_lbl15.TabIndex = 43;
+            this.fab_lbl15.Text = "TEXT 15";
+            this.fab_lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox63
+            // fab_lbl14
             // 
-            this.guna2PictureBox63.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox63.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox63.Image")));
-            this.guna2PictureBox63.ImageRotate = 0F;
-            this.guna2PictureBox63.Location = new System.Drawing.Point(39, 14);
-            this.guna2PictureBox63.Name = "guna2PictureBox63";
-            this.guna2PictureBox63.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox63.TabIndex = 1;
-            this.guna2PictureBox63.TabStop = false;
+            this.fab_lbl14.AutoEllipsis = true;
+            this.fab_lbl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl14.Location = new System.Drawing.Point(1129, 424);
+            this.fab_lbl14.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl14.Name = "fab_lbl14";
+            this.fab_lbl14.Size = new System.Drawing.Size(94, 16);
+            this.fab_lbl14.TabIndex = 42;
+            this.fab_lbl14.Text = "TEXT 14";
+            this.fab_lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ShadowPanel43
+            // fab_lbl13
             // 
-            this.guna2ShadowPanel43.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel43.Controls.Add(this.guna2PictureBox64);
-            this.guna2ShadowPanel43.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel43.Location = new System.Drawing.Point(39, 15);
-            this.guna2ShadowPanel43.Name = "guna2ShadowPanel43";
-            this.guna2ShadowPanel43.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel43.ShadowDepth = 200;
-            this.guna2ShadowPanel43.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel43.TabIndex = 5;
+            this.fab_lbl13.AutoEllipsis = true;
+            this.fab_lbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl13.Location = new System.Drawing.Point(874, 423);
+            this.fab_lbl13.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl13.Name = "fab_lbl13";
+            this.fab_lbl13.Size = new System.Drawing.Size(177, 16);
+            this.fab_lbl13.TabIndex = 41;
+            this.fab_lbl13.Text = "TEXT 13";
+            this.fab_lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox64
+            // fab_lbl12
             // 
-            this.guna2PictureBox64.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox64.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox64.Image")));
-            this.guna2PictureBox64.ImageRotate = 0F;
-            this.guna2PictureBox64.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox64.Name = "guna2PictureBox64";
-            this.guna2PictureBox64.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox64.TabIndex = 0;
-            this.guna2PictureBox64.TabStop = false;
+            this.fab_lbl12.AutoEllipsis = true;
+            this.fab_lbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl12.Location = new System.Drawing.Point(688, 423);
+            this.fab_lbl12.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl12.Name = "fab_lbl12";
+            this.fab_lbl12.Size = new System.Drawing.Size(147, 16);
+            this.fab_lbl12.TabIndex = 40;
+            this.fab_lbl12.Text = "TEXT 12";
+            this.fab_lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl11
+            // 
+            this.fab_lbl11.AutoEllipsis = true;
+            this.fab_lbl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl11.Location = new System.Drawing.Point(514, 423);
+            this.fab_lbl11.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl11.Name = "fab_lbl11";
+            this.fab_lbl11.Size = new System.Drawing.Size(80, 16);
+            this.fab_lbl11.TabIndex = 39;
+            this.fab_lbl11.Text = "TEXT 11";
+            this.fab_lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl10
+            // 
+            this.fab_lbl10.AutoEllipsis = true;
+            this.fab_lbl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl10.Location = new System.Drawing.Point(304, 424);
+            this.fab_lbl10.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl10.Name = "fab_lbl10";
+            this.fab_lbl10.Size = new System.Drawing.Size(87, 16);
+            this.fab_lbl10.TabIndex = 36;
+            this.fab_lbl10.Text = "TEXT 10";
+            this.fab_lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl9
+            // 
+            this.fab_lbl9.AutoEllipsis = true;
+            this.fab_lbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl9.Location = new System.Drawing.Point(96, 424);
+            this.fab_lbl9.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl9.Name = "fab_lbl9";
+            this.fab_lbl9.Size = new System.Drawing.Size(86, 16);
+            this.fab_lbl9.TabIndex = 34;
+            this.fab_lbl9.Text = "TEXT 9";
+            this.fab_lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl8
+            // 
+            this.fab_lbl8.AutoEllipsis = true;
+            this.fab_lbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl8.Location = new System.Drawing.Point(1546, 196);
+            this.fab_lbl8.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl8.Name = "fab_lbl8";
+            this.fab_lbl8.Size = new System.Drawing.Size(98, 16);
+            this.fab_lbl8.TabIndex = 38;
+            this.fab_lbl8.Text = "TEXT 8";
+            this.fab_lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl7
+            // 
+            this.fab_lbl7.AutoEllipsis = true;
+            this.fab_lbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl7.Location = new System.Drawing.Point(1338, 195);
+            this.fab_lbl7.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl7.Name = "fab_lbl7";
+            this.fab_lbl7.Size = new System.Drawing.Size(86, 16);
+            this.fab_lbl7.TabIndex = 37;
+            this.fab_lbl7.Text = "TEXT 7";
+            this.fab_lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl6
+            // 
+            this.fab_lbl6.AutoEllipsis = true;
+            this.fab_lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl6.Location = new System.Drawing.Point(1136, 196);
+            this.fab_lbl6.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl6.Name = "fab_lbl6";
+            this.fab_lbl6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.fab_lbl6.Size = new System.Drawing.Size(88, 16);
+            this.fab_lbl6.TabIndex = 35;
+            this.fab_lbl6.Text = "TEXT 6";
+            this.fab_lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl5
+            // 
+            this.fab_lbl5.AutoEllipsis = true;
+            this.fab_lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl5.Location = new System.Drawing.Point(926, 196);
+            this.fab_lbl5.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl5.Name = "fab_lbl5";
+            this.fab_lbl5.Size = new System.Drawing.Size(86, 16);
+            this.fab_lbl5.TabIndex = 33;
+            this.fab_lbl5.Text = "TEXT 5";
+            this.fab_lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl4
+            // 
+            this.fab_lbl4.AutoEllipsis = true;
+            this.fab_lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl4.Location = new System.Drawing.Point(724, 196);
+            this.fab_lbl4.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl4.Name = "fab_lbl4";
+            this.fab_lbl4.Size = new System.Drawing.Size(81, 16);
+            this.fab_lbl4.TabIndex = 32;
+            this.fab_lbl4.Text = "TEXT 4";
+            this.fab_lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl3
+            // 
+            this.fab_lbl3.AutoEllipsis = true;
+            this.fab_lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl3.Location = new System.Drawing.Point(483, 196);
+            this.fab_lbl3.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl3.Name = "fab_lbl3";
+            this.fab_lbl3.Size = new System.Drawing.Size(148, 16);
+            this.fab_lbl3.TabIndex = 31;
+            this.fab_lbl3.Text = "TEXT 3";
+            this.fab_lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl1
+            // 
+            this.fab_lbl1.AutoEllipsis = true;
+            this.fab_lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl1.Location = new System.Drawing.Point(75, 196);
+            this.fab_lbl1.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl1.Name = "fab_lbl1";
+            this.fab_lbl1.Size = new System.Drawing.Size(120, 16);
+            this.fab_lbl1.TabIndex = 30;
+            this.fab_lbl1.Text = "TEXT 1";
+            this.fab_lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fab_lbl2
+            // 
+            this.fab_lbl2.AutoEllipsis = true;
+            this.fab_lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fab_lbl2.Location = new System.Drawing.Point(276, 196);
+            this.fab_lbl2.MaximumSize = new System.Drawing.Size(200, 30);
+            this.fab_lbl2.Name = "fab_lbl2";
+            this.fab_lbl2.Size = new System.Drawing.Size(139, 16);
+            this.fab_lbl2.TabIndex = 29;
+            this.fab_lbl2.Text = "TEXT 2";
+            this.fab_lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.fab_Panel16);
+            this.panel8.Controls.Add(this.fab_Panel15);
+            this.panel8.Controls.Add(this.fab_Panel14);
+            this.panel8.Controls.Add(this.fab_Panel13);
+            this.panel8.Controls.Add(this.fab_Panel12);
+            this.panel8.Controls.Add(this.fab_Panel11);
+            this.panel8.Controls.Add(this.fab_Panel10);
+            this.panel8.Controls.Add(this.fab_Panel9);
+            this.panel8.Location = new System.Drawing.Point(11, 247);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1691, 173);
+            this.panel8.TabIndex = 28;
+            // 
+            // fab_Panel16
+            // 
+            this.fab_Panel16.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel16.Controls.Add(this.fab_itemPic16);
+            this.fab_Panel16.Controls.Add(this.fab_overlay16);
+            this.fab_Panel16.FillColor = System.Drawing.Color.White;
+            this.fab_Panel16.Location = new System.Drawing.Point(1493, 15);
+            this.fab_Panel16.Name = "fab_Panel16";
+            this.fab_Panel16.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel16.ShadowDepth = 200;
+            this.fab_Panel16.Size = new System.Drawing.Size(171, 154);
+            this.fab_Panel16.TabIndex = 9;
+            // 
+            // fab_itemPic16
+            // 
+            this.fab_itemPic16.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic16.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic16.Image")));
+            this.fab_itemPic16.ImageRotate = 0F;
+            this.fab_itemPic16.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic16.Name = "fab_itemPic16";
+            this.fab_itemPic16.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic16.TabIndex = 5;
+            this.fab_itemPic16.TabStop = false;
+            // 
+            // fab_overlay16
+            // 
+            this.fab_overlay16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay16.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay16.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay16.Image")));
+            this.fab_overlay16.ImageRotate = 0F;
+            this.fab_overlay16.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay16.Name = "fab_overlay16";
+            this.fab_overlay16.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay16.TabIndex = 7;
+            this.fab_overlay16.TabStop = false;
+            this.fab_overlay16.Visible = false;
+            // 
+            // fab_Panel15
+            // 
+            this.fab_Panel15.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel15.Controls.Add(this.fab_itemPic15);
+            this.fab_Panel15.Controls.Add(this.fab_overlay15);
+            this.fab_Panel15.FillColor = System.Drawing.Color.White;
+            this.fab_Panel15.Location = new System.Drawing.Point(1283, 15);
+            this.fab_Panel15.Name = "fab_Panel15";
+            this.fab_Panel15.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel15.ShadowDepth = 200;
+            this.fab_Panel15.Size = new System.Drawing.Size(171, 154);
+            this.fab_Panel15.TabIndex = 8;
+            // 
+            // fab_itemPic15
+            // 
+            this.fab_itemPic15.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic15.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic15.Image")));
+            this.fab_itemPic15.ImageRotate = 0F;
+            this.fab_itemPic15.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic15.Name = "fab_itemPic15";
+            this.fab_itemPic15.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic15.TabIndex = 5;
+            this.fab_itemPic15.TabStop = false;
+            // 
+            // fab_overlay15
+            // 
+            this.fab_overlay15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay15.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay15.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay15.Image")));
+            this.fab_overlay15.ImageRotate = 0F;
+            this.fab_overlay15.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay15.Name = "fab_overlay15";
+            this.fab_overlay15.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay15.TabIndex = 7;
+            this.fab_overlay15.TabStop = false;
+            this.fab_overlay15.Visible = false;
+            // 
+            // fab_Panel14
+            // 
+            this.fab_Panel14.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel14.Controls.Add(this.fab_itemPic14);
+            this.fab_Panel14.Controls.Add(this.fab_overlay14);
+            this.fab_Panel14.FillColor = System.Drawing.Color.White;
+            this.fab_Panel14.Location = new System.Drawing.Point(1076, 15);
+            this.fab_Panel14.Name = "fab_Panel14";
+            this.fab_Panel14.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel14.ShadowDepth = 200;
+            this.fab_Panel14.Size = new System.Drawing.Size(171, 154);
+            this.fab_Panel14.TabIndex = 7;
+            // 
+            // fab_itemPic14
+            // 
+            this.fab_itemPic14.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic14.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic14.Image")));
+            this.fab_itemPic14.ImageRotate = 0F;
+            this.fab_itemPic14.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic14.Name = "fab_itemPic14";
+            this.fab_itemPic14.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic14.TabIndex = 5;
+            this.fab_itemPic14.TabStop = false;
+            // 
+            // fab_overlay14
+            // 
+            this.fab_overlay14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay14.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay14.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay14.Image")));
+            this.fab_overlay14.ImageRotate = 0F;
+            this.fab_overlay14.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay14.Name = "fab_overlay14";
+            this.fab_overlay14.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay14.TabIndex = 7;
+            this.fab_overlay14.TabStop = false;
+            this.fab_overlay14.Visible = false;
+            // 
+            // fab_Panel13
+            // 
+            this.fab_Panel13.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel13.Controls.Add(this.fab_itemPic13);
+            this.fab_Panel13.Controls.Add(this.fab_overlay13);
+            this.fab_Panel13.FillColor = System.Drawing.Color.White;
+            this.fab_Panel13.Location = new System.Drawing.Point(867, 15);
+            this.fab_Panel13.Name = "fab_Panel13";
+            this.fab_Panel13.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel13.ShadowDepth = 200;
+            this.fab_Panel13.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel13.TabIndex = 6;
+            // 
+            // fab_itemPic13
+            // 
+            this.fab_itemPic13.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic13.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic13.Image")));
+            this.fab_itemPic13.ImageRotate = 0F;
+            this.fab_itemPic13.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic13.Name = "fab_itemPic13";
+            this.fab_itemPic13.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic13.TabIndex = 4;
+            this.fab_itemPic13.TabStop = false;
+            // 
+            // fab_overlay13
+            // 
+            this.fab_overlay13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay13.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay13.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay13.Image")));
+            this.fab_overlay13.ImageRotate = 0F;
+            this.fab_overlay13.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay13.Name = "fab_overlay13";
+            this.fab_overlay13.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay13.TabIndex = 7;
+            this.fab_overlay13.TabStop = false;
+            this.fab_overlay13.Visible = false;
+            // 
+            // fab_Panel12
+            // 
+            this.fab_Panel12.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel12.Controls.Add(this.fab_itemPic12);
+            this.fab_Panel12.Controls.Add(this.fab_overlay12);
+            this.fab_Panel12.FillColor = System.Drawing.Color.White;
+            this.fab_Panel12.Location = new System.Drawing.Point(665, 15);
+            this.fab_Panel12.Name = "fab_Panel12";
+            this.fab_Panel12.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel12.ShadowDepth = 200;
+            this.fab_Panel12.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel12.TabIndex = 6;
+            // 
+            // fab_itemPic12
+            // 
+            this.fab_itemPic12.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic12.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic12.Image")));
+            this.fab_itemPic12.ImageRotate = 0F;
+            this.fab_itemPic12.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic12.Name = "fab_itemPic12";
+            this.fab_itemPic12.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic12.TabIndex = 3;
+            this.fab_itemPic12.TabStop = false;
+            // 
+            // fab_overlay12
+            // 
+            this.fab_overlay12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay12.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay12.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay12.Image")));
+            this.fab_overlay12.ImageRotate = 0F;
+            this.fab_overlay12.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay12.Name = "fab_overlay12";
+            this.fab_overlay12.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay12.TabIndex = 7;
+            this.fab_overlay12.TabStop = false;
+            this.fab_overlay12.Visible = false;
+            // 
+            // fab_Panel11
+            // 
+            this.fab_Panel11.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel11.Controls.Add(this.fab_itemPic11);
+            this.fab_Panel11.Controls.Add(this.fab_overlay11);
+            this.fab_Panel11.FillColor = System.Drawing.Color.White;
+            this.fab_Panel11.Location = new System.Drawing.Point(458, 15);
+            this.fab_Panel11.Name = "fab_Panel11";
+            this.fab_Panel11.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel11.ShadowDepth = 200;
+            this.fab_Panel11.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel11.TabIndex = 6;
+            // 
+            // fab_itemPic11
+            // 
+            this.fab_itemPic11.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic11.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic11.Image")));
+            this.fab_itemPic11.ImageRotate = 0F;
+            this.fab_itemPic11.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic11.Name = "fab_itemPic11";
+            this.fab_itemPic11.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic11.TabIndex = 2;
+            this.fab_itemPic11.TabStop = false;
+            // 
+            // fab_overlay11
+            // 
+            this.fab_overlay11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay11.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay11.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay11.Image")));
+            this.fab_overlay11.ImageRotate = 0F;
+            this.fab_overlay11.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay11.Name = "fab_overlay11";
+            this.fab_overlay11.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay11.TabIndex = 7;
+            this.fab_overlay11.TabStop = false;
+            this.fab_overlay11.Visible = false;
+            // 
+            // fab_Panel10
+            // 
+            this.fab_Panel10.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel10.Controls.Add(this.fab_itemPic10);
+            this.fab_Panel10.Controls.Add(this.fab_overlay10);
+            this.fab_Panel10.FillColor = System.Drawing.Color.White;
+            this.fab_Panel10.Location = new System.Drawing.Point(247, 15);
+            this.fab_Panel10.Name = "fab_Panel10";
+            this.fab_Panel10.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel10.ShadowDepth = 200;
+            this.fab_Panel10.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel10.TabIndex = 6;
+            // 
+            // fab_itemPic10
+            // 
+            this.fab_itemPic10.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic10.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic10.Image")));
+            this.fab_itemPic10.ImageRotate = 0F;
+            this.fab_itemPic10.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic10.Name = "fab_itemPic10";
+            this.fab_itemPic10.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic10.TabIndex = 1;
+            this.fab_itemPic10.TabStop = false;
+            // 
+            // fab_overlay10
+            // 
+            this.fab_overlay10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay10.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay10.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay10.Image")));
+            this.fab_overlay10.ImageRotate = 0F;
+            this.fab_overlay10.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay10.Name = "fab_overlay10";
+            this.fab_overlay10.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay10.TabIndex = 7;
+            this.fab_overlay10.TabStop = false;
+            this.fab_overlay10.Visible = false;
+            // 
+            // fab_Panel9
+            // 
+            this.fab_Panel9.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel9.Controls.Add(this.fab_itemPic9);
+            this.fab_Panel9.Controls.Add(this.fab_overlay9);
+            this.fab_Panel9.FillColor = System.Drawing.Color.White;
+            this.fab_Panel9.Location = new System.Drawing.Point(39, 15);
+            this.fab_Panel9.Name = "fab_Panel9";
+            this.fab_Panel9.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel9.ShadowDepth = 200;
+            this.fab_Panel9.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel9.TabIndex = 5;
+            // 
+            // fab_itemPic9
+            // 
+            this.fab_itemPic9.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic9.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic9.Image")));
+            this.fab_itemPic9.ImageRotate = 0F;
+            this.fab_itemPic9.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic9.Name = "fab_itemPic9";
+            this.fab_itemPic9.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic9.TabIndex = 0;
+            this.fab_itemPic9.TabStop = false;
+            // 
+            // fab_overlay9
+            // 
+            this.fab_overlay9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay9.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay9.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay9.Image")));
+            this.fab_overlay9.ImageRotate = 0F;
+            this.fab_overlay9.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay9.Name = "fab_overlay9";
+            this.fab_overlay9.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay9.TabIndex = 7;
+            this.fab_overlay9.TabStop = false;
+            this.fab_overlay9.Visible = false;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.fab_Panel8);
+            this.panel9.Controls.Add(this.fab_Panel7);
+            this.panel9.Controls.Add(this.fab_Panel6);
+            this.panel9.Controls.Add(this.fab_Panel5);
+            this.panel9.Controls.Add(this.fab_Panel4);
+            this.panel9.Controls.Add(this.fab_Panel3);
+            this.panel9.Controls.Add(this.fab_Panel2);
+            this.panel9.Controls.Add(this.fab_Panel1);
+            this.panel9.Location = new System.Drawing.Point(11, 20);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1691, 173);
+            this.panel9.TabIndex = 27;
+            // 
+            // fab_Panel8
+            // 
+            this.fab_Panel8.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel8.Controls.Add(this.fab_itemPic8);
+            this.fab_Panel8.Controls.Add(this.fab_overlay8);
+            this.fab_Panel8.FillColor = System.Drawing.Color.White;
+            this.fab_Panel8.Location = new System.Drawing.Point(1493, 15);
+            this.fab_Panel8.Name = "fab_Panel8";
+            this.fab_Panel8.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel8.ShadowDepth = 200;
+            this.fab_Panel8.Size = new System.Drawing.Size(171, 154);
+            this.fab_Panel8.TabIndex = 9;
+            // 
+            // fab_itemPic8
+            // 
+            this.fab_itemPic8.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic8.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic8.Image")));
+            this.fab_itemPic8.ImageRotate = 0F;
+            this.fab_itemPic8.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic8.Name = "fab_itemPic8";
+            this.fab_itemPic8.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic8.TabIndex = 5;
+            this.fab_itemPic8.TabStop = false;
+            // 
+            // fab_overlay8
+            // 
+            this.fab_overlay8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay8.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay8.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay8.Image")));
+            this.fab_overlay8.ImageRotate = 0F;
+            this.fab_overlay8.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay8.Name = "fab_overlay8";
+            this.fab_overlay8.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay8.TabIndex = 7;
+            this.fab_overlay8.TabStop = false;
+            this.fab_overlay8.Visible = false;
+            // 
+            // fab_Panel7
+            // 
+            this.fab_Panel7.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel7.Controls.Add(this.fab_itemPic7);
+            this.fab_Panel7.Controls.Add(this.fab_overlay7);
+            this.fab_Panel7.FillColor = System.Drawing.Color.White;
+            this.fab_Panel7.Location = new System.Drawing.Point(1283, 15);
+            this.fab_Panel7.Name = "fab_Panel7";
+            this.fab_Panel7.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel7.ShadowDepth = 200;
+            this.fab_Panel7.Size = new System.Drawing.Size(171, 154);
+            this.fab_Panel7.TabIndex = 8;
+            // 
+            // fab_itemPic7
+            // 
+            this.fab_itemPic7.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic7.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic7.Image")));
+            this.fab_itemPic7.ImageRotate = 0F;
+            this.fab_itemPic7.Location = new System.Drawing.Point(5, 7);
+            this.fab_itemPic7.Name = "fab_itemPic7";
+            this.fab_itemPic7.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic7.TabIndex = 5;
+            this.fab_itemPic7.TabStop = false;
+            // 
+            // fab_overlay7
+            // 
+            this.fab_overlay7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay7.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay7.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay7.Image")));
+            this.fab_overlay7.ImageRotate = 0F;
+            this.fab_overlay7.Location = new System.Drawing.Point(-1, 7);
+            this.fab_overlay7.Name = "fab_overlay7";
+            this.fab_overlay7.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay7.TabIndex = 6;
+            this.fab_overlay7.TabStop = false;
+            this.fab_overlay7.Visible = false;
+            // 
+            // fab_Panel6
+            // 
+            this.fab_Panel6.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel6.Controls.Add(this.fab_itemPic6);
+            this.fab_Panel6.Controls.Add(this.fab_overlay6);
+            this.fab_Panel6.FillColor = System.Drawing.Color.White;
+            this.fab_Panel6.Location = new System.Drawing.Point(1076, 15);
+            this.fab_Panel6.Name = "fab_Panel6";
+            this.fab_Panel6.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel6.ShadowDepth = 200;
+            this.fab_Panel6.Size = new System.Drawing.Size(171, 154);
+            this.fab_Panel6.TabIndex = 7;
+            // 
+            // fab_itemPic6
+            // 
+            this.fab_itemPic6.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic6.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic6.Image")));
+            this.fab_itemPic6.ImageRotate = 0F;
+            this.fab_itemPic6.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic6.Name = "fab_itemPic6";
+            this.fab_itemPic6.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic6.TabIndex = 5;
+            this.fab_itemPic6.TabStop = false;
+            // 
+            // fab_overlay6
+            // 
+            this.fab_overlay6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay6.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay6.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay6.Image")));
+            this.fab_overlay6.ImageRotate = 0F;
+            this.fab_overlay6.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay6.Name = "fab_overlay6";
+            this.fab_overlay6.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay6.TabIndex = 7;
+            this.fab_overlay6.TabStop = false;
+            this.fab_overlay6.Visible = false;
+            // 
+            // fab_Panel5
+            // 
+            this.fab_Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel5.Controls.Add(this.fab_itemPic5);
+            this.fab_Panel5.Controls.Add(this.fab_overlay5);
+            this.fab_Panel5.FillColor = System.Drawing.Color.White;
+            this.fab_Panel5.Location = new System.Drawing.Point(867, 15);
+            this.fab_Panel5.Name = "fab_Panel5";
+            this.fab_Panel5.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel5.ShadowDepth = 200;
+            this.fab_Panel5.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel5.TabIndex = 6;
+            // 
+            // fab_itemPic5
+            // 
+            this.fab_itemPic5.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic5.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic5.Image")));
+            this.fab_itemPic5.ImageRotate = 0F;
+            this.fab_itemPic5.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic5.Name = "fab_itemPic5";
+            this.fab_itemPic5.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic5.TabIndex = 4;
+            this.fab_itemPic5.TabStop = false;
+            // 
+            // fab_overlay5
+            // 
+            this.fab_overlay5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay5.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay5.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay5.Image")));
+            this.fab_overlay5.ImageRotate = 0F;
+            this.fab_overlay5.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay5.Name = "fab_overlay5";
+            this.fab_overlay5.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay5.TabIndex = 7;
+            this.fab_overlay5.TabStop = false;
+            this.fab_overlay5.Visible = false;
+            // 
+            // fab_Panel4
+            // 
+            this.fab_Panel4.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel4.Controls.Add(this.fab_itemPic4);
+            this.fab_Panel4.Controls.Add(this.fab_overlay4);
+            this.fab_Panel4.FillColor = System.Drawing.Color.White;
+            this.fab_Panel4.Location = new System.Drawing.Point(665, 15);
+            this.fab_Panel4.Name = "fab_Panel4";
+            this.fab_Panel4.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel4.ShadowDepth = 200;
+            this.fab_Panel4.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel4.TabIndex = 6;
+            // 
+            // fab_itemPic4
+            // 
+            this.fab_itemPic4.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic4.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic4.Image")));
+            this.fab_itemPic4.ImageRotate = 0F;
+            this.fab_itemPic4.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic4.Name = "fab_itemPic4";
+            this.fab_itemPic4.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic4.TabIndex = 3;
+            this.fab_itemPic4.TabStop = false;
+            // 
+            // fab_overlay4
+            // 
+            this.fab_overlay4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay4.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay4.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay4.Image")));
+            this.fab_overlay4.ImageRotate = 0F;
+            this.fab_overlay4.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay4.Name = "fab_overlay4";
+            this.fab_overlay4.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay4.TabIndex = 7;
+            this.fab_overlay4.TabStop = false;
+            this.fab_overlay4.Visible = false;
+            // 
+            // fab_Panel3
+            // 
+            this.fab_Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel3.Controls.Add(this.fab_itemPic3);
+            this.fab_Panel3.Controls.Add(this.fab_overlay3);
+            this.fab_Panel3.FillColor = System.Drawing.Color.White;
+            this.fab_Panel3.Location = new System.Drawing.Point(458, 15);
+            this.fab_Panel3.Name = "fab_Panel3";
+            this.fab_Panel3.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel3.ShadowDepth = 200;
+            this.fab_Panel3.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel3.TabIndex = 6;
+            // 
+            // fab_itemPic3
+            // 
+            this.fab_itemPic3.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic3.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic3.Image")));
+            this.fab_itemPic3.ImageRotate = 0F;
+            this.fab_itemPic3.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic3.Name = "fab_itemPic3";
+            this.fab_itemPic3.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic3.TabIndex = 2;
+            this.fab_itemPic3.TabStop = false;
+            // 
+            // fab_overlay3
+            // 
+            this.fab_overlay3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay3.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay3.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay3.Image")));
+            this.fab_overlay3.ImageRotate = 0F;
+            this.fab_overlay3.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay3.Name = "fab_overlay3";
+            this.fab_overlay3.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay3.TabIndex = 7;
+            this.fab_overlay3.TabStop = false;
+            this.fab_overlay3.Visible = false;
+            // 
+            // fab_Panel2
+            // 
+            this.fab_Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel2.Controls.Add(this.fab_itemPic2);
+            this.fab_Panel2.Controls.Add(this.fab_overlay2);
+            this.fab_Panel2.FillColor = System.Drawing.Color.White;
+            this.fab_Panel2.Location = new System.Drawing.Point(247, 15);
+            this.fab_Panel2.Name = "fab_Panel2";
+            this.fab_Panel2.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel2.ShadowDepth = 200;
+            this.fab_Panel2.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel2.TabIndex = 6;
+            // 
+            // fab_itemPic2
+            // 
+            this.fab_itemPic2.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic2.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic2.Image")));
+            this.fab_itemPic2.ImageRotate = 0F;
+            this.fab_itemPic2.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic2.Name = "fab_itemPic2";
+            this.fab_itemPic2.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic2.TabIndex = 1;
+            this.fab_itemPic2.TabStop = false;
+            // 
+            // fab_overlay2
+            // 
+            this.fab_overlay2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay2.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay2.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay2.Image")));
+            this.fab_overlay2.ImageRotate = 0F;
+            this.fab_overlay2.Location = new System.Drawing.Point(4, 9);
+            this.fab_overlay2.Name = "fab_overlay2";
+            this.fab_overlay2.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay2.TabIndex = 7;
+            this.fab_overlay2.TabStop = false;
+            this.fab_overlay2.Visible = false;
+            // 
+            // fab_Panel1
+            // 
+            this.fab_Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.fab_Panel1.Controls.Add(this.fab_itemPic1);
+            this.fab_Panel1.Controls.Add(this.fab_overlay1);
+            this.fab_Panel1.FillColor = System.Drawing.Color.White;
+            this.fab_Panel1.Location = new System.Drawing.Point(39, 15);
+            this.fab_Panel1.Name = "fab_Panel1";
+            this.fab_Panel1.ShadowColor = System.Drawing.Color.Black;
+            this.fab_Panel1.ShadowDepth = 200;
+            this.fab_Panel1.Size = new System.Drawing.Size(170, 154);
+            this.fab_Panel1.TabIndex = 5;
+            // 
+            // fab_itemPic1
+            // 
+            this.fab_itemPic1.FillColor = System.Drawing.Color.Transparent;
+            this.fab_itemPic1.Image = ((System.Drawing.Image)(resources.GetObject("fab_itemPic1.Image")));
+            this.fab_itemPic1.ImageRotate = 0F;
+            this.fab_itemPic1.Location = new System.Drawing.Point(6, 7);
+            this.fab_itemPic1.Name = "fab_itemPic1";
+            this.fab_itemPic1.Size = new System.Drawing.Size(160, 137);
+            this.fab_itemPic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fab_itemPic1.TabIndex = 0;
+            this.fab_itemPic1.TabStop = false;
+            // 
+            // fab_overlay1
+            // 
+            this.fab_overlay1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.fab_overlay1.FillColor = System.Drawing.Color.Transparent;
+            this.fab_overlay1.Image = ((System.Drawing.Image)(resources.GetObject("fab_overlay1.Image")));
+            this.fab_overlay1.ImageRotate = 0F;
+            this.fab_overlay1.Location = new System.Drawing.Point(3, 9);
+            this.fab_overlay1.Name = "fab_overlay1";
+            this.fab_overlay1.Size = new System.Drawing.Size(160, 137);
+            this.fab_overlay1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fab_overlay1.TabIndex = 8;
+            this.fab_overlay1.TabStop = false;
+            this.fab_overlay1.Visible = false;
             // 
             // guna2Button7
             // 
@@ -1749,7 +4752,24 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.other_lbl16);
+            this.tabPage8.Controls.Add(this.other_lbl15);
+            this.tabPage8.Controls.Add(this.other_lbl14);
+            this.tabPage8.Controls.Add(this.other_lbl13);
+            this.tabPage8.Controls.Add(this.other_lbl12);
+            this.tabPage8.Controls.Add(this.other_lbl11);
+            this.tabPage8.Controls.Add(this.other_lbl10);
+            this.tabPage8.Controls.Add(this.other_lbl9);
+            this.tabPage8.Controls.Add(this.other_lbl8);
+            this.tabPage8.Controls.Add(this.other_lbl7);
+            this.tabPage8.Controls.Add(this.other_lbl6);
+            this.tabPage8.Controls.Add(this.other_lbl5);
+            this.tabPage8.Controls.Add(this.other_lbl4);
+            this.tabPage8.Controls.Add(this.other_lbl3);
+            this.tabPage8.Controls.Add(this.other_lbl1);
+            this.tabPage8.Controls.Add(this.other_lbl2);
             this.tabPage8.Controls.Add(this.panel6);
+            this.tabPage8.Controls.Add(this.panel10);
             this.tabPage8.Controls.Add(this.guna2Button8);
             this.tabPage8.Location = new System.Drawing.Point(4, 44);
             this.tabPage8.Name = "tabPage8";
@@ -1759,212 +4779,852 @@
             this.tabPage8.Text = "Other";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // other_lbl16
+            // 
+            this.other_lbl16.AutoEllipsis = true;
+            this.other_lbl16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl16.Location = new System.Drawing.Point(1560, 424);
+            this.other_lbl16.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl16.Name = "other_lbl16";
+            this.other_lbl16.Size = new System.Drawing.Size(67, 16);
+            this.other_lbl16.TabIndex = 44;
+            this.other_lbl16.Text = "TEXT 16";
+            this.other_lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl15
+            // 
+            this.other_lbl15.AutoEllipsis = true;
+            this.other_lbl15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl15.Location = new System.Drawing.Point(1332, 423);
+            this.other_lbl15.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl15.Name = "other_lbl15";
+            this.other_lbl15.Size = new System.Drawing.Size(96, 16);
+            this.other_lbl15.TabIndex = 43;
+            this.other_lbl15.Text = "TEXT 15";
+            this.other_lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl14
+            // 
+            this.other_lbl14.AutoEllipsis = true;
+            this.other_lbl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl14.Location = new System.Drawing.Point(1129, 424);
+            this.other_lbl14.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl14.Name = "other_lbl14";
+            this.other_lbl14.Size = new System.Drawing.Size(94, 16);
+            this.other_lbl14.TabIndex = 42;
+            this.other_lbl14.Text = "TEXT 14";
+            this.other_lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl13
+            // 
+            this.other_lbl13.AutoEllipsis = true;
+            this.other_lbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl13.Location = new System.Drawing.Point(874, 423);
+            this.other_lbl13.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl13.Name = "other_lbl13";
+            this.other_lbl13.Size = new System.Drawing.Size(177, 16);
+            this.other_lbl13.TabIndex = 41;
+            this.other_lbl13.Text = "TEXT 13";
+            this.other_lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl12
+            // 
+            this.other_lbl12.AutoEllipsis = true;
+            this.other_lbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl12.Location = new System.Drawing.Point(688, 423);
+            this.other_lbl12.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl12.Name = "other_lbl12";
+            this.other_lbl12.Size = new System.Drawing.Size(147, 16);
+            this.other_lbl12.TabIndex = 40;
+            this.other_lbl12.Text = "TEXT 12";
+            this.other_lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl11
+            // 
+            this.other_lbl11.AutoEllipsis = true;
+            this.other_lbl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl11.Location = new System.Drawing.Point(514, 423);
+            this.other_lbl11.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl11.Name = "other_lbl11";
+            this.other_lbl11.Size = new System.Drawing.Size(80, 16);
+            this.other_lbl11.TabIndex = 39;
+            this.other_lbl11.Text = "TEXT 11";
+            this.other_lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl10
+            // 
+            this.other_lbl10.AutoEllipsis = true;
+            this.other_lbl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl10.Location = new System.Drawing.Point(304, 424);
+            this.other_lbl10.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl10.Name = "other_lbl10";
+            this.other_lbl10.Size = new System.Drawing.Size(87, 16);
+            this.other_lbl10.TabIndex = 36;
+            this.other_lbl10.Text = "TEXT 10";
+            this.other_lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl9
+            // 
+            this.other_lbl9.AutoEllipsis = true;
+            this.other_lbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl9.Location = new System.Drawing.Point(96, 424);
+            this.other_lbl9.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl9.Name = "other_lbl9";
+            this.other_lbl9.Size = new System.Drawing.Size(86, 16);
+            this.other_lbl9.TabIndex = 34;
+            this.other_lbl9.Text = "TEXT 9";
+            this.other_lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl8
+            // 
+            this.other_lbl8.AutoEllipsis = true;
+            this.other_lbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl8.Location = new System.Drawing.Point(1546, 196);
+            this.other_lbl8.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl8.Name = "other_lbl8";
+            this.other_lbl8.Size = new System.Drawing.Size(98, 16);
+            this.other_lbl8.TabIndex = 38;
+            this.other_lbl8.Text = "TEXT 8";
+            this.other_lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl7
+            // 
+            this.other_lbl7.AutoEllipsis = true;
+            this.other_lbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl7.Location = new System.Drawing.Point(1338, 195);
+            this.other_lbl7.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl7.Name = "other_lbl7";
+            this.other_lbl7.Size = new System.Drawing.Size(86, 16);
+            this.other_lbl7.TabIndex = 37;
+            this.other_lbl7.Text = "TEXT 7";
+            this.other_lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl6
+            // 
+            this.other_lbl6.AutoEllipsis = true;
+            this.other_lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl6.Location = new System.Drawing.Point(1136, 196);
+            this.other_lbl6.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl6.Name = "other_lbl6";
+            this.other_lbl6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.other_lbl6.Size = new System.Drawing.Size(88, 16);
+            this.other_lbl6.TabIndex = 35;
+            this.other_lbl6.Text = "TEXT 6";
+            this.other_lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl5
+            // 
+            this.other_lbl5.AutoEllipsis = true;
+            this.other_lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl5.Location = new System.Drawing.Point(926, 196);
+            this.other_lbl5.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl5.Name = "other_lbl5";
+            this.other_lbl5.Size = new System.Drawing.Size(86, 16);
+            this.other_lbl5.TabIndex = 33;
+            this.other_lbl5.Text = "TEXT 5";
+            this.other_lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl4
+            // 
+            this.other_lbl4.AutoEllipsis = true;
+            this.other_lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl4.Location = new System.Drawing.Point(724, 196);
+            this.other_lbl4.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl4.Name = "other_lbl4";
+            this.other_lbl4.Size = new System.Drawing.Size(81, 16);
+            this.other_lbl4.TabIndex = 32;
+            this.other_lbl4.Text = "TEXT 4";
+            this.other_lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl3
+            // 
+            this.other_lbl3.AutoEllipsis = true;
+            this.other_lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl3.Location = new System.Drawing.Point(483, 196);
+            this.other_lbl3.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl3.Name = "other_lbl3";
+            this.other_lbl3.Size = new System.Drawing.Size(148, 16);
+            this.other_lbl3.TabIndex = 31;
+            this.other_lbl3.Text = "TEXT 3";
+            this.other_lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl1
+            // 
+            this.other_lbl1.AutoEllipsis = true;
+            this.other_lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl1.Location = new System.Drawing.Point(75, 196);
+            this.other_lbl1.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl1.Name = "other_lbl1";
+            this.other_lbl1.Size = new System.Drawing.Size(120, 16);
+            this.other_lbl1.TabIndex = 30;
+            this.other_lbl1.Text = "TEXT 1";
+            this.other_lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // other_lbl2
+            // 
+            this.other_lbl2.AutoEllipsis = true;
+            this.other_lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.other_lbl2.Location = new System.Drawing.Point(276, 196);
+            this.other_lbl2.MaximumSize = new System.Drawing.Size(200, 30);
+            this.other_lbl2.Name = "other_lbl2";
+            this.other_lbl2.Size = new System.Drawing.Size(139, 16);
+            this.other_lbl2.TabIndex = 29;
+            this.other_lbl2.Text = "TEXT 2";
+            this.other_lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.guna2ShadowPanel44);
-            this.panel6.Controls.Add(this.guna2ShadowPanel45);
-            this.panel6.Controls.Add(this.guna2ShadowPanel46);
-            this.panel6.Controls.Add(this.guna2ShadowPanel47);
-            this.panel6.Controls.Add(this.guna2ShadowPanel48);
-            this.panel6.Controls.Add(this.guna2ShadowPanel49);
-            this.panel6.Controls.Add(this.guna2ShadowPanel50);
-            this.panel6.Controls.Add(this.guna2ShadowPanel51);
-            this.panel6.Location = new System.Drawing.Point(11, 20);
+            this.panel6.Controls.Add(this.other_Panel15);
+            this.panel6.Controls.Add(this.other_Panel14);
+            this.panel6.Controls.Add(this.other_Panel13);
+            this.panel6.Controls.Add(this.other_Panel12);
+            this.panel6.Controls.Add(this.other_Panel11);
+            this.panel6.Controls.Add(this.other_Panel10);
+            this.panel6.Controls.Add(this.other_Panel9);
+            this.panel6.Controls.Add(this.other_Panel16);
+            this.panel6.Location = new System.Drawing.Point(11, 247);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1691, 173);
-            this.panel6.TabIndex = 7;
+            this.panel6.TabIndex = 28;
             // 
-            // guna2ShadowPanel44
+            // other_Panel16
             // 
-            this.guna2ShadowPanel44.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel44.Controls.Add(this.guna2PictureBox65);
-            this.guna2ShadowPanel44.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel44.Location = new System.Drawing.Point(1493, 15);
-            this.guna2ShadowPanel44.Name = "guna2ShadowPanel44";
-            this.guna2ShadowPanel44.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel44.ShadowDepth = 200;
-            this.guna2ShadowPanel44.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel44.TabIndex = 9;
+            this.other_Panel16.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel16.Controls.Add(this.other_overlay16);
+            this.other_Panel16.Controls.Add(this.other_itemPic16);
+            this.other_Panel16.FillColor = System.Drawing.Color.White;
+            this.other_Panel16.Location = new System.Drawing.Point(1493, 15);
+            this.other_Panel16.Name = "other_Panel16";
+            this.other_Panel16.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel16.ShadowDepth = 200;
+            this.other_Panel16.Size = new System.Drawing.Size(171, 154);
+            this.other_Panel16.TabIndex = 9;
             // 
-            // guna2PictureBox65
+            // other_overlay16
             // 
-            this.guna2PictureBox65.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox65.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox65.Image")));
-            this.guna2PictureBox65.ImageRotate = 0F;
-            this.guna2PictureBox65.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox65.Name = "guna2PictureBox65";
-            this.guna2PictureBox65.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox65.TabIndex = 5;
-            this.guna2PictureBox65.TabStop = false;
+            this.other_overlay16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay16.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay16.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay16.Image")));
+            this.other_overlay16.ImageRotate = 0F;
+            this.other_overlay16.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay16.Name = "other_overlay16";
+            this.other_overlay16.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay16.TabIndex = 7;
+            this.other_overlay16.TabStop = false;
+            this.other_overlay16.Visible = false;
             // 
-            // guna2ShadowPanel45
+            // other_itemPic16
             // 
-            this.guna2ShadowPanel45.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel45.Controls.Add(this.guna2PictureBox66);
-            this.guna2ShadowPanel45.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel45.Location = new System.Drawing.Point(1283, 15);
-            this.guna2ShadowPanel45.Name = "guna2ShadowPanel45";
-            this.guna2ShadowPanel45.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel45.ShadowDepth = 200;
-            this.guna2ShadowPanel45.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel45.TabIndex = 8;
+            this.other_itemPic16.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic16.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic16.Image")));
+            this.other_itemPic16.ImageRotate = 0F;
+            this.other_itemPic16.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic16.Name = "other_itemPic16";
+            this.other_itemPic16.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic16.TabIndex = 5;
+            this.other_itemPic16.TabStop = false;
             // 
-            // guna2PictureBox66
+            // other_Panel15
             // 
-            this.guna2PictureBox66.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox66.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox66.Image")));
-            this.guna2PictureBox66.ImageRotate = 0F;
-            this.guna2PictureBox66.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox66.Name = "guna2PictureBox66";
-            this.guna2PictureBox66.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox66.TabIndex = 5;
-            this.guna2PictureBox66.TabStop = false;
+            this.other_Panel15.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel15.Controls.Add(this.other_overlay15);
+            this.other_Panel15.Controls.Add(this.other_itemPic15);
+            this.other_Panel15.FillColor = System.Drawing.Color.White;
+            this.other_Panel15.Location = new System.Drawing.Point(1283, 15);
+            this.other_Panel15.Name = "other_Panel15";
+            this.other_Panel15.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel15.ShadowDepth = 200;
+            this.other_Panel15.Size = new System.Drawing.Size(171, 154);
+            this.other_Panel15.TabIndex = 8;
             // 
-            // guna2ShadowPanel46
+            // other_overlay15
             // 
-            this.guna2ShadowPanel46.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel46.Controls.Add(this.guna2PictureBox67);
-            this.guna2ShadowPanel46.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel46.Location = new System.Drawing.Point(1076, 15);
-            this.guna2ShadowPanel46.Name = "guna2ShadowPanel46";
-            this.guna2ShadowPanel46.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel46.ShadowDepth = 200;
-            this.guna2ShadowPanel46.Size = new System.Drawing.Size(171, 154);
-            this.guna2ShadowPanel46.TabIndex = 7;
+            this.other_overlay15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay15.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay15.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay15.Image")));
+            this.other_overlay15.ImageRotate = 0F;
+            this.other_overlay15.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay15.Name = "other_overlay15";
+            this.other_overlay15.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay15.TabIndex = 7;
+            this.other_overlay15.TabStop = false;
+            this.other_overlay15.Visible = false;
             // 
-            // guna2PictureBox67
+            // other_itemPic15
             // 
-            this.guna2PictureBox67.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox67.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox67.Image")));
-            this.guna2PictureBox67.ImageRotate = 0F;
-            this.guna2PictureBox67.Location = new System.Drawing.Point(42, 14);
-            this.guna2PictureBox67.Name = "guna2PictureBox67";
-            this.guna2PictureBox67.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox67.TabIndex = 5;
-            this.guna2PictureBox67.TabStop = false;
+            this.other_itemPic15.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic15.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic15.Image")));
+            this.other_itemPic15.ImageRotate = 0F;
+            this.other_itemPic15.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic15.Name = "other_itemPic15";
+            this.other_itemPic15.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic15.TabIndex = 5;
+            this.other_itemPic15.TabStop = false;
             // 
-            // guna2ShadowPanel47
+            // other_Panel14
             // 
-            this.guna2ShadowPanel47.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel47.Controls.Add(this.guna2PictureBox68);
-            this.guna2ShadowPanel47.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel47.Location = new System.Drawing.Point(867, 15);
-            this.guna2ShadowPanel47.Name = "guna2ShadowPanel47";
-            this.guna2ShadowPanel47.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel47.ShadowDepth = 200;
-            this.guna2ShadowPanel47.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel47.TabIndex = 6;
+            this.other_Panel14.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel14.Controls.Add(this.other_overlay14);
+            this.other_Panel14.Controls.Add(this.other_itemPic14);
+            this.other_Panel14.FillColor = System.Drawing.Color.White;
+            this.other_Panel14.Location = new System.Drawing.Point(1076, 15);
+            this.other_Panel14.Name = "other_Panel14";
+            this.other_Panel14.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel14.ShadowDepth = 200;
+            this.other_Panel14.Size = new System.Drawing.Size(171, 154);
+            this.other_Panel14.TabIndex = 7;
             // 
-            // guna2PictureBox68
+            // other_overlay14
             // 
-            this.guna2PictureBox68.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox68.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox68.Image")));
-            this.guna2PictureBox68.ImageRotate = 0F;
-            this.guna2PictureBox68.Location = new System.Drawing.Point(44, 14);
-            this.guna2PictureBox68.Name = "guna2PictureBox68";
-            this.guna2PictureBox68.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox68.TabIndex = 4;
-            this.guna2PictureBox68.TabStop = false;
+            this.other_overlay14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay14.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay14.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay14.Image")));
+            this.other_overlay14.ImageRotate = 0F;
+            this.other_overlay14.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay14.Name = "other_overlay14";
+            this.other_overlay14.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay14.TabIndex = 7;
+            this.other_overlay14.TabStop = false;
+            this.other_overlay14.Visible = false;
             // 
-            // guna2ShadowPanel48
+            // other_itemPic14
             // 
-            this.guna2ShadowPanel48.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel48.Controls.Add(this.guna2PictureBox69);
-            this.guna2ShadowPanel48.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel48.Location = new System.Drawing.Point(665, 15);
-            this.guna2ShadowPanel48.Name = "guna2ShadowPanel48";
-            this.guna2ShadowPanel48.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel48.ShadowDepth = 200;
-            this.guna2ShadowPanel48.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel48.TabIndex = 6;
+            this.other_itemPic14.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic14.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic14.Image")));
+            this.other_itemPic14.ImageRotate = 0F;
+            this.other_itemPic14.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic14.Name = "other_itemPic14";
+            this.other_itemPic14.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic14.TabIndex = 5;
+            this.other_itemPic14.TabStop = false;
             // 
-            // guna2PictureBox69
+            // other_Panel13
             // 
-            this.guna2PictureBox69.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox69.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox69.Image")));
-            this.guna2PictureBox69.ImageRotate = 0F;
-            this.guna2PictureBox69.Location = new System.Drawing.Point(37, 14);
-            this.guna2PictureBox69.Name = "guna2PictureBox69";
-            this.guna2PictureBox69.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox69.TabIndex = 3;
-            this.guna2PictureBox69.TabStop = false;
+            this.other_Panel13.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel13.Controls.Add(this.other_overlay13);
+            this.other_Panel13.Controls.Add(this.other_itemPic13);
+            this.other_Panel13.FillColor = System.Drawing.Color.White;
+            this.other_Panel13.Location = new System.Drawing.Point(867, 15);
+            this.other_Panel13.Name = "other_Panel13";
+            this.other_Panel13.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel13.ShadowDepth = 200;
+            this.other_Panel13.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel13.TabIndex = 6;
             // 
-            // guna2ShadowPanel49
+            // other_overlay13
             // 
-            this.guna2ShadowPanel49.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel49.Controls.Add(this.guna2PictureBox70);
-            this.guna2ShadowPanel49.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel49.Location = new System.Drawing.Point(458, 15);
-            this.guna2ShadowPanel49.Name = "guna2ShadowPanel49";
-            this.guna2ShadowPanel49.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel49.ShadowDepth = 200;
-            this.guna2ShadowPanel49.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel49.TabIndex = 6;
+            this.other_overlay13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay13.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay13.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay13.Image")));
+            this.other_overlay13.ImageRotate = 0F;
+            this.other_overlay13.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay13.Name = "other_overlay13";
+            this.other_overlay13.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay13.TabIndex = 7;
+            this.other_overlay13.TabStop = false;
+            this.other_overlay13.Visible = false;
             // 
-            // guna2PictureBox70
+            // other_itemPic13
             // 
-            this.guna2PictureBox70.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox70.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox70.Image")));
-            this.guna2PictureBox70.ImageRotate = 0F;
-            this.guna2PictureBox70.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox70.Name = "guna2PictureBox70";
-            this.guna2PictureBox70.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox70.TabIndex = 2;
-            this.guna2PictureBox70.TabStop = false;
+            this.other_itemPic13.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic13.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic13.Image")));
+            this.other_itemPic13.ImageRotate = 0F;
+            this.other_itemPic13.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic13.Name = "other_itemPic13";
+            this.other_itemPic13.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic13.TabIndex = 4;
+            this.other_itemPic13.TabStop = false;
             // 
-            // guna2ShadowPanel50
+            // other_Panel12
             // 
-            this.guna2ShadowPanel50.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel50.Controls.Add(this.guna2PictureBox71);
-            this.guna2ShadowPanel50.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel50.Location = new System.Drawing.Point(247, 15);
-            this.guna2ShadowPanel50.Name = "guna2ShadowPanel50";
-            this.guna2ShadowPanel50.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel50.ShadowDepth = 200;
-            this.guna2ShadowPanel50.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel50.TabIndex = 6;
+            this.other_Panel12.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel12.Controls.Add(this.other_overlay12);
+            this.other_Panel12.Controls.Add(this.other_itemPic12);
+            this.other_Panel12.FillColor = System.Drawing.Color.White;
+            this.other_Panel12.Location = new System.Drawing.Point(665, 15);
+            this.other_Panel12.Name = "other_Panel12";
+            this.other_Panel12.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel12.ShadowDepth = 200;
+            this.other_Panel12.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel12.TabIndex = 6;
             // 
-            // guna2PictureBox71
+            // other_overlay12
             // 
-            this.guna2PictureBox71.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox71.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox71.Image")));
-            this.guna2PictureBox71.ImageRotate = 0F;
-            this.guna2PictureBox71.Location = new System.Drawing.Point(39, 14);
-            this.guna2PictureBox71.Name = "guna2PictureBox71";
-            this.guna2PictureBox71.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox71.TabIndex = 1;
-            this.guna2PictureBox71.TabStop = false;
+            this.other_overlay12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay12.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay12.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay12.Image")));
+            this.other_overlay12.ImageRotate = 0F;
+            this.other_overlay12.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay12.Name = "other_overlay12";
+            this.other_overlay12.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay12.TabIndex = 7;
+            this.other_overlay12.TabStop = false;
+            this.other_overlay12.Visible = false;
             // 
-            // guna2ShadowPanel51
+            // other_itemPic12
             // 
-            this.guna2ShadowPanel51.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel51.Controls.Add(this.guna2PictureBox72);
-            this.guna2ShadowPanel51.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel51.Location = new System.Drawing.Point(39, 15);
-            this.guna2ShadowPanel51.Name = "guna2ShadowPanel51";
-            this.guna2ShadowPanel51.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel51.ShadowDepth = 200;
-            this.guna2ShadowPanel51.Size = new System.Drawing.Size(170, 154);
-            this.guna2ShadowPanel51.TabIndex = 5;
+            this.other_itemPic12.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic12.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic12.Image")));
+            this.other_itemPic12.ImageRotate = 0F;
+            this.other_itemPic12.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic12.Name = "other_itemPic12";
+            this.other_itemPic12.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic12.TabIndex = 3;
+            this.other_itemPic12.TabStop = false;
             // 
-            // guna2PictureBox72
+            // other_Panel11
             // 
-            this.guna2PictureBox72.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox72.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox72.Image")));
-            this.guna2PictureBox72.ImageRotate = 0F;
-            this.guna2PictureBox72.Location = new System.Drawing.Point(35, 14);
-            this.guna2PictureBox72.Name = "guna2PictureBox72";
-            this.guna2PictureBox72.Size = new System.Drawing.Size(95, 124);
-            this.guna2PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox72.TabIndex = 0;
-            this.guna2PictureBox72.TabStop = false;
+            this.other_Panel11.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel11.Controls.Add(this.other_overlay11);
+            this.other_Panel11.Controls.Add(this.other_itemPic11);
+            this.other_Panel11.FillColor = System.Drawing.Color.White;
+            this.other_Panel11.Location = new System.Drawing.Point(458, 15);
+            this.other_Panel11.Name = "other_Panel11";
+            this.other_Panel11.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel11.ShadowDepth = 200;
+            this.other_Panel11.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel11.TabIndex = 6;
+            // 
+            // other_overlay11
+            // 
+            this.other_overlay11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay11.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay11.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay11.Image")));
+            this.other_overlay11.ImageRotate = 0F;
+            this.other_overlay11.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay11.Name = "other_overlay11";
+            this.other_overlay11.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay11.TabIndex = 7;
+            this.other_overlay11.TabStop = false;
+            this.other_overlay11.Visible = false;
+            // 
+            // other_itemPic11
+            // 
+            this.other_itemPic11.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic11.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic11.Image")));
+            this.other_itemPic11.ImageRotate = 0F;
+            this.other_itemPic11.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic11.Name = "other_itemPic11";
+            this.other_itemPic11.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic11.TabIndex = 2;
+            this.other_itemPic11.TabStop = false;
+            // 
+            // other_Panel10
+            // 
+            this.other_Panel10.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel10.Controls.Add(this.other_overlay10);
+            this.other_Panel10.Controls.Add(this.other_itemPic10);
+            this.other_Panel10.FillColor = System.Drawing.Color.White;
+            this.other_Panel10.Location = new System.Drawing.Point(247, 15);
+            this.other_Panel10.Name = "other_Panel10";
+            this.other_Panel10.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel10.ShadowDepth = 200;
+            this.other_Panel10.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel10.TabIndex = 6;
+            // 
+            // other_overlay10
+            // 
+            this.other_overlay10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay10.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay10.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay10.Image")));
+            this.other_overlay10.ImageRotate = 0F;
+            this.other_overlay10.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay10.Name = "other_overlay10";
+            this.other_overlay10.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay10.TabIndex = 7;
+            this.other_overlay10.TabStop = false;
+            this.other_overlay10.Visible = false;
+            // 
+            // other_itemPic10
+            // 
+            this.other_itemPic10.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic10.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic10.Image")));
+            this.other_itemPic10.ImageRotate = 0F;
+            this.other_itemPic10.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic10.Name = "other_itemPic10";
+            this.other_itemPic10.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic10.TabIndex = 1;
+            this.other_itemPic10.TabStop = false;
+            // 
+            // other_Panel9
+            // 
+            this.other_Panel9.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel9.Controls.Add(this.other_overlay9);
+            this.other_Panel9.Controls.Add(this.other_itemPic9);
+            this.other_Panel9.FillColor = System.Drawing.Color.White;
+            this.other_Panel9.Location = new System.Drawing.Point(39, 15);
+            this.other_Panel9.Name = "other_Panel9";
+            this.other_Panel9.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel9.ShadowDepth = 200;
+            this.other_Panel9.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel9.TabIndex = 5;
+            // 
+            // other_overlay9
+            // 
+            this.other_overlay9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay9.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay9.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay9.Image")));
+            this.other_overlay9.ImageRotate = 0F;
+            this.other_overlay9.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay9.Name = "other_overlay9";
+            this.other_overlay9.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay9.TabIndex = 7;
+            this.other_overlay9.TabStop = false;
+            this.other_overlay9.Visible = false;
+            // 
+            // other_itemPic9
+            // 
+            this.other_itemPic9.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic9.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic9.Image")));
+            this.other_itemPic9.ImageRotate = 0F;
+            this.other_itemPic9.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic9.Name = "other_itemPic9";
+            this.other_itemPic9.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic9.TabIndex = 0;
+            this.other_itemPic9.TabStop = false;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.other_Panel8);
+            this.panel10.Controls.Add(this.other_Panel7);
+            this.panel10.Controls.Add(this.other_Panel6);
+            this.panel10.Controls.Add(this.other_Panel5);
+            this.panel10.Controls.Add(this.other_Panel4);
+            this.panel10.Controls.Add(this.other_Panel3);
+            this.panel10.Controls.Add(this.other_Panel2);
+            this.panel10.Controls.Add(this.other_Panel1);
+            this.panel10.Location = new System.Drawing.Point(11, 20);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1691, 173);
+            this.panel10.TabIndex = 27;
+            // 
+            // other_Panel8
+            // 
+            this.other_Panel8.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel8.Controls.Add(this.other_overlay8);
+            this.other_Panel8.Controls.Add(this.other_itemPic8);
+            this.other_Panel8.FillColor = System.Drawing.Color.White;
+            this.other_Panel8.Location = new System.Drawing.Point(1493, 15);
+            this.other_Panel8.Name = "other_Panel8";
+            this.other_Panel8.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel8.ShadowDepth = 200;
+            this.other_Panel8.Size = new System.Drawing.Size(171, 154);
+            this.other_Panel8.TabIndex = 9;
+            // 
+            // other_overlay8
+            // 
+            this.other_overlay8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay8.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay8.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay8.Image")));
+            this.other_overlay8.ImageRotate = 0F;
+            this.other_overlay8.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay8.Name = "other_overlay8";
+            this.other_overlay8.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay8.TabIndex = 7;
+            this.other_overlay8.TabStop = false;
+            this.other_overlay8.Visible = false;
+            // 
+            // other_itemPic8
+            // 
+            this.other_itemPic8.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic8.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic8.Image")));
+            this.other_itemPic8.ImageRotate = 0F;
+            this.other_itemPic8.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic8.Name = "other_itemPic8";
+            this.other_itemPic8.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic8.TabIndex = 5;
+            this.other_itemPic8.TabStop = false;
+            // 
+            // other_Panel7
+            // 
+            this.other_Panel7.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel7.Controls.Add(this.other_overlay7);
+            this.other_Panel7.Controls.Add(this.other_itemPic7);
+            this.other_Panel7.FillColor = System.Drawing.Color.White;
+            this.other_Panel7.Location = new System.Drawing.Point(1283, 15);
+            this.other_Panel7.Name = "other_Panel7";
+            this.other_Panel7.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel7.ShadowDepth = 200;
+            this.other_Panel7.Size = new System.Drawing.Size(171, 154);
+            this.other_Panel7.TabIndex = 8;
+            // 
+            // other_overlay7
+            // 
+            this.other_overlay7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay7.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay7.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay7.Image")));
+            this.other_overlay7.ImageRotate = 0F;
+            this.other_overlay7.Location = new System.Drawing.Point(-1, 7);
+            this.other_overlay7.Name = "other_overlay7";
+            this.other_overlay7.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay7.TabIndex = 6;
+            this.other_overlay7.TabStop = false;
+            this.other_overlay7.Visible = false;
+            // 
+            // other_itemPic7
+            // 
+            this.other_itemPic7.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic7.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic7.Image")));
+            this.other_itemPic7.ImageRotate = 0F;
+            this.other_itemPic7.Location = new System.Drawing.Point(5, 7);
+            this.other_itemPic7.Name = "other_itemPic7";
+            this.other_itemPic7.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic7.TabIndex = 5;
+            this.other_itemPic7.TabStop = false;
+            // 
+            // other_Panel6
+            // 
+            this.other_Panel6.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel6.Controls.Add(this.other_overlay6);
+            this.other_Panel6.Controls.Add(this.other_itemPic6);
+            this.other_Panel6.FillColor = System.Drawing.Color.White;
+            this.other_Panel6.Location = new System.Drawing.Point(1076, 15);
+            this.other_Panel6.Name = "other_Panel6";
+            this.other_Panel6.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel6.ShadowDepth = 200;
+            this.other_Panel6.Size = new System.Drawing.Size(171, 154);
+            this.other_Panel6.TabIndex = 7;
+            // 
+            // other_overlay6
+            // 
+            this.other_overlay6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay6.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay6.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay6.Image")));
+            this.other_overlay6.ImageRotate = 0F;
+            this.other_overlay6.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay6.Name = "other_overlay6";
+            this.other_overlay6.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay6.TabIndex = 7;
+            this.other_overlay6.TabStop = false;
+            this.other_overlay6.Visible = false;
+            // 
+            // other_itemPic6
+            // 
+            this.other_itemPic6.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic6.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic6.Image")));
+            this.other_itemPic6.ImageRotate = 0F;
+            this.other_itemPic6.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic6.Name = "other_itemPic6";
+            this.other_itemPic6.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic6.TabIndex = 5;
+            this.other_itemPic6.TabStop = false;
+            // 
+            // other_Panel5
+            // 
+            this.other_Panel5.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel5.Controls.Add(this.other_overlay5);
+            this.other_Panel5.Controls.Add(this.other_itemPic5);
+            this.other_Panel5.FillColor = System.Drawing.Color.White;
+            this.other_Panel5.Location = new System.Drawing.Point(867, 15);
+            this.other_Panel5.Name = "other_Panel5";
+            this.other_Panel5.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel5.ShadowDepth = 200;
+            this.other_Panel5.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel5.TabIndex = 6;
+            // 
+            // other_overlay5
+            // 
+            this.other_overlay5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay5.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay5.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay5.Image")));
+            this.other_overlay5.ImageRotate = 0F;
+            this.other_overlay5.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay5.Name = "other_overlay5";
+            this.other_overlay5.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay5.TabIndex = 7;
+            this.other_overlay5.TabStop = false;
+            this.other_overlay5.Visible = false;
+            // 
+            // other_itemPic5
+            // 
+            this.other_itemPic5.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic5.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic5.Image")));
+            this.other_itemPic5.ImageRotate = 0F;
+            this.other_itemPic5.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic5.Name = "other_itemPic5";
+            this.other_itemPic5.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic5.TabIndex = 4;
+            this.other_itemPic5.TabStop = false;
+            // 
+            // other_Panel4
+            // 
+            this.other_Panel4.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel4.Controls.Add(this.other_itemPic4);
+            this.other_Panel4.Controls.Add(this.other_overlay4);
+            this.other_Panel4.FillColor = System.Drawing.Color.White;
+            this.other_Panel4.Location = new System.Drawing.Point(665, 15);
+            this.other_Panel4.Name = "other_Panel4";
+            this.other_Panel4.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel4.ShadowDepth = 200;
+            this.other_Panel4.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel4.TabIndex = 6;
+            // 
+            // other_overlay4
+            // 
+            this.other_overlay4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay4.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay4.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay4.Image")));
+            this.other_overlay4.ImageRotate = 0F;
+            this.other_overlay4.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay4.Name = "other_overlay4";
+            this.other_overlay4.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay4.TabIndex = 7;
+            this.other_overlay4.TabStop = false;
+            this.other_overlay4.Visible = false;
+            // 
+            // other_itemPic4
+            // 
+            this.other_itemPic4.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic4.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic4.Image")));
+            this.other_itemPic4.ImageRotate = 0F;
+            this.other_itemPic4.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic4.Name = "other_itemPic4";
+            this.other_itemPic4.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic4.TabIndex = 3;
+            this.other_itemPic4.TabStop = false;
+            // 
+            // other_Panel3
+            // 
+            this.other_Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel3.Controls.Add(this.other_overlay3);
+            this.other_Panel3.Controls.Add(this.other_itemPic3);
+            this.other_Panel3.FillColor = System.Drawing.Color.White;
+            this.other_Panel3.Location = new System.Drawing.Point(458, 15);
+            this.other_Panel3.Name = "other_Panel3";
+            this.other_Panel3.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel3.ShadowDepth = 200;
+            this.other_Panel3.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel3.TabIndex = 6;
+            // 
+            // other_overlay3
+            // 
+            this.other_overlay3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay3.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay3.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay3.Image")));
+            this.other_overlay3.ImageRotate = 0F;
+            this.other_overlay3.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay3.Name = "other_overlay3";
+            this.other_overlay3.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay3.TabIndex = 7;
+            this.other_overlay3.TabStop = false;
+            this.other_overlay3.Visible = false;
+            // 
+            // other_itemPic3
+            // 
+            this.other_itemPic3.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic3.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic3.Image")));
+            this.other_itemPic3.ImageRotate = 0F;
+            this.other_itemPic3.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic3.Name = "other_itemPic3";
+            this.other_itemPic3.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic3.TabIndex = 2;
+            this.other_itemPic3.TabStop = false;
+            // 
+            // other_Panel2
+            // 
+            this.other_Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel2.Controls.Add(this.other_overlay2);
+            this.other_Panel2.Controls.Add(this.other_itemPic2);
+            this.other_Panel2.FillColor = System.Drawing.Color.White;
+            this.other_Panel2.Location = new System.Drawing.Point(247, 15);
+            this.other_Panel2.Name = "other_Panel2";
+            this.other_Panel2.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel2.ShadowDepth = 200;
+            this.other_Panel2.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel2.TabIndex = 6;
+            // 
+            // other_overlay2
+            // 
+            this.other_overlay2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay2.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay2.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay2.Image")));
+            this.other_overlay2.ImageRotate = 0F;
+            this.other_overlay2.Location = new System.Drawing.Point(4, 9);
+            this.other_overlay2.Name = "other_overlay2";
+            this.other_overlay2.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay2.TabIndex = 7;
+            this.other_overlay2.TabStop = false;
+            this.other_overlay2.Visible = false;
+            // 
+            // other_itemPic2
+            // 
+            this.other_itemPic2.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic2.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic2.Image")));
+            this.other_itemPic2.ImageRotate = 0F;
+            this.other_itemPic2.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic2.Name = "other_itemPic2";
+            this.other_itemPic2.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic2.TabIndex = 1;
+            this.other_itemPic2.TabStop = false;
+            // 
+            // other_Panel1
+            // 
+            this.other_Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.other_Panel1.Controls.Add(this.other_overlay1);
+            this.other_Panel1.Controls.Add(this.other_itemPic1);
+            this.other_Panel1.FillColor = System.Drawing.Color.White;
+            this.other_Panel1.Location = new System.Drawing.Point(39, 15);
+            this.other_Panel1.Name = "other_Panel1";
+            this.other_Panel1.ShadowColor = System.Drawing.Color.Black;
+            this.other_Panel1.ShadowDepth = 200;
+            this.other_Panel1.Size = new System.Drawing.Size(170, 154);
+            this.other_Panel1.TabIndex = 5;
+            // 
+            // other_overlay1
+            // 
+            this.other_overlay1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.other_overlay1.FillColor = System.Drawing.Color.Transparent;
+            this.other_overlay1.Image = ((System.Drawing.Image)(resources.GetObject("other_overlay1.Image")));
+            this.other_overlay1.ImageRotate = 0F;
+            this.other_overlay1.Location = new System.Drawing.Point(3, 9);
+            this.other_overlay1.Name = "other_overlay1";
+            this.other_overlay1.Size = new System.Drawing.Size(160, 137);
+            this.other_overlay1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.other_overlay1.TabIndex = 8;
+            this.other_overlay1.TabStop = false;
+            this.other_overlay1.Visible = false;
+            // 
+            // other_itemPic1
+            // 
+            this.other_itemPic1.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic1.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic1.Image")));
+            this.other_itemPic1.ImageRotate = 0F;
+            this.other_itemPic1.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic1.Name = "other_itemPic1";
+            this.other_itemPic1.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic1.TabIndex = 0;
+            this.other_itemPic1.TabStop = false;
             // 
             // guna2Button8
             // 
@@ -1986,24 +5646,24 @@
             this.guna2Button8.Text = "Back";
             this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
-            // guna2Button3
+            // confirmBtn
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderRadius = 13;
-            this.guna2Button3.BorderThickness = 2;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2Button3.FocusedColor = System.Drawing.Color.White;
-            this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1001, 734);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(256, 49);
-            this.guna2Button3.TabIndex = 3;
-            this.guna2Button3.Text = "Confirm";
+            this.confirmBtn.BackColor = System.Drawing.Color.Transparent;
+            this.confirmBtn.BorderRadius = 13;
+            this.confirmBtn.BorderThickness = 2;
+            this.confirmBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.confirmBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.confirmBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.confirmBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.confirmBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.confirmBtn.FocusedColor = System.Drawing.Color.White;
+            this.confirmBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmBtn.ForeColor = System.Drawing.Color.White;
+            this.confirmBtn.Location = new System.Drawing.Point(1001, 734);
+            this.confirmBtn.Name = "confirmBtn";
+            this.confirmBtn.Size = new System.Drawing.Size(256, 49);
+            this.confirmBtn.TabIndex = 3;
+            this.confirmBtn.Text = "Confirm";
             // 
             // guna2Button2
             // 
@@ -2028,17 +5688,12 @@
             // guna2ShadowPanel3
             // 
             this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel3.Controls.Add(this.tenthIten);
-            this.guna2ShadowPanel3.Controls.Add(this.firstItem);
-            this.guna2ShadowPanel3.Controls.Add(this.ninthItem);
-            this.guna2ShadowPanel3.Controls.Add(this.eighthItem);
-            this.guna2ShadowPanel3.Controls.Add(this.seventhItem);
-            this.guna2ShadowPanel3.Controls.Add(this.ttext);
-            this.guna2ShadowPanel3.Controls.Add(this.sixthItem);
             this.guna2ShadowPanel3.Controls.Add(this.fifthItem);
             this.guna2ShadowPanel3.Controls.Add(this.fourthItem);
             this.guna2ShadowPanel3.Controls.Add(this.thirdItem);
             this.guna2ShadowPanel3.Controls.Add(this.secondItem);
+            this.guna2ShadowPanel3.Controls.Add(this.firstItem);
+            this.guna2ShadowPanel3.Controls.Add(this.ttext);
             this.guna2ShadowPanel3.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel3.Location = new System.Drawing.Point(-4, 569);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
@@ -2046,6 +5701,896 @@
             this.guna2ShadowPanel3.ShadowDepth = 250;
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(1930, 159);
             this.guna2ShadowPanel3.TabIndex = 0;
+            // 
+            // fifthItem
+            // 
+            this.fifthItem.BackColor = System.Drawing.Color.Transparent;
+            this.fifthItem.Controls.Add(this.fifthCancel);
+            this.fifthItem.Controls.Add(this.fifthItemSize);
+            this.fifthItem.Controls.Add(this.label46);
+            this.fifthItem.Controls.Add(this.label47);
+            this.fifthItem.Controls.Add(this.fifthItemType);
+            this.fifthItem.Controls.Add(this.fifthItemName);
+            this.fifthItem.Controls.Add(this.guna2CustomGradientPanel13);
+            this.fifthItem.Controls.Add(this.fifthPic);
+            this.fifthItem.Controls.Add(this.label52);
+            this.fifthItem.Controls.Add(this.fifthItemQty);
+            this.fifthItem.Controls.Add(this.label54);
+            this.fifthItem.Controls.Add(this.label55);
+            this.fifthItem.FillColor = System.Drawing.Color.White;
+            this.fifthItem.Location = new System.Drawing.Point(1496, 2);
+            this.fifthItem.Name = "fifthItem";
+            this.fifthItem.ShadowColor = System.Drawing.Color.Black;
+            this.fifthItem.ShadowDepth = 200;
+            this.fifthItem.Size = new System.Drawing.Size(306, 153);
+            this.fifthItem.TabIndex = 36;
+            this.fifthItem.Visible = false;
+            // 
+            // fifthCancel
+            // 
+            this.fifthCancel.BackColor = System.Drawing.Color.Transparent;
+            this.fifthCancel.FillColor = System.Drawing.Color.Transparent;
+            this.fifthCancel.Image = ((System.Drawing.Image)(resources.GetObject("fifthCancel.Image")));
+            this.fifthCancel.ImageRotate = 0F;
+            this.fifthCancel.Location = new System.Drawing.Point(275, 1);
+            this.fifthCancel.Name = "fifthCancel";
+            this.fifthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.fifthCancel.Size = new System.Drawing.Size(29, 25);
+            this.fifthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fifthCancel.TabIndex = 12;
+            this.fifthCancel.TabStop = false;
+            this.fifthCancel.Click += new System.EventHandler(this.fifthcancel_Click);
+            // 
+            // fifthItemSize
+            // 
+            this.fifthItemSize.AutoSize = true;
+            this.fifthItemSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fifthItemSize.Location = new System.Drawing.Point(205, 91);
+            this.fifthItemSize.Name = "fifthItemSize";
+            this.fifthItemSize.Size = new System.Drawing.Size(23, 15);
+            this.fifthItemSize.TabIndex = 32;
+            this.fifthItemSize.Text = "....";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(162, 94);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(43, 13);
+            this.label46.TabIndex = 26;
+            this.label46.Text = "SIZE :";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(162, 62);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(78, 13);
+            this.label47.TabIndex = 25;
+            this.label47.Text = "QUANTITY :";
+            // 
+            // fifthItemType
+            // 
+            this.fifthItemType.AutoSize = true;
+            this.fifthItemType.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fifthItemType.Location = new System.Drawing.Point(162, 32);
+            this.fifthItemType.Name = "fifthItemType";
+            this.fifthItemType.Size = new System.Drawing.Size(87, 12);
+            this.fifthItemType.TabIndex = 24;
+            this.fifthItemType.Text = "PRODUCT TYPE";
+            // 
+            // fifthItemName
+            // 
+            this.fifthItemName.AutoSize = true;
+            this.fifthItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fifthItemName.Location = new System.Drawing.Point(162, 12);
+            this.fifthItemName.Name = "fifthItemName";
+            this.fifthItemName.Size = new System.Drawing.Size(116, 15);
+            this.fifthItemName.TabIndex = 23;
+            this.fifthItemName.Text = "PRODUCT NAME";
+            // 
+            // guna2CustomGradientPanel13
+            // 
+            this.guna2CustomGradientPanel13.Controls.Add(this.label50);
+            this.guna2CustomGradientPanel13.Controls.Add(this.fifthItemPrice);
+            this.guna2CustomGradientPanel13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2CustomGradientPanel13.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel13.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel13.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel13.Location = new System.Drawing.Point(0, 132);
+            this.guna2CustomGradientPanel13.Name = "guna2CustomGradientPanel13";
+            this.guna2CustomGradientPanel13.Size = new System.Drawing.Size(306, 21);
+            this.guna2CustomGradientPanel13.TabIndex = 13;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label50.Location = new System.Drawing.Point(107, 2);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(19, 18);
+            this.label50.TabIndex = 27;
+            this.label50.Text = "₱";
+            // 
+            // fifthItemPrice
+            // 
+            this.fifthItemPrice.AutoSize = true;
+            this.fifthItemPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fifthItemPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.fifthItemPrice.Location = new System.Drawing.Point(126, 2);
+            this.fifthItemPrice.Name = "fifthItemPrice";
+            this.fifthItemPrice.Size = new System.Drawing.Size(76, 18);
+            this.fifthItemPrice.TabIndex = 34;
+            this.fifthItemPrice.Text = "12345.67";
+            // 
+            // fifthPic
+            // 
+            this.fifthPic.BackColor = System.Drawing.Color.Transparent;
+            this.fifthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.fifthPic.FillColor = System.Drawing.Color.Transparent;
+            this.fifthPic.Image = ((System.Drawing.Image)(resources.GetObject("fifthPic.Image")));
+            this.fifthPic.ImageRotate = 0F;
+            this.fifthPic.Location = new System.Drawing.Point(4, 2);
+            this.fifthPic.Name = "fifthPic";
+            this.fifthPic.Size = new System.Drawing.Size(144, 130);
+            this.fifthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fifthPic.TabIndex = 1;
+            this.fifthPic.TabStop = false;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(162, 34);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(91, 13);
+            this.label52.TabIndex = 28;
+            this.label52.Text = "____________";
+            // 
+            // fifthItemQty
+            // 
+            this.fifthItemQty.AutoSize = true;
+            this.fifthItemQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fifthItemQty.Location = new System.Drawing.Point(237, 60);
+            this.fifthItemQty.Name = "fifthItemQty";
+            this.fifthItemQty.Size = new System.Drawing.Size(27, 15);
+            this.fifthItemQty.TabIndex = 30;
+            this.fifthItemQty.Text = ".....";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(161, 64);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(98, 13);
+            this.label54.TabIndex = 29;
+            this.label54.Text = "_____________";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(160, 96);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(77, 13);
+            this.label55.TabIndex = 31;
+            this.label55.Text = "__________";
+            // 
+            // fourthItem
+            // 
+            this.fourthItem.BackColor = System.Drawing.Color.Transparent;
+            this.fourthItem.Controls.Add(this.fourthCancel);
+            this.fourthItem.Controls.Add(this.fourthItemSize);
+            this.fourthItem.Controls.Add(this.label35);
+            this.fourthItem.Controls.Add(this.label36);
+            this.fourthItem.Controls.Add(this.fourthItemType);
+            this.fourthItem.Controls.Add(this.fourthItemName);
+            this.fourthItem.Controls.Add(this.guna2CustomGradientPanel12);
+            this.fourthItem.Controls.Add(this.fourthPic);
+            this.fourthItem.Controls.Add(this.label41);
+            this.fourthItem.Controls.Add(this.fourthItemQty);
+            this.fourthItem.Controls.Add(this.label43);
+            this.fourthItem.Controls.Add(this.label44);
+            this.fourthItem.FillColor = System.Drawing.Color.White;
+            this.fourthItem.Location = new System.Drawing.Point(1148, 3);
+            this.fourthItem.Name = "fourthItem";
+            this.fourthItem.ShadowColor = System.Drawing.Color.Black;
+            this.fourthItem.ShadowDepth = 200;
+            this.fourthItem.Size = new System.Drawing.Size(306, 153);
+            this.fourthItem.TabIndex = 35;
+            this.fourthItem.Visible = false;
+            // 
+            // fourthCancel
+            // 
+            this.fourthCancel.BackColor = System.Drawing.Color.Transparent;
+            this.fourthCancel.FillColor = System.Drawing.Color.Transparent;
+            this.fourthCancel.Image = ((System.Drawing.Image)(resources.GetObject("fourthCancel.Image")));
+            this.fourthCancel.ImageRotate = 0F;
+            this.fourthCancel.Location = new System.Drawing.Point(275, 1);
+            this.fourthCancel.Name = "fourthCancel";
+            this.fourthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.fourthCancel.Size = new System.Drawing.Size(29, 25);
+            this.fourthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourthCancel.TabIndex = 12;
+            this.fourthCancel.TabStop = false;
+            this.fourthCancel.Click += new System.EventHandler(this.fourthCancel_Click);
+            // 
+            // fourthItemSize
+            // 
+            this.fourthItemSize.AutoSize = true;
+            this.fourthItemSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fourthItemSize.Location = new System.Drawing.Point(205, 91);
+            this.fourthItemSize.Name = "fourthItemSize";
+            this.fourthItemSize.Size = new System.Drawing.Size(27, 15);
+            this.fourthItemSize.TabIndex = 32;
+            this.fourthItemSize.Text = ".....";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(162, 94);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(43, 13);
+            this.label35.TabIndex = 26;
+            this.label35.Text = "SIZE :";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(162, 62);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(78, 13);
+            this.label36.TabIndex = 25;
+            this.label36.Text = "QUANTITY :";
+            // 
+            // fourthItemType
+            // 
+            this.fourthItemType.AutoSize = true;
+            this.fourthItemType.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fourthItemType.Location = new System.Drawing.Point(162, 32);
+            this.fourthItemType.Name = "fourthItemType";
+            this.fourthItemType.Size = new System.Drawing.Size(87, 12);
+            this.fourthItemType.TabIndex = 24;
+            this.fourthItemType.Text = "PRODUCT TYPE";
+            // 
+            // fourthItemName
+            // 
+            this.fourthItemName.AutoSize = true;
+            this.fourthItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fourthItemName.Location = new System.Drawing.Point(162, 12);
+            this.fourthItemName.Name = "fourthItemName";
+            this.fourthItemName.Size = new System.Drawing.Size(116, 15);
+            this.fourthItemName.TabIndex = 23;
+            this.fourthItemName.Text = "PRODUCT NAME";
+            // 
+            // guna2CustomGradientPanel12
+            // 
+            this.guna2CustomGradientPanel12.Controls.Add(this.label39);
+            this.guna2CustomGradientPanel12.Controls.Add(this.fourthItemPrice);
+            this.guna2CustomGradientPanel12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2CustomGradientPanel12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel12.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel12.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel12.Location = new System.Drawing.Point(0, 132);
+            this.guna2CustomGradientPanel12.Name = "guna2CustomGradientPanel12";
+            this.guna2CustomGradientPanel12.Size = new System.Drawing.Size(306, 21);
+            this.guna2CustomGradientPanel12.TabIndex = 13;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label39.Location = new System.Drawing.Point(107, 2);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(19, 18);
+            this.label39.TabIndex = 27;
+            this.label39.Text = "₱";
+            // 
+            // fourthItemPrice
+            // 
+            this.fourthItemPrice.AutoSize = true;
+            this.fourthItemPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fourthItemPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.fourthItemPrice.Location = new System.Drawing.Point(126, 2);
+            this.fourthItemPrice.Name = "fourthItemPrice";
+            this.fourthItemPrice.Size = new System.Drawing.Size(76, 18);
+            this.fourthItemPrice.TabIndex = 34;
+            this.fourthItemPrice.Text = "12345.67";
+            // 
+            // fourthPic
+            // 
+            this.fourthPic.BackColor = System.Drawing.Color.Transparent;
+            this.fourthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.fourthPic.FillColor = System.Drawing.Color.Transparent;
+            this.fourthPic.Image = ((System.Drawing.Image)(resources.GetObject("fourthPic.Image")));
+            this.fourthPic.ImageRotate = 0F;
+            this.fourthPic.Location = new System.Drawing.Point(4, 2);
+            this.fourthPic.Name = "fourthPic";
+            this.fourthPic.Size = new System.Drawing.Size(144, 130);
+            this.fourthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourthPic.TabIndex = 1;
+            this.fourthPic.TabStop = false;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(162, 34);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(91, 13);
+            this.label41.TabIndex = 28;
+            this.label41.Text = "____________";
+            // 
+            // fourthItemQty
+            // 
+            this.fourthItemQty.AutoSize = true;
+            this.fourthItemQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fourthItemQty.Location = new System.Drawing.Point(237, 60);
+            this.fourthItemQty.Name = "fourthItemQty";
+            this.fourthItemQty.Size = new System.Drawing.Size(23, 15);
+            this.fourthItemQty.TabIndex = 30;
+            this.fourthItemQty.Text = "....";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(161, 64);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(98, 13);
+            this.label43.TabIndex = 29;
+            this.label43.Text = "_____________";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(160, 96);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(77, 13);
+            this.label44.TabIndex = 31;
+            this.label44.Text = "__________";
+            // 
+            // thirdItem
+            // 
+            this.thirdItem.BackColor = System.Drawing.Color.Transparent;
+            this.thirdItem.Controls.Add(this.thirdCancel);
+            this.thirdItem.Controls.Add(this.thirdItemSize);
+            this.thirdItem.Controls.Add(this.label24);
+            this.thirdItem.Controls.Add(this.label25);
+            this.thirdItem.Controls.Add(this.thirdItemType);
+            this.thirdItem.Controls.Add(this.thirdItemName);
+            this.thirdItem.Controls.Add(this.guna2CustomGradientPanel11);
+            this.thirdItem.Controls.Add(this.thirdPic);
+            this.thirdItem.Controls.Add(this.label30);
+            this.thirdItem.Controls.Add(this.thirdItemQty);
+            this.thirdItem.Controls.Add(this.label32);
+            this.thirdItem.Controls.Add(this.label33);
+            this.thirdItem.FillColor = System.Drawing.Color.White;
+            this.thirdItem.Location = new System.Drawing.Point(805, 3);
+            this.thirdItem.Name = "thirdItem";
+            this.thirdItem.ShadowColor = System.Drawing.Color.Black;
+            this.thirdItem.ShadowDepth = 200;
+            this.thirdItem.Size = new System.Drawing.Size(306, 153);
+            this.thirdItem.TabIndex = 34;
+            this.thirdItem.Visible = false;
+            // 
+            // thirdCancel
+            // 
+            this.thirdCancel.BackColor = System.Drawing.Color.Transparent;
+            this.thirdCancel.FillColor = System.Drawing.Color.Transparent;
+            this.thirdCancel.Image = ((System.Drawing.Image)(resources.GetObject("thirdCancel.Image")));
+            this.thirdCancel.ImageRotate = 0F;
+            this.thirdCancel.Location = new System.Drawing.Point(275, 1);
+            this.thirdCancel.Name = "thirdCancel";
+            this.thirdCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.thirdCancel.Size = new System.Drawing.Size(29, 25);
+            this.thirdCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.thirdCancel.TabIndex = 12;
+            this.thirdCancel.TabStop = false;
+            this.thirdCancel.Click += new System.EventHandler(this.thirdCancel_Click);
+            // 
+            // thirdItemSize
+            // 
+            this.thirdItemSize.AutoSize = true;
+            this.thirdItemSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thirdItemSize.Location = new System.Drawing.Point(205, 91);
+            this.thirdItemSize.Name = "thirdItemSize";
+            this.thirdItemSize.Size = new System.Drawing.Size(23, 15);
+            this.thirdItemSize.TabIndex = 32;
+            this.thirdItemSize.Text = "....";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(162, 94);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(43, 13);
+            this.label24.TabIndex = 26;
+            this.label24.Text = "SIZE :";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(162, 62);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(78, 13);
+            this.label25.TabIndex = 25;
+            this.label25.Text = "QUANTITY :";
+            // 
+            // thirdItemType
+            // 
+            this.thirdItemType.AutoSize = true;
+            this.thirdItemType.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thirdItemType.Location = new System.Drawing.Point(162, 32);
+            this.thirdItemType.Name = "thirdItemType";
+            this.thirdItemType.Size = new System.Drawing.Size(87, 12);
+            this.thirdItemType.TabIndex = 24;
+            this.thirdItemType.Text = "PRODUCT TYPE";
+            // 
+            // thirdItemName
+            // 
+            this.thirdItemName.AutoSize = true;
+            this.thirdItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thirdItemName.Location = new System.Drawing.Point(162, 12);
+            this.thirdItemName.Name = "thirdItemName";
+            this.thirdItemName.Size = new System.Drawing.Size(116, 15);
+            this.thirdItemName.TabIndex = 23;
+            this.thirdItemName.Text = "PRODUCT NAME";
+            // 
+            // guna2CustomGradientPanel11
+            // 
+            this.guna2CustomGradientPanel11.Controls.Add(this.label28);
+            this.guna2CustomGradientPanel11.Controls.Add(this.thirdItemPrice);
+            this.guna2CustomGradientPanel11.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2CustomGradientPanel11.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel11.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel11.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel11.Location = new System.Drawing.Point(0, 132);
+            this.guna2CustomGradientPanel11.Name = "guna2CustomGradientPanel11";
+            this.guna2CustomGradientPanel11.Size = new System.Drawing.Size(306, 21);
+            this.guna2CustomGradientPanel11.TabIndex = 13;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label28.Location = new System.Drawing.Point(107, 2);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(19, 18);
+            this.label28.TabIndex = 27;
+            this.label28.Text = "₱";
+            // 
+            // thirdItemPrice
+            // 
+            this.thirdItemPrice.AutoSize = true;
+            this.thirdItemPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thirdItemPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.thirdItemPrice.Location = new System.Drawing.Point(126, 2);
+            this.thirdItemPrice.Name = "thirdItemPrice";
+            this.thirdItemPrice.Size = new System.Drawing.Size(76, 18);
+            this.thirdItemPrice.TabIndex = 34;
+            this.thirdItemPrice.Text = "12345.67";
+            // 
+            // thirdPic
+            // 
+            this.thirdPic.BackColor = System.Drawing.Color.Transparent;
+            this.thirdPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.thirdPic.FillColor = System.Drawing.Color.Transparent;
+            this.thirdPic.Image = ((System.Drawing.Image)(resources.GetObject("thirdPic.Image")));
+            this.thirdPic.ImageRotate = 0F;
+            this.thirdPic.Location = new System.Drawing.Point(4, 2);
+            this.thirdPic.Name = "thirdPic";
+            this.thirdPic.Size = new System.Drawing.Size(144, 130);
+            this.thirdPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.thirdPic.TabIndex = 1;
+            this.thirdPic.TabStop = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(162, 34);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(91, 13);
+            this.label30.TabIndex = 28;
+            this.label30.Text = "____________";
+            // 
+            // thirdItemQty
+            // 
+            this.thirdItemQty.AutoSize = true;
+            this.thirdItemQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thirdItemQty.Location = new System.Drawing.Point(237, 60);
+            this.thirdItemQty.Name = "thirdItemQty";
+            this.thirdItemQty.Size = new System.Drawing.Size(23, 15);
+            this.thirdItemQty.TabIndex = 30;
+            this.thirdItemQty.Text = "....";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(161, 64);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(98, 13);
+            this.label32.TabIndex = 29;
+            this.label32.Text = "_____________";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(160, 96);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(77, 13);
+            this.label33.TabIndex = 31;
+            this.label33.Text = "__________";
+            // 
+            // secondItem
+            // 
+            this.secondItem.BackColor = System.Drawing.Color.Transparent;
+            this.secondItem.Controls.Add(this.secondCancel);
+            this.secondItem.Controls.Add(this.secondItemSize);
+            this.secondItem.Controls.Add(this.label12);
+            this.secondItem.Controls.Add(this.label14);
+            this.secondItem.Controls.Add(this.secondItemType);
+            this.secondItem.Controls.Add(this.secondItemName);
+            this.secondItem.Controls.Add(this.guna2CustomGradientPanel10);
+            this.secondItem.Controls.Add(this.secondPic);
+            this.secondItem.Controls.Add(this.label19);
+            this.secondItem.Controls.Add(this.secondItemQty);
+            this.secondItem.Controls.Add(this.label21);
+            this.secondItem.Controls.Add(this.label22);
+            this.secondItem.FillColor = System.Drawing.Color.White;
+            this.secondItem.Location = new System.Drawing.Point(465, 3);
+            this.secondItem.Name = "secondItem";
+            this.secondItem.ShadowColor = System.Drawing.Color.Black;
+            this.secondItem.ShadowDepth = 200;
+            this.secondItem.Size = new System.Drawing.Size(306, 153);
+            this.secondItem.TabIndex = 33;
+            this.secondItem.Visible = false;
+            // 
+            // secondCancel
+            // 
+            this.secondCancel.BackColor = System.Drawing.Color.Transparent;
+            this.secondCancel.FillColor = System.Drawing.Color.Transparent;
+            this.secondCancel.Image = ((System.Drawing.Image)(resources.GetObject("secondCancel.Image")));
+            this.secondCancel.ImageRotate = 0F;
+            this.secondCancel.Location = new System.Drawing.Point(275, 1);
+            this.secondCancel.Name = "secondCancel";
+            this.secondCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.secondCancel.Size = new System.Drawing.Size(29, 25);
+            this.secondCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.secondCancel.TabIndex = 12;
+            this.secondCancel.TabStop = false;
+            this.secondCancel.Click += new System.EventHandler(this.secondCancel_Click);
+            // 
+            // secondItemSize
+            // 
+            this.secondItemSize.AutoSize = true;
+            this.secondItemSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondItemSize.Location = new System.Drawing.Point(205, 91);
+            this.secondItemSize.Name = "secondItemSize";
+            this.secondItemSize.Size = new System.Drawing.Size(27, 15);
+            this.secondItemSize.TabIndex = 32;
+            this.secondItemSize.Text = ".....";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(162, 94);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(43, 13);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "SIZE :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(162, 62);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(78, 13);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "QUANTITY :";
+            // 
+            // secondItemType
+            // 
+            this.secondItemType.AutoSize = true;
+            this.secondItemType.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondItemType.Location = new System.Drawing.Point(162, 32);
+            this.secondItemType.Name = "secondItemType";
+            this.secondItemType.Size = new System.Drawing.Size(87, 12);
+            this.secondItemType.TabIndex = 24;
+            this.secondItemType.Text = "PRODUCT TYPE";
+            // 
+            // secondItemName
+            // 
+            this.secondItemName.AutoSize = true;
+            this.secondItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondItemName.Location = new System.Drawing.Point(162, 12);
+            this.secondItemName.Name = "secondItemName";
+            this.secondItemName.Size = new System.Drawing.Size(116, 15);
+            this.secondItemName.TabIndex = 23;
+            this.secondItemName.Text = "PRODUCT NAME";
+            // 
+            // guna2CustomGradientPanel10
+            // 
+            this.guna2CustomGradientPanel10.Controls.Add(this.label17);
+            this.guna2CustomGradientPanel10.Controls.Add(this.secondItemPrice);
+            this.guna2CustomGradientPanel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2CustomGradientPanel10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel10.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel10.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel10.Location = new System.Drawing.Point(0, 132);
+            this.guna2CustomGradientPanel10.Name = "guna2CustomGradientPanel10";
+            this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(306, 21);
+            this.guna2CustomGradientPanel10.TabIndex = 13;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label17.Location = new System.Drawing.Point(107, 2);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(19, 18);
+            this.label17.TabIndex = 27;
+            this.label17.Text = "₱";
+            // 
+            // secondItemPrice
+            // 
+            this.secondItemPrice.AutoSize = true;
+            this.secondItemPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondItemPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.secondItemPrice.Location = new System.Drawing.Point(126, 2);
+            this.secondItemPrice.Name = "secondItemPrice";
+            this.secondItemPrice.Size = new System.Drawing.Size(76, 18);
+            this.secondItemPrice.TabIndex = 34;
+            this.secondItemPrice.Text = "12345.67";
+            // 
+            // secondPic
+            // 
+            this.secondPic.BackColor = System.Drawing.Color.Transparent;
+            this.secondPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.secondPic.FillColor = System.Drawing.Color.Transparent;
+            this.secondPic.Image = ((System.Drawing.Image)(resources.GetObject("secondPic.Image")));
+            this.secondPic.ImageRotate = 0F;
+            this.secondPic.Location = new System.Drawing.Point(4, 2);
+            this.secondPic.Name = "secondPic";
+            this.secondPic.Size = new System.Drawing.Size(144, 130);
+            this.secondPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.secondPic.TabIndex = 1;
+            this.secondPic.TabStop = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(162, 34);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(91, 13);
+            this.label19.TabIndex = 28;
+            this.label19.Text = "____________";
+            // 
+            // secondItemQty
+            // 
+            this.secondItemQty.AutoSize = true;
+            this.secondItemQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondItemQty.Location = new System.Drawing.Point(237, 60);
+            this.secondItemQty.Name = "secondItemQty";
+            this.secondItemQty.Size = new System.Drawing.Size(23, 15);
+            this.secondItemQty.TabIndex = 30;
+            this.secondItemQty.Text = "....";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(161, 64);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(98, 13);
+            this.label21.TabIndex = 29;
+            this.label21.Text = "_____________";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(160, 96);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(77, 13);
+            this.label22.TabIndex = 31;
+            this.label22.Text = "__________";
+            // 
+            // firstItem
+            // 
+            this.firstItem.BackColor = System.Drawing.Color.Transparent;
+            this.firstItem.Controls.Add(this.firstCancel);
+            this.firstItem.Controls.Add(this.firstItemSize);
+            this.firstItem.Controls.Add(this.label8);
+            this.firstItem.Controls.Add(this.label7);
+            this.firstItem.Controls.Add(this.firstItemType);
+            this.firstItem.Controls.Add(this.firstItemName);
+            this.firstItem.Controls.Add(this.guna2CustomGradientPanel9);
+            this.firstItem.Controls.Add(this.firstPic);
+            this.firstItem.Controls.Add(this.label10);
+            this.firstItem.Controls.Add(this.firstItemQty);
+            this.firstItem.Controls.Add(this.label11);
+            this.firstItem.Controls.Add(this.label13);
+            this.firstItem.FillColor = System.Drawing.Color.White;
+            this.firstItem.Location = new System.Drawing.Point(130, 4);
+            this.firstItem.Name = "firstItem";
+            this.firstItem.ShadowColor = System.Drawing.Color.Black;
+            this.firstItem.ShadowDepth = 200;
+            this.firstItem.Size = new System.Drawing.Size(306, 153);
+            this.firstItem.TabIndex = 8;
+            this.firstItem.Visible = false;
+            // 
+            // firstCancel
+            // 
+            this.firstCancel.BackColor = System.Drawing.Color.Transparent;
+            this.firstCancel.FillColor = System.Drawing.Color.Transparent;
+            this.firstCancel.Image = ((System.Drawing.Image)(resources.GetObject("firstCancel.Image")));
+            this.firstCancel.ImageRotate = 0F;
+            this.firstCancel.Location = new System.Drawing.Point(275, 1);
+            this.firstCancel.Name = "firstCancel";
+            this.firstCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.firstCancel.Size = new System.Drawing.Size(29, 25);
+            this.firstCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.firstCancel.TabIndex = 12;
+            this.firstCancel.TabStop = false;
+            this.firstCancel.Click += new System.EventHandler(this.firstCancel_Click);
+            // 
+            // firstItemSize
+            // 
+            this.firstItemSize.AutoSize = true;
+            this.firstItemSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstItemSize.Location = new System.Drawing.Point(205, 91);
+            this.firstItemSize.Name = "firstItemSize";
+            this.firstItemSize.Size = new System.Drawing.Size(23, 15);
+            this.firstItemSize.TabIndex = 32;
+            this.firstItemSize.Text = "....";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(162, 94);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "SIZE :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(162, 62);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 13);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "QUANTITY :";
+            // 
+            // firstItemType
+            // 
+            this.firstItemType.AutoSize = true;
+            this.firstItemType.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstItemType.Location = new System.Drawing.Point(162, 32);
+            this.firstItemType.Name = "firstItemType";
+            this.firstItemType.Size = new System.Drawing.Size(87, 12);
+            this.firstItemType.TabIndex = 24;
+            this.firstItemType.Text = "PRODUCT TYPE";
+            // 
+            // firstItemName
+            // 
+            this.firstItemName.AutoSize = true;
+            this.firstItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstItemName.Location = new System.Drawing.Point(162, 12);
+            this.firstItemName.Name = "firstItemName";
+            this.firstItemName.Size = new System.Drawing.Size(116, 15);
+            this.firstItemName.TabIndex = 23;
+            this.firstItemName.Text = "PRODUCT NAME";
+            // 
+            // guna2CustomGradientPanel9
+            // 
+            this.guna2CustomGradientPanel9.Controls.Add(this.label9);
+            this.guna2CustomGradientPanel9.Controls.Add(this.firstItemPrice);
+            this.guna2CustomGradientPanel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2CustomGradientPanel9.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel9.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel9.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(0, 132);
+            this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
+            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(306, 21);
+            this.guna2CustomGradientPanel9.TabIndex = 13;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.Location = new System.Drawing.Point(107, 2);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(19, 18);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "₱";
+            // 
+            // firstItemPrice
+            // 
+            this.firstItemPrice.AutoSize = true;
+            this.firstItemPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstItemPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.firstItemPrice.Location = new System.Drawing.Point(126, 2);
+            this.firstItemPrice.Name = "firstItemPrice";
+            this.firstItemPrice.Size = new System.Drawing.Size(76, 18);
+            this.firstItemPrice.TabIndex = 34;
+            this.firstItemPrice.Text = "12345.67";
+            // 
+            // firstPic
+            // 
+            this.firstPic.BackColor = System.Drawing.Color.Transparent;
+            this.firstPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.firstPic.FillColor = System.Drawing.Color.Transparent;
+            this.firstPic.Image = ((System.Drawing.Image)(resources.GetObject("firstPic.Image")));
+            this.firstPic.ImageRotate = 0F;
+            this.firstPic.Location = new System.Drawing.Point(4, 2);
+            this.firstPic.Name = "firstPic";
+            this.firstPic.Size = new System.Drawing.Size(144, 130);
+            this.firstPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.firstPic.TabIndex = 1;
+            this.firstPic.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(162, 34);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(91, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "____________";
+            // 
+            // firstItemQty
+            // 
+            this.firstItemQty.AutoSize = true;
+            this.firstItemQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstItemQty.Location = new System.Drawing.Point(237, 60);
+            this.firstItemQty.Name = "firstItemQty";
+            this.firstItemQty.Size = new System.Drawing.Size(23, 15);
+            this.firstItemQty.TabIndex = 30;
+            this.firstItemQty.Text = "....";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(161, 64);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(98, 13);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "_____________";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(160, 96);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(77, 13);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "__________";
             // 
             // ttext
             // 
@@ -2063,6 +6608,7 @@
             this.guna2CustomGradientPanel7.Controls.Add(this.guna2HtmlLabel7);
             this.guna2CustomGradientPanel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2CustomGradientPanel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.guna2CustomGradientPanel7.Location = new System.Drawing.Point(-4, 524);
             this.guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
             this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(1940, 57);
@@ -2487,476 +7033,6 @@
             this.guna2PictureBox8.TabIndex = 6;
             this.guna2PictureBox8.TabStop = false;
             // 
-            // subName
-            // 
-            this.subName.AutoSize = true;
-            this.subName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subName.Location = new System.Drawing.Point(281, 196);
-            this.subName.Name = "subName";
-            this.subName.Size = new System.Drawing.Size(139, 16);
-            this.subName.TabIndex = 17;
-            this.subName.Text = "FEMALE UNIFORM";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(78, 196);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 16);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "MALE UNIFORM";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(483, 196);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 16);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "UNIVERSITY SHIRT";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(724, 196);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 16);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "P.E SHIRT";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(926, 196);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 16);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "P.E PANTS";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1136, 196);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 16);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "P.E SHORT";
-            // 
-            // secondItem
-            // 
-            this.secondItem.BackColor = System.Drawing.Color.Transparent;
-            this.secondItem.Controls.Add(this.secondCancel);
-            this.secondItem.Controls.Add(this.secondPic);
-            this.secondItem.FillColor = System.Drawing.Color.White;
-            this.secondItem.Location = new System.Drawing.Point(285, 18);
-            this.secondItem.Name = "secondItem";
-            this.secondItem.ShadowColor = System.Drawing.Color.Black;
-            this.secondItem.ShadowDepth = 200;
-            this.secondItem.Size = new System.Drawing.Size(144, 125);
-            this.secondItem.TabIndex = 7;
-            this.secondItem.Visible = false;
-            // 
-            // secondPic
-            // 
-            this.secondPic.FillColor = System.Drawing.Color.Transparent;
-            this.secondPic.Image = ((System.Drawing.Image)(resources.GetObject("secondPic.Image")));
-            this.secondPic.ImageRotate = 0F;
-            this.secondPic.Location = new System.Drawing.Point(39, 14);
-            this.secondPic.Name = "secondPic";
-            this.secondPic.Size = new System.Drawing.Size(69, 95);
-            this.secondPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.secondPic.TabIndex = 1;
-            this.secondPic.TabStop = false;
-            // 
-            // thirdItem
-            // 
-            this.thirdItem.BackColor = System.Drawing.Color.Transparent;
-            this.thirdItem.Controls.Add(this.thirdCancel);
-            this.thirdItem.Controls.Add(this.thirdPic);
-            this.thirdItem.FillColor = System.Drawing.Color.White;
-            this.thirdItem.Location = new System.Drawing.Point(462, 18);
-            this.thirdItem.Name = "thirdItem";
-            this.thirdItem.ShadowColor = System.Drawing.Color.Black;
-            this.thirdItem.ShadowDepth = 200;
-            this.thirdItem.Size = new System.Drawing.Size(144, 125);
-            this.thirdItem.TabIndex = 8;
-            this.thirdItem.Visible = false;
-            // 
-            // thirdPic
-            // 
-            this.thirdPic.FillColor = System.Drawing.Color.Transparent;
-            this.thirdPic.Image = ((System.Drawing.Image)(resources.GetObject("thirdPic.Image")));
-            this.thirdPic.ImageRotate = 0F;
-            this.thirdPic.Location = new System.Drawing.Point(39, 14);
-            this.thirdPic.Name = "thirdPic";
-            this.thirdPic.Size = new System.Drawing.Size(69, 95);
-            this.thirdPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.thirdPic.TabIndex = 1;
-            this.thirdPic.TabStop = false;
-            // 
-            // fourthItem
-            // 
-            this.fourthItem.BackColor = System.Drawing.Color.Transparent;
-            this.fourthItem.Controls.Add(this.fourthCancel);
-            this.fourthItem.Controls.Add(this.fourthPic);
-            this.fourthItem.FillColor = System.Drawing.Color.White;
-            this.fourthItem.Location = new System.Drawing.Point(637, 18);
-            this.fourthItem.Name = "fourthItem";
-            this.fourthItem.ShadowColor = System.Drawing.Color.Black;
-            this.fourthItem.ShadowDepth = 200;
-            this.fourthItem.Size = new System.Drawing.Size(144, 125);
-            this.fourthItem.TabIndex = 8;
-            this.fourthItem.Visible = false;
-            // 
-            // fourthPic
-            // 
-            this.fourthPic.FillColor = System.Drawing.Color.Transparent;
-            this.fourthPic.Image = ((System.Drawing.Image)(resources.GetObject("fourthPic.Image")));
-            this.fourthPic.ImageRotate = 0F;
-            this.fourthPic.Location = new System.Drawing.Point(39, 14);
-            this.fourthPic.Name = "fourthPic";
-            this.fourthPic.Size = new System.Drawing.Size(69, 95);
-            this.fourthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourthPic.TabIndex = 1;
-            this.fourthPic.TabStop = false;
-            // 
-            // fifthItem
-            // 
-            this.fifthItem.BackColor = System.Drawing.Color.Transparent;
-            this.fifthItem.Controls.Add(this.fifthcancel);
-            this.fifthItem.Controls.Add(this.fifthPic);
-            this.fifthItem.FillColor = System.Drawing.Color.White;
-            this.fifthItem.Location = new System.Drawing.Point(811, 18);
-            this.fifthItem.Name = "fifthItem";
-            this.fifthItem.ShadowColor = System.Drawing.Color.Black;
-            this.fifthItem.ShadowDepth = 200;
-            this.fifthItem.Size = new System.Drawing.Size(144, 125);
-            this.fifthItem.TabIndex = 8;
-            this.fifthItem.Visible = false;
-            // 
-            // fifthPic
-            // 
-            this.fifthPic.FillColor = System.Drawing.Color.Transparent;
-            this.fifthPic.Image = ((System.Drawing.Image)(resources.GetObject("fifthPic.Image")));
-            this.fifthPic.ImageRotate = 0F;
-            this.fifthPic.Location = new System.Drawing.Point(39, 14);
-            this.fifthPic.Name = "fifthPic";
-            this.fifthPic.Size = new System.Drawing.Size(69, 95);
-            this.fifthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fifthPic.TabIndex = 1;
-            this.fifthPic.TabStop = false;
-            // 
-            // sixthItem
-            // 
-            this.sixthItem.BackColor = System.Drawing.Color.Transparent;
-            this.sixthItem.Controls.Add(this.sixthCancel);
-            this.sixthItem.Controls.Add(this.sixthPic);
-            this.sixthItem.FillColor = System.Drawing.Color.White;
-            this.sixthItem.Location = new System.Drawing.Point(987, 18);
-            this.sixthItem.Name = "sixthItem";
-            this.sixthItem.ShadowColor = System.Drawing.Color.Black;
-            this.sixthItem.ShadowDepth = 200;
-            this.sixthItem.Size = new System.Drawing.Size(144, 125);
-            this.sixthItem.TabIndex = 9;
-            this.sixthItem.Visible = false;
-            // 
-            // sixthPic
-            // 
-            this.sixthPic.FillColor = System.Drawing.Color.Transparent;
-            this.sixthPic.Image = ((System.Drawing.Image)(resources.GetObject("sixthPic.Image")));
-            this.sixthPic.ImageRotate = 0F;
-            this.sixthPic.Location = new System.Drawing.Point(39, 14);
-            this.sixthPic.Name = "sixthPic";
-            this.sixthPic.Size = new System.Drawing.Size(69, 95);
-            this.sixthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sixthPic.TabIndex = 1;
-            this.sixthPic.TabStop = false;
-            // 
-            // seventhItem
-            // 
-            this.seventhItem.BackColor = System.Drawing.Color.Transparent;
-            this.seventhItem.Controls.Add(this.seventhCancel);
-            this.seventhItem.Controls.Add(this.seventhPic);
-            this.seventhItem.FillColor = System.Drawing.Color.White;
-            this.seventhItem.Location = new System.Drawing.Point(1163, 18);
-            this.seventhItem.Name = "seventhItem";
-            this.seventhItem.ShadowColor = System.Drawing.Color.Black;
-            this.seventhItem.ShadowDepth = 200;
-            this.seventhItem.Size = new System.Drawing.Size(144, 125);
-            this.seventhItem.TabIndex = 10;
-            this.seventhItem.Visible = false;
-            // 
-            // seventhPic
-            // 
-            this.seventhPic.FillColor = System.Drawing.Color.Transparent;
-            this.seventhPic.Image = ((System.Drawing.Image)(resources.GetObject("seventhPic.Image")));
-            this.seventhPic.ImageRotate = 0F;
-            this.seventhPic.Location = new System.Drawing.Point(39, 14);
-            this.seventhPic.Name = "seventhPic";
-            this.seventhPic.Size = new System.Drawing.Size(69, 95);
-            this.seventhPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.seventhPic.TabIndex = 1;
-            this.seventhPic.TabStop = false;
-            // 
-            // eighthItem
-            // 
-            this.eighthItem.BackColor = System.Drawing.Color.Transparent;
-            this.eighthItem.Controls.Add(this.eighthCancel);
-            this.eighthItem.Controls.Add(this.eighthPic);
-            this.eighthItem.FillColor = System.Drawing.Color.White;
-            this.eighthItem.Location = new System.Drawing.Point(1334, 18);
-            this.eighthItem.Name = "eighthItem";
-            this.eighthItem.ShadowColor = System.Drawing.Color.Black;
-            this.eighthItem.ShadowDepth = 200;
-            this.eighthItem.Size = new System.Drawing.Size(144, 125);
-            this.eighthItem.TabIndex = 11;
-            this.eighthItem.Visible = false;
-            // 
-            // eighthPic
-            // 
-            this.eighthPic.FillColor = System.Drawing.Color.Transparent;
-            this.eighthPic.Image = ((System.Drawing.Image)(resources.GetObject("eighthPic.Image")));
-            this.eighthPic.ImageRotate = 0F;
-            this.eighthPic.Location = new System.Drawing.Point(39, 14);
-            this.eighthPic.Name = "eighthPic";
-            this.eighthPic.Size = new System.Drawing.Size(69, 95);
-            this.eighthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.eighthPic.TabIndex = 1;
-            this.eighthPic.TabStop = false;
-            // 
-            // ninthItem
-            // 
-            this.ninthItem.BackColor = System.Drawing.Color.Transparent;
-            this.ninthItem.Controls.Add(this.ninthCancel);
-            this.ninthItem.Controls.Add(this.ninthPic);
-            this.ninthItem.FillColor = System.Drawing.Color.White;
-            this.ninthItem.Location = new System.Drawing.Point(1510, 18);
-            this.ninthItem.Name = "ninthItem";
-            this.ninthItem.ShadowColor = System.Drawing.Color.Black;
-            this.ninthItem.ShadowDepth = 200;
-            this.ninthItem.Size = new System.Drawing.Size(144, 125);
-            this.ninthItem.TabIndex = 10;
-            this.ninthItem.Visible = false;
-            // 
-            // ninthPic
-            // 
-            this.ninthPic.FillColor = System.Drawing.Color.Transparent;
-            this.ninthPic.Image = ((System.Drawing.Image)(resources.GetObject("ninthPic.Image")));
-            this.ninthPic.ImageRotate = 0F;
-            this.ninthPic.Location = new System.Drawing.Point(39, 14);
-            this.ninthPic.Name = "ninthPic";
-            this.ninthPic.Size = new System.Drawing.Size(69, 95);
-            this.ninthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ninthPic.TabIndex = 1;
-            this.ninthPic.TabStop = false;
-            // 
-            // firstItem
-            // 
-            this.firstItem.BackColor = System.Drawing.Color.Transparent;
-            this.firstItem.Controls.Add(this.firstCancel);
-            this.firstItem.Controls.Add(this.firstPic);
-            this.firstItem.FillColor = System.Drawing.Color.White;
-            this.firstItem.Location = new System.Drawing.Point(105, 18);
-            this.firstItem.Name = "firstItem";
-            this.firstItem.ShadowColor = System.Drawing.Color.Black;
-            this.firstItem.ShadowDepth = 200;
-            this.firstItem.Size = new System.Drawing.Size(144, 125);
-            this.firstItem.TabIndex = 8;
-            this.firstItem.Visible = false;
-            // 
-            // firstPic
-            // 
-            this.firstPic.FillColor = System.Drawing.Color.Transparent;
-            this.firstPic.Image = ((System.Drawing.Image)(resources.GetObject("firstPic.Image")));
-            this.firstPic.ImageRotate = 0F;
-            this.firstPic.Location = new System.Drawing.Point(39, 14);
-            this.firstPic.Name = "firstPic";
-            this.firstPic.Size = new System.Drawing.Size(69, 95);
-            this.firstPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.firstPic.TabIndex = 1;
-            this.firstPic.TabStop = false;
-            // 
-            // tenthIten
-            // 
-            this.tenthIten.BackColor = System.Drawing.Color.Transparent;
-            this.tenthIten.Controls.Add(this.tenthCancel);
-            this.tenthIten.Controls.Add(this.tenthPic);
-            this.tenthIten.FillColor = System.Drawing.Color.White;
-            this.tenthIten.Location = new System.Drawing.Point(1688, 18);
-            this.tenthIten.Name = "tenthIten";
-            this.tenthIten.ShadowColor = System.Drawing.Color.Black;
-            this.tenthIten.ShadowDepth = 200;
-            this.tenthIten.Size = new System.Drawing.Size(144, 125);
-            this.tenthIten.TabIndex = 11;
-            this.tenthIten.Visible = false;
-            // 
-            // tenthPic
-            // 
-            this.tenthPic.FillColor = System.Drawing.Color.Transparent;
-            this.tenthPic.Image = ((System.Drawing.Image)(resources.GetObject("tenthPic.Image")));
-            this.tenthPic.ImageRotate = 0F;
-            this.tenthPic.Location = new System.Drawing.Point(39, 14);
-            this.tenthPic.Name = "tenthPic";
-            this.tenthPic.Size = new System.Drawing.Size(69, 95);
-            this.tenthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.tenthPic.TabIndex = 1;
-            this.tenthPic.TabStop = false;
-            // 
-            // firstCancel
-            // 
-            this.firstCancel.BackColor = System.Drawing.Color.Transparent;
-            this.firstCancel.FillColor = System.Drawing.Color.Transparent;
-            this.firstCancel.Image = ((System.Drawing.Image)(resources.GetObject("firstCancel.Image")));
-            this.firstCancel.ImageRotate = 0F;
-            this.firstCancel.Location = new System.Drawing.Point(109, 3);
-            this.firstCancel.Name = "firstCancel";
-            this.firstCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.firstCancel.Size = new System.Drawing.Size(32, 28);
-            this.firstCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.firstCancel.TabIndex = 12;
-            this.firstCancel.TabStop = false;
-            this.firstCancel.Click += new System.EventHandler(this.firstCancel_Click);
-            // 
-            // secondCancel
-            // 
-            this.secondCancel.BackColor = System.Drawing.Color.Transparent;
-            this.secondCancel.FillColor = System.Drawing.Color.Transparent;
-            this.secondCancel.Image = ((System.Drawing.Image)(resources.GetObject("secondCancel.Image")));
-            this.secondCancel.ImageRotate = 0F;
-            this.secondCancel.Location = new System.Drawing.Point(109, 3);
-            this.secondCancel.Name = "secondCancel";
-            this.secondCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.secondCancel.Size = new System.Drawing.Size(32, 28);
-            this.secondCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.secondCancel.TabIndex = 13;
-            this.secondCancel.TabStop = false;
-            this.secondCancel.Click += new System.EventHandler(this.secondCancel_Click);
-            // 
-            // thirdCancel
-            // 
-            this.thirdCancel.BackColor = System.Drawing.Color.Transparent;
-            this.thirdCancel.FillColor = System.Drawing.Color.Transparent;
-            this.thirdCancel.Image = ((System.Drawing.Image)(resources.GetObject("thirdCancel.Image")));
-            this.thirdCancel.ImageRotate = 0F;
-            this.thirdCancel.Location = new System.Drawing.Point(109, 3);
-            this.thirdCancel.Name = "thirdCancel";
-            this.thirdCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.thirdCancel.Size = new System.Drawing.Size(32, 28);
-            this.thirdCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.thirdCancel.TabIndex = 14;
-            this.thirdCancel.TabStop = false;
-            this.thirdCancel.Click += new System.EventHandler(this.thirdCancel_Click);
-            // 
-            // fourthCancel
-            // 
-            this.fourthCancel.BackColor = System.Drawing.Color.Transparent;
-            this.fourthCancel.FillColor = System.Drawing.Color.Transparent;
-            this.fourthCancel.Image = ((System.Drawing.Image)(resources.GetObject("fourthCancel.Image")));
-            this.fourthCancel.ImageRotate = 0F;
-            this.fourthCancel.Location = new System.Drawing.Point(109, 3);
-            this.fourthCancel.Name = "fourthCancel";
-            this.fourthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.fourthCancel.Size = new System.Drawing.Size(32, 28);
-            this.fourthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourthCancel.TabIndex = 14;
-            this.fourthCancel.TabStop = false;
-            this.fourthCancel.Click += new System.EventHandler(this.fourthCancel_Click);
-            // 
-            // fifthcancel
-            // 
-            this.fifthcancel.BackColor = System.Drawing.Color.Transparent;
-            this.fifthcancel.FillColor = System.Drawing.Color.Transparent;
-            this.fifthcancel.Image = ((System.Drawing.Image)(resources.GetObject("fifthcancel.Image")));
-            this.fifthcancel.ImageRotate = 0F;
-            this.fifthcancel.Location = new System.Drawing.Point(109, 3);
-            this.fifthcancel.Name = "fifthcancel";
-            this.fifthcancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.fifthcancel.Size = new System.Drawing.Size(32, 28);
-            this.fifthcancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fifthcancel.TabIndex = 15;
-            this.fifthcancel.TabStop = false;
-            this.fifthcancel.Click += new System.EventHandler(this.fifthcancel_Click);
-            // 
-            // sixthCancel
-            // 
-            this.sixthCancel.BackColor = System.Drawing.Color.Transparent;
-            this.sixthCancel.FillColor = System.Drawing.Color.Transparent;
-            this.sixthCancel.Image = ((System.Drawing.Image)(resources.GetObject("sixthCancel.Image")));
-            this.sixthCancel.ImageRotate = 0F;
-            this.sixthCancel.Location = new System.Drawing.Point(109, 3);
-            this.sixthCancel.Name = "sixthCancel";
-            this.sixthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.sixthCancel.Size = new System.Drawing.Size(32, 28);
-            this.sixthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sixthCancel.TabIndex = 16;
-            this.sixthCancel.TabStop = false;
-            this.sixthCancel.Click += new System.EventHandler(this.sixthCancel_Click);
-            // 
-            // seventhCancel
-            // 
-            this.seventhCancel.BackColor = System.Drawing.Color.Transparent;
-            this.seventhCancel.FillColor = System.Drawing.Color.Transparent;
-            this.seventhCancel.Image = ((System.Drawing.Image)(resources.GetObject("seventhCancel.Image")));
-            this.seventhCancel.ImageRotate = 0F;
-            this.seventhCancel.Location = new System.Drawing.Point(109, 3);
-            this.seventhCancel.Name = "seventhCancel";
-            this.seventhCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.seventhCancel.Size = new System.Drawing.Size(32, 28);
-            this.seventhCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.seventhCancel.TabIndex = 15;
-            this.seventhCancel.TabStop = false;
-            this.seventhCancel.Click += new System.EventHandler(this.seventhCancel_Click);
-            // 
-            // eighthCancel
-            // 
-            this.eighthCancel.BackColor = System.Drawing.Color.Transparent;
-            this.eighthCancel.FillColor = System.Drawing.Color.Transparent;
-            this.eighthCancel.Image = ((System.Drawing.Image)(resources.GetObject("eighthCancel.Image")));
-            this.eighthCancel.ImageRotate = 0F;
-            this.eighthCancel.Location = new System.Drawing.Point(109, 3);
-            this.eighthCancel.Name = "eighthCancel";
-            this.eighthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.eighthCancel.Size = new System.Drawing.Size(32, 28);
-            this.eighthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.eighthCancel.TabIndex = 16;
-            this.eighthCancel.TabStop = false;
-            this.eighthCancel.Click += new System.EventHandler(this.eighthCancel_Click);
-            // 
-            // ninthCancel
-            // 
-            this.ninthCancel.BackColor = System.Drawing.Color.Transparent;
-            this.ninthCancel.FillColor = System.Drawing.Color.Transparent;
-            this.ninthCancel.Image = ((System.Drawing.Image)(resources.GetObject("ninthCancel.Image")));
-            this.ninthCancel.ImageRotate = 0F;
-            this.ninthCancel.Location = new System.Drawing.Point(109, 3);
-            this.ninthCancel.Name = "ninthCancel";
-            this.ninthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ninthCancel.Size = new System.Drawing.Size(32, 28);
-            this.ninthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ninthCancel.TabIndex = 17;
-            this.ninthCancel.TabStop = false;
-            this.ninthCancel.Click += new System.EventHandler(this.ninthCancel_Click);
-            // 
-            // tenthCancel
-            // 
-            this.tenthCancel.BackColor = System.Drawing.Color.Transparent;
-            this.tenthCancel.FillColor = System.Drawing.Color.Transparent;
-            this.tenthCancel.Image = ((System.Drawing.Image)(resources.GetObject("tenthCancel.Image")));
-            this.tenthCancel.ImageRotate = 0F;
-            this.tenthCancel.Location = new System.Drawing.Point(109, 3);
-            this.tenthCancel.Name = "tenthCancel";
-            this.tenthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.tenthCancel.Size = new System.Drawing.Size(32, 28);
-            this.tenthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.tenthCancel.TabIndex = 18;
-            this.tenthCancel.TabStop = false;
-            this.tenthCancel.Click += new System.EventHandler(this.tenthCancel_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2983,105 +7059,294 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.guna2CustomGradientPanel6.ResumeLayout(false);
-            this.guna2TabControl1.ResumeLayout(false);
+            this.fab_overlay.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.guna2ShadowPanel17.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox38)).EndInit();
-            this.guna2ShadowPanel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox37)).EndInit();
-            this.guna2ShadowPanel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox31)).EndInit();
-            this.guna2ShadowPanel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox32)).EndInit();
-            this.guna2ShadowPanel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox33)).EndInit();
-            this.guna2ShadowPanel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox34)).EndInit();
-            this.guna2ShadowPanel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox35)).EndInit();
-            this.guna2ShadowPanel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox36)).EndInit();
+            this.all_itemPanelSixteenth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allSixteenth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSixteenth)).EndInit();
+            this.all_itemPanelFifteenth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allFifteenth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFifteenth)).EndInit();
+            this.all_itemPanelFourteenth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allFourteenth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFourteenth)).EndInit();
+            this.all_itemPanelThirteenth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allThirteenth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThirteenth)).EndInit();
+            this.all_itemPanelTwelfth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwelfth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwelfth)).EndInit();
+            this.all_itemPanelEleventh.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allEleventh_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicEleventh)).EndInit();
+            this.all_itemPanelTenth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTenth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTenth)).EndInit();
+            this.all_itemPanelNinth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allNinth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicNinth)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.guna2ShadowPanel19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox40)).EndInit();
-            this.guna2ShadowPanel18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox39)).EndInit();
-            this.guna2ShadowPanel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.peShorts)).EndInit();
-            this.guna2ShadowPanel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pePants)).EndInit();
-            this.guna2ShadowPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.peShirt)).EndInit();
-            this.guna2ShadowPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.univ)).EndInit();
-            this.guna2ShadowPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.typeB)).EndInit();
-            this.guna2ShadowPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.typeA)).EndInit();
+            this.all_itemPanelEighth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allEighth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicEighth)).EndInit();
+            this.all_itemPanelSeventh.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allSeventh_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSeventh)).EndInit();
+            this.all_itemPanelSixth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allSixth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSixth)).EndInit();
+            this.all_itemPanelFifth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allFifth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFifth)).EndInit();
+            this.all_itemPanelFourth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allFourth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFourth)).EndInit();
+            this.all_itemPanelThird.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allThird_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThird)).EndInit();
+            this.all_itemPanelSecond.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allSecond_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSecond)).EndInit();
+            this.all_itemPanelFirst.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allFirst_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicFirst)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.guna2ShadowPanel20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox41)).EndInit();
-            this.guna2ShadowPanel21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox42)).EndInit();
-            this.guna2ShadowPanel22.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox43)).EndInit();
-            this.guna2ShadowPanel23.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox44)).EndInit();
-            this.guna2ShadowPanel24.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox45)).EndInit();
-            this.guna2ShadowPanel25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox46)).EndInit();
-            this.guna2ShadowPanel26.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox47)).EndInit();
-            this.guna2ShadowPanel27.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox48)).EndInit();
-            this.tabPage6.ResumeLayout(false);
+            this.top_Panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic16)).EndInit();
+            this.top_Panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic15)).EndInit();
+            this.top_Panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic14)).EndInit();
+            this.top_Panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic13)).EndInit();
+            this.top_Panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic12)).EndInit();
+            this.top_Panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic11)).EndInit();
+            this.top_Panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic10)).EndInit();
+            this.top_Panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic9)).EndInit();
             this.panel4.ResumeLayout(false);
-            this.guna2ShadowPanel28.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox49)).EndInit();
-            this.guna2ShadowPanel29.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox50)).EndInit();
-            this.guna2ShadowPanel30.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox51)).EndInit();
-            this.guna2ShadowPanel31.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox52)).EndInit();
-            this.guna2ShadowPanel32.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox53)).EndInit();
-            this.guna2ShadowPanel33.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox54)).EndInit();
-            this.guna2ShadowPanel34.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox55)).EndInit();
-            this.guna2ShadowPanel35.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox56)).EndInit();
-            this.tabPage7.ResumeLayout(false);
+            this.top_Panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic8)).EndInit();
+            this.top_Panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic7)).EndInit();
+            this.top_Panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic6)).EndInit();
+            this.top_Panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic5)).EndInit();
+            this.top_Panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic4)).EndInit();
+            this.top_Panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic3)).EndInit();
+            this.top_Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic2)).EndInit();
+            this.top_Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Top_Overlay1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.top_itemPic1)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.guna2ShadowPanel42.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox63)).EndInit();
-            this.guna2ShadowPanel43.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox64)).EndInit();
+            this.bot_Panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic16)).EndInit();
+            this.bot_Panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic15)).EndInit();
+            this.bot_Panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic14)).EndInit();
+            this.bot_Panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic13)).EndInit();
+            this.bot_Panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic12)).EndInit();
+            this.bot_Panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic11)).EndInit();
+            this.bot_Panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic10)).EndInit();
+            this.bot_Panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic9)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.bot_Panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic8)).EndInit();
+            this.bot_Panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic7)).EndInit();
+            this.bot_Panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic6)).EndInit();
+            this.bot_Panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic5)).EndInit();
+            this.bot_Panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic4)).EndInit();
+            this.bot_Panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic3)).EndInit();
+            this.bot_Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic2)).EndInit();
+            this.bot_Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bot_overlay1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bot_itemPic1)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.fab_Panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay16)).EndInit();
+            this.fab_Panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay15)).EndInit();
+            this.fab_Panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay14)).EndInit();
+            this.fab_Panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay13)).EndInit();
+            this.fab_Panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay12)).EndInit();
+            this.fab_Panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay11)).EndInit();
+            this.fab_Panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay10)).EndInit();
+            this.fab_Panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay9)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.fab_Panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay8)).EndInit();
+            this.fab_Panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay7)).EndInit();
+            this.fab_Panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay6)).EndInit();
+            this.fab_Panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay5)).EndInit();
+            this.fab_Panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay4)).EndInit();
+            this.fab_Panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay3)).EndInit();
+            this.fab_Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay2)).EndInit();
+            this.fab_Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fab_itemPic1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fab_overlay1)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            this.guna2ShadowPanel44.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox65)).EndInit();
-            this.guna2ShadowPanel45.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox66)).EndInit();
-            this.guna2ShadowPanel46.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox67)).EndInit();
-            this.guna2ShadowPanel47.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox68)).EndInit();
-            this.guna2ShadowPanel48.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox69)).EndInit();
-            this.guna2ShadowPanel49.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox70)).EndInit();
-            this.guna2ShadowPanel50.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox71)).EndInit();
-            this.guna2ShadowPanel51.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox72)).EndInit();
+            this.other_Panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic16)).EndInit();
+            this.other_Panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic15)).EndInit();
+            this.other_Panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic14)).EndInit();
+            this.other_Panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic13)).EndInit();
+            this.other_Panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic12)).EndInit();
+            this.other_Panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic11)).EndInit();
+            this.other_Panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic10)).EndInit();
+            this.other_Panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic9)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.other_Panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic8)).EndInit();
+            this.other_Panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic7)).EndInit();
+            this.other_Panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic6)).EndInit();
+            this.other_Panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic5)).EndInit();
+            this.other_Panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic4)).EndInit();
+            this.other_Panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic3)).EndInit();
+            this.other_Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic2)).EndInit();
+            this.other_Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.other_overlay1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic1)).EndInit();
             this.guna2ShadowPanel3.ResumeLayout(false);
             this.guna2ShadowPanel3.PerformLayout();
+            this.fifthItem.ResumeLayout(false);
+            this.fifthItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fifthCancel)).EndInit();
+            this.guna2CustomGradientPanel13.ResumeLayout(false);
+            this.guna2CustomGradientPanel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fifthPic)).EndInit();
+            this.fourthItem.ResumeLayout(false);
+            this.fourthItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).EndInit();
+            this.guna2CustomGradientPanel12.ResumeLayout(false);
+            this.guna2CustomGradientPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fourthPic)).EndInit();
+            this.thirdItem.ResumeLayout(false);
+            this.thirdItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).EndInit();
+            this.guna2CustomGradientPanel11.ResumeLayout(false);
+            this.guna2CustomGradientPanel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thirdPic)).EndInit();
+            this.secondItem.ResumeLayout(false);
+            this.secondItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).EndInit();
+            this.guna2CustomGradientPanel10.ResumeLayout(false);
+            this.guna2CustomGradientPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.secondPic)).EndInit();
+            this.firstItem.ResumeLayout(false);
+            this.firstItem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.firstCancel)).EndInit();
+            this.guna2CustomGradientPanel9.ResumeLayout(false);
+            this.guna2CustomGradientPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.firstPic)).EndInit();
             this.guna2CustomGradientPanel7.ResumeLayout(false);
             this.guna2CustomGradientPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
@@ -3116,36 +7381,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
-            this.secondItem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.secondPic)).EndInit();
-            this.thirdItem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.thirdPic)).EndInit();
-            this.fourthItem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.fourthPic)).EndInit();
-            this.fifthItem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.fifthPic)).EndInit();
-            this.sixthItem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.sixthPic)).EndInit();
-            this.seventhItem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.seventhPic)).EndInit();
-            this.eighthItem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.eighthPic)).EndInit();
-            this.ninthItem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ninthPic)).EndInit();
-            this.firstItem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.firstPic)).EndInit();
-            this.tenthIten.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tenthPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.firstCancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fifthcancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sixthCancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seventhCancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eighthCancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ninthCancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tenthCancel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3206,10 +7441,10 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel3;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button confirmBtn;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
+        private Guna.UI2.WinForms.Guna2TabControl fab_overlay;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
@@ -3223,132 +7458,411 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel9;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel8;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel7;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel6;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel5;
-        private Guna.UI2.WinForms.Guna2PictureBox typeB;
-        private Guna.UI2.WinForms.Guna2PictureBox typeA;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicSecond;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicFirst;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel17;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox38;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel16;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox37;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel10;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox31;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel11;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox32;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel12;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox33;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel13;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox34;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel14;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox35;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel15;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox36;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel19;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox40;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel18;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox39;
-        private Guna.UI2.WinForms.Guna2PictureBox peShorts;
-        private Guna.UI2.WinForms.Guna2PictureBox pePants;
-        private Guna.UI2.WinForms.Guna2PictureBox peShirt;
-        private Guna.UI2.WinForms.Guna2PictureBox univ;
-        private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel20;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox41;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel21;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox42;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel22;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox43;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel23;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox44;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel24;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox45;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel25;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox46;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel26;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox47;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel27;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox48;
-        private System.Windows.Forms.Panel panel4;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel28;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox49;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel29;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox50;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel30;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox51;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel31;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox52;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel32;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox53;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel33;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox54;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel34;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox55;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel35;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox56;
-        private System.Windows.Forms.Panel panel5;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel42;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox63;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel43;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox64;
-        private System.Windows.Forms.Panel panel6;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel44;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox65;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel45;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox66;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel46;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox67;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel47;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox68;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel48;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox69;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel49;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox70;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel50;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox71;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel51;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox72;
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label subName;
-        public Guna.UI2.WinForms.Guna2ShadowPanel sixthItem;
-        public Guna.UI2.WinForms.Guna2ShadowPanel fifthItem;
-        public Guna.UI2.WinForms.Guna2ShadowPanel fourthItem;
-        public Guna.UI2.WinForms.Guna2ShadowPanel thirdItem;
-        public Guna.UI2.WinForms.Guna2ShadowPanel secondItem;
-        public Guna.UI2.WinForms.Guna2ShadowPanel ninthItem;
-        public Guna.UI2.WinForms.Guna2ShadowPanel eighthItem;
-        public Guna.UI2.WinForms.Guna2ShadowPanel seventhItem;
-        public Guna.UI2.WinForms.Guna2ShadowPanel tenthIten;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicSixteenth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicFifteenth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicFourteenth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicThirteenth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwelfth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicEleventh;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTenth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicNinth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicEighth;
+        private Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelSeventh;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicSeventh;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicSixth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicFifth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicFourth;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicThird;
+        public System.Windows.Forms.Label all_itemLblSixth;
+        public System.Windows.Forms.Label all_itemLblFifth;
+        public System.Windows.Forms.Label all_itemLblFourth;
+        public System.Windows.Forms.Label all_itemLblThird;
+        public System.Windows.Forms.Label all_itemLblFirst;
+        public System.Windows.Forms.Label all_itemLblSecond;
         public Guna.UI2.WinForms.Guna2ShadowPanel firstItem;
-        public Guna.UI2.WinForms.Guna2PictureBox sixthPic;
-        public Guna.UI2.WinForms.Guna2PictureBox fifthPic;
-        public Guna.UI2.WinForms.Guna2PictureBox fourthPic;
-        public Guna.UI2.WinForms.Guna2PictureBox thirdPic;
-        public Guna.UI2.WinForms.Guna2PictureBox secondPic;
-        public Guna.UI2.WinForms.Guna2PictureBox ninthPic;
-        public Guna.UI2.WinForms.Guna2PictureBox eighthPic;
-        public Guna.UI2.WinForms.Guna2PictureBox seventhPic;
-        public Guna.UI2.WinForms.Guna2PictureBox tenthPic;
         public Guna.UI2.WinForms.Guna2PictureBox firstPic;
         public Guna.UI2.WinForms.Guna2HtmlLabel ttext;
         private Guna.UI2.WinForms.Guna2CirclePictureBox firstCancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox fourthCancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox thirdCancel;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel9;
+        public System.Windows.Forms.Label firstItemName;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label firstItemType;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Label firstItemQty;
+        public System.Windows.Forms.Label firstItemSize;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label firstItemPrice;
+        public Guna.UI2.WinForms.Guna2ShadowPanel secondItem;
         private Guna.UI2.WinForms.Guna2CirclePictureBox secondCancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox tenthCancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox ninthCancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox eighthCancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox seventhCancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox sixthCancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox fifthcancel;
+        public System.Windows.Forms.Label secondItemSize;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Label label14;
+        public System.Windows.Forms.Label secondItemType;
+        public System.Windows.Forms.Label secondItemName;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel10;
+        public System.Windows.Forms.Label label17;
+        public System.Windows.Forms.Label secondItemPrice;
+        public Guna.UI2.WinForms.Guna2PictureBox secondPic;
+        public System.Windows.Forms.Label label19;
+        public System.Windows.Forms.Label secondItemQty;
+        public System.Windows.Forms.Label label21;
+        public System.Windows.Forms.Label label22;
+        public Guna.UI2.WinForms.Guna2ShadowPanel thirdItem;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox thirdCancel;
+        public System.Windows.Forms.Label thirdItemSize;
+        public System.Windows.Forms.Label label24;
+        public System.Windows.Forms.Label label25;
+        public System.Windows.Forms.Label thirdItemType;
+        public System.Windows.Forms.Label thirdItemName;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel11;
+        public System.Windows.Forms.Label label28;
+        public System.Windows.Forms.Label thirdItemPrice;
+        public Guna.UI2.WinForms.Guna2PictureBox thirdPic;
+        public System.Windows.Forms.Label label30;
+        public System.Windows.Forms.Label thirdItemQty;
+        public System.Windows.Forms.Label label32;
+        public System.Windows.Forms.Label label33;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fourthItem;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox fourthCancel;
+        public System.Windows.Forms.Label fourthItemSize;
+        public System.Windows.Forms.Label label35;
+        public System.Windows.Forms.Label label36;
+        public System.Windows.Forms.Label fourthItemType;
+        public System.Windows.Forms.Label fourthItemName;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel12;
+        public System.Windows.Forms.Label label39;
+        public System.Windows.Forms.Label fourthItemPrice;
+        public Guna.UI2.WinForms.Guna2PictureBox fourthPic;
+        public System.Windows.Forms.Label label41;
+        public System.Windows.Forms.Label fourthItemQty;
+        public System.Windows.Forms.Label label43;
+        public System.Windows.Forms.Label label44;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fifthItem;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox fifthCancel;
+        public System.Windows.Forms.Label fifthItemSize;
+        public System.Windows.Forms.Label label46;
+        public System.Windows.Forms.Label label47;
+        public System.Windows.Forms.Label fifthItemType;
+        public System.Windows.Forms.Label fifthItemName;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel13;
+        public System.Windows.Forms.Label label50;
+        public System.Windows.Forms.Label fifthItemPrice;
+        public Guna.UI2.WinForms.Guna2PictureBox fifthPic;
+        public System.Windows.Forms.Label label52;
+        public System.Windows.Forms.Label fifthItemQty;
+        public System.Windows.Forms.Label label54;
+        public System.Windows.Forms.Label label55;
+        public System.Windows.Forms.Label all_itemLblSeventh;
+        public Guna.UI2.WinForms.Guna2PictureBox allSeventh_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allSixth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allFifth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allFourth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allThird_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allSecond_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allFirst_Overlay;
+        public System.Windows.Forms.Label all_itemLblEighth;
+        public System.Windows.Forms.Label all_itemLblTenth;
+        public System.Windows.Forms.Label all_itemLblNinth;
+        public System.Windows.Forms.Label all_itemLblEleventh;
+        public System.Windows.Forms.Label all_itemLblThirteenth;
+        public System.Windows.Forms.Label all_itemLblTwelfth;
+        public System.Windows.Forms.Label all_itemLblSixteenth;
+        public System.Windows.Forms.Label all_itemLblFifteenth;
+        public System.Windows.Forms.Label all_itemLblFourteenth;
+        public Guna.UI2.WinForms.Guna2PictureBox allSixteenth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allFifteenth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allFourteenth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allThirteenth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwelfth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allEleventh_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allTenth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allNinth_Overlay;
+        public Guna.UI2.WinForms.Guna2PictureBox allEighth_Overlay;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelFirst;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelSixth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelFifth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelFourth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelThird;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelSecond;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelSixteenth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelFifteenth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelFourteenth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelThirteenth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwelfth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelEleventh;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTenth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelNinth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelEighth;
+        public System.Windows.Forms.Label top_lbl16;
+        public System.Windows.Forms.Label top_lbl15;
+        public System.Windows.Forms.Label top_lbl14;
+        public System.Windows.Forms.Label top_lbl13;
+        public System.Windows.Forms.Label top_lbl12;
+        public System.Windows.Forms.Label top_lbl11;
+        public System.Windows.Forms.Label top_lbl10;
+        public System.Windows.Forms.Label top_lbl9;
+        public System.Windows.Forms.Label top_lbl8;
+        public System.Windows.Forms.Label top_lbl7;
+        public System.Windows.Forms.Label top_lbl6;
+        public System.Windows.Forms.Label top_lbl5;
+        public System.Windows.Forms.Label top_lbl4;
+        public System.Windows.Forms.Label top_lbl3;
+        public System.Windows.Forms.Label top_lbl1;
+        public System.Windows.Forms.Label top_lbl2;
+        private System.Windows.Forms.Panel panel3;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel16;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay16;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic16;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel15;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay15;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic15;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel14;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay14;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic14;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel13;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay13;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic13;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel12;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay12;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic12;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel11;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay11;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic11;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel10;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay10;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic10;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel9;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay9;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic9;
+        private System.Windows.Forms.Panel panel4;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel8;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay8;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic8;
+        private Guna.UI2.WinForms.Guna2ShadowPanel top_Panel7;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay7;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic7;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel6;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay6;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic6;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel5;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay5;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic5;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel4;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay4;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic4;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel3;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay3;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic3;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel2;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay2;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic2;
+        public Guna.UI2.WinForms.Guna2ShadowPanel top_Panel1;
+        public Guna.UI2.WinForms.Guna2PictureBox Top_Overlay1;
+        private Guna.UI2.WinForms.Guna2PictureBox top_itemPic1;
+        public System.Windows.Forms.Label bot_lbl16;
+        public System.Windows.Forms.Label bot_lbl15;
+        public System.Windows.Forms.Label bot_lbl14;
+        public System.Windows.Forms.Label bot_lbl13;
+        public System.Windows.Forms.Label bot_lbl12;
+        public System.Windows.Forms.Label bot_lbl11;
+        public System.Windows.Forms.Label bot_lbl10;
+        public System.Windows.Forms.Label bot_lbl9;
+        public System.Windows.Forms.Label bot_lbl8;
+        public System.Windows.Forms.Label bot_lbl7;
+        public System.Windows.Forms.Label bot_lbl6;
+        public System.Windows.Forms.Label bot_lbl5;
+        public System.Windows.Forms.Label bot_lbl4;
+        public System.Windows.Forms.Label bot_lbl3;
+        public System.Windows.Forms.Label bot_lbl1;
+        public System.Windows.Forms.Label bot_lbl2;
+        private System.Windows.Forms.Panel panel5;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel16;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay16;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic16;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel15;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay15;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic15;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel14;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay14;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic14;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel13;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay13;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic13;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel12;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay12;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic12;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel11;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay11;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic11;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel10;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay10;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic10;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel9;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay9;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic9;
+        private System.Windows.Forms.Panel panel7;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel8;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay8;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic8;
+        private Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel7;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay7;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic7;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel6;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay6;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic6;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel5;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay5;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic5;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel4;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay4;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic4;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel3;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay3;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic3;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel2;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay2;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic2;
+        public Guna.UI2.WinForms.Guna2ShadowPanel bot_Panel1;
+        public Guna.UI2.WinForms.Guna2PictureBox bot_overlay1;
+        private Guna.UI2.WinForms.Guna2PictureBox bot_itemPic1;
+        public System.Windows.Forms.Label fab_lbl16;
+        public System.Windows.Forms.Label fab_lbl15;
+        public System.Windows.Forms.Label fab_lbl14;
+        public System.Windows.Forms.Label fab_lbl13;
+        public System.Windows.Forms.Label fab_lbl12;
+        public System.Windows.Forms.Label fab_lbl11;
+        public System.Windows.Forms.Label fab_lbl10;
+        public System.Windows.Forms.Label fab_lbl9;
+        public System.Windows.Forms.Label fab_lbl8;
+        public System.Windows.Forms.Label fab_lbl7;
+        public System.Windows.Forms.Label fab_lbl6;
+        public System.Windows.Forms.Label fab_lbl5;
+        public System.Windows.Forms.Label fab_lbl4;
+        public System.Windows.Forms.Label fab_lbl3;
+        public System.Windows.Forms.Label fab_lbl1;
+        public System.Windows.Forms.Label fab_lbl2;
+        private System.Windows.Forms.Panel panel8;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel16;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay16;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic16;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel15;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay15;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic15;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel14;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay14;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic14;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel13;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay13;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic13;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel12;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay12;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic12;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel11;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay11;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic11;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel10;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay10;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic10;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel9;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay9;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic9;
+        private System.Windows.Forms.Panel panel9;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel8;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay8;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic8;
+        private Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel7;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay7;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic7;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel6;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay6;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic6;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel5;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay5;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic5;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel4;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay4;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic4;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel3;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay3;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic3;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel2;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay2;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic2;
+        public Guna.UI2.WinForms.Guna2ShadowPanel fab_Panel1;
+        public Guna.UI2.WinForms.Guna2PictureBox fab_overlay1;
+        private Guna.UI2.WinForms.Guna2PictureBox fab_itemPic1;
+        public System.Windows.Forms.Label other_lbl16;
+        public System.Windows.Forms.Label other_lbl15;
+        public System.Windows.Forms.Label other_lbl14;
+        public System.Windows.Forms.Label other_lbl13;
+        public System.Windows.Forms.Label other_lbl12;
+        public System.Windows.Forms.Label other_lbl11;
+        public System.Windows.Forms.Label other_lbl10;
+        public System.Windows.Forms.Label other_lbl9;
+        public System.Windows.Forms.Label other_lbl8;
+        public System.Windows.Forms.Label other_lbl7;
+        public System.Windows.Forms.Label other_lbl6;
+        public System.Windows.Forms.Label other_lbl5;
+        public System.Windows.Forms.Label other_lbl4;
+        public System.Windows.Forms.Label other_lbl3;
+        public System.Windows.Forms.Label other_lbl1;
+        public System.Windows.Forms.Label other_lbl2;
+        private System.Windows.Forms.Panel panel6;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel16;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay16;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic16;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel15;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay15;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic15;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel14;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay14;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic14;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel13;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay13;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic13;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel12;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay12;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic12;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel11;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay11;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic11;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel10;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay10;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic10;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel9;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay9;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic9;
+        private System.Windows.Forms.Panel panel10;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel8;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay8;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic8;
+        private Guna.UI2.WinForms.Guna2ShadowPanel other_Panel7;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay7;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic7;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel6;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay6;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic6;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel5;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay5;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic5;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel4;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay4;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic4;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel3;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay3;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic3;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel2;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay2;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic2;
+        public Guna.UI2.WinForms.Guna2ShadowPanel other_Panel1;
+        public Guna.UI2.WinForms.Guna2PictureBox other_overlay1;
+        private Guna.UI2.WinForms.Guna2PictureBox other_itemPic1;
     }
 }
 
