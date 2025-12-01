@@ -471,9 +471,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.ttext = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.sixthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.sixthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.sixthPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.fifthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.fifthcancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.fifthPic = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -6645,47 +6642,6 @@
             this.ttext.TabIndex = 1;
             this.ttext.Text = "Your order is empty..";
             // 
-            // sixthItem
-            // 
-            this.sixthItem.BackColor = System.Drawing.Color.Transparent;
-            this.sixthItem.Controls.Add(this.sixthCancel);
-            this.sixthItem.Controls.Add(this.sixthPic);
-            this.sixthItem.FillColor = System.Drawing.Color.White;
-            this.sixthItem.Location = new System.Drawing.Point(987, 18);
-            this.sixthItem.Name = "sixthItem";
-            this.sixthItem.ShadowColor = System.Drawing.Color.Black;
-            this.sixthItem.ShadowDepth = 200;
-            this.sixthItem.Size = new System.Drawing.Size(144, 125);
-            this.sixthItem.TabIndex = 9;
-            this.sixthItem.Visible = false;
-            // 
-            // sixthCancel
-            // 
-            this.sixthCancel.BackColor = System.Drawing.Color.Transparent;
-            this.sixthCancel.FillColor = System.Drawing.Color.Transparent;
-            this.sixthCancel.Image = ((System.Drawing.Image)(resources.GetObject("sixthCancel.Image")));
-            this.sixthCancel.ImageRotate = 0F;
-            this.sixthCancel.Location = new System.Drawing.Point(109, 3);
-            this.sixthCancel.Name = "sixthCancel";
-            this.sixthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.sixthCancel.Size = new System.Drawing.Size(32, 28);
-            this.sixthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sixthCancel.TabIndex = 16;
-            this.sixthCancel.TabStop = false;
-            this.sixthCancel.Click += new System.EventHandler(this.sixthCancel_Click);
-            // 
-            // sixthPic
-            // 
-            this.sixthPic.FillColor = System.Drawing.Color.Transparent;
-            this.sixthPic.Image = ((System.Drawing.Image)(resources.GetObject("sixthPic.Image")));
-            this.sixthPic.ImageRotate = 0F;
-            this.sixthPic.Location = new System.Drawing.Point(39, 14);
-            this.sixthPic.Name = "sixthPic";
-            this.sixthPic.Size = new System.Drawing.Size(69, 95);
-            this.sixthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sixthPic.TabIndex = 1;
-            this.sixthPic.TabStop = false;
-            // 
             // fifthItem
             // 
             this.fifthItem.BackColor = System.Drawing.Color.Transparent;
@@ -8109,10 +8065,10 @@
         public System.Windows.Forms.Label label14;
         public System.Windows.Forms.Label secondItemType;
         public System.Windows.Forms.Label secondItemName;
-        
+
         // unsure dito
-        // private Guna.UI2.WinForms.Guna2CirclePictureBox sixthCancel;
-        // private Guna.UI2.WinForms.Guna2CirclePictureBox fifthcancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox sixthCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox fifthcancel;
         private System.Windows.Forms.TabPage Admin;
         private Guna.UI2.WinForms.Guna2Shapes admin_sidePanel;
         private Guna.UI2.WinForms.Guna2Shapes adminHeader;
