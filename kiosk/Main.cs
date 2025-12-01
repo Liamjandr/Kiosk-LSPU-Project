@@ -226,21 +226,21 @@ namespace kiosk
 
          private void LoadItemsByType(
 
-        string typeFilter,
-        List<Guna2PictureBox> pics,
-        List<Label> labels,
-        List<Guna2PictureBox> overlays,
-        List<Guna2ShadowPanel> panels)
-            {
+            string typeFilter,
+            List<Guna2PictureBox> pics,
+            List<Label> labels,
+            List<Guna2PictureBox> overlays,
+            List<Guna2ShadowPanel> panels)
+                {
                 using (MySqlConnection conn = new MySqlConnection(mycon))
                 {
                     conn.Open();
 
-                    string query = @"
-                SELECT itemId, itemName, itemStock, IMAGE_PATH 
-                FROM tbitems
-                WHERE (@type = 'all' OR itemType = @type)
-                ORDER BY itemId ASC";
+                        string query = @"
+                    SELECT itemId, itemName, itemStock, IMAGE_PATH 
+                    FROM tbitems
+                    WHERE (@type = 'all' OR itemType = @type)
+                    ORDER BY itemId ASC";
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@type", typeFilter);
@@ -273,7 +273,6 @@ namespace kiosk
                             overlays[slotIndex].Visible = notAvail;
                             overlays[slotIndex].BringToFront();
                             pics[slotIndex].Enabled = !notAvail;
-
                             pics[slotIndex].Visible = true;
                             labels[slotIndex].Visible = true;
                             panels[slotIndex].Visible = true;
@@ -283,7 +282,7 @@ namespace kiosk
 
                             slotIndex++;
                         }
-
+                        
                         // Hide remaining slots
                         for (int i = slotIndex; i < pics.Count; i++)
                         {
@@ -808,36 +807,6 @@ namespace kiosk
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //------------------------------------------------------------------------------------------------------------------------
         public void ResetCart()
         {
@@ -914,6 +883,10 @@ namespace kiosk
             RemoveCartItem(4);
         }
 
+
+
+        //------------------------------------------------------------------------------------------------------------------------
+        // Admin Functionalities
         private void adminIntialize()
         {
             //AddInventory sample = new AddInventory(randomData.GetInventoryItem("1"));
