@@ -245,6 +245,7 @@
             // 
             // prodIMG
             // 
+            this.prodIMG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.prodIMG.FillColor = System.Drawing.Color.Transparent;
             this.prodIMG.Image = ((System.Drawing.Image)(resources.GetObject("prodIMG.Image")));
             this.prodIMG.ImageRotate = 0F;
@@ -295,8 +296,7 @@
             this.sBtn.Name = "sBtn";
             this.sBtn.Size = new System.Drawing.Size(17, 14);
             this.sBtn.TabIndex = 18;
-            this.sBtn.Text = "guna2CustomRadioButton1";
-            this.sBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.sBtn.UncheckedState.BorderColor = System.Drawing.Color.Black;
             this.sBtn.UncheckedState.BorderThickness = 2;
             this.sBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.sBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -331,8 +331,7 @@
             this.lBtn.Name = "lBtn";
             this.lBtn.Size = new System.Drawing.Size(17, 14);
             this.lBtn.TabIndex = 20;
-            this.lBtn.Text = "guna2CustomRadioButton2";
-            this.lBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.lBtn.UncheckedState.BorderColor = System.Drawing.Color.Black;
             this.lBtn.UncheckedState.BorderThickness = 2;
             this.lBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.lBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -357,8 +356,7 @@
             this.mBtn.Name = "mBtn";
             this.mBtn.Size = new System.Drawing.Size(17, 14);
             this.mBtn.TabIndex = 22;
-            this.mBtn.Text = "guna2CustomRadioButton3";
-            this.mBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.mBtn.UncheckedState.BorderColor = System.Drawing.Color.Black;
             this.mBtn.UncheckedState.BorderThickness = 2;
             this.mBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.mBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -375,6 +373,7 @@
             // 
             // xBtn
             // 
+            this.xBtn.BackColor = System.Drawing.Color.Transparent;
             this.xBtn.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.xBtn.CheckedState.BorderThickness = 0;
             this.xBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
@@ -383,8 +382,7 @@
             this.xBtn.Name = "xBtn";
             this.xBtn.Size = new System.Drawing.Size(17, 14);
             this.xBtn.TabIndex = 24;
-            this.xBtn.Text = "guna2CustomRadioButton4";
-            this.xBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.xBtn.UncheckedState.BorderColor = System.Drawing.Color.Black;
             this.xBtn.UncheckedState.BorderThickness = 2;
             this.xBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.xBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -409,8 +407,7 @@
             this.xxBtn.Name = "xxBtn";
             this.xxBtn.Size = new System.Drawing.Size(17, 14);
             this.xxBtn.TabIndex = 26;
-            this.xxBtn.Text = "guna2CustomRadioButton5";
-            this.xxBtn.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.xxBtn.UncheckedState.BorderColor = System.Drawing.Color.Black;
             this.xxBtn.UncheckedState.BorderThickness = 2;
             this.xxBtn.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.xxBtn.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
@@ -481,9 +478,9 @@
             this.stock.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold);
             this.stock.Location = new System.Drawing.Point(602, 458);
             this.stock.Name = "stock";
-            this.stock.Size = new System.Drawing.Size(27, 19);
+            this.stock.Size = new System.Drawing.Size(21, 19);
             this.stock.TabIndex = 34;
-            this.stock.Text = "21";
+            this.stock.Text = "...";
             // 
             // label2
             // 
@@ -625,16 +622,11 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox24;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton sBtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton lBtn;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton mBtn;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton xBtn;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton xxBtn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -650,5 +642,10 @@
         private Guna.UI2.WinForms.Guna2Button decr;
         public Guna.UI2.WinForms.Guna2TextBox qty;
         public System.Windows.Forms.Label stock;
+        public Guna.UI2.WinForms.Guna2CustomRadioButton sBtn;
+        public Guna.UI2.WinForms.Guna2CustomRadioButton lBtn;
+        public Guna.UI2.WinForms.Guna2CustomRadioButton mBtn;
+        public Guna.UI2.WinForms.Guna2CustomRadioButton xBtn;
+        public Guna.UI2.WinForms.Guna2CustomRadioButton xxBtn;
     }
 }

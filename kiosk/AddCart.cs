@@ -43,6 +43,8 @@ namespace kiosk
             this.FormBorderStyle = FormBorderStyle.None;  // Remove standard border
             this.BackColor = Color.White;
             this.Padding = new Padding(1); // small padding for visible shadow
+
+
         }
 
         protected override void OnHandleCreated(EventArgs e)
@@ -78,9 +80,23 @@ namespace kiosk
             }
         }
 
-        private void AddCart_Load(object sender, EventArgs e)
+        private void itemload()
         {
 
+
+
+
+
+
+
+
+
+        }
+
+
+        private void AddCart_Load(object sender, EventArgs e)
+        {
+            itemload();
         }
 
         protected override CreateParams CreateParams
@@ -185,8 +201,13 @@ namespace kiosk
             }
 
 
-            PictureBox[] cartPics = { mainForm.firstPic, mainForm.secondPic, mainForm.thirdPic, mainForm.fourthPic, mainForm.fifthPic, mainForm.sixthPic, mainForm.seventhPic, mainForm.eighthPic, mainForm.ninthPic, mainForm.tenthPic };
-            Panel[] picsPanel = { mainForm.firstItem, mainForm.secondItem, mainForm.thirdItem, mainForm.fourthItem, mainForm.fifthItem, mainForm.sixthItem, mainForm.seventhItem, mainForm.eighthItem, mainForm.ninthItem, mainForm.tenthIten };
+            PictureBox[] cartPics = { mainForm.firstPic, mainForm.secondPic, mainForm.thirdPic, mainForm.fourthPic, mainForm.fifthPic };
+            Panel[] picsPanel = { mainForm.firstItem, mainForm.secondItem, mainForm.thirdItem, mainForm.fourthItem, mainForm.fifthItem };
+            Label[] productName = { mainForm.firstItemName, mainForm.secondItemName, mainForm.thirdItemName, mainForm.fourthItemName, mainForm.fifthItemName};
+            Label[] prodType = { mainForm.firstItemType, mainForm.secondItemType, mainForm.thirdItemType, mainForm.fourthItemType, mainForm.fifthItemType };
+            Label[] prodQty = { mainForm.firstItemQty, mainForm.secondItemQty, mainForm.thirdItemQty, mainForm.fourthItemQty, mainForm.fifthItemQty };
+            Label[] prodSize = { mainForm.firstItemSize, mainForm.secondItemSize, mainForm.thirdItemSize, mainForm.fourthItemSize, mainForm.fifthItemSize };
+            Label[] prodPrice = { mainForm.firstItemPrice, mainForm.secondItemPrice, mainForm.thirdItemPrice, mainForm.fourthItemPrice, mainForm.fifthItemPrice };
 
             if (mainForm.cartCounter < cartPics.Length)
             {
@@ -194,6 +215,11 @@ namespace kiosk
 
                 picsPanel[i].Visible = true;
                 cartPics[i].Image = prodIMG.Image;
+                productName[i].Text = ProductName;
+                prodType[i].Text = SubProductName;
+                prodQty[i].Text = Quantity.ToString();
+                prodSize[i].Text = SelectedSize;
+                prodPrice[i].Text = Price.ToString();
 
                 if (picsPanel[i].Visible = true)
                 {
