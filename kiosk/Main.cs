@@ -54,6 +54,8 @@ namespace kiosk
         List<Guna2ShadowPanel> other_itemPanels = new List<Guna2ShadowPanel>();
 
         AddCart ac;
+
+        //Admin Inventory
         List<InventoryItem> InventoryData = new List<InventoryItem>();
         List<AddInventory> Inventory  = new List<AddInventory>();
 
@@ -891,6 +893,57 @@ namespace kiosk
         {
             //AddInventory sample = new AddInventory(randomData.GetInventoryItem("1"));
             //inventoryTable.Controls.Add(sample);
+
+            //using (MySqlConnection conn = new MySqlConnection(mycon))
+            //{
+            //    try
+            //    {
+            //        conn.Open();
+
+            //        string query = "SELECT * FROM tbitems WHERE itemId = @itemId";
+            //        MySqlCommand cmd = new MySqlCommand(query, conn);
+            //        cmd.Parameters.AddWithValue("@itemId", itemId);
+
+            //        using (MySqlDataReader reader = cmd.ExecuteReader())
+            //        {
+            //            if (reader.Read())
+            //            {
+            //                // Load item info
+            //                ac.prodName.Text = reader["itemName"].ToString();
+            //                ac.subName.Text = reader["itemType"].ToString();
+            //                ac.price.Text = reader["itemPrice"].ToString();
+            //                ac.stock.Text = reader["itemStock"].ToString();
+
+            //                // to set unavailable img
+
+
+            //                // Load and process sizes
+            //                string sizeData = reader["itemSize"].ToString();
+            //                List<string> availableSizes = sizeData.Split(',').ToList();
+
+
+
+            //                // Enable/disable radio buttons
+            //                ac.sBtn.Enabled = availableSizes.Contains("S");
+            //                ac.mBtn.Enabled = availableSizes.Contains("M");
+            //                ac.lBtn.Enabled = availableSizes.Contains("L");
+            //                ac.xBtn.Enabled = availableSizes.Contains("XL");
+            //                ac.xxBtn.Enabled = availableSizes.Contains("2XL");
+
+
+            //                ac.ShowDialog();
+            //            }
+            //            else
+            //            {
+            //                MessageBox.Show("Item not found in the database.");
+            //            }
+            //        }
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show("Database error: " + ex.Message);
+            //    }
+            //}
             for (int i = 1; i <= 12; i++)
             {
                 InventoryData.Add(randomData.GetInventoryItem(i.ToString()));
