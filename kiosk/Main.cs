@@ -958,8 +958,8 @@ namespace kiosk
 
         private void receipt_Click(object sender, EventArgs e)
         {
-            addPurchase receipt = new addPurchase(randomData.generateHistory());
-            receiptTable.Controls.Add(receipt);
+            //addPurchase receipt = new addPurchase(receiptData);
+            //receiptTable.Controls.Add(receipt);
         }
 
         //checkout tab
@@ -980,7 +980,18 @@ namespace kiosk
             receiptPanel.Controls.Remove(webPanel);
         }
 
-
+        private void buybutton_Click(object sender, EventArgs e)
+        {
+            paymentControl paymentControl = new paymentControl(receiptData,receiptTable);
+            paymentControl.TabIndex = 20;
+            Checkout.Controls.Add(paymentControl);
+            int x = (Checkout.Width - paymentControl.Width) / 2;
+            int y = (Checkout.Height - paymentControl.Height) / 2;
+            paymentControl.Location = new Point(x, y);
+            paymentControl.BringToFront();
+            //addPurchase receipt = new addPurchase(randomData.generateHistory());
+            //receiptTable.Controls.Add(receipt);
+        }
     }
     }
 

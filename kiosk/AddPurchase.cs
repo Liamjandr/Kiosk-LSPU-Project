@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,18 +13,23 @@ namespace kiosk
 {
     public partial class addPurchase : UserControl
     {
-        HistoryItem historyItem;
-        public addPurchase(HistoryItem item)
+        receiptTemplate receipt { get; }
+        int orderIndex;
+        bool isPaid { get; set; }
+        bool isClaimed { get; set; }
+        public addPurchase(receiptTemplate receipt, int orderIndex)
         {
             InitializeComponent();
-            historyItem = item;
-            ReceiptID.Text = historyItem.ID;
-            Type.Text = historyItem.Type;
-            Description.Text = historyItem.Description;
-            Date.Text = historyItem.Date.ToString("MM/dd/yyyy");
-            Quantity.Text = historyItem.QTY.ToString();
-            Cost.Text = historyItem.Cost.ToString("C2");
-            if (historyItem.isPaid)
+            this.receipt = receipt;
+            this.orderIndex = orderIndex;
+
+            ReceiptID.Text = receipt.receiptID;
+            Type.Text = receipt.Items[orderIndex].Type;
+            Description.Text = receipt.Items[orderIndex].Name;
+            Date.Text = receipt.receiptDate.ToString("MM/dd/yyyy");
+            Quantity.Text = receipt.Items[orderIndex].Quantity.ToString();
+            Cost.Text = receipt.Items[orderIndex].Price.ToString("C2");
+            if (isPaid)
             {
                 Payment.Text = "PAID";
                 Payment.FillColor = Color.Green;
@@ -33,7 +39,7 @@ namespace kiosk
                 Payment.Text = "UNPAID";
                 Payment.FillColor = Color.Red;
             }
-            if (historyItem.isClaimed)
+            if (isClaimed)
             {
                 Claim.Text = "Claimed";
                 Claim.FillColor = Color.Green;
@@ -48,8 +54,8 @@ namespace kiosk
 
         private void Payment_Click(object sender, EventArgs e)
         {
-            historyItem.isPaid = !historyItem.isPaid;
-            if (historyItem.isPaid)
+            isPaid = !isPaid;
+            if (isPaid)
             {
                 Payment.Text = "PAID";
                 Payment.FillColor = Color.Green;
@@ -63,8 +69,8 @@ namespace kiosk
 
         private void Claim_Click(object sender, EventArgs e)
         {
-            historyItem.isClaimed = !historyItem.isClaimed;
-            if (historyItem.isClaimed)
+            isClaimed = !isClaimed;
+            if (isClaimed)
             {
                 Claim.Text = "Claimed";
                 Claim.FillColor = Color.Green;

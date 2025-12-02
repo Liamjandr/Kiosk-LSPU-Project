@@ -527,8 +527,9 @@
             this.adminBack = new Guna.UI2.WinForms.Guna2Button();
             this.adminHeader = new Guna.UI2.WinForms.Guna2Shapes();
             this.Checkout = new System.Windows.Forms.TabPage();
-            this.receiptPanel = new System.Windows.Forms.Panel();
+            this.buybutton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.receiptPanel = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.footer.SuspendLayout();
@@ -7429,6 +7430,7 @@
             // 
             // Checkout
             // 
+            this.Checkout.Controls.Add(this.buybutton);
             this.Checkout.Controls.Add(this.button2);
             this.Checkout.Controls.Add(this.receiptPanel);
             this.Checkout.Location = new System.Drawing.Point(4, 22);
@@ -7439,12 +7441,15 @@
             this.Checkout.Text = "Checkout";
             this.Checkout.UseVisualStyleBackColor = true;
             // 
-            // receiptPanel
+            // buybutton
             // 
-            this.receiptPanel.Location = new System.Drawing.Point(1097, 33);
-            this.receiptPanel.Name = "receiptPanel";
-            this.receiptPanel.Size = new System.Drawing.Size(773, 953);
-            this.receiptPanel.TabIndex = 0;
+            this.buybutton.Location = new System.Drawing.Point(569, 275);
+            this.buybutton.Name = "buybutton";
+            this.buybutton.Size = new System.Drawing.Size(75, 23);
+            this.buybutton.TabIndex = 2;
+            this.buybutton.Text = "Pay";
+            this.buybutton.UseVisualStyleBackColor = true;
+            this.buybutton.Click += new System.EventHandler(this.buybutton_Click);
             // 
             // button2
             // 
@@ -7455,6 +7460,14 @@
             this.button2.Text = "back";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // receiptPanel
+            // 
+            this.receiptPanel.BackColor = System.Drawing.Color.LightGray;
+            this.receiptPanel.Location = new System.Drawing.Point(1097, 33);
+            this.receiptPanel.Name = "receiptPanel";
+            this.receiptPanel.Size = new System.Drawing.Size(773, 953);
+            this.receiptPanel.TabIndex = 0;
             // 
             // Main
             // 
@@ -7955,10 +7968,8 @@
         private Guna.UI2.WinForms.Guna2Shapes historyTableHeader;
         private Guna.UI2.WinForms.Guna2TextBox purchaseHeader;
         private System.Windows.Forms.Button receipt;
-        private System.Windows.Forms.FlowLayoutPanel receiptTable;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
-        private System.Windows.Forms.FlowLayoutPanel inventoryTable;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel10;
         public System.Windows.Forms.Label label17;
         public System.Windows.Forms.Label secondItemPrice;
@@ -8321,6 +8332,9 @@
         private System.Windows.Forms.TabPage Checkout;
         private System.Windows.Forms.Panel receiptPanel;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buybutton;
+        private System.Windows.Forms.FlowLayoutPanel inventoryTable;
+        private System.Windows.Forms.FlowLayoutPanel receiptTable;
     }
 }
 
