@@ -54,6 +54,8 @@ namespace kiosk
         List<Guna2ShadowPanel> other_itemPanels = new List<Guna2ShadowPanel>();
 
         AddCart ac;
+
+        //Admin Inventory
         List<InventoryItem> InventoryData = new List<InventoryItem>();
         List<AddInventory> Inventory  = new List<AddInventory>();
 
@@ -891,11 +893,48 @@ namespace kiosk
         {
             //AddInventory sample = new AddInventory(randomData.GetInventoryItem("1"));
             //inventoryTable.Controls.Add(sample);
-            for (int i = 1; i <= 12; i++)
+
+            using (MySqlConnection conn = new MySqlConnection(mycon))
             {
-                InventoryData.Add(randomData.GetInventoryItem(i.ToString()));
-                Inventory.Add(new AddInventory(InventoryData[i-1]));
+                try
+                {
+                    conn.Open();
+
+                    string query = "SELECT * FROM tbitems ORDER BY itemId ASC";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Inventory.Add(
+                                new AddInventory(
+                                    new InventoryItem
+                                    {
+                                        ID = reader.GetInt32("itemId").ToString(),
+                                        Type = reader.GetString("itemType"),
+                                        Description = reader.GetString("itemName"),
+                                        Price = reader.GetInt32("itemPrice"),
+                                        Stock = reader.GetInt32("itemStock"),
+                                        ImagePath = reader.GetString("IMAGE_PATH")
+                                    }
+                                )
+                            );
+                            //Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
+                        }  
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Database error: " + ex.Message);
+                }
             }
+            //Display the inventory items
+            //for (int i = 1; i <= 12; i++)
+            //{
+            //    InventoryData.Add(randomData.GetInventoryItem(i.ToString()));
+            //    Inventory.Add(new AddInventory(InventoryData[i-1]));
+            //}
             foreach (AddInventory item in Inventory)
             {
                 inventoryTable.Controls.Add(item);

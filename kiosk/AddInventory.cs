@@ -49,4 +49,16 @@ namespace kiosk
             }
         }
     }
+
+    public class InventoryItem
+    {
+        public string ID { get; set; }
+        public string Type { get; set; }
+        public string Description { get; set; }
+        public string itemSize { get; set; }
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
+        public string ImagePath { get; set; }
+        public bool isEnable { get; set; }
+    }
 }
