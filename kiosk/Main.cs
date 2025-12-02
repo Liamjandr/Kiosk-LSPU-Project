@@ -10,8 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using MySql.Data.MySqlClient;
+using Microsoft.Web.WebView2.Core;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using static Guna.UI2.Native.WinApi;
+using Microsoft.Web.WebView2.WinForms;
 
 namespace kiosk
 {
@@ -58,6 +60,9 @@ namespace kiosk
         //Admin Inventory
         List<InventoryItem> InventoryData = new List<InventoryItem>();
         List<AddInventory> Inventory  = new List<AddInventory>();
+        //Receipt Data
+        receiptTemplate receiptData = new receiptTemplate();
+        createPDF createPDF = new createPDF();
 
         public int cartCounter = 0;
         public Main()
@@ -956,6 +961,26 @@ namespace kiosk
             addPurchase receipt = new addPurchase(randomData.generateHistory());
             receiptTable.Controls.Add(receipt);
         }
+
+        //checkout tab
+        WebView2 webPanel;
+        private async void confirmBtn_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = Checkout;
+            receiptData = randomData.generatePurchase();
+            pdfTemplate pdf = new pdfTemplate(receiptData);
+            createPDF.generate(pdf);
+            webPanel = await Web.viewPDF();
+            receiptPanel.Controls.Add(webPanel);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage3;
+            receiptPanel.Controls.Remove(webPanel);
+        }
+
+
     }
     }
 

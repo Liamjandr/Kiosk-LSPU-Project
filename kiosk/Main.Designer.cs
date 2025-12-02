@@ -396,7 +396,6 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.fifthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.fifthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.fifthItemSize = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -405,13 +404,13 @@
             this.guna2CustomGradientPanel13 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label50 = new System.Windows.Forms.Label();
             this.fifthItemPrice = new System.Windows.Forms.Label();
-            this.fifthPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label52 = new System.Windows.Forms.Label();
             this.fifthItemQty = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
+            this.fifthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.fifthPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.fourthItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.fourthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.fourthItemSize = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -420,13 +419,13 @@
             this.guna2CustomGradientPanel12 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label39 = new System.Windows.Forms.Label();
             this.fourthItemPrice = new System.Windows.Forms.Label();
-            this.fourthPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label41 = new System.Windows.Forms.Label();
             this.fourthItemQty = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.fourthCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.fourthPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.thirdItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.thirdCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.thirdItemSize = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -435,13 +434,13 @@
             this.guna2CustomGradientPanel11 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label28 = new System.Windows.Forms.Label();
             this.thirdItemPrice = new System.Windows.Forms.Label();
-            this.thirdPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label30 = new System.Windows.Forms.Label();
             this.thirdItemQty = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.thirdCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.thirdPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.secondItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.secondCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.secondItemSize = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -450,11 +449,12 @@
             this.guna2CustomGradientPanel10 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label17 = new System.Windows.Forms.Label();
             this.secondItemPrice = new System.Windows.Forms.Label();
-            this.secondPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label19 = new System.Windows.Forms.Label();
             this.secondItemQty = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.secondCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.secondPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.firstItem = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.firstCancel = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.firstItemSize = new System.Windows.Forms.Label();
@@ -510,6 +510,7 @@
             this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
             this.admin_tabControl = new Guna.UI2.WinForms.Guna2TabControl();
             this.admin_dashboard = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.dashSTAT1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.admin_inventory = new System.Windows.Forms.TabPage();
             this.inventoryTable = new System.Windows.Forms.FlowLayoutPanel();
@@ -525,7 +526,9 @@
             this.admin_sidePanel = new Guna.UI2.WinForms.Guna2Shapes();
             this.adminBack = new Guna.UI2.WinForms.Guna2Button();
             this.adminHeader = new Guna.UI2.WinForms.Guna2Shapes();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Checkout = new System.Windows.Forms.TabPage();
+            this.receiptPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.footer.SuspendLayout();
@@ -798,20 +801,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.other_itemPic1)).BeginInit();
             this.guna2ShadowPanel3.SuspendLayout();
             this.fifthItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fifthCancel)).BeginInit();
             this.guna2CustomGradientPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fifthCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fifthPic)).BeginInit();
             this.fourthItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).BeginInit();
             this.guna2CustomGradientPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fourthPic)).BeginInit();
             this.thirdItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).BeginInit();
             this.guna2CustomGradientPanel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thirdPic)).BeginInit();
             this.secondItem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).BeginInit();
             this.guna2CustomGradientPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondPic)).BeginInit();
             this.firstItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.firstCancel)).BeginInit();
@@ -853,6 +856,7 @@
             this.admin_inventory.SuspendLayout();
             this.admin_purchaseHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lspulogo)).BeginInit();
+            this.Checkout.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -861,6 +865,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.Admin);
+            this.tabControl1.Controls.Add(this.Checkout);
             this.tabControl1.Location = new System.Drawing.Point(-7, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -5692,6 +5697,7 @@
             this.confirmBtn.Size = new System.Drawing.Size(256, 49);
             this.confirmBtn.TabIndex = 3;
             this.confirmBtn.Text = "Confirm";
+            this.confirmBtn.Click += new System.EventHandler(this.confirmBtn_Click);
             // 
             // guna2Button2
             // 
@@ -5753,21 +5759,6 @@
             this.fifthItem.Size = new System.Drawing.Size(144, 125);
             this.fifthItem.TabIndex = 8;
             this.fifthItem.Visible = false;
-            // 
-            // fifthCancel
-            // 
-            this.fifthCancel.BackColor = System.Drawing.Color.Transparent;
-            this.fifthCancel.FillColor = System.Drawing.Color.Transparent;
-            this.fifthCancel.Image = ((System.Drawing.Image)(resources.GetObject("fifthCancel.Image")));
-            this.fifthCancel.ImageRotate = 0F;
-            this.fifthCancel.Location = new System.Drawing.Point(275, 1);
-            this.fifthCancel.Name = "fifthCancel";
-            this.fifthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.fifthCancel.Size = new System.Drawing.Size(29, 25);
-            this.fifthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fifthCancel.TabIndex = 12;
-            this.fifthCancel.TabStop = false;
-            this.fifthCancel.Click += new System.EventHandler(this.fifthcancel_Click);
             // 
             // fifthItemSize
             // 
@@ -5854,20 +5845,6 @@
             this.fifthItemPrice.TabIndex = 34;
             this.fifthItemPrice.Text = "12345.67";
             // 
-            // fifthPic
-            // 
-            this.fifthPic.BackColor = System.Drawing.Color.Transparent;
-            this.fifthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.fifthPic.FillColor = System.Drawing.Color.Transparent;
-            this.fifthPic.Image = ((System.Drawing.Image)(resources.GetObject("fifthPic.Image")));
-            this.fifthPic.ImageRotate = 0F;
-            this.fifthPic.Location = new System.Drawing.Point(39, 14);
-            this.fifthPic.Name = "fifthPic";
-            this.fifthPic.Size = new System.Drawing.Size(69, 95);
-            this.fifthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fifthPic.TabIndex = 1;
-            this.fifthPic.TabStop = false;
-            // 
             // label52
             // 
             this.label52.AutoSize = true;
@@ -5908,6 +5885,35 @@
             this.label55.TabIndex = 31;
             this.label55.Text = "__________";
             // 
+            // fifthCancel
+            // 
+            this.fifthCancel.BackColor = System.Drawing.Color.Transparent;
+            this.fifthCancel.FillColor = System.Drawing.Color.Transparent;
+            this.fifthCancel.Image = ((System.Drawing.Image)(resources.GetObject("fifthCancel.Image")));
+            this.fifthCancel.ImageRotate = 0F;
+            this.fifthCancel.Location = new System.Drawing.Point(275, 1);
+            this.fifthCancel.Name = "fifthCancel";
+            this.fifthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.fifthCancel.Size = new System.Drawing.Size(29, 25);
+            this.fifthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fifthCancel.TabIndex = 12;
+            this.fifthCancel.TabStop = false;
+            this.fifthCancel.Click += new System.EventHandler(this.fifthcancel_Click);
+            // 
+            // fifthPic
+            // 
+            this.fifthPic.BackColor = System.Drawing.Color.Transparent;
+            this.fifthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.fifthPic.FillColor = System.Drawing.Color.Transparent;
+            this.fifthPic.Image = ((System.Drawing.Image)(resources.GetObject("fifthPic.Image")));
+            this.fifthPic.ImageRotate = 0F;
+            this.fifthPic.Location = new System.Drawing.Point(39, 14);
+            this.fifthPic.Name = "fifthPic";
+            this.fifthPic.Size = new System.Drawing.Size(69, 95);
+            this.fifthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fifthPic.TabIndex = 1;
+            this.fifthPic.TabStop = false;
+            // 
             // fourthItem
             // 
             this.fourthItem.BackColor = System.Drawing.Color.Transparent;
@@ -5931,21 +5937,6 @@
             this.fourthItem.Size = new System.Drawing.Size(144, 125);
             this.fourthItem.TabIndex = 8;
             this.fourthItem.Visible = false;
-            // 
-            // fourthCancel
-            // 
-            this.fourthCancel.BackColor = System.Drawing.Color.Transparent;
-            this.fourthCancel.FillColor = System.Drawing.Color.Transparent;
-            this.fourthCancel.Image = ((System.Drawing.Image)(resources.GetObject("fourthCancel.Image")));
-            this.fourthCancel.ImageRotate = 0F;
-            this.fourthCancel.Location = new System.Drawing.Point(109, 3);
-            this.fourthCancel.Name = "fourthCancel";
-            this.fourthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.fourthCancel.Size = new System.Drawing.Size(32, 28);
-            this.fourthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourthCancel.TabIndex = 14;
-            this.fourthCancel.TabStop = false;
-            this.fourthCancel.Click += new System.EventHandler(this.fourthCancel_Click);
             // 
             // fourthItemSize
             // 
@@ -6032,20 +6023,6 @@
             this.fourthItemPrice.TabIndex = 34;
             this.fourthItemPrice.Text = "12345.67";
             // 
-            // fourthPic
-            // 
-            this.fourthPic.BackColor = System.Drawing.Color.Transparent;
-            this.fourthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.fourthPic.FillColor = System.Drawing.Color.Transparent;
-            this.fourthPic.Image = ((System.Drawing.Image)(resources.GetObject("fourthPic.Image")));
-            this.fourthPic.ImageRotate = 0F;
-            this.fourthPic.Location = new System.Drawing.Point(39, 14);
-            this.fourthPic.Name = "fourthPic";
-            this.fourthPic.Size = new System.Drawing.Size(69, 95);
-            this.fourthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourthPic.TabIndex = 1;
-            this.fourthPic.TabStop = false;
-            // 
             // label41
             // 
             this.label41.AutoSize = true;
@@ -6086,6 +6063,35 @@
             this.label44.TabIndex = 31;
             this.label44.Text = "__________";
             // 
+            // fourthCancel
+            // 
+            this.fourthCancel.BackColor = System.Drawing.Color.Transparent;
+            this.fourthCancel.FillColor = System.Drawing.Color.Transparent;
+            this.fourthCancel.Image = ((System.Drawing.Image)(resources.GetObject("fourthCancel.Image")));
+            this.fourthCancel.ImageRotate = 0F;
+            this.fourthCancel.Location = new System.Drawing.Point(109, 3);
+            this.fourthCancel.Name = "fourthCancel";
+            this.fourthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.fourthCancel.Size = new System.Drawing.Size(32, 28);
+            this.fourthCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourthCancel.TabIndex = 14;
+            this.fourthCancel.TabStop = false;
+            this.fourthCancel.Click += new System.EventHandler(this.fourthCancel_Click);
+            // 
+            // fourthPic
+            // 
+            this.fourthPic.BackColor = System.Drawing.Color.Transparent;
+            this.fourthPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.fourthPic.FillColor = System.Drawing.Color.Transparent;
+            this.fourthPic.Image = ((System.Drawing.Image)(resources.GetObject("fourthPic.Image")));
+            this.fourthPic.ImageRotate = 0F;
+            this.fourthPic.Location = new System.Drawing.Point(39, 14);
+            this.fourthPic.Name = "fourthPic";
+            this.fourthPic.Size = new System.Drawing.Size(69, 95);
+            this.fourthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourthPic.TabIndex = 1;
+            this.fourthPic.TabStop = false;
+            // 
             // thirdItem
             // 
             this.thirdItem.BackColor = System.Drawing.Color.Transparent;
@@ -6109,21 +6115,6 @@
             this.thirdItem.Size = new System.Drawing.Size(144, 125);
             this.thirdItem.TabIndex = 8;
             this.thirdItem.Visible = false;
-            // 
-            // thirdCancel
-            // 
-            this.thirdCancel.BackColor = System.Drawing.Color.Transparent;
-            this.thirdCancel.FillColor = System.Drawing.Color.Transparent;
-            this.thirdCancel.Image = ((System.Drawing.Image)(resources.GetObject("thirdCancel.Image")));
-            this.thirdCancel.ImageRotate = 0F;
-            this.thirdCancel.Location = new System.Drawing.Point(109, 3);
-            this.thirdCancel.Name = "thirdCancel";
-            this.thirdCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.thirdCancel.Size = new System.Drawing.Size(32, 28);
-            this.thirdCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.thirdCancel.TabIndex = 14;
-            this.thirdCancel.TabStop = false;
-            this.thirdCancel.Click += new System.EventHandler(this.thirdCancel_Click);
             // 
             // thirdItemSize
             // 
@@ -6210,20 +6201,6 @@
             this.thirdItemPrice.TabIndex = 34;
             this.thirdItemPrice.Text = "12345.67";
             // 
-            // thirdPic
-            // 
-            this.thirdPic.BackColor = System.Drawing.Color.Transparent;
-            this.thirdPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.thirdPic.FillColor = System.Drawing.Color.Transparent;
-            this.thirdPic.Image = ((System.Drawing.Image)(resources.GetObject("thirdPic.Image")));
-            this.thirdPic.ImageRotate = 0F;
-            this.thirdPic.Location = new System.Drawing.Point(39, 14);
-            this.thirdPic.Name = "thirdPic";
-            this.thirdPic.Size = new System.Drawing.Size(69, 95);
-            this.thirdPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.thirdPic.TabIndex = 1;
-            this.thirdPic.TabStop = false;
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
@@ -6264,6 +6241,35 @@
             this.label33.TabIndex = 31;
             this.label33.Text = "__________";
             // 
+            // thirdCancel
+            // 
+            this.thirdCancel.BackColor = System.Drawing.Color.Transparent;
+            this.thirdCancel.FillColor = System.Drawing.Color.Transparent;
+            this.thirdCancel.Image = ((System.Drawing.Image)(resources.GetObject("thirdCancel.Image")));
+            this.thirdCancel.ImageRotate = 0F;
+            this.thirdCancel.Location = new System.Drawing.Point(109, 3);
+            this.thirdCancel.Name = "thirdCancel";
+            this.thirdCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.thirdCancel.Size = new System.Drawing.Size(32, 28);
+            this.thirdCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.thirdCancel.TabIndex = 14;
+            this.thirdCancel.TabStop = false;
+            this.thirdCancel.Click += new System.EventHandler(this.thirdCancel_Click);
+            // 
+            // thirdPic
+            // 
+            this.thirdPic.BackColor = System.Drawing.Color.Transparent;
+            this.thirdPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.thirdPic.FillColor = System.Drawing.Color.Transparent;
+            this.thirdPic.Image = ((System.Drawing.Image)(resources.GetObject("thirdPic.Image")));
+            this.thirdPic.ImageRotate = 0F;
+            this.thirdPic.Location = new System.Drawing.Point(39, 14);
+            this.thirdPic.Name = "thirdPic";
+            this.thirdPic.Size = new System.Drawing.Size(69, 95);
+            this.thirdPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.thirdPic.TabIndex = 1;
+            this.thirdPic.TabStop = false;
+            // 
             // secondItem
             // 
             this.secondItem.BackColor = System.Drawing.Color.Transparent;
@@ -6287,21 +6293,6 @@
             this.secondItem.Size = new System.Drawing.Size(144, 125);
             this.secondItem.TabIndex = 7;
             this.secondItem.Visible = false;
-            // 
-            // secondCancel
-            // 
-            this.secondCancel.BackColor = System.Drawing.Color.Transparent;
-            this.secondCancel.FillColor = System.Drawing.Color.Transparent;
-            this.secondCancel.Image = ((System.Drawing.Image)(resources.GetObject("secondCancel.Image")));
-            this.secondCancel.ImageRotate = 0F;
-            this.secondCancel.Location = new System.Drawing.Point(109, 3);
-            this.secondCancel.Name = "secondCancel";
-            this.secondCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.secondCancel.Size = new System.Drawing.Size(32, 28);
-            this.secondCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.secondCancel.TabIndex = 13;
-            this.secondCancel.TabStop = false;
-            this.secondCancel.Click += new System.EventHandler(this.secondCancel_Click);
             // 
             // secondItemSize
             // 
@@ -6388,20 +6379,6 @@
             this.secondItemPrice.TabIndex = 34;
             this.secondItemPrice.Text = "12345.67";
             // 
-            // secondPic
-            // 
-            this.secondPic.BackColor = System.Drawing.Color.Transparent;
-            this.secondPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.secondPic.FillColor = System.Drawing.Color.Transparent;
-            this.secondPic.Image = ((System.Drawing.Image)(resources.GetObject("secondPic.Image")));
-            this.secondPic.ImageRotate = 0F;
-            this.secondPic.Location = new System.Drawing.Point(39, 14);
-            this.secondPic.Name = "secondPic";
-            this.secondPic.Size = new System.Drawing.Size(69, 95);
-            this.secondPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.secondPic.TabIndex = 1;
-            this.secondPic.TabStop = false;
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -6441,6 +6418,35 @@
             this.label22.Size = new System.Drawing.Size(77, 13);
             this.label22.TabIndex = 31;
             this.label22.Text = "__________";
+            // 
+            // secondCancel
+            // 
+            this.secondCancel.BackColor = System.Drawing.Color.Transparent;
+            this.secondCancel.FillColor = System.Drawing.Color.Transparent;
+            this.secondCancel.Image = ((System.Drawing.Image)(resources.GetObject("secondCancel.Image")));
+            this.secondCancel.ImageRotate = 0F;
+            this.secondCancel.Location = new System.Drawing.Point(109, 3);
+            this.secondCancel.Name = "secondCancel";
+            this.secondCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.secondCancel.Size = new System.Drawing.Size(32, 28);
+            this.secondCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.secondCancel.TabIndex = 13;
+            this.secondCancel.TabStop = false;
+            this.secondCancel.Click += new System.EventHandler(this.secondCancel_Click);
+            // 
+            // secondPic
+            // 
+            this.secondPic.BackColor = System.Drawing.Color.Transparent;
+            this.secondPic.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.secondPic.FillColor = System.Drawing.Color.Transparent;
+            this.secondPic.Image = ((System.Drawing.Image)(resources.GetObject("secondPic.Image")));
+            this.secondPic.ImageRotate = 0F;
+            this.secondPic.Location = new System.Drawing.Point(39, 14);
+            this.secondPic.Name = "secondPic";
+            this.secondPic.Size = new System.Drawing.Size(69, 95);
+            this.secondPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.secondPic.TabIndex = 1;
+            this.secondPic.TabStop = false;
             // 
             // firstItem
             // 
@@ -7164,6 +7170,15 @@
             this.admin_dashboard.TabIndex = 0;
             this.admin_dashboard.Text = "Dashbooard";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(158, 276);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // dashSTAT1
             // 
             this.dashSTAT1.BackColor = System.Drawing.Color.Transparent;
@@ -7198,7 +7213,7 @@
             this.inventoryTable.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.inventoryTable.Location = new System.Drawing.Point(24, 106);
             this.inventoryTable.Name = "inventoryTable";
-            this.inventoryTable.Size = new System.Drawing.Size(1575, 522);
+            this.inventoryTable.Size = new System.Drawing.Size(1575, 683);
             this.inventoryTable.TabIndex = 11;
             this.inventoryTable.WrapContents = false;
             // 
@@ -7412,14 +7427,34 @@
             this.adminHeader.Text = "c";
             this.adminHeader.Zoom = 100;
             // 
-            // button1
+            // Checkout
             // 
-            this.button1.Location = new System.Drawing.Point(158, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Checkout.Controls.Add(this.button2);
+            this.Checkout.Controls.Add(this.receiptPanel);
+            this.Checkout.Location = new System.Drawing.Point(4, 22);
+            this.Checkout.Name = "Checkout";
+            this.Checkout.Padding = new System.Windows.Forms.Padding(3);
+            this.Checkout.Size = new System.Drawing.Size(1932, 1070);
+            this.Checkout.TabIndex = 4;
+            this.Checkout.Text = "Checkout";
+            this.Checkout.UseVisualStyleBackColor = true;
+            // 
+            // receiptPanel
+            // 
+            this.receiptPanel.Location = new System.Drawing.Point(1097, 33);
+            this.receiptPanel.Name = "receiptPanel";
+            this.receiptPanel.Size = new System.Drawing.Size(773, 953);
+            this.receiptPanel.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(569, 223);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "back";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Main
             // 
@@ -7707,27 +7742,27 @@
             this.guna2ShadowPanel3.PerformLayout();
             this.fifthItem.ResumeLayout(false);
             this.fifthItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fifthCancel)).EndInit();
             this.guna2CustomGradientPanel13.ResumeLayout(false);
             this.guna2CustomGradientPanel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fifthCancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fifthPic)).EndInit();
             this.fourthItem.ResumeLayout(false);
             this.fourthItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).EndInit();
             this.guna2CustomGradientPanel12.ResumeLayout(false);
             this.guna2CustomGradientPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fourthCancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fourthPic)).EndInit();
             this.thirdItem.ResumeLayout(false);
             this.thirdItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).EndInit();
             this.guna2CustomGradientPanel11.ResumeLayout(false);
             this.guna2CustomGradientPanel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thirdCancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thirdPic)).EndInit();
             this.secondItem.ResumeLayout(false);
             this.secondItem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).EndInit();
             this.guna2CustomGradientPanel10.ResumeLayout(false);
             this.guna2CustomGradientPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.secondCancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondPic)).EndInit();
             this.firstItem.ResumeLayout(false);
             this.firstItem.PerformLayout();
@@ -7775,6 +7810,7 @@
             this.admin_inventory.ResumeLayout(false);
             this.admin_purchaseHistory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lspulogo)).EndInit();
+            this.Checkout.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -7901,8 +7937,8 @@
         public System.Windows.Forms.Label secondItemName;
 
         // unsure dito
-        private Guna.UI2.WinForms.Guna2CirclePictureBox sixthCancel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox fifthcancel;
+        //private Guna.UI2.WinForms.Guna2CirclePictureBox sixthCancel;
+        //private Guna.UI2.WinForms.Guna2CirclePictureBox fifthcancel;
         private System.Windows.Forms.TabPage Admin;
         private Guna.UI2.WinForms.Guna2Shapes admin_sidePanel;
         private Guna.UI2.WinForms.Guna2Shapes adminHeader;
@@ -8282,6 +8318,9 @@
         public Guna.UI2.WinForms.Guna2PictureBox other_overlay1;
         private Guna.UI2.WinForms.Guna2PictureBox other_itemPic1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabPage Checkout;
+        private System.Windows.Forms.Panel receiptPanel;
+        private System.Windows.Forms.Button button2;
     }
 }
 

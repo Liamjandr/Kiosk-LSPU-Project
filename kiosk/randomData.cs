@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,12 +18,12 @@ namespace kiosk
             string ID = "";
             string type = "";
             string description = "";
-            int qty = rand.Next(1,4);
-            decimal price = rand.Next(40,450);
-          
+            int qty = rand.Next(1, 4);
+            decimal price = rand.Next(40, 450);
+
             bool isPaid = rand.Next(0, 2) == 1 ? true : false;
             bool isClaimed = rand.Next(0, 2) == 1 ? true : false;
-            String[] types = { "ID Lace", "Shirt", "Pants"};
+            String[] types = { "ID Lace", "Shirt", "Pants" };
             String[] laceDescription = { "CCS ID Lace", "CCJE ID Lace", "CIT ID Lace", "CHMT ID Lace" };
             String[] shirtDescription = { "CCS Dep Shirt", "CCJE Dep Shirt", "CIT Dep Shirt", "CHMT Dep Shirt" };
             String[] pantsDescription = { "CCS Pants", "CCJE Pants", "CIT Pants", "CHMT Pants" };
@@ -48,6 +50,77 @@ namespace kiosk
                 Cost = price,
                 isPaid = isPaid,
                 isClaimed = isClaimed
+            };
+        }
+
+        public static receiptTemplate generatePurchase()
+        {
+            Random rand = new Random();
+            char[] characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
+
+            //receiptID gen
+            string ID = "";
+            for (int i = 0; i < 8; i++)
+            {
+                int random = rand.Next(characters.Length);
+                ID += characters[random];
+            }
+            //randItem
+            List<OrderItem> items = new List<OrderItem>();
+            items.Add(new OrderItem
+            {
+                Type = "ID Lace",
+                Name = "CCS ID Lace",
+                Price = 50.99m,
+                Quantity = 2
+            });
+            items.Add(new OrderItem
+            {
+                Type = "SHIRT",
+                Name = "CCS-DEPT.",
+                Price = 480.99m,
+                Quantity = 6
+            });
+            items.Add(new OrderItem
+            {
+                Type = "SHIRT",
+                Name = "COE-DEPT.",
+                Price = 480.99m,
+                Quantity = 4
+            });
+            items.Add(new OrderItem
+            {
+                Type = "PANTS",
+                Name = "P.E",
+                Price = 270.99m,
+                Quantity = 2
+            });
+            items.Add(new OrderItem
+            {
+                Type = "SHIRT",
+                Name = "P.E",
+                Price = 360.99m,
+                Quantity = 2
+            });
+
+
+
+            //rand info
+            studentInfo student = new studentInfo
+            {
+                ID = "0000-0000",
+                Name = "Null",
+                Course = "Null"
+            };
+
+
+
+            return new receiptTemplate
+            {
+                receiptID = ID,
+                receiptDate = DateTime.Now,
+                Items = items,
+                Student = student
             };
         }
 
