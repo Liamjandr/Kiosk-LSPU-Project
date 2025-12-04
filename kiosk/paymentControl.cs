@@ -5,17 +5,19 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace kiosk
 {
     public partial class paymentControl : UserControl
     {
-        receiptTemplate receiptData;
         Panel receiptTable { get; }
-        int orderIndex;
+        receiptTemplate receiptData;
         private string checkoutUrl;
+        kioskQR kioskQR = new kioskQR();
         Paymongo Paymongo;
         public paymentControl(receiptTemplate receipt, Panel table)
         {
@@ -30,21 +32,42 @@ namespace kiosk
             textBox1.Text = "Creating Checkout...";
             checkoutUrl = await Paymongo.CreateCheckout(receiptData);
             textBox1.Text = "Please pay using the following link: " + checkoutUrl;
-
+            string qrPath = await kioskQR.GenerateQRCode(checkoutUrl);
+            Image img = File.Exists(qrPath) ? Image.FromFile(qrPath) : null;
+            qrPictureBox.Image = img;
+            
             _ = Task.Run(async () =>
             {
-                string result = await Paymongo.CheckPayment();
+                string result = "";
+                var cancelProcess = new CancellationTokenSource();
+                var payment = Paymongo.CheckPayment(cancelProcess.Token);
+                var expireTime = Task.Delay(30000); //120000 ms = 2 minutes
+                var ifExpire = await Task.WhenAny(payment, expireTime);
+                //Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
 
                 // Return to UI thread
-                Invoke(new Action(() =>
+                Invoke(new Action(async () =>
                 {
-                    richTextBox1.Text = result;
-
-                    for (int i = 0; i < receiptData.Items.Count; i++)
+                    if (ifExpire == payment)
                     {
-                        addPurchase receipt = new addPurchase(receiptData, i);
-                        receiptTable.Controls.Add(receipt);
+                        bool paymentResult = await payment;
+                        if (paymentResult)
+                        {
+                            result = "Payment Successful!";
+                            for (int i = 0; i < receiptData.Items.Count; i++)
+                            {
+                                addPurchase receipt = new addPurchase(receiptData, i);
+                                receiptTable.Controls.Add(receipt);
+                            }
+                        }
+                        else result = "Payment Failed!";
                     }
+                    else
+                    {
+                        result = await Paymongo.CheckExpire();
+                    }
+
+                    richTextBox1.Text = result;
                 }));
             });
         }
@@ -58,6 +81,6 @@ namespace kiosk
         {
             this.Parent.Controls.Remove(this);
         }
-
+         
     }
 }

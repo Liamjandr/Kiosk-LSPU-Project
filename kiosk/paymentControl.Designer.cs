@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.exit = new Guna.UI2.WinForms.Guna2Button();
+            this.qrPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.qrPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Shapes1
@@ -42,7 +42,7 @@
             this.guna2Shapes1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Shapes1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(87)))), ((int)(((byte)(200)))));
             this.guna2Shapes1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
-            this.guna2Shapes1.Location = new System.Drawing.Point(42, 29);
+            this.guna2Shapes1.Location = new System.Drawing.Point(44, 29);
             this.guna2Shapes1.Name = "guna2Shapes1";
             this.guna2Shapes1.PolygonSkip = 1;
             this.guna2Shapes1.Rotate = 0F;
@@ -93,11 +93,23 @@
             this.exit.Text = "exit";
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
+            // qrPictureBox
+            // 
+            this.qrPictureBox.ImageRotate = 0F;
+            this.qrPictureBox.Location = new System.Drawing.Point(108, 295);
+            this.qrPictureBox.Name = "qrPictureBox";
+            this.qrPictureBox.Size = new System.Drawing.Size(196, 196);
+            this.qrPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.qrPictureBox.TabIndex = 22;
+            this.qrPictureBox.TabStop = false;
+            this.qrPictureBox.WaitOnLoad = true;
+            // 
             // paymentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.qrPictureBox);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
@@ -105,6 +117,7 @@
             this.Controls.Add(this.guna2Shapes1);
             this.Name = "paymentControl";
             this.Size = new System.Drawing.Size(836, 605);
+            ((System.ComponentModel.ISupportInitialize)(this.qrPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,10 +126,10 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
-        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Button exit;
+        private Guna.UI2.WinForms.Guna2PictureBox qrPictureBox;
     }
 }
