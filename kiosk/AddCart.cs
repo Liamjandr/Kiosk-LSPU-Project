@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using static kiosk.randomData;
 
 namespace kiosk
 {
@@ -78,7 +79,22 @@ namespace kiosk
             {
                 m.Result = (IntPtr)HTCAPTION;
             }
+
+
+            const int WM_NCLBUTTONDBLCLK = 0xA3; // Non-client area double-click (title bar)
+
+            if (m.Msg == WM_NCLBUTTONDBLCLK)
+            {
+                // Prevent maximize toggle on double-click
+                return; // swallow the message
+            }
+
+            base.WndProc(ref m);
         }
+
+
+       
+
 
         private void itemload()
         {
@@ -224,7 +240,32 @@ namespace kiosk
                 if (picsPanel[i].Visible = true)
                 {
                     mainForm.ttext.Visible = false;
+                    mainForm.confirmBtn.Enabled = true;
+
+
                 }
+
+
+
+                //mainForm.cartItems.Add(new CartItem
+                //{
+                //    Name = ProductName,
+                //    Type = SubProductName,
+                //    Size = SelectedSize,
+                //    Quantity = Quantity,
+                //    Price = decimal.Parse(price.Text)
+                //});  
+
+                CartItem newItem = new CartItem
+                {
+                    Name = ProductName,
+                    Type = SubProductName,
+                    Size = SelectedSize,
+                    Quantity = Quantity,
+                    Price = decimal.Parse(price.Text)
+                };
+                mainForm.cartItems.Add(newItem);
+
 
                 mainForm.cartCounter++; // move to next slot for the next add
             }
@@ -241,6 +282,8 @@ namespace kiosk
             lBtn.Checked = false;
             xBtn.Checked = false;
             xxBtn.Checked = false;
+   
+
 
             qty.Text = "1";
             this.Refresh();

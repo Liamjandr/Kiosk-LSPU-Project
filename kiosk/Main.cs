@@ -14,6 +14,7 @@ using Microsoft.Web.WebView2.Core;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using static Guna.UI2.Native.WinApi;
 using Microsoft.Web.WebView2.WinForms;
+using static kiosk.randomData;
 
 namespace kiosk
 {
@@ -24,6 +25,8 @@ namespace kiosk
 
         string mycon = "datasource=localhost;Database=dbkiosk;username=root;convert zero datetime=true";
 
+        public List<CartItem> cartItems = new List<CartItem>();
+        //public studentInfo studentInfoObject;
 
         // ALL ITEMS
         List<Guna2PictureBox> all_itemPics = new List<Guna2PictureBox>();
@@ -93,6 +96,7 @@ namespace kiosk
 
             SetupItemLists();
             LoadStockStatus();
+            ResetCart();
 
             LoadItemsByType("shirt", top_itemPics, top_itemLabel, top_overlays, top_itemPanels);
             LoadItemsByType("pants", bot_itemPics, bot_itemLabel, bot_overlays, bot_itemPanels);
@@ -829,6 +833,12 @@ namespace kiosk
 
             cartCounter = 0; // reset the counter
             ttext.Visible = true; // show the "empty cart" text if you have one
+            confirmBtn.Enabled = false;
+
+            /////// FOR CLEARING THE RECEIPT
+            // Reset cart items if needed
+            cartItems.Clear();
+             
         }
 
         public void RemoveCartItem(int index)
@@ -856,6 +866,26 @@ namespace kiosk
 
             // show empty-cart text if now empty
             ttext.Visible = (cartCounter == 0);
+
+            if (cartCounter == 0)
+            {
+                confirmBtn.Enabled = false;
+
+                /////// FOR CLEARING THE RECEIPT
+         
+
+                // Reset cart items if needed
+                cartItems.Clear();
+               
+            }
+            else
+                confirmBtn.Enabled = true;
+
+
+         
+
+
+
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -866,7 +896,7 @@ namespace kiosk
         private void firstCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(0);
-            cartCounter = 0;
+            //cartCounter = 0;
 
         }
 
@@ -967,17 +997,45 @@ namespace kiosk
         private async void confirmBtn_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = Checkout;
-            receiptData = randomData.generatePurchase();
+
+            // Pass REAL objects, NOT class names
+            receiptData = randomData.generatePurchase(cartItems);
+
             pdfTemplate pdf = new pdfTemplate(receiptData);
             createPDF.generate(pdf);
+
             webPanel = await Web.viewPDF();
+            receiptPanel.Controls.Clear();
             receiptPanel.Controls.Add(webPanel);
+            webPanel.Dock = DockStyle.Fill;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            // Clear the PDF viewer panel
+            receiptPanel.Controls.Clear();
+
+            // Dispose the webPanel if it exists
+            if (webPanel != null)
+            {
+                webPanel.Dispose();
+                webPanel = null;
+            }
+
+            // Reset receipt data object
+            receiptData = null;
+
+            // Reset cart items if needed
+            cartItems.Clear();
+            ResetCart();
+           
+
+
             tabControl1.SelectedTab = tabPage3;
             receiptPanel.Controls.Remove(webPanel);
+
+           
         }
 
         private void buybutton_Click(object sender, EventArgs e)

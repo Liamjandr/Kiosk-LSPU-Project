@@ -94,7 +94,7 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Location = new System.Drawing.Point(-24, 602);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(790, 49);
+            this.guna2Button2.Size = new System.Drawing.Size(782, 49);
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "Add to cart";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);

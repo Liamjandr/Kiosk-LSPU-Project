@@ -5685,10 +5685,11 @@
             this.confirmBtn.BackColor = System.Drawing.Color.Transparent;
             this.confirmBtn.BorderRadius = 13;
             this.confirmBtn.BorderThickness = 2;
-            this.confirmBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.confirmBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.confirmBtn.DisabledState.BorderColor = System.Drawing.Color.Black;
+            this.confirmBtn.DisabledState.CustomBorderColor = System.Drawing.Color.Black;
             this.confirmBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.confirmBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.confirmBtn.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.confirmBtn.Enabled = false;
             this.confirmBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.confirmBtn.FocusedColor = System.Drawing.Color.White;
             this.confirmBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -5740,6 +5741,7 @@
             // fifthItem
             // 
             this.fifthItem.BackColor = System.Drawing.Color.Transparent;
+            this.fifthItem.Controls.Add(this.fifthCancel);
             this.fifthItem.Controls.Add(this.fifthItemSize);
             this.fifthItem.Controls.Add(this.label46);
             this.fifthItem.Controls.Add(this.label47);
@@ -5750,14 +5752,13 @@
             this.fifthItem.Controls.Add(this.fifthItemQty);
             this.fifthItem.Controls.Add(this.label54);
             this.fifthItem.Controls.Add(this.label55);
-            this.fifthItem.Controls.Add(this.fifthCancel);
             this.fifthItem.Controls.Add(this.fifthPic);
             this.fifthItem.FillColor = System.Drawing.Color.White;
-            this.fifthItem.Location = new System.Drawing.Point(811, 18);
+            this.fifthItem.Location = new System.Drawing.Point(1496, 2);
             this.fifthItem.Name = "fifthItem";
             this.fifthItem.ShadowColor = System.Drawing.Color.Black;
             this.fifthItem.ShadowDepth = 200;
-            this.fifthItem.Size = new System.Drawing.Size(144, 125);
+            this.fifthItem.Size = new System.Drawing.Size(306, 153);
             this.fifthItem.TabIndex = 8;
             this.fifthItem.Visible = false;
             // 
@@ -5819,9 +5820,9 @@
             this.guna2CustomGradientPanel13.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel13.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel13.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2CustomGradientPanel13.Location = new System.Drawing.Point(0, 104);
+            this.guna2CustomGradientPanel13.Location = new System.Drawing.Point(0, 132);
             this.guna2CustomGradientPanel13.Name = "guna2CustomGradientPanel13";
-            this.guna2CustomGradientPanel13.Size = new System.Drawing.Size(144, 21);
+            this.guna2CustomGradientPanel13.Size = new System.Drawing.Size(306, 21);
             this.guna2CustomGradientPanel13.TabIndex = 13;
             // 
             // label50
@@ -5908,9 +5909,9 @@
             this.fifthPic.FillColor = System.Drawing.Color.Transparent;
             this.fifthPic.Image = ((System.Drawing.Image)(resources.GetObject("fifthPic.Image")));
             this.fifthPic.ImageRotate = 0F;
-            this.fifthPic.Location = new System.Drawing.Point(39, 14);
+            this.fifthPic.Location = new System.Drawing.Point(6, 7);
             this.fifthPic.Name = "fifthPic";
-            this.fifthPic.Size = new System.Drawing.Size(69, 95);
+            this.fifthPic.Size = new System.Drawing.Size(144, 130);
             this.fifthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fifthPic.TabIndex = 1;
             this.fifthPic.TabStop = false;
@@ -5918,6 +5919,7 @@
             // fourthItem
             // 
             this.fourthItem.BackColor = System.Drawing.Color.Transparent;
+            this.fourthItem.Controls.Add(this.fourthCancel);
             this.fourthItem.Controls.Add(this.fourthItemSize);
             this.fourthItem.Controls.Add(this.label35);
             this.fourthItem.Controls.Add(this.label36);
@@ -5928,14 +5930,13 @@
             this.fourthItem.Controls.Add(this.fourthItemQty);
             this.fourthItem.Controls.Add(this.label43);
             this.fourthItem.Controls.Add(this.label44);
-            this.fourthItem.Controls.Add(this.fourthCancel);
             this.fourthItem.Controls.Add(this.fourthPic);
             this.fourthItem.FillColor = System.Drawing.Color.White;
-            this.fourthItem.Location = new System.Drawing.Point(637, 18);
+            this.fourthItem.Location = new System.Drawing.Point(1148, 3);
             this.fourthItem.Name = "fourthItem";
             this.fourthItem.ShadowColor = System.Drawing.Color.Black;
             this.fourthItem.ShadowDepth = 200;
-            this.fourthItem.Size = new System.Drawing.Size(144, 125);
+            this.fourthItem.Size = new System.Drawing.Size(306, 153);
             this.fourthItem.TabIndex = 8;
             this.fourthItem.Visible = false;
             // 
@@ -5997,9 +5998,9 @@
             this.guna2CustomGradientPanel12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel12.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel12.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2CustomGradientPanel12.Location = new System.Drawing.Point(0, 104);
+            this.guna2CustomGradientPanel12.Location = new System.Drawing.Point(0, 132);
             this.guna2CustomGradientPanel12.Name = "guna2CustomGradientPanel12";
-            this.guna2CustomGradientPanel12.Size = new System.Drawing.Size(144, 21);
+            this.guna2CustomGradientPanel12.Size = new System.Drawing.Size(306, 21);
             this.guna2CustomGradientPanel12.TabIndex = 13;
             // 
             // label39
@@ -6070,7 +6071,7 @@
             this.fourthCancel.FillColor = System.Drawing.Color.Transparent;
             this.fourthCancel.Image = ((System.Drawing.Image)(resources.GetObject("fourthCancel.Image")));
             this.fourthCancel.ImageRotate = 0F;
-            this.fourthCancel.Location = new System.Drawing.Point(109, 3);
+            this.fourthCancel.Location = new System.Drawing.Point(275, 1);
             this.fourthCancel.Name = "fourthCancel";
             this.fourthCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.fourthCancel.Size = new System.Drawing.Size(32, 28);
@@ -6086,9 +6087,9 @@
             this.fourthPic.FillColor = System.Drawing.Color.Transparent;
             this.fourthPic.Image = ((System.Drawing.Image)(resources.GetObject("fourthPic.Image")));
             this.fourthPic.ImageRotate = 0F;
-            this.fourthPic.Location = new System.Drawing.Point(39, 14);
+            this.fourthPic.Location = new System.Drawing.Point(6, 7);
             this.fourthPic.Name = "fourthPic";
-            this.fourthPic.Size = new System.Drawing.Size(69, 95);
+            this.fourthPic.Size = new System.Drawing.Size(144, 130);
             this.fourthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fourthPic.TabIndex = 1;
             this.fourthPic.TabStop = false;
@@ -6096,6 +6097,7 @@
             // thirdItem
             // 
             this.thirdItem.BackColor = System.Drawing.Color.Transparent;
+            this.thirdItem.Controls.Add(this.thirdCancel);
             this.thirdItem.Controls.Add(this.thirdItemSize);
             this.thirdItem.Controls.Add(this.label24);
             this.thirdItem.Controls.Add(this.label25);
@@ -6106,14 +6108,13 @@
             this.thirdItem.Controls.Add(this.thirdItemQty);
             this.thirdItem.Controls.Add(this.label32);
             this.thirdItem.Controls.Add(this.label33);
-            this.thirdItem.Controls.Add(this.thirdCancel);
             this.thirdItem.Controls.Add(this.thirdPic);
             this.thirdItem.FillColor = System.Drawing.Color.White;
-            this.thirdItem.Location = new System.Drawing.Point(462, 18);
+            this.thirdItem.Location = new System.Drawing.Point(805, 3);
             this.thirdItem.Name = "thirdItem";
             this.thirdItem.ShadowColor = System.Drawing.Color.Black;
             this.thirdItem.ShadowDepth = 200;
-            this.thirdItem.Size = new System.Drawing.Size(144, 125);
+            this.thirdItem.Size = new System.Drawing.Size(306, 153);
             this.thirdItem.TabIndex = 8;
             this.thirdItem.Visible = false;
             // 
@@ -6175,9 +6176,9 @@
             this.guna2CustomGradientPanel11.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel11.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel11.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2CustomGradientPanel11.Location = new System.Drawing.Point(0, 104);
+            this.guna2CustomGradientPanel11.Location = new System.Drawing.Point(0, 132);
             this.guna2CustomGradientPanel11.Name = "guna2CustomGradientPanel11";
-            this.guna2CustomGradientPanel11.Size = new System.Drawing.Size(144, 21);
+            this.guna2CustomGradientPanel11.Size = new System.Drawing.Size(306, 21);
             this.guna2CustomGradientPanel11.TabIndex = 13;
             // 
             // label28
@@ -6248,7 +6249,7 @@
             this.thirdCancel.FillColor = System.Drawing.Color.Transparent;
             this.thirdCancel.Image = ((System.Drawing.Image)(resources.GetObject("thirdCancel.Image")));
             this.thirdCancel.ImageRotate = 0F;
-            this.thirdCancel.Location = new System.Drawing.Point(109, 3);
+            this.thirdCancel.Location = new System.Drawing.Point(275, 1);
             this.thirdCancel.Name = "thirdCancel";
             this.thirdCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.thirdCancel.Size = new System.Drawing.Size(32, 28);
@@ -6264,9 +6265,9 @@
             this.thirdPic.FillColor = System.Drawing.Color.Transparent;
             this.thirdPic.Image = ((System.Drawing.Image)(resources.GetObject("thirdPic.Image")));
             this.thirdPic.ImageRotate = 0F;
-            this.thirdPic.Location = new System.Drawing.Point(39, 14);
+            this.thirdPic.Location = new System.Drawing.Point(6, 7);
             this.thirdPic.Name = "thirdPic";
-            this.thirdPic.Size = new System.Drawing.Size(69, 95);
+            this.thirdPic.Size = new System.Drawing.Size(144, 130);
             this.thirdPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.thirdPic.TabIndex = 1;
             this.thirdPic.TabStop = false;
@@ -6274,6 +6275,7 @@
             // secondItem
             // 
             this.secondItem.BackColor = System.Drawing.Color.Transparent;
+            this.secondItem.Controls.Add(this.secondCancel);
             this.secondItem.Controls.Add(this.secondItemSize);
             this.secondItem.Controls.Add(this.label12);
             this.secondItem.Controls.Add(this.label14);
@@ -6284,14 +6286,13 @@
             this.secondItem.Controls.Add(this.secondItemQty);
             this.secondItem.Controls.Add(this.label21);
             this.secondItem.Controls.Add(this.label22);
-            this.secondItem.Controls.Add(this.secondCancel);
             this.secondItem.Controls.Add(this.secondPic);
             this.secondItem.FillColor = System.Drawing.Color.White;
-            this.secondItem.Location = new System.Drawing.Point(285, 18);
+            this.secondItem.Location = new System.Drawing.Point(465, 3);
             this.secondItem.Name = "secondItem";
             this.secondItem.ShadowColor = System.Drawing.Color.Black;
             this.secondItem.ShadowDepth = 200;
-            this.secondItem.Size = new System.Drawing.Size(144, 125);
+            this.secondItem.Size = new System.Drawing.Size(306, 153);
             this.secondItem.TabIndex = 7;
             this.secondItem.Visible = false;
             // 
@@ -6353,9 +6354,9 @@
             this.guna2CustomGradientPanel10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel10.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel10.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2CustomGradientPanel10.Location = new System.Drawing.Point(0, 104);
+            this.guna2CustomGradientPanel10.Location = new System.Drawing.Point(0, 132);
             this.guna2CustomGradientPanel10.Name = "guna2CustomGradientPanel10";
-            this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(144, 21);
+            this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(306, 21);
             this.guna2CustomGradientPanel10.TabIndex = 13;
             // 
             // label17
@@ -6426,7 +6427,7 @@
             this.secondCancel.FillColor = System.Drawing.Color.Transparent;
             this.secondCancel.Image = ((System.Drawing.Image)(resources.GetObject("secondCancel.Image")));
             this.secondCancel.ImageRotate = 0F;
-            this.secondCancel.Location = new System.Drawing.Point(109, 3);
+            this.secondCancel.Location = new System.Drawing.Point(275, 1);
             this.secondCancel.Name = "secondCancel";
             this.secondCancel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.secondCancel.Size = new System.Drawing.Size(32, 28);
@@ -6442,9 +6443,9 @@
             this.secondPic.FillColor = System.Drawing.Color.Transparent;
             this.secondPic.Image = ((System.Drawing.Image)(resources.GetObject("secondPic.Image")));
             this.secondPic.ImageRotate = 0F;
-            this.secondPic.Location = new System.Drawing.Point(39, 14);
+            this.secondPic.Location = new System.Drawing.Point(6, 7);
             this.secondPic.Name = "secondPic";
-            this.secondPic.Size = new System.Drawing.Size(69, 95);
+            this.secondPic.Size = new System.Drawing.Size(144, 130);
             this.secondPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.secondPic.TabIndex = 1;
             this.secondPic.TabStop = false;
@@ -7443,11 +7444,11 @@
             // 
             // buybutton
             // 
-            this.buybutton.Location = new System.Drawing.Point(569, 275);
+            this.buybutton.Location = new System.Drawing.Point(569, 276);
             this.buybutton.Name = "buybutton";
             this.buybutton.Size = new System.Drawing.Size(75, 23);
             this.buybutton.TabIndex = 2;
-            this.buybutton.Text = "Pay";
+            this.buybutton.Text = "PAY";
             this.buybutton.UseVisualStyleBackColor = true;
             this.buybutton.Click += new System.EventHandler(this.buybutton_Click);
             // 
@@ -7457,7 +7458,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "back";
+            this.button2.Text = "CANCEL";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -7884,7 +7885,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel3;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2Button confirmBtn;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2TabControl fab_overlay;
@@ -8335,6 +8335,7 @@
         private System.Windows.Forms.Button buybutton;
         private System.Windows.Forms.FlowLayoutPanel inventoryTable;
         private System.Windows.Forms.FlowLayoutPanel receiptTable;
+        public Guna.UI2.WinForms.Guna2Button confirmBtn;
     }
 }
 

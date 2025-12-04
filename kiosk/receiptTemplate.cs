@@ -13,7 +13,7 @@ namespace kiosk
         public List<OrderItem> Items { get; set; }
 
         //to remove
-        public studentInfo Student { get; set; }
+        //public studentInfo Student { get; set; }
     }
 
     public class OrderItem
@@ -22,13 +22,14 @@ namespace kiosk
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
+        public string Size { get; set; }
     }
 
-    public class studentInfo
-    {
-        public string ID { get; set; }
-        public string Name { get; set; }
-        public string Course { get; set; }
+    //public class studentInfo
+    //{
+    //    public string ID { get; set; }
+    //    public string Name { get; set; }
+    //    public string Course { get; set; }
 
-    }
+    //}
 }
