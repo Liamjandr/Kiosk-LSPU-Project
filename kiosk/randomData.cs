@@ -5,276 +5,363 @@ using System.Runtime.Remoting.Messaging;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace kiosk
 {
     public class randomData
     {
-        //generate random values for purchase history
-        public static HistoryItem generateHistory()
-        {
-            Random rand = new Random();
-            char[] characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
-            string ID = "";
-            string type = "";
-            string description = "";
-            int qty = rand.Next(1, 4);
-            decimal price = rand.Next(40, 450);
 
-            bool isPaid = rand.Next(0, 2) == 1 ? true : false;
-            bool isClaimed = rand.Next(0, 2) == 1 ? true : false;
-            String[] types = { "ID Lace", "Shirt", "Pants" };
-            String[] laceDescription = { "CCS ID Lace", "CCJE ID Lace", "CIT ID Lace", "CHMT ID Lace" };
-            String[] shirtDescription = { "CCS Dep Shirt", "CCJE Dep Shirt", "CIT Dep Shirt", "CHMT Dep Shirt" };
-            String[] pantsDescription = { "CCS Pants", "CCJE Pants", "CIT Pants", "CHMT Pants" };
-            List<String[]> descriptions = new List<String[]>();
-            descriptions.Add(laceDescription);
-            descriptions.Add(shirtDescription);
-            descriptions.Add(pantsDescription);
-            int randTypeIndex = rand.Next(types.Length);
-            type = types[randTypeIndex];
-            string[] selectedDes = descriptions[randTypeIndex];
-            description = selectedDes[rand.Next(selectedDes.Length)];
-            for (int i = 0; i < 8; i++)
-            {
-                int random = rand.Next(characters.Length);
-                ID += characters[random];
-            }
-            return new HistoryItem
-            {
-                ID = ID,
-                Type = type,
-                Description = description,
-                Date = DateTime.Now.AddDays(-rand.Next(1, 365)),
-                QTY = qty,
-                Cost = price,
-                isPaid = isPaid,
-                isClaimed = isClaimed
-            };
+        //generate random values for purchase history
+        //public static HistoryItem generateHistory()
+        //{
+        //    Random rand = new Random();
+        //    char[] characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
+        //    string ID = "";
+        //    string type = "";
+        //    string description = "";
+        //    int qty = rand.Next(1, 4);
+        //    decimal price = rand.Next(40, 450);
+
+        //    bool isPaid = rand.Next(0, 2) == 1 ? true : false;
+        //    bool isClaimed = rand.Next(0, 2) == 1 ? true : false;
+        //    String[] types = { "ID Lace", "Shirt", "Pants" };
+        //    String[] laceDescription = { "CCS ID Lace", "CCJE ID Lace", "CIT ID Lace", "CHMT ID Lace" };
+        //    String[] shirtDescription = { "CCS Dep Shirt", "CCJE Dep Shirt", "CIT Dep Shirt", "CHMT Dep Shirt" };
+        //    String[] pantsDescription = { "CCS Pants", "CCJE Pants", "CIT Pants", "CHMT Pants" };
+
+        //    String[] itemNAme = { "ID Lace", "Shirt", "Pants" };
+        //    String[] itemType = { "CCS ID Lace", "CCJE ID Lace", "CIT ID Lace", "CHMT ID Lace" };
+        //    String[] itemQty = { "CCS Dep Shirt", "CCJE Dep Shirt", "CIT Dep Shirt", "CHMT Dep Shirt" };
+        //    String[] itemSelectedSize = { "CCS Pants", "CCJE Pants", "CIT Pants", "CHMT Pants" };
+        //    String[] itemPrice = { "CCS Pants", "CCJE Pants", "CIT Pants", "CHMT Pants" };
+
+
+        //    List<String[]> descriptions = new List<String[]>();
+        //    descriptions.Add(laceDescription);
+        //    descriptions.Add(shirtDescription);
+        //    descriptions.Add(pantsDescription);
+        //    int randTypeIndex = rand.Next(types.Length);
+        //    type = types[randTypeIndex];
+        //    string[] selectedDes = descriptions[randTypeIndex];
+        //    description = selectedDes[rand.Next(selectedDes.Length)];
+        //    for (int i = 0; i < 8; i++)
+        //    {
+        //        int random = rand.Next(characters.Length);
+        //        ID += characters[random];
+        //    }
+        //    return new HistoryItem
+        //    {
+        //        ID = ID,
+        //        Type = type,
+        //        Description = description,
+        //        Date = DateTime.Now.AddDays(-rand.Next(1, 365)),
+        //        QTY = qty,
+        //        Cost = price,
+        //        isPaid = isPaid,
+        //        isClaimed = isClaimed
+        //    };
+        //}
+
+
+
+
+        //public static receiptTemplate generatePurchase()
+        //{
+        //    Random rand = new Random();
+        //    char[] characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
+
+        //    //receiptID gen
+        //    string ID = "";
+        //    for (int i = 0; i < 8; i++)
+        //    {
+        //        int random = rand.Next(characters.Length);
+        //        ID += characters[random];
+        //    }
+        //    //randItem
+        //    List<OrderItem> items = new List<OrderItem>();
+        //    items.Add(new OrderItem
+        //    {
+        //        Type = "ID Lace",
+        //        Name = "CCS ID Lace",
+        //        Price = 50.99m,
+        //        Quantity = 2
+        //    });
+        //    items.Add(new OrderItem
+        //    {
+        //        Type = "SHIRT",
+        //        Name = "CCS-DEPT.",
+        //        Price = 480.99m,
+        //        Quantity = 6
+        //    });
+        //    items.Add(new OrderItem
+        //    {
+        //        Type = "SHIRT",
+        //        Name = "COE-DEPT.",
+        //        Price = 480.99m,
+        //        Quantity = 4
+        //    });
+        //    items.Add(new OrderItem
+        //    {
+        //        Type = "PANTS",
+        //        Name = "P.E",
+        //        Price = 270.99m,
+        //        Quantity = 2
+        //    });
+        //    items.Add(new OrderItem
+        //    {
+        //        Type = "SHIRT",
+        //        Name = "P.E",
+        //        Price = 360.99m,
+        //        Quantity = 2
+        //    });
+
+
+
+        //    //rand info
+        //    studentInfo student = new studentInfo
+        //    {
+        //        ID = "0000-0000",
+        //        Name = "Null",
+        //        Course = "Null"
+        //    };
+
+
+
+        //    return new receiptTemplate
+        //    {
+        //        receiptID = ID,
+        //        receiptDate = DateTime.Now,
+        //        Items = items,
+        //        Student = student
+        //    };
+        //}
+
+        //public static InventoryItem GetInventoryItem(string inputID) {
+        //    if (inputID == "1")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "ID Lace",
+        //            Description = "CCS ID Lace",
+        //            Stock = 100,
+        //            Price = 50.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "2")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "ID Lace",
+        //            Description = "CCJE ID Lace",
+        //            Stock = 180,
+        //            Price = 50.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "3")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "ID Lace",
+        //            Description = "CIT ID Lace",
+        //            Stock = 610,
+        //            Price = 50.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "4")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "ID Lace",
+        //            Description = "SCHMT ID Lace",
+        //            Stock = 180,
+        //            Price = 50.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "5")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "Shirt",
+        //            Description = "CCS Dep Shirt",
+        //            Stock = 10,
+        //            Price = 449.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "6")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "Shirt",
+        //            Description = "CCJE Dep Shirt",
+        //            Stock = 10,
+        //            Price = 449.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "7")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "Shirt",
+        //            Description = "CIT Dep Shirt",
+        //            Stock = 10,
+        //            Price = 449.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "8")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "Shirt",
+        //            Description = "CHMT Dep Shirt",
+        //            Stock = 10,
+        //            Price = 449.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "9")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "Pants",
+        //            Description = "CCS Pants",
+        //            Stock = 8,
+        //            Price = 299.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "10")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "Pants",
+        //            Description = "CCJE Pants",
+        //            Stock = 8,
+        //            Price = 299.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "11")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "Pants",
+        //            Description = "CIT Pants",
+        //            Stock = 8,
+        //            Price = 299.99m,
+        //            isEnable = true
+        //        };
+        //    if (inputID == "12")
+        //        return new InventoryItem
+        //        {
+        //            ID = inputID,
+        //            Type = "Pants",
+        //            Description = "CHMT Pants",
+        //            Stock = 8,
+        //            Price = 299.99m,
+        //            isEnable = true
+        //        };
+
+        //String[] types = { "ID Lace", "Shirt", "Pants" };
+        //String[] laceDescription = { "CCS ID Lace", "CCJE ID Lace", "CIT ID Lace", "CHMT ID Lace" };
+        //String[] shirtDescription = { "CCS Dep Shirt", "CCJE Dep Shirt", "CIT Dep Shirt", "CHMT Dep Shirt" };
+        //String[] pantsDescription = { "CCS Pants", "CCJE Pants", "CIT Pants", "CHMT Pants" };        
+        //return new InventoryItem
+        //{
+        //    ID = inputID,
+        //    Type = "Unknown",
+        //    Description = "Unknown",
+        //    Stock = 0,
+        //    Price = 0.00m,
+        //    isEnable = false
+        //};
+        //a
+        //    }
+        //}
+
+
+        public class HistoryItem
+        {
+            public string ID { get; set; }
+            public string Type { get; set; }
+            public string Description { get; set; }
+            public DateTime Date { get; set; }
+            public int QTY { get; set; }
+            public decimal Cost { get; set; }
+            public bool isPaid { get; set; }
+            public bool isClaimed { get; set; }
         }
 
-        public static receiptTemplate generatePurchase()
+
+
+        public static receiptTemplate generatePurchase(
+      List<CartItem> cart)
+        //studentInfo studentInfoObject;
         {
             Random rand = new Random();
-            char[] characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
+            char[] chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
 
-            //receiptID gen
-            string ID = "";
+            string receiptID = "";
             for (int i = 0; i < 8; i++)
-            {
-                int random = rand.Next(characters.Length);
-                ID += characters[random];
-            }
-            //randItem
-            List<OrderItem> items = new List<OrderItem>();
-            items.Add(new OrderItem
-            {
-                Type = "ID Lace",
-                Name = "CCS ID Lace",
-                Price = 50.99m,
-                Quantity = 2
-            });
-            items.Add(new OrderItem
-            {
-                Type = "SHIRT",
-                Name = "CCS-DEPT.",
-                Price = 480.99m,
-                Quantity = 6
-            });
-            items.Add(new OrderItem
-            {
-                Type = "SHIRT",
-                Name = "COE-DEPT.",
-                Price = 480.99m,
-                Quantity = 4
-            });
-            items.Add(new OrderItem
-            {
-                Type = "PANTS",
-                Name = "P.E",
-                Price = 270.99m,
-                Quantity = 2
-            });
-            items.Add(new OrderItem
-            {
-                Type = "SHIRT",
-                Name = "P.E",
-                Price = 360.99m,
-                Quantity = 2
-            });
-
-
-
-            //rand info
-            studentInfo student = new studentInfo
-            {
-                ID = "0000-0000",
-                Name = "Null",
-                Course = "Null"
-            };
-
-
+                receiptID += chars[rand.Next(chars.Length)];
 
             return new receiptTemplate
             {
-                receiptID = ID,
+                receiptID = receiptID,
                 receiptDate = DateTime.Now,
-                Items = items,
-                Student = student
-            };
+                Items = cart.Select(item => new OrderItem
+                {
+                    Type = item.Type,
+                    Name = item.Name,
+                    Size = item.Size,
+                    Quantity = item.Quantity,
+                    Price = item.Price
+                }).ToList(),
+               
+
+            //Student = student
+        };
         }
 
-        public static InventoryItem GetInventoryItem(string inputID) {
-            if (inputID == "1")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "ID Lace",
-                    Description = "CCS ID Lace",
-                    Stock = 100,
-                    Price = 50.99m,
-                    isEnable = true
-                };
-            if (inputID == "2")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "ID Lace",
-                    Description = "CCJE ID Lace",
-                    Stock = 180,
-                    Price = 50.99m,
-                    isEnable = true
-                };
-            if (inputID == "3")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "ID Lace",
-                    Description = "CIT ID Lace",
-                    Stock = 610,
-                    Price = 50.99m,
-                    isEnable = true
-                };
-            if (inputID == "4")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "ID Lace",
-                    Description = "SCHMT ID Lace",
-                    Stock = 180,
-                    Price = 50.99m,
-                    isEnable = true
-                };
-            if (inputID == "5")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "Shirt",
-                    Description = "CCS Dep Shirt",
-                    Stock = 10,
-                    Price = 449.99m,
-                    isEnable = true
-                };
-            if (inputID == "6")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "Shirt",
-                    Description = "CCJE Dep Shirt",
-                    Stock = 10,
-                    Price = 449.99m,
-                    isEnable = true
-                };
-            if (inputID == "7")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "Shirt",
-                    Description = "CIT Dep Shirt",
-                    Stock = 10,
-                    Price = 449.99m,
-                    isEnable = true
-                };
-            if (inputID == "8")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "Shirt",
-                    Description = "CHMT Dep Shirt",
-                    Stock = 10,
-                    Price = 449.99m,
-                    isEnable = true
-                };
-            if (inputID == "9")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "Pants",
-                    Description = "CCS Pants",
-                    Stock = 8,
-                    Price = 299.99m,
-                    isEnable = true
-                };
-            if (inputID == "10")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "Pants",
-                    Description = "CCJE Pants",
-                    Stock = 8,
-                    Price = 299.99m,
-                    isEnable = true
-                };
-            if (inputID == "11")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "Pants",
-                    Description = "CIT Pants",
-                    Stock = 8,
-                    Price = 299.99m,
-                    isEnable = true
-                };
-            if (inputID == "12")
-                return new InventoryItem
-                {
-                    ID = inputID,
-                    Type = "Pants",
-                    Description = "CHMT Pants",
-                    Stock = 8,
-                    Price = 299.99m,
-                    isEnable = true
-                };
+        public class CartItem
+        {
+            public string Name { get; set; }
+            public string Type { get; set; }
+            public string Size { get; set; }
+            public int Quantity { get; set; }
+            public decimal Price { get; set; }
 
-            //String[] types = { "ID Lace", "Shirt", "Pants" };
-            //String[] laceDescription = { "CCS ID Lace", "CCJE ID Lace", "CIT ID Lace", "CHMT ID Lace" };
-            //String[] shirtDescription = { "CCS Dep Shirt", "CCJE Dep Shirt", "CIT Dep Shirt", "CHMT Dep Shirt" };
-            //String[] pantsDescription = { "CCS Pants", "CCJE Pants", "CIT Pants", "CHMT Pants" };        
-            return new InventoryItem
+            public decimal Total => Quantity * Price;
+        }
+
+        public List<CartItem> GetCartItems()
+        {
+            Main m = new Main();
+
+            List<CartItem> list = new List<CartItem>();
+
+            Label[] productName = { m.firstItemName, m.secondItemName, m.thirdItemName, m.fourthItemName, m.fifthItemName };
+            Label[] prodType = { m.firstItemType, m.secondItemType, m.thirdItemType, m.fourthItemType, m.fifthItemType };
+            Label[] prodQty = { m.firstItemQty, m.secondItemQty, m.thirdItemQty, m.fourthItemQty, m.fifthItemQty };
+            Label[] prodSize = { m.firstItemSize, m.secondItemSize, m.thirdItemSize, m.fourthItemSize, m.fifthItemSize };
+            Label[] prodPrice = { m.firstItemPrice, m.secondItemPrice, m.thirdItemPrice, m.fourthItemPrice, m.fifthItemPrice };
+
+            for (int i = 0; i < productName.Length; i++)
             {
-                ID = inputID,
-                Type = "Unknown",
-                Description = "Unknown",
-                Stock = 0,
-                Price = 0.00m,
-                isEnable = false
-            };
-//a
+                if (!string.IsNullOrWhiteSpace(productName[i].Text))
+                {
+                    list.Add(new CartItem
+                    {
+                        Name = productName[i].Text,
+                        Type = prodType[i].Text,
+                        Size = prodSize[i].Text,
+                        Quantity = int.Parse(prodQty[i].Text),
+                        Price = decimal.Parse(prodPrice[i].Text)
+                    });
+                }
+            }
+
+            return list;
         }
+
+
+
     }
-
-
-    public class HistoryItem
-    {
-        public string ID { get; set; }
-        public string Type { get; set; }
-        public string Description { get; set; }
-        public DateTime Date { get; set; }
-        public int QTY { get; set; }
-        public decimal Cost { get; set; }
-        public bool isPaid { get; set; }
-        public bool isClaimed { get; set; }
-    }
-
- 
 }

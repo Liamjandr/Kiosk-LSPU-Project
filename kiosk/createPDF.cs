@@ -131,31 +131,31 @@ namespace kiosk
                     r.RelativeItem().Column(col => {
 
                         col.Item().Text(text => {
-                            text.Span("Student ID: ").Bold().FontSize(10);
-                            text.Span(receipt.Student.ID).FontSize(10);
+                            text.Span("Receipt ID: ").Bold().FontSize(10);
+                            text.Span(receipt.receiptID).FontSize(10);
                         });
 
                         col.Item().Text(text => {
-                            text.Span("Name: ").Bold().FontSize(10);
-                            text.Span(receipt.Student.Name).FontSize(10);
+                            text.Span(" ").Bold().FontSize(10);
+                            //text.Span(receipt.Student.Name).FontSize(10);
                         });
 
-                        col.Item().Text(text => {
-                            text.Span("Course: ").Bold().FontSize(10);
-                            text.Span(receipt.Student.Course).FontSize(10);
-                        });
+                        //col.Item().Text(text => {
+                        //    text.Span(" ").Bold().FontSize(10);
+                        //    text.Span(receipt.Student.Course).FontSize(10);
+                        //});
 
                     });
 
                     r.RelativeItem().Column(col => {
 
                         col.Item().AlignRight().Text(text => {
-                            text.Span("Receipt ID: ").Bold().FontSize(10);
-                            text.Span(receipt.receiptID).FontSize(10);
-                        });
-                        col.Item().AlignRight().Text(text => {
                             text.Span("Date: ").Bold().FontSize(10);
                             text.Span(receipt.receiptDate.ToString()).FontSize(10);
+                        });
+                        col.Item().AlignRight().Text(text => {
+                            text.Span(" ").Bold().FontSize(10);
+                            //text.Span(receipt.receiptDate.ToString()).FontSize(10);
                         });
 
                     });
@@ -163,32 +163,56 @@ namespace kiosk
 
                 Column.Item().Padding(2, Unit.Millimetre).Border(2).Row(row =>
                 {
-                    row.RelativeItem(1).Background(Colors.Grey.Darken2).Border(1).AlignCenter().Padding(1, Unit.Millimetre).Text("QTY").Bold().FontSize(10).FontColor(Colors.White);
-                    row.RelativeItem(4).Background(Colors.Grey.Darken2).Border(1).AlignCenter().Padding(1, Unit.Millimetre).Text("Description").Bold().FontSize(10).FontColor(Colors.White);
-                    row.RelativeItem(2).Background(Colors.Grey.Darken2).Border(1).AlignCenter().Padding(1, Unit.Millimetre).Text("Unit Price").Bold().FontSize(10).FontColor(Colors.White);
-                    row.RelativeItem(2).Background(Colors.Grey.Darken2).Border(1).AlignCenter().Padding(1, Unit.Millimetre).Text("Amount").Bold().FontSize(10).FontColor(Colors.White);
+                    row.RelativeItem(3).Background(Colors.Grey.Darken2).Border(1)
+                        .AlignCenter().Padding(1, Unit.Millimetre)
+                        .Text("Item").Bold().FontSize(10).FontColor(Colors.White);
+
+                    row.RelativeItem(3).Background(Colors.Grey.Darken2).Border(1)
+                        .AlignCenter().Padding(1, Unit.Millimetre)
+                        .Text("Type").Bold().FontSize(10).FontColor(Colors.White);
+
+                    row.RelativeItem(1).Background(Colors.Grey.Darken2).Border(1)
+                        .AlignCenter().Padding(1, Unit.Millimetre)
+                        .Text("Size").Bold().FontSize(10).FontColor(Colors.White);
+
+                    row.RelativeItem(1).Background(Colors.Grey.Darken2).Border(1)
+                        .AlignCenter().Padding(1, Unit.Millimetre)
+                        .Text("QTY").Bold().FontSize(10).FontColor(Colors.White);
+
+                    row.RelativeItem(2).Background(Colors.Grey.Darken2).Border(1)
+                        .AlignCenter().Padding(1, Unit.Millimetre)
+                        .Text("Unit Price").Bold().FontSize(10).FontColor(Colors.White);
+
+                    row.RelativeItem(2).Background(Colors.Grey.Darken2).Border(1)
+                        .AlignCenter().Padding(1, Unit.Millimetre)
+                        .Text("Amount").Bold().FontSize(10).FontColor(Colors.White);
                 });
+
 
                 //temp
                 int totalPrice = 0;
 
                 for (int i = 0; i < receipt.Items.Count; i++)
                 {
-                    Column.Item().PaddingTop(1, Unit.Millimetre).PaddingHorizontal(2, Unit.Millimetre).Row(row =>
+                    Column.Item().PaddingTop(3, Unit.Millimetre).PaddingHorizontal(2, Unit.Millimetre).Row(row =>
                     {
-                        row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Quantity.ToString()).Bold().FontSize(10);
-                        row.RelativeItem(4).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Name).FontSize(10);
+                        row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Name).FontSize(10);
+                        row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Type).FontSize(10);
+                        row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Size).FontSize(10);
+                        row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Quantity.ToString()).FontSize(10);
                         row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Price.ToString()).FontSize(10);
                         row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text((receipt.Items[i].Price * receipt.Items[i].Quantity).ToString()).FontSize(10);
                     });
-
                     totalPrice += (int)(receipt.Items[i].Price * receipt.Items[i].Quantity);
+
                 }
 
                 Column.Item().PaddingTop(5, Unit.Millimetre).PaddingHorizontal(2, Unit.Millimetre).Row(row =>
                 {
+                    row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
-                    row.RelativeItem(4).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Total: ").Bold().FontSize(10);
                     row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text(totalPrice.ToString()).FontSize(10);
                 });
