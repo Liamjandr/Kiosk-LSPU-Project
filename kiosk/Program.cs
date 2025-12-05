@@ -21,6 +21,7 @@ namespace kiosk
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
             //b
+            //a
         }
     }
 }
