@@ -60,12 +60,15 @@ namespace kiosk
 
         AddCart ac;
 
+        //--------------------------------- Admin Section ---------------------------------
         //Admin Inventory
         List<InventoryItem> InventoryData = new List<InventoryItem>();
         List<AddInventory> Inventory  = new List<AddInventory>();
         //Receipt Data
         receiptTemplate receiptData = new receiptTemplate();
         createPDF createPDF = new createPDF();
+        //
+        WebView2 webPanel;
 
         public int cartCounter = 0;
         public Main()
@@ -924,7 +927,7 @@ namespace kiosk
 
         //------------------------------------------------------------------------------------------------------------------------
         // Admin Functionalities
-        private void adminIntialize()
+        private async void adminIntialize()
         {
             //AddInventory sample = new AddInventory(randomData.GetInventoryItem("1"));
             //inventoryTable.Controls.Add(sample);
@@ -964,36 +967,69 @@ namespace kiosk
                     MessageBox.Show("Database error: " + ex.Message);
                 }
             }
-            //Display the inventory items
-            //for (int i = 1; i <= 12; i++)
-            //{
-            //    InventoryData.Add(randomData.GetInventoryItem(i.ToString()));
-            //    Inventory.Add(new AddInventory(InventoryData[i-1]));
-            //}
             foreach (AddInventory item in Inventory)
             {
                 inventoryTable.Controls.Add(item);
             }
+
+            admin_tabControl.SelectedTab = admin_dashboard;
+            activeCBox();
+            //await loadSort();
         }
 
         private void dashboardButton_Click(object sender, EventArgs e)
         {
             admin_tabControl.SelectedTab = admin_dashboard;
+            activeCBox();
         }
 
         private void inventoryButton_Click(object sender, EventArgs e)
         {
             admin_tabControl.SelectedTab = admin_inventory;
+            activeCBox();
         }
+        private void HistoryButton_Click(object sender, EventArgs e)
+        {
+            admin_tabControl.SelectedTab = admin_purchaseHistory;
+            activeCBox();
+        }
+        void activeCBox()
+        {
+            adminSort.SelectedIndex = 0;
+            if (admin_tabControl.SelectedTab == admin_dashboard)
+            {
 
+                adminSort.Visible = false;
+            }
+            else if (admin_tabControl.SelectedTab == admin_inventory)
+            {
+                adminSort.Visible = true;
+                if (adminSort.Items.Contains("Date")) adminSort.Items.Remove("Date");
+                if (!adminSort.Items.Contains("Stock")) 
+                { 
+                    adminSort.Items.Add("By Stock (Highest)");
+                    adminSort.Items.Add("By Stock (Lowest)");
+                }
+            }
+            else if (admin_tabControl.SelectedTab == admin_purchaseHistory)
+            {
+                adminSort.Visible = true;
+                if (adminSort.Items.Contains("Stock"))
+                {
+                    adminSort.Items.Remove("By Stock (Highest)");
+                    adminSort.Items.Remove("By Stock (Lowest)");
+                }
+                if (!adminSort.Items.Contains("Date")) adminSort.Items.Add("Date");
+            }
+        }
         private void receipt_Click(object sender, EventArgs e)
         {
             //addPurchase receipt = new addPurchase(receiptData);
             //receiptTable.Controls.Add(receipt);
         }
 
+      
         //checkout tab
-        WebView2 webPanel;
         private async void confirmBtn_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = Checkout;
@@ -1050,6 +1086,63 @@ namespace kiosk
             //addPurchase receipt = new addPurchase(randomData.generateHistory());
             //receiptTable.Controls.Add(receipt);
         }
+
+        private void selectedSort()
+        {
+            //adminSort.Items.
+        }
+
+        private void adminSort_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<AddInventory> inventoryByDescription = Inventory.OrderBy(i => i.Description.Text).ToList();
+            List<AddInventory> inventoryByCost = Inventory.OrderBy(i => i.Cost.Text).ToList();
+            List<AddInventory> inventoryByStock = Inventory.OrderBy(i => Convert.ToInt32(i.Stock.Text)).ToList();
+
+            if (admin_tabControl.SelectedTab == admin_inventory)
+                switch (adminSort.SelectedItem.ToString()) 
+                {
+                    case "Default":
+                        inventoryTable.Controls.Clear();
+                        foreach (AddInventory item in Inventory) inventoryTable.Controls.Add(item);
+                        break;
+                    case "Alphabetical (A-Z)":
+                        inventoryTable.Controls.Clear();
+                        foreach (AddInventory item in inventoryByDescription) inventoryTable.Controls.Add(item);
+                        break;
+                    case "Alphabetical (Z-A)":
+                        inventoryTable.Controls.Clear();
+                        inventoryByDescription.Reverse();
+                        foreach (AddInventory item in inventoryByDescription) inventoryTable.Controls.Add(item);
+                        break;
+                    case "By Cost (Highest)":
+                        inventoryTable.Controls.Clear();
+                        inventoryByCost.Reverse();
+                        foreach (AddInventory item in inventoryByCost) inventoryTable.Controls.Add(item);
+                        break;
+                    case "By Cost (Lowest)":
+                        inventoryTable.Controls.Clear();
+                        foreach (AddInventory item in inventoryByCost) inventoryTable.Controls.Add(item);
+                        break;
+                    case "By Stock (Highest)":
+                        inventoryTable.Controls.Clear();
+                        inventoryByStock.Reverse();
+                        foreach (AddInventory item in inventoryByStock) inventoryTable.Controls.Add(item);
+                        break;
+                    case "By Stock (Lowest)":
+                        inventoryTable.Controls.Clear();
+                        foreach (AddInventory item in inventoryByStock) inventoryTable.Controls.Add(item);
+                        break;
+                    //case "":
+                    //    break;
+                    default:
+                        break;
+                }
+        }   
+
+        
+
+        //class
     }
-    }
+    //namespace
+}
 

@@ -19,6 +19,7 @@ namespace kiosk
         private string checkoutUrl;
         kioskQR kioskQR = new kioskQR();
         Paymongo Paymongo;
+        List<addPurchase> purchaseList = new List<addPurchase>();
         public paymentControl(receiptTemplate receipt, Panel table)
         {
             InitializeComponent();
@@ -56,8 +57,11 @@ namespace kiosk
                             result = "Payment Successful!";
                             for (int i = 0; i < receiptData.Items.Count; i++)
                             {
-                                addPurchase receipt = new addPurchase(receiptData, i);
-                                receiptTable.Controls.Add(receipt);
+                                purchaseList.Add(new addPurchase(receiptData, i));
+                            }
+                            foreach(addPurchase purchase in purchaseList)
+                            {
+                                receiptTable.Controls.Add(purchase);
                             }
                         }
                         else result = "Payment Failed!";
