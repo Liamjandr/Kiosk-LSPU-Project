@@ -144,12 +144,6 @@
     <Compile Include="AddInventory.Designer.cs">
       <DependentUpon>AddInventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="adminSorter.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="adminSorter.Designer.cs">
-      <DependentUpon>adminSorter.cs</DependentUpon>
-    </Compile>
     <Compile Include="createPDF.cs" />
     <Compile Include="kioskQR.cs" />
     <Compile Include="Main.cs">
@@ -181,9 +175,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddInventory.resx">
       <DependentUpon>AddInventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="adminSorter.resx">
-      <DependentUpon>adminSorter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
