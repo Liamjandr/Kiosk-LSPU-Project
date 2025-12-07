@@ -34,9 +34,12 @@ namespace kiosk
             checkoutUrl = await Paymongo.CreateCheckout(receiptData);
             textBox1.Text = "Please pay using the following link: " + checkoutUrl;
             string qrPath = await kioskQR.GenerateQRCode(checkoutUrl);
-            Image img = File.Exists(qrPath) ? Image.FromFile(qrPath) : null;
-            qrPictureBox.Image = img;
-            
+            using (var fs = new FileStream(qrPath, FileMode.Open, FileAccess.Read))
+            {
+                Image img = Image.FromStream(fs);
+                qrPictureBox.Image = new Bitmap(img); //avoid locking
+            }
+
             _ = Task.Run(async () =>
             {
                 string result = "";

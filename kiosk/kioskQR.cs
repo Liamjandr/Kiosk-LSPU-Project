@@ -28,6 +28,7 @@ namespace kiosk
                 var qrData = QRCodeGenerator.GenerateQrCode(urlData, QRCodeGenerator.ECCLevel.Q);
                 PngByteQRCode qrCode = new PngByteQRCode(qrData);
                 byte[] qrCodeAsPngByteArr = qrCode.GetGraphic(20);
+
                 using (var ms = new MemoryStream(qrCodeAsPngByteArr))
                 {
                     img = new Bitmap(ms);
@@ -35,13 +36,14 @@ namespace kiosk
 
 
                 string folder = Path.Combine(Application.StartupPath, "QrCode");
-                if (!Directory.Exists(folder))
-                    Directory.CreateDirectory(folder);
+
+                if (!Directory.Exists(folder)) Directory.CreateDirectory(folder);
                 string filePath = Path.Combine(folder, "QrLink.png");
+
+                if (File.Exists(filePath)) File.Delete(filePath);
+
                 img.Save(filePath, ImageFormat.Png);
-                //var test = File.Create(filePath);
-                //test.Write(img);
-                //test.Flush();
+
                 return filePath;
             }
             catch(Exception e)
