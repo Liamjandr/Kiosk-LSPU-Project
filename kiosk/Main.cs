@@ -71,6 +71,8 @@ namespace kiosk
         //Admin Inventory
         List<InventoryItem> InventoryData = new List<InventoryItem>();
         List<AddInventory> Inventory  = new List<AddInventory>();
+        //Admin Receipts
+        List<addPurchase> receiptHistory= new List<addPurchase>();
         //Receipt Data
         receiptTemplate receiptData = new receiptTemplate();
         createPDF createPDF = new createPDF();
@@ -993,19 +995,21 @@ namespace kiosk
         // Admin Functionalities
         private async void adminIntialize()
         {
-            //AddInventory sample = new AddInventory(randomData.GetInventoryItem("1"));
-            //inventoryTable.Controls.Add(sample);
-
             using (MySqlConnection conn = new MySqlConnection(mycon))
             {
                 try
                 {
                     conn.Open();
 
-                    string query = "SELECT * FROM tbitems ORDER BY itemId ASC";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    //Inventory Table
+                    string itemQuery = "SELECT * FROM tbitems ORDER BY itemId ASC";
+                    MySqlCommand itemCmd = new MySqlCommand(itemQuery, conn);
+                    //Purchase History Table
+                    string historyQuery = "SELECT * FROM tbHistory ORDER BY ReceiptID ASC";
+                    MySqlCommand historyCmd = new MySqlCommand(historyQuery, conn);
 
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
+
+                    using (MySqlDataReader reader = itemCmd.ExecuteReader())
                     {
                         while (reader.Read())
                         {
@@ -1025,16 +1029,60 @@ namespace kiosk
                             //Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
                         }  
                     }
+
+                    using (MySqlDataReader readHistory = historyCmd.ExecuteReader())
+                    {
+                        while (readHistory.Read())
+                        {
+                            //cmd.Parameters.AddWithValue("@ReceiptID", receipt.receiptID);
+                            //cmd.Parameters.AddWithValue("@DateTime", receipt.receiptDate);
+                            //cmd.Parameters.AddWithValue("@Transaction", transactionId);
+                            //cmd.Parameters.AddWithValue("@ItemID", item.ItemID);
+                            //cmd.Parameters.AddWithValue("@itemName", item.Name);
+                            //cmd.Parameters.AddWithValue("@itemType", item.Type);
+                            //cmd.Parameters.AddWithValue("@itemSize", item.Size);
+                            //cmd.Parameters.AddWithValue("@itemQTY", item.Quantity);
+                            //cmd.Parameters.AddWithValue("@itemPrice", item.Price);
+                            //cmd.Parameters.AddWithValue("@Total", receipt.TotalAmount);
+                            //cmd.Parameters.AddWithValue("@Cash", receipt.Cash);
+                            //cmd.Parameters.AddWithValue("@Change", receipt.Change);
+                            //receiptHistory.Add(
+                            //    new addPurchase(
+
+
+
+                            //    )
+                            //);
+
+                            //Inventory.Add(
+                            //    new AddInventory(
+                            //        new InventoryItem
+                            //        {
+                            //            ID = readHistory.GetInt32("itemId").ToString(),
+                            //            Type = readHistory.GetString("itemType"),
+                            //            Description = readHistory.GetString("itemName"),
+                            //            Price = readHistory.GetInt32("itemPrice"),
+                            //            Stock = readHistory.GetInt32("itemStock"),
+                            //            ImagePath = readHistory.GetString("IMAGE_PATH")
+                            //        }
+                            //    )
+                            //);
+                            //Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
+                        }
+                    }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Database error: " + ex.Message);
                 }
             }
+
             foreach (AddInventory item in Inventory)
             {
                 inventoryTable.Controls.Add(item);
             }
+
+
 
             admin_tabControl.SelectedTab = admin_dashboard;
             activeCBox();
@@ -1086,11 +1134,6 @@ namespace kiosk
                 if (!adminSort.Items.Contains("Date")) adminSort.Items.Add("Date");
             }
         }
-        private void receipt_Click(object sender, EventArgs e)
-        {
-            //addPurchase receipt = new addPurchase(receiptData);
-            //receiptTable.Controls.Add(receipt);
-        }
 
       
         //checkout tab
@@ -1099,7 +1142,7 @@ namespace kiosk
             tabControl1.SelectedTab = Checkout;
 
            
-            receiptData = randomData.generatePurchase(cartItems);
+            receiptData = Cart.generatePurchase(cartItems);
 
             pdfTemplate pdf = new pdfTemplate(receiptData);
             createPDF.generate(pdf);
@@ -1232,61 +1275,7 @@ namespace kiosk
 
 
         ///-------------------------------------------------------------------------------------------------- for saving the dets/info to history...........................
-        public static void SaveReceipt(receiptTemplate receipt, string transactionId)
-        {
-            string mycon = "server=localhost;Database=dbkiosk;Uid=root;Convert Zero Datetime=True;";
-
-            using (MySqlConnection conn = new MySqlConnection(mycon))
-            {
-                conn.Open();
-
-                using (var sqlTransaction = conn.BeginTransaction())
-                {
-                    try
-                    {
-                        foreach (var item in receipt.Items)
-                        {
-                            if (item == null) continue;
-
-                            // optional: assign a temporary ItemID if missing
-                            if (item.ItemID == 0)
-                                item.ItemID = new Random().Next(1000, 9999);
-
-                            string query = @"
-                    INSERT INTO tbHistory
-                    (`ReceiptID`, `DateTime`, `Transaction`, `ItemID`, `itemName`, `itemType`, `itemSize`, `itemQTY`, `itemPrice`, `Total`, `Cash`, `Change`)
-                    VALUES
-                    (@ReceiptID, @DateTime, @Transaction, @ItemID, @itemName, @itemType, @itemSize, @itemQTY, @itemPrice, @Total, @Cash, @Change)";
-
-                            using (MySqlCommand cmd = new MySqlCommand(query, conn, sqlTransaction))
-                            {
-                                cmd.Parameters.AddWithValue("@ReceiptID", receipt.receiptID);
-                                cmd.Parameters.AddWithValue("@DateTime", receipt.receiptDate);
-                                cmd.Parameters.AddWithValue("@Transaction", transactionId);
-                                cmd.Parameters.AddWithValue("@ItemID", item.ItemID);
-                                cmd.Parameters.AddWithValue("@itemName", item.Name);
-                                cmd.Parameters.AddWithValue("@itemType", item.Type);
-                                cmd.Parameters.AddWithValue("@itemSize", item.Size);
-                                cmd.Parameters.AddWithValue("@itemQTY", item.Quantity);
-                                cmd.Parameters.AddWithValue("@itemPrice", item.Price);
-                                cmd.Parameters.AddWithValue("@Total", receipt.TotalAmount);
-                                cmd.Parameters.AddWithValue("@Cash", receipt.Cash);
-                                cmd.Parameters.AddWithValue("@Change", receipt.Change);
-
-                                cmd.ExecuteNonQuery();
-                            }
-                        }
-
-                        sqlTransaction.Commit();
-                    }
-                    catch
-                    {
-                        sqlTransaction.Rollback();
-                        throw;
-                    }
-                }
-            }
-        }
+       
 
 
 
@@ -1303,7 +1292,7 @@ namespace kiosk
             string transactionId = paymentIdtfy.Text;
 
             // Save to database
-            SaveReceipt(receiptData, transactionId);
+            myconn.SaveReceipt(receiptData, transactionId);
 
 
 
