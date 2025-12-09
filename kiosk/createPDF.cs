@@ -20,8 +20,11 @@ namespace kiosk
     
     public class createPDF
     {
+
+
         public void generate(pdfTemplate pdf)
         {
+
             string folder = Path.Combine(Application.StartupPath, "Receipts");
             if (!Directory.Exists(folder))
                 Directory.CreateDirectory(folder);
@@ -190,7 +193,10 @@ namespace kiosk
 
 
                 //temp
-                int totalPrice = 0;
+         int totalPrice = 0;
+             
+             
+         
 
                 for (int i = 0; i < receipt.Items.Count; i++)
                 {
@@ -207,6 +213,8 @@ namespace kiosk
 
                 }
 
+                receipt.TotalAmount = totalPrice;
+
                 Column.Item().PaddingTop(5, Unit.Millimetre).PaddingHorizontal(2, Unit.Millimetre).Row(row =>
                 {
                     row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
@@ -215,6 +223,26 @@ namespace kiosk
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Total: ").Bold().FontSize(10);
                     row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text(totalPrice.ToString()).FontSize(10);
+                });
+
+                Column.Item().PaddingTop(15, Unit.Millimetre).PaddingHorizontal(2, Unit.Millimetre).Row(row =>
+                {
+                    row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Cash: ").Bold().FontSize(10);
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("0");
+                });
+
+                Column.Item().PaddingTop(3, Unit.Millimetre).PaddingHorizontal(2, Unit.Millimetre).Row(row =>
+                {
+                    row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Change: ").Bold().FontSize(10);
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("0");
                 });
             });
         }

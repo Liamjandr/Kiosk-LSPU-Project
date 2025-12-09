@@ -11,13 +11,15 @@ namespace kiosk
         public string receiptID { get; set; }
         public DateTime receiptDate { get; set; }
         public List<OrderItem> Items { get; set; }
+        public decimal TotalAmount { get; set; }
+        public decimal Cash { get; set; }
+        public decimal Change { get; set; }
 
-        //to remove
-        //public studentInfo Student { get; set; }
     }
 
     public class OrderItem
     {
+        public int ItemID { get; set; }
         public string Type { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }

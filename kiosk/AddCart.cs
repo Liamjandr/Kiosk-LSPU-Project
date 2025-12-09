@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using MySql.Data.MySqlClient;
 using static kiosk.randomData;
 
 namespace kiosk
@@ -18,6 +19,9 @@ namespace kiosk
 
     public partial class AddCart : Form
     {
+
+        string mycon = "datasource=localhost;Database=dbkiosk;username=root;convert zero datetime=true";
+
         // -----------------------------
         // DWM API for shadow
         // -----------------------------
@@ -164,62 +168,84 @@ namespace kiosk
 
             qty.Text = quantity.ToString();
         }
+
+        ///  ------------------------------------------------------------------------------- TO SUBTRACT THE CHOSEN QUANTITY FROM THE PRODUCT STOCK IN DB
+        private void SubtractStock(int itemId, int quantityPurchased)
+        {
+            string query = "UPDATE tbitems SET itemStock = itemStock - @qty WHERE itemId = @id";
+
+            using (MySqlConnection conn = new MySqlConnection(mycon))
+            {
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@qty", quantityPurchased);
+                    cmd.Parameters.AddWithValue("@id", itemId);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+      
+
+
         public int cartCounter = 0;
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-
-
+            // =============================
+            // 1. GATHER DATA
+            // =============================
+            string ProductID = prodID.Text;
             string ProductName = prodName.Text;
             string SubProductName = subName.Text;
+
             string SelectedSize = "";
             if (sBtn.Checked) SelectedSize = "S";
             else if (mBtn.Checked) SelectedSize = "M";
             else if (lBtn.Checked) SelectedSize = "L";
             else if (xBtn.Checked) SelectedSize = "XL";
             else if (xxBtn.Checked) SelectedSize = "2XL";
-            else SelectedSize = "unknown";
 
-            double Price = double.Parse(price.Text);
-           
-
-
-            // --- 2. Get quantity and stock ---
-            if (!int.TryParse(qty.Text, out int Quantity))
+            if (SelectedSize == "")
             {
-                MessageBox.Show("Please enter a valid quantity!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // stop, don't add to cart
+                MessageBox.Show("Please select a size.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!int.TryParse(qty.Text, out int Quantity) || Quantity <= 0)
+            {
+                MessageBox.Show("Invalid quantity.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
             if (!int.TryParse(stock.Text, out int Stock))
             {
-                MessageBox.Show("Stock value is invalid!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // stop
-            }
-
-            // --- 3. Validate size ---
-            if (SelectedSize == "unknown")
-            {
-                MessageBox.Show("Please select a size before adding to cart!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // stop
-            }
-
-            // --- 4. Validate quantity ---
-            if (Quantity <= 0)
-            {
-                MessageBox.Show("Please select how many quantity before adding to cart!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // stop
+                MessageBox.Show("Invalid stock.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
             if (Quantity > Stock)
             {
-                MessageBox.Show("Can't handle your given quantity!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // stop
+                MessageBox.Show("Quantity exceeds stock.", "Warning");
+                return;
             }
 
+            double Price = double.Parse(price.Text);
 
+            // =============================
+            // 2. SUBTRACT STOCK IN DATABASE
+            // =============================
+            SubtractStock(int.Parse(ProductID), Quantity);
+
+
+            // =============================
+            // 3. UPDATE UI SLOTS IN MAIN FORM
+            // =============================
+            Label[] productID = { mainForm.firstID, mainForm.secondID, mainForm.thirdID, mainForm.fourthID, mainForm.fifthID };
             PictureBox[] cartPics = { mainForm.firstPic, mainForm.secondPic, mainForm.thirdPic, mainForm.fourthPic, mainForm.fifthPic };
             Panel[] picsPanel = { mainForm.firstItem, mainForm.secondItem, mainForm.thirdItem, mainForm.fourthItem, mainForm.fifthItem };
-            Label[] productName = { mainForm.firstItemName, mainForm.secondItemName, mainForm.thirdItemName, mainForm.fourthItemName, mainForm.fifthItemName};
+            Label[] productNameLbl = { mainForm.firstItemName, mainForm.secondItemName, mainForm.thirdItemName, mainForm.fourthItemName, mainForm.fifthItemName };
             Label[] prodType = { mainForm.firstItemType, mainForm.secondItemType, mainForm.thirdItemType, mainForm.fourthItemType, mainForm.fifthItemType };
             Label[] prodQty = { mainForm.firstItemQty, mainForm.secondItemQty, mainForm.thirdItemQty, mainForm.fourthItemQty, mainForm.fifthItemQty };
             Label[] prodSize = { mainForm.firstItemSize, mainForm.secondItemSize, mainForm.thirdItemSize, mainForm.fourthItemSize, mainForm.fifthItemSize };
@@ -229,66 +255,54 @@ namespace kiosk
             {
                 int i = mainForm.cartCounter;
 
+                productID[i].Text = ProductID.ToString();
                 picsPanel[i].Visible = true;
                 cartPics[i].Image = prodIMG.Image;
-                productName[i].Text = ProductName;
+                productNameLbl[i].Text = ProductName;
                 prodType[i].Text = SubProductName;
                 prodQty[i].Text = Quantity.ToString();
                 prodSize[i].Text = SelectedSize;
                 prodPrice[i].Text = Price.ToString();
 
-                if (picsPanel[i].Visible = true)
+                mainForm.ttext.Visible = false;
+                mainForm.confirmBtn.Enabled = true;
+
+                // =============================
+                // 4. ADD TO CART LIST (for receipt + reset)
+                // =============================
+                mainForm.cartItems.Add(new CartItem
                 {
-                    mainForm.ttext.Visible = false;
-                    mainForm.confirmBtn.Enabled = true;
-
-
-                }
-
-
-
-                //mainForm.cartItems.Add(new CartItem
-                //{
-                //    Name = ProductName,
-                //    Type = SubProductName,
-                //    Size = SelectedSize,
-                //    Quantity = Quantity,
-                //    Price = decimal.Parse(price.Text)
-                //});  
-
-                CartItem newItem = new CartItem
-                {
+                    ItemID = int.Parse(ProductID),
                     Name = ProductName,
                     Type = SubProductName,
                     Size = SelectedSize,
                     Quantity = Quantity,
-                    Price = decimal.Parse(price.Text)
-                };
-                mainForm.cartItems.Add(newItem);
+                    Price = (decimal)Price
+                });
 
-
-                mainForm.cartCounter++; // move to next slot for the next add
+                mainForm.cartCounter++;
             }
             else
             {
                 MessageBox.Show("Cart is full!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
-              this.Close();
-
-            // Reset radio buttons
-            sBtn.Checked = false;
-            mBtn.Checked = false;
-            lBtn.Checked = false;
-            xBtn.Checked = false;
-            xxBtn.Checked = false;
-   
+         
+                //mainForm.SetupItemLists();
+            mainForm.LoadStockStatus();
 
 
+            // =============================
+            // 5. RESET UI IN ADDCART FORM
+            // =============================
+            sBtn.Checked = mBtn.Checked = lBtn.Checked = xBtn.Checked = xxBtn.Checked = false;
             qty.Text = "1";
-            this.Refresh();
+
+            this.Close();
         }
 
+
     }
-    }
+}
 

@@ -66,6 +66,7 @@
             this.qty = new Guna.UI2.WinForms.Guna2TextBox();
             this.incr = new Guna.UI2.WinForms.Guna2Button();
             this.decr = new Guna.UI2.WinForms.Guna2Button();
+            this.prodID = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox19)).BeginInit();
@@ -235,6 +236,7 @@
             // 
             this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel4.Controls.Add(this.prodIMG);
+            this.guna2ShadowPanel4.Controls.Add(this.prodID);
             this.guna2ShadowPanel4.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel4.Location = new System.Drawing.Point(50, 226);
             this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
@@ -554,6 +556,17 @@
             this.decr.Text = "-";
             this.decr.Click += new System.EventHandler(this.decr_Click);
             // 
+            // prodID
+            // 
+            this.prodID.AutoSize = true;
+            this.prodID.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prodID.Location = new System.Drawing.Point(207, 112);
+            this.prodID.Name = "prodID";
+            this.prodID.Size = new System.Drawing.Size(27, 21);
+            this.prodID.TabIndex = 39;
+            this.prodID.Text = "ID";
+            this.prodID.Visible = false;
+            // 
             // AddCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -602,6 +615,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox24)).EndInit();
             this.guna2ShadowPanel4.ResumeLayout(false);
+            this.guna2ShadowPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prodIMG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -647,5 +661,6 @@
         public Guna.UI2.WinForms.Guna2CustomRadioButton mBtn;
         public Guna.UI2.WinForms.Guna2CustomRadioButton xBtn;
         public Guna.UI2.WinForms.Guna2CustomRadioButton xxBtn;
+        public System.Windows.Forms.Label prodID;
     }
 }
