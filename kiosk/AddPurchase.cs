@@ -13,22 +13,20 @@ namespace kiosk
 {
     public partial class addPurchase : UserControl
     {
-        receiptTemplate receipt { get; }
-        int orderIndex;
+
         bool isPaid { get; set; }
         bool isClaimed { get; set; }
-        public addPurchase(receiptTemplate receipt, int orderIndex)
+        public addPurchase(HistoryDB history)
         {
             InitializeComponent();
-            this.receipt = receipt;
-            this.orderIndex = orderIndex;
 
-            ReceiptID.Text = receipt.receiptID;
-            Type.Text = receipt.Items[orderIndex].Type;
-            Description.Text = receipt.Items[orderIndex].Name;
-            Date.Text = receipt.receiptDate.ToString("MM/dd/yyyy");
-            Quantity.Text = receipt.Items[orderIndex].Quantity.ToString();
-            Cost.Text = receipt.Items[orderIndex].Price.ToString("C2");
+
+            ReceiptID.Text = history.receiptID;
+            Type.Text = history.Type;
+            Description.Text = history.Name;
+            Date.Text = history.receiptDate.ToString("MM/dd/yyyy");
+            Quantity.Text = history.Quantity.ToString();
+            Cost.Text = "₱"+history.Price.ToString("F2");
             if (isPaid)
             {
                 Payment.Text = "PAID";
@@ -51,7 +49,24 @@ namespace kiosk
                 Claim.FillColor = Color.Red;
             }
         }
+        ////Receipt Info  
+        //public string receiptID { get; set; }
+        //public DateTime receiptDate { get; set; }
 
+        ////Item Info
+        //public int ItemID { get; set; }
+        //public string Name { get; set; }
+        //public string Type { get; set; }
+        //public decimal Price { get; set; }
+        //public int Quantity { get; set; }
+        //public string Size { get; set; }
+
+
+        ////Transaction Info
+        //public string transactionId { get; set; }
+        //public decimal TotalAmount { get; set; }
+        //public decimal Cash { get; set; }
+        //public decimal Change { get; set; }
         private void Payment_Click(object sender, EventArgs e)
         {
             isPaid = !isPaid;

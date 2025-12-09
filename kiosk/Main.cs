@@ -68,11 +68,12 @@ namespace kiosk
         AddCart ac;
 
         //--------------------------------- Admin Section ---------------------------------
+        AdminDB adminDB = new AdminDB();
         //Admin Inventory
-        List<InventoryItem> InventoryData = new List<InventoryItem>();
+        //List<InventoryItem> InventoryData = new List<InventoryItem>();
         List<AddInventory> Inventory  = new List<AddInventory>();
         //Admin Receipts
-        List<addPurchase> receiptHistory= new List<addPurchase>();
+        //List<addPurchase> receiptHistory= new List<addPurchase>();
         //Receipt Data
         receiptTemplate receiptData = new receiptTemplate();
         createPDF createPDF = new createPDF();
@@ -992,97 +993,12 @@ namespace kiosk
 
 
         //------------------------------------------------------------------------------------------------------------------------
+        //admin section
         // Admin Functionalities
-        private async void adminIntialize()
+        private void adminIntialize()
         {
-            using (MySqlConnection conn = new MySqlConnection(mycon))
-            {
-                try
-                {
-                    conn.Open();
-
-                    //Inventory Table
-                    string itemQuery = "SELECT * FROM tbitems ORDER BY itemId ASC";
-                    MySqlCommand itemCmd = new MySqlCommand(itemQuery, conn);
-                    //Purchase History Table
-                    string historyQuery = "SELECT * FROM tbHistory ORDER BY ReceiptID ASC";
-                    MySqlCommand historyCmd = new MySqlCommand(historyQuery, conn);
-
-
-                    using (MySqlDataReader reader = itemCmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            Inventory.Add(
-                                new AddInventory(
-                                    new InventoryItem
-                                    {
-                                        ID = reader.GetInt32("itemId").ToString(),
-                                        Type = reader.GetString("itemType"),
-                                        Description = reader.GetString("itemName"),
-                                        Price = reader.GetInt32("itemPrice"),
-                                        Stock = reader.GetInt32("itemStock"),
-                                        ImagePath = reader.GetString("IMAGE_PATH")
-                                    }
-                                )
-                            );
-                            //Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
-                        }  
-                    }
-
-                    using (MySqlDataReader readHistory = historyCmd.ExecuteReader())
-                    {
-                        while (readHistory.Read())
-                        {
-                            //cmd.Parameters.AddWithValue("@ReceiptID", receipt.receiptID);
-                            //cmd.Parameters.AddWithValue("@DateTime", receipt.receiptDate);
-                            //cmd.Parameters.AddWithValue("@Transaction", transactionId);
-                            //cmd.Parameters.AddWithValue("@ItemID", item.ItemID);
-                            //cmd.Parameters.AddWithValue("@itemName", item.Name);
-                            //cmd.Parameters.AddWithValue("@itemType", item.Type);
-                            //cmd.Parameters.AddWithValue("@itemSize", item.Size);
-                            //cmd.Parameters.AddWithValue("@itemQTY", item.Quantity);
-                            //cmd.Parameters.AddWithValue("@itemPrice", item.Price);
-                            //cmd.Parameters.AddWithValue("@Total", receipt.TotalAmount);
-                            //cmd.Parameters.AddWithValue("@Cash", receipt.Cash);
-                            //cmd.Parameters.AddWithValue("@Change", receipt.Change);
-                            //receiptHistory.Add(
-                            //    new addPurchase(
-
-
-
-                            //    )
-                            //);
-
-                            //Inventory.Add(
-                            //    new AddInventory(
-                            //        new InventoryItem
-                            //        {
-                            //            ID = readHistory.GetInt32("itemId").ToString(),
-                            //            Type = readHistory.GetString("itemType"),
-                            //            Description = readHistory.GetString("itemName"),
-                            //            Price = readHistory.GetInt32("itemPrice"),
-                            //            Stock = readHistory.GetInt32("itemStock"),
-                            //            ImagePath = readHistory.GetString("IMAGE_PATH")
-                            //        }
-                            //    )
-                            //);
-                            //Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Database error: " + ex.Message);
-                }
-            }
-
-            foreach (AddInventory item in Inventory)
-            {
-                inventoryTable.Controls.Add(item);
-            }
-
-
+            adminDB.itemTable(inventoryTable);
+            adminDB.historyTable(receiptTable);
 
             admin_tabControl.SelectedTab = admin_dashboard;
             activeCBox();
@@ -1219,49 +1135,8 @@ namespace kiosk
 
         private void adminSort_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<AddInventory> inventoryByDescription = Inventory.OrderBy(i => i.Description.Text).ToList();
-            List<AddInventory> inventoryByCost = Inventory.OrderBy(i => i.Cost.Text).ToList();
-            List<AddInventory> inventoryByStock = Inventory.OrderBy(i => Convert.ToInt32(i.Stock.Text)).ToList();
-
-            if (admin_tabControl.SelectedTab == admin_inventory)
-                switch (adminSort.SelectedItem.ToString()) 
-                {
-                    case "Default":
-                        inventoryTable.Controls.Clear();
-                        foreach (AddInventory item in Inventory) inventoryTable.Controls.Add(item);
-                        break;
-                    case "Alphabetical (A-Z)":
-                        inventoryTable.Controls.Clear();
-                        foreach (AddInventory item in inventoryByDescription) inventoryTable.Controls.Add(item);
-                        break;
-                    case "Alphabetical (Z-A)":
-                        inventoryTable.Controls.Clear();
-                        inventoryByDescription.Reverse();
-                        foreach (AddInventory item in inventoryByDescription) inventoryTable.Controls.Add(item);
-                        break;
-                    case "By Cost (Highest)":
-                        inventoryTable.Controls.Clear();
-                        inventoryByCost.Reverse();
-                        foreach (AddInventory item in inventoryByCost) inventoryTable.Controls.Add(item);
-                        break;
-                    case "By Cost (Lowest)":
-                        inventoryTable.Controls.Clear();
-                        foreach (AddInventory item in inventoryByCost) inventoryTable.Controls.Add(item);
-                        break;
-                    case "By Stock (Highest)":
-                        inventoryTable.Controls.Clear();
-                        inventoryByStock.Reverse();
-                        foreach (AddInventory item in inventoryByStock) inventoryTable.Controls.Add(item);
-                        break;
-                    case "By Stock (Lowest)":
-                        inventoryTable.Controls.Clear();
-                        foreach (AddInventory item in inventoryByStock) inventoryTable.Controls.Add(item);
-                        break;
-                    //case "":
-                    //    break;
-                    default:
-                        break;
-                }
+            adminDB.ItemUpdate(admin_tabControl, admin_inventory, adminSort, inventoryTable);
+            adminDB.HistoryItem(admin_tabControl, admin_purchaseHistory, adminSort, receiptTable);
         }   
 
         

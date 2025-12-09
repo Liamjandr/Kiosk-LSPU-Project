@@ -59,14 +59,14 @@ namespace kiosk
         receiptTemplate receiptData;
         kioskQR kioskQR = new kioskQR();
         Paymongo Paymongo;
-        List<addPurchase> purchaseList = new List<addPurchase>();
+        //List<addPurchase> purchaseList = new List<addPurchase>();
 
         public paymentControl(receiptTemplate receipt, Panel table)
         {
             InitializeComponent();
-
             this.receiptData = receipt;
             this.receiptTable = table;
+            resultLabel.Text = "";
          
             this.DoubleBuffered = true;
             this.BackColor = Color.White;
@@ -115,14 +115,15 @@ namespace kiosk
                             //Temporary save to database
                             myconn.SaveReceipt(receiptData, "CASHLESS/QR");
 
-                            for (int i = 0; i < receiptData.Items.Count; i++)
-                            {
-                                purchaseList.Add(new addPurchase(receiptData, i));
-                            }
-                            foreach(addPurchase purchase in purchaseList)
-                            {
-                                receiptTable.Controls.Add(purchase);
-                            }
+                            //tofix
+                            //for (int i = 0; i < receiptData.Items.Count; i++)
+                            //{
+                            //    purchaseList.Add(new addPurchase(receiptData, i));
+                            //}
+                            //foreach(addPurchase purchase in purchaseList)
+                            //{
+                            //    receiptTable.Controls.Add(purchase);
+                            //}
                         }
                         else result = "Payment Failed!";
                         transacStatus = false;
