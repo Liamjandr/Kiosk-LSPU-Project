@@ -1,16 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Schema;
+using System.Drawing;
 
 namespace kiosk
 {
     public class randomData
     {
+        private readonly string itemImagePath = Path.Combine(Application.StartupPath, "images_rsrcs", "itemPics");
+
+        string mycon = "datasource=localhost;Database=dbkiosk;username=root;convert zero datetime=true";
 
         //generate random values for purchase history
         //public static HistoryItem generateHistory()
@@ -275,11 +282,86 @@ namespace kiosk
         //a
         //    }
         //}
+        //public static class ItemIMGgetter
+        //{
+        //    public static Image GetItemImage(int itemID)
+        //    {
+        //        string imgFileName = "";
 
+        //        using (SqlConnection conn = new SqlConnection(mycon))
+        //        {
+        //            conn.Open();
+        //            using (SqlCommand cmd = new SqlCommand("SELECT IMAGE_PATH FROM tbItems WHERE ItemID = @id", conn))
+        //            {
+        //                cmd.Parameters.AddWithValue("@id", itemID);
+        //                var result = cmd.ExecuteScalar();
+        //                if (result != null)
+        //                    imgFileName = result.ToString();
+        //            }
+        //        }
 
+        //        string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "images_rsrcs", "itemPics", imgFileName);
+
+        //        if (File.Exists(fullPath))
+        //        {
+        //            using (var stream = new FileStream(fullPath, FileMode.Open, FileAccess.Read))
+        //            {
+        //                return Image.FromStream(stream);
+        //            }
+        //        }
+
+        //        return null; // or return a placeholder image
+        //    }
+        //}
+
+        //public void SaveHistory(receiptTemplate receipt, string transactionType)
+        //{
+        //    using (SqlConnection conn = new SqlConnection(mycon))
+        //    {
+        //        conn.Open();
+
+        //        string query = @"
+        //    INSERT INTO tbHistory
+        //    (ReceiptID, DateTime, Transaction, ItemID, ItemImage, ItemName, itemType, itemSize, itemQty, itemPrice, Total, Cash, Change)
+        //    VALUES (@rid, @date, @trans, @itemID, @img, @name, @type, @size, @qty, @price, @total, @cash, @change)";
+
+        //        foreach (var item in receipt.Items)
+        //        {
+        //            using (SqlCommand cmd = new SqlCommand(query, conn))
+        //            {
+        //                cmd.Parameters.AddWithValue("@rid", receipt.receiptID);
+        //                cmd.Parameters.AddWithValue("@date", receipt.receiptDate);
+        //                cmd.Parameters.AddWithValue("@trans", transactionType); // "QR" or "CASH"
+
+        //                cmd.Parameters.AddWithValue("@itemID", item.ItemID);
+
+        //                // If you store image as FILE PATH:
+        //                //Image img = ItemIMGgetter.GetItemImage(item.ItemID);
+
+        //                // If you want BINARY:
+        //                // cmd.Parameters.Add("@img", SqlDbType.VarBinary).Value = item.ImageBytes ?? (object)DBNull.Value;
+
+        //                cmd.Parameters.AddWithValue("@name", item.Name);
+        //                cmd.Parameters.AddWithValue("@type", item.Type);
+        //                cmd.Parameters.AddWithValue("@size", item.Size);
+        //                cmd.Parameters.AddWithValue("@qty", item.Quantity);
+        //                cmd.Parameters.AddWithValue("@price", item.Price);
+        //                cmd.Parameters.AddWithValue("@total", item.Price * item.Quantity);
+
+        //                // cash & change → same for all rows
+        //                cmd.Parameters.AddWithValue("@cash", receipt.Cash);
+        //                cmd.Parameters.AddWithValue("@change", receipt.Change);
+
+        //                cmd.ExecuteNonQuery();
+        //            }
+        //        }
+        //    }
+        //}
         public class HistoryItem
         {
-            public string ID { get; set; }
+
+            public string ReceiptID { get; set; }
+            public string ItemID { get; set; }
             public string Type { get; set; }
             public string Description { get; set; }
             public DateTime Date { get; set; }
@@ -288,6 +370,9 @@ namespace kiosk
             public bool isPaid { get; set; }
             public bool isClaimed { get; set; }
         }
+
+
+
 
 
 
@@ -302,33 +387,36 @@ namespace kiosk
             for (int i = 0; i < 8; i++)
                 receiptID += chars[rand.Next(chars.Length)];
 
+           decimal TotalAmount = cart.Sum(item => item.Price * item.Quantity);
+
             return new receiptTemplate
             {
                 receiptID = receiptID,
                 receiptDate = DateTime.Now,
+                TotalAmount = TotalAmount,
+                Cash = 0,            // you can update later
+                Change = 0,          // you can update later    
                 Items = cart.Select(item => new OrderItem
                 {
+                    ItemID = item.ItemID,
                     Type = item.Type,
                     Name = item.Name,
                     Size = item.Size,
                     Quantity = item.Quantity,
                     Price = item.Price
                 }).ToList(),
-               
-
-            //Student = student
-        };
+            };
         }
 
         public class CartItem
         {
+            public int ItemID { get; set; }
             public string Name { get; set; }
             public string Type { get; set; }
             public string Size { get; set; }
             public int Quantity { get; set; }
             public decimal Price { get; set; }
 
-            public decimal Total => Quantity * Price;
         }
 
         public List<CartItem> GetCartItems()
@@ -336,7 +424,7 @@ namespace kiosk
             Main m = new Main();
 
             List<CartItem> list = new List<CartItem>();
-
+            Label[] productID = { m.firstID, m.secondID, m.thirdID, m.fourthID, m.fifthID };
             Label[] productName = { m.firstItemName, m.secondItemName, m.thirdItemName, m.fourthItemName, m.fifthItemName };
             Label[] prodType = { m.firstItemType, m.secondItemType, m.thirdItemType, m.fourthItemType, m.fifthItemType };
             Label[] prodQty = { m.firstItemQty, m.secondItemQty, m.thirdItemQty, m.fourthItemQty, m.fifthItemQty };
@@ -349,6 +437,7 @@ namespace kiosk
                 {
                     list.Add(new CartItem
                     {
+                        ItemID = int.Parse(productID[i].Text),
                         Name = productName[i].Text,
                         Type = prodType[i].Text,
                         Size = prodSize[i].Text,

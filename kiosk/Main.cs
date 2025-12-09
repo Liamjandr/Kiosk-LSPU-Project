@@ -15,12 +15,19 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using static Guna.UI2.Native.WinApi;
 using Microsoft.Web.WebView2.WinForms;
 using static kiosk.randomData;
+using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
+using System.Data.SqlClient;
+using System.Web.UI.HtmlControls;
 
 namespace kiosk
 {
 
     public partial class Main : Form
     {
+
+        public string paymentMethod = "";
+
         private readonly string itemImagePath = Path.Combine(Application.StartupPath, "images_rsrcs", "itemPics" );
 
         string mycon = "datasource=localhost;Database=dbkiosk;username=root;convert zero datetime=true";
@@ -87,21 +94,18 @@ namespace kiosk
 
             ac = new AddCart(this);
 
-            //BindOverlay(allFirst_Overlay, all_itemPicFirst);
-            //BindOverlay(allSecond_Overlay, all_itemPicSecond);
-            //BindOverlay(allThird_Overlay, all_itemPicThird);
-            //BindOverlay(allFourth_Overlay, all_itemPicFourth);
-            //BindOverlay(allFifth_Overlay, all_itemPicFifth);
-            //BindOverlay(allSeventh_Overlay, all_itemPicSeventh);
-
             SetupItemLists();
             LoadStockStatus();
             ResetCart();
 
             LoadItemsByType("shirt", top_itemPics, top_itemLabel, top_overlays, top_itemPanels);
+            LoadItemsByType("short", bot_itemPics, bot_itemLabel, bot_overlays, bot_itemPanels);
             LoadItemsByType("pants", bot_itemPics, bot_itemLabel, bot_overlays, bot_itemPanels);
             LoadItemsByType("fabric", fab_itemPics, fab_itemLabel, fab_overlays, fab_itemPanels);
             LoadItemsByType("other", other_itemPics, other_itemLabel, other_overlays, other_itemPanels);
+
+
+         
         }
 
 
@@ -116,16 +120,33 @@ namespace kiosk
         {
             tabControl1.SelectedTab = tabPage3;
             fab_overlay.SelectedTab = tabPage4;
-
             LoadStockStatus();
 
+            ///------------- FOR COUNTER/CASH PAYMENT ---------------------------------
+
+            paymentMethod = "CASH/COUNTER";
+            paymentIdtfy.Text = paymentMethod;
+            Printbutton.Visible = true;
+            buybutton.Visible = false;
+
+
         }
+
 
         private void guna2TileButton2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage3;
             fab_overlay.SelectedTab = tabPage4;
             LoadStockStatus();
+
+
+            ///------------- FOR QR/CASHLESS PAYMENT ---------------------------------
+
+            paymentMethod = "CASHLESS/QR";
+            paymentIdtfy.Text = paymentMethod;
+            Printbutton.Visible = false;
+            buybutton.Visible = true;
+
 
         }
 
@@ -198,6 +219,7 @@ namespace kiosk
                         if (reader.Read())
                         {
                             // Load item info
+                            ac.prodID.Text = reader["itemId"].ToString();
                             ac.prodName.Text = reader["itemName"].ToString();
                             ac.subName.Text = reader["itemType"].ToString();
                             ac.price.Text = reader["itemPrice"].ToString();
@@ -349,7 +371,7 @@ namespace kiosk
             }
         }
 
-        private void SetupItemLists()
+        public void SetupItemLists()
         {
            
     // =======================
@@ -509,7 +531,7 @@ namespace kiosk
                 other_Panel9, other_Panel10, other_Panel11, other_Panel12,
                 other_Panel13, other_Panel14, other_Panel15, other_Panel16
             });
-            // Bind overlay to picture (this was missing)
+        
             for (int i = 0; i < all_overlays.Count; i++)
                 BindOverlay(all_overlays[i], all_itemPics[i]);
 
@@ -559,7 +581,7 @@ namespace kiosk
         //        all_itemPics[index].Image = Image.FromFile(imgPath);
         //}
 
-        private void LoadStockStatus()
+        public void LoadStockStatus()
         {
             using (MySqlConnection conn = new MySqlConnection(mycon))
             {
@@ -813,7 +835,7 @@ namespace kiosk
             
         }
 
-    
+
 
 
 
@@ -821,6 +843,16 @@ namespace kiosk
         //------------------------------------------------------------------------------------------------------------------------
         public void ResetCart()
         {
+            // 1. Restore stock for all items in cart
+            foreach (var item in cartItems)
+            {
+                RestoreStock(item.ItemID, item.Quantity);
+            }
+
+            // 2. Clear the list
+            cartItems.Clear();
+
+            // 3. Reset UI
             PictureBox[] cartPics = { firstPic, secondPic, thirdPic, fourthPic, fifthPic };
             Panel[] picsPanel = { firstItem, secondItem, thirdItem, fourthItem, fifthItem };
 
@@ -828,64 +860,96 @@ namespace kiosk
             {
                 cartPics[i].Image = null;
                 picsPanel[i].Visible = false;
-                ttext.Visible = false;
             }
 
-            cartCounter = 0; // reset the counter
-            ttext.Visible = true; // show the "empty cart" text if you have one
+            cartCounter = 0;
+            ttext.Visible = true;
             confirmBtn.Enabled = false;
-
-            /////// FOR CLEARING THE RECEIPT
-            // Reset cart items if needed
-            cartItems.Clear();
-             
         }
+
 
         public void RemoveCartItem(int index)
         {
+            // Step 1: Restore stock & remove from cartItems list
+            if (index >= 0 && index < cartItems.Count)
+            {
+                CartItem removedItem = cartItems[index];
+                RestoreStock(removedItem.ItemID, removedItem.Quantity);
+                cartItems.RemoveAt(index);
+            }
+
             PictureBox[] cartPics = { firstPic, secondPic, thirdPic, fourthPic, fifthPic };
             Panel[] picsPanel = { firstItem, secondItem, thirdItem, fourthItem, fifthItem };
+            Label[] productName = { firstItemName, secondItemName, thirdItemName, fourthItemName, fifthItemName };
+            Label[] prodType = { firstItemType, secondItemType, thirdItemType, fourthItemType, fifthItemType };
+            Label[] prodQty = { firstItemQty, secondItemQty, thirdItemQty, fourthItemQty, fifthItemQty };
+            Label[] prodSize = { firstItemSize, secondItemSize, thirdItemSize, fourthItemSize, fifthItemSize };
+            Label[] prodPrice = { firstItemPrice, secondItemPrice, thirdItemPrice, fourthItemPrice, fifthItemPrice };
 
-            // shift items left from index
+            // Step 2: Shift UI cart items left
             for (int i = index; i < cartPics.Length - 1; i++)
             {
                 cartPics[i].Image = cartPics[i + 1].Image;
                 picsPanel[i].Visible = picsPanel[i + 1].Visible;
+
+                productName[i].Text = productName[i + 1].Text;
+                prodType[i].Text = prodType[i + 1].Text;
+                prodQty[i].Text = prodQty[i + 1].Text;
+                prodSize[i].Text = prodSize[i + 1].Text;
+                prodPrice[i].Text = prodPrice[i + 1].Text;
             }
 
-            // clear last slot
+            // Step 3: Clear last slot
             cartPics[cartPics.Length - 1].Image = null;
             picsPanel[cartPics.Length - 1].Visible = false;
 
-            // recompute cartCounter as number of filled slots
-            cartCounter = 0;
+            productName[cartPics.Length - 1].Text = "";
+            prodType[cartPics.Length - 1].Text = "";
+            prodQty[cartPics.Length - 1].Text = "";
+            prodSize[cartPics.Length - 1].Text = "";
+            prodPrice[cartPics.Length - 1].Text = "";
+
+            // Step 4: Recompute counter
+            cartCounter = cartItems.Count;
+
+            // Step 5: UI updates
+            ttext.Visible = (cartCounter == 0);
+            confirmBtn.Enabled = (cartCounter != 0);
+        }
+
+        public void ClearCartWithoutRestoringStock()
+        {
+            // Clear the cart items list
+            cartItems.Clear();
+
+            // Reset the cart visuals
+            PictureBox[] cartPics = { firstPic, secondPic, thirdPic, fourthPic, fifthPic };
+            Panel[] picsPanel = { firstItem, secondItem, thirdItem, fourthItem, fifthItem };
+
             for (int i = 0; i < cartPics.Length; i++)
             {
-                if (cartPics[i].Image != null) cartCounter++;
+                cartPics[i].Image = null;
+                picsPanel[i].Visible = false;
             }
 
-            // show empty-cart text if now empty
-            ttext.Visible = (cartCounter == 0);
+            cartCounter = 0;
+            ttext.Visible = true; // show "empty cart" text if any
+            confirmBtn.Enabled = false;
+        }
 
-            if (cartCounter == 0)
+        ///  ------------------------------------------------------------------------------- TO RESTORE/RE-ADD THE QUANTITY FROM THE PRODUCT STOCK IN DB -- IF THE USER REMOVE/CANCEL THE ITEM FROM CART  
+        private void RestoreStock(int itemId, int qty)
+        {
+            string query = "UPDATE tbitems SET itemStock = itemStock + @qty WHERE itemId = @id";
+
+            using (MySqlConnection conn = new MySqlConnection(mycon))
             {
-                confirmBtn.Enabled = false;
-
-                /////// FOR CLEARING THE RECEIPT
-         
-
-                // Reset cart items if needed
-                cartItems.Clear();
-               
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@qty", qty);
+                cmd.Parameters.AddWithValue("@id", itemId);
+                cmd.ExecuteNonQuery();
             }
-            else
-                confirmBtn.Enabled = true;
-
-
-         
-
-
-
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -998,7 +1062,7 @@ namespace kiosk
         {
             tabControl1.SelectedTab = Checkout;
 
-            // Pass REAL objects, NOT class names
+           
             receiptData = randomData.generatePurchase(cartItems);
 
             pdfTemplate pdf = new pdfTemplate(receiptData);
@@ -1012,28 +1076,46 @@ namespace kiosk
 
         private void button2_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to discard all items?",
+                "Confirmation",
+                MessageBoxButtons.OKCancel
+            );
 
-            // Clear the PDF viewer panel
-            receiptPanel.Controls.Clear();
 
-            // Dispose the webPanel if it exists
-            if (webPanel != null)
+            if (result == DialogResult.OK)
             {
-                webPanel.Dispose();
-                webPanel = null;
+
+
+                ResetCart();
+
+                // Clear the PDF viewer panel
+                receiptPanel.Controls.Clear();
+
+                // Dispose the webPanel if it exists
+                if (webPanel != null)
+                {
+                    webPanel.Dispose();
+                    webPanel = null;
+                }
+
+                // Reset receipt data object
+                receiptData = null;
+
+                // Reset cart items if needed
+                cartItems.Clear();
+
+
+
+                tabControl1.SelectedTab = tabPage3;
+                receiptPanel.Controls.Remove(webPanel);
+            }
+            else
+            {
+                
             }
 
-            // Reset receipt data object
-            receiptData = null;
 
-            // Reset cart items if needed
-            cartItems.Clear();
-            ResetCart();
-           
-
-
-            tabControl1.SelectedTab = tabPage3;
-            receiptPanel.Controls.Remove(webPanel);
 
            
         }
@@ -1050,6 +1132,300 @@ namespace kiosk
             //addPurchase receipt = new addPurchase(randomData.generateHistory());
             //receiptTable.Controls.Add(receipt);
         }
+
+        private void inventoryTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+
+        ///-------------------------------------------------------------------------------------------------- for saving the dets/info to history...........................
+        public static void SaveReceipt(receiptTemplate receipt, string transactionId)
+        {
+            string mycon = "server=localhost;Database=dbkiosk;Uid=root;Convert Zero Datetime=True;";
+
+            using (MySqlConnection conn = new MySqlConnection(mycon))
+            {
+                conn.Open();
+
+                using (var sqlTransaction = conn.BeginTransaction())
+                {
+                    try
+                    {
+                        foreach (var item in receipt.Items)
+                        {
+                            if (item == null) continue;
+
+                            // optional: assign a temporary ItemID if missing
+                            if (item.ItemID == 0)
+                                item.ItemID = new Random().Next(1000, 9999);
+
+                            string query = @"
+                    INSERT INTO tbHistory
+                    (`ReceiptID`, `DateTime`, `Transaction`, `ItemID`, `itemName`, `itemType`, `itemSize`, `itemQTY`, `itemPrice`, `Total`, `Cash`, `Change`)
+                    VALUES
+                    (@ReceiptID, @DateTime, @Transaction, @ItemID, @itemName, @itemType, @itemSize, @itemQTY, @itemPrice, @Total, @Cash, @Change)";
+
+                            using (MySqlCommand cmd = new MySqlCommand(query, conn, sqlTransaction))
+                            {
+                                cmd.Parameters.AddWithValue("@ReceiptID", receipt.receiptID);
+                                cmd.Parameters.AddWithValue("@DateTime", receipt.receiptDate);
+                                cmd.Parameters.AddWithValue("@Transaction", transactionId);
+                                cmd.Parameters.AddWithValue("@ItemID", item.ItemID);
+                                cmd.Parameters.AddWithValue("@itemName", item.Name);
+                                cmd.Parameters.AddWithValue("@itemType", item.Type);
+                                cmd.Parameters.AddWithValue("@itemSize", item.Size);
+                                cmd.Parameters.AddWithValue("@itemQTY", item.Quantity);
+                                cmd.Parameters.AddWithValue("@itemPrice", item.Price);
+                                cmd.Parameters.AddWithValue("@Total", receipt.TotalAmount);
+                                cmd.Parameters.AddWithValue("@Cash", receipt.Cash);
+                                cmd.Parameters.AddWithValue("@Change", receipt.Change);
+
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        sqlTransaction.Commit();
+                    }
+                    catch
+                    {
+                        sqlTransaction.Rollback();
+                        throw;
+                    }
+                }
+            }
+        }
+
+
+
+        private void Printbutton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please present your receipt at the counter\nto complete the payment & claim the item.", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            button2.Visible = false;
+               
+            receiptData.TotalAmount = receiptData.Items.Sum(x => x.Price * x.Quantity);
+            receiptData.Cash = 1000; // replace with actual cash input
+            receiptData.Change = receiptData.Cash - receiptData.TotalAmount;
+
+            // get transaction from label
+            string transactionId = paymentIdtfy.Text;
+
+            // Save to database
+            SaveReceipt(receiptData, transactionId);
+
+
+
+            ShowCountdownMessage();
+
+
+
+            // switch to another form after countdown
+            //CountdownMessageBox.Show(
+            //    text: "Switching to Homepage… Cleaning up for the next session.",
+            //    title: "Please wait",
+            //    seconds: 7,
+            //    onClose: () =>
+            //    {
+            //        tabControl1.SelectedTab = tabPage1;
+            //        ClearCartWithoutRestoringStock();
+
+
+            //    }
+            //);
+
+
+     }
+
+        private void ShowCountdownMessage()
+        {
+
+            ClearCartWithoutRestoringStock();
+            Form countdownForm = new Form
+            {
+                Text = "Confirmation",
+                Width = 300,
+                Height = 150,
+                StartPosition = FormStartPosition.CenterScreen,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MaximizeBox = false,
+                MinimizeBox = false
+            };
+
+            Label lbl = new Label
+            {
+                Dock = DockStyle.Top,
+                Height = 50,
+                TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            };
+
+            Button okButton = new Button
+            {
+                Text = "OK",
+                DialogResult = DialogResult.OK,
+                Left = 80,
+                Top = 70,
+                Width = 80
+            };
+
+            Button cancelButton = new Button
+            {
+                Text = "Cancel",
+                DialogResult = DialogResult.Cancel,
+                Left = 170,
+                Top = 70,
+                Width = 80
+            };
+
+            countdownForm.Controls.Add(lbl);
+            countdownForm.Controls.Add(okButton);
+            countdownForm.Controls.Add(cancelButton);
+
+            int seconds = 5;
+            lbl.Text = $"Switching to Homepage… Cleaning up for the next session.\nAuto-confirm in {seconds}...";
+            okButton.Text = $"OK ({seconds})";
+
+            Timer timer = new Timer { Interval = 1000 };
+            timer.Tick += (s, e) =>
+            {
+                seconds--;
+                lbl.Text = $"Switching to Homepage… Cleaning up for the next session.\nAuto-confirm in {seconds}...";
+                okButton.Text = $"OK ({seconds})";
+
+                if (seconds == 0)
+                {
+                    timer.Stop();
+                    countdownForm.DialogResult = DialogResult.OK;
+                    countdownForm.Close();
+                }
+            };
+
+            countdownForm.Shown += (s, e) => timer.Start();
+
+            DialogResult result = countdownForm.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                tabControl1.SelectedTab = tabPage1;
+                button2.Visible = true;
+            }
+        }
+
+
+
+        //        public static class CountdownMessageBox
+        //{
+
+        //    public static void Show(string text, string title = "Information", int seconds = 5, Action onClose = null)
+        //    {
+        //        // Create a Form that looks like a MessageBox
+        //        var box = new MessageBoxLikeForm(text, title, seconds, onClose);
+        //        box.ShowDialog(); // modal, centered
+        //    }
+
+        //    private class MessageBoxLikeForm : Form
+        //    {
+        //        private readonly Label _label;
+        //        private readonly Timer _timer;
+        //        private int _seconds;
+        //        private readonly string _baseText;
+        //        private readonly PictureBox _iconBox;
+
+        //        public MessageBoxLikeForm(string text, string title, int seconds, Action onClose)
+        //        {
+        //            _baseText = text;
+        //            _seconds = Math.Max(1, seconds);
+
+        //            Text = title;
+        //            StartPosition = FormStartPosition.CenterScreen;
+        //            FormBorderStyle = FormBorderStyle.None;
+        //            MaximizeBox = false;
+        //            MinimizeBox = false;
+        //            ShowInTaskbar = false;
+        //            TopMost = true; // behaves like a message box
+        //            AutoSize = false;
+        //            Width = 460;
+        //            Height = 180;
+
+        //            // Icon (information icon to feel like MessageBox)
+        //            _iconBox = new PictureBox
+        //            {
+        //                SizeMode = PictureBoxSizeMode.CenterImage,
+        //                Width = 48,
+        //                Height = 48,
+        //                Left = 20,
+        //                Top = 25,
+        //                Image = IconToBitmap(SystemIcons.Information)
+        //            };
+
+        //            // Message label
+        //            _label = new Label
+        //            {
+        //                AutoSize = false,
+        //                Left = _iconBox.Right + 16,
+        //                Top = 20,
+        //                Width = ClientSize.Width - (_iconBox.Right + 36),
+        //                Height = 90,
+        //                TextAlign = ContentAlignment.MiddleLeft,
+        //                Font = new Font("Segoe UI", 10.5f, FontStyle.Regular)
+        //            };
+
+        //            Controls.Add(_iconBox);
+        //            Controls.Add(_label);
+
+        //            // Timer
+        //            _timer = new Timer { Interval = 1000 };
+        //            _timer.Tick += (s, e) =>
+        //            {
+        //                _seconds--;
+        //                UpdateText();
+        //                if (_seconds <= 0)
+        //                {
+        //                    _timer.Stop();
+        //                    Close();
+        //                    onClose?.Invoke();  
+        //                }
+        //            };
+
+        //            Shown += (s, e) =>
+        //            {
+        //                UpdateText();
+        //                _timer.Start();
+        //            };
+
+        //            FormClosed += (s, e) =>
+        //            {
+        //                _timer.Stop();
+        //                _timer.Dispose();
+        //            };
+        //        }
+
+        //        private void UpdateText()
+        //        {
+        //            _label.Text = $"{_baseText}\r\n\r\nClosing in {_seconds}...";
+        //        }
+
+        //        // Convert Icon to Bitmap to show in PictureBox
+        //        private static Bitmap IconToBitmap(Icon icon)
+        //        {
+        //            return icon.ToBitmap();
+        //        }
+
+        //        // Add a standard drop shadow where supported
+        //        protected override CreateParams CreateParams
+        //        {
+        //            get
+        //            {
+        //                const int CS_DROPSHADOW = 0x00020000;
+        //                var cp = base.CreateParams;
+        //                cp.ClassStyle |= CS_DROPSHADOW;
+        //                return cp;
+        //            }
+        //        }
+        //    }
+        //}
+
+
     }
-    }
+}
 
