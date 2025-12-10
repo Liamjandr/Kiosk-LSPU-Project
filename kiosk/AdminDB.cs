@@ -20,6 +20,7 @@ namespace kiosk
         List<addPurchase> receiptHistory= new List<addPurchase>();
 
 
+
         public void itemTable(FlowLayoutPanel panel)
         {
             panel.Controls.Clear();
@@ -105,24 +106,6 @@ namespace kiosk
                                         }
                                     )
                                 );
-
-                                //historyDB.Add(
-                                //    new HistoryDB
-                                //    {
-                                //        receiptID = readHistory.GetString("ReceiptID"),
-                                //        receiptDate = readHistory.GetDateTime("DateTime"),
-                                //        ItemID = readHistory.GetInt32("ItemID"),
-                                //        Name = readHistory.GetString("itemName"),
-                                //        Type = readHistory.GetString("itemType"),
-                                //        Price = readHistory.GetDecimal("itemPrice"),
-                                //        Quantity = readHistory.GetInt32("itemQTY"),
-                                //        Size = readHistory.GetString("itemSize"),
-                                //        transactionId = readHistory.GetString("Transaction"),
-                                //        TotalAmount = readHistory.GetDecimal("Total"),
-                                //        Cash = readHistory.GetDecimal("Cash"),
-                                //        Change = readHistory.GetDecimal("Change")
-                                //    }
-                                //);
                             }
                         }
                     }
@@ -219,6 +202,15 @@ namespace kiosk
                     default:
                         break;
                 }
+        }
+
+
+        public int totalInventory()
+        {
+            int totalQTY = 0;
+            foreach (AddInventory inven in Inventory) totalQTY += Convert.ToInt32(inven.Stock.Text);
+
+                return totalQTY;
         }
     }
 
