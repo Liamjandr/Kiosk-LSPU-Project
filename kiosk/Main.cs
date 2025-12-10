@@ -70,10 +70,8 @@ namespace kiosk
         //--------------------------------- Admin Section ---------------------------------
         AdminDB adminDB = new AdminDB();
         //Admin Inventory
-        //List<InventoryItem> InventoryData = new List<InventoryItem>();
         List<AddInventory> Inventory  = new List<AddInventory>();
         //Admin Receipts
-        //List<addPurchase> receiptHistory= new List<addPurchase>();
         //Receipt Data
         receiptTemplate receiptData = new receiptTemplate();
         createPDF createPDF = new createPDF();
@@ -1266,6 +1264,12 @@ namespace kiosk
             }
         }
 
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            adminDB.itemTable(inventoryTable);
+            adminDB.historyTable(receiptTable);
+        }
+
 
         //Ignore ko to, di ko alam kung pano mo to iimplete - liam : D
 
@@ -1382,7 +1386,7 @@ namespace kiosk
         //    }
         //}
 
-            //class
+        //class
 
     }
     //namespace

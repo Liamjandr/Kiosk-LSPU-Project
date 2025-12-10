@@ -22,115 +22,119 @@ namespace kiosk
 
         public void itemTable(FlowLayoutPanel panel)
         {
-            using (MySqlConnection conn = new MySqlConnection(mycon))
-            {
-                try
+            panel.Controls.Clear();
+            Inventory.Clear();
+                using (MySqlConnection conn = new MySqlConnection(mycon))
                 {
-                    conn.Open();
-
-                    //Inventory Table
-                    string itemQuery = "SELECT * FROM tbitems ORDER BY itemId ASC";
-                    MySqlCommand itemCmd = new MySqlCommand(itemQuery, conn);
-
-                    using (MySqlDataReader reader = itemCmd.ExecuteReader())
+                    try
                     {
-                        while (reader.Read())
+                        conn.Open();
+
+                        //Inventory Table
+                        string itemQuery = "SELECT * FROM tbitems ORDER BY itemId ASC";
+                        MySqlCommand itemCmd = new MySqlCommand(itemQuery, conn);
+
+                        using (MySqlDataReader reader = itemCmd.ExecuteReader())
                         {
-                            Inventory.Add(
-                                new AddInventory(
-                                    new InventoryItem
-                                    {
-                                        ID = reader.GetInt32("itemId").ToString(),
-                                        Type = reader.GetString("itemType"),
-                                        Description = reader.GetString("itemName"),
-                                        Price = reader.GetInt32("itemPrice"),
-                                        Stock = reader.GetInt32("itemStock"),
-                                        ImagePath = reader.GetString("IMAGE_PATH")
-                                    }
-                                )
-                            );
-                            //Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
+                            while (reader.Read())
+                            {
+                                Inventory.Add(
+                                    new AddInventory(
+                                        new InventoryItem
+                                        {
+                                            ID = reader.GetInt32("itemId").ToString(),
+                                            Type = reader.GetString("itemType"),
+                                            Description = reader.GetString("itemName"),
+                                            Price = reader.GetInt32("itemPrice"),
+                                            Stock = reader.GetInt32("itemStock"),
+                                            ImagePath = reader.GetString("IMAGE_PATH")
+                                        }
+                                    )
+                                );
+                                //Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
+                            }
                         }
                     }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Database error: " + ex.Message);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Database error: " + ex.Message);
-                }
-            }
 
-            foreach (AddInventory item in Inventory)
-            {
-                panel.Controls.Add(item);
-            }
+                foreach (AddInventory item in Inventory)
+                {
+                    panel.Controls.Add(item);
+                }
         }
 
         public void historyTable(FlowLayoutPanel panel)
         {
+            panel.Controls.Clear();
+            receiptHistory.Clear();
             using (MySqlConnection conn = new MySqlConnection(mycon))
-            {
-                try
                 {
-                    conn.Open();
-                    //Purchase History Table
-                    string historyQuery = "SELECT * FROM tbhistory ORDER BY ReceiptID ASC";
-                    MySqlCommand historyCmd = new MySqlCommand(historyQuery, conn);
-
-                    using (MySqlDataReader readHistory = historyCmd.ExecuteReader())
+                    try
                     {
-                        while (readHistory.Read())
-                        {
-                            
-                            receiptHistory.Add(
-                                new addPurchase(
-                                    new HistoryDB
-                                    {
-                                        receiptID = readHistory.GetString("ReceiptID"),
-                                        receiptDate = readHistory.GetDateTime("DateTime"),
-                                        transactionId = readHistory.GetString("Transaction"),
-                                        ItemID = readHistory.GetInt32("ItemID"),
-                                        ImgPath = readHistory.GetString("itemImage"),
-                                        Name = readHistory.GetString("itemName"),
-                                        Type = readHistory.GetString("itemType"),
-                                        Size = readHistory.GetString("itemSize"),
-                                        Quantity = readHistory.GetInt32("itemQTY"),
-                                        Price = readHistory.GetDecimal("itemPrice"),
-                                        TotalAmount = readHistory.GetDecimal("Total"),
-                                        Cash = readHistory.GetDecimal("Cash"),
-                                        Change = readHistory.GetDecimal("Change")
-                                    }
-                                )
-                            );
+                        conn.Open();
+                        //Purchase History Table
+                        string historyQuery = "SELECT * FROM tbhistory ORDER BY ReceiptID ASC";
+                        MySqlCommand historyCmd = new MySqlCommand(historyQuery, conn);
 
-                            //historyDB.Add(
-                            //    new HistoryDB
-                            //    {
-                            //        receiptID = readHistory.GetString("ReceiptID"),
-                            //        receiptDate = readHistory.GetDateTime("DateTime"),
-                            //        ItemID = readHistory.GetInt32("ItemID"),
-                            //        Name = readHistory.GetString("itemName"),
-                            //        Type = readHistory.GetString("itemType"),
-                            //        Price = readHistory.GetDecimal("itemPrice"),
-                            //        Quantity = readHistory.GetInt32("itemQTY"),
-                            //        Size = readHistory.GetString("itemSize"),
-                            //        transactionId = readHistory.GetString("Transaction"),
-                            //        TotalAmount = readHistory.GetDecimal("Total"),
-                            //        Cash = readHistory.GetDecimal("Cash"),
-                            //        Change = readHistory.GetDecimal("Change")
-                            //    }
-                            //);
+                        using (MySqlDataReader readHistory = historyCmd.ExecuteReader())
+                        {
+                            while (readHistory.Read())
+                            {
+
+                                receiptHistory.Add(
+                                    new addPurchase(
+                                        new HistoryDB
+                                        {
+                                            receiptID = readHistory.GetString("ReceiptID"),
+                                            receiptDate = readHistory.GetDateTime("DateTime"),
+                                            transactionId = readHistory.GetString("Transaction"),
+                                            ItemID = readHistory.GetInt32("ItemID"),
+                                            ImgPath = readHistory.GetString("itemImage"),
+                                            Name = readHistory.GetString("itemName"),
+                                            Type = readHistory.GetString("itemType"),
+                                            Size = readHistory.GetString("itemSize"),
+                                            Quantity = readHistory.GetInt32("itemQTY"),
+                                            Price = readHistory.GetDecimal("itemPrice"),
+                                            TotalAmount = readHistory.GetDecimal("Total"),
+                                            Cash = readHistory.GetDecimal("Cash"),
+                                            Change = readHistory.GetDecimal("Change")
+                                        }
+                                    )
+                                );
+
+                                //historyDB.Add(
+                                //    new HistoryDB
+                                //    {
+                                //        receiptID = readHistory.GetString("ReceiptID"),
+                                //        receiptDate = readHistory.GetDateTime("DateTime"),
+                                //        ItemID = readHistory.GetInt32("ItemID"),
+                                //        Name = readHistory.GetString("itemName"),
+                                //        Type = readHistory.GetString("itemType"),
+                                //        Price = readHistory.GetDecimal("itemPrice"),
+                                //        Quantity = readHistory.GetInt32("itemQTY"),
+                                //        Size = readHistory.GetString("itemSize"),
+                                //        transactionId = readHistory.GetString("Transaction"),
+                                //        TotalAmount = readHistory.GetDecimal("Total"),
+                                //        Cash = readHistory.GetDecimal("Cash"),
+                                //        Change = readHistory.GetDecimal("Change")
+                                //    }
+                                //);
+                            }
                         }
                     }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Database error: " + ex.Message);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Database error: " + ex.Message);
-                }
-            }
 
-            //foreach (HistoryDB history in historyDB) Console.WriteLine(history.receiptID);
-            foreach (addPurchase receipt in receiptHistory) panel.Controls.Add(receipt);
-
+                //foreach (HistoryDB history in historyDB) Console.WriteLine(history.receiptID);
+                foreach (addPurchase receipt in receiptHistory) panel.Controls.Add(receipt);
+          
         }
 
 
