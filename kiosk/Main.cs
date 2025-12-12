@@ -68,7 +68,9 @@ namespace kiosk
         AddCart ac;
 
         //--------------------------------- Admin Section ---------------------------------
-        AdminDB adminDB = new AdminDB();
+        InventoryDB inventoryDB = new InventoryDB();
+        ReceiptDB receiptDB = new ReceiptDB();
+
         //Admin Inventory
         List<AddInventory> Inventory  = new List<AddInventory>();
         //Admin Receipts
@@ -995,8 +997,8 @@ namespace kiosk
         // Admin Functionalities
         private void adminIntialize()
         {
-            adminDB.itemTable(inventoryTable);
-            adminDB.historyTable(receiptTable);
+            inventoryDB.Table(inventoryTable);
+            receiptDB.Table(receiptTable);
 
             admin_tabControl.SelectedTab = admin_dashboard;
             activeCBox();
@@ -1133,8 +1135,8 @@ namespace kiosk
 
         private void adminSort_SelectedIndexChanged(object sender, EventArgs e)
         {
-            adminDB.ItemUpdate(admin_tabControl, admin_inventory, adminSort, inventoryTable);
-            adminDB.HistoryItem(admin_tabControl, admin_purchaseHistory, adminSort, receiptTable);
+            inventoryDB.TableSort(admin_tabControl, admin_inventory, adminSort, inventoryTable);
+            receiptDB.TableSort(admin_tabControl, admin_purchaseHistory, adminSort, receiptTable);
         }   
 
         
@@ -1266,8 +1268,8 @@ namespace kiosk
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            adminDB.itemTable(inventoryTable);
-            adminDB.historyTable(receiptTable);
+            inventoryDB.Table(inventoryTable);
+            receiptDB.Table(receiptTable);
         }
 
 

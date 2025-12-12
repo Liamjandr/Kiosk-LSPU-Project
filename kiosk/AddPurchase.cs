@@ -16,17 +16,20 @@ namespace kiosk
 
         bool isPaid { get; set; }
         bool isClaimed { get; set; }
-        public addPurchase(HistoryDB history)
+        public addPurchase(ReceiptGroup history)
         {
             InitializeComponent();
 
+            //tofix
+            ReceiptID.Text = history.ReceiptID;
+            Type.Text = history.Items[0].Type;
+            Description.Text = history.Items[0].Name;
+            Date.Text = history.ReceiptDate.ToString("MM/dd/yyyy");
+            Quantity.Text = history.Items[0].Quantity.ToString();
+            decimal total = 0;
+            foreach (var item in history.Items) total += item.Quantity * item.Price;
+            Cost.Text = "₱"+total.ToString("F2");
 
-            ReceiptID.Text = history.receiptID;
-            Type.Text = history.Type;
-            Description.Text = history.Name;
-            Date.Text = history.receiptDate.ToString("MM/dd/yyyy");
-            Quantity.Text = history.Quantity.ToString();
-            Cost.Text = "₱"+history.Price.ToString("F2");
             if (isPaid)
             {
                 Payment.Text = "PAID";
