@@ -89,7 +89,7 @@ namespace kiosk
             container.Page(page =>
             {
 
-                page.Size(PageSizes.A5);
+                page.Size(1240, 600);
                 page.PageColor(Colors.White);
                 page.Margin(1, Unit.Centimetre);
 

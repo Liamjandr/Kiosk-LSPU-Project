@@ -135,6 +135,7 @@ namespace kiosk
             paymentMethod = "CASH/COUNTER";
             paymentIdtfy.Text = paymentMethod;
             buybutton.Visible = false;
+            Printbutton.Visible = true;
 
 
         }
@@ -152,6 +153,7 @@ namespace kiosk
             paymentMethod = "CASHLESS/QR";
             paymentIdtfy.Text = paymentMethod;
             buybutton.Visible = true;
+            Printbutton.Visible = false;
 
 
         }
@@ -961,11 +963,13 @@ namespace kiosk
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             ResetCart();
+            LoadStockStatus();
         }
 
         private void firstCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(0);
+           LoadStockStatus();
             //cartCounter = 0;
 
         }
@@ -973,21 +977,28 @@ namespace kiosk
         private void secondCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(1);
+            LoadStockStatus();
+
         }
 
         private void thirdCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(2);
+            LoadStockStatus();
         }
 
         private void fourthCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(3);
+            LoadStockStatus();
+
         }
 
         private void fifthcancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(4);
+            LoadStockStatus();
+
         }
 
 
@@ -1067,6 +1078,9 @@ namespace kiosk
             createPDF.generate(pdf);
 
             webPanel = await Web.viewPDF();
+
+
+
             receiptPanel.Controls.Clear();
             receiptPanel.Controls.Add(webPanel);
             webPanel.Dock = DockStyle.Fill;
@@ -1103,6 +1117,7 @@ namespace kiosk
                 // Reset cart items if needed
                 cartItems.Clear();
 
+                LoadStockStatus();
 
 
                 tabControl1.SelectedTab = tabPage3;
@@ -1127,6 +1142,8 @@ namespace kiosk
             int y = (Checkout.Height - paymentControl.Height) / 2;
             paymentControl.Location = new Point(x, y);
             paymentControl.BringToFront();
+
+   
             //addPurchase receipt = new addPurchase(randomData.generateHistory());
             //receiptTable.Controls.Add(receipt);
         }
@@ -1190,41 +1207,22 @@ namespace kiosk
 
         private void Printbutton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please present your receipt at the counter\nto complete the payment & claim the item.", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            myconn.SaveReceipt(receiptData, paymentMethod);
+
+            DialogResult result = MessageBox.Show(
+           "Please present your receipt at the counter \nto complete the payment & claim the item",
+            "Information",
+                MessageBoxButtons.OK
+            );
             button2.Visible = false;
-               
-            receiptData.TotalAmount = receiptData.Items.Sum(x => x.Price * x.Quantity);
-            receiptData.Cash = 1000; // replace with actual cash input
-            receiptData.Change = receiptData.Cash - receiptData.TotalAmount;
-
-            // get transaction from label
-            string transactionId = paymentIdtfy.Text;
-
-            // Save to database
-            myconn.SaveReceipt(receiptData, transactionId);
+            Printbutton.Location = new Point(814, 976);
+        
 
 
 
             ShowCountdownMessage();
-
-
-
-            // switch to another form after countdown
-            //CountdownMessageBox.Show(
-            //    text: "Switching to Homepage… Cleaning up for the next session.",
-            //    title: "Please wait",
-            //    seconds: 7,
-            //    onClose: () =>
-            //    {
-            //        tabControl1.SelectedTab = tabPage1;
-            //        ClearCartWithoutRestoringStock();
-
-
-            //    }
-            //);
-
-
-     }
+        }
 
         private void ShowCountdownMessage()
         {
@@ -1296,7 +1294,11 @@ namespace kiosk
             if (result == DialogResult.OK)
             {
                 tabControl1.SelectedTab = tabPage1;
+                Printbutton.Visible = true;
+
                 button2.Visible = true;
+                Printbutton.Location = new Point(957, 976);
+
             }
         }
 
@@ -1465,6 +1467,6 @@ namespace kiosk
         //class
 
     }
-    //namespace
+
 }
 
