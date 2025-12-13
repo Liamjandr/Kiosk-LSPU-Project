@@ -512,29 +512,32 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Admin = new System.Windows.Forms.TabPage();
-            this.guna2PictureBox31 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox29 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox28 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox27 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox26 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox25 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.AdminRefreshPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.AdminNotifPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.AdminPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.AdminMenuPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.AdminSearchPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.AdminTitlePic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.HistoryButton = new Guna.UI2.WinForms.Guna2Button();
             this.adminSort = new Guna.UI2.WinForms.Guna2ComboBox();
             this.inventoryButton = new Guna.UI2.WinForms.Guna2Button();
             this.dashboardButton = new Guna.UI2.WinForms.Guna2Button();
             this.admin_tabControl = new Guna.UI2.WinForms.Guna2TabControl();
             this.admin_dashboard = new System.Windows.Forms.TabPage();
+            this.TotalUnclaimed = new System.Windows.Forms.Label();
+            this.TotalClaimed = new System.Windows.Forms.Label();
+            this.TotalUnpaid = new System.Windows.Forms.Label();
             this.TotalPaid = new System.Windows.Forms.Label();
             this.TotalSold = new System.Windows.Forms.Label();
             this.InventoryCount = new System.Windows.Forms.Label();
-            this.guna2PictureBox40 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.DashboardPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox39 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox38 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox37 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox36 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox35 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox34 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox33 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TotalUnclaimedPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TotalClaimedPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TotalUnpaidDashPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TotalPaidDashPIc = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.EarningDashPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.inventoryDashPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox32 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.admin_inventory = new System.Windows.Forms.TabPage();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -547,7 +550,7 @@
             this.purchaseHeader = new Guna.UI2.WinForms.Guna2TextBox();
             this.historyTableHeader = new Guna.UI2.WinForms.Guna2Shapes();
             this.lspulogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox30 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.AdminSidePanel = new Guna.UI2.WinForms.Guna2PictureBox();
             this.adminHeader = new Guna.UI2.WinForms.Guna2Shapes();
             this.Checkout = new System.Windows.Forms.TabPage();
             this.Printbutton = new System.Windows.Forms.Button();
@@ -557,9 +560,6 @@
             this.receiptPanel = new System.Windows.Forms.Panel();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
-            this.TotalUnpaid = new System.Windows.Forms.Label();
-            this.TotalClaimed = new System.Windows.Forms.Label();
-            this.TotalUnclaimed = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.footer.SuspendLayout();
@@ -882,27 +882,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             this.Admin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminRefreshPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminNotifPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminMenuPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminSearchPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminTitlePic)).BeginInit();
             this.admin_tabControl.SuspendLayout();
             this.admin_dashboard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DashboardPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalUnclaimedPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalClaimedPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalUnpaidDashPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalPaidDashPIc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EarningDashPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventoryDashPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox32)).BeginInit();
             this.admin_inventory.SuspendLayout();
             this.admin_purchaseHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lspulogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminSidePanel)).BeginInit();
             this.Checkout.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -7183,19 +7183,19 @@
             // 
             // Admin
             // 
-            this.Admin.Controls.Add(this.guna2PictureBox31);
-            this.Admin.Controls.Add(this.guna2PictureBox29);
-            this.Admin.Controls.Add(this.guna2PictureBox28);
-            this.Admin.Controls.Add(this.guna2PictureBox27);
-            this.Admin.Controls.Add(this.guna2PictureBox26);
-            this.Admin.Controls.Add(this.guna2PictureBox25);
+            this.Admin.Controls.Add(this.AdminRefreshPic);
+            this.Admin.Controls.Add(this.AdminNotifPic);
+            this.Admin.Controls.Add(this.AdminPic);
+            this.Admin.Controls.Add(this.AdminMenuPic);
+            this.Admin.Controls.Add(this.AdminSearchPic);
+            this.Admin.Controls.Add(this.AdminTitlePic);
             this.Admin.Controls.Add(this.HistoryButton);
             this.Admin.Controls.Add(this.adminSort);
             this.Admin.Controls.Add(this.inventoryButton);
             this.Admin.Controls.Add(this.dashboardButton);
             this.Admin.Controls.Add(this.admin_tabControl);
             this.Admin.Controls.Add(this.lspulogo);
-            this.Admin.Controls.Add(this.guna2PictureBox30);
+            this.Admin.Controls.Add(this.AdminSidePanel);
             this.Admin.Controls.Add(this.adminHeader);
             this.Admin.Location = new System.Drawing.Point(4, 22);
             this.Admin.Name = "Admin";
@@ -7205,88 +7205,88 @@
             this.Admin.Text = "tabAdmin";
             this.Admin.UseVisualStyleBackColor = true;
             // 
-            // guna2PictureBox31
+            // AdminRefreshPic
             // 
-            this.guna2PictureBox31.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox31.Image")));
-            this.guna2PictureBox31.ImageRotate = 0F;
-            this.guna2PictureBox31.Location = new System.Drawing.Point(634, 115);
-            this.guna2PictureBox31.Name = "guna2PictureBox31";
-            this.guna2PictureBox31.Size = new System.Drawing.Size(75, 50);
-            this.guna2PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox31.TabIndex = 17;
-            this.guna2PictureBox31.TabStop = false;
-            this.guna2PictureBox31.UseTransparentBackground = true;
-            this.guna2PictureBox31.Click += new System.EventHandler(this.guna2PictureBox31_Click);
+            this.AdminRefreshPic.FillColor = System.Drawing.Color.Transparent;
+            this.AdminRefreshPic.Image = ((System.Drawing.Image)(resources.GetObject("AdminRefreshPic.Image")));
+            this.AdminRefreshPic.ImageRotate = 0F;
+            this.AdminRefreshPic.Location = new System.Drawing.Point(634, 115);
+            this.AdminRefreshPic.Name = "AdminRefreshPic";
+            this.AdminRefreshPic.Size = new System.Drawing.Size(75, 50);
+            this.AdminRefreshPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AdminRefreshPic.TabIndex = 17;
+            this.AdminRefreshPic.TabStop = false;
+            this.AdminRefreshPic.UseTransparentBackground = true;
+            this.AdminRefreshPic.Click += new System.EventHandler(this.guna2PictureBox31_Click);
             // 
-            // guna2PictureBox29
+            // AdminNotifPic
             // 
-            this.guna2PictureBox29.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox29.Image")));
-            this.guna2PictureBox29.ImageRotate = 0F;
-            this.guna2PictureBox29.Location = new System.Drawing.Point(1750, 13);
-            this.guna2PictureBox29.Name = "guna2PictureBox29";
-            this.guna2PictureBox29.Size = new System.Drawing.Size(68, 52);
-            this.guna2PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox29.TabIndex = 15;
-            this.guna2PictureBox29.TabStop = false;
-            this.guna2PictureBox29.UseTransparentBackground = true;
-            this.guna2PictureBox29.Click += new System.EventHandler(this.guna2PictureBox29_Click);
+            this.AdminNotifPic.FillColor = System.Drawing.Color.Transparent;
+            this.AdminNotifPic.Image = ((System.Drawing.Image)(resources.GetObject("AdminNotifPic.Image")));
+            this.AdminNotifPic.ImageRotate = 0F;
+            this.AdminNotifPic.Location = new System.Drawing.Point(1750, 13);
+            this.AdminNotifPic.Name = "AdminNotifPic";
+            this.AdminNotifPic.Size = new System.Drawing.Size(68, 52);
+            this.AdminNotifPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AdminNotifPic.TabIndex = 15;
+            this.AdminNotifPic.TabStop = false;
+            this.AdminNotifPic.UseTransparentBackground = true;
+            this.AdminNotifPic.Click += new System.EventHandler(this.guna2PictureBox29_Click);
             // 
-            // guna2PictureBox28
+            // AdminPic
             // 
-            this.guna2PictureBox28.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox28.Image")));
-            this.guna2PictureBox28.ImageRotate = 0F;
-            this.guna2PictureBox28.Location = new System.Drawing.Point(1802, 13);
-            this.guna2PictureBox28.Name = "guna2PictureBox28";
-            this.guna2PictureBox28.Size = new System.Drawing.Size(109, 87);
-            this.guna2PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox28.TabIndex = 14;
-            this.guna2PictureBox28.TabStop = false;
-            this.guna2PictureBox28.UseTransparentBackground = true;
-            this.guna2PictureBox28.Click += new System.EventHandler(this.guna2PictureBox28_Click);
+            this.AdminPic.FillColor = System.Drawing.Color.Transparent;
+            this.AdminPic.Image = ((System.Drawing.Image)(resources.GetObject("AdminPic.Image")));
+            this.AdminPic.ImageRotate = 0F;
+            this.AdminPic.Location = new System.Drawing.Point(1802, 13);
+            this.AdminPic.Name = "AdminPic";
+            this.AdminPic.Size = new System.Drawing.Size(109, 87);
+            this.AdminPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AdminPic.TabIndex = 14;
+            this.AdminPic.TabStop = false;
+            this.AdminPic.UseTransparentBackground = true;
+            this.AdminPic.Click += new System.EventHandler(this.guna2PictureBox28_Click);
             // 
-            // guna2PictureBox27
+            // AdminMenuPic
             // 
-            this.guna2PictureBox27.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox27.Image")));
-            this.guna2PictureBox27.ImageRotate = 0F;
-            this.guna2PictureBox27.Location = new System.Drawing.Point(25, 25);
-            this.guna2PictureBox27.Name = "guna2PictureBox27";
-            this.guna2PictureBox27.Size = new System.Drawing.Size(43, 40);
-            this.guna2PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox27.TabIndex = 13;
-            this.guna2PictureBox27.TabStop = false;
-            this.guna2PictureBox27.UseTransparentBackground = true;
-            this.guna2PictureBox27.Click += new System.EventHandler(this.guna2PictureBox27_Click);
+            this.AdminMenuPic.FillColor = System.Drawing.Color.Transparent;
+            this.AdminMenuPic.Image = ((System.Drawing.Image)(resources.GetObject("AdminMenuPic.Image")));
+            this.AdminMenuPic.ImageRotate = 0F;
+            this.AdminMenuPic.Location = new System.Drawing.Point(25, 25);
+            this.AdminMenuPic.Name = "AdminMenuPic";
+            this.AdminMenuPic.Size = new System.Drawing.Size(43, 40);
+            this.AdminMenuPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AdminMenuPic.TabIndex = 13;
+            this.AdminMenuPic.TabStop = false;
+            this.AdminMenuPic.UseTransparentBackground = true;
+            this.AdminMenuPic.Click += new System.EventHandler(this.guna2PictureBox27_Click);
             // 
-            // guna2PictureBox26
+            // AdminSearchPic
             // 
-            this.guna2PictureBox26.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox26.Image")));
-            this.guna2PictureBox26.ImageRotate = 0F;
-            this.guna2PictureBox26.Location = new System.Drawing.Point(337, 106);
-            this.guna2PictureBox26.Name = "guna2PictureBox26";
-            this.guna2PictureBox26.Size = new System.Drawing.Size(291, 68);
-            this.guna2PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox26.TabIndex = 12;
-            this.guna2PictureBox26.TabStop = false;
-            this.guna2PictureBox26.UseTransparentBackground = true;
-            this.guna2PictureBox26.Click += new System.EventHandler(this.guna2PictureBox26_Click);
+            this.AdminSearchPic.FillColor = System.Drawing.Color.Transparent;
+            this.AdminSearchPic.Image = ((System.Drawing.Image)(resources.GetObject("AdminSearchPic.Image")));
+            this.AdminSearchPic.ImageRotate = 0F;
+            this.AdminSearchPic.Location = new System.Drawing.Point(337, 106);
+            this.AdminSearchPic.Name = "AdminSearchPic";
+            this.AdminSearchPic.Size = new System.Drawing.Size(291, 68);
+            this.AdminSearchPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AdminSearchPic.TabIndex = 12;
+            this.AdminSearchPic.TabStop = false;
+            this.AdminSearchPic.UseTransparentBackground = true;
+            this.AdminSearchPic.Click += new System.EventHandler(this.guna2PictureBox26_Click);
             // 
-            // guna2PictureBox25
+            // AdminTitlePic
             // 
-            this.guna2PictureBox25.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox25.Image")));
-            this.guna2PictureBox25.ImageRotate = 0F;
-            this.guna2PictureBox25.Location = new System.Drawing.Point(312, 25);
-            this.guna2PictureBox25.Name = "guna2PictureBox25";
-            this.guna2PictureBox25.Size = new System.Drawing.Size(854, 75);
-            this.guna2PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox25.TabIndex = 11;
-            this.guna2PictureBox25.TabStop = false;
-            this.guna2PictureBox25.UseTransparentBackground = true;
+            this.AdminTitlePic.FillColor = System.Drawing.Color.Transparent;
+            this.AdminTitlePic.Image = ((System.Drawing.Image)(resources.GetObject("AdminTitlePic.Image")));
+            this.AdminTitlePic.ImageRotate = 0F;
+            this.AdminTitlePic.Location = new System.Drawing.Point(312, 25);
+            this.AdminTitlePic.Name = "AdminTitlePic";
+            this.AdminTitlePic.Size = new System.Drawing.Size(854, 75);
+            this.AdminTitlePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AdminTitlePic.TabIndex = 11;
+            this.AdminTitlePic.TabStop = false;
+            this.AdminTitlePic.UseTransparentBackground = true;
             // 
             // HistoryButton
             // 
@@ -7416,14 +7416,14 @@
             this.admin_dashboard.Controls.Add(this.TotalPaid);
             this.admin_dashboard.Controls.Add(this.TotalSold);
             this.admin_dashboard.Controls.Add(this.InventoryCount);
-            this.admin_dashboard.Controls.Add(this.guna2PictureBox40);
+            this.admin_dashboard.Controls.Add(this.DashboardPic);
             this.admin_dashboard.Controls.Add(this.guna2PictureBox39);
-            this.admin_dashboard.Controls.Add(this.guna2PictureBox38);
-            this.admin_dashboard.Controls.Add(this.guna2PictureBox37);
-            this.admin_dashboard.Controls.Add(this.guna2PictureBox36);
-            this.admin_dashboard.Controls.Add(this.guna2PictureBox35);
-            this.admin_dashboard.Controls.Add(this.guna2PictureBox34);
-            this.admin_dashboard.Controls.Add(this.guna2PictureBox33);
+            this.admin_dashboard.Controls.Add(this.TotalUnclaimedPic);
+            this.admin_dashboard.Controls.Add(this.TotalClaimedPic);
+            this.admin_dashboard.Controls.Add(this.TotalUnpaidDashPic);
+            this.admin_dashboard.Controls.Add(this.TotalPaidDashPIc);
+            this.admin_dashboard.Controls.Add(this.EarningDashPic);
+            this.admin_dashboard.Controls.Add(this.inventoryDashPic);
             this.admin_dashboard.Controls.Add(this.guna2PictureBox32);
             this.admin_dashboard.ForeColor = System.Drawing.Color.Black;
             this.admin_dashboard.Location = new System.Drawing.Point(184, 4);
@@ -7432,6 +7432,39 @@
             this.admin_dashboard.Size = new System.Drawing.Size(1610, 808);
             this.admin_dashboard.TabIndex = 0;
             this.admin_dashboard.Text = "Dashbooard";
+            // 
+            // TotalUnclaimed
+            // 
+            this.TotalUnclaimed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(162)))), ((int)(((byte)(118)))));
+            this.TotalUnclaimed.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalUnclaimed.ForeColor = System.Drawing.Color.Black;
+            this.TotalUnclaimed.Location = new System.Drawing.Point(1350, 174);
+            this.TotalUnclaimed.Name = "TotalUnclaimed";
+            this.TotalUnclaimed.Size = new System.Drawing.Size(192, 82);
+            this.TotalUnclaimed.TabIndex = 14;
+            this.TotalUnclaimed.Text = "0";
+            // 
+            // TotalClaimed
+            // 
+            this.TotalClaimed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(163)))), ((int)(((byte)(255)))));
+            this.TotalClaimed.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalClaimed.ForeColor = System.Drawing.Color.Black;
+            this.TotalClaimed.Location = new System.Drawing.Point(1092, 174);
+            this.TotalClaimed.Name = "TotalClaimed";
+            this.TotalClaimed.Size = new System.Drawing.Size(192, 82);
+            this.TotalClaimed.TabIndex = 13;
+            this.TotalClaimed.Text = "0";
+            // 
+            // TotalUnpaid
+            // 
+            this.TotalUnpaid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.TotalUnpaid.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalUnpaid.ForeColor = System.Drawing.Color.Black;
+            this.TotalUnpaid.Location = new System.Drawing.Point(835, 174);
+            this.TotalUnpaid.Name = "TotalUnpaid";
+            this.TotalUnpaid.Size = new System.Drawing.Size(192, 88);
+            this.TotalUnpaid.TabIndex = 12;
+            this.TotalUnpaid.Text = "0";
             // 
             // TotalPaid
             // 
@@ -7467,17 +7500,17 @@
             this.InventoryCount.TabIndex = 9;
             this.InventoryCount.Text = "0";
             // 
-            // guna2PictureBox40
+            // DashboardPic
             // 
-            this.guna2PictureBox40.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox40.Image")));
-            this.guna2PictureBox40.ImageRotate = 0F;
-            this.guna2PictureBox40.Location = new System.Drawing.Point(37, 281);
-            this.guna2PictureBox40.Name = "guna2PictureBox40";
-            this.guna2PictureBox40.Size = new System.Drawing.Size(1294, 503);
-            this.guna2PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox40.TabIndex = 8;
-            this.guna2PictureBox40.TabStop = false;
-            this.guna2PictureBox40.UseTransparentBackground = true;
+            this.DashboardPic.Image = ((System.Drawing.Image)(resources.GetObject("DashboardPic.Image")));
+            this.DashboardPic.ImageRotate = 0F;
+            this.DashboardPic.Location = new System.Drawing.Point(37, 281);
+            this.DashboardPic.Name = "DashboardPic";
+            this.DashboardPic.Size = new System.Drawing.Size(1294, 503);
+            this.DashboardPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DashboardPic.TabIndex = 8;
+            this.DashboardPic.TabStop = false;
+            this.DashboardPic.UseTransparentBackground = true;
             // 
             // guna2PictureBox39
             // 
@@ -7491,78 +7524,78 @@
             this.guna2PictureBox39.TabStop = false;
             this.guna2PictureBox39.UseTransparentBackground = true;
             // 
-            // guna2PictureBox38
+            // TotalUnclaimedPic
             // 
-            this.guna2PictureBox38.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox38.Image")));
-            this.guna2PictureBox38.ImageRotate = 0F;
-            this.guna2PictureBox38.Location = new System.Drawing.Point(1312, 74);
-            this.guna2PictureBox38.Name = "guna2PictureBox38";
-            this.guna2PictureBox38.Size = new System.Drawing.Size(276, 219);
-            this.guna2PictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox38.TabIndex = 6;
-            this.guna2PictureBox38.TabStop = false;
-            this.guna2PictureBox38.UseTransparentBackground = true;
+            this.TotalUnclaimedPic.Image = ((System.Drawing.Image)(resources.GetObject("TotalUnclaimedPic.Image")));
+            this.TotalUnclaimedPic.ImageRotate = 0F;
+            this.TotalUnclaimedPic.Location = new System.Drawing.Point(1312, 74);
+            this.TotalUnclaimedPic.Name = "TotalUnclaimedPic";
+            this.TotalUnclaimedPic.Size = new System.Drawing.Size(276, 219);
+            this.TotalUnclaimedPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TotalUnclaimedPic.TabIndex = 6;
+            this.TotalUnclaimedPic.TabStop = false;
+            this.TotalUnclaimedPic.UseTransparentBackground = true;
             // 
-            // guna2PictureBox37
+            // TotalClaimedPic
             // 
-            this.guna2PictureBox37.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox37.Image")));
-            this.guna2PictureBox37.ImageRotate = 0F;
-            this.guna2PictureBox37.Location = new System.Drawing.Point(1036, 82);
-            this.guna2PictureBox37.Name = "guna2PictureBox37";
-            this.guna2PictureBox37.Size = new System.Drawing.Size(308, 206);
-            this.guna2PictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox37.TabIndex = 5;
-            this.guna2PictureBox37.TabStop = false;
-            this.guna2PictureBox37.UseTransparentBackground = true;
+            this.TotalClaimedPic.Image = ((System.Drawing.Image)(resources.GetObject("TotalClaimedPic.Image")));
+            this.TotalClaimedPic.ImageRotate = 0F;
+            this.TotalClaimedPic.Location = new System.Drawing.Point(1036, 82);
+            this.TotalClaimedPic.Name = "TotalClaimedPic";
+            this.TotalClaimedPic.Size = new System.Drawing.Size(308, 206);
+            this.TotalClaimedPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TotalClaimedPic.TabIndex = 5;
+            this.TotalClaimedPic.TabStop = false;
+            this.TotalClaimedPic.UseTransparentBackground = true;
             // 
-            // guna2PictureBox36
+            // TotalUnpaidDashPic
             // 
-            this.guna2PictureBox36.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox36.Image")));
-            this.guna2PictureBox36.ImageRotate = 0F;
-            this.guna2PictureBox36.Location = new System.Drawing.Point(781, 82);
-            this.guna2PictureBox36.Name = "guna2PictureBox36";
-            this.guna2PictureBox36.Size = new System.Drawing.Size(308, 206);
-            this.guna2PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox36.TabIndex = 4;
-            this.guna2PictureBox36.TabStop = false;
-            this.guna2PictureBox36.UseTransparentBackground = true;
+            this.TotalUnpaidDashPic.Image = ((System.Drawing.Image)(resources.GetObject("TotalUnpaidDashPic.Image")));
+            this.TotalUnpaidDashPic.ImageRotate = 0F;
+            this.TotalUnpaidDashPic.Location = new System.Drawing.Point(781, 82);
+            this.TotalUnpaidDashPic.Name = "TotalUnpaidDashPic";
+            this.TotalUnpaidDashPic.Size = new System.Drawing.Size(308, 206);
+            this.TotalUnpaidDashPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TotalUnpaidDashPic.TabIndex = 4;
+            this.TotalUnpaidDashPic.TabStop = false;
+            this.TotalUnpaidDashPic.UseTransparentBackground = true;
             // 
-            // guna2PictureBox35
+            // TotalPaidDashPIc
             // 
-            this.guna2PictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox35.Image")));
-            this.guna2PictureBox35.ImageRotate = 0F;
-            this.guna2PictureBox35.Location = new System.Drawing.Point(525, 82);
-            this.guna2PictureBox35.Name = "guna2PictureBox35";
-            this.guna2PictureBox35.Size = new System.Drawing.Size(307, 206);
-            this.guna2PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox35.TabIndex = 3;
-            this.guna2PictureBox35.TabStop = false;
-            this.guna2PictureBox35.UseTransparentBackground = true;
-            this.guna2PictureBox35.Click += new System.EventHandler(this.guna2PictureBox35_Click);
+            this.TotalPaidDashPIc.Image = ((System.Drawing.Image)(resources.GetObject("TotalPaidDashPIc.Image")));
+            this.TotalPaidDashPIc.ImageRotate = 0F;
+            this.TotalPaidDashPIc.Location = new System.Drawing.Point(525, 82);
+            this.TotalPaidDashPIc.Name = "TotalPaidDashPIc";
+            this.TotalPaidDashPIc.Size = new System.Drawing.Size(307, 206);
+            this.TotalPaidDashPIc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TotalPaidDashPIc.TabIndex = 3;
+            this.TotalPaidDashPIc.TabStop = false;
+            this.TotalPaidDashPIc.UseTransparentBackground = true;
+            this.TotalPaidDashPIc.Click += new System.EventHandler(this.guna2PictureBox35_Click);
             // 
-            // guna2PictureBox34
+            // EarningDashPic
             // 
-            this.guna2PictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox34.Image")));
-            this.guna2PictureBox34.ImageRotate = 0F;
-            this.guna2PictureBox34.Location = new System.Drawing.Point(256, 82);
-            this.guna2PictureBox34.Name = "guna2PictureBox34";
-            this.guna2PictureBox34.Size = new System.Drawing.Size(321, 217);
-            this.guna2PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox34.TabIndex = 2;
-            this.guna2PictureBox34.TabStop = false;
-            this.guna2PictureBox34.UseTransparentBackground = true;
+            this.EarningDashPic.Image = ((System.Drawing.Image)(resources.GetObject("EarningDashPic.Image")));
+            this.EarningDashPic.ImageRotate = 0F;
+            this.EarningDashPic.Location = new System.Drawing.Point(256, 82);
+            this.EarningDashPic.Name = "EarningDashPic";
+            this.EarningDashPic.Size = new System.Drawing.Size(321, 217);
+            this.EarningDashPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.EarningDashPic.TabIndex = 2;
+            this.EarningDashPic.TabStop = false;
+            this.EarningDashPic.UseTransparentBackground = true;
             // 
-            // guna2PictureBox33
+            // inventoryDashPic
             // 
-            this.guna2PictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox33.Image")));
-            this.guna2PictureBox33.ImageRotate = 0F;
-            this.guna2PictureBox33.Location = new System.Drawing.Point(-1, 82);
-            this.guna2PictureBox33.Name = "guna2PictureBox33";
-            this.guna2PictureBox33.Size = new System.Drawing.Size(308, 206);
-            this.guna2PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox33.TabIndex = 1;
-            this.guna2PictureBox33.TabStop = false;
-            this.guna2PictureBox33.UseTransparentBackground = true;
+            this.inventoryDashPic.Image = ((System.Drawing.Image)(resources.GetObject("inventoryDashPic.Image")));
+            this.inventoryDashPic.ImageRotate = 0F;
+            this.inventoryDashPic.Location = new System.Drawing.Point(-1, 82);
+            this.inventoryDashPic.Name = "inventoryDashPic";
+            this.inventoryDashPic.Size = new System.Drawing.Size(308, 206);
+            this.inventoryDashPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.inventoryDashPic.TabIndex = 1;
+            this.inventoryDashPic.TabStop = false;
+            this.inventoryDashPic.UseTransparentBackground = true;
             // 
             // guna2PictureBox32
             // 
@@ -7778,17 +7811,17 @@
             this.lspulogo.TabStop = false;
             this.lspulogo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox30
+            // AdminSidePanel
             // 
-            this.guna2PictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox30.Image")));
-            this.guna2PictureBox30.ImageRotate = 0F;
-            this.guna2PictureBox30.Location = new System.Drawing.Point(-301, 106);
-            this.guna2PictureBox30.Name = "guna2PictureBox30";
-            this.guna2PictureBox30.Size = new System.Drawing.Size(837, 1249);
-            this.guna2PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox30.TabIndex = 16;
-            this.guna2PictureBox30.TabStop = false;
-            this.guna2PictureBox30.UseTransparentBackground = true;
+            this.AdminSidePanel.Image = ((System.Drawing.Image)(resources.GetObject("AdminSidePanel.Image")));
+            this.AdminSidePanel.ImageRotate = 0F;
+            this.AdminSidePanel.Location = new System.Drawing.Point(-301, 106);
+            this.AdminSidePanel.Name = "AdminSidePanel";
+            this.AdminSidePanel.Size = new System.Drawing.Size(837, 1249);
+            this.AdminSidePanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AdminSidePanel.TabIndex = 16;
+            this.AdminSidePanel.TabStop = false;
+            this.AdminSidePanel.UseTransparentBackground = true;
             // 
             // adminHeader
             // 
@@ -7875,39 +7908,6 @@
             this.mySqlCommand1.Connection = null;
             this.mySqlCommand1.EnableCaching = false;
             this.mySqlCommand1.Transaction = null;
-            // 
-            // TotalUnpaid
-            // 
-            this.TotalUnpaid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.TotalUnpaid.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalUnpaid.ForeColor = System.Drawing.Color.Black;
-            this.TotalUnpaid.Location = new System.Drawing.Point(835, 174);
-            this.TotalUnpaid.Name = "TotalUnpaid";
-            this.TotalUnpaid.Size = new System.Drawing.Size(192, 88);
-            this.TotalUnpaid.TabIndex = 12;
-            this.TotalUnpaid.Text = "0";
-            // 
-            // TotalClaimed
-            // 
-            this.TotalClaimed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(163)))), ((int)(((byte)(255)))));
-            this.TotalClaimed.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalClaimed.ForeColor = System.Drawing.Color.Black;
-            this.TotalClaimed.Location = new System.Drawing.Point(1092, 174);
-            this.TotalClaimed.Name = "TotalClaimed";
-            this.TotalClaimed.Size = new System.Drawing.Size(192, 82);
-            this.TotalClaimed.TabIndex = 13;
-            this.TotalClaimed.Text = "0";
-            // 
-            // TotalUnclaimed
-            // 
-            this.TotalUnclaimed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(162)))), ((int)(((byte)(118)))));
-            this.TotalUnclaimed.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalUnclaimed.ForeColor = System.Drawing.Color.Black;
-            this.TotalUnclaimed.Location = new System.Drawing.Point(1350, 174);
-            this.TotalUnclaimed.Name = "TotalUnclaimed";
-            this.TotalUnclaimed.Size = new System.Drawing.Size(192, 82);
-            this.TotalUnclaimed.TabIndex = 14;
-            this.TotalUnclaimed.Text = "0";
             // 
             // Main
             // 
@@ -8258,27 +8258,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             this.Admin.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminRefreshPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminNotifPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminMenuPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminSearchPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminTitlePic)).EndInit();
             this.admin_tabControl.ResumeLayout(false);
             this.admin_dashboard.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DashboardPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalUnclaimedPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalClaimedPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalUnpaidDashPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TotalPaidDashPIc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EarningDashPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventoryDashPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox32)).EndInit();
             this.admin_inventory.ResumeLayout(false);
             this.admin_purchaseHistory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lspulogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminSidePanel)).EndInit();
             this.Checkout.ResumeLayout(false);
             this.Checkout.PerformLayout();
             this.ResumeLayout(false);
@@ -8794,25 +8794,25 @@
         public System.Windows.Forms.Label paymentIdtfy;
         private System.Windows.Forms.Button Printbutton;
         private Guna.UI2.WinForms.Guna2PictureBox lspulogo;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox26;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox25;
+        private Guna.UI2.WinForms.Guna2PictureBox AdminSearchPic;
+        private Guna.UI2.WinForms.Guna2PictureBox AdminTitlePic;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox27;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox28;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox29;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox30;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox31;
+        private Guna.UI2.WinForms.Guna2PictureBox AdminMenuPic;
+        private Guna.UI2.WinForms.Guna2PictureBox AdminPic;
+        private Guna.UI2.WinForms.Guna2PictureBox AdminNotifPic;
+        private Guna.UI2.WinForms.Guna2PictureBox AdminSidePanel;
+        private Guna.UI2.WinForms.Guna2PictureBox AdminRefreshPic;
         public System.Windows.Forms.TabControl tabControl1;
         private Guna.UI2.WinForms.Guna2TabControl admin_tabControl;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox38;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox37;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox36;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox35;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox34;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox33;
+        private Guna.UI2.WinForms.Guna2PictureBox TotalUnclaimedPic;
+        private Guna.UI2.WinForms.Guna2PictureBox TotalClaimedPic;
+        private Guna.UI2.WinForms.Guna2PictureBox TotalUnpaidDashPic;
+        private Guna.UI2.WinForms.Guna2PictureBox TotalPaidDashPIc;
+        private Guna.UI2.WinForms.Guna2PictureBox EarningDashPic;
+        private Guna.UI2.WinForms.Guna2PictureBox inventoryDashPic;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox32;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox39;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox40;
+        private Guna.UI2.WinForms.Guna2PictureBox DashboardPic;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private System.Windows.Forms.Label InventoryCount;
         private System.Windows.Forms.Label TotalSold;
