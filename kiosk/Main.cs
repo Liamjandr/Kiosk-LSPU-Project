@@ -134,7 +134,6 @@ namespace kiosk
 
             paymentMethod = "CASH/COUNTER";
             paymentIdtfy.Text = paymentMethod;
-            Printbutton.Visible = true;
             buybutton.Visible = false;
 
 
@@ -152,7 +151,6 @@ namespace kiosk
 
             paymentMethod = "CASHLESS/QR";
             paymentIdtfy.Text = paymentMethod;
-            Printbutton.Visible = false;
             buybutton.Visible = true;
 
 
