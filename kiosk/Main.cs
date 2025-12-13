@@ -1,24 +1,26 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using Guna.UI2.WinForms.Enums;
+using Microsoft.Web.WebView2.Core;
+using Microsoft.Web.WebView2.WinForms;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Guna.UI2.WinForms;
-using MySql.Data.MySqlClient;
-using Microsoft.Web.WebView2.Core;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-using static Guna.UI2.Native.WinApi;
-using Microsoft.Web.WebView2.WinForms;
-using static kiosk.randomData;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
-using System.Data.SqlClient;
+using System.Text;
+using System.Threading.Tasks;
 using System.Web.UI.HtmlControls;
+using System.Windows.Forms;
+using static Guna.UI2.Native.WinApi;
+using static kiosk.randomData;
+using static QRCoder.PayloadGenerator;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace kiosk
 {
@@ -74,9 +76,9 @@ namespace kiosk
         //Admin Inventory
         List<AddInventory> Inventory  = new List<AddInventory>();
         //Admin Receipts
-        //Receipt Data
         receiptTemplate receiptData = new receiptTemplate();
         createPDF createPDF = new createPDF();
+        ReceiptModal receiptModal;
         //
         WebView2 webPanel;
 
@@ -999,9 +1001,9 @@ namespace kiosk
         {
             inventoryDB.Table(inventoryTable);
             receiptDB.Table(receiptTable);
-
             admin_tabControl.SelectedTab = admin_dashboard;
             activeCBox();
+            loadDashboardData();
             //await loadSort();
         }
 
@@ -1009,17 +1011,20 @@ namespace kiosk
         {
             admin_tabControl.SelectedTab = admin_dashboard;
             activeCBox();
+            closeReceiptModal();
         }
 
         private void inventoryButton_Click(object sender, EventArgs e)
         {
             admin_tabControl.SelectedTab = admin_inventory;
             activeCBox();
+            closeReceiptModal();
         }
         private void HistoryButton_Click(object sender, EventArgs e)
         {
             admin_tabControl.SelectedTab = admin_purchaseHistory;
             activeCBox();
+            closeReceiptModal();
         }
         void activeCBox()
         {
@@ -1133,13 +1138,61 @@ namespace kiosk
             //adminSort.Items.
         }
 
+        public void showReceiptModal(List<HistoryDB> items)
+        {
+            closeReceiptModal();
+            receiptModal = new ReceiptModal(items);
+            receiptModal.TabIndex = 20;
+            Admin.Controls.Add(receiptModal);
+            int x = (Admin.Width - receiptModal.Width) / 2;
+            int y = (Admin.Height - receiptModal.Height) / 2;
+            receiptModal.Location = new Point(x, y);
+            receiptModal.BringToFront();
+        }
+
+        public void closeReceiptModal()
+        {
+            if (receiptModal != null)
+            {
+                admin_purchaseHistory.Controls.Remove(receiptModal);
+                receiptModal.Dispose();
+                receiptModal = null;
+            }
+        }
+
         private void adminSort_SelectedIndexChanged(object sender, EventArgs e)
         {
             inventoryDB.TableSort(admin_tabControl, admin_inventory, adminSort, inventoryTable);
             receiptDB.TableSort(admin_tabControl, admin_purchaseHistory, adminSort, receiptTable);
+            closeReceiptModal();
         }   
 
-        
+        public void loadDashboardData()
+        {
+            if (
+                    InventoryCount.Text != null || 
+                    TotalPaid.Text != null ||
+                    TotalUnpaid.Text != null ||
+                    TotalClaimed.Text != null||
+                    TotalUnclaimed.Text != null
+                )
+            {
+
+                InventoryCount.Text = null;
+                TotalPaid.Text = null;
+                TotalUnpaid.Text = null;
+                TotalClaimed.Text = null;
+                TotalUnclaimed.Text = null;
+            }
+
+
+            InventoryCount.Text = inventoryDB.getInventory().ToString();
+            TotalSold.Text = "₱" + receiptDB.totalSale().ToString("F2");
+            TotalPaid.Text = receiptDB.Paid().ToString();
+            TotalUnpaid.Text = receiptDB.NotPaid().ToString();
+            TotalClaimed.Text = receiptDB.Claimed().ToString();
+            TotalUnclaimed.Text = receiptDB.NotClaimed().ToString();
+        }
 
 
         private void inventoryTable_Paint(object sender, PaintEventArgs e)
@@ -1266,11 +1319,51 @@ namespace kiosk
             }
         }
 
-        private void updateBtn_Click(object sender, EventArgs e)
+        private void guna2PictureBox27_Click(object sender, EventArgs e)
         {
+            tabControl1.SelectedTab = tabPage2;
+            closeReceiptModal();
+        }
+
+        private void adminHeader_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox31_Click(object sender, EventArgs e)
+        {
+            closeReceiptModal();
+            loadDashboardData();
             inventoryDB.Table(inventoryTable);
             receiptDB.Table(receiptTable);
         }
+
+        private void guna2PictureBox26_Click(object sender, EventArgs e)
+        {
+            closeReceiptModal();
+        }
+
+        //Notif and Profile
+        private void guna2PictureBox29_Click(object sender, EventArgs e)
+        {
+            closeReceiptModal();
+        }
+
+        private void guna2PictureBox28_Click(object sender, EventArgs e)
+        {
+            closeReceiptModal();
+        }
+
+        private void guna2PictureBox35_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
         //Ignore ko to, di ko alam kung pano mo to iimplete - liam : D

@@ -37,6 +37,7 @@
             this.Cost = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Payment = new Guna.UI2.WinForms.Guna2Button();
             this.Claim = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // historyTableHeader
@@ -156,11 +157,32 @@
             this.Claim.UseTransparentBackground = true;
             this.Claim.Click += new System.EventHandler(this.Claim_Click);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.guna2Button1.BorderRadius = 8;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(583, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(138, 37);
+            this.guna2Button1.TabIndex = 11;
+            this.guna2Button1.Text = "View Purchase";
+            this.guna2Button1.UseTransparentBackground = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
             // addPurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.Claim);
             this.Controls.Add(this.Payment);
             this.Controls.Add(this.Cost);
@@ -187,5 +209,6 @@
         public Guna.UI2.WinForms.Guna2Button Payment;
         public Guna.UI2.WinForms.Guna2Button Claim;
         public Guna.UI2.WinForms.Guna2HtmlLabel ReceiptID;
+        public Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -136,12 +136,12 @@ namespace kiosk
     {
         //List<HistoryDB> historyDB = new List<HistoryDB>();
         private List<addPurchase> receiptHistory = new List<addPurchase>();
+        Dictionary<string, ReceiptGroup> receiptGroup = new Dictionary<string, ReceiptGroup>();
 
         public override void Table(FlowLayoutPanel panel)
         {
             panel.Controls.Clear();
             receiptHistory.Clear();
-            Dictionary<string, ReceiptGroup> receiptGroup = new Dictionary<string, ReceiptGroup>();
 
             using (MySqlConnection conn = new MySqlConnection(mycon))
             {
@@ -183,27 +183,6 @@ namespace kiosk
                                     Change = readHistory.GetDecimal("Change")
                                 }
                             );
-
-                            //receiptHistory.Add(
-                            //    new addPurchase(
-                            //        new HistoryDB
-                            //        {
-                            //            receiptID = readHistory.GetString("ReceiptID"),
-                            //            receiptDate = readHistory.GetDateTime("DateTime"),
-                            //            transactionId = readHistory.GetString("Transaction"),
-                            //            ItemID = readHistory.GetInt32("ItemID"),
-                            //            ImgPath = readHistory.GetString("itemImage"),
-                            //            Name = readHistory.GetString("itemName"),
-                            //            Type = readHistory.GetString("itemType"),
-                            //            Size = readHistory.GetString("itemSize"),
-                            //            Quantity = readHistory.GetInt32("itemQTY"),
-                            //            Price = readHistory.GetDecimal("itemPrice"),
-                            //            TotalAmount = readHistory.GetDecimal("Total"),
-                            //            Cash = readHistory.GetDecimal("Cash"),
-                            //            Change = readHistory.GetDecimal("Change")
-                            //        }
-                            //    )
-                            //);
                         }
                     }
                 }
@@ -213,13 +192,16 @@ namespace kiosk
                 }
             }
 
+
+
             foreach (var receipt in receiptGroup.Values.OrderBy(g => g.ReceiptID))
             {
                 addPurchase control = new addPurchase(receipt);
+                receiptHistory.Add(control);
                 panel.Controls.Add(control);
             }
             //foreach (HistoryDB history in historyDB) Console.WriteLine(history.receiptID);
-            foreach (addPurchase receipt in receiptHistory) panel.Controls.Add(receipt);
+
         }
 
         public override void TableSort(Guna2TabControl admin_tabControl, TabPage CurrentPage, Guna2ComboBox adminSort, FlowLayoutPanel CurrentFlowPanel)
@@ -258,6 +240,72 @@ namespace kiosk
                         break;
                 }
         }
+
+
+        public decimal totalSale()
+        {
+            decimal total = 0;
+            foreach (var receipt in receiptGroup.Values)
+            {
+                foreach (var item in receipt.Items)
+                {
+                    total += item.Price * item.Quantity;
+                }
+            }
+            return total;
+        }
+
+        public int Paid()
+        {
+            int total = 0;
+            foreach (var receipt in receiptGroup.Values)
+            {
+                foreach (var item in receipt.Items)
+                {
+                    if (item.isPaid) total++;
+                }
+            }
+            return total;
+        }
+
+        public int NotPaid()
+        {
+            int total = 0;
+            foreach (var receipt in receiptGroup.Values)
+            {
+                foreach (var item in receipt.Items)
+                {
+                    if (!item.isPaid) total++;
+                }
+            }
+            return total;
+        }
+
+        public int Claimed()
+        {
+            int total = 0;
+            foreach (var receipt in receiptGroup.Values)
+            {
+                foreach (var item in receipt.Items)
+                {
+                    if (item.isClaimed) total++;
+                }
+            }
+            return total;
+        }
+
+        public int NotClaimed()
+        {
+            int total = 0;
+            foreach (var receipt in receiptGroup.Values)
+            {
+                foreach (var item in receipt.Items)
+                {
+                    if (!item.isClaimed) total++;
+                }
+            }
+            return total;
+        }
     }
 
     public class ItemDB 
@@ -288,5 +336,8 @@ namespace kiosk
         public decimal TotalAmount { get; set; }
         public decimal Cash { get; set; }
         public decimal Change { get; set; }
+
+        public Boolean isPaid = false;
+        public Boolean isClaimed = false;
     }
 }

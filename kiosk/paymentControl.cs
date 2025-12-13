@@ -97,9 +97,8 @@ namespace kiosk
                 string result = "";
                 var cancelProcess = new CancellationTokenSource();
                 var payment = Paymongo.CheckPayment(cancelProcess.Token);
-                var expireTime = Task.Delay(30000); //120000 ms = 2 minutes
+                var expireTime = Task.Delay(300000); //120000 ms = 2 minutes
                 var ifExpire = await Task.WhenAny(payment, expireTime);
-                //Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
 
                 // Return to UI thread
                 Invoke(new Action(async () =>

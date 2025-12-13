@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Paymongo.Sharp.Features.Checkouts.Contracts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +17,13 @@ namespace kiosk
 
         bool isPaid { get; set; }
         bool isClaimed { get; set; }
+        List<HistoryDB> receiptItems { get; set; }
         public addPurchase(ReceiptGroup history)
         {
             InitializeComponent();
 
             //tofix
+            receiptItems = history.Items;
             ReceiptID.Text = history.ReceiptID;
             Type.Text = history.Items[0].Type;
             Description.Text = history.Items[0].Name;
@@ -99,6 +102,13 @@ namespace kiosk
                 Claim.Text = "Not Claimed";
                 Claim.FillColor = Color.Red;
             }
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            var main = this.FindForm() as Main;
+            if (main == null) return;
+            main.showReceiptModal(receiptItems);
         }
     }
 }

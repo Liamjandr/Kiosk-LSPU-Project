@@ -171,6 +171,12 @@
       <DependentUpon>AddPurchase.cs</DependentUpon>
     </Compile>
     <Compile Include="randomData.cs" />
+    <Compile Include="ReceiptModal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReceiptModal.Designer.cs">
+      <DependentUpon>ReceiptModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="receiptTemplate.cs" />
     <EmbeddedResource Include="AddCart.resx">
       <DependentUpon>AddCart.cs</DependentUpon>
@@ -192,9 +198,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="AddPurchase.resx">
       <DependentUpon>AddPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptModal.resx">
+      <DependentUpon>ReceiptModal.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -209,6 +219,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LSPU-Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\QuestPDF.2025.7.4\build\net4\QuestPDF.targets" Condition="Exists('..\packages\QuestPDF.2025.7.4\build\net4\QuestPDF.targets')" />
