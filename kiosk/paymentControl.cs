@@ -12,6 +12,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Windows.Navigation;
+using Paymongo.Sharp.Features.PaymentMethods.Contracts;
 
 namespace kiosk
 {
@@ -112,8 +113,10 @@ namespace kiosk
                             result = "Payment Successful!";
                             transacStatus = false;
 
+                            Main m = new Main();
+
                             //Temporary save to database
-                            myconn.SaveReceipt(receiptData, "CASHLESS/QR");
+                            myconn.SaveReceipt(receiptData, m.paymentMethod);
 
                             //tofix
                             //for (int i = 0; i < receiptData.Items.Count; i++)

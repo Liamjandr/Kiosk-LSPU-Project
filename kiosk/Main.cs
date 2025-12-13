@@ -132,8 +132,8 @@ namespace kiosk
 
             paymentMethod = "CASH/COUNTER";
             paymentIdtfy.Text = paymentMethod;
-            Printbutton.Visible = true;
             buybutton.Visible = false;
+            Printbutton.Visible = true;
 
 
         }
@@ -150,8 +150,8 @@ namespace kiosk
 
             paymentMethod = "CASHLESS/QR";
             paymentIdtfy.Text = paymentMethod;
-            Printbutton.Visible = false;
             buybutton.Visible = true;
+            Printbutton.Visible = false;
 
 
         }
@@ -961,11 +961,13 @@ namespace kiosk
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             ResetCart();
+            LoadStockStatus();
         }
 
         private void firstCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(0);
+           LoadStockStatus();
             //cartCounter = 0;
 
         }
@@ -973,21 +975,28 @@ namespace kiosk
         private void secondCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(1);
+            LoadStockStatus();
+
         }
 
         private void thirdCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(2);
+            LoadStockStatus();
         }
 
         private void fourthCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(3);
+            LoadStockStatus();
+
         }
 
         private void fifthcancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(4);
+            LoadStockStatus();
+
         }
 
 
@@ -1064,6 +1073,9 @@ namespace kiosk
             createPDF.generate(pdf);
 
             webPanel = await Web.viewPDF();
+
+
+
             receiptPanel.Controls.Clear();
             receiptPanel.Controls.Add(webPanel);
             webPanel.Dock = DockStyle.Fill;
@@ -1100,6 +1112,7 @@ namespace kiosk
                 // Reset cart items if needed
                 cartItems.Clear();
 
+                LoadStockStatus();
 
 
                 tabControl1.SelectedTab = tabPage3;
@@ -1124,6 +1137,8 @@ namespace kiosk
             int y = (Checkout.Height - paymentControl.Height) / 2;
             paymentControl.Location = new Point(x, y);
             paymentControl.BringToFront();
+
+   
             //addPurchase receipt = new addPurchase(randomData.generateHistory());
             //receiptTable.Controls.Add(receipt);
         }
@@ -1156,41 +1171,22 @@ namespace kiosk
 
         private void Printbutton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please present your receipt at the counter\nto complete the payment & claim the item.", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            myconn.SaveReceipt(receiptData, paymentMethod);
+
+            DialogResult result = MessageBox.Show(
+           "Please present your receipt at the counter \nto complete the payment & claim the item",
+            "Information",
+                MessageBoxButtons.OK
+            );
             button2.Visible = false;
-               
-            receiptData.TotalAmount = receiptData.Items.Sum(x => x.Price * x.Quantity);
-            receiptData.Cash = 1000; // replace with actual cash input
-            receiptData.Change = receiptData.Cash - receiptData.TotalAmount;
-
-            // get transaction from label
-            string transactionId = paymentIdtfy.Text;
-
-            // Save to database
-            myconn.SaveReceipt(receiptData, transactionId);
+            Printbutton.Location = new Point(814, 976);
+        
 
 
 
             ShowCountdownMessage();
-
-
-
-            // switch to another form after countdown
-            //CountdownMessageBox.Show(
-            //    text: "Switching to Homepage… Cleaning up for the next session.",
-            //    title: "Please wait",
-            //    seconds: 7,
-            //    onClose: () =>
-            //    {
-            //        tabControl1.SelectedTab = tabPage1;
-            //        ClearCartWithoutRestoringStock();
-
-
-            //    }
-            //);
-
-
-     }
+        }
 
         private void ShowCountdownMessage()
         {
@@ -1262,7 +1258,11 @@ namespace kiosk
             if (result == DialogResult.OK)
             {
                 tabControl1.SelectedTab = tabPage1;
+                Printbutton.Visible = true;
+
                 button2.Visible = true;
+                Printbutton.Location = new Point(957, 976);
+
             }
         }
 
@@ -1271,126 +1271,7 @@ namespace kiosk
             inventoryDB.Table(inventoryTable);
             receiptDB.Table(receiptTable);
         }
-
-
-        //Ignore ko to, di ko alam kung pano mo to iimplete - liam : D
-
-
-        //        public static class CountdownMessageBox
-        //{
-
-        //    public static void Show(string text, string title = "Information", int seconds = 5, Action onClose = null)
-        //    {
-        //        // Create a Form that looks like a MessageBox
-        //        var box = new MessageBoxLikeForm(text, title, seconds, onClose);
-        //        box.ShowDialog(); // modal, centered
-        //    }
-
-        //    private class MessageBoxLikeForm : Form
-        //    {
-        //        private readonly Label _label;
-        //        private readonly Timer _timer;
-        //        private int _seconds;
-        //        private readonly string _baseText;
-        //        private readonly PictureBox _iconBox;
-
-        //        public MessageBoxLikeForm(string text, string title, int seconds, Action onClose)
-        //        {
-        //            _baseText = text;
-        //            _seconds = Math.Max(1, seconds);
-
-        //            Text = title;
-        //            StartPosition = FormStartPosition.CenterScreen;
-        //            FormBorderStyle = FormBorderStyle.None;
-        //            MaximizeBox = false;
-        //            MinimizeBox = false;
-        //            ShowInTaskbar = false;
-        //            TopMost = true; // behaves like a message box
-        //            AutoSize = false;
-        //            Width = 460;
-        //            Height = 180;
-
-        //            // Icon (information icon to feel like MessageBox)
-        //            _iconBox = new PictureBox
-        //            {
-        //                SizeMode = PictureBoxSizeMode.CenterImage,
-        //                Width = 48,
-        //                Height = 48,
-        //                Left = 20,
-        //                Top = 25,
-        //                Image = IconToBitmap(SystemIcons.Information)
-        //            };
-
-        //            // Message label
-        //            _label = new Label
-        //            {
-        //                AutoSize = false,
-        //                Left = _iconBox.Right + 16,
-        //                Top = 20,
-        //                Width = ClientSize.Width - (_iconBox.Right + 36),
-        //                Height = 90,
-        //                TextAlign = ContentAlignment.MiddleLeft,
-        //                Font = new Font("Segoe UI", 10.5f, FontStyle.Regular)
-        //            };
-
-        //            Controls.Add(_iconBox);
-        //            Controls.Add(_label);
-
-        //            // Timer
-        //            _timer = new Timer { Interval = 1000 };
-        //            _timer.Tick += (s, e) =>
-        //            {
-        //                _seconds--;
-        //                UpdateText();
-        //                if (_seconds <= 0)
-        //                {
-        //                    _timer.Stop();
-        //                    Close();
-        //                    onClose?.Invoke();  
-        //                }
-        //            };
-
-        //            Shown += (s, e) =>
-        //            {
-        //                UpdateText();
-        //                _timer.Start();
-        //            };
-
-        //            FormClosed += (s, e) =>
-        //            {
-        //                _timer.Stop();
-        //                _timer.Dispose();
-        //            };
-        //        }
-
-        //        private void UpdateText()
-        //        {
-        //            _label.Text = $"{_baseText}\r\n\r\nClosing in {_seconds}...";
-        //        }
-
-        //        // Convert Icon to Bitmap to show in PictureBox
-        //        private static Bitmap IconToBitmap(Icon icon)
-        //        {
-        //            return icon.ToBitmap();
-        //        }
-
-        //        // Add a standard drop shadow where supported
-        //        protected override CreateParams CreateParams
-        //        {
-        //            get
-        //            {
-        //                const int CS_DROPSHADOW = 0x00020000;
-        //                var cp = base.CreateParams;
-        //                cp.ClassStyle |= CS_DROPSHADOW;
-        //                return cp;
-        //            }
-        //        }
-        //    }
-        //}
-
-        //class
-
     }
-    //namespace
+
 }
 
