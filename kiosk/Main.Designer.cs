@@ -491,10 +491,10 @@
             this.guna2PictureBox20 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox21 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox22 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2CirclePictureBox5 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox23 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox24 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2CirclePictureBox5 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox14 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox15 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -555,8 +555,6 @@
             this.Checkout = new System.Windows.Forms.TabPage();
             this.button2 = new Guna.UI2.WinForms.Guna2Button();
             this.receiptPanel = new System.Windows.Forms.Panel();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.guna2CustomGradientPanel14 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel15 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2PictureBox37 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -583,6 +581,8 @@
             this.guna2PictureBox36 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.buybutton = new Guna.UI2.WinForms.Guna2Button();
             this.Printbutton = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -888,9 +888,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox15)).BeginInit();
@@ -6986,19 +6986,6 @@
             this.guna2PictureBox22.TabIndex = 7;
             this.guna2PictureBox22.TabStop = false;
             // 
-            // guna2CirclePictureBox5
-            // 
-            this.guna2CirclePictureBox5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox5.Image")));
-            this.guna2CirclePictureBox5.ImageRotate = 0F;
-            this.guna2CirclePictureBox5.Location = new System.Drawing.Point(12, 58);
-            this.guna2CirclePictureBox5.Name = "guna2CirclePictureBox5";
-            this.guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox5.Size = new System.Drawing.Size(239, 177);
-            this.guna2CirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox5.TabIndex = 2;
-            this.guna2CirclePictureBox5.TabStop = false;
-            // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
@@ -7033,6 +7020,19 @@
             this.guna2PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox24.TabIndex = 6;
             this.guna2PictureBox24.TabStop = false;
+            // 
+            // guna2CirclePictureBox5
+            // 
+            this.guna2CirclePictureBox5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox5.Image")));
+            this.guna2CirclePictureBox5.ImageRotate = 0F;
+            this.guna2CirclePictureBox5.Location = new System.Drawing.Point(12, 58);
+            this.guna2CirclePictureBox5.Name = "guna2CirclePictureBox5";
+            this.guna2CirclePictureBox5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox5.Size = new System.Drawing.Size(239, 177);
+            this.guna2CirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox5.TabIndex = 2;
+            this.guna2CirclePictureBox5.TabStop = false;
             // 
             // guna2PictureBox13
             // 
@@ -7859,7 +7859,7 @@
             // 
             // AdminSidePanel
             // 
-            this.AdminSidePanel.Image = ((System.Drawing.Image)(resources.GetObject("AdminSidePanel.Image")));
+            this.AdminSidePanel.Image = global::kiosk.Properties.Resources.sidepanel;
             this.AdminSidePanel.ImageRotate = 0F;
             this.AdminSidePanel.Location = new System.Drawing.Point(-301, 106);
             this.AdminSidePanel.Name = "AdminSidePanel";
@@ -7931,12 +7931,6 @@
             this.receiptPanel.Size = new System.Drawing.Size(1240, 655);
             this.receiptPanel.TabIndex = 0;
             // 
-            // mySqlCommand1
-            // 
-            this.mySqlCommand1.CacheAge = 0;
-            this.mySqlCommand1.Connection = null;
-            this.mySqlCommand1.EnableCaching = false;
-            this.mySqlCommand1.Transaction = null;
             // guna2CustomGradientPanel14
             // 
             this.guna2CustomGradientPanel14.Controls.Add(this.guna2CustomGradientPanel15);
@@ -8284,6 +8278,13 @@
             this.Printbutton.Text = "Print";
             this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
             // 
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -8615,9 +8616,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox15)).EndInit();
