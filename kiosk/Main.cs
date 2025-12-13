@@ -27,8 +27,20 @@ namespace kiosk
 
     public partial class Main : Form
     {
+        //for running admin only
+        //public void OpenAdminTab()
+        //{
+        //    tabControl1.SelectedTab = Admin;
+        //} 
 
-        public string paymentMethod = "";
+        private readonly Timer _inactivityTimer = new Timer();
+        private const int InactivityMs = 5_000; //5sec
+
+        private TabPage _homeTab;     // e.g., tabPageHome
+        private TabPage _targetTab;   // e.g., tabPage2
+
+
+        public string paymentMethod = "";  
 
         private readonly string itemImagePath = Path.Combine(Application.StartupPath, "images_rsrcs", "itemPics" );
 
@@ -93,11 +105,75 @@ namespace kiosk
             allSeventh_Overlay.BackColor = Color.Transparent;
             allSeventh_Overlay.BringToFront();
 
+
+
+
+
+
+            _homeTab = tabPage1;
+            _targetTab = tabPage2;
+
+            _inactivityTimer.Interval = InactivityMs;
+            _inactivityTimer.Tick += (s, e) => GoHome();
+
+            tabControl1.SelectedIndexChanged += (s, e) =>
+            {
+                if (tabControl1.SelectedTab == _targetTab)
+                {
+                    _inactivityTimer.Stop();
+                    _inactivityTimer.Start(); // only start when TabPage2 is shown
+                }
+                else
+                {
+                    _inactivityTimer.Stop();  // stop on any other tab
+                }
+            };
+
+            // Reset timer only on TabPage2 interactions (WinForms controls)
+            HookPage(_targetTab);
+    
+
         }
 
+        //---------- part of inactive timer
 
 
-        private void Main_Load(object sender, EventArgs e)
+
+        private void HookPage(Control page)
+        {
+            page.MouseMove += (_, __) => ResetIfOnTarget();
+            page.MouseDown += (_, __) => ResetIfOnTarget();
+            page.KeyDown += (_, __) => ResetIfOnTarget();
+
+            foreach (Control child in page.Controls)
+            {
+                child.MouseMove += (_, __) => ResetIfOnTarget();
+                child.MouseDown += (_, __) => ResetIfOnTarget();
+                child.KeyDown += (_, __) => ResetIfOnTarget();
+            }
+        }
+
+        private void ResetIfOnTarget()
+        {
+            if (tabControl1.SelectedTab == _targetTab)
+            {
+                _inactivityTimer.Stop();
+                _inactivityTimer.Start();
+            }
+        }
+
+        private void GoHome()
+        {
+            _inactivityTimer.Stop();
+            tabControl1.SelectedTab = _homeTab;
+        }
+   
+    //-------------------------------
+
+
+
+
+    private void Main_Load(object sender, EventArgs e)
         {
 
             ac = new AddCart(this);
@@ -113,7 +189,18 @@ namespace kiosk
             LoadItemsByType("other", other_itemPics, other_itemLabel, other_overlays, other_itemPanels);
 
 
+
+            ///////////////////// to remove the evry tabpage header
+           
+            tabControl1.SizeMode = TabSizeMode.Fixed;
+            tabControl1.ItemSize = new Size(0, 1);     // essentially no header
+            tabControl1.Padding = new Point(0, 0);    // no inner padding
+            tabControl1.Dock = DockStyle.Fill;
+
          
+
+
+
         }
 
 
@@ -139,6 +226,7 @@ namespace kiosk
 
 
         }
+
 
 
         private void guna2TileButton2_Click(object sender, EventArgs e)

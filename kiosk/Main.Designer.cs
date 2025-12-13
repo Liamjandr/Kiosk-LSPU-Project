@@ -583,6 +583,7 @@
             this.guna2PictureBox36 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.buybutton = new Guna.UI2.WinForms.Guna2Button();
             this.Printbutton = new Guna.UI2.WinForms.Guna2Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.footer.SuspendLayout();
@@ -958,6 +959,7 @@
             this.tabControl1.Controls.Add(this.Admin);
             this.tabControl1.Controls.Add(this.Checkout);
             this.tabControl1.Location = new System.Drawing.Point(-7, 12);
+            this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1940, 1096);
@@ -6923,17 +6925,17 @@
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox20);
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox21);
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox22);
-            this.guna2CustomGradientPanel5.Controls.Add(this.guna2CirclePictureBox5);
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2HtmlLabel6);
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox23);
             this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox24);
+            this.guna2CustomGradientPanel5.Controls.Add(this.guna2CirclePictureBox5);
             this.guna2CustomGradientPanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2CustomGradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel5.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
-            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(1926, 258);
+            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(1926, 260);
             this.guna2CustomGradientPanel5.TabIndex = 12;
             // 
             // guna2PictureBox19
@@ -7923,6 +7925,7 @@
             // 
             this.receiptPanel.BackColor = System.Drawing.Color.LightGray;
             this.receiptPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.receiptPanel.Enabled = false;
             this.receiptPanel.Location = new System.Drawing.Point(344, 297);
             this.receiptPanel.Name = "receiptPanel";
             this.receiptPanel.Size = new System.Drawing.Size(1240, 655);
@@ -9239,6 +9242,7 @@
         public Guna.UI2.WinForms.Guna2Button buybutton;
         private Guna.UI2.WinForms.Guna2Button button2;
         public Guna.UI2.WinForms.Guna2Button Printbutton;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
