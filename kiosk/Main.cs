@@ -28,10 +28,10 @@ namespace kiosk
     public partial class Main : Form
     {
         //for running admin only
-        //public void OpenAdminTab()
-        //{
-        //    tabControl1.SelectedTab = Admin;
-        //} 
+        public void OpenAdminTab()
+        {
+            tabControl1.SelectedTab = Admin;
+        }
 
         private readonly Timer _inactivityTimer = new Timer();
         private const int InactivityMs = 5_000; //5sec

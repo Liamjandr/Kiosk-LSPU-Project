@@ -19,12 +19,12 @@ namespace kiosk
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            //Application.Run(new Main());
 
             //for running admin only
-            //Main mainForm = new Main();
-            //mainForm.OpenAdminTab();   
-            //Application.Run(mainForm);
+            Main mainForm = new Main();
+            mainForm.OpenAdminTab();
+            Application.Run(mainForm);
         }
     }
 }
