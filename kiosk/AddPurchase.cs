@@ -15,8 +15,8 @@ namespace kiosk
     public partial class addPurchase : UserControl
     {
 
-        bool isPaid { get; set; }
-        bool isClaimed { get; set; }
+        string isPaid { get; set; }
+        string isClaimed { get; set; }
         List<HistoryDB> receiptItems { get; set; }
         public addPurchase(ReceiptGroup history)
         {
@@ -27,10 +27,12 @@ namespace kiosk
             ReceiptID.Text = history.ReceiptID;
             Date.Text = history.ReceiptDate.ToString("MM/dd/yyyy");
             decimal total = 0;
+            isPaid = history.Items[0].isPaid;
+            isClaimed = history.Items[0].isClaimed; 
             foreach (var item in history.Items) total += item.Quantity * item.Price;
             Cost.Text = "₱"+total.ToString("F2");
 
-            if (isPaid)
+            if (history.Items[0].isPaid == "true")
             {
                 Payment.Text = "PAID";
                 Payment.FillColor = Color.Green;
@@ -40,7 +42,7 @@ namespace kiosk
                 Payment.Text = "UNPAID";
                 Payment.FillColor = Color.Red;
             }
-            if (isClaimed)
+            if (history.Items[0].isClaimed == "false")
             {
                 Claim.Text = "Claimed";
                 Claim.FillColor = Color.Green;
@@ -54,8 +56,10 @@ namespace kiosk
         }
         private void Payment_Click(object sender, EventArgs e)
         {
-            isPaid = !isPaid;
-            if (isPaid)
+            if(isPaid == "false") isPaid = "true";
+            else isPaid = "false";
+
+            if (isPaid == "true")
             {
                 Payment.Text = "PAID";
                 Payment.FillColor = Color.Green;
@@ -69,8 +73,9 @@ namespace kiosk
 
         private void Claim_Click(object sender, EventArgs e)
         {
-            isClaimed = !isClaimed;
-            if (isClaimed)
+            if(isClaimed == "false") isClaimed = "true";
+            else isClaimed = "false";
+            if (isClaimed == "true")
             {
                 Claim.Text = "Claimed";
                 Claim.FillColor = Color.Green;

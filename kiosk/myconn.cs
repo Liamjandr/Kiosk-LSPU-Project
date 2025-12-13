@@ -32,7 +32,7 @@ namespace kiosk
             con.Dispose();
         }
 
-        public static void SaveReceipt(receiptTemplate receipt, string transactionId)
+        public static void SaveReceipt(receiptTemplate receipt, string transactionId, string boolString)
         {
             string mycon = "server=localhost;Database=dbkiosk;Uid=root;Convert Zero Datetime=True;";
 
@@ -54,9 +54,9 @@ namespace kiosk
 
                             string query = @"
                     INSERT INTO tbHistory
-                    (`ReceiptID`, `DateTime`, `Transaction`, `ItemID`, `itemName`, `itemType`, `itemSize`, `itemQTY`, `itemPrice`, `Total`, `Cash`, `Change`)
+                    (`ReceiptID`, `DateTime`, `Transaction`, `ItemID`, `itemName`, `itemType`, `itemSize`, `itemQTY`, `itemPrice`, `Total`, `Cash`, `Change`, `isClaimed`, `isPaid`)
                     VALUES
-                    (@ReceiptID, @DateTime, @Transaction, @ItemID, @itemName, @itemType, @itemSize, @itemQTY, @itemPrice, @Total, @Cash, @Change)";
+                    (@ReceiptID, @DateTime, @Transaction, @ItemID, @itemName, @itemType, @itemSize, @itemQTY, @itemPrice, @Total, @Cash, @Change, @claim, @pay)";
 
                             using (MySqlCommand cmd = new MySqlCommand(query, conn, sqlTransaction))
                             {
@@ -72,7 +72,8 @@ namespace kiosk
                                 cmd.Parameters.AddWithValue("@Total", receipt.TotalAmount);
                                 cmd.Parameters.AddWithValue("@Cash", receipt.Cash);
                                 cmd.Parameters.AddWithValue("@Change", receipt.Change);
-
+                                cmd.Parameters.AddWithValue("@claim", "false");
+                                cmd.Parameters.AddWithValue("@pay", boolString);
                                 cmd.ExecuteNonQuery();
                             }
                         }

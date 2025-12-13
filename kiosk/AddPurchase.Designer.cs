@@ -68,7 +68,7 @@
             // 
             this.Date.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date.Location = new System.Drawing.Point(219, 18);
+            this.Date.Location = new System.Drawing.Point(173, 18);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(38, 22);
             this.Date.TabIndex = 6;
@@ -78,7 +78,7 @@
             // 
             this.Cost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Cost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cost.Location = new System.Drawing.Point(357, 18);
+            this.Cost.Location = new System.Drawing.Point(338, 18);
             this.Cost.Name = "Cost";
             this.Cost.Size = new System.Drawing.Size(38, 22);
             this.Cost.TabIndex = 8;

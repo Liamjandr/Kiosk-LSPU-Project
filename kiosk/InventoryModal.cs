@@ -61,7 +61,6 @@ namespace kiosk
             this.DoubleBuffered = true;
             int radius = 40;
             this.Region = RoundRegion(radius);
-            stockCount.Text = stock.ToString();
             modaltext.Text = stock.ToString();
             //label1.Text = itemId.ToString();
         }
@@ -77,29 +76,42 @@ namespace kiosk
 
         private void updateModal_Click(object sender, EventArgs e)
         {
-            int stock = int.Parse(modaltext.Text);
-            //int ahhaha = int.Parse(label1.Text);
-            using (MySqlConnection conn = new MySqlConnection(mycon))
+            try
             {
-                conn.Open();
-
-                string query = @"
-                    UPDATE tbitems
-                    SET itemStock = @stock
-                    WHERE itemId = @itemId";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                int stock = int.Parse(modaltext.Text);
+                //int ahhaha = int.Parse(label1.Text);
+                using (MySqlConnection conn = new MySqlConnection(mycon))
                 {
-                    cmd.Parameters.AddWithValue("@stock", stock);
-                    cmd.Parameters.AddWithValue("@itemId", itemId);
+                    conn.Open();
 
-                    int rows = cmd.ExecuteNonQuery();
-                    //MessageBox.Show("Updated rows: " + rows);
+                    string query = @"
+                        UPDATE tbitems
+                        SET itemStock = @stock
+                        WHERE itemId = @itemId";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@stock", stock);
+                        cmd.Parameters.AddWithValue("@itemId", itemId);
+
+                        int rows = cmd.ExecuteNonQuery();
+                        //MessageBox.Show("Updated rows: " + rows);
+                    }
                 }
+                invenDb = new InventoryDB();
+                invenDb.Table(panel);
+                this.Parent.Controls.Remove(this);
             }
-            invenDb = new InventoryDB();
-            invenDb.Table(panel);
-            this.Parent.Controls.Remove(this);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Invalid Input: " + ex.Message);
+                return;
+            }
+        }
+
+        private void aaa_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

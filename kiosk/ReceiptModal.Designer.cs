@@ -43,7 +43,7 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(584, 13);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(1175, 23);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(33, 37);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -54,10 +54,9 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(48, 68);
+            this.dataGridView1.Location = new System.Drawing.Point(89, 82);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(546, 517);
+            this.dataGridView1.Size = new System.Drawing.Size(1050, 238);
             this.dataGridView1.TabIndex = 1;
             // 
             // ReceiptModal
@@ -68,7 +67,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "ReceiptModal";
-            this.Size = new System.Drawing.Size(632, 632);
+            this.Size = new System.Drawing.Size(1232, 415);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

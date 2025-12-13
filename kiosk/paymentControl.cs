@@ -112,20 +112,10 @@ namespace kiosk
                             result = "Payment Successful!";
                             transacStatus = false;
 
-                            Main m = new Main();
+                            var main = this.FindForm() as Main;
+                            if (main == null) return;
 
-                            //Temporary save to database
-                            myconn.SaveReceipt(receiptData, m.paymentMethod);
-
-                            //tofix
-                            //for (int i = 0; i < receiptData.Items.Count; i++)
-                            //{
-                            //    purchaseList.Add(new addPurchase(receiptData, i));
-                            //}
-                            //foreach(addPurchase purchase in purchaseList)
-                            //{
-                            //    receiptTable.Controls.Add(purchase);
-                            //}
+                            myconn.SaveReceipt(receiptData, main.paymentMethod, "true");
                         }
                         else result = "Payment Failed!";
                         transacStatus = false;

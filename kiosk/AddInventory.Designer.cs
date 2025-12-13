@@ -72,7 +72,7 @@
             this.isEnable.FillColor = System.Drawing.Color.White;
             this.isEnable.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.isEnable.ForeColor = System.Drawing.Color.Black;
-            this.isEnable.Location = new System.Drawing.Point(1222, 12);
+            this.isEnable.Location = new System.Drawing.Point(1200, 12);
             this.isEnable.Name = "isEnable";
             this.isEnable.Size = new System.Drawing.Size(138, 37);
             this.isEnable.TabIndex = 18;
@@ -104,7 +104,7 @@
             // 
             this.Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Description.Location = new System.Drawing.Point(347, 18);
+            this.Description.Location = new System.Drawing.Point(305, 18);
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(83, 22);
             this.Description.TabIndex = 14;
@@ -114,7 +114,7 @@
             // 
             this.Type.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Type.Location = new System.Drawing.Point(194, 18);
+            this.Type.Location = new System.Drawing.Point(129, 18);
             this.Type.Name = "Type";
             this.Type.Size = new System.Drawing.Size(44, 22);
             this.Type.TabIndex = 13;
@@ -126,9 +126,9 @@
             this.ItemID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemID.Location = new System.Drawing.Point(47, 18);
             this.ItemID.Name = "ItemID";
-            this.ItemID.Size = new System.Drawing.Size(79, 22);
+            this.ItemID.Size = new System.Drawing.Size(20, 22);
             this.ItemID.TabIndex = 12;
-            this.ItemID.Text = "Receipt ID";
+            this.ItemID.Text = "ID";
             // 
             // historyTableHeader
             // 
@@ -160,7 +160,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.White;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(1001, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(977, 12);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(199, 37);
             this.guna2Button1.TabIndex = 20;

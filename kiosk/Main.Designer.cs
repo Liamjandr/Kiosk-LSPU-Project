@@ -542,7 +542,7 @@
             this.admin_inventory = new System.Windows.Forms.TabPage();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.inventoryTable = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.aaa = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.admin_purchaseHistory = new System.Windows.Forms.TabPage();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -7661,7 +7661,7 @@
             this.admin_inventory.BackColor = System.Drawing.Color.White;
             this.admin_inventory.Controls.Add(this.guna2TextBox3);
             this.admin_inventory.Controls.Add(this.inventoryTable);
-            this.admin_inventory.Controls.Add(this.guna2TextBox1);
+            this.admin_inventory.Controls.Add(this.aaa);
             this.admin_inventory.Controls.Add(this.guna2Shapes1);
             this.admin_inventory.Location = new System.Drawing.Point(184, 4);
             this.admin_inventory.Margin = new System.Windows.Forms.Padding(0);
@@ -7704,32 +7704,31 @@
             this.inventoryTable.WrapContents = false;
             this.inventoryTable.Paint += new System.Windows.Forms.PaintEventHandler(this.inventoryTable_Paint);
             // 
-            // guna2TextBox1
+            // aaa
             // 
-            this.guna2TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TextBox1.BorderThickness = 0;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "      ID            TYPE                         Description                     " +
-    "      Stock        Cost      Enable/Disable   Delete";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(125)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(38, 87);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.Size = new System.Drawing.Size(1516, 34);
-            this.guna2TextBox1.TabIndex = 10;
+            this.aaa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.aaa.BorderColor = System.Drawing.Color.Empty;
+            this.aaa.BorderThickness = 0;
+            this.aaa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.aaa.DefaultText = "\r\nID";
+            this.aaa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.aaa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.aaa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.aaa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.aaa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(125)))), ((int)(((byte)(226)))));
+            this.aaa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.aaa.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold);
+            this.aaa.ForeColor = System.Drawing.Color.Transparent;
+            this.aaa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.aaa.Location = new System.Drawing.Point(47, 86);
+            this.aaa.Margin = new System.Windows.Forms.Padding(6);
+            this.aaa.Name = "aaa";
+            this.aaa.PlaceholderForeColor = System.Drawing.Color.Transparent;
+            this.aaa.PlaceholderText = "";
+            this.aaa.SelectedText = "";
+            this.aaa.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.aaa.Size = new System.Drawing.Size(48, 34);
+            this.aaa.TabIndex = 10;
             // 
             // guna2Shapes1
             // 
@@ -8813,7 +8812,7 @@
         private System.Windows.Forms.TabPage admin_purchaseHistory;
         private Guna.UI2.WinForms.Guna2Shapes historyTableHeader;
         private Guna.UI2.WinForms.Guna2TextBox purchaseHeader;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox aaa;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel10;
         public System.Windows.Forms.Label label17;

@@ -181,7 +181,9 @@ namespace kiosk
                                     Price = readHistory.GetDecimal("itemPrice"),
                                     TotalAmount = readHistory.GetDecimal("Total"),
                                     Cash = readHistory.GetDecimal("Cash"),
-                                    Change = readHistory.GetDecimal("Change")
+                                    Change = readHistory.GetDecimal("Change"),
+                                    isClaimed = readHistory.GetString("isClaimed"),
+                                    isPaid = readHistory.GetString("isPaid")
                                 }
                             );
                         }
@@ -266,7 +268,7 @@ namespace kiosk
             {
                 foreach (var item in receipt.Items)
                 {
-                    if (item.isPaid) total++;
+                    if (item.isPaid == "true") total++;
                 }
             }
             return total;
@@ -279,7 +281,7 @@ namespace kiosk
             {
                 foreach (var item in receipt.Items)
                 {
-                    if (!item.isPaid) total++;
+                    if (item.isPaid == "false") total++;
                 }
             }
             return total;
@@ -292,7 +294,7 @@ namespace kiosk
             {
                 foreach (var item in receipt.Items)
                 {
-                    if (item.isClaimed) total++;
+                    if (item.isClaimed == "true") total++;
                 }
             }
             return total;
@@ -305,7 +307,7 @@ namespace kiosk
             {
                 foreach (var item in receipt.Items)
                 {
-                    if (!item.isClaimed) total++;
+                    if (item.isClaimed == "false") total++;
                 }
             }
             return total;
@@ -341,7 +343,7 @@ namespace kiosk
         public decimal Cash { get; set; }
         public decimal Change { get; set; }
 
-        public Boolean isPaid = false;
-        public Boolean isClaimed = false;
+        public string isPaid { get; set; }
+        public string isClaimed { get; set; }
     }
 }

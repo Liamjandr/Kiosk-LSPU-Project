@@ -1332,7 +1332,7 @@ namespace kiosk
         private void Printbutton_Click(object sender, EventArgs e)
         {
 
-            myconn.SaveReceipt(receiptData, paymentMethod);
+            myconn.SaveReceipt(receiptData, paymentMethod, "false");
 
             DialogResult result = MessageBox.Show(
            "Please present your receipt at the counter \nto complete the payment & claim the item",
