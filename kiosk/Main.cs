@@ -1169,23 +1169,6 @@ namespace kiosk
 
         public void loadDashboardData()
         {
-            if (
-                    InventoryCount.Text != null || 
-                    TotalPaid.Text != null ||
-                    TotalUnpaid.Text != null ||
-                    TotalClaimed.Text != null||
-                    TotalUnclaimed.Text != null
-                )
-            {
-
-                InventoryCount.Text = null;
-                TotalPaid.Text = null;
-                TotalUnpaid.Text = null;
-                TotalClaimed.Text = null;
-                TotalUnclaimed.Text = null;
-            }
-
-
             InventoryCount.Text = inventoryDB.getInventory().ToString();
             TotalSold.Text = "₱" + receiptDB.totalSale().ToString("F2");
             TotalPaid.Text = receiptDB.Paid().ToString();

@@ -142,6 +142,7 @@ namespace kiosk
         {
             panel.Controls.Clear();
             receiptHistory.Clear();
+            receiptGroup.Clear();
 
             using (MySqlConnection conn = new MySqlConnection(mycon))
             {
