@@ -91,6 +91,7 @@ namespace kiosk
         receiptTemplate receiptData = new receiptTemplate();
         createPDF createPDF = new createPDF();
         ReceiptModal receiptModal;
+        InventoryModal inventoryModal;
         //
         WebView2 webPanel;
 
@@ -131,9 +132,27 @@ namespace kiosk
 
             // Reset timer only on TabPage2 interactions (WinForms controls)
             HookPage(_targetTab);
-    
+
+
+            //Avoid pixelate loading
+            //this.DoubleBuffered = true;
+            //SetStyle(ControlStyles.AllPaintingInWmPaint |
+            //         ControlStyles.UserPaint |
+            //         ControlStyles.OptimizedDoubleBuffer, true);
+            //UpdateStyles();
+
 
         }
+
+        //protected override CreateParams CreateParams
+        //{
+        //    get
+        //    {
+        //        CreateParams cp = base.CreateParams;
+        //        cp.ExStyle |= 0x02000000; // WS_EX_COMPOSITED
+        //        return cp;
+        //    }
+        //}
 
         //---------- part of inactive timer
 
@@ -1108,20 +1127,20 @@ namespace kiosk
         {
             admin_tabControl.SelectedTab = admin_dashboard;
             activeCBox();
-            closeReceiptModal();
+            closeModal();
         }
 
         private void inventoryButton_Click(object sender, EventArgs e)
         {
             admin_tabControl.SelectedTab = admin_inventory;
             activeCBox();
-            closeReceiptModal();
+            closeModal();
         }
         private void HistoryButton_Click(object sender, EventArgs e)
         {
             admin_tabControl.SelectedTab = admin_purchaseHistory;
             activeCBox();
-            closeReceiptModal();
+            closeModal();
         }
         void activeCBox()
         {
@@ -1243,7 +1262,7 @@ namespace kiosk
 
         public void showReceiptModal(List<HistoryDB> items)
         {
-            closeReceiptModal();
+            closeModal();
             receiptModal = new ReceiptModal(items);
             receiptModal.TabIndex = 20;
             Admin.Controls.Add(receiptModal);
@@ -1253,7 +1272,18 @@ namespace kiosk
             receiptModal.BringToFront();
         }
 
-        public void closeReceiptModal()
+        public void showInventoryModal(int stock, int itemId)
+        {
+            closeModal();
+            inventoryModal = new InventoryModal(stock, itemId, inventoryTable);
+            Admin.Controls.Add(inventoryModal);
+            int x = (Admin.Width - inventoryModal.Width) / 2;
+            int y = (Admin.Height - inventoryModal.Height) / 2;
+            inventoryModal.Location = new Point(x, y);
+            inventoryModal.BringToFront();
+        }
+
+        public void closeModal()
         {
             if (receiptModal != null)
             {
@@ -1261,13 +1291,19 @@ namespace kiosk
                 receiptModal.Dispose();
                 receiptModal = null;
             }
+            if(inventoryModal != null)
+            {
+                admin_purchaseHistory.Controls.Remove(inventoryModal);
+                inventoryModal.Dispose();
+                inventoryModal = null;
+            }
         }
 
         private void adminSort_SelectedIndexChanged(object sender, EventArgs e)
         {
             inventoryDB.TableSort(admin_tabControl, admin_inventory, adminSort, inventoryTable);
             receiptDB.TableSort(admin_tabControl, admin_purchaseHistory, adminSort, receiptTable);
-            closeReceiptModal();
+            closeModal();
         }   
 
         public void loadDashboardData()
@@ -1393,7 +1429,7 @@ namespace kiosk
         private void guna2PictureBox27_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
-            closeReceiptModal();
+            closeModal();
         }
 
         private void adminHeader_Click(object sender, EventArgs e)
@@ -1408,7 +1444,7 @@ namespace kiosk
 
         private void guna2PictureBox31_Click(object sender, EventArgs e)
         {
-            closeReceiptModal();
+            closeModal();
             loadDashboardData();
             inventoryDB.Table(inventoryTable);
             receiptDB.Table(receiptTable);
@@ -1416,18 +1452,18 @@ namespace kiosk
 
         private void guna2PictureBox26_Click(object sender, EventArgs e)
         {
-            closeReceiptModal();
+            closeModal();
         }
 
         //Notif and Profile
         private void guna2PictureBox29_Click(object sender, EventArgs e)
         {
-            closeReceiptModal();
+            closeModal();
         }
 
         private void guna2PictureBox28_Click(object sender, EventArgs e)
         {
-            closeReceiptModal();
+            closeModal();
         }
 
         private void guna2PictureBox35_Click(object sender, EventArgs e)

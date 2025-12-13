@@ -30,10 +30,7 @@
         {
             this.historyTableHeader = new Guna.UI2.WinForms.Guna2Shapes();
             this.ReceiptID = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Type = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Description = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Date = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Quantity = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Cost = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Payment = new Guna.UI2.WinForms.Guna2Button();
             this.Claim = new Guna.UI2.WinForms.Guna2Button();
@@ -67,55 +64,25 @@
             this.ReceiptID.TabIndex = 3;
             this.ReceiptID.Text = "Receipt ID";
             // 
-            // Type
-            // 
-            this.Type.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
-            this.Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Type.Location = new System.Drawing.Point(224, 18);
-            this.Type.Name = "Type";
-            this.Type.Size = new System.Drawing.Size(44, 22);
-            this.Type.TabIndex = 4;
-            this.Type.Text = "TYPE";
-            // 
-            // Description
-            // 
-            this.Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
-            this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Description.Location = new System.Drawing.Point(418, 18);
-            this.Description.Name = "Description";
-            this.Description.Size = new System.Drawing.Size(83, 22);
-            this.Description.TabIndex = 5;
-            this.Description.Text = "Description";
-            // 
             // Date
             // 
             this.Date.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date.Location = new System.Drawing.Point(817, 18);
+            this.Date.Location = new System.Drawing.Point(219, 18);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(38, 22);
             this.Date.TabIndex = 6;
             this.Date.Text = "Date";
             // 
-            // Quantity
-            // 
-            this.Quantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
-            this.Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Quantity.Location = new System.Drawing.Point(961, 18);
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Size = new System.Drawing.Size(62, 22);
-            this.Quantity.TabIndex = 7;
-            this.Quantity.Text = "Quantity";
-            // 
             // Cost
             // 
             this.Cost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Cost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cost.Location = new System.Drawing.Point(1101, 18);
+            this.Cost.Location = new System.Drawing.Point(357, 18);
             this.Cost.Name = "Cost";
-            this.Cost.Size = new System.Drawing.Size(36, 22);
+            this.Cost.Size = new System.Drawing.Size(38, 22);
             this.Cost.TabIndex = 8;
-            this.Cost.Text = "Cost";
+            this.Cost.Text = "Total";
             // 
             // Payment
             // 
@@ -169,9 +136,9 @@
             this.guna2Button1.FillColor = System.Drawing.Color.White;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(583, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(487, 12);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(138, 37);
+            this.guna2Button1.Size = new System.Drawing.Size(612, 37);
             this.guna2Button1.TabIndex = 11;
             this.guna2Button1.Text = "View Purchase";
             this.guna2Button1.UseTransparentBackground = true;
@@ -186,10 +153,7 @@
             this.Controls.Add(this.Claim);
             this.Controls.Add(this.Payment);
             this.Controls.Add(this.Cost);
-            this.Controls.Add(this.Quantity);
             this.Controls.Add(this.Date);
-            this.Controls.Add(this.Description);
-            this.Controls.Add(this.Type);
             this.Controls.Add(this.ReceiptID);
             this.Controls.Add(this.historyTableHeader);
             this.Name = "addPurchase";
@@ -201,10 +165,7 @@
 
         #endregion
         public Guna.UI2.WinForms.Guna2Shapes historyTableHeader;
-        public Guna.UI2.WinForms.Guna2HtmlLabel Type;
-        public Guna.UI2.WinForms.Guna2HtmlLabel Description;
         public Guna.UI2.WinForms.Guna2HtmlLabel Date;
-        public Guna.UI2.WinForms.Guna2HtmlLabel Quantity;
         public Guna.UI2.WinForms.Guna2HtmlLabel Cost;
         public Guna.UI2.WinForms.Guna2Button Payment;
         public Guna.UI2.WinForms.Guna2Button Claim;

@@ -48,6 +48,13 @@ namespace kiosk
                 isEnable.FillColor = Color.Red;
             }
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            var main = this.FindForm() as Main;
+            if (main == null) return;
+            main.showInventoryModal(item.Stock, Convert.ToInt32(item.ID));
+        }
     }
 
     public class InventoryItem

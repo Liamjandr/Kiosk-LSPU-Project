@@ -36,6 +36,7 @@
             this.Type = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ItemID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.historyTableHeader = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // Delete
@@ -71,7 +72,7 @@
             this.isEnable.FillColor = System.Drawing.Color.White;
             this.isEnable.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.isEnable.ForeColor = System.Drawing.Color.Black;
-            this.isEnable.Location = new System.Drawing.Point(1241, 12);
+            this.isEnable.Location = new System.Drawing.Point(1222, 12);
             this.isEnable.Name = "isEnable";
             this.isEnable.Size = new System.Drawing.Size(138, 37);
             this.isEnable.TabIndex = 18;
@@ -83,7 +84,7 @@
             // 
             this.Cost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Cost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cost.Location = new System.Drawing.Point(1048, 18);
+            this.Cost.Location = new System.Drawing.Point(845, 18);
             this.Cost.Name = "Cost";
             this.Cost.Size = new System.Drawing.Size(36, 22);
             this.Cost.TabIndex = 17;
@@ -93,7 +94,7 @@
             // 
             this.Stock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Stock.Location = new System.Drawing.Point(876, 18);
+            this.Stock.Location = new System.Drawing.Point(676, 18);
             this.Stock.Name = "Stock";
             this.Stock.Size = new System.Drawing.Size(44, 22);
             this.Stock.TabIndex = 16;
@@ -103,7 +104,7 @@
             // 
             this.Description.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Description.Location = new System.Drawing.Point(418, 18);
+            this.Description.Location = new System.Drawing.Point(347, 18);
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(83, 22);
             this.Description.TabIndex = 14;
@@ -113,7 +114,7 @@
             // 
             this.Type.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
             this.Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Type.Location = new System.Drawing.Point(224, 18);
+            this.Type.Location = new System.Drawing.Point(194, 18);
             this.Type.Name = "Type";
             this.Type.Size = new System.Drawing.Size(44, 22);
             this.Type.TabIndex = 13;
@@ -146,11 +147,33 @@
             this.historyTableHeader.UseTransparentBackground = true;
             this.historyTableHeader.Zoom = 100;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.guna2Button1.BorderRadius = 8;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.White;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(1001, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(199, 37);
+            this.guna2Button1.TabIndex = 20;
+            this.guna2Button1.Text = "Update";
+            this.guna2Button1.UseTransparentBackground = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // AddInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.isEnable);
             this.Controls.Add(this.Cost);
@@ -176,5 +199,6 @@
         public Guna.UI2.WinForms.Guna2HtmlLabel Type;
         public Guna.UI2.WinForms.Guna2HtmlLabel ItemID;
         public Guna.UI2.WinForms.Guna2Shapes historyTableHeader;
+        public Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

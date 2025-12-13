@@ -25,10 +25,7 @@ namespace kiosk
             //tofix
             receiptItems = history.Items;
             ReceiptID.Text = history.ReceiptID;
-            Type.Text = history.Items[0].Type;
-            Description.Text = history.Items[0].Name;
             Date.Text = history.ReceiptDate.ToString("MM/dd/yyyy");
-            Quantity.Text = history.Items[0].Quantity.ToString();
             decimal total = 0;
             foreach (var item in history.Items) total += item.Quantity * item.Price;
             Cost.Text = "₱"+total.ToString("F2");
@@ -55,24 +52,6 @@ namespace kiosk
                 Claim.FillColor = Color.Red;
             }
         }
-        ////Receipt Info  
-        //public string receiptID { get; set; }
-        //public DateTime receiptDate { get; set; }
-
-        ////Item Info
-        //public int ItemID { get; set; }
-        //public string Name { get; set; }
-        //public string Type { get; set; }
-        //public decimal Price { get; set; }
-        //public int Quantity { get; set; }
-        //public string Size { get; set; }
-
-
-        ////Transaction Info
-        //public string transactionId { get; set; }
-        //public decimal TotalAmount { get; set; }
-        //public decimal Cash { get; set; }
-        //public decimal Change { get; set; }
         private void Payment_Click(object sender, EventArgs e)
         {
             isPaid = !isPaid;

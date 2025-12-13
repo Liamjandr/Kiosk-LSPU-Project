@@ -147,6 +147,12 @@
     <Compile Include="AdminDB.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="createPDF.cs" />
+    <Compile Include="InventoryModal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InventoryModal.Designer.cs">
+      <DependentUpon>InventoryModal.cs</DependentUpon>
+    </Compile>
     <Compile Include="kioskQR.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddInventory.resx">
       <DependentUpon>AddInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryModal.resx">
+      <DependentUpon>InventoryModal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

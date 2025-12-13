@@ -207,8 +207,9 @@ namespace kiosk
 
         public override void TableSort(Guna2TabControl admin_tabControl, TabPage CurrentPage, Guna2ComboBox adminSort, FlowLayoutPanel CurrentFlowPanel)
         {
-            List<addPurchase> HistoryByDescription = receiptHistory.OrderBy(i => i.Description.Text).ToList();
+            List<addPurchase> HistoryByDescription = receiptHistory.OrderBy(i => i.ReceiptID.Text).ToList();
             List<addPurchase> HistoryByCost = receiptHistory.OrderBy(i => i.Cost.Text).ToList();
+            List<addPurchase> HistoryByDate = receiptHistory.OrderBy(i => i.Date.Text).ToList();
 
             if (admin_tabControl.SelectedTab == CurrentPage)
                 switch (adminSort.SelectedItem.ToString())
@@ -235,7 +236,9 @@ namespace kiosk
                         CurrentFlowPanel.Controls.Clear();
                         foreach (addPurchase item in HistoryByCost) CurrentFlowPanel.Controls.Add(item);
                         break;
-                    case "":
+                    case "Date":
+                        CurrentFlowPanel.Controls.Clear();
+                        foreach (addPurchase item in HistoryByDate) CurrentFlowPanel.Controls.Add(item);
                         break;
                     default:
                         break;
