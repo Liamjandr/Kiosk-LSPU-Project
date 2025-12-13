@@ -93,7 +93,7 @@ namespace kiosk
                 page.PageColor(Colors.White);
                 page.Margin(1, Unit.Centimetre);
 
-                page.Header().Height(25, Unit.Millimetre).Background(Colors.Grey.Lighten2)
+                page.Header().Height(30, Unit.Millimetre).Background(Colors.Grey.Lighten2)
                     .BorderBottom(1)//.BorderTop(2).BorderVertical(2)
                     .Element(ComposerHeader);
 
@@ -115,10 +115,10 @@ namespace kiosk
                 row.RelativeItem(1).PaddingLeft(16, Unit.Millimetre).Width(15, Unit.Millimetre).AlignMiddle();//.Image(logo);
                 row.RelativeItem(2).Column(col =>
                 {
-                    col.Item().AlignCenter().PaddingTop(5, Unit.Millimetre).Text("Republic of the Philippines").FontSize(7).Bold().FontColor(Colors.Black);
-                    col.Item().AlignCenter().PaddingTop(1, Unit.Millimetre).Text("Laguna State Polytechnic University").FontSize(8).Bold().FontColor(Colors.Black);
-                    col.Item().AlignCenter().Text("San Pablo City Campus").FontSize(6).Bold().FontColor(Colors.Black);
-                    col.Item().AlignCenter().PaddingTop(5, Unit.Millimetre).Text("Student Receipt").FontSize(7).Bold().FontColor(Colors.Black);
+                    col.Item().AlignCenter().PaddingTop(5, Unit.Millimetre).Text("Republic of the Philippines").FontSize(9).Bold().FontColor(Colors.Black);
+                    col.Item().AlignCenter().PaddingTop(1, Unit.Millimetre).Text("Laguna State Polytechnic University").FontSize(10).Bold().FontColor(Colors.Black);
+                    col.Item().AlignCenter().Text("San Pablo City Campus").FontSize(8).Bold().FontColor(Colors.Black);
+                    col.Item().AlignCenter().PaddingTop(5, Unit.Millimetre).Text("Student Receipt").FontSize(9).Bold().FontColor(Colors.Black);
                 });
                 row.RelativeItem(1);
             });
@@ -129,13 +129,13 @@ namespace kiosk
         {
             container.Column(Column =>
             {
-                Column.Item().Padding(2, Unit.Millimetre).Row(r =>
+                Column.Item().Padding(4, Unit.Millimetre).Row(r =>
                 {
                     r.RelativeItem().Column(col => {
 
                         col.Item().Text(text => {
-                            text.Span("Receipt ID: ").Bold().FontSize(10);
-                            text.Span(receipt.receiptID).FontSize(10);
+                            text.Span("Receipt ID: ").Bold().FontSize(11);
+                            text.Span(receipt.receiptID).FontSize(11);
                         });
 
                         col.Item().Text(text => {
@@ -153,8 +153,8 @@ namespace kiosk
                     r.RelativeItem().Column(col => {
 
                         col.Item().AlignRight().Text(text => {
-                            text.Span("Date: ").Bold().FontSize(10);
-                            text.Span(receipt.receiptDate.ToString()).FontSize(10);
+                            text.Span("Date: ").Bold().FontSize(11);
+                            text.Span(receipt.receiptDate.ToString()).FontSize(11);
                         });
                         col.Item().AlignRight().Text(text => {
                             text.Span(" ").Bold().FontSize(10);
@@ -164,31 +164,31 @@ namespace kiosk
                     });
                 });
 
-                Column.Item().Padding(2, Unit.Millimetre).Border(2).Row(row =>
+                Column.Item().Padding(3, Unit.Millimetre).Border(3).Row(row =>
                 {
                     row.RelativeItem(3).Background(Colors.Grey.Darken2).Border(1)
                         .AlignCenter().Padding(1, Unit.Millimetre)
-                        .Text("Item").Bold().FontSize(10).FontColor(Colors.White);
+                        .Text("Item").Bold().FontSize(11).FontColor(Colors.White);
 
                     row.RelativeItem(3).Background(Colors.Grey.Darken2).Border(1)
                         .AlignCenter().Padding(1, Unit.Millimetre)
-                        .Text("Type").Bold().FontSize(10).FontColor(Colors.White);
+                        .Text("Type").Bold().FontSize(11).FontColor(Colors.White);
 
                     row.RelativeItem(1).Background(Colors.Grey.Darken2).Border(1)
                         .AlignCenter().Padding(1, Unit.Millimetre)
-                        .Text("Size").Bold().FontSize(10).FontColor(Colors.White);
+                        .Text("Size").Bold().FontSize(11).FontColor(Colors.White);
 
                     row.RelativeItem(1).Background(Colors.Grey.Darken2).Border(1)
                         .AlignCenter().Padding(1, Unit.Millimetre)
-                        .Text("QTY").Bold().FontSize(10).FontColor(Colors.White);
+                        .Text("QTY").Bold().FontSize(11).FontColor(Colors.White);
 
                     row.RelativeItem(2).Background(Colors.Grey.Darken2).Border(1)
                         .AlignCenter().Padding(1, Unit.Millimetre)
-                        .Text("Unit Price").Bold().FontSize(10).FontColor(Colors.White);
+                        .Text("Unit Price").Bold().FontSize(11).FontColor(Colors.White);
 
                     row.RelativeItem(2).Background(Colors.Grey.Darken2).Border(1)
                         .AlignCenter().Padding(1, Unit.Millimetre)
-                        .Text("Amount").Bold().FontSize(10).FontColor(Colors.White);
+                        .Text("Amount").Bold().FontSize(11).FontColor(Colors.White);
                 });
 
 
@@ -202,11 +202,11 @@ namespace kiosk
                 {
                     Column.Item().PaddingTop(3, Unit.Millimetre).PaddingHorizontal(2, Unit.Millimetre).Row(row =>
                     {
-                        row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Name).FontSize(10);
-                        row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Type).FontSize(10);
-                        row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Size).FontSize(10);
-                        row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Quantity.ToString()).FontSize(10);
-                        row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Price.ToString()).FontSize(10);
+                        row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Name).FontSize(12);
+                        row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Type).FontSize(12);
+                        row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Size).FontSize(12);
+                        row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Quantity.ToString()).FontSize(12);
+                        row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Items[i].Price.ToString()).FontSize(12);
                         row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text((receipt.Items[i].Price * receipt.Items[i].Quantity).ToString()).FontSize(10);
                     });
                     totalPrice += (int)(receipt.Items[i].Price * receipt.Items[i].Quantity);
@@ -221,8 +221,8 @@ namespace kiosk
                     row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
-                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Total: ").Bold().FontSize(10);
-                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text(totalPrice.ToString()).FontSize(10);
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Total: ").Bold().FontSize(12);
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text(totalPrice.ToString()).FontSize(12);
                 });
 
                 Column.Item().PaddingTop(15, Unit.Millimetre).PaddingHorizontal(2, Unit.Millimetre).Row(row =>
@@ -231,7 +231,7 @@ namespace kiosk
                     row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
-                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Cash: ").Bold().FontSize(10);
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Cash: ").Bold().FontSize(12);
                     row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("0");
                 });
 
@@ -241,7 +241,7 @@ namespace kiosk
                     row.RelativeItem(3).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
-                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Change: ").Bold().FontSize(10);
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Change: ").Bold().FontSize(12);
                     row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("0");
                 });
             });
@@ -249,7 +249,7 @@ namespace kiosk
         //Footer
         private void ComposerFooter(IContainer container)
         {
-            container.AlignCenter().Text("Thank you for your purchase!").FontSize(7).Bold().FontColor(Colors.Black);
+            container.AlignCenter().Text("Thank you for your purchase!").FontSize(9).Bold().FontColor(Colors.Black);
         }
     }
 
