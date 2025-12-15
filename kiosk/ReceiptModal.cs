@@ -45,7 +45,32 @@ namespace kiosk
             path.CloseFigure();
             return new Region(path);
         }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
 
+            int borderWidth = 2; // Thickness of the border
+            Color borderColor = Color.Black;
+
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                int r = FormRadius;
+
+                path.StartFigure();
+                path.AddArc(0, 0, r, r, 180, 90);
+                path.AddArc(Width - r - 1, 0, r, r, 270, 90);
+                path.AddArc(Width - r - 1, Height - r - 1, r, r, 0, 90);
+                path.AddArc(0, Height - r - 1, r, r, 90, 90);
+                path.CloseFigure();
+
+                using (Pen pen = new Pen(borderColor, borderWidth))
+                {
+                    pen.Alignment = System.Drawing.Drawing2D.PenAlignment.Inset; // ensures border is inside
+                    e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+                    e.Graphics.DrawPath(pen, path);
+                }
+            }
+        }
         public ReceiptModal(List<HistoryDB> items)
         {
             InitializeComponent();

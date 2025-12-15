@@ -144,9 +144,21 @@
     <Compile Include="AddInventory.Designer.cs">
       <DependentUpon>AddInventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddNewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewItem.Designer.cs">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminDB.cs" />
     <Compile Include="Cart.cs" />
     <Compile Include="createPDF.cs" />
+    <Compile Include="adminCounterPaying.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminCounterPaying.Designer.cs">
+      <DependentUpon>adminCounterPaying.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryModal.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,11 +196,20 @@
       <DependentUpon>ReceiptModal.cs</DependentUpon>
     </Compile>
     <Compile Include="receiptTemplate.cs" />
+    <Compile Include="TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="AddCart.resx">
       <DependentUpon>AddCart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddInventory.resx">
       <DependentUpon>AddInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewItem.resx">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminCounterPaying.resx">
+      <DependentUpon>adminCounterPaying.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryModal.resx">
       <DependentUpon>InventoryModal.cs</DependentUpon>

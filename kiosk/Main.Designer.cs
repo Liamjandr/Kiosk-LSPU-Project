@@ -54,6 +54,8 @@
             this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.fab_overlay = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.all_secUP = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_firstDOWN = new Guna.UI2.WinForms.Guna2PictureBox();
             this.all_itemLblSixteenth = new System.Windows.Forms.Label();
             this.all_itemLblFifteenth = new System.Windows.Forms.Label();
             this.all_itemLblFourteenth = new System.Windows.Forms.Label();
@@ -381,8 +383,8 @@
             this.other_overlay5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.other_itemPic5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.other_Panel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.other_itemPic4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.other_overlay4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.other_itemPic4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.other_Panel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.other_overlay3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.other_itemPic3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -393,6 +395,74 @@
             this.other_overlay1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.other_itemPic1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.all_itemLblThirtySecond = new System.Windows.Forms.Label();
+            this.all_itemLblThirtyFirst = new System.Windows.Forms.Label();
+            this.all_itemLblThirtieth = new System.Windows.Forms.Label();
+            this.all_itemLblTwentyNinth = new System.Windows.Forms.Label();
+            this.all_itemLblTwentyEighth = new System.Windows.Forms.Label();
+            this.all_itemLblTwentySeventh = new System.Windows.Forms.Label();
+            this.all_itemLblTwentySixth = new System.Windows.Forms.Label();
+            this.all_itemLblTwentyFifth = new System.Windows.Forms.Label();
+            this.all_itemLblTwentyFourth = new System.Windows.Forms.Label();
+            this.all_itemLblTwentyThird = new System.Windows.Forms.Label();
+            this.all_itemLblTwentySecond = new System.Windows.Forms.Label();
+            this.all_itemLblTwentyFirst = new System.Windows.Forms.Label();
+            this.all_itemLblTwentieth = new System.Windows.Forms.Label();
+            this.all_itemLblNineteenth = new System.Windows.Forms.Label();
+            this.all_itemLblSeventeenth = new System.Windows.Forms.Label();
+            this.all_itemLblEighteenth = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.all_itemPanelThirtySecond = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allThirtySecond_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicThirtySecond = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelThirtyFirst = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allThirtyFirst_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicThirtyFirst = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelThirtieth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allThirtieth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicThirtieth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwentyNinth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentyNinth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentyNinth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwentyEighth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentyEighth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentyEighth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwentySeventh = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentySeventh_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentySeventh = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwentySixth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentySixth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentySixth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwentyFifth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentyFifth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentyFifth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.all_itemPanelTwentyFourth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentyFourth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentyFourth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwentyThird = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentyThird_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentyThird = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwentySecond = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentySecond_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentySecond = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwentyFirst = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentyFirst_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentyFirst = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelTwentieth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allTwentieth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicTwentieth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelNineteenth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allNineteenth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicNineteenth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelEighteenth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.alleighteenth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicEighteenth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPanelSeventeenth = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.allSeventeenth_Overlay = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.all_itemPicSeventeenth = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.confirmBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
@@ -486,7 +556,7 @@
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel3 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2CustomGradientPanel5 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.all_firstUP = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2PictureBox19 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox20 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox21 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -581,9 +651,11 @@
             this.guna2PictureBox36 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.buybutton = new Guna.UI2.WinForms.Guna2Button();
             this.Printbutton = new Guna.UI2.WinForms.Guna2Button();
+            this.again = new Guna.UI2.WinForms.Guna2Button();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.add = new Guna.UI2.WinForms.Guna2Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.footer.SuspendLayout();
@@ -600,6 +672,8 @@
             this.guna2CustomGradientPanel6.SuspendLayout();
             this.fab_overlay.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.all_secUP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_firstDOWN)).BeginInit();
             this.panel2.SuspendLayout();
             this.all_itemPanelSixteenth.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.allSixteenth_Overlay)).BeginInit();
@@ -843,8 +917,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.other_overlay5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.other_itemPic5)).BeginInit();
             this.other_Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.other_overlay4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic4)).BeginInit();
             this.other_Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.other_overlay3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.other_itemPic3)).BeginInit();
@@ -854,6 +928,57 @@
             this.other_Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.other_overlay1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.other_itemPic1)).BeginInit();
+            this.tabPage9.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.all_itemPanelThirtySecond.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allThirtySecond_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThirtySecond)).BeginInit();
+            this.all_itemPanelThirtyFirst.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allThirtyFirst_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThirtyFirst)).BeginInit();
+            this.all_itemPanelThirtieth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allThirtieth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThirtieth)).BeginInit();
+            this.all_itemPanelTwentyNinth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyNinth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyNinth)).BeginInit();
+            this.all_itemPanelTwentyEighth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyEighth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyEighth)).BeginInit();
+            this.all_itemPanelTwentySeventh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentySeventh_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentySeventh)).BeginInit();
+            this.all_itemPanelTwentySixth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentySixth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentySixth)).BeginInit();
+            this.all_itemPanelTwentyFifth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyFifth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyFifth)).BeginInit();
+            this.panel12.SuspendLayout();
+            this.all_itemPanelTwentyFourth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyFourth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyFourth)).BeginInit();
+            this.all_itemPanelTwentyThird.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyThird_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyThird)).BeginInit();
+            this.all_itemPanelTwentySecond.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentySecond_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentySecond)).BeginInit();
+            this.all_itemPanelTwentyFirst.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyFirst_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyFirst)).BeginInit();
+            this.all_itemPanelTwentieth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentieth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentieth)).BeginInit();
+            this.all_itemPanelNineteenth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allNineteenth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicNineteenth)).BeginInit();
+            this.all_itemPanelEighteenth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.alleighteenth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicEighteenth)).BeginInit();
+            this.all_itemPanelSeventeenth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allSeventeenth_Overlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSeventeenth)).BeginInit();
             this.guna2ShadowPanel3.SuspendLayout();
             this.fifthItem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fifthCancel)).BeginInit();
@@ -883,7 +1008,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.guna2CustomGradientPanel3.SuspendLayout();
             this.guna2CustomGradientPanel4.SuspendLayout();
-            this.guna2CustomGradientPanel5.SuspendLayout();
+            this.all_firstUP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox21)).BeginInit();
@@ -978,6 +1103,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // footer
             // 
@@ -990,6 +1116,7 @@
             this.footer.Name = "footer";
             this.footer.Size = new System.Drawing.Size(1932, 299);
             this.footer.TabIndex = 0;
+            this.footer.Paint += new System.Windows.Forms.PaintEventHandler(this.footer_Paint);
             // 
             // guna2Button1
             // 
@@ -1020,6 +1147,7 @@
             this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox2.TabIndex = 0;
             this.guna2CirclePictureBox2.TabStop = false;
+            this.guna2CirclePictureBox2.Click += new System.EventHandler(this.guna2CirclePictureBox2_Click);
             // 
             // guna2CustomGradientPanel1
             // 
@@ -1032,6 +1160,7 @@
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1934, 781);
             this.guna2CustomGradientPanel1.TabIndex = 1;
+            this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
             // guna2PictureBox1
             // 
@@ -1046,6 +1175,7 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // tabPage2
             // 
@@ -1057,6 +1187,7 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // guna2CustomGradientPanel2
             // 
@@ -1073,6 +1204,7 @@
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1925, 1060);
             this.guna2CustomGradientPanel2.TabIndex = 0;
+            this.guna2CustomGradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel2_Paint);
             // 
             // guna2HtmlLabel3
             // 
@@ -1084,6 +1216,7 @@
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(437, 31);
             this.guna2HtmlLabel3.TabIndex = 5;
             this.guna2HtmlLabel3.Text = "HOW WOULD YOU LIKE TO PAY?";
+            this.guna2HtmlLabel3.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -1095,6 +1228,7 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(181, 31);
             this.guna2HtmlLabel2.TabIndex = 4;
             this.guna2HtmlLabel2.Text = "VIA QR CODE";
+            this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -1106,6 +1240,7 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(296, 31);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "PAY AT THE COUNTER";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // guna2ShadowPanel2
             // 
@@ -1118,6 +1253,7 @@
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.Size = new System.Drawing.Size(438, 311);
             this.guna2ShadowPanel2.TabIndex = 3;
+            this.guna2ShadowPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel2_Paint);
             // 
             // guna2CustomGradientPanel8
             // 
@@ -1130,6 +1266,7 @@
             this.guna2CustomGradientPanel8.Name = "guna2CustomGradientPanel8";
             this.guna2CustomGradientPanel8.Size = new System.Drawing.Size(438, 27);
             this.guna2CustomGradientPanel8.TabIndex = 2;
+            this.guna2CustomGradientPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel8_Paint);
             // 
             // guna2TileButton2
             // 
@@ -1160,6 +1297,7 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(438, 311);
             this.guna2ShadowPanel1.TabIndex = 2;
+            this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
             // guna2GradientPanel1
             // 
@@ -1170,6 +1308,7 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(438, 27);
             this.guna2GradientPanel1.TabIndex = 1;
+            this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
             // guna2GradientPanel2
             // 
@@ -1179,6 +1318,7 @@
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.Size = new System.Drawing.Size(438, 27);
             this.guna2GradientPanel2.TabIndex = 2;
+            this.guna2GradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel2_Paint);
             // 
             // guna2TileButton1
             // 
@@ -1210,6 +1350,7 @@
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 1;
             this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // tabPage3
             // 
@@ -1227,6 +1368,7 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // guna2CustomGradientPanel6
             // 
@@ -1242,6 +1384,7 @@
             this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
             this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(1932, 792);
             this.guna2CustomGradientPanel6.TabIndex = 6;
+            this.guna2CustomGradientPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel6_Paint);
             // 
             // fab_overlay
             // 
@@ -1250,6 +1393,7 @@
             this.fab_overlay.Controls.Add(this.tabPage6);
             this.fab_overlay.Controls.Add(this.tabPage7);
             this.fab_overlay.Controls.Add(this.tabPage8);
+            this.fab_overlay.Controls.Add(this.tabPage9);
             this.fab_overlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fab_overlay.ItemSize = new System.Drawing.Size(250, 40);
             this.fab_overlay.Location = new System.Drawing.Point(0, 0);
@@ -1276,9 +1420,12 @@
             this.fab_overlay.TabIndex = 5;
             this.fab_overlay.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.fab_overlay.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            this.fab_overlay.SelectedIndexChanged += new System.EventHandler(this.fab_overlay_SelectedIndexChanged);
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.all_secUP);
+            this.tabPage4.Controls.Add(this.all_firstDOWN);
             this.tabPage4.Controls.Add(this.all_itemLblSixteenth);
             this.tabPage4.Controls.Add(this.all_itemLblFifteenth);
             this.tabPage4.Controls.Add(this.all_itemLblFourteenth);
@@ -1305,6 +1452,35 @@
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "All Items";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // all_secUP
+            // 
+            this.all_secUP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.all_secUP.FillColor = System.Drawing.Color.Transparent;
+            this.all_secUP.Image = ((System.Drawing.Image)(resources.GetObject("all_secUP.Image")));
+            this.all_secUP.ImageRotate = 0F;
+            this.all_secUP.Location = new System.Drawing.Point(1785, 166);
+            this.all_secUP.Name = "all_secUP";
+            this.all_secUP.Size = new System.Drawing.Size(46, 46);
+            this.all_secUP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.all_secUP.TabIndex = 48;
+            this.all_secUP.TabStop = false;
+            this.all_secUP.Click += new System.EventHandler(this.all_secUP_Click);
+            // 
+            // all_firstDOWN
+            // 
+            this.all_firstDOWN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.all_firstDOWN.FillColor = System.Drawing.Color.Transparent;
+            this.all_firstDOWN.Image = ((System.Drawing.Image)(resources.GetObject("all_firstDOWN.Image")));
+            this.all_firstDOWN.ImageRotate = 0F;
+            this.all_firstDOWN.Location = new System.Drawing.Point(1785, 235);
+            this.all_firstDOWN.Name = "all_firstDOWN";
+            this.all_firstDOWN.Size = new System.Drawing.Size(46, 46);
+            this.all_firstDOWN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.all_firstDOWN.TabIndex = 8;
+            this.all_firstDOWN.TabStop = false;
+            this.all_firstDOWN.Click += new System.EventHandler(this.all_firstDOWN_Click);
             // 
             // all_itemLblSixteenth
             // 
@@ -1317,6 +1493,7 @@
             this.all_itemLblSixteenth.TabIndex = 26;
             this.all_itemLblSixteenth.Text = "TEXT 16";
             this.all_itemLblSixteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblSixteenth.Click += new System.EventHandler(this.all_itemLblSixteenth_Click);
             // 
             // all_itemLblFifteenth
             // 
@@ -1329,6 +1506,7 @@
             this.all_itemLblFifteenth.TabIndex = 26;
             this.all_itemLblFifteenth.Text = "TEXT 15";
             this.all_itemLblFifteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblFifteenth.Click += new System.EventHandler(this.all_itemLblFifteenth_Click);
             // 
             // all_itemLblFourteenth
             // 
@@ -1341,6 +1519,7 @@
             this.all_itemLblFourteenth.TabIndex = 26;
             this.all_itemLblFourteenth.Text = "TEXT 14";
             this.all_itemLblFourteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblFourteenth.Click += new System.EventHandler(this.all_itemLblFourteenth_Click);
             // 
             // all_itemLblThirteenth
             // 
@@ -1353,6 +1532,7 @@
             this.all_itemLblThirteenth.TabIndex = 26;
             this.all_itemLblThirteenth.Text = "TEXT 13";
             this.all_itemLblThirteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblThirteenth.Click += new System.EventHandler(this.all_itemLblThirteenth_Click);
             // 
             // all_itemLblTwelfth
             // 
@@ -1365,6 +1545,7 @@
             this.all_itemLblTwelfth.TabIndex = 25;
             this.all_itemLblTwelfth.Text = "TEXT 12";
             this.all_itemLblTwelfth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwelfth.Click += new System.EventHandler(this.all_itemLblTwelfth_Click);
             // 
             // all_itemLblEleventh
             // 
@@ -1377,6 +1558,7 @@
             this.all_itemLblEleventh.TabIndex = 24;
             this.all_itemLblEleventh.Text = "TEXT 11";
             this.all_itemLblEleventh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblEleventh.Click += new System.EventHandler(this.all_itemLblEleventh_Click);
             // 
             // all_itemLblTenth
             // 
@@ -1389,6 +1571,7 @@
             this.all_itemLblTenth.TabIndex = 23;
             this.all_itemLblTenth.Text = "TEXT 10";
             this.all_itemLblTenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTenth.Click += new System.EventHandler(this.all_itemLblTenth_Click);
             // 
             // all_itemLblNinth
             // 
@@ -1401,6 +1584,7 @@
             this.all_itemLblNinth.TabIndex = 22;
             this.all_itemLblNinth.Text = "TEXT 9";
             this.all_itemLblNinth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblNinth.Click += new System.EventHandler(this.all_itemLblNinth_Click);
             // 
             // all_itemLblEighth
             // 
@@ -1413,6 +1597,7 @@
             this.all_itemLblEighth.TabIndex = 24;
             this.all_itemLblEighth.Text = "TEXT 8";
             this.all_itemLblEighth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblEighth.Click += new System.EventHandler(this.all_itemLblEighth_Click);
             // 
             // all_itemLblSeventh
             // 
@@ -1425,6 +1610,7 @@
             this.all_itemLblSeventh.TabIndex = 23;
             this.all_itemLblSeventh.Text = "TEXT 7";
             this.all_itemLblSeventh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblSeventh.Click += new System.EventHandler(this.all_itemLblSeventh_Click);
             // 
             // all_itemLblSixth
             // 
@@ -1438,6 +1624,7 @@
             this.all_itemLblSixth.TabIndex = 22;
             this.all_itemLblSixth.Text = "TEXT 6";
             this.all_itemLblSixth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblSixth.Click += new System.EventHandler(this.all_itemLblSixth_Click);
             // 
             // all_itemLblFifth
             // 
@@ -1450,6 +1637,7 @@
             this.all_itemLblFifth.TabIndex = 21;
             this.all_itemLblFifth.Text = "TEXT 5";
             this.all_itemLblFifth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblFifth.Click += new System.EventHandler(this.all_itemLblFifth_Click);
             // 
             // all_itemLblFourth
             // 
@@ -1462,6 +1650,7 @@
             this.all_itemLblFourth.TabIndex = 20;
             this.all_itemLblFourth.Text = "TEXT 4";
             this.all_itemLblFourth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblFourth.Click += new System.EventHandler(this.all_itemLblFourth_Click);
             // 
             // all_itemLblThird
             // 
@@ -1474,6 +1663,7 @@
             this.all_itemLblThird.TabIndex = 19;
             this.all_itemLblThird.Text = "TEXT 3";
             this.all_itemLblThird.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblThird.Click += new System.EventHandler(this.all_itemLblThird_Click);
             // 
             // all_itemLblFirst
             // 
@@ -1486,6 +1676,7 @@
             this.all_itemLblFirst.TabIndex = 18;
             this.all_itemLblFirst.Text = "TEXT 1";
             this.all_itemLblFirst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblFirst.Click += new System.EventHandler(this.all_itemLblFirst_Click);
             // 
             // all_itemLblSecond
             // 
@@ -1498,6 +1689,7 @@
             this.all_itemLblSecond.TabIndex = 17;
             this.all_itemLblSecond.Text = "TEXT 2";
             this.all_itemLblSecond.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblSecond.Click += new System.EventHandler(this.all_itemLblSecond_Click);
             // 
             // panel2
             // 
@@ -1513,6 +1705,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1691, 173);
             this.panel2.TabIndex = 8;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // all_itemPanelSixteenth
             // 
@@ -1526,6 +1719,7 @@
             this.all_itemPanelSixteenth.ShadowDepth = 200;
             this.all_itemPanelSixteenth.Size = new System.Drawing.Size(171, 154);
             this.all_itemPanelSixteenth.TabIndex = 9;
+            this.all_itemPanelSixteenth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelSixteenth_Paint);
             // 
             // allSixteenth_Overlay
             // 
@@ -1540,6 +1734,7 @@
             this.allSixteenth_Overlay.TabIndex = 7;
             this.allSixteenth_Overlay.TabStop = false;
             this.allSixteenth_Overlay.Visible = false;
+            this.allSixteenth_Overlay.Click += new System.EventHandler(this.allSixteenth_Overlay_Click);
             // 
             // all_itemPicSixteenth
             // 
@@ -1566,6 +1761,7 @@
             this.all_itemPanelFifteenth.ShadowDepth = 200;
             this.all_itemPanelFifteenth.Size = new System.Drawing.Size(171, 154);
             this.all_itemPanelFifteenth.TabIndex = 8;
+            this.all_itemPanelFifteenth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelFifteenth_Paint);
             // 
             // allFifteenth_Overlay
             // 
@@ -1580,6 +1776,7 @@
             this.allFifteenth_Overlay.TabIndex = 7;
             this.allFifteenth_Overlay.TabStop = false;
             this.allFifteenth_Overlay.Visible = false;
+            this.allFifteenth_Overlay.Click += new System.EventHandler(this.allFifteenth_Overlay_Click);
             // 
             // all_itemPicFifteenth
             // 
@@ -1606,6 +1803,7 @@
             this.all_itemPanelFourteenth.ShadowDepth = 200;
             this.all_itemPanelFourteenth.Size = new System.Drawing.Size(171, 154);
             this.all_itemPanelFourteenth.TabIndex = 7;
+            this.all_itemPanelFourteenth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelFourteenth_Paint);
             // 
             // allFourteenth_Overlay
             // 
@@ -1620,6 +1818,7 @@
             this.allFourteenth_Overlay.TabIndex = 7;
             this.allFourteenth_Overlay.TabStop = false;
             this.allFourteenth_Overlay.Visible = false;
+            this.allFourteenth_Overlay.Click += new System.EventHandler(this.allFourteenth_Overlay_Click);
             // 
             // all_itemPicFourteenth
             // 
@@ -1646,6 +1845,7 @@
             this.all_itemPanelThirteenth.ShadowDepth = 200;
             this.all_itemPanelThirteenth.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelThirteenth.TabIndex = 6;
+            this.all_itemPanelThirteenth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelThirteenth_Paint);
             // 
             // allThirteenth_Overlay
             // 
@@ -1660,6 +1860,7 @@
             this.allThirteenth_Overlay.TabIndex = 7;
             this.allThirteenth_Overlay.TabStop = false;
             this.allThirteenth_Overlay.Visible = false;
+            this.allThirteenth_Overlay.Click += new System.EventHandler(this.allThirteenth_Overlay_Click);
             // 
             // all_itemPicThirteenth
             // 
@@ -1686,6 +1887,7 @@
             this.all_itemPanelTwelfth.ShadowDepth = 200;
             this.all_itemPanelTwelfth.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelTwelfth.TabIndex = 6;
+            this.all_itemPanelTwelfth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwelfth_Paint);
             // 
             // allTwelfth_Overlay
             // 
@@ -1700,6 +1902,7 @@
             this.allTwelfth_Overlay.TabIndex = 7;
             this.allTwelfth_Overlay.TabStop = false;
             this.allTwelfth_Overlay.Visible = false;
+            this.allTwelfth_Overlay.Click += new System.EventHandler(this.allTwelfth_Overlay_Click);
             // 
             // all_itemPicTwelfth
             // 
@@ -1726,6 +1929,7 @@
             this.all_itemPanelEleventh.ShadowDepth = 200;
             this.all_itemPanelEleventh.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelEleventh.TabIndex = 6;
+            this.all_itemPanelEleventh.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelEleventh_Paint);
             // 
             // allEleventh_Overlay
             // 
@@ -1740,6 +1944,7 @@
             this.allEleventh_Overlay.TabIndex = 7;
             this.allEleventh_Overlay.TabStop = false;
             this.allEleventh_Overlay.Visible = false;
+            this.allEleventh_Overlay.Click += new System.EventHandler(this.allEleventh_Overlay_Click);
             // 
             // all_itemPicEleventh
             // 
@@ -1766,6 +1971,7 @@
             this.all_itemPanelTenth.ShadowDepth = 200;
             this.all_itemPanelTenth.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelTenth.TabIndex = 6;
+            this.all_itemPanelTenth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTenth_Paint);
             // 
             // allTenth_Overlay
             // 
@@ -1780,6 +1986,7 @@
             this.allTenth_Overlay.TabIndex = 7;
             this.allTenth_Overlay.TabStop = false;
             this.allTenth_Overlay.Visible = false;
+            this.allTenth_Overlay.Click += new System.EventHandler(this.allTenth_Overlay_Click);
             // 
             // all_itemPicTenth
             // 
@@ -1806,6 +2013,7 @@
             this.all_itemPanelNinth.ShadowDepth = 200;
             this.all_itemPanelNinth.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelNinth.TabIndex = 5;
+            this.all_itemPanelNinth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelNinth_Paint);
             // 
             // allNinth_Overlay
             // 
@@ -1820,6 +2028,7 @@
             this.allNinth_Overlay.TabIndex = 7;
             this.allNinth_Overlay.TabStop = false;
             this.allNinth_Overlay.Visible = false;
+            this.allNinth_Overlay.Click += new System.EventHandler(this.allNinth_Overlay_Click);
             // 
             // all_itemPicNinth
             // 
@@ -1848,6 +2057,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1691, 173);
             this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // all_itemPanelEighth
             // 
@@ -1861,6 +2071,7 @@
             this.all_itemPanelEighth.ShadowDepth = 200;
             this.all_itemPanelEighth.Size = new System.Drawing.Size(171, 154);
             this.all_itemPanelEighth.TabIndex = 9;
+            this.all_itemPanelEighth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelEighth_Paint);
             // 
             // allEighth_Overlay
             // 
@@ -1875,6 +2086,7 @@
             this.allEighth_Overlay.TabIndex = 7;
             this.allEighth_Overlay.TabStop = false;
             this.allEighth_Overlay.Visible = false;
+            this.allEighth_Overlay.Click += new System.EventHandler(this.allEighth_Overlay_Click);
             // 
             // all_itemPicEighth
             // 
@@ -1901,6 +2113,7 @@
             this.all_itemPanelSeventh.ShadowDepth = 200;
             this.all_itemPanelSeventh.Size = new System.Drawing.Size(171, 154);
             this.all_itemPanelSeventh.TabIndex = 8;
+            this.all_itemPanelSeventh.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelSeventh_Paint);
             // 
             // allSeventh_Overlay
             // 
@@ -1915,6 +2128,7 @@
             this.allSeventh_Overlay.TabIndex = 6;
             this.allSeventh_Overlay.TabStop = false;
             this.allSeventh_Overlay.Visible = false;
+            this.allSeventh_Overlay.Click += new System.EventHandler(this.allSeventh_Overlay_Click);
             // 
             // all_itemPicSeventh
             // 
@@ -1941,6 +2155,7 @@
             this.all_itemPanelSixth.ShadowDepth = 200;
             this.all_itemPanelSixth.Size = new System.Drawing.Size(171, 154);
             this.all_itemPanelSixth.TabIndex = 7;
+            this.all_itemPanelSixth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelSixth_Paint);
             // 
             // allSixth_Overlay
             // 
@@ -1955,6 +2170,7 @@
             this.allSixth_Overlay.TabIndex = 7;
             this.allSixth_Overlay.TabStop = false;
             this.allSixth_Overlay.Visible = false;
+            this.allSixth_Overlay.Click += new System.EventHandler(this.allSixth_Overlay_Click);
             // 
             // all_itemPicSixth
             // 
@@ -1981,6 +2197,7 @@
             this.all_itemPanelFifth.ShadowDepth = 200;
             this.all_itemPanelFifth.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelFifth.TabIndex = 6;
+            this.all_itemPanelFifth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelFifth_Paint);
             // 
             // allFifth_Overlay
             // 
@@ -1995,6 +2212,7 @@
             this.allFifth_Overlay.TabIndex = 7;
             this.allFifth_Overlay.TabStop = false;
             this.allFifth_Overlay.Visible = false;
+            this.allFifth_Overlay.Click += new System.EventHandler(this.allFifth_Overlay_Click);
             // 
             // all_itemPicFifth
             // 
@@ -2021,6 +2239,7 @@
             this.all_itemPanelFourth.ShadowDepth = 200;
             this.all_itemPanelFourth.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelFourth.TabIndex = 6;
+            this.all_itemPanelFourth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelFourth_Paint);
             // 
             // allFourth_Overlay
             // 
@@ -2035,6 +2254,7 @@
             this.allFourth_Overlay.TabIndex = 7;
             this.allFourth_Overlay.TabStop = false;
             this.allFourth_Overlay.Visible = false;
+            this.allFourth_Overlay.Click += new System.EventHandler(this.allFourth_Overlay_Click);
             // 
             // all_itemPicFourth
             // 
@@ -2061,6 +2281,7 @@
             this.all_itemPanelThird.ShadowDepth = 200;
             this.all_itemPanelThird.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelThird.TabIndex = 6;
+            this.all_itemPanelThird.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelThird_Paint);
             // 
             // allThird_Overlay
             // 
@@ -2075,6 +2296,7 @@
             this.allThird_Overlay.TabIndex = 7;
             this.allThird_Overlay.TabStop = false;
             this.allThird_Overlay.Visible = false;
+            this.allThird_Overlay.Click += new System.EventHandler(this.allThird_Overlay_Click);
             // 
             // all_itemPicThird
             // 
@@ -2101,6 +2323,7 @@
             this.all_itemPanelSecond.ShadowDepth = 200;
             this.all_itemPanelSecond.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelSecond.TabIndex = 6;
+            this.all_itemPanelSecond.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelSecond_Paint);
             // 
             // allSecond_Overlay
             // 
@@ -2115,6 +2338,7 @@
             this.allSecond_Overlay.TabIndex = 7;
             this.allSecond_Overlay.TabStop = false;
             this.allSecond_Overlay.Visible = false;
+            this.allSecond_Overlay.Click += new System.EventHandler(this.allSecond_Overlay_Click);
             // 
             // all_itemPicSecond
             // 
@@ -2141,6 +2365,7 @@
             this.all_itemPanelFirst.ShadowDepth = 200;
             this.all_itemPanelFirst.Size = new System.Drawing.Size(170, 154);
             this.all_itemPanelFirst.TabIndex = 5;
+            this.all_itemPanelFirst.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelFirst_Paint);
             // 
             // allFirst_Overlay
             // 
@@ -2155,6 +2380,7 @@
             this.allFirst_Overlay.TabIndex = 8;
             this.allFirst_Overlay.TabStop = false;
             this.allFirst_Overlay.Visible = false;
+            this.allFirst_Overlay.Click += new System.EventHandler(this.allFirst_Overlay_Click);
             // 
             // all_itemPicFirst
             // 
@@ -2182,7 +2408,7 @@
             this.guna2Button4.FocusedColor = System.Drawing.Color.White;
             this.guna2Button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(1757, 6);
+            this.guna2Button4.Location = new System.Drawing.Point(1735, 9);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(158, 53);
             this.guna2Button4.TabIndex = 4;
@@ -2217,6 +2443,7 @@
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Top/Shirt";
             this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // top_lbl16
             // 
@@ -2229,6 +2456,7 @@
             this.top_lbl16.TabIndex = 44;
             this.top_lbl16.Text = "TEXT 16";
             this.top_lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl16.Click += new System.EventHandler(this.top_lbl16_Click);
             // 
             // top_lbl15
             // 
@@ -2241,6 +2469,7 @@
             this.top_lbl15.TabIndex = 43;
             this.top_lbl15.Text = "TEXT 15";
             this.top_lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl15.Click += new System.EventHandler(this.top_lbl15_Click);
             // 
             // top_lbl14
             // 
@@ -2253,6 +2482,7 @@
             this.top_lbl14.TabIndex = 42;
             this.top_lbl14.Text = "TEXT 14";
             this.top_lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl14.Click += new System.EventHandler(this.top_lbl14_Click);
             // 
             // top_lbl13
             // 
@@ -2265,6 +2495,7 @@
             this.top_lbl13.TabIndex = 41;
             this.top_lbl13.Text = "TEXT 13";
             this.top_lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl13.Click += new System.EventHandler(this.top_lbl13_Click);
             // 
             // top_lbl12
             // 
@@ -2277,6 +2508,7 @@
             this.top_lbl12.TabIndex = 40;
             this.top_lbl12.Text = "TEXT 12";
             this.top_lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl12.Click += new System.EventHandler(this.top_lbl12_Click);
             // 
             // top_lbl11
             // 
@@ -2289,6 +2521,7 @@
             this.top_lbl11.TabIndex = 39;
             this.top_lbl11.Text = "TEXT 11";
             this.top_lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl11.Click += new System.EventHandler(this.top_lbl11_Click);
             // 
             // top_lbl10
             // 
@@ -2301,6 +2534,7 @@
             this.top_lbl10.TabIndex = 36;
             this.top_lbl10.Text = "TEXT 10";
             this.top_lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl10.Click += new System.EventHandler(this.top_lbl10_Click);
             // 
             // top_lbl9
             // 
@@ -2313,6 +2547,7 @@
             this.top_lbl9.TabIndex = 34;
             this.top_lbl9.Text = "TEXT 9";
             this.top_lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl9.Click += new System.EventHandler(this.top_lbl9_Click);
             // 
             // top_lbl8
             // 
@@ -2325,6 +2560,7 @@
             this.top_lbl8.TabIndex = 38;
             this.top_lbl8.Text = "TEXT 8";
             this.top_lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl8.Click += new System.EventHandler(this.top_lbl8_Click);
             // 
             // top_lbl7
             // 
@@ -2337,6 +2573,7 @@
             this.top_lbl7.TabIndex = 37;
             this.top_lbl7.Text = "TEXT 7";
             this.top_lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl7.Click += new System.EventHandler(this.top_lbl7_Click);
             // 
             // top_lbl6
             // 
@@ -2350,6 +2587,7 @@
             this.top_lbl6.TabIndex = 35;
             this.top_lbl6.Text = "TEXT 6";
             this.top_lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl6.Click += new System.EventHandler(this.top_lbl6_Click);
             // 
             // top_lbl5
             // 
@@ -2362,6 +2600,7 @@
             this.top_lbl5.TabIndex = 33;
             this.top_lbl5.Text = "TEXT 5";
             this.top_lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl5.Click += new System.EventHandler(this.top_lbl5_Click);
             // 
             // top_lbl4
             // 
@@ -2374,6 +2613,7 @@
             this.top_lbl4.TabIndex = 32;
             this.top_lbl4.Text = "TEXT 4";
             this.top_lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl4.Click += new System.EventHandler(this.top_lbl4_Click);
             // 
             // top_lbl3
             // 
@@ -2386,6 +2626,7 @@
             this.top_lbl3.TabIndex = 31;
             this.top_lbl3.Text = "TEXT 3";
             this.top_lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl3.Click += new System.EventHandler(this.top_lbl3_Click);
             // 
             // top_lbl1
             // 
@@ -2398,6 +2639,7 @@
             this.top_lbl1.TabIndex = 30;
             this.top_lbl1.Text = "TEXT 1";
             this.top_lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl1.Click += new System.EventHandler(this.top_lbl1_Click);
             // 
             // top_lbl2
             // 
@@ -2410,6 +2652,7 @@
             this.top_lbl2.TabIndex = 29;
             this.top_lbl2.Text = "TEXT 2";
             this.top_lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.top_lbl2.Click += new System.EventHandler(this.top_lbl2_Click);
             // 
             // panel3
             // 
@@ -2425,6 +2668,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1691, 173);
             this.panel3.TabIndex = 28;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // top_Panel16
             // 
@@ -2438,6 +2682,7 @@
             this.top_Panel16.ShadowDepth = 200;
             this.top_Panel16.Size = new System.Drawing.Size(171, 154);
             this.top_Panel16.TabIndex = 9;
+            this.top_Panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel16_Paint);
             // 
             // Top_Overlay16
             // 
@@ -2452,6 +2697,7 @@
             this.Top_Overlay16.TabIndex = 7;
             this.Top_Overlay16.TabStop = false;
             this.Top_Overlay16.Visible = false;
+            this.Top_Overlay16.Click += new System.EventHandler(this.Top_Overlay16_Click);
             // 
             // top_itemPic16
             // 
@@ -2464,6 +2710,7 @@
             this.top_itemPic16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic16.TabIndex = 5;
             this.top_itemPic16.TabStop = false;
+            this.top_itemPic16.Click += new System.EventHandler(this.top_itemPic16_Click);
             // 
             // top_Panel15
             // 
@@ -2477,6 +2724,7 @@
             this.top_Panel15.ShadowDepth = 200;
             this.top_Panel15.Size = new System.Drawing.Size(171, 154);
             this.top_Panel15.TabIndex = 8;
+            this.top_Panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel15_Paint);
             // 
             // Top_Overlay15
             // 
@@ -2491,6 +2739,7 @@
             this.Top_Overlay15.TabIndex = 7;
             this.Top_Overlay15.TabStop = false;
             this.Top_Overlay15.Visible = false;
+            this.Top_Overlay15.Click += new System.EventHandler(this.Top_Overlay15_Click);
             // 
             // top_itemPic15
             // 
@@ -2503,6 +2752,7 @@
             this.top_itemPic15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic15.TabIndex = 5;
             this.top_itemPic15.TabStop = false;
+            this.top_itemPic15.Click += new System.EventHandler(this.top_itemPic15_Click);
             // 
             // top_Panel14
             // 
@@ -2516,6 +2766,7 @@
             this.top_Panel14.ShadowDepth = 200;
             this.top_Panel14.Size = new System.Drawing.Size(171, 154);
             this.top_Panel14.TabIndex = 7;
+            this.top_Panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel14_Paint);
             // 
             // Top_Overlay14
             // 
@@ -2530,6 +2781,7 @@
             this.Top_Overlay14.TabIndex = 7;
             this.Top_Overlay14.TabStop = false;
             this.Top_Overlay14.Visible = false;
+            this.Top_Overlay14.Click += new System.EventHandler(this.Top_Overlay14_Click);
             // 
             // top_itemPic14
             // 
@@ -2542,6 +2794,7 @@
             this.top_itemPic14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic14.TabIndex = 5;
             this.top_itemPic14.TabStop = false;
+            this.top_itemPic14.Click += new System.EventHandler(this.top_itemPic14_Click);
             // 
             // top_Panel13
             // 
@@ -2555,6 +2808,7 @@
             this.top_Panel13.ShadowDepth = 200;
             this.top_Panel13.Size = new System.Drawing.Size(170, 154);
             this.top_Panel13.TabIndex = 6;
+            this.top_Panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel13_Paint);
             // 
             // Top_Overlay13
             // 
@@ -2569,6 +2823,7 @@
             this.Top_Overlay13.TabIndex = 7;
             this.Top_Overlay13.TabStop = false;
             this.Top_Overlay13.Visible = false;
+            this.Top_Overlay13.Click += new System.EventHandler(this.Top_Overlay13_Click);
             // 
             // top_itemPic13
             // 
@@ -2581,6 +2836,7 @@
             this.top_itemPic13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic13.TabIndex = 4;
             this.top_itemPic13.TabStop = false;
+            this.top_itemPic13.Click += new System.EventHandler(this.top_itemPic13_Click);
             // 
             // top_Panel12
             // 
@@ -2594,6 +2850,7 @@
             this.top_Panel12.ShadowDepth = 200;
             this.top_Panel12.Size = new System.Drawing.Size(170, 154);
             this.top_Panel12.TabIndex = 6;
+            this.top_Panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel12_Paint);
             // 
             // Top_Overlay12
             // 
@@ -2608,6 +2865,7 @@
             this.Top_Overlay12.TabIndex = 7;
             this.Top_Overlay12.TabStop = false;
             this.Top_Overlay12.Visible = false;
+            this.Top_Overlay12.Click += new System.EventHandler(this.Top_Overlay12_Click);
             // 
             // top_itemPic12
             // 
@@ -2620,6 +2878,7 @@
             this.top_itemPic12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic12.TabIndex = 3;
             this.top_itemPic12.TabStop = false;
+            this.top_itemPic12.Click += new System.EventHandler(this.top_itemPic12_Click);
             // 
             // top_Panel11
             // 
@@ -2633,6 +2892,7 @@
             this.top_Panel11.ShadowDepth = 200;
             this.top_Panel11.Size = new System.Drawing.Size(170, 154);
             this.top_Panel11.TabIndex = 6;
+            this.top_Panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel11_Paint);
             // 
             // Top_Overlay11
             // 
@@ -2647,6 +2907,7 @@
             this.Top_Overlay11.TabIndex = 7;
             this.Top_Overlay11.TabStop = false;
             this.Top_Overlay11.Visible = false;
+            this.Top_Overlay11.Click += new System.EventHandler(this.Top_Overlay11_Click);
             // 
             // top_itemPic11
             // 
@@ -2659,6 +2920,7 @@
             this.top_itemPic11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic11.TabIndex = 2;
             this.top_itemPic11.TabStop = false;
+            this.top_itemPic11.Click += new System.EventHandler(this.top_itemPic11_Click);
             // 
             // top_Panel10
             // 
@@ -2672,6 +2934,7 @@
             this.top_Panel10.ShadowDepth = 200;
             this.top_Panel10.Size = new System.Drawing.Size(170, 154);
             this.top_Panel10.TabIndex = 6;
+            this.top_Panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel10_Paint);
             // 
             // Top_Overlay10
             // 
@@ -2686,6 +2949,7 @@
             this.Top_Overlay10.TabIndex = 7;
             this.Top_Overlay10.TabStop = false;
             this.Top_Overlay10.Visible = false;
+            this.Top_Overlay10.Click += new System.EventHandler(this.Top_Overlay10_Click);
             // 
             // top_itemPic10
             // 
@@ -2698,6 +2962,7 @@
             this.top_itemPic10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic10.TabIndex = 1;
             this.top_itemPic10.TabStop = false;
+            this.top_itemPic10.Click += new System.EventHandler(this.top_itemPic10_Click);
             // 
             // top_Panel9
             // 
@@ -2711,6 +2976,7 @@
             this.top_Panel9.ShadowDepth = 200;
             this.top_Panel9.Size = new System.Drawing.Size(170, 154);
             this.top_Panel9.TabIndex = 5;
+            this.top_Panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel9_Paint);
             // 
             // Top_Overlay9
             // 
@@ -2725,6 +2991,7 @@
             this.Top_Overlay9.TabIndex = 7;
             this.Top_Overlay9.TabStop = false;
             this.Top_Overlay9.Visible = false;
+            this.Top_Overlay9.Click += new System.EventHandler(this.Top_Overlay9_Click);
             // 
             // top_itemPic9
             // 
@@ -2737,6 +3004,7 @@
             this.top_itemPic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic9.TabIndex = 0;
             this.top_itemPic9.TabStop = false;
+            this.top_itemPic9.Click += new System.EventHandler(this.top_itemPic9_Click);
             // 
             // panel4
             // 
@@ -2752,6 +3020,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1691, 173);
             this.panel4.TabIndex = 27;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // top_Panel8
             // 
@@ -2765,6 +3034,7 @@
             this.top_Panel8.ShadowDepth = 200;
             this.top_Panel8.Size = new System.Drawing.Size(171, 154);
             this.top_Panel8.TabIndex = 9;
+            this.top_Panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel8_Paint);
             // 
             // Top_Overlay8
             // 
@@ -2779,6 +3049,7 @@
             this.Top_Overlay8.TabIndex = 7;
             this.Top_Overlay8.TabStop = false;
             this.Top_Overlay8.Visible = false;
+            this.Top_Overlay8.Click += new System.EventHandler(this.Top_Overlay8_Click);
             // 
             // top_itemPic8
             // 
@@ -2791,6 +3062,7 @@
             this.top_itemPic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic8.TabIndex = 5;
             this.top_itemPic8.TabStop = false;
+            this.top_itemPic8.Click += new System.EventHandler(this.top_itemPic8_Click);
             // 
             // top_Panel7
             // 
@@ -2804,6 +3076,7 @@
             this.top_Panel7.ShadowDepth = 200;
             this.top_Panel7.Size = new System.Drawing.Size(171, 154);
             this.top_Panel7.TabIndex = 8;
+            this.top_Panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel7_Paint);
             // 
             // Top_Overlay7
             // 
@@ -2818,6 +3091,7 @@
             this.Top_Overlay7.TabIndex = 6;
             this.Top_Overlay7.TabStop = false;
             this.Top_Overlay7.Visible = false;
+            this.Top_Overlay7.Click += new System.EventHandler(this.Top_Overlay7_Click);
             // 
             // top_itemPic7
             // 
@@ -2830,6 +3104,7 @@
             this.top_itemPic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic7.TabIndex = 5;
             this.top_itemPic7.TabStop = false;
+            this.top_itemPic7.Click += new System.EventHandler(this.top_itemPic7_Click);
             // 
             // top_Panel6
             // 
@@ -2843,6 +3118,7 @@
             this.top_Panel6.ShadowDepth = 200;
             this.top_Panel6.Size = new System.Drawing.Size(171, 154);
             this.top_Panel6.TabIndex = 7;
+            this.top_Panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel6_Paint);
             // 
             // Top_Overlay6
             // 
@@ -2857,6 +3133,7 @@
             this.Top_Overlay6.TabIndex = 7;
             this.Top_Overlay6.TabStop = false;
             this.Top_Overlay6.Visible = false;
+            this.Top_Overlay6.Click += new System.EventHandler(this.Top_Overlay6_Click);
             // 
             // top_itemPic6
             // 
@@ -2869,6 +3146,7 @@
             this.top_itemPic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic6.TabIndex = 5;
             this.top_itemPic6.TabStop = false;
+            this.top_itemPic6.Click += new System.EventHandler(this.top_itemPic6_Click);
             // 
             // top_Panel5
             // 
@@ -2882,6 +3160,7 @@
             this.top_Panel5.ShadowDepth = 200;
             this.top_Panel5.Size = new System.Drawing.Size(170, 154);
             this.top_Panel5.TabIndex = 6;
+            this.top_Panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel5_Paint);
             // 
             // Top_Overlay5
             // 
@@ -2896,6 +3175,7 @@
             this.Top_Overlay5.TabIndex = 7;
             this.Top_Overlay5.TabStop = false;
             this.Top_Overlay5.Visible = false;
+            this.Top_Overlay5.Click += new System.EventHandler(this.Top_Overlay5_Click);
             // 
             // top_itemPic5
             // 
@@ -2908,6 +3188,7 @@
             this.top_itemPic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic5.TabIndex = 4;
             this.top_itemPic5.TabStop = false;
+            this.top_itemPic5.Click += new System.EventHandler(this.top_itemPic5_Click);
             // 
             // top_Panel4
             // 
@@ -2921,6 +3202,7 @@
             this.top_Panel4.ShadowDepth = 200;
             this.top_Panel4.Size = new System.Drawing.Size(170, 154);
             this.top_Panel4.TabIndex = 6;
+            this.top_Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel4_Paint);
             // 
             // Top_Overlay4
             // 
@@ -2935,6 +3217,7 @@
             this.Top_Overlay4.TabIndex = 7;
             this.Top_Overlay4.TabStop = false;
             this.Top_Overlay4.Visible = false;
+            this.Top_Overlay4.Click += new System.EventHandler(this.Top_Overlay4_Click);
             // 
             // top_itemPic4
             // 
@@ -2947,6 +3230,7 @@
             this.top_itemPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic4.TabIndex = 3;
             this.top_itemPic4.TabStop = false;
+            this.top_itemPic4.Click += new System.EventHandler(this.top_itemPic4_Click);
             // 
             // top_Panel3
             // 
@@ -2960,6 +3244,7 @@
             this.top_Panel3.ShadowDepth = 200;
             this.top_Panel3.Size = new System.Drawing.Size(170, 154);
             this.top_Panel3.TabIndex = 6;
+            this.top_Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel3_Paint);
             // 
             // Top_Overlay3
             // 
@@ -2974,6 +3259,7 @@
             this.Top_Overlay3.TabIndex = 7;
             this.Top_Overlay3.TabStop = false;
             this.Top_Overlay3.Visible = false;
+            this.Top_Overlay3.Click += new System.EventHandler(this.Top_Overlay3_Click);
             // 
             // top_itemPic3
             // 
@@ -2986,6 +3272,7 @@
             this.top_itemPic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic3.TabIndex = 2;
             this.top_itemPic3.TabStop = false;
+            this.top_itemPic3.Click += new System.EventHandler(this.top_itemPic3_Click);
             // 
             // top_Panel2
             // 
@@ -2999,6 +3286,7 @@
             this.top_Panel2.ShadowDepth = 200;
             this.top_Panel2.Size = new System.Drawing.Size(170, 154);
             this.top_Panel2.TabIndex = 6;
+            this.top_Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel2_Paint);
             // 
             // Top_Overlay2
             // 
@@ -3013,6 +3301,7 @@
             this.Top_Overlay2.TabIndex = 7;
             this.Top_Overlay2.TabStop = false;
             this.Top_Overlay2.Visible = false;
+            this.Top_Overlay2.Click += new System.EventHandler(this.Top_Overlay2_Click);
             // 
             // top_itemPic2
             // 
@@ -3025,6 +3314,7 @@
             this.top_itemPic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic2.TabIndex = 1;
             this.top_itemPic2.TabStop = false;
+            this.top_itemPic2.Click += new System.EventHandler(this.top_itemPic2_Click);
             // 
             // top_Panel1
             // 
@@ -3038,6 +3328,7 @@
             this.top_Panel1.ShadowDepth = 200;
             this.top_Panel1.Size = new System.Drawing.Size(170, 154);
             this.top_Panel1.TabIndex = 5;
+            this.top_Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.top_Panel1_Paint);
             // 
             // Top_Overlay1
             // 
@@ -3052,6 +3343,7 @@
             this.Top_Overlay1.TabIndex = 8;
             this.Top_Overlay1.TabStop = false;
             this.Top_Overlay1.Visible = false;
+            this.Top_Overlay1.Click += new System.EventHandler(this.Top_Overlay1_Click);
             // 
             // top_itemPic1
             // 
@@ -3064,6 +3356,7 @@
             this.top_itemPic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.top_itemPic1.TabIndex = 0;
             this.top_itemPic1.TabStop = false;
+            this.top_itemPic1.Click += new System.EventHandler(this.top_itemPic1_Click);
             // 
             // guna2Button5
             // 
@@ -3078,7 +3371,7 @@
             this.guna2Button5.FocusedColor = System.Drawing.Color.White;
             this.guna2Button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(1757, 6);
+            this.guna2Button5.Location = new System.Drawing.Point(1735, 9);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(158, 53);
             this.guna2Button5.TabIndex = 5;
@@ -3113,6 +3406,7 @@
             this.tabPage6.TabIndex = 2;
             this.tabPage6.Text = "Bottom/Pants/Shorts";
             this.tabPage6.UseVisualStyleBackColor = true;
+            this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
             // bot_lbl16
             // 
@@ -3125,6 +3419,7 @@
             this.bot_lbl16.TabIndex = 44;
             this.bot_lbl16.Text = "TEXT 16";
             this.bot_lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl16.Click += new System.EventHandler(this.bot_lbl16_Click);
             // 
             // bot_lbl15
             // 
@@ -3137,6 +3432,7 @@
             this.bot_lbl15.TabIndex = 43;
             this.bot_lbl15.Text = "TEXT 15";
             this.bot_lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl15.Click += new System.EventHandler(this.bot_lbl15_Click);
             // 
             // bot_lbl14
             // 
@@ -3149,6 +3445,7 @@
             this.bot_lbl14.TabIndex = 42;
             this.bot_lbl14.Text = "TEXT 14";
             this.bot_lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl14.Click += new System.EventHandler(this.bot_lbl14_Click);
             // 
             // bot_lbl13
             // 
@@ -3161,6 +3458,7 @@
             this.bot_lbl13.TabIndex = 41;
             this.bot_lbl13.Text = "TEXT 13";
             this.bot_lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl13.Click += new System.EventHandler(this.bot_lbl13_Click);
             // 
             // bot_lbl12
             // 
@@ -3173,6 +3471,7 @@
             this.bot_lbl12.TabIndex = 40;
             this.bot_lbl12.Text = "TEXT 12";
             this.bot_lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl12.Click += new System.EventHandler(this.bot_lbl12_Click);
             // 
             // bot_lbl11
             // 
@@ -3185,6 +3484,7 @@
             this.bot_lbl11.TabIndex = 39;
             this.bot_lbl11.Text = "TEXT 11";
             this.bot_lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl11.Click += new System.EventHandler(this.bot_lbl11_Click);
             // 
             // bot_lbl10
             // 
@@ -3197,6 +3497,7 @@
             this.bot_lbl10.TabIndex = 36;
             this.bot_lbl10.Text = "TEXT 10";
             this.bot_lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl10.Click += new System.EventHandler(this.bot_lbl10_Click);
             // 
             // bot_lbl9
             // 
@@ -3209,6 +3510,7 @@
             this.bot_lbl9.TabIndex = 34;
             this.bot_lbl9.Text = "TEXT 9";
             this.bot_lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl9.Click += new System.EventHandler(this.bot_lbl9_Click);
             // 
             // bot_lbl8
             // 
@@ -3221,6 +3523,7 @@
             this.bot_lbl8.TabIndex = 38;
             this.bot_lbl8.Text = "TEXT 8";
             this.bot_lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl8.Click += new System.EventHandler(this.bot_lbl8_Click);
             // 
             // bot_lbl7
             // 
@@ -3233,6 +3536,7 @@
             this.bot_lbl7.TabIndex = 37;
             this.bot_lbl7.Text = "TEXT 7";
             this.bot_lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl7.Click += new System.EventHandler(this.bot_lbl7_Click);
             // 
             // bot_lbl6
             // 
@@ -3246,6 +3550,7 @@
             this.bot_lbl6.TabIndex = 35;
             this.bot_lbl6.Text = "TEXT 6";
             this.bot_lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl6.Click += new System.EventHandler(this.bot_lbl6_Click);
             // 
             // bot_lbl5
             // 
@@ -3258,6 +3563,7 @@
             this.bot_lbl5.TabIndex = 33;
             this.bot_lbl5.Text = "TEXT 5";
             this.bot_lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl5.Click += new System.EventHandler(this.bot_lbl5_Click);
             // 
             // bot_lbl4
             // 
@@ -3270,6 +3576,7 @@
             this.bot_lbl4.TabIndex = 32;
             this.bot_lbl4.Text = "TEXT 4";
             this.bot_lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl4.Click += new System.EventHandler(this.bot_lbl4_Click);
             // 
             // bot_lbl3
             // 
@@ -3282,6 +3589,7 @@
             this.bot_lbl3.TabIndex = 31;
             this.bot_lbl3.Text = "TEXT 3";
             this.bot_lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl3.Click += new System.EventHandler(this.bot_lbl3_Click);
             // 
             // bot_lbl1
             // 
@@ -3294,6 +3602,7 @@
             this.bot_lbl1.TabIndex = 30;
             this.bot_lbl1.Text = "TEXT 1";
             this.bot_lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl1.Click += new System.EventHandler(this.bot_lbl1_Click);
             // 
             // bot_lbl2
             // 
@@ -3306,6 +3615,7 @@
             this.bot_lbl2.TabIndex = 29;
             this.bot_lbl2.Text = "TEXT 2";
             this.bot_lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bot_lbl2.Click += new System.EventHandler(this.bot_lbl2_Click);
             // 
             // panel5
             // 
@@ -3321,6 +3631,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1691, 173);
             this.panel5.TabIndex = 28;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // bot_Panel16
             // 
@@ -3334,6 +3645,7 @@
             this.bot_Panel16.ShadowDepth = 200;
             this.bot_Panel16.Size = new System.Drawing.Size(171, 154);
             this.bot_Panel16.TabIndex = 9;
+            this.bot_Panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel16_Paint);
             // 
             // bot_overlay16
             // 
@@ -3348,6 +3660,7 @@
             this.bot_overlay16.TabIndex = 7;
             this.bot_overlay16.TabStop = false;
             this.bot_overlay16.Visible = false;
+            this.bot_overlay16.Click += new System.EventHandler(this.bot_overlay16_Click);
             // 
             // bot_itemPic16
             // 
@@ -3360,6 +3673,7 @@
             this.bot_itemPic16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic16.TabIndex = 5;
             this.bot_itemPic16.TabStop = false;
+            this.bot_itemPic16.Click += new System.EventHandler(this.bot_itemPic16_Click);
             // 
             // bot_Panel15
             // 
@@ -3373,6 +3687,7 @@
             this.bot_Panel15.ShadowDepth = 200;
             this.bot_Panel15.Size = new System.Drawing.Size(171, 154);
             this.bot_Panel15.TabIndex = 8;
+            this.bot_Panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel15_Paint);
             // 
             // bot_overlay15
             // 
@@ -3387,6 +3702,7 @@
             this.bot_overlay15.TabIndex = 7;
             this.bot_overlay15.TabStop = false;
             this.bot_overlay15.Visible = false;
+            this.bot_overlay15.Click += new System.EventHandler(this.bot_overlay15_Click);
             // 
             // bot_itemPic15
             // 
@@ -3399,6 +3715,7 @@
             this.bot_itemPic15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic15.TabIndex = 5;
             this.bot_itemPic15.TabStop = false;
+            this.bot_itemPic15.Click += new System.EventHandler(this.bot_itemPic15_Click);
             // 
             // bot_Panel14
             // 
@@ -3412,6 +3729,7 @@
             this.bot_Panel14.ShadowDepth = 200;
             this.bot_Panel14.Size = new System.Drawing.Size(171, 154);
             this.bot_Panel14.TabIndex = 7;
+            this.bot_Panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel14_Paint);
             // 
             // bot_overlay14
             // 
@@ -3426,6 +3744,7 @@
             this.bot_overlay14.TabIndex = 7;
             this.bot_overlay14.TabStop = false;
             this.bot_overlay14.Visible = false;
+            this.bot_overlay14.Click += new System.EventHandler(this.bot_overlay14_Click);
             // 
             // bot_itemPic14
             // 
@@ -3438,6 +3757,7 @@
             this.bot_itemPic14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic14.TabIndex = 5;
             this.bot_itemPic14.TabStop = false;
+            this.bot_itemPic14.Click += new System.EventHandler(this.bot_itemPic14_Click);
             // 
             // bot_Panel13
             // 
@@ -3451,6 +3771,7 @@
             this.bot_Panel13.ShadowDepth = 200;
             this.bot_Panel13.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel13.TabIndex = 6;
+            this.bot_Panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel13_Paint);
             // 
             // bot_overlay13
             // 
@@ -3465,6 +3786,7 @@
             this.bot_overlay13.TabIndex = 7;
             this.bot_overlay13.TabStop = false;
             this.bot_overlay13.Visible = false;
+            this.bot_overlay13.Click += new System.EventHandler(this.bot_overlay13_Click);
             // 
             // bot_itemPic13
             // 
@@ -3477,6 +3799,7 @@
             this.bot_itemPic13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic13.TabIndex = 4;
             this.bot_itemPic13.TabStop = false;
+            this.bot_itemPic13.Click += new System.EventHandler(this.bot_itemPic13_Click);
             // 
             // bot_Panel12
             // 
@@ -3490,6 +3813,7 @@
             this.bot_Panel12.ShadowDepth = 200;
             this.bot_Panel12.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel12.TabIndex = 6;
+            this.bot_Panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel12_Paint);
             // 
             // bot_overlay12
             // 
@@ -3504,6 +3828,7 @@
             this.bot_overlay12.TabIndex = 7;
             this.bot_overlay12.TabStop = false;
             this.bot_overlay12.Visible = false;
+            this.bot_overlay12.Click += new System.EventHandler(this.bot_overlay12_Click);
             // 
             // bot_itemPic12
             // 
@@ -3516,6 +3841,7 @@
             this.bot_itemPic12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic12.TabIndex = 3;
             this.bot_itemPic12.TabStop = false;
+            this.bot_itemPic12.Click += new System.EventHandler(this.bot_itemPic12_Click);
             // 
             // bot_Panel11
             // 
@@ -3529,6 +3855,7 @@
             this.bot_Panel11.ShadowDepth = 200;
             this.bot_Panel11.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel11.TabIndex = 6;
+            this.bot_Panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel11_Paint);
             // 
             // bot_overlay11
             // 
@@ -3543,6 +3870,7 @@
             this.bot_overlay11.TabIndex = 7;
             this.bot_overlay11.TabStop = false;
             this.bot_overlay11.Visible = false;
+            this.bot_overlay11.Click += new System.EventHandler(this.bot_overlay11_Click);
             // 
             // bot_itemPic11
             // 
@@ -3555,6 +3883,7 @@
             this.bot_itemPic11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic11.TabIndex = 2;
             this.bot_itemPic11.TabStop = false;
+            this.bot_itemPic11.Click += new System.EventHandler(this.bot_itemPic11_Click);
             // 
             // bot_Panel10
             // 
@@ -3568,6 +3897,7 @@
             this.bot_Panel10.ShadowDepth = 200;
             this.bot_Panel10.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel10.TabIndex = 6;
+            this.bot_Panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel10_Paint);
             // 
             // bot_overlay10
             // 
@@ -3582,6 +3912,7 @@
             this.bot_overlay10.TabIndex = 7;
             this.bot_overlay10.TabStop = false;
             this.bot_overlay10.Visible = false;
+            this.bot_overlay10.Click += new System.EventHandler(this.bot_overlay10_Click);
             // 
             // bot_itemPic10
             // 
@@ -3594,6 +3925,7 @@
             this.bot_itemPic10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic10.TabIndex = 1;
             this.bot_itemPic10.TabStop = false;
+            this.bot_itemPic10.Click += new System.EventHandler(this.bot_itemPic10_Click);
             // 
             // bot_Panel9
             // 
@@ -3607,6 +3939,7 @@
             this.bot_Panel9.ShadowDepth = 200;
             this.bot_Panel9.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel9.TabIndex = 5;
+            this.bot_Panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel9_Paint);
             // 
             // bot_overlay9
             // 
@@ -3621,6 +3954,7 @@
             this.bot_overlay9.TabIndex = 7;
             this.bot_overlay9.TabStop = false;
             this.bot_overlay9.Visible = false;
+            this.bot_overlay9.Click += new System.EventHandler(this.bot_overlay9_Click);
             // 
             // bot_itemPic9
             // 
@@ -3633,6 +3967,7 @@
             this.bot_itemPic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic9.TabIndex = 0;
             this.bot_itemPic9.TabStop = false;
+            this.bot_itemPic9.Click += new System.EventHandler(this.bot_itemPic9_Click);
             // 
             // panel7
             // 
@@ -3648,6 +3983,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1691, 173);
             this.panel7.TabIndex = 27;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // bot_Panel8
             // 
@@ -3661,6 +3997,7 @@
             this.bot_Panel8.ShadowDepth = 200;
             this.bot_Panel8.Size = new System.Drawing.Size(171, 154);
             this.bot_Panel8.TabIndex = 9;
+            this.bot_Panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel8_Paint);
             // 
             // bot_overlay8
             // 
@@ -3675,6 +4012,7 @@
             this.bot_overlay8.TabIndex = 7;
             this.bot_overlay8.TabStop = false;
             this.bot_overlay8.Visible = false;
+            this.bot_overlay8.Click += new System.EventHandler(this.bot_overlay8_Click);
             // 
             // bot_itemPic8
             // 
@@ -3687,6 +4025,7 @@
             this.bot_itemPic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic8.TabIndex = 5;
             this.bot_itemPic8.TabStop = false;
+            this.bot_itemPic8.Click += new System.EventHandler(this.bot_itemPic8_Click);
             // 
             // bot_Panel7
             // 
@@ -3700,6 +4039,7 @@
             this.bot_Panel7.ShadowDepth = 200;
             this.bot_Panel7.Size = new System.Drawing.Size(171, 154);
             this.bot_Panel7.TabIndex = 8;
+            this.bot_Panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel7_Paint);
             // 
             // bot_overlay7
             // 
@@ -3714,6 +4054,7 @@
             this.bot_overlay7.TabIndex = 6;
             this.bot_overlay7.TabStop = false;
             this.bot_overlay7.Visible = false;
+            this.bot_overlay7.Click += new System.EventHandler(this.bot_overlay7_Click);
             // 
             // bot_itemPic7
             // 
@@ -3726,6 +4067,7 @@
             this.bot_itemPic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic7.TabIndex = 5;
             this.bot_itemPic7.TabStop = false;
+            this.bot_itemPic7.Click += new System.EventHandler(this.bot_itemPic7_Click);
             // 
             // bot_Panel6
             // 
@@ -3739,6 +4081,7 @@
             this.bot_Panel6.ShadowDepth = 200;
             this.bot_Panel6.Size = new System.Drawing.Size(171, 154);
             this.bot_Panel6.TabIndex = 7;
+            this.bot_Panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel6_Paint);
             // 
             // bot_overlay6
             // 
@@ -3753,6 +4096,7 @@
             this.bot_overlay6.TabIndex = 7;
             this.bot_overlay6.TabStop = false;
             this.bot_overlay6.Visible = false;
+            this.bot_overlay6.Click += new System.EventHandler(this.bot_overlay6_Click);
             // 
             // bot_itemPic6
             // 
@@ -3765,6 +4109,7 @@
             this.bot_itemPic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic6.TabIndex = 5;
             this.bot_itemPic6.TabStop = false;
+            this.bot_itemPic6.Click += new System.EventHandler(this.bot_itemPic6_Click);
             // 
             // bot_Panel5
             // 
@@ -3778,6 +4123,7 @@
             this.bot_Panel5.ShadowDepth = 200;
             this.bot_Panel5.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel5.TabIndex = 6;
+            this.bot_Panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel5_Paint);
             // 
             // bot_overlay5
             // 
@@ -3792,6 +4138,7 @@
             this.bot_overlay5.TabIndex = 7;
             this.bot_overlay5.TabStop = false;
             this.bot_overlay5.Visible = false;
+            this.bot_overlay5.Click += new System.EventHandler(this.bot_overlay5_Click);
             // 
             // bot_itemPic5
             // 
@@ -3804,6 +4151,7 @@
             this.bot_itemPic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic5.TabIndex = 4;
             this.bot_itemPic5.TabStop = false;
+            this.bot_itemPic5.Click += new System.EventHandler(this.bot_itemPic5_Click);
             // 
             // bot_Panel4
             // 
@@ -3817,6 +4165,7 @@
             this.bot_Panel4.ShadowDepth = 200;
             this.bot_Panel4.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel4.TabIndex = 6;
+            this.bot_Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel4_Paint);
             // 
             // bot_overlay4
             // 
@@ -3831,6 +4180,7 @@
             this.bot_overlay4.TabIndex = 7;
             this.bot_overlay4.TabStop = false;
             this.bot_overlay4.Visible = false;
+            this.bot_overlay4.Click += new System.EventHandler(this.bot_overlay4_Click);
             // 
             // bot_itemPic4
             // 
@@ -3843,6 +4193,7 @@
             this.bot_itemPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic4.TabIndex = 3;
             this.bot_itemPic4.TabStop = false;
+            this.bot_itemPic4.Click += new System.EventHandler(this.bot_itemPic4_Click);
             // 
             // bot_Panel3
             // 
@@ -3856,6 +4207,7 @@
             this.bot_Panel3.ShadowDepth = 200;
             this.bot_Panel3.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel3.TabIndex = 6;
+            this.bot_Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel3_Paint);
             // 
             // bot_overlay3
             // 
@@ -3870,6 +4222,7 @@
             this.bot_overlay3.TabIndex = 7;
             this.bot_overlay3.TabStop = false;
             this.bot_overlay3.Visible = false;
+            this.bot_overlay3.Click += new System.EventHandler(this.bot_overlay3_Click);
             // 
             // bot_itemPic3
             // 
@@ -3882,6 +4235,7 @@
             this.bot_itemPic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic3.TabIndex = 2;
             this.bot_itemPic3.TabStop = false;
+            this.bot_itemPic3.Click += new System.EventHandler(this.bot_itemPic3_Click);
             // 
             // bot_Panel2
             // 
@@ -3895,6 +4249,7 @@
             this.bot_Panel2.ShadowDepth = 200;
             this.bot_Panel2.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel2.TabIndex = 6;
+            this.bot_Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel2_Paint);
             // 
             // bot_overlay2
             // 
@@ -3909,6 +4264,7 @@
             this.bot_overlay2.TabIndex = 7;
             this.bot_overlay2.TabStop = false;
             this.bot_overlay2.Visible = false;
+            this.bot_overlay2.Click += new System.EventHandler(this.bot_overlay2_Click);
             // 
             // bot_itemPic2
             // 
@@ -3921,6 +4277,7 @@
             this.bot_itemPic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic2.TabIndex = 1;
             this.bot_itemPic2.TabStop = false;
+            this.bot_itemPic2.Click += new System.EventHandler(this.bot_itemPic2_Click);
             // 
             // bot_Panel1
             // 
@@ -3934,6 +4291,7 @@
             this.bot_Panel1.ShadowDepth = 200;
             this.bot_Panel1.Size = new System.Drawing.Size(170, 154);
             this.bot_Panel1.TabIndex = 5;
+            this.bot_Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bot_Panel1_Paint);
             // 
             // bot_overlay1
             // 
@@ -3948,6 +4306,7 @@
             this.bot_overlay1.TabIndex = 8;
             this.bot_overlay1.TabStop = false;
             this.bot_overlay1.Visible = false;
+            this.bot_overlay1.Click += new System.EventHandler(this.bot_overlay1_Click);
             // 
             // bot_itemPic1
             // 
@@ -3960,6 +4319,7 @@
             this.bot_itemPic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bot_itemPic1.TabIndex = 0;
             this.bot_itemPic1.TabStop = false;
+            this.bot_itemPic1.Click += new System.EventHandler(this.bot_itemPic1_Click);
             // 
             // guna2Button6
             // 
@@ -3974,7 +4334,7 @@
             this.guna2Button6.FocusedColor = System.Drawing.Color.White;
             this.guna2Button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(1757, 6);
+            this.guna2Button6.Location = new System.Drawing.Point(1735, 9);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.Size = new System.Drawing.Size(158, 53);
             this.guna2Button6.TabIndex = 5;
@@ -4009,6 +4369,7 @@
             this.tabPage7.TabIndex = 3;
             this.tabPage7.Text = "Cloth/Fabric";
             this.tabPage7.UseVisualStyleBackColor = true;
+            this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click);
             // 
             // fab_lbl16
             // 
@@ -4021,6 +4382,7 @@
             this.fab_lbl16.TabIndex = 44;
             this.fab_lbl16.Text = "TEXT 16";
             this.fab_lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl16.Click += new System.EventHandler(this.fab_lbl16_Click);
             // 
             // fab_lbl15
             // 
@@ -4033,6 +4395,7 @@
             this.fab_lbl15.TabIndex = 43;
             this.fab_lbl15.Text = "TEXT 15";
             this.fab_lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl15.Click += new System.EventHandler(this.fab_lbl15_Click);
             // 
             // fab_lbl14
             // 
@@ -4045,6 +4408,7 @@
             this.fab_lbl14.TabIndex = 42;
             this.fab_lbl14.Text = "TEXT 14";
             this.fab_lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl14.Click += new System.EventHandler(this.fab_lbl14_Click);
             // 
             // fab_lbl13
             // 
@@ -4057,6 +4421,7 @@
             this.fab_lbl13.TabIndex = 41;
             this.fab_lbl13.Text = "TEXT 13";
             this.fab_lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl13.Click += new System.EventHandler(this.fab_lbl13_Click);
             // 
             // fab_lbl12
             // 
@@ -4069,6 +4434,7 @@
             this.fab_lbl12.TabIndex = 40;
             this.fab_lbl12.Text = "TEXT 12";
             this.fab_lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl12.Click += new System.EventHandler(this.fab_lbl12_Click);
             // 
             // fab_lbl11
             // 
@@ -4081,6 +4447,7 @@
             this.fab_lbl11.TabIndex = 39;
             this.fab_lbl11.Text = "TEXT 11";
             this.fab_lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl11.Click += new System.EventHandler(this.fab_lbl11_Click);
             // 
             // fab_lbl10
             // 
@@ -4093,6 +4460,7 @@
             this.fab_lbl10.TabIndex = 36;
             this.fab_lbl10.Text = "TEXT 10";
             this.fab_lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl10.Click += new System.EventHandler(this.fab_lbl10_Click);
             // 
             // fab_lbl9
             // 
@@ -4105,6 +4473,7 @@
             this.fab_lbl9.TabIndex = 34;
             this.fab_lbl9.Text = "TEXT 9";
             this.fab_lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl9.Click += new System.EventHandler(this.fab_lbl9_Click);
             // 
             // fab_lbl8
             // 
@@ -4117,6 +4486,7 @@
             this.fab_lbl8.TabIndex = 38;
             this.fab_lbl8.Text = "TEXT 8";
             this.fab_lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl8.Click += new System.EventHandler(this.fab_lbl8_Click);
             // 
             // fab_lbl7
             // 
@@ -4129,6 +4499,7 @@
             this.fab_lbl7.TabIndex = 37;
             this.fab_lbl7.Text = "TEXT 7";
             this.fab_lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl7.Click += new System.EventHandler(this.fab_lbl7_Click);
             // 
             // fab_lbl6
             // 
@@ -4142,6 +4513,7 @@
             this.fab_lbl6.TabIndex = 35;
             this.fab_lbl6.Text = "TEXT 6";
             this.fab_lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl6.Click += new System.EventHandler(this.fab_lbl6_Click);
             // 
             // fab_lbl5
             // 
@@ -4154,6 +4526,7 @@
             this.fab_lbl5.TabIndex = 33;
             this.fab_lbl5.Text = "TEXT 5";
             this.fab_lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl5.Click += new System.EventHandler(this.fab_lbl5_Click);
             // 
             // fab_lbl4
             // 
@@ -4166,6 +4539,7 @@
             this.fab_lbl4.TabIndex = 32;
             this.fab_lbl4.Text = "TEXT 4";
             this.fab_lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl4.Click += new System.EventHandler(this.fab_lbl4_Click);
             // 
             // fab_lbl3
             // 
@@ -4178,6 +4552,7 @@
             this.fab_lbl3.TabIndex = 31;
             this.fab_lbl3.Text = "TEXT 3";
             this.fab_lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl3.Click += new System.EventHandler(this.fab_lbl3_Click);
             // 
             // fab_lbl1
             // 
@@ -4190,6 +4565,7 @@
             this.fab_lbl1.TabIndex = 30;
             this.fab_lbl1.Text = "TEXT 1";
             this.fab_lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl1.Click += new System.EventHandler(this.fab_lbl1_Click);
             // 
             // fab_lbl2
             // 
@@ -4202,6 +4578,7 @@
             this.fab_lbl2.TabIndex = 29;
             this.fab_lbl2.Text = "TEXT 2";
             this.fab_lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fab_lbl2.Click += new System.EventHandler(this.fab_lbl2_Click);
             // 
             // panel8
             // 
@@ -4217,6 +4594,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1691, 173);
             this.panel8.TabIndex = 28;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // fab_Panel16
             // 
@@ -4230,6 +4608,7 @@
             this.fab_Panel16.ShadowDepth = 200;
             this.fab_Panel16.Size = new System.Drawing.Size(171, 154);
             this.fab_Panel16.TabIndex = 9;
+            this.fab_Panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel16_Paint);
             // 
             // fab_itemPic16
             // 
@@ -4242,6 +4621,7 @@
             this.fab_itemPic16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic16.TabIndex = 5;
             this.fab_itemPic16.TabStop = false;
+            this.fab_itemPic16.Click += new System.EventHandler(this.fab_itemPic16_Click);
             // 
             // fab_overlay16
             // 
@@ -4256,6 +4636,7 @@
             this.fab_overlay16.TabIndex = 7;
             this.fab_overlay16.TabStop = false;
             this.fab_overlay16.Visible = false;
+            this.fab_overlay16.Click += new System.EventHandler(this.fab_overlay16_Click);
             // 
             // fab_Panel15
             // 
@@ -4269,6 +4650,7 @@
             this.fab_Panel15.ShadowDepth = 200;
             this.fab_Panel15.Size = new System.Drawing.Size(171, 154);
             this.fab_Panel15.TabIndex = 8;
+            this.fab_Panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel15_Paint);
             // 
             // fab_itemPic15
             // 
@@ -4281,6 +4663,7 @@
             this.fab_itemPic15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic15.TabIndex = 5;
             this.fab_itemPic15.TabStop = false;
+            this.fab_itemPic15.Click += new System.EventHandler(this.fab_itemPic15_Click);
             // 
             // fab_overlay15
             // 
@@ -4295,6 +4678,7 @@
             this.fab_overlay15.TabIndex = 7;
             this.fab_overlay15.TabStop = false;
             this.fab_overlay15.Visible = false;
+            this.fab_overlay15.Click += new System.EventHandler(this.fab_overlay15_Click);
             // 
             // fab_Panel14
             // 
@@ -4308,6 +4692,7 @@
             this.fab_Panel14.ShadowDepth = 200;
             this.fab_Panel14.Size = new System.Drawing.Size(171, 154);
             this.fab_Panel14.TabIndex = 7;
+            this.fab_Panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel14_Paint);
             // 
             // fab_itemPic14
             // 
@@ -4320,6 +4705,7 @@
             this.fab_itemPic14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic14.TabIndex = 5;
             this.fab_itemPic14.TabStop = false;
+            this.fab_itemPic14.Click += new System.EventHandler(this.fab_itemPic14_Click);
             // 
             // fab_overlay14
             // 
@@ -4334,6 +4720,7 @@
             this.fab_overlay14.TabIndex = 7;
             this.fab_overlay14.TabStop = false;
             this.fab_overlay14.Visible = false;
+            this.fab_overlay14.Click += new System.EventHandler(this.fab_overlay14_Click);
             // 
             // fab_Panel13
             // 
@@ -4347,6 +4734,7 @@
             this.fab_Panel13.ShadowDepth = 200;
             this.fab_Panel13.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel13.TabIndex = 6;
+            this.fab_Panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel13_Paint);
             // 
             // fab_itemPic13
             // 
@@ -4359,6 +4747,7 @@
             this.fab_itemPic13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic13.TabIndex = 4;
             this.fab_itemPic13.TabStop = false;
+            this.fab_itemPic13.Click += new System.EventHandler(this.fab_itemPic13_Click);
             // 
             // fab_overlay13
             // 
@@ -4373,6 +4762,7 @@
             this.fab_overlay13.TabIndex = 7;
             this.fab_overlay13.TabStop = false;
             this.fab_overlay13.Visible = false;
+            this.fab_overlay13.Click += new System.EventHandler(this.fab_overlay13_Click);
             // 
             // fab_Panel12
             // 
@@ -4386,6 +4776,7 @@
             this.fab_Panel12.ShadowDepth = 200;
             this.fab_Panel12.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel12.TabIndex = 6;
+            this.fab_Panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel12_Paint);
             // 
             // fab_itemPic12
             // 
@@ -4398,6 +4789,7 @@
             this.fab_itemPic12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic12.TabIndex = 3;
             this.fab_itemPic12.TabStop = false;
+            this.fab_itemPic12.Click += new System.EventHandler(this.fab_itemPic12_Click);
             // 
             // fab_overlay12
             // 
@@ -4412,6 +4804,7 @@
             this.fab_overlay12.TabIndex = 7;
             this.fab_overlay12.TabStop = false;
             this.fab_overlay12.Visible = false;
+            this.fab_overlay12.Click += new System.EventHandler(this.fab_overlay12_Click);
             // 
             // fab_Panel11
             // 
@@ -4425,6 +4818,7 @@
             this.fab_Panel11.ShadowDepth = 200;
             this.fab_Panel11.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel11.TabIndex = 6;
+            this.fab_Panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel11_Paint);
             // 
             // fab_itemPic11
             // 
@@ -4437,6 +4831,7 @@
             this.fab_itemPic11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic11.TabIndex = 2;
             this.fab_itemPic11.TabStop = false;
+            this.fab_itemPic11.Click += new System.EventHandler(this.fab_itemPic11_Click);
             // 
             // fab_overlay11
             // 
@@ -4451,6 +4846,7 @@
             this.fab_overlay11.TabIndex = 7;
             this.fab_overlay11.TabStop = false;
             this.fab_overlay11.Visible = false;
+            this.fab_overlay11.Click += new System.EventHandler(this.fab_overlay11_Click);
             // 
             // fab_Panel10
             // 
@@ -4464,6 +4860,7 @@
             this.fab_Panel10.ShadowDepth = 200;
             this.fab_Panel10.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel10.TabIndex = 6;
+            this.fab_Panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel10_Paint);
             // 
             // fab_itemPic10
             // 
@@ -4476,6 +4873,7 @@
             this.fab_itemPic10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic10.TabIndex = 1;
             this.fab_itemPic10.TabStop = false;
+            this.fab_itemPic10.Click += new System.EventHandler(this.fab_itemPic10_Click);
             // 
             // fab_overlay10
             // 
@@ -4490,6 +4888,7 @@
             this.fab_overlay10.TabIndex = 7;
             this.fab_overlay10.TabStop = false;
             this.fab_overlay10.Visible = false;
+            this.fab_overlay10.Click += new System.EventHandler(this.fab_overlay10_Click);
             // 
             // fab_Panel9
             // 
@@ -4503,6 +4902,7 @@
             this.fab_Panel9.ShadowDepth = 200;
             this.fab_Panel9.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel9.TabIndex = 5;
+            this.fab_Panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel9_Paint);
             // 
             // fab_itemPic9
             // 
@@ -4515,6 +4915,7 @@
             this.fab_itemPic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic9.TabIndex = 0;
             this.fab_itemPic9.TabStop = false;
+            this.fab_itemPic9.Click += new System.EventHandler(this.fab_itemPic9_Click);
             // 
             // fab_overlay9
             // 
@@ -4529,6 +4930,7 @@
             this.fab_overlay9.TabIndex = 7;
             this.fab_overlay9.TabStop = false;
             this.fab_overlay9.Visible = false;
+            this.fab_overlay9.Click += new System.EventHandler(this.fab_overlay9_Click);
             // 
             // panel9
             // 
@@ -4544,6 +4946,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1691, 173);
             this.panel9.TabIndex = 27;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // fab_Panel8
             // 
@@ -4557,6 +4960,7 @@
             this.fab_Panel8.ShadowDepth = 200;
             this.fab_Panel8.Size = new System.Drawing.Size(171, 154);
             this.fab_Panel8.TabIndex = 9;
+            this.fab_Panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel8_Paint);
             // 
             // fab_itemPic8
             // 
@@ -4569,6 +4973,7 @@
             this.fab_itemPic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic8.TabIndex = 5;
             this.fab_itemPic8.TabStop = false;
+            this.fab_itemPic8.Click += new System.EventHandler(this.fab_itemPic8_Click);
             // 
             // fab_overlay8
             // 
@@ -4583,6 +4988,7 @@
             this.fab_overlay8.TabIndex = 7;
             this.fab_overlay8.TabStop = false;
             this.fab_overlay8.Visible = false;
+            this.fab_overlay8.Click += new System.EventHandler(this.fab_overlay8_Click);
             // 
             // fab_Panel7
             // 
@@ -4596,6 +5002,7 @@
             this.fab_Panel7.ShadowDepth = 200;
             this.fab_Panel7.Size = new System.Drawing.Size(171, 154);
             this.fab_Panel7.TabIndex = 8;
+            this.fab_Panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel7_Paint);
             // 
             // fab_itemPic7
             // 
@@ -4608,6 +5015,7 @@
             this.fab_itemPic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic7.TabIndex = 5;
             this.fab_itemPic7.TabStop = false;
+            this.fab_itemPic7.Click += new System.EventHandler(this.fab_itemPic7_Click);
             // 
             // fab_overlay7
             // 
@@ -4622,6 +5030,7 @@
             this.fab_overlay7.TabIndex = 6;
             this.fab_overlay7.TabStop = false;
             this.fab_overlay7.Visible = false;
+            this.fab_overlay7.Click += new System.EventHandler(this.fab_overlay7_Click);
             // 
             // fab_Panel6
             // 
@@ -4635,6 +5044,7 @@
             this.fab_Panel6.ShadowDepth = 200;
             this.fab_Panel6.Size = new System.Drawing.Size(171, 154);
             this.fab_Panel6.TabIndex = 7;
+            this.fab_Panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel6_Paint);
             // 
             // fab_itemPic6
             // 
@@ -4647,6 +5057,7 @@
             this.fab_itemPic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic6.TabIndex = 5;
             this.fab_itemPic6.TabStop = false;
+            this.fab_itemPic6.Click += new System.EventHandler(this.fab_itemPic6_Click);
             // 
             // fab_overlay6
             // 
@@ -4661,6 +5072,7 @@
             this.fab_overlay6.TabIndex = 7;
             this.fab_overlay6.TabStop = false;
             this.fab_overlay6.Visible = false;
+            this.fab_overlay6.Click += new System.EventHandler(this.fab_overlay6_Click);
             // 
             // fab_Panel5
             // 
@@ -4674,6 +5086,7 @@
             this.fab_Panel5.ShadowDepth = 200;
             this.fab_Panel5.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel5.TabIndex = 6;
+            this.fab_Panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel5_Paint);
             // 
             // fab_itemPic5
             // 
@@ -4686,6 +5099,7 @@
             this.fab_itemPic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic5.TabIndex = 4;
             this.fab_itemPic5.TabStop = false;
+            this.fab_itemPic5.Click += new System.EventHandler(this.fab_itemPic5_Click);
             // 
             // fab_overlay5
             // 
@@ -4700,6 +5114,7 @@
             this.fab_overlay5.TabIndex = 7;
             this.fab_overlay5.TabStop = false;
             this.fab_overlay5.Visible = false;
+            this.fab_overlay5.Click += new System.EventHandler(this.fab_overlay5_Click);
             // 
             // fab_Panel4
             // 
@@ -4713,6 +5128,7 @@
             this.fab_Panel4.ShadowDepth = 200;
             this.fab_Panel4.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel4.TabIndex = 6;
+            this.fab_Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel4_Paint);
             // 
             // fab_itemPic4
             // 
@@ -4725,6 +5141,7 @@
             this.fab_itemPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic4.TabIndex = 3;
             this.fab_itemPic4.TabStop = false;
+            this.fab_itemPic4.Click += new System.EventHandler(this.fab_itemPic4_Click);
             // 
             // fab_overlay4
             // 
@@ -4739,6 +5156,7 @@
             this.fab_overlay4.TabIndex = 7;
             this.fab_overlay4.TabStop = false;
             this.fab_overlay4.Visible = false;
+            this.fab_overlay4.Click += new System.EventHandler(this.fab_overlay4_Click);
             // 
             // fab_Panel3
             // 
@@ -4752,6 +5170,7 @@
             this.fab_Panel3.ShadowDepth = 200;
             this.fab_Panel3.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel3.TabIndex = 6;
+            this.fab_Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel3_Paint);
             // 
             // fab_itemPic3
             // 
@@ -4764,6 +5183,7 @@
             this.fab_itemPic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic3.TabIndex = 2;
             this.fab_itemPic3.TabStop = false;
+            this.fab_itemPic3.Click += new System.EventHandler(this.fab_itemPic3_Click);
             // 
             // fab_overlay3
             // 
@@ -4778,6 +5198,7 @@
             this.fab_overlay3.TabIndex = 7;
             this.fab_overlay3.TabStop = false;
             this.fab_overlay3.Visible = false;
+            this.fab_overlay3.Click += new System.EventHandler(this.fab_overlay3_Click);
             // 
             // fab_Panel2
             // 
@@ -4791,6 +5212,7 @@
             this.fab_Panel2.ShadowDepth = 200;
             this.fab_Panel2.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel2.TabIndex = 6;
+            this.fab_Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel2_Paint);
             // 
             // fab_itemPic2
             // 
@@ -4803,6 +5225,7 @@
             this.fab_itemPic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic2.TabIndex = 1;
             this.fab_itemPic2.TabStop = false;
+            this.fab_itemPic2.Click += new System.EventHandler(this.fab_itemPic2_Click);
             // 
             // fab_overlay2
             // 
@@ -4817,6 +5240,7 @@
             this.fab_overlay2.TabIndex = 7;
             this.fab_overlay2.TabStop = false;
             this.fab_overlay2.Visible = false;
+            this.fab_overlay2.Click += new System.EventHandler(this.fab_overlay2_Click);
             // 
             // fab_Panel1
             // 
@@ -4830,6 +5254,7 @@
             this.fab_Panel1.ShadowDepth = 200;
             this.fab_Panel1.Size = new System.Drawing.Size(170, 154);
             this.fab_Panel1.TabIndex = 5;
+            this.fab_Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.fab_Panel1_Paint);
             // 
             // fab_itemPic1
             // 
@@ -4842,6 +5267,7 @@
             this.fab_itemPic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fab_itemPic1.TabIndex = 0;
             this.fab_itemPic1.TabStop = false;
+            this.fab_itemPic1.Click += new System.EventHandler(this.fab_itemPic1_Click);
             // 
             // fab_overlay1
             // 
@@ -4856,6 +5282,7 @@
             this.fab_overlay1.TabIndex = 8;
             this.fab_overlay1.TabStop = false;
             this.fab_overlay1.Visible = false;
+            this.fab_overlay1.Click += new System.EventHandler(this.fab_overlay1_Click);
             // 
             // guna2Button7
             // 
@@ -4870,7 +5297,7 @@
             this.guna2Button7.FocusedColor = System.Drawing.Color.White;
             this.guna2Button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Location = new System.Drawing.Point(1757, 6);
+            this.guna2Button7.Location = new System.Drawing.Point(1735, 9);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.Size = new System.Drawing.Size(158, 53);
             this.guna2Button7.TabIndex = 5;
@@ -4905,6 +5332,7 @@
             this.tabPage8.TabIndex = 4;
             this.tabPage8.Text = "Other";
             this.tabPage8.UseVisualStyleBackColor = true;
+            this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
             // 
             // other_lbl16
             // 
@@ -4917,6 +5345,7 @@
             this.other_lbl16.TabIndex = 44;
             this.other_lbl16.Text = "TEXT 16";
             this.other_lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl16.Click += new System.EventHandler(this.other_lbl16_Click);
             // 
             // other_lbl15
             // 
@@ -4929,6 +5358,7 @@
             this.other_lbl15.TabIndex = 43;
             this.other_lbl15.Text = "TEXT 15";
             this.other_lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl15.Click += new System.EventHandler(this.other_lbl15_Click);
             // 
             // other_lbl14
             // 
@@ -4941,6 +5371,7 @@
             this.other_lbl14.TabIndex = 42;
             this.other_lbl14.Text = "TEXT 14";
             this.other_lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl14.Click += new System.EventHandler(this.other_lbl14_Click);
             // 
             // other_lbl13
             // 
@@ -4953,6 +5384,7 @@
             this.other_lbl13.TabIndex = 41;
             this.other_lbl13.Text = "TEXT 13";
             this.other_lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl13.Click += new System.EventHandler(this.other_lbl13_Click);
             // 
             // other_lbl12
             // 
@@ -4965,6 +5397,7 @@
             this.other_lbl12.TabIndex = 40;
             this.other_lbl12.Text = "TEXT 12";
             this.other_lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl12.Click += new System.EventHandler(this.other_lbl12_Click);
             // 
             // other_lbl11
             // 
@@ -4977,6 +5410,7 @@
             this.other_lbl11.TabIndex = 39;
             this.other_lbl11.Text = "TEXT 11";
             this.other_lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl11.Click += new System.EventHandler(this.other_lbl11_Click);
             // 
             // other_lbl10
             // 
@@ -4989,6 +5423,7 @@
             this.other_lbl10.TabIndex = 36;
             this.other_lbl10.Text = "TEXT 10";
             this.other_lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl10.Click += new System.EventHandler(this.other_lbl10_Click);
             // 
             // other_lbl9
             // 
@@ -5001,6 +5436,7 @@
             this.other_lbl9.TabIndex = 34;
             this.other_lbl9.Text = "TEXT 9";
             this.other_lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl9.Click += new System.EventHandler(this.other_lbl9_Click);
             // 
             // other_lbl8
             // 
@@ -5013,6 +5449,7 @@
             this.other_lbl8.TabIndex = 38;
             this.other_lbl8.Text = "TEXT 8";
             this.other_lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl8.Click += new System.EventHandler(this.other_lbl8_Click);
             // 
             // other_lbl7
             // 
@@ -5025,6 +5462,7 @@
             this.other_lbl7.TabIndex = 37;
             this.other_lbl7.Text = "TEXT 7";
             this.other_lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl7.Click += new System.EventHandler(this.other_lbl7_Click);
             // 
             // other_lbl6
             // 
@@ -5038,6 +5476,7 @@
             this.other_lbl6.TabIndex = 35;
             this.other_lbl6.Text = "TEXT 6";
             this.other_lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl6.Click += new System.EventHandler(this.other_lbl6_Click);
             // 
             // other_lbl5
             // 
@@ -5050,6 +5489,7 @@
             this.other_lbl5.TabIndex = 33;
             this.other_lbl5.Text = "TEXT 5";
             this.other_lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl5.Click += new System.EventHandler(this.other_lbl5_Click);
             // 
             // other_lbl4
             // 
@@ -5062,6 +5502,7 @@
             this.other_lbl4.TabIndex = 32;
             this.other_lbl4.Text = "TEXT 4";
             this.other_lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl4.Click += new System.EventHandler(this.other_lbl4_Click);
             // 
             // other_lbl3
             // 
@@ -5074,6 +5515,7 @@
             this.other_lbl3.TabIndex = 31;
             this.other_lbl3.Text = "TEXT 3";
             this.other_lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl3.Click += new System.EventHandler(this.other_lbl3_Click);
             // 
             // other_lbl1
             // 
@@ -5086,6 +5528,7 @@
             this.other_lbl1.TabIndex = 30;
             this.other_lbl1.Text = "TEXT 1";
             this.other_lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl1.Click += new System.EventHandler(this.other_lbl1_Click);
             // 
             // other_lbl2
             // 
@@ -5098,6 +5541,7 @@
             this.other_lbl2.TabIndex = 29;
             this.other_lbl2.Text = "TEXT 2";
             this.other_lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.other_lbl2.Click += new System.EventHandler(this.other_lbl2_Click);
             // 
             // panel6
             // 
@@ -5113,6 +5557,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1691, 173);
             this.panel6.TabIndex = 28;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // other_Panel15
             // 
@@ -5126,6 +5571,7 @@
             this.other_Panel15.ShadowDepth = 200;
             this.other_Panel15.Size = new System.Drawing.Size(171, 154);
             this.other_Panel15.TabIndex = 8;
+            this.other_Panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel15_Paint);
             // 
             // other_overlay15
             // 
@@ -5140,6 +5586,7 @@
             this.other_overlay15.TabIndex = 7;
             this.other_overlay15.TabStop = false;
             this.other_overlay15.Visible = false;
+            this.other_overlay15.Click += new System.EventHandler(this.other_overlay15_Click);
             // 
             // other_itemPic15
             // 
@@ -5152,6 +5599,7 @@
             this.other_itemPic15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic15.TabIndex = 5;
             this.other_itemPic15.TabStop = false;
+            this.other_itemPic15.Click += new System.EventHandler(this.other_itemPic15_Click);
             // 
             // other_Panel14
             // 
@@ -5165,6 +5613,7 @@
             this.other_Panel14.ShadowDepth = 200;
             this.other_Panel14.Size = new System.Drawing.Size(171, 154);
             this.other_Panel14.TabIndex = 7;
+            this.other_Panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel14_Paint);
             // 
             // other_overlay14
             // 
@@ -5179,6 +5628,7 @@
             this.other_overlay14.TabIndex = 7;
             this.other_overlay14.TabStop = false;
             this.other_overlay14.Visible = false;
+            this.other_overlay14.Click += new System.EventHandler(this.other_overlay14_Click);
             // 
             // other_itemPic14
             // 
@@ -5191,6 +5641,7 @@
             this.other_itemPic14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic14.TabIndex = 5;
             this.other_itemPic14.TabStop = false;
+            this.other_itemPic14.Click += new System.EventHandler(this.other_itemPic14_Click);
             // 
             // other_Panel13
             // 
@@ -5204,6 +5655,7 @@
             this.other_Panel13.ShadowDepth = 200;
             this.other_Panel13.Size = new System.Drawing.Size(170, 154);
             this.other_Panel13.TabIndex = 6;
+            this.other_Panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel13_Paint);
             // 
             // other_overlay13
             // 
@@ -5218,6 +5670,7 @@
             this.other_overlay13.TabIndex = 7;
             this.other_overlay13.TabStop = false;
             this.other_overlay13.Visible = false;
+            this.other_overlay13.Click += new System.EventHandler(this.other_overlay13_Click);
             // 
             // other_itemPic13
             // 
@@ -5230,6 +5683,7 @@
             this.other_itemPic13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic13.TabIndex = 4;
             this.other_itemPic13.TabStop = false;
+            this.other_itemPic13.Click += new System.EventHandler(this.other_itemPic13_Click);
             // 
             // other_Panel12
             // 
@@ -5243,6 +5697,7 @@
             this.other_Panel12.ShadowDepth = 200;
             this.other_Panel12.Size = new System.Drawing.Size(170, 154);
             this.other_Panel12.TabIndex = 6;
+            this.other_Panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel12_Paint);
             // 
             // other_overlay12
             // 
@@ -5257,6 +5712,7 @@
             this.other_overlay12.TabIndex = 7;
             this.other_overlay12.TabStop = false;
             this.other_overlay12.Visible = false;
+            this.other_overlay12.Click += new System.EventHandler(this.other_overlay12_Click);
             // 
             // other_itemPic12
             // 
@@ -5269,6 +5725,7 @@
             this.other_itemPic12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic12.TabIndex = 3;
             this.other_itemPic12.TabStop = false;
+            this.other_itemPic12.Click += new System.EventHandler(this.other_itemPic12_Click);
             // 
             // other_Panel11
             // 
@@ -5282,6 +5739,7 @@
             this.other_Panel11.ShadowDepth = 200;
             this.other_Panel11.Size = new System.Drawing.Size(170, 154);
             this.other_Panel11.TabIndex = 6;
+            this.other_Panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel11_Paint);
             // 
             // other_overlay11
             // 
@@ -5296,6 +5754,7 @@
             this.other_overlay11.TabIndex = 7;
             this.other_overlay11.TabStop = false;
             this.other_overlay11.Visible = false;
+            this.other_overlay11.Click += new System.EventHandler(this.other_overlay11_Click);
             // 
             // other_itemPic11
             // 
@@ -5308,6 +5767,7 @@
             this.other_itemPic11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic11.TabIndex = 2;
             this.other_itemPic11.TabStop = false;
+            this.other_itemPic11.Click += new System.EventHandler(this.other_itemPic11_Click);
             // 
             // other_Panel10
             // 
@@ -5321,6 +5781,7 @@
             this.other_Panel10.ShadowDepth = 200;
             this.other_Panel10.Size = new System.Drawing.Size(170, 154);
             this.other_Panel10.TabIndex = 6;
+            this.other_Panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel10_Paint);
             // 
             // other_overlay10
             // 
@@ -5335,6 +5796,7 @@
             this.other_overlay10.TabIndex = 7;
             this.other_overlay10.TabStop = false;
             this.other_overlay10.Visible = false;
+            this.other_overlay10.Click += new System.EventHandler(this.other_overlay10_Click);
             // 
             // other_itemPic10
             // 
@@ -5347,6 +5809,7 @@
             this.other_itemPic10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic10.TabIndex = 1;
             this.other_itemPic10.TabStop = false;
+            this.other_itemPic10.Click += new System.EventHandler(this.other_itemPic10_Click);
             // 
             // other_Panel9
             // 
@@ -5360,6 +5823,7 @@
             this.other_Panel9.ShadowDepth = 200;
             this.other_Panel9.Size = new System.Drawing.Size(170, 154);
             this.other_Panel9.TabIndex = 5;
+            this.other_Panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel9_Paint);
             // 
             // other_overlay9
             // 
@@ -5374,6 +5838,7 @@
             this.other_overlay9.TabIndex = 7;
             this.other_overlay9.TabStop = false;
             this.other_overlay9.Visible = false;
+            this.other_overlay9.Click += new System.EventHandler(this.other_overlay9_Click);
             // 
             // other_itemPic9
             // 
@@ -5386,6 +5851,7 @@
             this.other_itemPic9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic9.TabIndex = 0;
             this.other_itemPic9.TabStop = false;
+            this.other_itemPic9.Click += new System.EventHandler(this.other_itemPic9_Click);
             // 
             // other_Panel16
             // 
@@ -5399,6 +5865,7 @@
             this.other_Panel16.ShadowDepth = 200;
             this.other_Panel16.Size = new System.Drawing.Size(171, 154);
             this.other_Panel16.TabIndex = 9;
+            this.other_Panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel16_Paint);
             // 
             // other_overlay16
             // 
@@ -5413,6 +5880,7 @@
             this.other_overlay16.TabIndex = 7;
             this.other_overlay16.TabStop = false;
             this.other_overlay16.Visible = false;
+            this.other_overlay16.Click += new System.EventHandler(this.other_overlay16_Click);
             // 
             // other_itemPic16
             // 
@@ -5425,6 +5893,7 @@
             this.other_itemPic16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic16.TabIndex = 5;
             this.other_itemPic16.TabStop = false;
+            this.other_itemPic16.Click += new System.EventHandler(this.other_itemPic16_Click);
             // 
             // panel10
             // 
@@ -5440,6 +5909,7 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1691, 173);
             this.panel10.TabIndex = 27;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // other_Panel8
             // 
@@ -5453,6 +5923,7 @@
             this.other_Panel8.ShadowDepth = 200;
             this.other_Panel8.Size = new System.Drawing.Size(171, 154);
             this.other_Panel8.TabIndex = 9;
+            this.other_Panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel8_Paint);
             // 
             // other_overlay8
             // 
@@ -5467,6 +5938,7 @@
             this.other_overlay8.TabIndex = 7;
             this.other_overlay8.TabStop = false;
             this.other_overlay8.Visible = false;
+            this.other_overlay8.Click += new System.EventHandler(this.other_overlay8_Click);
             // 
             // other_itemPic8
             // 
@@ -5479,6 +5951,7 @@
             this.other_itemPic8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic8.TabIndex = 5;
             this.other_itemPic8.TabStop = false;
+            this.other_itemPic8.Click += new System.EventHandler(this.other_itemPic8_Click);
             // 
             // other_Panel7
             // 
@@ -5492,6 +5965,7 @@
             this.other_Panel7.ShadowDepth = 200;
             this.other_Panel7.Size = new System.Drawing.Size(171, 154);
             this.other_Panel7.TabIndex = 8;
+            this.other_Panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel7_Paint);
             // 
             // other_overlay7
             // 
@@ -5506,6 +5980,7 @@
             this.other_overlay7.TabIndex = 6;
             this.other_overlay7.TabStop = false;
             this.other_overlay7.Visible = false;
+            this.other_overlay7.Click += new System.EventHandler(this.other_overlay7_Click);
             // 
             // other_itemPic7
             // 
@@ -5518,6 +5993,7 @@
             this.other_itemPic7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic7.TabIndex = 5;
             this.other_itemPic7.TabStop = false;
+            this.other_itemPic7.Click += new System.EventHandler(this.other_itemPic7_Click);
             // 
             // other_Panel6
             // 
@@ -5531,6 +6007,7 @@
             this.other_Panel6.ShadowDepth = 200;
             this.other_Panel6.Size = new System.Drawing.Size(171, 154);
             this.other_Panel6.TabIndex = 7;
+            this.other_Panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel6_Paint);
             // 
             // other_overlay6
             // 
@@ -5545,6 +6022,7 @@
             this.other_overlay6.TabIndex = 7;
             this.other_overlay6.TabStop = false;
             this.other_overlay6.Visible = false;
+            this.other_overlay6.Click += new System.EventHandler(this.other_overlay6_Click);
             // 
             // other_itemPic6
             // 
@@ -5557,6 +6035,7 @@
             this.other_itemPic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic6.TabIndex = 5;
             this.other_itemPic6.TabStop = false;
+            this.other_itemPic6.Click += new System.EventHandler(this.other_itemPic6_Click);
             // 
             // other_Panel5
             // 
@@ -5570,6 +6049,7 @@
             this.other_Panel5.ShadowDepth = 200;
             this.other_Panel5.Size = new System.Drawing.Size(170, 154);
             this.other_Panel5.TabIndex = 6;
+            this.other_Panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel5_Paint);
             // 
             // other_overlay5
             // 
@@ -5584,6 +6064,7 @@
             this.other_overlay5.TabIndex = 7;
             this.other_overlay5.TabStop = false;
             this.other_overlay5.Visible = false;
+            this.other_overlay5.Click += new System.EventHandler(this.other_overlay5_Click);
             // 
             // other_itemPic5
             // 
@@ -5596,12 +6077,13 @@
             this.other_itemPic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic5.TabIndex = 4;
             this.other_itemPic5.TabStop = false;
+            this.other_itemPic5.Click += new System.EventHandler(this.other_itemPic5_Click);
             // 
             // other_Panel4
             // 
             this.other_Panel4.BackColor = System.Drawing.Color.Transparent;
-            this.other_Panel4.Controls.Add(this.other_itemPic4);
             this.other_Panel4.Controls.Add(this.other_overlay4);
+            this.other_Panel4.Controls.Add(this.other_itemPic4);
             this.other_Panel4.FillColor = System.Drawing.Color.White;
             this.other_Panel4.Location = new System.Drawing.Point(665, 15);
             this.other_Panel4.Name = "other_Panel4";
@@ -5609,18 +6091,7 @@
             this.other_Panel4.ShadowDepth = 200;
             this.other_Panel4.Size = new System.Drawing.Size(170, 154);
             this.other_Panel4.TabIndex = 6;
-            // 
-            // other_itemPic4
-            // 
-            this.other_itemPic4.FillColor = System.Drawing.Color.Transparent;
-            this.other_itemPic4.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic4.Image")));
-            this.other_itemPic4.ImageRotate = 0F;
-            this.other_itemPic4.Location = new System.Drawing.Point(6, 7);
-            this.other_itemPic4.Name = "other_itemPic4";
-            this.other_itemPic4.Size = new System.Drawing.Size(160, 137);
-            this.other_itemPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.other_itemPic4.TabIndex = 3;
-            this.other_itemPic4.TabStop = false;
+            this.other_Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel4_Paint);
             // 
             // other_overlay4
             // 
@@ -5635,6 +6106,20 @@
             this.other_overlay4.TabIndex = 7;
             this.other_overlay4.TabStop = false;
             this.other_overlay4.Visible = false;
+            this.other_overlay4.Click += new System.EventHandler(this.other_overlay4_Click);
+            // 
+            // other_itemPic4
+            // 
+            this.other_itemPic4.FillColor = System.Drawing.Color.Transparent;
+            this.other_itemPic4.Image = ((System.Drawing.Image)(resources.GetObject("other_itemPic4.Image")));
+            this.other_itemPic4.ImageRotate = 0F;
+            this.other_itemPic4.Location = new System.Drawing.Point(6, 7);
+            this.other_itemPic4.Name = "other_itemPic4";
+            this.other_itemPic4.Size = new System.Drawing.Size(160, 137);
+            this.other_itemPic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.other_itemPic4.TabIndex = 3;
+            this.other_itemPic4.TabStop = false;
+            this.other_itemPic4.Click += new System.EventHandler(this.other_itemPic4_Click);
             // 
             // other_Panel3
             // 
@@ -5648,6 +6133,7 @@
             this.other_Panel3.ShadowDepth = 200;
             this.other_Panel3.Size = new System.Drawing.Size(170, 154);
             this.other_Panel3.TabIndex = 6;
+            this.other_Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel3_Paint);
             // 
             // other_overlay3
             // 
@@ -5662,6 +6148,7 @@
             this.other_overlay3.TabIndex = 7;
             this.other_overlay3.TabStop = false;
             this.other_overlay3.Visible = false;
+            this.other_overlay3.Click += new System.EventHandler(this.other_overlay3_Click);
             // 
             // other_itemPic3
             // 
@@ -5674,6 +6161,7 @@
             this.other_itemPic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic3.TabIndex = 2;
             this.other_itemPic3.TabStop = false;
+            this.other_itemPic3.Click += new System.EventHandler(this.other_itemPic3_Click);
             // 
             // other_Panel2
             // 
@@ -5687,6 +6175,7 @@
             this.other_Panel2.ShadowDepth = 200;
             this.other_Panel2.Size = new System.Drawing.Size(170, 154);
             this.other_Panel2.TabIndex = 6;
+            this.other_Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel2_Paint);
             // 
             // other_overlay2
             // 
@@ -5701,6 +6190,7 @@
             this.other_overlay2.TabIndex = 7;
             this.other_overlay2.TabStop = false;
             this.other_overlay2.Visible = false;
+            this.other_overlay2.Click += new System.EventHandler(this.other_overlay2_Click);
             // 
             // other_itemPic2
             // 
@@ -5713,6 +6203,7 @@
             this.other_itemPic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic2.TabIndex = 1;
             this.other_itemPic2.TabStop = false;
+            this.other_itemPic2.Click += new System.EventHandler(this.other_itemPic2_Click);
             // 
             // other_Panel1
             // 
@@ -5726,6 +6217,7 @@
             this.other_Panel1.ShadowDepth = 200;
             this.other_Panel1.Size = new System.Drawing.Size(170, 154);
             this.other_Panel1.TabIndex = 5;
+            this.other_Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.other_Panel1_Paint);
             // 
             // other_overlay1
             // 
@@ -5740,6 +6232,7 @@
             this.other_overlay1.TabIndex = 8;
             this.other_overlay1.TabStop = false;
             this.other_overlay1.Visible = false;
+            this.other_overlay1.Click += new System.EventHandler(this.other_overlay1_Click);
             // 
             // other_itemPic1
             // 
@@ -5752,6 +6245,7 @@
             this.other_itemPic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.other_itemPic1.TabIndex = 0;
             this.other_itemPic1.TabStop = false;
+            this.other_itemPic1.Click += new System.EventHandler(this.other_itemPic1_Click);
             // 
             // guna2Button8
             // 
@@ -5766,12 +6260,975 @@
             this.guna2Button8.FocusedColor = System.Drawing.Color.White;
             this.guna2Button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.Location = new System.Drawing.Point(1757, 6);
+            this.guna2Button8.Location = new System.Drawing.Point(1735, 9);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.Size = new System.Drawing.Size(158, 53);
             this.guna2Button8.TabIndex = 5;
             this.guna2Button8.Text = "Back";
             this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.all_itemLblThirtySecond);
+            this.tabPage9.Controls.Add(this.all_itemLblThirtyFirst);
+            this.tabPage9.Controls.Add(this.all_itemLblThirtieth);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentyNinth);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentyEighth);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentySeventh);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentySixth);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentyFifth);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentyFourth);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentyThird);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentySecond);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentyFirst);
+            this.tabPage9.Controls.Add(this.all_itemLblTwentieth);
+            this.tabPage9.Controls.Add(this.all_itemLblNineteenth);
+            this.tabPage9.Controls.Add(this.all_itemLblSeventeenth);
+            this.tabPage9.Controls.Add(this.all_itemLblEighteenth);
+            this.tabPage9.Controls.Add(this.panel11);
+            this.tabPage9.Controls.Add(this.panel12);
+            this.tabPage9.Controls.Add(this.guna2Button3);
+            this.tabPage9.Location = new System.Drawing.Point(4, 44);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1918, 470);
+            this.tabPage9.TabIndex = 5;
+            this.tabPage9.Text = "all_2nd";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            this.tabPage9.Click += new System.EventHandler(this.tabPage9_Click);
+            // 
+            // all_itemLblThirtySecond
+            // 
+            this.all_itemLblThirtySecond.AutoEllipsis = true;
+            this.all_itemLblThirtySecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblThirtySecond.Location = new System.Drawing.Point(1560, 424);
+            this.all_itemLblThirtySecond.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblThirtySecond.Name = "all_itemLblThirtySecond";
+            this.all_itemLblThirtySecond.Size = new System.Drawing.Size(67, 16);
+            this.all_itemLblThirtySecond.TabIndex = 45;
+            this.all_itemLblThirtySecond.Text = "TEXT 16";
+            this.all_itemLblThirtySecond.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblThirtySecond.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // all_itemLblThirtyFirst
+            // 
+            this.all_itemLblThirtyFirst.AutoEllipsis = true;
+            this.all_itemLblThirtyFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblThirtyFirst.Location = new System.Drawing.Point(1332, 423);
+            this.all_itemLblThirtyFirst.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblThirtyFirst.Name = "all_itemLblThirtyFirst";
+            this.all_itemLblThirtyFirst.Size = new System.Drawing.Size(96, 16);
+            this.all_itemLblThirtyFirst.TabIndex = 44;
+            this.all_itemLblThirtyFirst.Text = "TEXT 15";
+            this.all_itemLblThirtyFirst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblThirtyFirst.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // all_itemLblThirtieth
+            // 
+            this.all_itemLblThirtieth.AutoEllipsis = true;
+            this.all_itemLblThirtieth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblThirtieth.Location = new System.Drawing.Point(1129, 424);
+            this.all_itemLblThirtieth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblThirtieth.Name = "all_itemLblThirtieth";
+            this.all_itemLblThirtieth.Size = new System.Drawing.Size(94, 16);
+            this.all_itemLblThirtieth.TabIndex = 43;
+            this.all_itemLblThirtieth.Text = "TEXT 14";
+            this.all_itemLblThirtieth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblThirtieth.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // all_itemLblTwentyNinth
+            // 
+            this.all_itemLblTwentyNinth.AutoEllipsis = true;
+            this.all_itemLblTwentyNinth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentyNinth.Location = new System.Drawing.Point(874, 423);
+            this.all_itemLblTwentyNinth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentyNinth.Name = "all_itemLblTwentyNinth";
+            this.all_itemLblTwentyNinth.Size = new System.Drawing.Size(177, 16);
+            this.all_itemLblTwentyNinth.TabIndex = 42;
+            this.all_itemLblTwentyNinth.Text = "TEXT 13";
+            this.all_itemLblTwentyNinth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentyNinth.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // all_itemLblTwentyEighth
+            // 
+            this.all_itemLblTwentyEighth.AutoEllipsis = true;
+            this.all_itemLblTwentyEighth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentyEighth.Location = new System.Drawing.Point(688, 423);
+            this.all_itemLblTwentyEighth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentyEighth.Name = "all_itemLblTwentyEighth";
+            this.all_itemLblTwentyEighth.Size = new System.Drawing.Size(147, 16);
+            this.all_itemLblTwentyEighth.TabIndex = 41;
+            this.all_itemLblTwentyEighth.Text = "TEXT 12";
+            this.all_itemLblTwentyEighth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentyEighth.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // all_itemLblTwentySeventh
+            // 
+            this.all_itemLblTwentySeventh.AutoEllipsis = true;
+            this.all_itemLblTwentySeventh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentySeventh.Location = new System.Drawing.Point(514, 423);
+            this.all_itemLblTwentySeventh.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentySeventh.Name = "all_itemLblTwentySeventh";
+            this.all_itemLblTwentySeventh.Size = new System.Drawing.Size(80, 16);
+            this.all_itemLblTwentySeventh.TabIndex = 39;
+            this.all_itemLblTwentySeventh.Text = "TEXT 11";
+            this.all_itemLblTwentySeventh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentySeventh.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // all_itemLblTwentySixth
+            // 
+            this.all_itemLblTwentySixth.AutoEllipsis = true;
+            this.all_itemLblTwentySixth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentySixth.Location = new System.Drawing.Point(304, 424);
+            this.all_itemLblTwentySixth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentySixth.Name = "all_itemLblTwentySixth";
+            this.all_itemLblTwentySixth.Size = new System.Drawing.Size(87, 16);
+            this.all_itemLblTwentySixth.TabIndex = 38;
+            this.all_itemLblTwentySixth.Text = "TEXT 10";
+            this.all_itemLblTwentySixth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentySixth.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // all_itemLblTwentyFifth
+            // 
+            this.all_itemLblTwentyFifth.AutoEllipsis = true;
+            this.all_itemLblTwentyFifth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentyFifth.Location = new System.Drawing.Point(96, 424);
+            this.all_itemLblTwentyFifth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentyFifth.Name = "all_itemLblTwentyFifth";
+            this.all_itemLblTwentyFifth.Size = new System.Drawing.Size(86, 16);
+            this.all_itemLblTwentyFifth.TabIndex = 35;
+            this.all_itemLblTwentyFifth.Text = "TEXT 9";
+            this.all_itemLblTwentyFifth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentyFifth.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // all_itemLblTwentyFourth
+            // 
+            this.all_itemLblTwentyFourth.AutoEllipsis = true;
+            this.all_itemLblTwentyFourth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentyFourth.Location = new System.Drawing.Point(1546, 196);
+            this.all_itemLblTwentyFourth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentyFourth.Name = "all_itemLblTwentyFourth";
+            this.all_itemLblTwentyFourth.Size = new System.Drawing.Size(98, 16);
+            this.all_itemLblTwentyFourth.TabIndex = 40;
+            this.all_itemLblTwentyFourth.Text = "TEXT 8";
+            this.all_itemLblTwentyFourth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentyFourth.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // all_itemLblTwentyThird
+            // 
+            this.all_itemLblTwentyThird.AutoEllipsis = true;
+            this.all_itemLblTwentyThird.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentyThird.Location = new System.Drawing.Point(1338, 195);
+            this.all_itemLblTwentyThird.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentyThird.Name = "all_itemLblTwentyThird";
+            this.all_itemLblTwentyThird.Size = new System.Drawing.Size(86, 16);
+            this.all_itemLblTwentyThird.TabIndex = 37;
+            this.all_itemLblTwentyThird.Text = "TEXT 7";
+            this.all_itemLblTwentyThird.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentyThird.Click += new System.EventHandler(this.label20_Click);
+            // 
+            // all_itemLblTwentySecond
+            // 
+            this.all_itemLblTwentySecond.AutoEllipsis = true;
+            this.all_itemLblTwentySecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentySecond.Location = new System.Drawing.Point(1136, 196);
+            this.all_itemLblTwentySecond.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentySecond.Name = "all_itemLblTwentySecond";
+            this.all_itemLblTwentySecond.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.all_itemLblTwentySecond.Size = new System.Drawing.Size(88, 16);
+            this.all_itemLblTwentySecond.TabIndex = 36;
+            this.all_itemLblTwentySecond.Text = "TEXT 6";
+            this.all_itemLblTwentySecond.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentySecond.Click += new System.EventHandler(this.label23_Click);
+            // 
+            // all_itemLblTwentyFirst
+            // 
+            this.all_itemLblTwentyFirst.AutoEllipsis = true;
+            this.all_itemLblTwentyFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentyFirst.Location = new System.Drawing.Point(926, 196);
+            this.all_itemLblTwentyFirst.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentyFirst.Name = "all_itemLblTwentyFirst";
+            this.all_itemLblTwentyFirst.Size = new System.Drawing.Size(86, 16);
+            this.all_itemLblTwentyFirst.TabIndex = 34;
+            this.all_itemLblTwentyFirst.Text = "TEXT 5";
+            this.all_itemLblTwentyFirst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentyFirst.Click += new System.EventHandler(this.label26_Click);
+            // 
+            // all_itemLblTwentieth
+            // 
+            this.all_itemLblTwentieth.AutoEllipsis = true;
+            this.all_itemLblTwentieth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblTwentieth.Location = new System.Drawing.Point(724, 196);
+            this.all_itemLblTwentieth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblTwentieth.Name = "all_itemLblTwentieth";
+            this.all_itemLblTwentieth.Size = new System.Drawing.Size(81, 16);
+            this.all_itemLblTwentieth.TabIndex = 33;
+            this.all_itemLblTwentieth.Text = "TEXT 4";
+            this.all_itemLblTwentieth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblTwentieth.Click += new System.EventHandler(this.label27_Click);
+            // 
+            // all_itemLblNineteenth
+            // 
+            this.all_itemLblNineteenth.AutoEllipsis = true;
+            this.all_itemLblNineteenth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblNineteenth.Location = new System.Drawing.Point(483, 196);
+            this.all_itemLblNineteenth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblNineteenth.Name = "all_itemLblNineteenth";
+            this.all_itemLblNineteenth.Size = new System.Drawing.Size(148, 16);
+            this.all_itemLblNineteenth.TabIndex = 32;
+            this.all_itemLblNineteenth.Text = "TEXT 3";
+            this.all_itemLblNineteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblNineteenth.Click += new System.EventHandler(this.label29_Click);
+            // 
+            // all_itemLblSeventeenth
+            // 
+            this.all_itemLblSeventeenth.AutoEllipsis = true;
+            this.all_itemLblSeventeenth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblSeventeenth.Location = new System.Drawing.Point(75, 196);
+            this.all_itemLblSeventeenth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblSeventeenth.Name = "all_itemLblSeventeenth";
+            this.all_itemLblSeventeenth.Size = new System.Drawing.Size(120, 16);
+            this.all_itemLblSeventeenth.TabIndex = 31;
+            this.all_itemLblSeventeenth.Text = "TEXT 1";
+            this.all_itemLblSeventeenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblSeventeenth.Click += new System.EventHandler(this.label31_Click);
+            // 
+            // all_itemLblEighteenth
+            // 
+            this.all_itemLblEighteenth.AutoEllipsis = true;
+            this.all_itemLblEighteenth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.all_itemLblEighteenth.Location = new System.Drawing.Point(276, 196);
+            this.all_itemLblEighteenth.MaximumSize = new System.Drawing.Size(200, 30);
+            this.all_itemLblEighteenth.Name = "all_itemLblEighteenth";
+            this.all_itemLblEighteenth.Size = new System.Drawing.Size(139, 16);
+            this.all_itemLblEighteenth.TabIndex = 30;
+            this.all_itemLblEighteenth.Text = "TEXT 2";
+            this.all_itemLblEighteenth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_itemLblEighteenth.Click += new System.EventHandler(this.label34_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.all_itemPanelThirtySecond);
+            this.panel11.Controls.Add(this.all_itemPanelThirtyFirst);
+            this.panel11.Controls.Add(this.all_itemPanelThirtieth);
+            this.panel11.Controls.Add(this.all_itemPanelTwentyNinth);
+            this.panel11.Controls.Add(this.all_itemPanelTwentyEighth);
+            this.panel11.Controls.Add(this.all_itemPanelTwentySeventh);
+            this.panel11.Controls.Add(this.all_itemPanelTwentySixth);
+            this.panel11.Controls.Add(this.all_itemPanelTwentyFifth);
+            this.panel11.Location = new System.Drawing.Point(11, 247);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1691, 173);
+            this.panel11.TabIndex = 29;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
+            // 
+            // all_itemPanelThirtySecond
+            // 
+            this.all_itemPanelThirtySecond.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelThirtySecond.Controls.Add(this.allThirtySecond_Overlay);
+            this.all_itemPanelThirtySecond.Controls.Add(this.all_itemPicThirtySecond);
+            this.all_itemPanelThirtySecond.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelThirtySecond.Location = new System.Drawing.Point(1493, 15);
+            this.all_itemPanelThirtySecond.Name = "all_itemPanelThirtySecond";
+            this.all_itemPanelThirtySecond.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelThirtySecond.ShadowDepth = 200;
+            this.all_itemPanelThirtySecond.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelThirtySecond.TabIndex = 9;
+            this.all_itemPanelThirtySecond.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelThirtySecond_Paint);
+            // 
+            // allThirtySecond_Overlay
+            // 
+            this.allThirtySecond_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allThirtySecond_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allThirtySecond_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allThirtySecond_Overlay.Image")));
+            this.allThirtySecond_Overlay.ImageRotate = 0F;
+            this.allThirtySecond_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allThirtySecond_Overlay.Name = "allThirtySecond_Overlay";
+            this.allThirtySecond_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allThirtySecond_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allThirtySecond_Overlay.TabIndex = 7;
+            this.allThirtySecond_Overlay.TabStop = false;
+            this.allThirtySecond_Overlay.Visible = false;
+            this.allThirtySecond_Overlay.Click += new System.EventHandler(this.allThirtySecond_Overlay_Click);
+            // 
+            // all_itemPicThirtySecond
+            // 
+            this.all_itemPicThirtySecond.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicThirtySecond.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicThirtySecond.Image")));
+            this.all_itemPicThirtySecond.ImageRotate = 0F;
+            this.all_itemPicThirtySecond.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicThirtySecond.Name = "all_itemPicThirtySecond";
+            this.all_itemPicThirtySecond.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicThirtySecond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicThirtySecond.TabIndex = 5;
+            this.all_itemPicThirtySecond.TabStop = false;
+            this.all_itemPicThirtySecond.Click += new System.EventHandler(this.guna2PictureBox43_Click);
+            // 
+            // all_itemPanelThirtyFirst
+            // 
+            this.all_itemPanelThirtyFirst.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelThirtyFirst.Controls.Add(this.allThirtyFirst_Overlay);
+            this.all_itemPanelThirtyFirst.Controls.Add(this.all_itemPicThirtyFirst);
+            this.all_itemPanelThirtyFirst.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelThirtyFirst.Location = new System.Drawing.Point(1283, 15);
+            this.all_itemPanelThirtyFirst.Name = "all_itemPanelThirtyFirst";
+            this.all_itemPanelThirtyFirst.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelThirtyFirst.ShadowDepth = 200;
+            this.all_itemPanelThirtyFirst.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelThirtyFirst.TabIndex = 8;
+            this.all_itemPanelThirtyFirst.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelThirtyFirst_Paint);
+            // 
+            // allThirtyFirst_Overlay
+            // 
+            this.allThirtyFirst_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allThirtyFirst_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allThirtyFirst_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allThirtyFirst_Overlay.Image")));
+            this.allThirtyFirst_Overlay.ImageRotate = 0F;
+            this.allThirtyFirst_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allThirtyFirst_Overlay.Name = "allThirtyFirst_Overlay";
+            this.allThirtyFirst_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allThirtyFirst_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allThirtyFirst_Overlay.TabIndex = 7;
+            this.allThirtyFirst_Overlay.TabStop = false;
+            this.allThirtyFirst_Overlay.Visible = false;
+            this.allThirtyFirst_Overlay.Click += new System.EventHandler(this.allThirtyFirst_Overlay_Click);
+            // 
+            // all_itemPicThirtyFirst
+            // 
+            this.all_itemPicThirtyFirst.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicThirtyFirst.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicThirtyFirst.Image")));
+            this.all_itemPicThirtyFirst.ImageRotate = 0F;
+            this.all_itemPicThirtyFirst.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicThirtyFirst.Name = "all_itemPicThirtyFirst";
+            this.all_itemPicThirtyFirst.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicThirtyFirst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicThirtyFirst.TabIndex = 5;
+            this.all_itemPicThirtyFirst.TabStop = false;
+            this.all_itemPicThirtyFirst.Click += new System.EventHandler(this.guna2PictureBox45_Click);
+            // 
+            // all_itemPanelThirtieth
+            // 
+            this.all_itemPanelThirtieth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelThirtieth.Controls.Add(this.allThirtieth_Overlay);
+            this.all_itemPanelThirtieth.Controls.Add(this.all_itemPicThirtieth);
+            this.all_itemPanelThirtieth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelThirtieth.Location = new System.Drawing.Point(1076, 15);
+            this.all_itemPanelThirtieth.Name = "all_itemPanelThirtieth";
+            this.all_itemPanelThirtieth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelThirtieth.ShadowDepth = 200;
+            this.all_itemPanelThirtieth.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelThirtieth.TabIndex = 7;
+            this.all_itemPanelThirtieth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelThirtieth_Paint);
+            // 
+            // allThirtieth_Overlay
+            // 
+            this.allThirtieth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allThirtieth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allThirtieth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allThirtieth_Overlay.Image")));
+            this.allThirtieth_Overlay.ImageRotate = 0F;
+            this.allThirtieth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allThirtieth_Overlay.Name = "allThirtieth_Overlay";
+            this.allThirtieth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allThirtieth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allThirtieth_Overlay.TabIndex = 7;
+            this.allThirtieth_Overlay.TabStop = false;
+            this.allThirtieth_Overlay.Visible = false;
+            this.allThirtieth_Overlay.Click += new System.EventHandler(this.allThirtieth_Overlay_Click);
+            // 
+            // all_itemPicThirtieth
+            // 
+            this.all_itemPicThirtieth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicThirtieth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicThirtieth.Image")));
+            this.all_itemPicThirtieth.ImageRotate = 0F;
+            this.all_itemPicThirtieth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicThirtieth.Name = "all_itemPicThirtieth";
+            this.all_itemPicThirtieth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicThirtieth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicThirtieth.TabIndex = 5;
+            this.all_itemPicThirtieth.TabStop = false;
+            this.all_itemPicThirtieth.Click += new System.EventHandler(this.guna2PictureBox47_Click);
+            // 
+            // all_itemPanelTwentyNinth
+            // 
+            this.all_itemPanelTwentyNinth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentyNinth.Controls.Add(this.allTwentyNinth_Overlay);
+            this.all_itemPanelTwentyNinth.Controls.Add(this.all_itemPicTwentyNinth);
+            this.all_itemPanelTwentyNinth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentyNinth.Location = new System.Drawing.Point(867, 15);
+            this.all_itemPanelTwentyNinth.Name = "all_itemPanelTwentyNinth";
+            this.all_itemPanelTwentyNinth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentyNinth.ShadowDepth = 200;
+            this.all_itemPanelTwentyNinth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelTwentyNinth.TabIndex = 6;
+            this.all_itemPanelTwentyNinth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentyNinth_Paint);
+            // 
+            // allTwentyNinth_Overlay
+            // 
+            this.allTwentyNinth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentyNinth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentyNinth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentyNinth_Overlay.Image")));
+            this.allTwentyNinth_Overlay.ImageRotate = 0F;
+            this.allTwentyNinth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentyNinth_Overlay.Name = "allTwentyNinth_Overlay";
+            this.allTwentyNinth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentyNinth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentyNinth_Overlay.TabIndex = 7;
+            this.allTwentyNinth_Overlay.TabStop = false;
+            this.allTwentyNinth_Overlay.Visible = false;
+            this.allTwentyNinth_Overlay.Click += new System.EventHandler(this.allTwentyNinth_Overlay_Click);
+            // 
+            // all_itemPicTwentyNinth
+            // 
+            this.all_itemPicTwentyNinth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentyNinth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentyNinth.Image")));
+            this.all_itemPicTwentyNinth.ImageRotate = 0F;
+            this.all_itemPicTwentyNinth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwentyNinth.Name = "all_itemPicTwentyNinth";
+            this.all_itemPicTwentyNinth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentyNinth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentyNinth.TabIndex = 4;
+            this.all_itemPicTwentyNinth.TabStop = false;
+            this.all_itemPicTwentyNinth.Click += new System.EventHandler(this.guna2PictureBox49_Click);
+            // 
+            // all_itemPanelTwentyEighth
+            // 
+            this.all_itemPanelTwentyEighth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentyEighth.Controls.Add(this.allTwentyEighth_Overlay);
+            this.all_itemPanelTwentyEighth.Controls.Add(this.all_itemPicTwentyEighth);
+            this.all_itemPanelTwentyEighth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentyEighth.Location = new System.Drawing.Point(665, 15);
+            this.all_itemPanelTwentyEighth.Name = "all_itemPanelTwentyEighth";
+            this.all_itemPanelTwentyEighth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentyEighth.ShadowDepth = 200;
+            this.all_itemPanelTwentyEighth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelTwentyEighth.TabIndex = 6;
+            this.all_itemPanelTwentyEighth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentyEighth_Paint);
+            // 
+            // allTwentyEighth_Overlay
+            // 
+            this.allTwentyEighth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentyEighth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentyEighth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentyEighth_Overlay.Image")));
+            this.allTwentyEighth_Overlay.ImageRotate = 0F;
+            this.allTwentyEighth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentyEighth_Overlay.Name = "allTwentyEighth_Overlay";
+            this.allTwentyEighth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentyEighth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentyEighth_Overlay.TabIndex = 7;
+            this.allTwentyEighth_Overlay.TabStop = false;
+            this.allTwentyEighth_Overlay.Visible = false;
+            this.allTwentyEighth_Overlay.Click += new System.EventHandler(this.allTwentyEighth_Overlay_Click);
+            // 
+            // all_itemPicTwentyEighth
+            // 
+            this.all_itemPicTwentyEighth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentyEighth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentyEighth.Image")));
+            this.all_itemPicTwentyEighth.ImageRotate = 0F;
+            this.all_itemPicTwentyEighth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwentyEighth.Name = "all_itemPicTwentyEighth";
+            this.all_itemPicTwentyEighth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentyEighth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentyEighth.TabIndex = 3;
+            this.all_itemPicTwentyEighth.TabStop = false;
+            this.all_itemPicTwentyEighth.Click += new System.EventHandler(this.guna2PictureBox51_Click);
+            // 
+            // all_itemPanelTwentySeventh
+            // 
+            this.all_itemPanelTwentySeventh.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentySeventh.Controls.Add(this.allTwentySeventh_Overlay);
+            this.all_itemPanelTwentySeventh.Controls.Add(this.all_itemPicTwentySeventh);
+            this.all_itemPanelTwentySeventh.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentySeventh.Location = new System.Drawing.Point(458, 15);
+            this.all_itemPanelTwentySeventh.Name = "all_itemPanelTwentySeventh";
+            this.all_itemPanelTwentySeventh.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentySeventh.ShadowDepth = 200;
+            this.all_itemPanelTwentySeventh.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelTwentySeventh.TabIndex = 6;
+            this.all_itemPanelTwentySeventh.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentySeventh_Paint);
+            // 
+            // allTwentySeventh_Overlay
+            // 
+            this.allTwentySeventh_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentySeventh_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentySeventh_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentySeventh_Overlay.Image")));
+            this.allTwentySeventh_Overlay.ImageRotate = 0F;
+            this.allTwentySeventh_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentySeventh_Overlay.Name = "allTwentySeventh_Overlay";
+            this.allTwentySeventh_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentySeventh_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentySeventh_Overlay.TabIndex = 7;
+            this.allTwentySeventh_Overlay.TabStop = false;
+            this.allTwentySeventh_Overlay.Visible = false;
+            this.allTwentySeventh_Overlay.Click += new System.EventHandler(this.allTwentySeventh_Overlay_Click);
+            // 
+            // all_itemPicTwentySeventh
+            // 
+            this.all_itemPicTwentySeventh.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentySeventh.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentySeventh.Image")));
+            this.all_itemPicTwentySeventh.ImageRotate = 0F;
+            this.all_itemPicTwentySeventh.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwentySeventh.Name = "all_itemPicTwentySeventh";
+            this.all_itemPicTwentySeventh.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentySeventh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentySeventh.TabIndex = 2;
+            this.all_itemPicTwentySeventh.TabStop = false;
+            this.all_itemPicTwentySeventh.Click += new System.EventHandler(this.guna2PictureBox53_Click);
+            // 
+            // all_itemPanelTwentySixth
+            // 
+            this.all_itemPanelTwentySixth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentySixth.Controls.Add(this.allTwentySixth_Overlay);
+            this.all_itemPanelTwentySixth.Controls.Add(this.all_itemPicTwentySixth);
+            this.all_itemPanelTwentySixth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentySixth.Location = new System.Drawing.Point(247, 15);
+            this.all_itemPanelTwentySixth.Name = "all_itemPanelTwentySixth";
+            this.all_itemPanelTwentySixth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentySixth.ShadowDepth = 200;
+            this.all_itemPanelTwentySixth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelTwentySixth.TabIndex = 6;
+            this.all_itemPanelTwentySixth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentySixth_Paint);
+            // 
+            // allTwentySixth_Overlay
+            // 
+            this.allTwentySixth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentySixth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentySixth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentySixth_Overlay.Image")));
+            this.allTwentySixth_Overlay.ImageRotate = 0F;
+            this.allTwentySixth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentySixth_Overlay.Name = "allTwentySixth_Overlay";
+            this.allTwentySixth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentySixth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentySixth_Overlay.TabIndex = 7;
+            this.allTwentySixth_Overlay.TabStop = false;
+            this.allTwentySixth_Overlay.Visible = false;
+            this.allTwentySixth_Overlay.Click += new System.EventHandler(this.allTwentySixth_Overlay_Click);
+            // 
+            // all_itemPicTwentySixth
+            // 
+            this.all_itemPicTwentySixth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentySixth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentySixth.Image")));
+            this.all_itemPicTwentySixth.ImageRotate = 0F;
+            this.all_itemPicTwentySixth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwentySixth.Name = "all_itemPicTwentySixth";
+            this.all_itemPicTwentySixth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentySixth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentySixth.TabIndex = 1;
+            this.all_itemPicTwentySixth.TabStop = false;
+            this.all_itemPicTwentySixth.Click += new System.EventHandler(this.guna2PictureBox55_Click);
+            // 
+            // all_itemPanelTwentyFifth
+            // 
+            this.all_itemPanelTwentyFifth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentyFifth.Controls.Add(this.allTwentyFifth_Overlay);
+            this.all_itemPanelTwentyFifth.Controls.Add(this.all_itemPicTwentyFifth);
+            this.all_itemPanelTwentyFifth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentyFifth.Location = new System.Drawing.Point(39, 15);
+            this.all_itemPanelTwentyFifth.Name = "all_itemPanelTwentyFifth";
+            this.all_itemPanelTwentyFifth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentyFifth.ShadowDepth = 200;
+            this.all_itemPanelTwentyFifth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelTwentyFifth.TabIndex = 5;
+            this.all_itemPanelTwentyFifth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentyFifth_Paint);
+            // 
+            // allTwentyFifth_Overlay
+            // 
+            this.allTwentyFifth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentyFifth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentyFifth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentyFifth_Overlay.Image")));
+            this.allTwentyFifth_Overlay.ImageRotate = 0F;
+            this.allTwentyFifth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentyFifth_Overlay.Name = "allTwentyFifth_Overlay";
+            this.allTwentyFifth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentyFifth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentyFifth_Overlay.TabIndex = 7;
+            this.allTwentyFifth_Overlay.TabStop = false;
+            this.allTwentyFifth_Overlay.Visible = false;
+            this.allTwentyFifth_Overlay.Click += new System.EventHandler(this.allTwentyFifth_Overlay_Click);
+            // 
+            // all_itemPicTwentyFifth
+            // 
+            this.all_itemPicTwentyFifth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentyFifth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentyFifth.Image")));
+            this.all_itemPicTwentyFifth.ImageRotate = 0F;
+            this.all_itemPicTwentyFifth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwentyFifth.Name = "all_itemPicTwentyFifth";
+            this.all_itemPicTwentyFifth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentyFifth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentyFifth.TabIndex = 0;
+            this.all_itemPicTwentyFifth.TabStop = false;
+            this.all_itemPicTwentyFifth.Click += new System.EventHandler(this.guna2PictureBox57_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.all_itemPanelTwentyFourth);
+            this.panel12.Controls.Add(this.all_itemPanelTwentyThird);
+            this.panel12.Controls.Add(this.all_itemPanelTwentySecond);
+            this.panel12.Controls.Add(this.all_itemPanelTwentyFirst);
+            this.panel12.Controls.Add(this.all_itemPanelTwentieth);
+            this.panel12.Controls.Add(this.all_itemPanelNineteenth);
+            this.panel12.Controls.Add(this.all_itemPanelEighteenth);
+            this.panel12.Controls.Add(this.all_itemPanelSeventeenth);
+            this.panel12.Location = new System.Drawing.Point(11, 20);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1691, 173);
+            this.panel12.TabIndex = 28;
+            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
+            // 
+            // all_itemPanelTwentyFourth
+            // 
+            this.all_itemPanelTwentyFourth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentyFourth.Controls.Add(this.allTwentyFourth_Overlay);
+            this.all_itemPanelTwentyFourth.Controls.Add(this.all_itemPicTwentyFourth);
+            this.all_itemPanelTwentyFourth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentyFourth.Location = new System.Drawing.Point(1493, 15);
+            this.all_itemPanelTwentyFourth.Name = "all_itemPanelTwentyFourth";
+            this.all_itemPanelTwentyFourth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentyFourth.ShadowDepth = 200;
+            this.all_itemPanelTwentyFourth.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelTwentyFourth.TabIndex = 9;
+            this.all_itemPanelTwentyFourth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentyFourth_Paint);
+            // 
+            // allTwentyFourth_Overlay
+            // 
+            this.allTwentyFourth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentyFourth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentyFourth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentyFourth_Overlay.Image")));
+            this.allTwentyFourth_Overlay.ImageRotate = 0F;
+            this.allTwentyFourth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentyFourth_Overlay.Name = "allTwentyFourth_Overlay";
+            this.allTwentyFourth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentyFourth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentyFourth_Overlay.TabIndex = 7;
+            this.allTwentyFourth_Overlay.TabStop = false;
+            this.allTwentyFourth_Overlay.Visible = false;
+            this.allTwentyFourth_Overlay.Click += new System.EventHandler(this.allTwentyFourth_Overlay_Click);
+            // 
+            // all_itemPicTwentyFourth
+            // 
+            this.all_itemPicTwentyFourth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentyFourth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentyFourth.Image")));
+            this.all_itemPicTwentyFourth.ImageRotate = 0F;
+            this.all_itemPicTwentyFourth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwentyFourth.Name = "all_itemPicTwentyFourth";
+            this.all_itemPicTwentyFourth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentyFourth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentyFourth.TabIndex = 5;
+            this.all_itemPicTwentyFourth.TabStop = false;
+            this.all_itemPicTwentyFourth.Click += new System.EventHandler(this.guna2PictureBox59_Click);
+            // 
+            // all_itemPanelTwentyThird
+            // 
+            this.all_itemPanelTwentyThird.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentyThird.Controls.Add(this.allTwentyThird_Overlay);
+            this.all_itemPanelTwentyThird.Controls.Add(this.all_itemPicTwentyThird);
+            this.all_itemPanelTwentyThird.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentyThird.Location = new System.Drawing.Point(1283, 15);
+            this.all_itemPanelTwentyThird.Name = "all_itemPanelTwentyThird";
+            this.all_itemPanelTwentyThird.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentyThird.ShadowDepth = 200;
+            this.all_itemPanelTwentyThird.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelTwentyThird.TabIndex = 8;
+            this.all_itemPanelTwentyThird.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentyThird_Paint);
+            // 
+            // allTwentyThird_Overlay
+            // 
+            this.allTwentyThird_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentyThird_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentyThird_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentyThird_Overlay.Image")));
+            this.allTwentyThird_Overlay.ImageRotate = 0F;
+            this.allTwentyThird_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentyThird_Overlay.Name = "allTwentyThird_Overlay";
+            this.allTwentyThird_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentyThird_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentyThird_Overlay.TabIndex = 6;
+            this.allTwentyThird_Overlay.TabStop = false;
+            this.allTwentyThird_Overlay.Visible = false;
+            this.allTwentyThird_Overlay.Click += new System.EventHandler(this.allTwentyThird_Overlay_Click);
+            // 
+            // all_itemPicTwentyThird
+            // 
+            this.all_itemPicTwentyThird.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentyThird.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentyThird.Image")));
+            this.all_itemPicTwentyThird.ImageRotate = 0F;
+            this.all_itemPicTwentyThird.Location = new System.Drawing.Point(5, 7);
+            this.all_itemPicTwentyThird.Name = "all_itemPicTwentyThird";
+            this.all_itemPicTwentyThird.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentyThird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentyThird.TabIndex = 5;
+            this.all_itemPicTwentyThird.TabStop = false;
+            this.all_itemPicTwentyThird.Click += new System.EventHandler(this.guna2PictureBox61_Click);
+            // 
+            // all_itemPanelTwentySecond
+            // 
+            this.all_itemPanelTwentySecond.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentySecond.Controls.Add(this.allTwentySecond_Overlay);
+            this.all_itemPanelTwentySecond.Controls.Add(this.all_itemPicTwentySecond);
+            this.all_itemPanelTwentySecond.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentySecond.Location = new System.Drawing.Point(1076, 15);
+            this.all_itemPanelTwentySecond.Name = "all_itemPanelTwentySecond";
+            this.all_itemPanelTwentySecond.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentySecond.ShadowDepth = 200;
+            this.all_itemPanelTwentySecond.Size = new System.Drawing.Size(171, 154);
+            this.all_itemPanelTwentySecond.TabIndex = 7;
+            this.all_itemPanelTwentySecond.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentySecond_Paint);
+            // 
+            // allTwentySecond_Overlay
+            // 
+            this.allTwentySecond_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentySecond_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentySecond_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentySecond_Overlay.Image")));
+            this.allTwentySecond_Overlay.ImageRotate = 0F;
+            this.allTwentySecond_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentySecond_Overlay.Name = "allTwentySecond_Overlay";
+            this.allTwentySecond_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentySecond_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentySecond_Overlay.TabIndex = 7;
+            this.allTwentySecond_Overlay.TabStop = false;
+            this.allTwentySecond_Overlay.Visible = false;
+            this.allTwentySecond_Overlay.Click += new System.EventHandler(this.allTwentySecond_Overlay_Click);
+            // 
+            // all_itemPicTwentySecond
+            // 
+            this.all_itemPicTwentySecond.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentySecond.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentySecond.Image")));
+            this.all_itemPicTwentySecond.ImageRotate = 0F;
+            this.all_itemPicTwentySecond.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwentySecond.Name = "all_itemPicTwentySecond";
+            this.all_itemPicTwentySecond.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentySecond.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentySecond.TabIndex = 5;
+            this.all_itemPicTwentySecond.TabStop = false;
+            this.all_itemPicTwentySecond.Click += new System.EventHandler(this.all_itemPicTwentySecond_Click);
+            // 
+            // all_itemPanelTwentyFirst
+            // 
+            this.all_itemPanelTwentyFirst.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentyFirst.Controls.Add(this.allTwentyFirst_Overlay);
+            this.all_itemPanelTwentyFirst.Controls.Add(this.all_itemPicTwentyFirst);
+            this.all_itemPanelTwentyFirst.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentyFirst.Location = new System.Drawing.Point(867, 15);
+            this.all_itemPanelTwentyFirst.Name = "all_itemPanelTwentyFirst";
+            this.all_itemPanelTwentyFirst.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentyFirst.ShadowDepth = 200;
+            this.all_itemPanelTwentyFirst.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelTwentyFirst.TabIndex = 6;
+            this.all_itemPanelTwentyFirst.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentyFirst_Paint);
+            // 
+            // allTwentyFirst_Overlay
+            // 
+            this.allTwentyFirst_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentyFirst_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentyFirst_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentyFirst_Overlay.Image")));
+            this.allTwentyFirst_Overlay.ImageRotate = 0F;
+            this.allTwentyFirst_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentyFirst_Overlay.Name = "allTwentyFirst_Overlay";
+            this.allTwentyFirst_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentyFirst_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentyFirst_Overlay.TabIndex = 7;
+            this.allTwentyFirst_Overlay.TabStop = false;
+            this.allTwentyFirst_Overlay.Visible = false;
+            this.allTwentyFirst_Overlay.Click += new System.EventHandler(this.allTwentyFirst_Overlay_Click);
+            // 
+            // all_itemPicTwentyFirst
+            // 
+            this.all_itemPicTwentyFirst.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentyFirst.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentyFirst.Image")));
+            this.all_itemPicTwentyFirst.ImageRotate = 0F;
+            this.all_itemPicTwentyFirst.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwentyFirst.Name = "all_itemPicTwentyFirst";
+            this.all_itemPicTwentyFirst.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentyFirst.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentyFirst.TabIndex = 4;
+            this.all_itemPicTwentyFirst.TabStop = false;
+            this.all_itemPicTwentyFirst.Click += new System.EventHandler(this.all_itemPicTwentyFirst_Click);
+            // 
+            // all_itemPanelTwentieth
+            // 
+            this.all_itemPanelTwentieth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelTwentieth.Controls.Add(this.allTwentieth_Overlay);
+            this.all_itemPanelTwentieth.Controls.Add(this.all_itemPicTwentieth);
+            this.all_itemPanelTwentieth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelTwentieth.Location = new System.Drawing.Point(665, 15);
+            this.all_itemPanelTwentieth.Name = "all_itemPanelTwentieth";
+            this.all_itemPanelTwentieth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelTwentieth.ShadowDepth = 200;
+            this.all_itemPanelTwentieth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelTwentieth.TabIndex = 6;
+            this.all_itemPanelTwentieth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelTwentieth_Paint);
+            // 
+            // allTwentieth_Overlay
+            // 
+            this.allTwentieth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allTwentieth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allTwentieth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allTwentieth_Overlay.Image")));
+            this.allTwentieth_Overlay.ImageRotate = 0F;
+            this.allTwentieth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allTwentieth_Overlay.Name = "allTwentieth_Overlay";
+            this.allTwentieth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allTwentieth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allTwentieth_Overlay.TabIndex = 7;
+            this.allTwentieth_Overlay.TabStop = false;
+            this.allTwentieth_Overlay.Visible = false;
+            this.allTwentieth_Overlay.Click += new System.EventHandler(this.allTwentieth_Overlay_Click);
+            // 
+            // all_itemPicTwentieth
+            // 
+            this.all_itemPicTwentieth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicTwentieth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicTwentieth.Image")));
+            this.all_itemPicTwentieth.ImageRotate = 0F;
+            this.all_itemPicTwentieth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicTwentieth.Name = "all_itemPicTwentieth";
+            this.all_itemPicTwentieth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicTwentieth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicTwentieth.TabIndex = 3;
+            this.all_itemPicTwentieth.TabStop = false;
+            this.all_itemPicTwentieth.Click += new System.EventHandler(this.all_itemPicTwentieth_Click);
+            // 
+            // all_itemPanelNineteenth
+            // 
+            this.all_itemPanelNineteenth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelNineteenth.Controls.Add(this.allNineteenth_Overlay);
+            this.all_itemPanelNineteenth.Controls.Add(this.all_itemPicNineteenth);
+            this.all_itemPanelNineteenth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelNineteenth.Location = new System.Drawing.Point(458, 15);
+            this.all_itemPanelNineteenth.Name = "all_itemPanelNineteenth";
+            this.all_itemPanelNineteenth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelNineteenth.ShadowDepth = 200;
+            this.all_itemPanelNineteenth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelNineteenth.TabIndex = 6;
+            this.all_itemPanelNineteenth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelNineteenth_Paint);
+            // 
+            // allNineteenth_Overlay
+            // 
+            this.allNineteenth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allNineteenth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allNineteenth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allNineteenth_Overlay.Image")));
+            this.allNineteenth_Overlay.ImageRotate = 0F;
+            this.allNineteenth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allNineteenth_Overlay.Name = "allNineteenth_Overlay";
+            this.allNineteenth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allNineteenth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allNineteenth_Overlay.TabIndex = 7;
+            this.allNineteenth_Overlay.TabStop = false;
+            this.allNineteenth_Overlay.Visible = false;
+            this.allNineteenth_Overlay.Click += new System.EventHandler(this.allNineteenth_Overlay_Click);
+            // 
+            // all_itemPicNineteenth
+            // 
+            this.all_itemPicNineteenth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicNineteenth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicNineteenth.Image")));
+            this.all_itemPicNineteenth.ImageRotate = 0F;
+            this.all_itemPicNineteenth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicNineteenth.Name = "all_itemPicNineteenth";
+            this.all_itemPicNineteenth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicNineteenth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicNineteenth.TabIndex = 2;
+            this.all_itemPicNineteenth.TabStop = false;
+            this.all_itemPicNineteenth.Click += new System.EventHandler(this.all_itemPicNineteenth_Click);
+            // 
+            // all_itemPanelEighteenth
+            // 
+            this.all_itemPanelEighteenth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelEighteenth.Controls.Add(this.alleighteenth_Overlay);
+            this.all_itemPanelEighteenth.Controls.Add(this.all_itemPicEighteenth);
+            this.all_itemPanelEighteenth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelEighteenth.Location = new System.Drawing.Point(247, 15);
+            this.all_itemPanelEighteenth.Name = "all_itemPanelEighteenth";
+            this.all_itemPanelEighteenth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelEighteenth.ShadowDepth = 200;
+            this.all_itemPanelEighteenth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelEighteenth.TabIndex = 6;
+            this.all_itemPanelEighteenth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelEighteenth_Paint);
+            // 
+            // alleighteenth_Overlay
+            // 
+            this.alleighteenth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.alleighteenth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.alleighteenth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("alleighteenth_Overlay.Image")));
+            this.alleighteenth_Overlay.ImageRotate = 0F;
+            this.alleighteenth_Overlay.Location = new System.Drawing.Point(4, 9);
+            this.alleighteenth_Overlay.Name = "alleighteenth_Overlay";
+            this.alleighteenth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.alleighteenth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.alleighteenth_Overlay.TabIndex = 7;
+            this.alleighteenth_Overlay.TabStop = false;
+            this.alleighteenth_Overlay.Visible = false;
+            this.alleighteenth_Overlay.Click += new System.EventHandler(this.alleighteenth_Overlay_Click);
+            // 
+            // all_itemPicEighteenth
+            // 
+            this.all_itemPicEighteenth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicEighteenth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicEighteenth.Image")));
+            this.all_itemPicEighteenth.ImageRotate = 0F;
+            this.all_itemPicEighteenth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicEighteenth.Name = "all_itemPicEighteenth";
+            this.all_itemPicEighteenth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicEighteenth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicEighteenth.TabIndex = 1;
+            this.all_itemPicEighteenth.TabStop = false;
+            this.all_itemPicEighteenth.Click += new System.EventHandler(this.all_itemPicEighteenth_Click);
+            // 
+            // all_itemPanelSeventeenth
+            // 
+            this.all_itemPanelSeventeenth.BackColor = System.Drawing.Color.Transparent;
+            this.all_itemPanelSeventeenth.Controls.Add(this.allSeventeenth_Overlay);
+            this.all_itemPanelSeventeenth.Controls.Add(this.all_itemPicSeventeenth);
+            this.all_itemPanelSeventeenth.FillColor = System.Drawing.Color.White;
+            this.all_itemPanelSeventeenth.Location = new System.Drawing.Point(39, 15);
+            this.all_itemPanelSeventeenth.Name = "all_itemPanelSeventeenth";
+            this.all_itemPanelSeventeenth.ShadowColor = System.Drawing.Color.Black;
+            this.all_itemPanelSeventeenth.ShadowDepth = 200;
+            this.all_itemPanelSeventeenth.Size = new System.Drawing.Size(170, 154);
+            this.all_itemPanelSeventeenth.TabIndex = 5;
+            this.all_itemPanelSeventeenth.Paint += new System.Windows.Forms.PaintEventHandler(this.all_itemPanelSeventeenth_Paint);
+            // 
+            // allSeventeenth_Overlay
+            // 
+            this.allSeventeenth_Overlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.allSeventeenth_Overlay.FillColor = System.Drawing.Color.Transparent;
+            this.allSeventeenth_Overlay.Image = ((System.Drawing.Image)(resources.GetObject("allSeventeenth_Overlay.Image")));
+            this.allSeventeenth_Overlay.ImageRotate = 0F;
+            this.allSeventeenth_Overlay.Location = new System.Drawing.Point(3, 9);
+            this.allSeventeenth_Overlay.Name = "allSeventeenth_Overlay";
+            this.allSeventeenth_Overlay.Size = new System.Drawing.Size(160, 137);
+            this.allSeventeenth_Overlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.allSeventeenth_Overlay.TabIndex = 8;
+            this.allSeventeenth_Overlay.TabStop = false;
+            this.allSeventeenth_Overlay.Visible = false;
+            this.allSeventeenth_Overlay.Click += new System.EventHandler(this.allSeventeenth_Overlay_Click);
+            // 
+            // all_itemPicSeventeenth
+            // 
+            this.all_itemPicSeventeenth.FillColor = System.Drawing.Color.Transparent;
+            this.all_itemPicSeventeenth.Image = ((System.Drawing.Image)(resources.GetObject("all_itemPicSeventeenth.Image")));
+            this.all_itemPicSeventeenth.ImageRotate = 0F;
+            this.all_itemPicSeventeenth.Location = new System.Drawing.Point(6, 7);
+            this.all_itemPicSeventeenth.Name = "all_itemPicSeventeenth";
+            this.all_itemPicSeventeenth.Size = new System.Drawing.Size(160, 137);
+            this.all_itemPicSeventeenth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.all_itemPicSeventeenth.TabIndex = 0;
+            this.all_itemPicSeventeenth.TabStop = false;
+            this.all_itemPicSeventeenth.Click += new System.EventHandler(this.all_itemPicSeventeenth_Click);
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BorderRadius = 13;
+            this.guna2Button3.BorderThickness = 2;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2Button3.FocusedColor = System.Drawing.Color.White;
+            this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.Location = new System.Drawing.Point(1735, 9);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(158, 53);
+            this.guna2Button3.TabIndex = 27;
+            this.guna2Button3.Text = "Back";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // confirmBtn
             // 
@@ -5830,6 +7287,7 @@
             this.guna2ShadowPanel3.ShadowDepth = 250;
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(1930, 159);
             this.guna2ShadowPanel3.TabIndex = 0;
+            this.guna2ShadowPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel3_Paint);
             // 
             // fifthItem
             // 
@@ -5855,6 +7313,7 @@
             this.fifthItem.Size = new System.Drawing.Size(306, 153);
             this.fifthItem.TabIndex = 8;
             this.fifthItem.Visible = false;
+            this.fifthItem.Paint += new System.Windows.Forms.PaintEventHandler(this.fifthItem_Paint);
             // 
             // fifthCancel
             // 
@@ -5880,6 +7339,7 @@
             this.fifthItemSize.Size = new System.Drawing.Size(23, 15);
             this.fifthItemSize.TabIndex = 32;
             this.fifthItemSize.Text = "....";
+            this.fifthItemSize.Click += new System.EventHandler(this.fifthItemSize_Click);
             // 
             // label46
             // 
@@ -5890,6 +7350,7 @@
             this.label46.Size = new System.Drawing.Size(43, 13);
             this.label46.TabIndex = 26;
             this.label46.Text = "SIZE :";
+            this.label46.Click += new System.EventHandler(this.label46_Click);
             // 
             // label47
             // 
@@ -5900,6 +7361,7 @@
             this.label47.Size = new System.Drawing.Size(78, 13);
             this.label47.TabIndex = 25;
             this.label47.Text = "QUANTITY :";
+            this.label47.Click += new System.EventHandler(this.label47_Click);
             // 
             // fifthItemType
             // 
@@ -5910,6 +7372,7 @@
             this.fifthItemType.Size = new System.Drawing.Size(87, 12);
             this.fifthItemType.TabIndex = 24;
             this.fifthItemType.Text = "PRODUCT TYPE";
+            this.fifthItemType.Click += new System.EventHandler(this.fifthItemType_Click);
             // 
             // fifthItemName
             // 
@@ -5920,6 +7383,7 @@
             this.fifthItemName.Size = new System.Drawing.Size(116, 15);
             this.fifthItemName.TabIndex = 23;
             this.fifthItemName.Text = "PRODUCT NAME";
+            this.fifthItemName.Click += new System.EventHandler(this.fifthItemName_Click);
             // 
             // guna2CustomGradientPanel13
             // 
@@ -5933,6 +7397,7 @@
             this.guna2CustomGradientPanel13.Name = "guna2CustomGradientPanel13";
             this.guna2CustomGradientPanel13.Size = new System.Drawing.Size(306, 21);
             this.guna2CustomGradientPanel13.TabIndex = 13;
+            this.guna2CustomGradientPanel13.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel13_Paint);
             // 
             // label50
             // 
@@ -5944,6 +7409,7 @@
             this.label50.Size = new System.Drawing.Size(19, 18);
             this.label50.TabIndex = 27;
             this.label50.Text = "₱";
+            this.label50.Click += new System.EventHandler(this.label50_Click);
             // 
             // fifthItemPrice
             // 
@@ -5955,6 +7421,7 @@
             this.fifthItemPrice.Size = new System.Drawing.Size(76, 18);
             this.fifthItemPrice.TabIndex = 34;
             this.fifthItemPrice.Text = "12345.67";
+            this.fifthItemPrice.Click += new System.EventHandler(this.fifthItemPrice_Click);
             // 
             // label52
             // 
@@ -5965,6 +7432,7 @@
             this.label52.Size = new System.Drawing.Size(91, 13);
             this.label52.TabIndex = 28;
             this.label52.Text = "____________";
+            this.label52.Click += new System.EventHandler(this.label52_Click);
             // 
             // fifthItemQty
             // 
@@ -5975,6 +7443,7 @@
             this.fifthItemQty.Size = new System.Drawing.Size(27, 15);
             this.fifthItemQty.TabIndex = 30;
             this.fifthItemQty.Text = ".....";
+            this.fifthItemQty.Click += new System.EventHandler(this.fifthItemQty_Click);
             // 
             // label54
             // 
@@ -5985,6 +7454,7 @@
             this.label54.Size = new System.Drawing.Size(98, 13);
             this.label54.TabIndex = 29;
             this.label54.Text = "_____________";
+            this.label54.Click += new System.EventHandler(this.label54_Click);
             // 
             // label55
             // 
@@ -5995,6 +7465,7 @@
             this.label55.Size = new System.Drawing.Size(77, 13);
             this.label55.TabIndex = 31;
             this.label55.Text = "__________";
+            this.label55.Click += new System.EventHandler(this.label55_Click);
             // 
             // fifthPic
             // 
@@ -6009,6 +7480,7 @@
             this.fifthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fifthPic.TabIndex = 1;
             this.fifthPic.TabStop = false;
+            this.fifthPic.Click += new System.EventHandler(this.fifthPic_Click);
             // 
             // fifthID
             // 
@@ -6021,6 +7493,7 @@
             this.fifthID.TabIndex = 33;
             this.fifthID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.fifthID.Visible = false;
+            this.fifthID.Click += new System.EventHandler(this.fifthID_Click);
             // 
             // fourthItem
             // 
@@ -6046,6 +7519,7 @@
             this.fourthItem.Size = new System.Drawing.Size(306, 153);
             this.fourthItem.TabIndex = 8;
             this.fourthItem.Visible = false;
+            this.fourthItem.Paint += new System.Windows.Forms.PaintEventHandler(this.fourthItem_Paint);
             // 
             // fourthCancel
             // 
@@ -6071,6 +7545,7 @@
             this.fourthItemSize.Size = new System.Drawing.Size(27, 15);
             this.fourthItemSize.TabIndex = 32;
             this.fourthItemSize.Text = ".....";
+            this.fourthItemSize.Click += new System.EventHandler(this.fourthItemSize_Click);
             // 
             // label35
             // 
@@ -6081,6 +7556,7 @@
             this.label35.Size = new System.Drawing.Size(43, 13);
             this.label35.TabIndex = 26;
             this.label35.Text = "SIZE :";
+            this.label35.Click += new System.EventHandler(this.label35_Click);
             // 
             // label36
             // 
@@ -6091,6 +7567,7 @@
             this.label36.Size = new System.Drawing.Size(78, 13);
             this.label36.TabIndex = 25;
             this.label36.Text = "QUANTITY :";
+            this.label36.Click += new System.EventHandler(this.label36_Click);
             // 
             // fourthItemType
             // 
@@ -6101,6 +7578,7 @@
             this.fourthItemType.Size = new System.Drawing.Size(87, 12);
             this.fourthItemType.TabIndex = 24;
             this.fourthItemType.Text = "PRODUCT TYPE";
+            this.fourthItemType.Click += new System.EventHandler(this.fourthItemType_Click);
             // 
             // fourthItemName
             // 
@@ -6111,6 +7589,7 @@
             this.fourthItemName.Size = new System.Drawing.Size(116, 15);
             this.fourthItemName.TabIndex = 23;
             this.fourthItemName.Text = "PRODUCT NAME";
+            this.fourthItemName.Click += new System.EventHandler(this.fourthItemName_Click);
             // 
             // guna2CustomGradientPanel12
             // 
@@ -6124,6 +7603,7 @@
             this.guna2CustomGradientPanel12.Name = "guna2CustomGradientPanel12";
             this.guna2CustomGradientPanel12.Size = new System.Drawing.Size(306, 21);
             this.guna2CustomGradientPanel12.TabIndex = 13;
+            this.guna2CustomGradientPanel12.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel12_Paint);
             // 
             // label39
             // 
@@ -6135,6 +7615,7 @@
             this.label39.Size = new System.Drawing.Size(19, 18);
             this.label39.TabIndex = 27;
             this.label39.Text = "₱";
+            this.label39.Click += new System.EventHandler(this.label39_Click);
             // 
             // fourthItemPrice
             // 
@@ -6146,6 +7627,7 @@
             this.fourthItemPrice.Size = new System.Drawing.Size(76, 18);
             this.fourthItemPrice.TabIndex = 34;
             this.fourthItemPrice.Text = "12345.67";
+            this.fourthItemPrice.Click += new System.EventHandler(this.fourthItemPrice_Click);
             // 
             // label41
             // 
@@ -6156,6 +7638,7 @@
             this.label41.Size = new System.Drawing.Size(91, 13);
             this.label41.TabIndex = 28;
             this.label41.Text = "____________";
+            this.label41.Click += new System.EventHandler(this.label41_Click);
             // 
             // fourthItemQty
             // 
@@ -6166,6 +7649,7 @@
             this.fourthItemQty.Size = new System.Drawing.Size(23, 15);
             this.fourthItemQty.TabIndex = 30;
             this.fourthItemQty.Text = "....";
+            this.fourthItemQty.Click += new System.EventHandler(this.fourthItemQty_Click);
             // 
             // label43
             // 
@@ -6176,6 +7660,7 @@
             this.label43.Size = new System.Drawing.Size(98, 13);
             this.label43.TabIndex = 29;
             this.label43.Text = "_____________";
+            this.label43.Click += new System.EventHandler(this.label43_Click);
             // 
             // label44
             // 
@@ -6186,6 +7671,7 @@
             this.label44.Size = new System.Drawing.Size(77, 13);
             this.label44.TabIndex = 31;
             this.label44.Text = "__________";
+            this.label44.Click += new System.EventHandler(this.label44_Click);
             // 
             // fourthPic
             // 
@@ -6200,6 +7686,7 @@
             this.fourthPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fourthPic.TabIndex = 1;
             this.fourthPic.TabStop = false;
+            this.fourthPic.Click += new System.EventHandler(this.fourthPic_Click);
             // 
             // fourthID
             // 
@@ -6212,6 +7699,7 @@
             this.fourthID.TabIndex = 33;
             this.fourthID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.fourthID.Visible = false;
+            this.fourthID.Click += new System.EventHandler(this.fourthID_Click);
             // 
             // thirdItem
             // 
@@ -6237,6 +7725,7 @@
             this.thirdItem.Size = new System.Drawing.Size(306, 153);
             this.thirdItem.TabIndex = 8;
             this.thirdItem.Visible = false;
+            this.thirdItem.Paint += new System.Windows.Forms.PaintEventHandler(this.thirdItem_Paint);
             // 
             // thirdCancel
             // 
@@ -6262,6 +7751,7 @@
             this.thirdItemSize.Size = new System.Drawing.Size(23, 15);
             this.thirdItemSize.TabIndex = 32;
             this.thirdItemSize.Text = "....";
+            this.thirdItemSize.Click += new System.EventHandler(this.thirdItemSize_Click);
             // 
             // label24
             // 
@@ -6272,6 +7762,7 @@
             this.label24.Size = new System.Drawing.Size(43, 13);
             this.label24.TabIndex = 26;
             this.label24.Text = "SIZE :";
+            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // label25
             // 
@@ -6282,6 +7773,7 @@
             this.label25.Size = new System.Drawing.Size(78, 13);
             this.label25.TabIndex = 25;
             this.label25.Text = "QUANTITY :";
+            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // thirdItemType
             // 
@@ -6292,6 +7784,7 @@
             this.thirdItemType.Size = new System.Drawing.Size(87, 12);
             this.thirdItemType.TabIndex = 24;
             this.thirdItemType.Text = "PRODUCT TYPE";
+            this.thirdItemType.Click += new System.EventHandler(this.thirdItemType_Click);
             // 
             // thirdItemName
             // 
@@ -6302,6 +7795,7 @@
             this.thirdItemName.Size = new System.Drawing.Size(116, 15);
             this.thirdItemName.TabIndex = 23;
             this.thirdItemName.Text = "PRODUCT NAME";
+            this.thirdItemName.Click += new System.EventHandler(this.thirdItemName_Click);
             // 
             // guna2CustomGradientPanel11
             // 
@@ -6315,6 +7809,7 @@
             this.guna2CustomGradientPanel11.Name = "guna2CustomGradientPanel11";
             this.guna2CustomGradientPanel11.Size = new System.Drawing.Size(306, 21);
             this.guna2CustomGradientPanel11.TabIndex = 13;
+            this.guna2CustomGradientPanel11.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel11_Paint);
             // 
             // label28
             // 
@@ -6326,6 +7821,7 @@
             this.label28.Size = new System.Drawing.Size(19, 18);
             this.label28.TabIndex = 27;
             this.label28.Text = "₱";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // thirdItemPrice
             // 
@@ -6337,6 +7833,7 @@
             this.thirdItemPrice.Size = new System.Drawing.Size(76, 18);
             this.thirdItemPrice.TabIndex = 34;
             this.thirdItemPrice.Text = "12345.67";
+            this.thirdItemPrice.Click += new System.EventHandler(this.thirdItemPrice_Click);
             // 
             // label30
             // 
@@ -6347,6 +7844,7 @@
             this.label30.Size = new System.Drawing.Size(91, 13);
             this.label30.TabIndex = 28;
             this.label30.Text = "____________";
+            this.label30.Click += new System.EventHandler(this.label30_Click);
             // 
             // thirdItemQty
             // 
@@ -6357,6 +7855,7 @@
             this.thirdItemQty.Size = new System.Drawing.Size(23, 15);
             this.thirdItemQty.TabIndex = 30;
             this.thirdItemQty.Text = "....";
+            this.thirdItemQty.Click += new System.EventHandler(this.thirdItemQty_Click);
             // 
             // label32
             // 
@@ -6367,6 +7866,7 @@
             this.label32.Size = new System.Drawing.Size(98, 13);
             this.label32.TabIndex = 29;
             this.label32.Text = "_____________";
+            this.label32.Click += new System.EventHandler(this.label32_Click);
             // 
             // label33
             // 
@@ -6377,6 +7877,7 @@
             this.label33.Size = new System.Drawing.Size(77, 13);
             this.label33.TabIndex = 31;
             this.label33.Text = "__________";
+            this.label33.Click += new System.EventHandler(this.label33_Click);
             // 
             // thirdPic
             // 
@@ -6391,6 +7892,7 @@
             this.thirdPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.thirdPic.TabIndex = 1;
             this.thirdPic.TabStop = false;
+            this.thirdPic.Click += new System.EventHandler(this.thirdPic_Click);
             // 
             // thirdID
             // 
@@ -6403,6 +7905,7 @@
             this.thirdID.TabIndex = 33;
             this.thirdID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.thirdID.Visible = false;
+            this.thirdID.Click += new System.EventHandler(this.thirdID_Click);
             // 
             // secondItem
             // 
@@ -6428,6 +7931,7 @@
             this.secondItem.Size = new System.Drawing.Size(306, 153);
             this.secondItem.TabIndex = 7;
             this.secondItem.Visible = false;
+            this.secondItem.Paint += new System.Windows.Forms.PaintEventHandler(this.secondItem_Paint);
             // 
             // secondCancel
             // 
@@ -6453,6 +7957,7 @@
             this.secondItemSize.Size = new System.Drawing.Size(27, 15);
             this.secondItemSize.TabIndex = 32;
             this.secondItemSize.Text = ".....";
+            this.secondItemSize.Click += new System.EventHandler(this.secondItemSize_Click);
             // 
             // label12
             // 
@@ -6463,6 +7968,7 @@
             this.label12.Size = new System.Drawing.Size(43, 13);
             this.label12.TabIndex = 26;
             this.label12.Text = "SIZE :";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label14
             // 
@@ -6473,6 +7979,7 @@
             this.label14.Size = new System.Drawing.Size(78, 13);
             this.label14.TabIndex = 25;
             this.label14.Text = "QUANTITY :";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // secondItemType
             // 
@@ -6483,6 +7990,7 @@
             this.secondItemType.Size = new System.Drawing.Size(87, 12);
             this.secondItemType.TabIndex = 24;
             this.secondItemType.Text = "PRODUCT TYPE";
+            this.secondItemType.Click += new System.EventHandler(this.secondItemType_Click);
             // 
             // secondItemName
             // 
@@ -6493,6 +8001,7 @@
             this.secondItemName.Size = new System.Drawing.Size(116, 15);
             this.secondItemName.TabIndex = 23;
             this.secondItemName.Text = "PRODUCT NAME";
+            this.secondItemName.Click += new System.EventHandler(this.secondItemName_Click);
             // 
             // guna2CustomGradientPanel10
             // 
@@ -6506,6 +8015,7 @@
             this.guna2CustomGradientPanel10.Name = "guna2CustomGradientPanel10";
             this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(306, 21);
             this.guna2CustomGradientPanel10.TabIndex = 13;
+            this.guna2CustomGradientPanel10.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel10_Paint);
             // 
             // label17
             // 
@@ -6517,6 +8027,7 @@
             this.label17.Size = new System.Drawing.Size(19, 18);
             this.label17.TabIndex = 27;
             this.label17.Text = "₱";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // secondItemPrice
             // 
@@ -6528,6 +8039,7 @@
             this.secondItemPrice.Size = new System.Drawing.Size(76, 18);
             this.secondItemPrice.TabIndex = 34;
             this.secondItemPrice.Text = "12345.67";
+            this.secondItemPrice.Click += new System.EventHandler(this.secondItemPrice_Click);
             // 
             // label19
             // 
@@ -6538,6 +8050,7 @@
             this.label19.Size = new System.Drawing.Size(91, 13);
             this.label19.TabIndex = 28;
             this.label19.Text = "____________";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // secondItemQty
             // 
@@ -6548,6 +8061,7 @@
             this.secondItemQty.Size = new System.Drawing.Size(23, 15);
             this.secondItemQty.TabIndex = 30;
             this.secondItemQty.Text = "....";
+            this.secondItemQty.Click += new System.EventHandler(this.secondItemQty_Click);
             // 
             // label21
             // 
@@ -6558,6 +8072,7 @@
             this.label21.Size = new System.Drawing.Size(98, 13);
             this.label21.TabIndex = 29;
             this.label21.Text = "_____________";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label22
             // 
@@ -6568,6 +8083,7 @@
             this.label22.Size = new System.Drawing.Size(77, 13);
             this.label22.TabIndex = 31;
             this.label22.Text = "__________";
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // secondPic
             // 
@@ -6582,6 +8098,7 @@
             this.secondPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.secondPic.TabIndex = 1;
             this.secondPic.TabStop = false;
+            this.secondPic.Click += new System.EventHandler(this.secondPic_Click);
             // 
             // secondID
             // 
@@ -6594,6 +8111,7 @@
             this.secondID.TabIndex = 33;
             this.secondID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.secondID.Visible = false;
+            this.secondID.Click += new System.EventHandler(this.secondID_Click);
             // 
             // firstItem
             // 
@@ -6619,6 +8137,7 @@
             this.firstItem.Size = new System.Drawing.Size(306, 153);
             this.firstItem.TabIndex = 8;
             this.firstItem.Visible = false;
+            this.firstItem.Paint += new System.Windows.Forms.PaintEventHandler(this.firstItem_Paint);
             // 
             // firstCancel
             // 
@@ -6644,6 +8163,7 @@
             this.firstItemSize.Size = new System.Drawing.Size(23, 15);
             this.firstItemSize.TabIndex = 32;
             this.firstItemSize.Text = "....";
+            this.firstItemSize.Click += new System.EventHandler(this.firstItemSize_Click);
             // 
             // label8
             // 
@@ -6654,6 +8174,7 @@
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 26;
             this.label8.Text = "SIZE :";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -6664,6 +8185,7 @@
             this.label7.Size = new System.Drawing.Size(78, 13);
             this.label7.TabIndex = 25;
             this.label7.Text = "QUANTITY :";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // firstItemType
             // 
@@ -6674,6 +8196,7 @@
             this.firstItemType.Size = new System.Drawing.Size(87, 12);
             this.firstItemType.TabIndex = 24;
             this.firstItemType.Text = "PRODUCT TYPE";
+            this.firstItemType.Click += new System.EventHandler(this.firstItemType_Click);
             // 
             // firstItemName
             // 
@@ -6684,6 +8207,7 @@
             this.firstItemName.Size = new System.Drawing.Size(116, 15);
             this.firstItemName.TabIndex = 23;
             this.firstItemName.Text = "PRODUCT NAME";
+            this.firstItemName.Click += new System.EventHandler(this.firstItemName_Click);
             // 
             // guna2CustomGradientPanel9
             // 
@@ -6697,6 +8221,7 @@
             this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
             this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(306, 21);
             this.guna2CustomGradientPanel9.TabIndex = 13;
+            this.guna2CustomGradientPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel9_Paint);
             // 
             // label9
             // 
@@ -6708,6 +8233,7 @@
             this.label9.Size = new System.Drawing.Size(19, 18);
             this.label9.TabIndex = 27;
             this.label9.Text = "₱";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // firstItemPrice
             // 
@@ -6719,6 +8245,7 @@
             this.firstItemPrice.Size = new System.Drawing.Size(76, 18);
             this.firstItemPrice.TabIndex = 34;
             this.firstItemPrice.Text = "12345.67";
+            this.firstItemPrice.Click += new System.EventHandler(this.firstItemPrice_Click);
             // 
             // firstPic
             // 
@@ -6733,6 +8260,7 @@
             this.firstPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.firstPic.TabIndex = 1;
             this.firstPic.TabStop = false;
+            this.firstPic.Click += new System.EventHandler(this.firstPic_Click);
             // 
             // label10
             // 
@@ -6743,6 +8271,7 @@
             this.label10.Size = new System.Drawing.Size(91, 13);
             this.label10.TabIndex = 28;
             this.label10.Text = "____________";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // firstItemQty
             // 
@@ -6753,6 +8282,7 @@
             this.firstItemQty.Size = new System.Drawing.Size(23, 15);
             this.firstItemQty.TabIndex = 30;
             this.firstItemQty.Text = "....";
+            this.firstItemQty.Click += new System.EventHandler(this.firstItemQty_Click);
             // 
             // label11
             // 
@@ -6763,6 +8293,7 @@
             this.label11.Size = new System.Drawing.Size(98, 13);
             this.label11.TabIndex = 29;
             this.label11.Text = "_____________";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label13
             // 
@@ -6773,6 +8304,7 @@
             this.label13.Size = new System.Drawing.Size(77, 13);
             this.label13.TabIndex = 31;
             this.label13.Text = "__________";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // firstID
             // 
@@ -6785,6 +8317,7 @@
             this.firstID.TabIndex = 33;
             this.firstID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.firstID.Visible = false;
+            this.firstID.Click += new System.EventHandler(this.firstID_Click);
             // 
             // ttext
             // 
@@ -6796,6 +8329,7 @@
             this.ttext.Size = new System.Drawing.Size(205, 25);
             this.ttext.TabIndex = 1;
             this.ttext.Text = "Your order is empty..";
+            this.ttext.Click += new System.EventHandler(this.ttext_Click);
             // 
             // guna2CustomGradientPanel7
             // 
@@ -6807,6 +8341,7 @@
             this.guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
             this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(1940, 57);
             this.guna2CustomGradientPanel7.TabIndex = 1;
+            this.guna2CustomGradientPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel7_Paint);
             // 
             // guna2HtmlLabel7
             // 
@@ -6818,6 +8353,7 @@
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(108, 25);
             this.guna2HtmlLabel7.TabIndex = 0;
             this.guna2HtmlLabel7.Text = "Your Order";
+            this.guna2HtmlLabel7.Click += new System.EventHandler(this.guna2HtmlLabel7_Click);
             // 
             // guna2PictureBox7
             // 
@@ -6830,6 +8366,7 @@
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox7.TabIndex = 5;
             this.guna2PictureBox7.TabStop = false;
+            this.guna2PictureBox7.Click += new System.EventHandler(this.guna2PictureBox7_Click);
             // 
             // guna2PictureBox6
             // 
@@ -6842,6 +8379,7 @@
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox6.TabIndex = 4;
             this.guna2PictureBox6.TabStop = false;
+            this.guna2PictureBox6.Click += new System.EventHandler(this.guna2PictureBox6_Click);
             // 
             // guna2PictureBox2
             // 
@@ -6854,6 +8392,7 @@
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 0;
             this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
             // guna2PictureBox5
             // 
@@ -6866,6 +8405,7 @@
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox5.TabIndex = 3;
             this.guna2PictureBox5.TabStop = false;
+            this.guna2PictureBox5.Click += new System.EventHandler(this.guna2PictureBox5_Click);
             // 
             // guna2PictureBox4
             // 
@@ -6878,6 +8418,7 @@
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox4.TabIndex = 2;
             this.guna2PictureBox4.TabStop = false;
+            this.guna2PictureBox4.Click += new System.EventHandler(this.guna2PictureBox4_Click);
             // 
             // guna2CustomGradientPanel3
             // 
@@ -6898,10 +8439,11 @@
             this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
             this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(1926, 258);
             this.guna2CustomGradientPanel3.TabIndex = 1;
+            this.guna2CustomGradientPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel3_Paint);
             // 
             // guna2CustomGradientPanel4
             // 
-            this.guna2CustomGradientPanel4.Controls.Add(this.guna2CustomGradientPanel5);
+            this.guna2CustomGradientPanel4.Controls.Add(this.all_firstUP);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2PictureBox13);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2PictureBox14);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2PictureBox15);
@@ -6918,25 +8460,27 @@
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(1926, 258);
             this.guna2CustomGradientPanel4.TabIndex = 11;
+            this.guna2CustomGradientPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel4_Paint);
             // 
-            // guna2CustomGradientPanel5
+            // all_firstUP
             // 
-            this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox19);
-            this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox20);
-            this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox21);
-            this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox22);
-            this.guna2CustomGradientPanel5.Controls.Add(this.guna2HtmlLabel6);
-            this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox23);
-            this.guna2CustomGradientPanel5.Controls.Add(this.guna2PictureBox24);
-            this.guna2CustomGradientPanel5.Controls.Add(this.guna2CirclePictureBox5);
-            this.guna2CustomGradientPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2CustomGradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2CustomGradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2CustomGradientPanel5.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(0, 0);
-            this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
-            this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(1926, 260);
-            this.guna2CustomGradientPanel5.TabIndex = 12;
+            this.all_firstUP.Controls.Add(this.guna2PictureBox19);
+            this.all_firstUP.Controls.Add(this.guna2PictureBox20);
+            this.all_firstUP.Controls.Add(this.guna2PictureBox21);
+            this.all_firstUP.Controls.Add(this.guna2PictureBox22);
+            this.all_firstUP.Controls.Add(this.guna2HtmlLabel6);
+            this.all_firstUP.Controls.Add(this.guna2PictureBox23);
+            this.all_firstUP.Controls.Add(this.guna2PictureBox24);
+            this.all_firstUP.Controls.Add(this.guna2CirclePictureBox5);
+            this.all_firstUP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.all_firstUP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.all_firstUP.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.all_firstUP.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.all_firstUP.Location = new System.Drawing.Point(0, 0);
+            this.all_firstUP.Name = "all_firstUP";
+            this.all_firstUP.Size = new System.Drawing.Size(1926, 260);
+            this.all_firstUP.TabIndex = 12;
+            this.all_firstUP.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel5_Paint);
             // 
             // guna2PictureBox19
             // 
@@ -6949,6 +8493,7 @@
             this.guna2PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox19.TabIndex = 10;
             this.guna2PictureBox19.TabStop = false;
+            this.guna2PictureBox19.Click += new System.EventHandler(this.guna2PictureBox19_Click);
             // 
             // guna2PictureBox20
             // 
@@ -6961,6 +8506,7 @@
             this.guna2PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox20.TabIndex = 9;
             this.guna2PictureBox20.TabStop = false;
+            this.guna2PictureBox20.Click += new System.EventHandler(this.guna2PictureBox20_Click);
             // 
             // guna2PictureBox21
             // 
@@ -6973,6 +8519,7 @@
             this.guna2PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox21.TabIndex = 8;
             this.guna2PictureBox21.TabStop = false;
+            this.guna2PictureBox21.Click += new System.EventHandler(this.guna2PictureBox21_Click);
             // 
             // guna2PictureBox22
             // 
@@ -6985,6 +8532,7 @@
             this.guna2PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox22.TabIndex = 7;
             this.guna2PictureBox22.TabStop = false;
+            this.guna2PictureBox22.Click += new System.EventHandler(this.guna2PictureBox22_Click);
             // 
             // guna2HtmlLabel6
             // 
@@ -6996,6 +8544,7 @@
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(1568, 80);
             this.guna2HtmlLabel6.TabIndex = 6;
             this.guna2HtmlLabel6.Text = "LSPU - SPCC BUSINESS CENTER INQUIRIES";
+            this.guna2HtmlLabel6.Click += new System.EventHandler(this.guna2HtmlLabel6_Click);
             // 
             // guna2PictureBox23
             // 
@@ -7008,6 +8557,7 @@
             this.guna2PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox23.TabIndex = 1;
             this.guna2PictureBox23.TabStop = false;
+            this.guna2PictureBox23.Click += new System.EventHandler(this.guna2PictureBox23_Click);
             // 
             // guna2PictureBox24
             // 
@@ -7020,6 +8570,7 @@
             this.guna2PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox24.TabIndex = 6;
             this.guna2PictureBox24.TabStop = false;
+            this.guna2PictureBox24.Click += new System.EventHandler(this.guna2PictureBox24_Click);
             // 
             // guna2CirclePictureBox5
             // 
@@ -7033,6 +8584,7 @@
             this.guna2CirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox5.TabIndex = 2;
             this.guna2CirclePictureBox5.TabStop = false;
+            this.guna2CirclePictureBox5.Click += new System.EventHandler(this.guna2CirclePictureBox5_Click);
             // 
             // guna2PictureBox13
             // 
@@ -7045,6 +8597,7 @@
             this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox13.TabIndex = 10;
             this.guna2PictureBox13.TabStop = false;
+            this.guna2PictureBox13.Click += new System.EventHandler(this.guna2PictureBox13_Click);
             // 
             // guna2PictureBox14
             // 
@@ -7057,6 +8610,7 @@
             this.guna2PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox14.TabIndex = 9;
             this.guna2PictureBox14.TabStop = false;
+            this.guna2PictureBox14.Click += new System.EventHandler(this.guna2PictureBox14_Click);
             // 
             // guna2PictureBox15
             // 
@@ -7069,6 +8623,7 @@
             this.guna2PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox15.TabIndex = 8;
             this.guna2PictureBox15.TabStop = false;
+            this.guna2PictureBox15.Click += new System.EventHandler(this.guna2PictureBox15_Click);
             // 
             // guna2PictureBox16
             // 
@@ -7081,6 +8636,7 @@
             this.guna2PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox16.TabIndex = 7;
             this.guna2PictureBox16.TabStop = false;
+            this.guna2PictureBox16.Click += new System.EventHandler(this.guna2PictureBox16_Click);
             // 
             // guna2CirclePictureBox4
             // 
@@ -7094,6 +8650,7 @@
             this.guna2CirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox4.TabIndex = 2;
             this.guna2CirclePictureBox4.TabStop = false;
+            this.guna2CirclePictureBox4.Click += new System.EventHandler(this.guna2CirclePictureBox4_Click);
             // 
             // guna2HtmlLabel5
             // 
@@ -7105,6 +8662,7 @@
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(1568, 80);
             this.guna2HtmlLabel5.TabIndex = 6;
             this.guna2HtmlLabel5.Text = "LSPU - SPCC BUSINESS CENTER INQUIRIES";
+            this.guna2HtmlLabel5.Click += new System.EventHandler(this.guna2HtmlLabel5_Click);
             // 
             // guna2PictureBox17
             // 
@@ -7117,6 +8675,7 @@
             this.guna2PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox17.TabIndex = 1;
             this.guna2PictureBox17.TabStop = false;
+            this.guna2PictureBox17.Click += new System.EventHandler(this.guna2PictureBox17_Click);
             // 
             // guna2PictureBox18
             // 
@@ -7129,6 +8688,7 @@
             this.guna2PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox18.TabIndex = 6;
             this.guna2PictureBox18.TabStop = false;
+            this.guna2PictureBox18.Click += new System.EventHandler(this.guna2PictureBox18_Click);
             // 
             // guna2PictureBox12
             // 
@@ -7141,6 +8701,7 @@
             this.guna2PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox12.TabIndex = 10;
             this.guna2PictureBox12.TabStop = false;
+            this.guna2PictureBox12.Click += new System.EventHandler(this.guna2PictureBox12_Click);
             // 
             // guna2PictureBox11
             // 
@@ -7153,6 +8714,7 @@
             this.guna2PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox11.TabIndex = 9;
             this.guna2PictureBox11.TabStop = false;
+            this.guna2PictureBox11.Click += new System.EventHandler(this.guna2PictureBox11_Click);
             // 
             // guna2PictureBox10
             // 
@@ -7165,6 +8727,7 @@
             this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox10.TabIndex = 8;
             this.guna2PictureBox10.TabStop = false;
+            this.guna2PictureBox10.Click += new System.EventHandler(this.guna2PictureBox10_Click);
             // 
             // guna2PictureBox9
             // 
@@ -7177,6 +8740,7 @@
             this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox9.TabIndex = 7;
             this.guna2PictureBox9.TabStop = false;
+            this.guna2PictureBox9.Click += new System.EventHandler(this.guna2PictureBox9_Click);
             // 
             // guna2CirclePictureBox3
             // 
@@ -7202,6 +8766,7 @@
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(1568, 80);
             this.guna2HtmlLabel4.TabIndex = 6;
             this.guna2HtmlLabel4.Text = "LSPU - SPCC BUSINESS CENTER INQUIRIES";
+            this.guna2HtmlLabel4.Click += new System.EventHandler(this.guna2HtmlLabel4_Click);
             // 
             // guna2PictureBox3
             // 
@@ -7214,6 +8779,7 @@
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox3.TabIndex = 1;
             this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
             // 
             // guna2PictureBox8
             // 
@@ -7226,6 +8792,7 @@
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox8.TabIndex = 6;
             this.guna2PictureBox8.TabStop = false;
+            this.guna2PictureBox8.Click += new System.EventHandler(this.guna2PictureBox8_Click);
             // 
             // Admin
             // 
@@ -7250,6 +8817,7 @@
             this.Admin.TabIndex = 3;
             this.Admin.Text = "tabAdmin";
             this.Admin.UseVisualStyleBackColor = true;
+            this.Admin.Click += new System.EventHandler(this.Admin_Click);
             // 
             // AdminRefreshPic
             // 
@@ -7333,6 +8901,7 @@
             this.AdminTitlePic.TabIndex = 11;
             this.AdminTitlePic.TabStop = false;
             this.AdminTitlePic.UseTransparentBackground = true;
+            this.AdminTitlePic.Click += new System.EventHandler(this.AdminTitlePic_Click);
             // 
             // HistoryButton
             // 
@@ -7452,6 +9021,7 @@
             this.admin_tabControl.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
             this.admin_tabControl.TabIndex = 5;
             this.admin_tabControl.TabMenuBackColor = System.Drawing.Color.Transparent;
+            this.admin_tabControl.SelectedIndexChanged += new System.EventHandler(this.admin_tabControl_SelectedIndexChanged);
             // 
             // admin_dashboard
             // 
@@ -7478,6 +9048,7 @@
             this.admin_dashboard.Size = new System.Drawing.Size(1610, 808);
             this.admin_dashboard.TabIndex = 0;
             this.admin_dashboard.Text = "Dashbooard";
+            this.admin_dashboard.Click += new System.EventHandler(this.admin_dashboard_Click);
             // 
             // TotalUnclaimed
             // 
@@ -7489,6 +9060,7 @@
             this.TotalUnclaimed.Size = new System.Drawing.Size(192, 82);
             this.TotalUnclaimed.TabIndex = 14;
             this.TotalUnclaimed.Text = "0";
+            this.TotalUnclaimed.Click += new System.EventHandler(this.TotalUnclaimed_Click);
             // 
             // TotalClaimed
             // 
@@ -7500,6 +9072,7 @@
             this.TotalClaimed.Size = new System.Drawing.Size(192, 82);
             this.TotalClaimed.TabIndex = 13;
             this.TotalClaimed.Text = "0";
+            this.TotalClaimed.Click += new System.EventHandler(this.TotalClaimed_Click);
             // 
             // TotalUnpaid
             // 
@@ -7511,6 +9084,7 @@
             this.TotalUnpaid.Size = new System.Drawing.Size(192, 88);
             this.TotalUnpaid.TabIndex = 12;
             this.TotalUnpaid.Text = "0";
+            this.TotalUnpaid.Click += new System.EventHandler(this.TotalUnpaid_Click);
             // 
             // TotalPaid
             // 
@@ -7522,6 +9096,7 @@
             this.TotalPaid.Size = new System.Drawing.Size(192, 88);
             this.TotalPaid.TabIndex = 11;
             this.TotalPaid.Text = "0";
+            this.TotalPaid.Click += new System.EventHandler(this.TotalPaid_Click);
             // 
             // TotalSold
             // 
@@ -7534,6 +9109,7 @@
             this.TotalSold.Size = new System.Drawing.Size(192, 70);
             this.TotalSold.TabIndex = 10;
             this.TotalSold.Text = "0";
+            this.TotalSold.Click += new System.EventHandler(this.TotalSold_Click);
             // 
             // InventoryCount
             // 
@@ -7545,6 +9121,7 @@
             this.InventoryCount.Size = new System.Drawing.Size(192, 88);
             this.InventoryCount.TabIndex = 9;
             this.InventoryCount.Text = "0";
+            this.InventoryCount.Click += new System.EventHandler(this.InventoryCount_Click);
             // 
             // DashboardPic
             // 
@@ -7557,6 +9134,7 @@
             this.DashboardPic.TabIndex = 8;
             this.DashboardPic.TabStop = false;
             this.DashboardPic.UseTransparentBackground = true;
+            this.DashboardPic.Click += new System.EventHandler(this.DashboardPic_Click);
             // 
             // AdminDashSide
             // 
@@ -7569,6 +9147,7 @@
             this.AdminDashSide.TabIndex = 7;
             this.AdminDashSide.TabStop = false;
             this.AdminDashSide.UseTransparentBackground = true;
+            this.AdminDashSide.Click += new System.EventHandler(this.AdminDashSide_Click);
             // 
             // TotalUnclaimedPic
             // 
@@ -7581,6 +9160,7 @@
             this.TotalUnclaimedPic.TabIndex = 6;
             this.TotalUnclaimedPic.TabStop = false;
             this.TotalUnclaimedPic.UseTransparentBackground = true;
+            this.TotalUnclaimedPic.Click += new System.EventHandler(this.TotalUnclaimedPic_Click);
             // 
             // TotalClaimedPic
             // 
@@ -7593,6 +9173,7 @@
             this.TotalClaimedPic.TabIndex = 5;
             this.TotalClaimedPic.TabStop = false;
             this.TotalClaimedPic.UseTransparentBackground = true;
+            this.TotalClaimedPic.Click += new System.EventHandler(this.TotalClaimedPic_Click);
             // 
             // TotalUnpaidDashPic
             // 
@@ -7605,6 +9186,7 @@
             this.TotalUnpaidDashPic.TabIndex = 4;
             this.TotalUnpaidDashPic.TabStop = false;
             this.TotalUnpaidDashPic.UseTransparentBackground = true;
+            this.TotalUnpaidDashPic.Click += new System.EventHandler(this.TotalUnpaidDashPic_Click);
             // 
             // TotalPaidDashPIc
             // 
@@ -7630,6 +9212,7 @@
             this.EarningDashPic.TabIndex = 2;
             this.EarningDashPic.TabStop = false;
             this.EarningDashPic.UseTransparentBackground = true;
+            this.EarningDashPic.Click += new System.EventHandler(this.EarningDashPic_Click);
             // 
             // inventoryDashPic
             // 
@@ -7642,6 +9225,7 @@
             this.inventoryDashPic.TabIndex = 1;
             this.inventoryDashPic.TabStop = false;
             this.inventoryDashPic.UseTransparentBackground = true;
+            this.inventoryDashPic.Click += new System.EventHandler(this.inventoryDashPic_Click);
             // 
             // DashboardTitlePic
             // 
@@ -7655,6 +9239,7 @@
             this.DashboardTitlePic.TabIndex = 0;
             this.DashboardTitlePic.TabStop = false;
             this.DashboardTitlePic.UseTransparentBackground = true;
+            this.DashboardTitlePic.Click += new System.EventHandler(this.DashboardTitlePic_Click);
             // 
             // admin_inventory
             // 
@@ -7663,12 +9248,14 @@
             this.admin_inventory.Controls.Add(this.inventoryTable);
             this.admin_inventory.Controls.Add(this.aaa);
             this.admin_inventory.Controls.Add(this.guna2Shapes1);
+            this.admin_inventory.Controls.Add(this.add);
             this.admin_inventory.Location = new System.Drawing.Point(184, 4);
             this.admin_inventory.Margin = new System.Windows.Forms.Padding(0);
             this.admin_inventory.Name = "admin_inventory";
             this.admin_inventory.Size = new System.Drawing.Size(1610, 808);
             this.admin_inventory.TabIndex = 1;
             this.admin_inventory.Text = "Inventory";
+            this.admin_inventory.Click += new System.EventHandler(this.admin_inventory_Click);
             // 
             // guna2TextBox3
             // 
@@ -7692,6 +9279,7 @@
             this.guna2TextBox3.Size = new System.Drawing.Size(218, 51);
             this.guna2TextBox3.TabIndex = 12;
             this.guna2TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // inventoryTable
             // 
@@ -7729,6 +9317,7 @@
             this.aaa.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.aaa.Size = new System.Drawing.Size(48, 34);
             this.aaa.TabIndex = 10;
+            this.aaa.TextChanged += new System.EventHandler(this.aaa_TextChanged);
             // 
             // guna2Shapes1
             // 
@@ -7748,6 +9337,7 @@
             this.guna2Shapes1.Text = "guna2Shapes1";
             this.guna2Shapes1.UseTransparentBackground = true;
             this.guna2Shapes1.Zoom = 100;
+            this.guna2Shapes1.Click += new System.EventHandler(this.guna2Shapes1_Click);
             // 
             // admin_purchaseHistory
             // 
@@ -7762,6 +9352,7 @@
             this.admin_purchaseHistory.Size = new System.Drawing.Size(1610, 808);
             this.admin_purchaseHistory.TabIndex = 2;
             this.admin_purchaseHistory.Text = "Purchase History";
+            this.admin_purchaseHistory.Click += new System.EventHandler(this.admin_purchaseHistory_Click);
             // 
             // guna2TextBox4
             // 
@@ -7785,6 +9376,7 @@
             this.guna2TextBox4.Size = new System.Drawing.Size(174, 51);
             this.guna2TextBox4.TabIndex = 13;
             this.guna2TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
             // receiptTable
             // 
@@ -7794,6 +9386,7 @@
             this.receiptTable.Name = "receiptTable";
             this.receiptTable.Size = new System.Drawing.Size(1576, 636);
             this.receiptTable.TabIndex = 10;
+            this.receiptTable.Paint += new System.Windows.Forms.PaintEventHandler(this.receiptTable_Paint);
             // 
             // purchaseHeader
             // 
@@ -7820,6 +9413,7 @@
             this.purchaseHeader.ShadowDecoration.Color = System.Drawing.Color.Transparent;
             this.purchaseHeader.Size = new System.Drawing.Size(1516, 34);
             this.purchaseHeader.TabIndex = 8;
+            this.purchaseHeader.TextChanged += new System.EventHandler(this.purchaseHeader_TextChanged);
             // 
             // historyTableHeader
             // 
@@ -7839,6 +9433,7 @@
             this.historyTableHeader.Text = "guna2Shapes1";
             this.historyTableHeader.UseTransparentBackground = true;
             this.historyTableHeader.Zoom = 100;
+            this.historyTableHeader.Click += new System.EventHandler(this.historyTableHeader_Click);
             // 
             // lspulogo
             // 
@@ -7855,6 +9450,7 @@
             this.lspulogo.TabIndex = 4;
             this.lspulogo.TabStop = false;
             this.lspulogo.UseTransparentBackground = true;
+            this.lspulogo.Click += new System.EventHandler(this.lspulogo_Click);
             // 
             // AdminSidePanel
             // 
@@ -7867,6 +9463,7 @@
             this.AdminSidePanel.TabIndex = 16;
             this.AdminSidePanel.TabStop = false;
             this.AdminSidePanel.UseTransparentBackground = true;
+            this.AdminSidePanel.Click += new System.EventHandler(this.AdminSidePanel_Click);
             // 
             // adminHeader
             // 
@@ -7892,6 +9489,7 @@
             this.Checkout.Controls.Add(this.guna2CustomGradientPanel14);
             this.Checkout.Controls.Add(this.buybutton);
             this.Checkout.Controls.Add(this.Printbutton);
+            this.Checkout.Controls.Add(this.again);
             this.Checkout.Location = new System.Drawing.Point(4, 22);
             this.Checkout.Name = "Checkout";
             this.Checkout.Padding = new System.Windows.Forms.Padding(3);
@@ -7899,6 +9497,7 @@
             this.Checkout.TabIndex = 4;
             this.Checkout.Text = "Checkout";
             this.Checkout.UseVisualStyleBackColor = true;
+            this.Checkout.Click += new System.EventHandler(this.Checkout_Click);
             // 
             // button2
             // 
@@ -7929,6 +9528,7 @@
             this.receiptPanel.Name = "receiptPanel";
             this.receiptPanel.Size = new System.Drawing.Size(1240, 655);
             this.receiptPanel.TabIndex = 0;
+            this.receiptPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.receiptPanel_Paint);
             // 
             // guna2CustomGradientPanel14
             // 
@@ -7949,6 +9549,7 @@
             this.guna2CustomGradientPanel14.Name = "guna2CustomGradientPanel14";
             this.guna2CustomGradientPanel14.Size = new System.Drawing.Size(1926, 258);
             this.guna2CustomGradientPanel14.TabIndex = 12;
+            this.guna2CustomGradientPanel14.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel14_Paint);
             // 
             // guna2CustomGradientPanel15
             // 
@@ -7974,6 +9575,7 @@
             this.guna2CustomGradientPanel15.Name = "guna2CustomGradientPanel15";
             this.guna2CustomGradientPanel15.Size = new System.Drawing.Size(1926, 258);
             this.guna2CustomGradientPanel15.TabIndex = 12;
+            this.guna2CustomGradientPanel15.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel15_Paint);
             // 
             // guna2PictureBox37
             // 
@@ -7986,6 +9588,7 @@
             this.guna2PictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox37.TabIndex = 15;
             this.guna2PictureBox37.TabStop = false;
+            this.guna2PictureBox37.Click += new System.EventHandler(this.guna2PictureBox37_Click);
             // 
             // guna2PictureBox38
             // 
@@ -7998,6 +9601,7 @@
             this.guna2PictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox38.TabIndex = 14;
             this.guna2PictureBox38.TabStop = false;
+            this.guna2PictureBox38.Click += new System.EventHandler(this.guna2PictureBox38_Click);
             // 
             // guna2PictureBox39
             // 
@@ -8010,6 +9614,7 @@
             this.guna2PictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox39.TabIndex = 11;
             this.guna2PictureBox39.TabStop = false;
+            this.guna2PictureBox39.Click += new System.EventHandler(this.guna2PictureBox39_Click);
             // 
             // guna2PictureBox40
             // 
@@ -8022,6 +9627,7 @@
             this.guna2PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox40.TabIndex = 13;
             this.guna2PictureBox40.TabStop = false;
+            this.guna2PictureBox40.Click += new System.EventHandler(this.guna2PictureBox40_Click);
             // 
             // guna2PictureBox41
             // 
@@ -8034,6 +9640,7 @@
             this.guna2PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox41.TabIndex = 12;
             this.guna2PictureBox41.TabStop = false;
+            this.guna2PictureBox41.Click += new System.EventHandler(this.guna2PictureBox41_Click);
             // 
             // guna2PictureBox25
             // 
@@ -8046,6 +9653,7 @@
             this.guna2PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox25.TabIndex = 10;
             this.guna2PictureBox25.TabStop = false;
+            this.guna2PictureBox25.Click += new System.EventHandler(this.guna2PictureBox25_Click);
             // 
             // guna2PictureBox26
             // 
@@ -8058,6 +9666,7 @@
             this.guna2PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox26.TabIndex = 9;
             this.guna2PictureBox26.TabStop = false;
+            this.guna2PictureBox26.Click += new System.EventHandler(this.guna2PictureBox26_Click_1);
             // 
             // guna2PictureBox27
             // 
@@ -8070,6 +9679,7 @@
             this.guna2PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox27.TabIndex = 8;
             this.guna2PictureBox27.TabStop = false;
+            this.guna2PictureBox27.Click += new System.EventHandler(this.guna2PictureBox27_Click_1);
             // 
             // guna2PictureBox28
             // 
@@ -8082,6 +9692,7 @@
             this.guna2PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox28.TabIndex = 7;
             this.guna2PictureBox28.TabStop = false;
+            this.guna2PictureBox28.Click += new System.EventHandler(this.guna2PictureBox28_Click_1);
             // 
             // guna2HtmlLabel8
             // 
@@ -8093,6 +9704,7 @@
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(1568, 80);
             this.guna2HtmlLabel8.TabIndex = 6;
             this.guna2HtmlLabel8.Text = "LSPU - SPCC BUSINESS CENTER INQUIRIES";
+            this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
             // 
             // guna2PictureBox29
             // 
@@ -8105,6 +9717,7 @@
             this.guna2PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox29.TabIndex = 1;
             this.guna2PictureBox29.TabStop = false;
+            this.guna2PictureBox29.Click += new System.EventHandler(this.guna2PictureBox29_Click_1);
             // 
             // guna2PictureBox30
             // 
@@ -8117,6 +9730,7 @@
             this.guna2PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox30.TabIndex = 6;
             this.guna2PictureBox30.TabStop = false;
+            this.guna2PictureBox30.Click += new System.EventHandler(this.guna2PictureBox30_Click);
             // 
             // guna2CirclePictureBox6
             // 
@@ -8130,6 +9744,7 @@
             this.guna2CirclePictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox6.TabIndex = 2;
             this.guna2CirclePictureBox6.TabStop = false;
+            this.guna2CirclePictureBox6.Click += new System.EventHandler(this.guna2CirclePictureBox6_Click);
             // 
             // paymentIdtfy
             // 
@@ -8140,6 +9755,7 @@
             this.paymentIdtfy.TabIndex = 3;
             this.paymentIdtfy.Text = "label1";
             this.paymentIdtfy.Visible = false;
+            this.paymentIdtfy.Click += new System.EventHandler(this.paymentIdtfy_Click);
             // 
             // guna2PictureBox31
             // 
@@ -8152,6 +9768,7 @@
             this.guna2PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox31.TabIndex = 10;
             this.guna2PictureBox31.TabStop = false;
+            this.guna2PictureBox31.Click += new System.EventHandler(this.guna2PictureBox31_Click_1);
             // 
             // guna2PictureBox32
             // 
@@ -8164,6 +9781,7 @@
             this.guna2PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox32.TabIndex = 9;
             this.guna2PictureBox32.TabStop = false;
+            this.guna2PictureBox32.Click += new System.EventHandler(this.guna2PictureBox32_Click);
             // 
             // guna2PictureBox33
             // 
@@ -8176,6 +9794,7 @@
             this.guna2PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox33.TabIndex = 8;
             this.guna2PictureBox33.TabStop = false;
+            this.guna2PictureBox33.Click += new System.EventHandler(this.guna2PictureBox33_Click);
             // 
             // guna2PictureBox34
             // 
@@ -8188,6 +9807,7 @@
             this.guna2PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox34.TabIndex = 7;
             this.guna2PictureBox34.TabStop = false;
+            this.guna2PictureBox34.Click += new System.EventHandler(this.guna2PictureBox34_Click);
             // 
             // guna2CirclePictureBox7
             // 
@@ -8201,6 +9821,7 @@
             this.guna2CirclePictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox7.TabIndex = 2;
             this.guna2CirclePictureBox7.TabStop = false;
+            this.guna2CirclePictureBox7.Click += new System.EventHandler(this.guna2CirclePictureBox7_Click);
             // 
             // guna2HtmlLabel9
             // 
@@ -8212,6 +9833,7 @@
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(1568, 80);
             this.guna2HtmlLabel9.TabIndex = 6;
             this.guna2HtmlLabel9.Text = "LSPU - SPCC BUSINESS CENTER INQUIRIES";
+            this.guna2HtmlLabel9.Click += new System.EventHandler(this.guna2HtmlLabel9_Click);
             // 
             // guna2PictureBox35
             // 
@@ -8224,6 +9846,7 @@
             this.guna2PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox35.TabIndex = 1;
             this.guna2PictureBox35.TabStop = false;
+            this.guna2PictureBox35.Click += new System.EventHandler(this.guna2PictureBox35_Click_1);
             // 
             // guna2PictureBox36
             // 
@@ -8236,6 +9859,7 @@
             this.guna2PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox36.TabIndex = 6;
             this.guna2PictureBox36.TabStop = false;
+            this.guna2PictureBox36.Click += new System.EventHandler(this.guna2PictureBox36_Click);
             // 
             // buybutton
             // 
@@ -8254,7 +9878,7 @@
             this.buybutton.Name = "buybutton";
             this.buybutton.Size = new System.Drawing.Size(256, 49);
             this.buybutton.TabIndex = 14;
-            this.buybutton.Text = "Pay";
+            this.buybutton.Text = "Generate QR";
             this.buybutton.Click += new System.EventHandler(this.buybutton_Click);
             // 
             // Printbutton
@@ -8277,12 +9901,56 @@
             this.Printbutton.Text = "Print";
             this.Printbutton.Click += new System.EventHandler(this.Printbutton_Click);
             // 
+            // again
+            // 
+            this.again.BackColor = System.Drawing.Color.Transparent;
+            this.again.BorderRadius = 13;
+            this.again.BorderThickness = 2;
+            this.again.DisabledState.BorderColor = System.Drawing.Color.Black;
+            this.again.DisabledState.CustomBorderColor = System.Drawing.Color.Black;
+            this.again.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.again.DisabledState.ForeColor = System.Drawing.Color.White;
+            this.again.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.again.FocusedColor = System.Drawing.Color.White;
+            this.again.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.again.ForeColor = System.Drawing.Color.White;
+            this.again.Location = new System.Drawing.Point(957, 976);
+            this.again.Name = "again";
+            this.again.Size = new System.Drawing.Size(256, 49);
+            this.again.TabIndex = 16;
+            this.again.Text = "Purchase again?";
+            this.again.Click += new System.EventHandler(this.again_Click);
+            // 
             // mySqlCommand1
             // 
             this.mySqlCommand1.CacheAge = 0;
             this.mySqlCommand1.Connection = null;
             this.mySqlCommand1.EnableCaching = false;
             this.mySqlCommand1.Transaction = null;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // add
+            // 
+            this.add.BackColor = System.Drawing.Color.Transparent;
+            this.add.BorderRadius = 13;
+            this.add.BorderThickness = 2;
+            this.add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(125)))), ((int)(((byte)(226)))));
+            this.add.FocusedColor = System.Drawing.Color.White;
+            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.ForeColor = System.Drawing.Color.White;
+            this.add.Location = new System.Drawing.Point(1191, 30);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(369, 49);
+            this.add.TabIndex = 13;
+            this.add.Text = "Add New Item";
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // Main
             // 
@@ -8312,6 +9980,8 @@
             this.guna2CustomGradientPanel6.ResumeLayout(false);
             this.fab_overlay.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.all_secUP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_firstDOWN)).EndInit();
             this.panel2.ResumeLayout(false);
             this.all_itemPanelSixteenth.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.allSixteenth_Overlay)).EndInit();
@@ -8555,8 +10225,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.other_overlay5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.other_itemPic5)).EndInit();
             this.other_Panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.other_overlay4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_itemPic4)).EndInit();
             this.other_Panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.other_overlay3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.other_itemPic3)).EndInit();
@@ -8566,6 +10236,57 @@
             this.other_Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.other_overlay1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.other_itemPic1)).EndInit();
+            this.tabPage9.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.all_itemPanelThirtySecond.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allThirtySecond_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThirtySecond)).EndInit();
+            this.all_itemPanelThirtyFirst.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allThirtyFirst_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThirtyFirst)).EndInit();
+            this.all_itemPanelThirtieth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allThirtieth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicThirtieth)).EndInit();
+            this.all_itemPanelTwentyNinth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyNinth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyNinth)).EndInit();
+            this.all_itemPanelTwentyEighth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyEighth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyEighth)).EndInit();
+            this.all_itemPanelTwentySeventh.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentySeventh_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentySeventh)).EndInit();
+            this.all_itemPanelTwentySixth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentySixth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentySixth)).EndInit();
+            this.all_itemPanelTwentyFifth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyFifth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyFifth)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.all_itemPanelTwentyFourth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyFourth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyFourth)).EndInit();
+            this.all_itemPanelTwentyThird.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyThird_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyThird)).EndInit();
+            this.all_itemPanelTwentySecond.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentySecond_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentySecond)).EndInit();
+            this.all_itemPanelTwentyFirst.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentyFirst_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentyFirst)).EndInit();
+            this.all_itemPanelTwentieth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allTwentieth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicTwentieth)).EndInit();
+            this.all_itemPanelNineteenth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allNineteenth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicNineteenth)).EndInit();
+            this.all_itemPanelEighteenth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.alleighteenth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicEighteenth)).EndInit();
+            this.all_itemPanelSeventeenth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allSeventeenth_Overlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.all_itemPicSeventeenth)).EndInit();
             this.guna2ShadowPanel3.ResumeLayout(false);
             this.guna2ShadowPanel3.PerformLayout();
             this.fifthItem.ResumeLayout(false);
@@ -8609,8 +10330,8 @@
             this.guna2CustomGradientPanel3.PerformLayout();
             this.guna2CustomGradientPanel4.ResumeLayout(false);
             this.guna2CustomGradientPanel4.PerformLayout();
-            this.guna2CustomGradientPanel5.ResumeLayout(false);
-            this.guna2CustomGradientPanel5.PerformLayout();
+            this.all_firstUP.ResumeLayout(false);
+            this.all_firstUP.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox21)).EndInit();
@@ -8716,7 +10437,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel6;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel5;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel all_firstUP;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox19;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox20;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox21;
@@ -9240,9 +10961,81 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox35;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox36;
         public Guna.UI2.WinForms.Guna2Button buybutton;
-        private Guna.UI2.WinForms.Guna2Button button2;
         public Guna.UI2.WinForms.Guna2Button Printbutton;
         private System.Windows.Forms.Timer timer1;
+        public Guna.UI2.WinForms.Guna2Button button2;
+        public Guna.UI2.WinForms.Guna2Button again;
+        private System.Windows.Forms.TabPage tabPage9;
+        public System.Windows.Forms.Label all_itemLblThirtySecond;
+        public System.Windows.Forms.Label all_itemLblThirtyFirst;
+        public System.Windows.Forms.Label all_itemLblThirtieth;
+        public System.Windows.Forms.Label all_itemLblTwentyNinth;
+        public System.Windows.Forms.Label all_itemLblTwentyEighth;
+        public System.Windows.Forms.Label all_itemLblTwentySeventh;
+        public System.Windows.Forms.Label all_itemLblTwentySixth;
+        public System.Windows.Forms.Label all_itemLblTwentyFifth;
+        public System.Windows.Forms.Label all_itemLblTwentyFourth;
+        public System.Windows.Forms.Label all_itemLblTwentyThird;
+        public System.Windows.Forms.Label all_itemLblTwentySecond;
+        public System.Windows.Forms.Label all_itemLblTwentyFirst;
+        public System.Windows.Forms.Label all_itemLblTwentieth;
+        public System.Windows.Forms.Label all_itemLblNineteenth;
+        public System.Windows.Forms.Label all_itemLblSeventeenth;
+        public System.Windows.Forms.Label all_itemLblEighteenth;
+        private System.Windows.Forms.Panel panel11;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelThirtySecond;
+        public Guna.UI2.WinForms.Guna2PictureBox allThirtySecond_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicThirtySecond;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelThirtyFirst;
+        public Guna.UI2.WinForms.Guna2PictureBox allThirtyFirst_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicThirtyFirst;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelThirtieth;
+        public Guna.UI2.WinForms.Guna2PictureBox allThirtieth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicThirtieth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentyNinth;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentyNinth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentyNinth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentyEighth;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentyEighth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentyEighth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentySeventh;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentySeventh_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentySeventh;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentySixth;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentySixth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentySixth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentyFifth;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentyFifth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentyFifth;
+        private System.Windows.Forms.Panel panel12;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentyFourth;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentyFourth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentyFourth;
+        private Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentyThird;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentyThird_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentyThird;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentySecond;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentySecond_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentySecond;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentyFirst;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentyFirst_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentyFirst;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelTwentieth;
+        public Guna.UI2.WinForms.Guna2PictureBox allTwentieth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicTwentieth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelNineteenth;
+        public Guna.UI2.WinForms.Guna2PictureBox allNineteenth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicNineteenth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelEighteenth;
+        public Guna.UI2.WinForms.Guna2PictureBox alleighteenth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicEighteenth;
+        public Guna.UI2.WinForms.Guna2ShadowPanel all_itemPanelSeventeenth;
+        public Guna.UI2.WinForms.Guna2PictureBox allSeventeenth_Overlay;
+        private Guna.UI2.WinForms.Guna2PictureBox all_itemPicSeventeenth;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        public Guna.UI2.WinForms.Guna2PictureBox all_firstDOWN;
+        public Guna.UI2.WinForms.Guna2PictureBox all_secUP;
+        private Guna.UI2.WinForms.Guna2Button add;
     }
 }
 

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -22,7 +23,7 @@ using static kiosk.randomData;
 using static QRCoder.PayloadGenerator;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-namespace kiosk
+namespace kiosk 
 {
 
     public partial class Main : Form
@@ -79,6 +80,18 @@ namespace kiosk
         List<Guna2PictureBox> other_overlays = new List<Guna2PictureBox>();
         List<Guna2ShadowPanel> other_itemPanels = new List<Guna2ShadowPanel>();
 
+        //all items 2nd
+        //List<Guna2PictureBox> all_itemPics2nd = new List<Guna2PictureBox>();
+        //List<Guna2PictureBox> all_overlays2nd = new List<Guna2PictureBox>();
+        //List<Guna2ShadowPanel> all_itemPanels2nd = new List<Guna2ShadowPanel>();
+        //List<Label> all_itemLabel2nd = new List<Label>();
+
+
+        private List<Guna2PictureBox> allPicsCombined;
+        private List<Label> allLabelsCombined;
+        private List<Guna2PictureBox> allOverlaysCombined;
+        private List<Guna2ShadowPanel> allPanelsCombined;
+
         AddCart ac;
 
         //--------------------------------- Admin Section ---------------------------------
@@ -101,6 +114,7 @@ namespace kiosk
             InitializeComponent();
             adminIntialize();
 
+       
 
             allSeventh_Overlay.Parent = all_itemPicSeventh;    
             allSeventh_Overlay.BackColor = Color.Transparent;
@@ -154,10 +168,10 @@ namespace kiosk
         //    }
         //}
 
+
+
+
         //---------- part of inactive timer
-
-
-
         private void HookPage(Control page)
         {
             page.MouseMove += (_, __) => ResetIfOnTarget();
@@ -190,37 +204,59 @@ namespace kiosk
     //-------------------------------
 
 
+private void Main_Load(object sender, EventArgs e)
+{
+    ac = new AddCart(this);
 
+    // =======================
+    // SETUP
+    // =======================
+    SetupItemLists();
+    ResetCart();
 
-    private void Main_Load(object sender, EventArgs e)
-        {
-
-            ac = new AddCart(this);
-
-            SetupItemLists();
-            LoadStockStatus();
-            ResetCart();
-
+            LoadTotalItemCount();
+            LoadAllItemsPage(currentPage);
+            // =======================
+            // LOAD CATEGORY TABS
+            // =======================
             LoadItemsByType("shirt", top_itemPics, top_itemLabel, top_overlays, top_itemPanels);
-            LoadItemsByType("short", bot_itemPics, bot_itemLabel, bot_overlays, bot_itemPanels);
-            LoadItemsByType("pants", bot_itemPics, bot_itemLabel, bot_overlays, bot_itemPanels);
-            LoadItemsByType("fabric", fab_itemPics, fab_itemLabel, fab_overlays, fab_itemPanels);
-            LoadItemsByType("other", other_itemPics, other_itemLabel, other_overlays, other_itemPanels);
+    LoadItemsByType("short", bot_itemPics, bot_itemLabel, bot_overlays, bot_itemPanels);
+    LoadItemsByType("pants", bot_itemPics, bot_itemLabel, bot_overlays, bot_itemPanels);
+    LoadItemsByType("fabric", fab_itemPics, fab_itemLabel, fab_overlays, fab_itemPanels);
+    LoadItemsByType("other", other_itemPics, other_itemLabel, other_overlays, other_itemPanels);
 
+            // =======================
+            // MERGE ALL TAB (PAGE 1 + 2)
+            // =======================
+            //allPicsCombined = all_itemPics.Concat(all_itemPics2nd).ToList();
+            //allLabelsCombined = all_itemLabel.Concat(all_itemLabel2nd).ToList();
+            //allOverlaysCombined = all_overlays.Concat(all_overlays2nd).ToList();
+            //allPanelsCombined = all_itemPanels.Concat(all_itemPanels2nd).ToList();
 
+            // =======================
+            // LOAD ALL ITEMS (32 SLOTS)
+            // =======================
+            LoadAllItemsPage(currentPage);
 
-            ///////////////////// to remove the evry tabpage header
-           
-            tabControl1.SizeMode = TabSizeMode.Fixed;
-            tabControl1.ItemSize = new Size(0, 1);     // essentially no header
-            tabControl1.Padding = new Point(0, 0);    // no inner padding
-            tabControl1.Dock = DockStyle.Fill;
+            // =======================
+            // APPLY STOCK STATUS AFTER LOAD
+            // =======================
+            LoadStockStatus();
 
-         
+    // =======================
+    // PAGE VISIBILITY
+    // =======================
+    ToggleSecondPage();
 
+    // =======================
+    // REMOVE TAB HEADERS
+    // =======================
+    tabControl1.SizeMode = TabSizeMode.Fixed;
+    tabControl1.ItemSize = new Size(0, 1);
+    tabControl1.Padding = new Point(0, 0);
+    tabControl1.Dock = DockStyle.Fill;
+}
 
-
-        }
 
 
         //tab control buttons
@@ -385,7 +421,7 @@ namespace kiosk
                     conn.Open();
 
                         string query = @"
-                    SELECT itemId, itemName, itemStock, IMAGE_PATH 
+                    SELECT itemId, itemName, itemStock, IMAGE_PATH, isEnabled 
                     FROM tbitems
                     WHERE (@type = 'all' OR itemType = @type)
                     ORDER BY itemId ASC";
@@ -401,10 +437,12 @@ namespace kiosk
                         {
                             string itemName = reader.GetString("itemName");
                             string img = reader.GetString("IMAGE_PATH");
-                            int stock = reader.GetInt32("itemStock");
+                        int stock = reader.GetInt32("itemStock");
                             int id = reader.GetInt32("itemId");
+                        bool isEnabled = reader.GetInt32("isEnabled") == 1;
 
-                            string fullPath = Path.Combine(
+
+                        string fullPath = Path.Combine(
                                 Application.StartupPath,
                                 "images_rsrcs", "itemPics", img
                             );
@@ -417,11 +455,13 @@ namespace kiosk
 
                             labels[slotIndex].Text = itemName;
 
-                            bool notAvail = stock == 0;
-                            overlays[slotIndex].Visible = notAvail;
-                            overlays[slotIndex].BringToFront();
-                            pics[slotIndex].Enabled = !notAvail;
-                            pics[slotIndex].Visible = true;
+
+                        bool notAvail = stock == 0 || !isEnabled;
+
+                        overlays[slotIndex].Visible = notAvail;
+                        overlays[slotIndex].BringToFront();
+                        pics[slotIndex].Enabled = !notAvail;
+                        pics[slotIndex].Visible = true;
                             labels[slotIndex].Visible = true;
                             panels[slotIndex].Visible = true;
 
@@ -646,7 +686,47 @@ namespace kiosk
                 other_Panel9, other_Panel10, other_Panel11, other_Panel12,
                 other_Panel13, other_Panel14, other_Panel15, other_Panel16
             });
-        
+
+            // =======================
+            // ALL TAB SECOND (EXTENDED)
+            // =======================
+
+            // Item Pictures
+//            all_itemPics2nd.AddRange(new Guna2PictureBox[] {
+//    all_itemPicSeventeenth, all_itemPicEighteenth, all_itemPicNineteenth, all_itemPicTwentieth,
+//    all_itemPicTwentyFirst, all_itemPicTwentySecond, all_itemPicTwentyThird, all_itemPicTwentyFourth,
+//    all_itemPicTwentyFifth, all_itemPicTwentySixth, all_itemPicTwentySeventh, all_itemPicTwentyEighth,
+//    all_itemPicTwentyNinth, all_itemPicThirtieth, all_itemPicThirtyFirst, all_itemPicThirtySecond
+//});
+
+//            // Item Labels
+//            all_itemLabel2nd.AddRange(new Label[] {
+//    all_itemLblSeventeenth, all_itemLblEighteenth, all_itemLblNineteenth, all_itemLblTwentieth,
+//    all_itemLblTwentyFirst, all_itemLblTwentySecond, all_itemLblTwentyThird, all_itemLblTwentyFourth,
+//    all_itemLblTwentyFifth, all_itemLblTwentySixth, all_itemLblTwentySeventh, all_itemLblTwentyEighth,
+//    all_itemLblTwentyNinth, all_itemLblThirtieth, all_itemLblThirtyFirst, all_itemLblThirtySecond
+//});
+
+//            // Overlays
+//            all_overlays2nd.AddRange(new Guna2PictureBox[] {
+//    allSeventeenth_Overlay, alleighteenth_Overlay, allNineteenth_Overlay, allTwentieth_Overlay,
+//    allTwentyFirst_Overlay, allTwentySecond_Overlay, allTwentyThird_Overlay, allTwentyFourth_Overlay,
+//    allTwentyFifth_Overlay, allTwentySixth_Overlay, allTwentySeventh_Overlay, allTwentyEighth_Overlay,
+//    allTwentyNinth_Overlay, allThirtieth_Overlay, allThirtyFirst_Overlay, allThirtySecond_Overlay
+//});
+
+//            // Item Panels
+//            all_itemPanels2nd.AddRange(new Guna2ShadowPanel[] {
+//    all_itemPanelSeventeenth, all_itemPanelEighteenth, all_itemPanelNineteenth, all_itemPanelTwentieth,
+//    all_itemPanelTwentyFirst, all_itemPanelTwentySecond, all_itemPanelTwentyThird, all_itemPanelTwentyFourth,
+//    all_itemPanelTwentyFifth, all_itemPanelTwentySixth, all_itemPanelTwentySeventh, all_itemPanelTwentyEighth,
+//    all_itemPanelTwentyNinth, all_itemPanelThirtieth, all_itemPanelThirtyFirst, all_itemPanelThirtySecond
+//});
+
+  
+
+
+
             for (int i = 0; i < all_overlays.Count; i++)
                 BindOverlay(all_overlays[i], all_itemPics[i]);
 
@@ -661,6 +741,9 @@ namespace kiosk
 
             for (int i = 0; i < other_overlays.Count; i++)
                 BindOverlay(other_overlays[i], other_itemPics[i]);
+
+            //for (int i = 0; i < all_overlays2nd.Count; i++)
+            //    BindOverlay(all_overlays2nd[i], all_itemPics2nd[i]);
 
             foreach (var pic in all_itemPics)
                 pic.Click += ItemPic_Click;
@@ -677,7 +760,12 @@ namespace kiosk
             foreach (var pic in other_itemPics)
                 pic.Click += ItemPic_Click;
 
+            //foreach (var pic in all_itemPics2nd)
+            //    pic.Click += ItemPic_Click;
+
         }
+
+
 
         //private void UpdateOverlayForItem(int itemId, int stock, string imgPath)
         //{
@@ -701,7 +789,7 @@ namespace kiosk
             using (MySqlConnection conn = new MySqlConnection(mycon))
             {
                 conn.Open();
-                string query = "SELECT itemId, itemName, itemStock, itemType, IMAGE_PATH FROM tbitems ORDER BY itemId ASC";
+                string query = "SELECT itemId, itemName, itemStock, itemType, IMAGE_PATH, isEnabled FROM tbitems ORDER BY itemId ASC";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 using (MySqlDataReader reader = cmd.ExecuteReader())
@@ -716,6 +804,8 @@ namespace kiosk
                         int stock = reader.GetInt32("itemStock");
                         string type = reader.GetString("itemType").ToLower(); // shirt, pants, fabric, other
                         string imgFileName = reader.GetString("IMAGE_PATH");
+                        bool isEnabled = reader.GetInt32("isEnabled") == 1;
+
                         string fullPath = Path.Combine(Application.StartupPath, "images_rsrcs", "itemPics", imgFileName);
 
                         Image img = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
@@ -725,14 +815,19 @@ namespace kiosk
                         {
                             all_itemPics[allIndex].Image = img;
                             all_itemLabel[allIndex].Text = name;
-                            all_itemPics[allIndex].Enabled = stock > 0;
-                            all_overlays[allIndex].Visible = stock == 0;
+
+                            bool notAvail = stock == 0 || !isEnabled;
+
+                            all_itemPics[allIndex].Enabled = !notAvail;
+                            all_overlays[allIndex].Visible = notAvail;
                             all_overlays[allIndex].BringToFront();
+
                             all_itemPics[allIndex].Visible = true;
                             all_itemPanels[allIndex].Visible = true;
                             all_itemLabel[allIndex].Visible = true;
                             all_itemPics[allIndex].Tag = id;
                             all_itemLabel[allIndex].Tag = id;
+
                             allIndex++;
                         }
 
@@ -1272,16 +1367,18 @@ namespace kiosk
             receiptModal.BringToFront();
         }
 
-        public void showInventoryModal(int stock, int itemId)
+        public void showInventoryModal(int itemId, string name, string type,
+                      decimal price, int stock, string imagePath)
         {
             closeModal();
-            inventoryModal = new InventoryModal(stock, itemId, inventoryTable);
+            inventoryModal = new InventoryModal( itemId, name, type, price, stock, imagePath, inventoryTable);
             Admin.Controls.Add(inventoryModal);
             int x = (Admin.Width - inventoryModal.Width) / 2;
             int y = (Admin.Height - inventoryModal.Height) / 2;
             inventoryModal.Location = new Point(x, y);
             inventoryModal.BringToFront();
         }
+
 
         public void closeModal()
         {
@@ -1340,7 +1437,8 @@ namespace kiosk
                 MessageBoxButtons.OK
             );
             button2.Visible = false;
-            Printbutton.Location = new Point(814, 976);
+            Printbutton.Visible = false;
+            again.Location = new Point(814, 976);
         
 
 
@@ -1348,10 +1446,10 @@ namespace kiosk
             ShowCountdownMessage();
         }
 
-        private void ShowCountdownMessage()
+        public void ShowCountdownMessage()
         {
-
             ClearCartWithoutRestoringStock();
+
             Form countdownForm = new Form
             {
                 Text = "Confirmation",
@@ -1367,7 +1465,7 @@ namespace kiosk
             {
                 Dock = DockStyle.Top,
                 Height = 50,
-                TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+                TextAlign = ContentAlignment.MiddleCenter
             };
 
             Button okButton = new Button
@@ -1418,13 +1516,13 @@ namespace kiosk
             if (result == DialogResult.OK)
             {
                 tabControl1.SelectedTab = tabPage1;
-                Printbutton.Visible = true;
-
                 button2.Visible = true;
-                Printbutton.Location = new Point(957, 976);
-
+                Printbutton.Visible = true;
+                again.Location = new Point(957, 976);
             }
         }
+
+
 
         private void guna2PictureBox27_Click(object sender, EventArgs e)
         {
@@ -1442,12 +1540,16 @@ namespace kiosk
 
         }
 
-        private void guna2PictureBox31_Click(object sender, EventArgs e)
+        public void refreshAdminInven()
         {
             closeModal();
             loadDashboardData();
             inventoryDB.Table(inventoryTable);
             receiptDB.Table(receiptTable);
+        }
+        private void guna2PictureBox31_Click(object sender, EventArgs e)
+        {
+            refreshAdminInven();
         }
 
         private void guna2PictureBox26_Click(object sender, EventArgs e)
@@ -1470,6 +1572,2926 @@ namespace kiosk
         {
 
         }
+
+        private void again_Click(object sender, EventArgs e)
+        {
+
+            ClearCartWithoutRestoringStock();
+            tabControl1.SelectedTab = tabPage1;
+            button2.Visible = true;
+            Printbutton.Visible = true;
+            again.Location = new Point(957, 976);
+
+            tabControl1.SelectedTab = tabPage1;
+        }
+
+        private void guna2PictureBox45_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void footer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2GradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_overlay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblSixteenth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblFifteenth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblFourteenth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblThirteenth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblTwelfth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblEleventh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblTenth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblNinth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblEighth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblSeventh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblSixth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblFifth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblFourth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblThird_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblFirst_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemLblSecond_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelSixteenth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allSixteenth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelFifteenth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allFifteenth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelFourteenth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allFourteenth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelThirteenth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allThirteenth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTwelfth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTwelfth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelEleventh_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allEleventh_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTenth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTenth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelNinth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allNinth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelEighth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allEighth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelSeventh_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allSeventh_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelSixth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allSixth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelFifth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allFifth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelFourth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allFourth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelThird_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allThird_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelSecond_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allSecond_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelFirst_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allFirst_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_lbl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void top_Panel16_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void top_Panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Top_Overlay1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void top_itemPic1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_lbl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_Panel16_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_Panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bot_overlay1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bot_itemPic1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_lbl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_Panel16_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_Panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fab_itemPic1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fab_overlay1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_lbl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_Panel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel16_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_Panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_itemPic4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_overlay4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void other_overlay1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void other_itemPic1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fifthItem_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fifthItemSize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label46_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label47_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fifthItemType_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fifthItemName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label50_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fifthItemPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label52_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fifthItemQty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label54_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label55_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fifthPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fifthID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fourthItem_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fourthItemSize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fourthItemType_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fourthItemName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label39_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fourthItemPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label41_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fourthItemQty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label43_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label44_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fourthPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fourthID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thirdItem_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void thirdItemSize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thirdItemType_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thirdItemName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thirdItemPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label30_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thirdItemQty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thirdPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thirdID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondItem_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void secondItemSize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondItemType_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondItemName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondItemPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondItemQty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void secondID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firstItem_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void firstItemSize_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firstItemType_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firstItemName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firstItemPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firstPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firstItemQty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void firstID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ttext_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2CustomGradientPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Admin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminTitlePic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void admin_tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void admin_dashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalUnclaimed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalClaimed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalUnpaid_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalPaid_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalSold_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InventoryCount_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DashboardPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminDashSide_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalUnclaimedPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalClaimedPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalUnpaidDashPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EarningDashPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inventoryDashPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DashboardTitlePic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void admin_inventory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aaa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2Shapes1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void admin_purchaseHistory_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void receiptTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void purchaseHeader_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void historyTableHeader_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void lspulogo_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void AdminSidePanel_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void Checkout_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void receiptPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+       private void guna2CustomGradientPanel14_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void guna2CustomGradientPanel15_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void guna2PictureBox37_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox38_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox39_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox40_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox41_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox25_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox26_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox27_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox28_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox29_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox30_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2CirclePictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void paymentIdtfy_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox31_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox32_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox33_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox34_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2CirclePictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2HtmlLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox35_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox36_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+        private void tabPage9_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label34_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void all_itemPanelThirtySecond_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void allThirtySecond_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox43_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void all_itemPanelThirtyFirst_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void allThirtyFirst_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox61_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void all_itemPanelThirtieth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void allThirtieth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox47_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void all_itemPanelTwentyNinth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void allTwentyNinth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox49_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void all_itemPanelTwentyEighth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void allTwentyEighth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void guna2PictureBox51_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTwentySeventh_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTwentySeventh_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox53_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTwentySixth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTwentySixth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox55_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTwentyFifth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTwentyFifth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox57_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTwentyFourth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTwentyFourth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox59_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTwentyThird_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTwentyThird_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTwentySecond_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTwentySecond_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPicTwentySecond_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTwentyFirst_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTwentyFirst_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPicTwentyFirst_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelTwentieth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allTwentieth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPicTwentieth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelNineteenth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allNineteenth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPicNineteenth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelEighteenth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void alleighteenth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPicEighteenth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPanelSeventeenth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void allSeventeenth_Overlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void all_itemPicSeventeenth_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+        //===================== for 2nd all section incase ma full ung first section nung all item
+        private int itemsPerPage = 16;
+        private int currentPage = 1;
+        private int totalItems = 0;
+
+        private void LoadAllItemsPage(int page)
+        {
+            int skip = (page - 1) * itemsPerPage;
+
+            using (MySqlConnection conn = new MySqlConnection(mycon))
+            {
+                conn.Open();
+                string query = @"
+    SELECT itemId, itemName, itemStock, IMAGE_PATH 
+    FROM tbitems
+    ORDER BY itemId ASC
+    LIMIT @limit OFFSET @offset";
+
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@limit", itemsPerPage);
+                cmd.Parameters.AddWithValue("@offset", skip);
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    int slotIndex = 0;
+
+                    while (reader.Read() && slotIndex < all_itemPics.Count)
+                    {
+                        string itemName = reader.GetString("itemName");
+                        string img = reader.GetString("IMAGE_PATH");
+                        int stock = reader.GetInt32("itemStock");
+                        int id = reader.GetInt32("itemId");
+
+                        string fullPath = Path.Combine(Application.StartupPath, "images_rsrcs", "itemPics", img);
+
+                        all_itemPics[slotIndex].Image = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
+                        all_itemLabel[slotIndex].Text = itemName;
+
+                        bool notAvail = stock == 0;
+                        all_overlays[slotIndex].Visible = notAvail;
+                        all_overlays[slotIndex].BringToFront();
+                        all_itemPics[slotIndex].Enabled = !notAvail;
+                        all_itemPics[slotIndex].Visible = true;
+                        all_itemLabel[slotIndex].Visible = true;
+                        all_itemPanels[slotIndex].Visible = true;
+
+                        all_itemPics[slotIndex].Tag = id;
+                        all_itemLabel[slotIndex].Tag = id;
+
+                        slotIndex++;
+                    }
+
+                    // Hide unused slots
+                    for (int i = slotIndex; i < all_itemPics.Count; i++)
+                    {
+                        all_itemPics[i].Visible = false;
+                        all_itemLabel[i].Visible = false;
+                        all_itemPanels[i].Visible = false;
+                        all_overlays[i].Visible = false;
+                    }
+                }
+            }
+
+            // Show/hide page navigation buttons
+            all_firstDOWN.Visible = page * itemsPerPage < totalItems;
+            all_secUP.Visible = page > 1;
+        }
+
+        private void LoadTotalItemCount()
+        {
+            using (MySqlConnection conn = new MySqlConnection(mycon))
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM tbitems";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                totalItems = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+        }
+
+
+        private void ToggleSecondPage()
+        {
+            // Page 2 exists if total items > itemsPerPage
+            all_firstDOWN.Visible = totalItems > itemsPerPage;
+            all_secUP.Visible = false; // initially on page 1
+        }
+        private void all_firstDOWN_Click(object sender, EventArgs e)
+        {
+            if (currentPage * itemsPerPage >= totalItems) return;  
+            currentPage++;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = true;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
+        }
+
+        private void all_secUP_Click(object sender, EventArgs e)
+        {
+            if (currentPage <= 1) return;
+            currentPage--;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = currentPage > 1;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
+            LoadStockStatus();
+            
+        }
+
+        private void add_Click(object sender, EventArgs e)
+        {
+            AddNewItem ani = new AddNewItem();
+            ani.ShowDialog();
+        }
+
+
+
 
 
 

@@ -35,6 +35,7 @@
             this.qrPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.resultLabel = new System.Windows.Forms.Label();
             this.exitBox = new System.Windows.Forms.PictureBox();
+            this.print = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.qrPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitBox)).BeginInit();
             this.SuspendLayout();
@@ -62,14 +63,14 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(370, 20);
             this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            //this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.button1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(40, 524);
+            this.button1.Location = new System.Drawing.Point(39, 527);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(626, 50);
             this.button1.TabIndex = 3;
@@ -90,12 +91,13 @@
             // 
             // resultLabel
             // 
-            this.resultLabel.AutoSize = true;
-            this.resultLabel.Location = new System.Drawing.Point(334, 351);
+            this.resultLabel.AutoEllipsis = true;
+            this.resultLabel.Location = new System.Drawing.Point(289, 345);
             this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(58, 13);
+            this.resultLabel.Size = new System.Drawing.Size(126, 35);
             this.resultLabel.TabIndex = 23;
             this.resultLabel.Text = "resultLabel";
+            this.resultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // exitBox
             // 
@@ -108,6 +110,19 @@
             this.exitBox.TabStop = false;
             this.exitBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // print
+            // 
+            this.print.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.print.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print.ForeColor = System.Drawing.SystemColors.Control;
+            this.print.Location = new System.Drawing.Point(39, 527);
+            this.print.Name = "print";
+            this.print.Size = new System.Drawing.Size(626, 50);
+            this.print.TabIndex = 25;
+            this.print.Text = "Print Receipt";
+            this.print.UseVisualStyleBackColor = false;
+            this.print.Click += new System.EventHandler(this.print_Click);
+            // 
             // paymentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,8 +131,9 @@
             this.Controls.Add(this.exitBox);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.qrPictureBox);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.print);
             this.Controls.Add(this.guna2Shapes1);
             this.Name = "paymentControl";
             this.Size = new System.Drawing.Size(700, 605);
@@ -136,5 +152,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox qrPictureBox;
         private System.Windows.Forms.Label resultLabel;
         private System.Windows.Forms.PictureBox exitBox;
+        private System.Windows.Forms.Button print;
     }
 }

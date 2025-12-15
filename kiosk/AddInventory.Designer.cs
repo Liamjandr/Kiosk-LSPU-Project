@@ -56,8 +56,9 @@
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(79, 37);
             this.Delete.TabIndex = 19;
-            this.Delete.Text = "delete";
+            this.Delete.Text = "Delete";
             this.Delete.UseTransparentBackground = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // isEnable
             // 

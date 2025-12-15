@@ -54,9 +54,10 @@ namespace kiosk
                                         ID = reader.GetInt32("itemId").ToString(),
                                         Type = reader.GetString("itemType"),
                                         Description = reader.GetString("itemName"),
-                                        Price = reader.GetInt32("itemPrice"),
+                                        Price = reader.GetDecimal("itemPrice"),
                                         Stock = reader.GetInt32("itemStock"),
-                                        ImagePath = reader.GetString("IMAGE_PATH")
+                                        ImagePath = reader.GetString("IMAGE_PATH"),
+                                            isEnable = Convert.ToBoolean(reader["isEnabled"])
                                     }
                                 )
                             );
@@ -173,7 +174,7 @@ namespace kiosk
                                 new HistoryDB
                                 {
                                     ItemID = readHistory.GetInt32("ItemID"),
-                                    ImgPath = readHistory.GetString("itemImage"),
+                                    ImgPath = readHistory.GetString("itemImage"), 
                                     Name = readHistory.GetString("itemName"),
                                     Type = readHistory.GetString("itemType"),
                                     Size = readHistory.GetString("itemSize"),
@@ -339,6 +340,7 @@ namespace kiosk
         public string ImgPath { get; set; }
 
         //Transaction Info
+
         public decimal TotalAmount { get; set; }
         public decimal Cash { get; set; }
         public decimal Change { get; set; }

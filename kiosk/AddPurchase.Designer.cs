@@ -35,6 +35,7 @@
             this.Payment = new Guna.UI2.WinForms.Guna2Button();
             this.Claim = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.transac = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
             // historyTableHeader
@@ -136,19 +137,30 @@
             this.guna2Button1.FillColor = System.Drawing.Color.White;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(487, 12);
+            this.guna2Button1.Location = new System.Drawing.Point(615, 12);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(612, 37);
+            this.guna2Button1.Size = new System.Drawing.Size(535, 37);
             this.guna2Button1.TabIndex = 11;
             this.guna2Button1.Text = "View Purchase";
             this.guna2Button1.UseTransparentBackground = true;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
+            // transac
+            // 
+            this.transac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(182)))), ((int)(((byte)(255)))));
+            this.transac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transac.Location = new System.Drawing.Point(463, 18);
+            this.transac.Name = "transac";
+            this.transac.Size = new System.Drawing.Size(86, 22);
+            this.transac.TabIndex = 12;
+            this.transac.Text = "Transaction";
             // 
             // addPurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.transac);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.Claim);
             this.Controls.Add(this.Payment);
@@ -171,5 +183,6 @@
         public Guna.UI2.WinForms.Guna2Button Claim;
         public Guna.UI2.WinForms.Guna2HtmlLabel ReceiptID;
         public Guna.UI2.WinForms.Guna2Button guna2Button1;
+        public Guna.UI2.WinForms.Guna2HtmlLabel transac;
     }
 }
