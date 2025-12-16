@@ -94,6 +94,7 @@ namespace kiosk
                             result = "Payment Successful!";
                             print.Visible = true;
                             button1.Visible = false;
+                            receiptData.Cash = receiptData.TotalAmount;
                             boxstatus(Color.FromArgb(240, 253, 244), Color.FromArgb(185, 248, 207));
                             myconn.SaveReceipt(receiptData, main.paymentMethod, "true");
                         }

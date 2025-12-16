@@ -7,14 +7,17 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
+using Microsoft.Web.WebView2.WinForms;
 
 namespace kiosk
 {
     public partial class ReceiptModal : UserControl
     {
         private int FormRadius = 20;
-        List<HistoryDB> listedItems = new List<HistoryDB>();
+        createPDF createPDF = new createPDF();
+        WebView2 webPanel;
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
@@ -71,19 +74,44 @@ namespace kiosk
                 }
             }
         }
-        public ReceiptModal(List<HistoryDB> items)
+        public ReceiptModal(ReceiptGroup receipt)
         {
             InitializeComponent();
-            listedItems = items;
             this.DoubleBuffered = true;
             int radius = 40;
             this.Region = RoundRegion(radius);
-            ReceiptModal_Load();
+            ReceiptModal_Load(receipt);
         }
 
-        public void ReceiptModal_Load()
+        public async Task ReceiptModal_Load(ReceiptGroup receiptGroup)
         {
-           dataGridView1.DataSource = listedItems;
+            receiptTemplate receipt = new receiptTemplate{ 
+                receiptID = receiptGroup.ReceiptID,
+                receiptDate = receiptGroup.ReceiptDate,
+                
+                TotalAmount = receiptGroup.Items[0].TotalAmount,
+                Cash = receiptGroup.Items[0].Cash,
+                Change = receiptGroup.Items[0].Change,   
+                Items = receiptGroup.Items.Select(item => new OrderItem
+                {
+                    ItemID = item.ItemID,
+                    Name = item.Name,
+                    Quantity = item.Quantity,
+                    Price = item.Price,
+                    Size = item.Size,
+                    Type = item.Type,   
+                }).ToList()
+            };
+            pdfTemplate pdf = new pdfTemplate(receipt);
+            createPDF.generate(pdf);
+
+            webPanel = await Web.viewPDF();
+
+
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(webPanel);
+            webPanel.Dock = DockStyle.Fill;
         }
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {

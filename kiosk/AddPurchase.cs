@@ -21,14 +21,14 @@ namespace kiosk
         public string mycon = "datasource=localhost;Database=dbkiosk;username=root;convert zero datetime=true";
         string isPaid { get; set; }
         string isClaimed { get; set; }
-        List<HistoryDB> receiptItems { get; set; }
+        private ReceiptGroup receipt;
 
         string transactionType;
         public addPurchase(ReceiptGroup history)
         {
             InitializeComponent();
 
-            receiptItems = history.Items;
+            receipt = history;
             ReceiptID.Text = history.ReceiptID;
             Date.Text = history.ReceiptDate.ToString("MM/dd/yyyy");
 
@@ -150,7 +150,7 @@ namespace kiosk
         {
             var main = this.FindForm() as Main;
             if (main == null) return;
-            main.showReceiptModal(receiptItems);
+            main.showReceiptModal(receipt);
         }
 
         private void changeStatePaid(string id, string paid)

@@ -232,7 +232,7 @@ namespace kiosk
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Cash: ").Bold().FontSize(12);
-                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("0");
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Cash.ToString());
                 });
 
                 Column.Item().PaddingTop(3, Unit.Millimetre).PaddingHorizontal(2, Unit.Millimetre).Row(row =>
@@ -242,7 +242,7 @@ namespace kiosk
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(1).AlignCenter().Padding(1, Unit.Millimetre).Text("");
                     row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("Change: ").Bold().FontSize(12);
-                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text("0");
+                    row.RelativeItem(2).AlignCenter().Padding(1, Unit.Millimetre).Text(receipt.Change.ToString());
                 });
             });
         }

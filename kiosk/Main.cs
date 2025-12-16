@@ -1355,10 +1355,10 @@ private void Main_Load(object sender, EventArgs e)
             //adminSort.Items.
         }
 
-        public void showReceiptModal(List<HistoryDB> items)
+        public void showReceiptModal(ReceiptGroup receipt)
         {
             closeModal();
-            receiptModal = new ReceiptModal(items);
+            receiptModal = new ReceiptModal(receipt);
             receiptModal.TabIndex = 20;
             Admin.Controls.Add(receiptModal);
             int x = (Admin.Width - receiptModal.Width) / 2;
