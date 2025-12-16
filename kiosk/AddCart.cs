@@ -288,17 +288,16 @@ namespace kiosk
                 return;
             }
 
-         
-                //mainForm.SetupItemLists();
-            mainForm.LoadStockStatus();
 
-
-            // =============================
-            // 5. RESET UI IN ADDCART FORM
-            // =============================
+            // Reset UI
             sBtn.Checked = mBtn.Checked = lBtn.Checked = xBtn.Checked = xxBtn.Checked = false;
             qty.Text = "1";
 
+            // Update main form
+            mainForm.LoadAllItemsPage(mainForm.currentPage);
+            mainForm.LoadStockStatus();
+
+            // Properly remove AddCart
             this.Close();
         }
 
