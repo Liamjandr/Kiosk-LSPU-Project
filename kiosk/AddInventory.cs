@@ -26,12 +26,14 @@ namespace kiosk
             if (item.isEnable)
             {
                 isEnable.Text = "Enabled";
-                isEnable.FillColor = Color.Green;
+                isEnable.FillColor = item.isEnable ? Color.FromArgb(240, 253, 244) : Color.FromArgb(253, 240, 240);
+                isEnable.BorderColor = item.isEnable ? Color.FromArgb(185, 248, 207) : Color.FromArgb(248, 185, 185);
             }
             else
             {
                 isEnable.Text = "Disabled";
-                isEnable.FillColor = Color.Red;
+                isEnable.FillColor = item.isEnable ? Color.FromArgb(240, 253, 244) : Color.FromArgb(253, 240, 240);
+                isEnable.BorderColor = item.isEnable ? Color.FromArgb(185, 248, 207) : Color.FromArgb(248, 185, 185);
             }
         }
 
@@ -40,8 +42,8 @@ namespace kiosk
             item.isEnable = !item.isEnable;
 
             isEnable.Text = item.isEnable ? "Enabled" : "Disabled";
-            isEnable.FillColor = item.isEnable ? Color.Green : Color.Red;
-
+            isEnable.FillColor = item.isEnable ? Color.FromArgb(240, 253, 244) : Color.FromArgb(253, 240, 240);
+            isEnable.BorderColor = item.isEnable ? Color.FromArgb(185, 248, 207) : Color.FromArgb(248, 185, 185);
             UpdateIsEnabledInDB(Convert.ToInt32(item.ID), item.isEnable);
         }
         private void UpdateIsEnabledInDB(int itemId, bool isEnabled)

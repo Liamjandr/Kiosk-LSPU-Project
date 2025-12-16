@@ -101,22 +101,23 @@ namespace kiosk
         private void LoadItemTypes()
         {
             updateItemTypeCB.Items.Clear();
-
-            using (MySqlConnection conn = new MySqlConnection(mycon))
-            {
-                conn.Open();
-                string query = "SELECT DISTINCT itemType FROM tbitems"; // or a separate table for types
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                {
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            updateItemTypeCB.Items.Add(reader.GetString("itemType"));
-                        }
-                    }
-                }
-            }
+            string[] itemTypes = { "SHIRT", "PANTS", "SHORT", "CLOTH/FABRIC" };
+            foreach (string type in itemTypes) updateItemTypeCB.Items.Add(type);
+            //using (MySqlConnection conn = new MySqlConnection(mycon))
+            //{
+            //    conn.Open();
+            //    string query = "SELECT DISTINCT itemType FROM tbitems"; // or a separate table for types
+            //    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+            //    {
+            //        using (MySqlDataReader reader = cmd.ExecuteReader())
+            //        {
+            //            while (reader.Read())
+            //            {
+            //                updateItemTypeCB.Items.Add(reader.GetString("itemType"));
+            //            }
+            //        }
+            //    }
+            //}
         }
 
         // ===================== Add item to DB =====================

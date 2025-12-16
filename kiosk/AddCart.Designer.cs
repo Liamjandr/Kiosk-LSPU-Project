@@ -42,6 +42,7 @@
             this.guna2PictureBox24 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.prodIMG = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.prodID = new System.Windows.Forms.Label();
             this.prodName = new System.Windows.Forms.Label();
             this.subName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.qty = new Guna.UI2.WinForms.Guna2TextBox();
             this.incr = new Guna.UI2.WinForms.Guna2Button();
             this.decr = new Guna.UI2.WinForms.Guna2Button();
-            this.prodID = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox19)).BeginInit();
@@ -254,9 +254,20 @@
             this.prodIMG.Location = new System.Drawing.Point(35, 14);
             this.prodIMG.Name = "prodIMG";
             this.prodIMG.Size = new System.Drawing.Size(214, 250);
-            this.prodIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.prodIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.prodIMG.TabIndex = 0;
             this.prodIMG.TabStop = false;
+            // 
+            // prodID
+            // 
+            this.prodID.AutoSize = true;
+            this.prodID.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prodID.Location = new System.Drawing.Point(207, 112);
+            this.prodID.Name = "prodID";
+            this.prodID.Size = new System.Drawing.Size(27, 21);
+            this.prodID.TabIndex = 39;
+            this.prodID.Text = "ID";
+            this.prodID.Visible = false;
             // 
             // prodName
             // 
@@ -555,17 +566,6 @@
             this.decr.TabIndex = 38;
             this.decr.Text = "-";
             this.decr.Click += new System.EventHandler(this.decr_Click);
-            // 
-            // prodID
-            // 
-            this.prodID.AutoSize = true;
-            this.prodID.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prodID.Location = new System.Drawing.Point(207, 112);
-            this.prodID.Name = "prodID";
-            this.prodID.Size = new System.Drawing.Size(27, 21);
-            this.prodID.TabIndex = 39;
-            this.prodID.Text = "ID";
-            this.prodID.Visible = false;
             // 
             // AddCart
             // 

@@ -107,7 +107,7 @@
             // 
             // Claim
             // 
-            this.Claim.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.Claim.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(122)))), ((int)(((byte)(185)))));
             this.Claim.BorderRadius = 8;
             this.Claim.BorderThickness = 2;
             this.Claim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -127,7 +127,7 @@
             // 
             // guna2Button1
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(55)))), ((int)(((byte)(128)))));
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(122)))), ((int)(((byte)(185)))));
             this.guna2Button1.BorderRadius = 8;
             this.guna2Button1.BorderThickness = 2;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;

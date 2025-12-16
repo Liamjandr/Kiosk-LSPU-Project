@@ -36,7 +36,7 @@ namespace kiosk
         private int FormRadius = 20;
         InventoryDB invenDb;
         public string mycon = "datasource=localhost;Database=dbkiosk;username=root;convert zero datetime=true";
-
+        string[] itemTypes = { "SHIRT", "PANTS", "SHORT", "CLOTH/FABRIC" };
         private readonly string itemImagePath = Path.Combine(Application.StartupPath, "images_rsrcs", "itemPics");
 
 
@@ -302,22 +302,23 @@ namespace kiosk
         private void LoadItemTypes()
         {
             updateItemTypeCB.Items.Clear();
+            foreach(string type in itemTypes) updateItemTypeCB.Items.Add(type);
 
-            using (MySqlConnection conn = new MySqlConnection(mycon))
-            {
-                conn.Open();
-                string query = "SELECT DISTINCT itemType FROM tbitems"; // or from a separate types table
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                {
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            updateItemTypeCB.Items.Add(reader.GetString("itemType"));
-                        }
-                    }
-                }
-            }
+            //using (MySqlConnection conn = new MySqlConnection(mycon))
+            //{
+            //    conn.Open();
+            //    string query = "SELECT DISTINCT itemType FROM tbitems"; // or from a separate types table
+            //    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+            //    {
+            //        using (MySqlDataReader reader = cmd.ExecuteReader())
+            //        {
+            //            while (reader.Read())
+            //            {
+            //                updateItemTypeCB.Items.Add(reader.GetString("itemType"));
+            //            }
+            //        }
+            //    }
+            //}
         }
 
         //loading item image to pictuerbox (for updating) --------------------------------------
