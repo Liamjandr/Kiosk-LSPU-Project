@@ -28,6 +28,7 @@ namespace kiosk
 
     public partial class Main : Form
     {
+
         //for running admin only
         public void OpenAdminTab()
         {
@@ -81,10 +82,10 @@ namespace kiosk
         List<Guna2ShadowPanel> other_itemPanels = new List<Guna2ShadowPanel>();
 
         //all items 2nd
-        //List<Guna2PictureBox> all_itemPics2nd = new List<Guna2PictureBox>();
-        //List<Guna2PictureBox> all_overlays2nd = new List<Guna2PictureBox>();
-        //List<Guna2ShadowPanel> all_itemPanels2nd = new List<Guna2ShadowPanel>();
-        //List<Label> all_itemLabel2nd = new List<Label>();
+        List<Guna2PictureBox> all_itemPics2nd = new List<Guna2PictureBox>();
+        List<Guna2PictureBox> all_overlays2nd = new List<Guna2PictureBox>();
+        List<Guna2ShadowPanel> all_itemPanels2nd = new List<Guna2ShadowPanel>();
+        List<Label> all_itemLabel2nd = new List<Label>();
 
 
         private List<Guna2PictureBox> allPicsCombined;
@@ -167,7 +168,14 @@ namespace kiosk
         //        return cp;
         //    }
         //}
-
+        //public class SmoothPanel : Panel
+        //{
+        //    public SmoothPanel()
+        //    {
+        //        this.DoubleBuffered = true;
+        //        this.ResizeRedraw = true;
+        //    }
+        //}
 
 
 
@@ -270,7 +278,6 @@ private void Main_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage3;
             fab_overlay.SelectedTab = tabPage4;
-            LoadStockStatus();
 
             ///------------- FOR COUNTER/CASH PAYMENT ---------------------------------
 
@@ -278,6 +285,15 @@ private void Main_Load(object sender, EventArgs e)
             paymentIdtfy.Text = paymentMethod;
             buybutton.Visible = false;
             Printbutton.Visible = true;
+
+            if (currentPage <= 1) return;
+            currentPage--;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = currentPage > 1;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
+            LoadStockStatus();
+
 
 
         }
@@ -298,6 +314,14 @@ private void Main_Load(object sender, EventArgs e)
             buybutton.Visible = true;
             Printbutton.Visible = false;
 
+            if (currentPage <= 1) return;
+            currentPage--;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = currentPage > 1;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
+            LoadStockStatus();
+
 
         }
 
@@ -316,7 +340,7 @@ private void Main_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
             ResetCart();
-            
+ 
 
         }
 
@@ -687,43 +711,43 @@ private void Main_Load(object sender, EventArgs e)
                 other_Panel13, other_Panel14, other_Panel15, other_Panel16
             });
 
-            // =======================
-            // ALL TAB SECOND (EXTENDED)
-            // =======================
+             //=======================
+             //ALL TAB SECOND(EXTENDED)
+             //=======================
 
-            // Item Pictures
-//            all_itemPics2nd.AddRange(new Guna2PictureBox[] {
-//    all_itemPicSeventeenth, all_itemPicEighteenth, all_itemPicNineteenth, all_itemPicTwentieth,
-//    all_itemPicTwentyFirst, all_itemPicTwentySecond, all_itemPicTwentyThird, all_itemPicTwentyFourth,
-//    all_itemPicTwentyFifth, all_itemPicTwentySixth, all_itemPicTwentySeventh, all_itemPicTwentyEighth,
-//    all_itemPicTwentyNinth, all_itemPicThirtieth, all_itemPicThirtyFirst, all_itemPicThirtySecond
-//});
+             //Item Pictures
+            all_itemPics2nd.AddRange(new Guna2PictureBox[] {
+    all_itemPicSeventeenth, all_itemPicEighteenth, all_itemPicNineteenth, all_itemPicTwentieth,
+    all_itemPicTwentyFirst, all_itemPicTwentySecond, all_itemPicTwentyThird, all_itemPicTwentyFourth,
+    all_itemPicTwentyFifth, all_itemPicTwentySixth, all_itemPicTwentySeventh, all_itemPicTwentyEighth,
+    all_itemPicTwentyNinth, all_itemPicThirtieth, all_itemPicThirtyFirst, all_itemPicThirtySecond
+});
 
-//            // Item Labels
-//            all_itemLabel2nd.AddRange(new Label[] {
-//    all_itemLblSeventeenth, all_itemLblEighteenth, all_itemLblNineteenth, all_itemLblTwentieth,
-//    all_itemLblTwentyFirst, all_itemLblTwentySecond, all_itemLblTwentyThird, all_itemLblTwentyFourth,
-//    all_itemLblTwentyFifth, all_itemLblTwentySixth, all_itemLblTwentySeventh, all_itemLblTwentyEighth,
-//    all_itemLblTwentyNinth, all_itemLblThirtieth, all_itemLblThirtyFirst, all_itemLblThirtySecond
-//});
+            // Item Labels
+            all_itemLabel2nd.AddRange(new Label[] {
+    all_itemLblSeventeenth, all_itemLblEighteenth, all_itemLblNineteenth, all_itemLblTwentieth,
+    all_itemLblTwentyFirst, all_itemLblTwentySecond, all_itemLblTwentyThird, all_itemLblTwentyFourth,
+    all_itemLblTwentyFifth, all_itemLblTwentySixth, all_itemLblTwentySeventh, all_itemLblTwentyEighth,
+    all_itemLblTwentyNinth, all_itemLblThirtieth, all_itemLblThirtyFirst, all_itemLblThirtySecond
+});
 
-//            // Overlays
-//            all_overlays2nd.AddRange(new Guna2PictureBox[] {
-//    allSeventeenth_Overlay, alleighteenth_Overlay, allNineteenth_Overlay, allTwentieth_Overlay,
-//    allTwentyFirst_Overlay, allTwentySecond_Overlay, allTwentyThird_Overlay, allTwentyFourth_Overlay,
-//    allTwentyFifth_Overlay, allTwentySixth_Overlay, allTwentySeventh_Overlay, allTwentyEighth_Overlay,
-//    allTwentyNinth_Overlay, allThirtieth_Overlay, allThirtyFirst_Overlay, allThirtySecond_Overlay
-//});
+            // Overlays
+            all_overlays2nd.AddRange(new Guna2PictureBox[] {
+    allSeventeenth_Overlay, alleighteenth_Overlay, allNineteenth_Overlay, allTwentieth_Overlay,
+    allTwentyFirst_Overlay, allTwentySecond_Overlay, allTwentyThird_Overlay, allTwentyFourth_Overlay,
+    allTwentyFifth_Overlay, allTwentySixth_Overlay, allTwentySeventh_Overlay, allTwentyEighth_Overlay,
+    allTwentyNinth_Overlay, allThirtieth_Overlay, allThirtyFirst_Overlay, allThirtySecond_Overlay
+});
 
-//            // Item Panels
-//            all_itemPanels2nd.AddRange(new Guna2ShadowPanel[] {
-//    all_itemPanelSeventeenth, all_itemPanelEighteenth, all_itemPanelNineteenth, all_itemPanelTwentieth,
-//    all_itemPanelTwentyFirst, all_itemPanelTwentySecond, all_itemPanelTwentyThird, all_itemPanelTwentyFourth,
-//    all_itemPanelTwentyFifth, all_itemPanelTwentySixth, all_itemPanelTwentySeventh, all_itemPanelTwentyEighth,
-//    all_itemPanelTwentyNinth, all_itemPanelThirtieth, all_itemPanelThirtyFirst, all_itemPanelThirtySecond
-//});
+            // Item Panels
+            all_itemPanels2nd.AddRange(new Guna2ShadowPanel[] {
+    all_itemPanelSeventeenth, all_itemPanelEighteenth, all_itemPanelNineteenth, all_itemPanelTwentieth,
+    all_itemPanelTwentyFirst, all_itemPanelTwentySecond, all_itemPanelTwentyThird, all_itemPanelTwentyFourth,
+    all_itemPanelTwentyFifth, all_itemPanelTwentySixth, all_itemPanelTwentySeventh, all_itemPanelTwentyEighth,
+    all_itemPanelTwentyNinth, all_itemPanelThirtieth, all_itemPanelThirtyFirst, all_itemPanelThirtySecond
+});
 
-  
+
 
 
 
@@ -815,12 +839,15 @@ private void Main_Load(object sender, EventArgs e)
                         {
                             all_itemPics[allIndex].Image = img;
                             all_itemLabel[allIndex].Text = name;
+                            all_itemPics[allIndex].Image = img;
+                            all_itemLabel[allIndex].Text = name;
 
                             bool notAvail = stock == 0 || !isEnabled;
 
                             all_itemPics[allIndex].Enabled = !notAvail;
                             all_overlays[allIndex].Visible = notAvail;
                             all_overlays[allIndex].BringToFront();
+
 
                             all_itemPics[allIndex].Visible = true;
                             all_itemPanels[allIndex].Visible = true;
@@ -831,6 +858,32 @@ private void Main_Load(object sender, EventArgs e)
                             allIndex++;
                         }
 
+                          
+                        //if (allIndex2nd < allPicsCombined.Count)
+                        //{
+                        //    allPicsCombined[allIndex2nd].Image = img;
+                        //    allLabelsCombined[allIndex2nd].Text = name;
+                        //    allPicsCombined[allIndex2nd].Image = img;
+                        //    allLabelsCombined[allIndex2nd].Text = name;
+
+                        //    bool notAvail = stock == 0 || !isEnabled;
+
+                        //    allPicsCombined[allIndex2nd].Enabled = !notAvail;
+                        //    allOverlaysCombined[allIndex2nd].Visible = notAvail;
+                        //    allOverlaysCombined[allIndex2nd].BringToFront();
+
+
+                        //    allPicsCombined[allIndex2nd].Visible = true;
+                        //    allPanelsCombined[allIndex2nd].Visible = true;
+                        //    allLabelsCombined[allIndex2nd].Visible = true;
+                        //    allPicsCombined[allIndex2nd].Tag = id;
+                        //    allLabelsCombined[allIndex2nd].Tag = id;
+
+                        //    allIndex2nd++;
+                        //}
+
+
+
                         // Type-specific tab
                         switch (type)
                         {
@@ -839,9 +892,13 @@ private void Main_Load(object sender, EventArgs e)
                                 {
                                     top_itemPics[topIndex].Image = img;
                                     top_itemLabel[topIndex].Text = name;
-                                    top_itemPics[topIndex].Enabled = stock > 0;
-                                    top_overlays[topIndex].Visible = stock == 0;
+
+                                    bool notAvail = stock == 0 || !isEnabled;
+
+                                    top_itemPics[topIndex].Enabled = !notAvail;
+                                    top_overlays[topIndex].Visible = notAvail;
                                     top_overlays[topIndex].BringToFront();
+
                                     top_itemPics[topIndex].Visible = true;
                                     top_itemPanels[topIndex].Visible = true;
                                     top_itemLabel[topIndex].Visible = true;
@@ -856,9 +913,13 @@ private void Main_Load(object sender, EventArgs e)
                                 {
                                     bot_itemPics[botIndex].Image = img;
                                     bot_itemLabel[botIndex].Text = name;
-                                    bot_itemPics[botIndex].Enabled = stock > 0;
-                                    bot_overlays[botIndex].Visible = stock == 0;
+
+                                    bool notAvail = stock == 0 || !isEnabled;
+
+                                    bot_itemPics[botIndex].Enabled = !notAvail;
+                                    bot_overlays[botIndex].Visible = notAvail;
                                     bot_overlays[botIndex].BringToFront();
+
                                     bot_itemPics[botIndex].Visible = true;
                                     bot_itemPanels[botIndex].Visible = true;
                                     bot_itemLabel[botIndex].Visible = true;
@@ -872,9 +933,13 @@ private void Main_Load(object sender, EventArgs e)
                                 {
                                     fab_itemPics[fabIndex].Image = img;
                                     fab_itemLabel[fabIndex].Text = name;
-                                    fab_itemPics[fabIndex].Enabled = stock > 0;
-                                    fab_overlays[fabIndex].Visible = stock == 0;
+
+                                    bool notAvail = stock == 0 || !isEnabled;
+
+                                    fab_itemPics[fabIndex].Enabled = !notAvail;
+                                    fab_overlays[fabIndex].Visible = notAvail;
                                     fab_overlays[fabIndex].BringToFront();
+
                                     fab_itemPics[fabIndex].Visible = true;
                                     fab_itemPanels[fabIndex].Visible = true;
                                     fab_itemLabel[fabIndex].Visible = true;
@@ -888,9 +953,13 @@ private void Main_Load(object sender, EventArgs e)
                                 {
                                     other_itemPics[otherIndex].Image = img;
                                     other_itemLabel[otherIndex].Text = name;
-                                    other_itemPics[otherIndex].Enabled = stock > 0;
-                                    other_overlays[otherIndex].Visible = stock == 0;
+
+                                    bool notAvail = stock == 0 || !isEnabled;
+
+                                    other_itemPics[otherIndex].Enabled = !notAvail;
+                                    other_overlays[otherIndex].Visible = notAvail;
                                     other_overlays[otherIndex].BringToFront();
+
                                     other_itemPics[otherIndex].Visible = true;
                                     other_itemPanels[otherIndex].Visible = true;
                                     other_itemLabel[otherIndex].Visible = true;
@@ -1165,6 +1234,13 @@ private void Main_Load(object sender, EventArgs e)
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             ResetCart();
+          
+            if (currentPage <= 1) return;
+            currentPage--;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = currentPage > 1;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
             LoadStockStatus();
         }
 
@@ -4377,11 +4453,11 @@ private void Main_Load(object sender, EventArgs e)
 
         }
         //===================== for 2nd all section incase ma full ung first section nung all item
-        private int itemsPerPage = 16;
-        private int currentPage = 1;
-        private int totalItems = 0;
+        public int itemsPerPage = 16;
+        public int currentPage = 1;
+        public int totalItems = 0;
 
-        private void LoadAllItemsPage(int page)
+        public void LoadAllItemsPage(int page)
         {
             int skip = (page - 1) * itemsPerPage;
 
@@ -4389,10 +4465,10 @@ private void Main_Load(object sender, EventArgs e)
             {
                 conn.Open();
                 string query = @"
-    SELECT itemId, itemName, itemStock, IMAGE_PATH 
-    FROM tbitems
-    ORDER BY itemId ASC
-    LIMIT @limit OFFSET @offset";
+SELECT itemId, itemName, itemStock, IMAGE_PATH, isEnabled
+FROM tbitems
+ORDER BY itemId ASC
+LIMIT @limit OFFSET @offset";
 
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@limit", itemsPerPage);
@@ -4400,41 +4476,54 @@ private void Main_Load(object sender, EventArgs e)
 
                 using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
+                    // Combine first and second sections
+                    var picsCombined = all_itemPics.Concat(all_itemPics2nd).ToArray();
+                    var labelsCombined = all_itemLabel.Concat(all_itemLabel2nd).ToArray();
+                    var overlaysCombined = all_overlays.Concat(all_overlays2nd).ToArray();
+                    var panelsCombined = all_itemPanels.Concat(all_itemPanels2nd).ToArray();
+
                     int slotIndex = 0;
 
-                    while (reader.Read() && slotIndex < all_itemPics.Count)
+                    while (reader.Read() && slotIndex < picsCombined.Length)
                     {
                         string itemName = reader.GetString("itemName");
                         string img = reader.GetString("IMAGE_PATH");
                         int stock = reader.GetInt32("itemStock");
                         int id = reader.GetInt32("itemId");
+                        bool isEnabled = reader.GetBoolean("isEnabled");
+
+                        bool notAvail = stock == 0 || !isEnabled;
 
                         string fullPath = Path.Combine(Application.StartupPath, "images_rsrcs", "itemPics", img);
 
-                        all_itemPics[slotIndex].Image = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
-                        all_itemLabel[slotIndex].Text = itemName;
+                        // Set item picture and label
+                        picsCombined[slotIndex].Image = File.Exists(fullPath) ? Image.FromFile(fullPath) : null;
+                        labelsCombined[slotIndex].Text = itemName;
 
-                        bool notAvail = stock == 0;
-                        all_overlays[slotIndex].Visible = notAvail;
-                        all_overlays[slotIndex].BringToFront();
-                        all_itemPics[slotIndex].Enabled = !notAvail;
-                        all_itemPics[slotIndex].Visible = true;
-                        all_itemLabel[slotIndex].Visible = true;
-                        all_itemPanels[slotIndex].Visible = true;
+                        // Enable/disable and overlay
+                        picsCombined[slotIndex].Enabled = !notAvail;
+                        overlaysCombined[slotIndex].Visible = notAvail;
+                        overlaysCombined[slotIndex].BringToFront();
 
-                        all_itemPics[slotIndex].Tag = id;
-                        all_itemLabel[slotIndex].Tag = id;
+                        // Make visible
+                        picsCombined[slotIndex].Visible = true;
+                        labelsCombined[slotIndex].Visible = true;
+                        panelsCombined[slotIndex].Visible = true;
+
+                        // Store ID
+                        picsCombined[slotIndex].Tag = id;
+                        labelsCombined[slotIndex].Tag = id;
 
                         slotIndex++;
                     }
 
                     // Hide unused slots
-                    for (int i = slotIndex; i < all_itemPics.Count; i++)
+                    for (int i = slotIndex; i < picsCombined.Length; i++)
                     {
-                        all_itemPics[i].Visible = false;
-                        all_itemLabel[i].Visible = false;
-                        all_itemPanels[i].Visible = false;
-                        all_overlays[i].Visible = false;
+                        picsCombined[i].Visible = false;
+                        labelsCombined[i].Visible = false;
+                        panelsCombined[i].Visible = false;
+                        overlaysCombined[i].Visible = false;
                     }
                 }
             }
@@ -4488,6 +4577,11 @@ private void Main_Load(object sender, EventArgs e)
         {
             AddNewItem ani = new AddNewItem();
             ani.ShowDialog();
+        }
+
+        private void fab_overlay_Click(object sender, EventArgs e)
+        {
+          
         }
 
 
