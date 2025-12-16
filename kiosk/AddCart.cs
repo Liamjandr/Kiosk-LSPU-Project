@@ -193,6 +193,9 @@ namespace kiosk
         public int cartCounter = 0;
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+
+
+           
             // =============================
             // 1. GATHER DATA
             // =============================
@@ -289,15 +292,24 @@ namespace kiosk
             }
 
 
-            // Reset UI
-            sBtn.Checked = mBtn.Checked = lBtn.Checked = xBtn.Checked = xxBtn.Checked = false;
-            qty.Text = "1";
+            if (mainForm.currentPage > 1)
+            {
+                mainForm.currentPage--;
+                mainForm.LoadAllItemsPage(mainForm.currentPage);
 
-            // Update main form
-            mainForm.LoadAllItemsPage(mainForm.currentPage);
+                mainForm.all_secUP.Visible = mainForm.currentPage > 1;
+                mainForm.all_firstDOWN.Visible =
+                    mainForm.currentPage * mainForm.itemsPerPage < mainForm.totalItems;
+
+              
+            }
             mainForm.LoadStockStatus();
 
-            // Properly remove AddCart
+            // =============================
+            // 5. RESET UI IN ADDCART FORM
+            // =============================
+            sBtn.Checked = mBtn.Checked = lBtn.Checked = xBtn.Checked = xxBtn.Checked = false;
+            qty.Text = "1";
             this.Close();
         }
 

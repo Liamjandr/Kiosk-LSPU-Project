@@ -278,6 +278,8 @@ private void Main_Load(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage3;
             fab_overlay.SelectedTab = tabPage4;
+            LoadStockStatus();
+
 
             ///------------- FOR COUNTER/CASH PAYMENT ---------------------------------
 
@@ -1247,7 +1249,13 @@ private void Main_Load(object sender, EventArgs e)
         private void firstCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(0);
-           LoadStockStatus();
+            if (currentPage <= 1) return;
+            currentPage--;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = currentPage > 1;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
+            LoadStockStatus();
             //cartCounter = 0;
 
         }
@@ -1255,6 +1263,12 @@ private void Main_Load(object sender, EventArgs e)
         private void secondCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(1);
+            if (currentPage <= 1) return;
+            currentPage--;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = currentPage > 1;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
             LoadStockStatus();
 
         }
@@ -1262,12 +1276,24 @@ private void Main_Load(object sender, EventArgs e)
         private void thirdCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(2);
+            if (currentPage <= 1) return;
+            currentPage--;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = currentPage > 1;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
             LoadStockStatus();
         }
 
         private void fourthCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(3);
+            if (currentPage <= 1) return;
+            currentPage--;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = currentPage > 1;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
             LoadStockStatus();
 
         }
@@ -1275,6 +1301,12 @@ private void Main_Load(object sender, EventArgs e)
         private void fifthcancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(4);
+            if (currentPage <= 1) return;
+            currentPage--;
+            LoadAllItemsPage(currentPage);
+
+            all_secUP.Visible = currentPage > 1;
+            all_firstDOWN.Visible = currentPage * itemsPerPage < totalItems;
             LoadStockStatus();
 
         }
