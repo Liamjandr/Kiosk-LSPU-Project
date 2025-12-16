@@ -65,12 +65,14 @@ namespace kiosk
             if (isPaid == "true")
             {
                 Payment.Text = "PAID";
-                Payment.FillColor = Color.Green;
+                Payment.FillColor = Color.FromArgb(240, 253, 244);
+                Payment.BorderColor = Color.FromArgb(185, 248, 207);
             }
             else
             {
                 Payment.Text = "UNPAID";
-                Payment.FillColor = Color.Red;
+                Payment.FillColor = Color.FromArgb(253, 240, 240);
+                Payment.BorderColor = Color.FromArgb(248, 185, 185);
             }
         }
 
@@ -79,12 +81,14 @@ namespace kiosk
             if (isClaimed == "true")
             {
                 Claim.Text = "Claimed";
-                Claim.FillColor = Color.Green;
+                Claim.FillColor = Color.FromArgb(240, 253, 244);
+                Claim.BorderColor = Color.FromArgb(185, 248, 207);
             }
             else
             {
                 Claim.Text = "Not Claimed";
-                Claim.FillColor = Color.Red;
+                Claim.FillColor = Color.FromArgb(253, 240, 240);
+                Claim.BorderColor = Color.FromArgb(248, 185, 185);
             }
         }
 
@@ -130,13 +134,15 @@ namespace kiosk
             if (isClaimed == "true")
             {
                 Claim.Text = "Claimed";
-                Claim.FillColor = Color.Green;
+                Claim.FillColor = Color.FromArgb(240, 253, 244);
+                Claim.BorderColor = Color.FromArgb(185, 248, 207);
             }
             else
             {
 
                 Claim.Text = "Not Claimed";
-                Claim.FillColor = Color.Red;
+                Claim.FillColor = Color.FromArgb(253, 240, 240);
+                Claim.BorderColor = Color.FromArgb(248, 185, 185);
             }
         }
 

@@ -1526,7 +1526,7 @@ private void Main_Load(object sender, EventArgs e)
 
         private void guna2PictureBox27_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = tabPage2;
+            tabControl1.SelectedTab = tabPage1;
             closeModal();
         }
 
