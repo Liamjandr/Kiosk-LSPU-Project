@@ -1236,7 +1236,7 @@ private void Main_Load(object sender, EventArgs e)
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             ResetCart();
-          
+            LoadStockStatus();
             if (currentPage <= 1) return;
             currentPage--;
             LoadAllItemsPage(currentPage);
@@ -1249,6 +1249,8 @@ private void Main_Load(object sender, EventArgs e)
         private void firstCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(0);
+            LoadStockStatus();
+
             if (currentPage <= 1) return;
             currentPage--;
             LoadAllItemsPage(currentPage);
@@ -1263,6 +1265,8 @@ private void Main_Load(object sender, EventArgs e)
         private void secondCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(1);
+            LoadStockStatus();
+
             if (currentPage <= 1) return;
             currentPage--;
             LoadAllItemsPage(currentPage);
@@ -1276,6 +1280,8 @@ private void Main_Load(object sender, EventArgs e)
         private void thirdCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(2);
+            LoadStockStatus();
+
             if (currentPage <= 1) return;
             currentPage--;
             LoadAllItemsPage(currentPage);
@@ -1288,6 +1294,8 @@ private void Main_Load(object sender, EventArgs e)
         private void fourthCancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(3);
+            LoadStockStatus();
+
             if (currentPage <= 1) return;
             currentPage--;
             LoadAllItemsPage(currentPage);
@@ -1301,6 +1309,8 @@ private void Main_Load(object sender, EventArgs e)
         private void fifthcancel_Click(object sender, EventArgs e)
         {
             RemoveCartItem(4);
+            LoadStockStatus();
+
             if (currentPage <= 1) return;
             currentPage--;
             LoadAllItemsPage(currentPage);
